@@ -10,7 +10,6 @@ def get_condition_indices(stabilizer_shape):
     """
     rows, cols = stabilizer_shape.shape
     print(f"Stabilizer shape:\n{stabilizer_shape}")
-    print(f"Rows: {rows}, Cols: {cols}")
     # set (0, 0) for all row 0
     
     relative_positions = [[(i, j) for j in range(-cols//2 + 1, cols//2 + 1)] for i in range(rows)]
@@ -31,8 +30,6 @@ def generate_parity_check_matrix(H, L, m, condition_indices):
     n = H * L
     num_checks = L * (H - m + 1)
     H_matrix = np.zeros((num_checks, n), dtype=int)
-
-    print(f"Generating H matrix of size {num_checks} x {n}")
 
     check_row = 0
     for i in range(H - m, -1, -1):
@@ -62,7 +59,6 @@ def generate_parity_check_matrix(H, L, m, condition_indices):
 
 def fill_Z_with_stabilizer_shape(input_row, H, L, m, condition_offsets_list, same_shape=False):
     """Evolve the automaton from the input_row using given rule offsets."""
-    print(f"condition offsets list: {condition_offsets_list}")
     
     Z = np.zeros((H - m + 1, L), dtype=int)
     Z = np.append(Z, input_row, axis=0)  # append input row at the bottom
