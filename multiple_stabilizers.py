@@ -2,8 +2,9 @@ import sys
 import numpy as np
 from scipy.sparse import csr_matrix, hstack, kron, eye, block_diag
 from typing import Tuple
+from ldpc import mod2
 
-from logical_operators import get_logical_operators
+from logical_operators import get_logical_operators_by_pivoting
 
 def get_condition_indices(stabilizer_shape):
     """
@@ -77,6 +78,29 @@ def fill_Z_with_stabilizer_shape(input_row, height, width, m, condition_offsets_
 
     return Z
 
+def precompute_basis_outputs(height, width, m, condition_indices):
+    """Precompute Z for each basis input (single 1 at position i)."""
+    Z_basis = []
+
+    for i in range(m-1):
+        input_i = np.zeros((1, (m-1) * width), dtype=int)
+        input_i = input_i.reshape(m - 1, width)
+        input_i[i, 0] = 1
+        Z_first = fill_Z_with_stabilizer_shape(input_i, height, width, m, [condition_indices], same_shape=True)
+        
+        Z_basis.append(Z_first)
+
+        for j in range(1, width):
+            Z_j = np.roll(Z_first, j, axis=1)
+            Z_basis.append(Z_j)
+
+    """Print the precomputed Z_basis for debugging"""
+    # print(f"Precomputed Z_basis for height={height}, width={width}, m={m}:")
+    # for idx, z in enumerate(Z_basis):
+    #     print(f"Z_basis[{idx}] (index {idx}):\n{z}")
+
+    return Z_basis
+
 def stabilizer_shape_code_matrices(height, width, m, stabilizer_shape) -> Tuple[csr_matrix, csr_matrix, csr_matrix, csr_matrix]:
     """
     Generate the stabilizer shape code matrices.
@@ -90,16 +114,70 @@ def stabilizer_shape_code_matrices(height, width, m, stabilizer_shape) -> Tuple[
     Returns:
         list: List of stabilizer shape code matrices.
     """
+    n = height * width
     condition_offsets_list = get_condition_indices(stabilizer_shape)
     H = generate_parity_check_matrix(height, width, m, condition_offsets_list)
 
-    Lx, Lz = get_logical_operators(H, H)
+    codewords = precompute_basis_outputs(height, width, m, condition_offsets_list)
+    print(f"Codewords for height={height}, width={width}, m={m}: {len(codewords)} codewords generated.")
+
+    for idx, codeword in enumerate(codewords):
+        # reverse the order of rows
+        codeword = np.flip(codeword, axis=0)
+        codeword = codeword.reshape(1, n)
+        codewords[idx] = codeword[0]
+    codewords = np.array(codewords, dtype=int)
+
+    Hx = np.zeros((H.shape[0], n), dtype=int)
+    Lx_gen_by_al, Lz_gen_by_al = get_logical_operators_by_pivoting(Hx, H)
+
+    # print(f"codewords shape: {codewords.shape}")
+    # print(f"Lx shape: {Lx.shape}")
+    # print(f"codewords:\n{codewords}")
+    # print(f"Lx:\n{Lx}")
+
+    # print(f"Hx @ codewords.T:\n{(np.array(H) @ codewords.T) % 2}")
+    # print(f"Hx @ Lx.T:\n{(np.array(H) @ np.array(Lx).T) % 2}")
+
+    # print(f"reduced row echelon form of codewords:\n{mod2.reduced_row_echelon(codewords)[0]}")
+    # print(f"reduced row echelon form of Lx:\n{mod2.reduced_row_echelon(Lx)[0]}")
+
+    # print(f"is reduced row echelon form of codewords equal to Lx: {np.array_equal(mod2.reduced_row_echelon(codewords)[0], mod2.reduced_row_echelon(Lx)[0])}")
 
     Hx = csr_matrix(H)
     Hz = csr_matrix(H)
 
-    Lx = csr_matrix(Lx)
-    Lz = csr_matrix(Lz)
+    Lx = csr_matrix(np.array(codewords, dtype=np.uint8))
+    Lz = csr_matrix(np.array(codewords, dtype=np.uint8))
+
+    print(f"Hx shape: {Hx.shape}")
+    print(f"Hx: \n{Hx.toarray()}")
+    print(f"Hz shape: {Hz.shape}")
+    print(f"Hz: \n{Hz.toarray()}")
+
+    print(f"Generated logical operators Lx and Lz by pivoting:")
+    print(f"Lx shape: {Lx_gen_by_al.shape}")
+    print(f"Lx:\n{Lx_gen_by_al}")
+    print(f"Lz shape: {Lz_gen_by_al.shape}")
+    print(f"Lz:\n{Lz_gen_by_al}")
+
+    print(f"Hx @ Hz.T should be zero")
+    print(f"Hx @ Hz.T:\n{(Hx @ Hz.T).toarray() % 2}")
+    
+    # Hx @ Lx_gen_by_al.T should be zero
+    # print(f"Hx @ Lx_gen_by_al.T:\n{(Hx @ Lx_gen_by_al.T) % 2}")
+    # print(f"Hz @ Lz_gen_by_al.T:\n{(Hz @ Lz_gen_by_al.T) % 2}")
+
+    print(f"Generated logical operators Lx and Lz from codewords:")
+    print(f"Lx shape: {Lx.shape}")
+    print(f"Lx: \n{Lx.toarray()}")
+    print(f"Lz shape: {Lz.shape}")
+    print(f"Lz: \n{Lz.toarray()}")
+
+    # Hx @ Lx.T should be zero
+    # print(f"Hx @ Lx.T:\n{(Hx @ Lx.T.toarray()) % 2}")
+    # print(f"Hz @ Lz.T:\n{(Hz @ Lz.T.toarray()) % 2}")
+
 
     return Hx, Hz, Lx, Lz
     
@@ -118,8 +196,3 @@ if __name__ == "__main__":
     print(f"Hz shape: {Hz.shape}")
     print(f"Lx shape: {Lx.shape}")
     print(f"Lz shape: {Lz.shape}")
-    # print(f"Hx:\n{Hx.toarray()}")
-    # print(f"Hz:\n{Hz.toarray()}")
-    # print(f"Lx:\n{Lx.toarray()}")
-    # print(f"Lz:\n{Lz.toarray()}")
-
