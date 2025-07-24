@@ -21,7 +21,7 @@ state_space_params = [(15, 20, 60),
 
 MC_budget = int(1e5)
 # noise_levels = [9/32, 8/32, 9/32, 12/32]
-noise_levels = [0.05, 8/32, 9/32, 12/32]
+noise_levels = [0.01, 8/32, 9/32, 12/32]
 # times: 15, 40, 80, 200
 p_vals = np.linspace(0.1, 0.5, 15)
 
