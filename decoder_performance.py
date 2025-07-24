@@ -25,13 +25,13 @@ def generate_bsc_error(n: int, error_rate: float) -> np.ndarray:
     """
     return np.random.binomial(1, error_rate, size=n).astype(np.uint8)
 
-def compute_logical_error_rate(H, L, error_rate, run_count, DECODER, run_label, DEBUG=False):
+def compute_logical_error_rate(H, L, error_rate, run_count, DECODER, run_label, DEBUG=False) -> float:
     """
     Calculate logical error rate for a given decoder.
     
     Parameters:
-        H (np.ndarray): The parity check matrix.
-        L (np.ndarray): The logical operator matrix.
+        H (np.ndarray): The parity check matrix. # bit-flip error channel -> Hz, phase-flip error channel -> Hx
+        L (np.ndarray): The logical operator matrix. # bit-flip error channel -> Lz, phase-flip error channel -> Lx
         error_rate (float): The error rate for the BSC.
         run_count (int): The number of runs to perform.
         DECODER: The decoder instance to use (BpDecoder or BpOsdDecoder).
@@ -40,6 +40,8 @@ def compute_logical_error_rate(H, L, error_rate, run_count, DECODER, run_label, 
 
     Returns:
         logical_error_rate (float): The logical error rate calculated as the number of logical errors divided by the number of
+        std (float): The standard deviation of the logical error rate.
+        run_time (float): The time taken to perform the runs.
     """
 
     logical_error = 0
@@ -47,6 +49,8 @@ def compute_logical_error_rate(H, L, error_rate, run_count, DECODER, run_label, 
     start_time = time.time()
 
     failed_runs_not_bp = []
+
+    np.random.randint(low=1,high=2**32-1)
 
     for i in range(run_count):
         error = generate_bsc_error(H.shape[1], error_rate)
@@ -70,10 +74,12 @@ def compute_logical_error_rate(H, L, error_rate, run_count, DECODER, run_label, 
     end_time = time.time()
     runtime = end_time - start_time
     logical_error_rate = logical_error / run_count
-    print(f"Decoder {run_label} finished in {runtime:.2f} seconds with {logical_error} failures out of {run_count} runs.")
-    print(f"Logical error rate for {run_label}: {logical_error_rate}")
+    std = np.sqrt(logical_error_rate * (1 - logical_error_rate) / run_count)
 
-    return logical_error_rate
+    print(f"Decoder {run_label} finished in {runtime:.2f} seconds with {logical_error} failures out of {run_count} runs.")
+    print(f"Logical error rate for {run_label}: {logical_error_rate} ± {std:.4f} (std)")
+
+    return logical_error_rate, std, runtime
 
 if __name__ == "__main__":
     from basic_css_code import toric_code_matrices
