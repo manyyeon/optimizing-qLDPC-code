@@ -1,10 +1,8 @@
-import pickle
 import sys
 import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-from basic_css_code import construct_HGP_code
 from optimization.experiments_settings import codes, load_tanner_graph, parse_edgelist
 from optimization.experiments_settings import MC_budget, p_vals, path_to_initial_codes, textfiles
 from optimization.analyze_codes.decoder_performance_from_state import compute_decoding_performance_from_state
@@ -32,16 +30,20 @@ if __name__ == '__main__':
 
     original_state = load_tanner_graph(path_to_initial_codes + textfiles[C])
 
-    logical_error_rates, stds, runtimes = compute_decoding_performance_from_state(original_state, p_vals, MC_budget)
+    cost_result = compute_decoding_performance_from_state(original_state, p_vals, MC_budget)
+
+    logical_error_rates = cost_result['logical_error_rates']
+    runtimes = cost_result['runtimes']
+    stds = cost_result['stds']
 
     original_state_edge_list = parse_edgelist(original_state)
 
+    # Save the original state and results
     original_state_edge_list = np.row_stack(original_state_edge_list, dtype=np.uint8)
     logical_error_rates = np.row_stack(logical_error_rates, dtype=np.float64)
 
     with h5py.File(output_file, "a") as f:
         grp = f.require_group(grpname[C])
-
         grp.attrs['MC_budget'] = MC_budget
         
         if 'original_state' in grp:
@@ -58,7 +60,7 @@ if __name__ == '__main__':
 
         if 'logical_error_rates_std' in grp:
             del grp['logical_error_rates_std']
-        grp.create_dataset("logical_error_rates_std", data=np.std(logical_error_rates, axis=0))
+        grp.create_dataset("logical_error_rates_std", data=stds)
 
         if 'runtimes' in grp:
             del grp['runtimes']

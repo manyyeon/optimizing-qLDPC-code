@@ -14,8 +14,15 @@ from decoder_performance import compute_logical_error_rate
 
 def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int) -> dict:
     """
-    Evaluate the decoding performance of a given state.
-    This function should be replaced with the actual evaluation logic.
+    Evaluate the decoding performance (logical error rates) of a given state.
+    Parameters:
+        state (nx.MultiGraph): The Tanner graph representing the code.
+        p_vals (np.ndarray): Array of physical error rates to evaluate.
+        MC_budget (int): The number of Monte Carlo runs to perform for each error rate.
+    Returns:
+        logical_error_rates (list): List of logical error rates for each physical error rate.
+        stds (list): List of standard deviations of the logical error rates.
+        runtimes (list): List of runtimes for each decoding operation.
     """
 
     H = tanner_graph_to_parity_check_matrix(state)
@@ -35,8 +42,7 @@ def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.nda
     runtimes = []
 
     for p in p_vals:
-
-        print(f"Evaluating for p={p}...")
+        # print(f"Evaluating for p={p}...")
         # if the name of parity check matrix and the logical operators are Hz and Lz, respectively, then it's bit-flip (X) error decoder
         bp_osd_decoder = BpOsdDecoder(
             pcm=Hz,
@@ -55,4 +61,9 @@ def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.nda
         logical_error_rates.append(logical_error_rate)
         stds.append(std)
         runtimes.append(runtime)
-    return logical_error_rates, stds, runtimes
+
+    return {
+        "logical_error_rates": logical_error_rates,
+        "stds": stds,
+        "runtimes": runtimes
+    }
