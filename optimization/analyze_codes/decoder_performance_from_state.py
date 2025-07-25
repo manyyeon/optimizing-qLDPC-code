@@ -12,25 +12,27 @@ from ldpc.bposd_decoder import BpOsdDecoder
 from logical_operators import get_logical_operators_by_pivoting
 from decoder_performance import compute_logical_error_rate
 
-def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int) -> dict:
+def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter: int, run_label="Random walk") -> dict:
     """
     Evaluate the decoding performance (logical error rates) of a given state.
     Parameters:
         state (nx.MultiGraph): The Tanner graph representing the code.
         p_vals (np.ndarray): Array of physical error rates to evaluate.
         MC_budget (int): The number of Monte Carlo runs to perform for each error rate.
+        bp_max_iter (int): Maximum number of iterations for the BP decoder.
     Returns:
         logical_error_rates (list): List of logical error rates for each physical error rate.
         stds (list): List of standard deviations of the logical error rates.
         runtimes (list): List of runtimes for each decoding operation.
     """
-
     H = tanner_graph_to_parity_check_matrix(state)
 
     # H.data = np.where(np.asarray(H.data) > 0, 1, 0)
     Hx, Hz = construct_HGP_code (H)
 
-    bp_max_iter = int(Hx.shape[1]/10)
+    if bp_max_iter is None:
+        bp_max_iter = int(Hx.shape[1]/10)
+    
     # osd_order = 60
     osd_order = 2
     ms_scaling_factor = 0.625
@@ -54,8 +56,8 @@ def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.nda
             osd_method='OSD_CS',
             osd_order=osd_order,
         )
-    
-        logical_error_rate, std, runtime = compute_logical_error_rate(Hz, Lz, p, run_count=MC_budget, DECODER=bp_osd_decoder, run_label=f"Random exploration", DEBUG=False)
+
+        logical_error_rate, std, runtime = compute_logical_error_rate(Hz, Lz, p, run_count=MC_budget, DECODER=bp_osd_decoder, run_label=run_label, DEBUG=False)
         print(f"Logical error rate for p={p}: {logical_error_rate}")
         
         logical_error_rates.append(logical_error_rate)

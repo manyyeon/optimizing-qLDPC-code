@@ -6,25 +6,41 @@ from tqdm import tqdm
 import h5py
 import sys
 import os
+import networkx as nx
 
-from optimization.analyze_codes.decoder_performance_from_state import compute_decoding_performance_from_state
+from analyze_codes.decoder_performance_from_state import compute_decoding_performance_from_state
 
-# from css_code_eval import MC_erasure_plog
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from logical_operators import get_logical_operators_by_pivoting
-from optimization.experiments_settings import generate_neighbor_highlight, load_tanner_graph, parse_edgelist
-from optimization.experiments_settings import codes, path_to_initial_codes, textfiles
-from optimization.experiments_settings import MC_budget, noise_levels
-from optimization.experiments_settings import tanner_graph_to_parity_check_matrix
+from experiments_settings import generate_neighbor_highlight, load_tanner_graph, parse_edgelist
+from experiments_settings import codes, path_to_initial_codes, textfiles
+from experiments_settings import MC_budget, noise_levels
 
-from basic_css_code import construct_HGP_code
-from decoder_performance import compute_logical_error_rate
+output_file = "optimization/results/greedy_exploration.hdf5"
 
-# exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
-exploration_params = [(24, 40), (15, 70), (12, 40), (8, 30)]
+class State:
+    """
+    A class to represent a state in the greedy exploration process.
+    Attributes:
+        state (nx.MultiGraph): The Tanner graph representing the code.
+        cost_result (dict): A dictionary containing the cost result of the state.
+            'logical_error_rate' (float): The logical error rate of the state.
+            'std' (float): The standard deviation of the logical error rate.
+            'runtime' (float): The runtime of the decoding operation for this state.
+    Methods:
+        __init__(state, cost_result): Initializes the state with a Tanner graph and its cost result.
+        __repr__(): Returns a string representation of the state.
+        __str__(): Returns a string describing the state with its cost.
+        """
+    def __init__(self, state: nx.MultiGraph, cost_result: dict):
+        self.state = state
+        self.cost_result = cost_result
 
-output_file = "optimization/results/random_exploration.hdf5"
+    def __repr__(self):
+        return f"State(cost={self.cost_result['logical_error_rate']:.6f})"
+
+    def __str__(self):
+        return f"State with cost {self.cost_result['logical_error_rate']:.6f}"
 
 if __name__ == '__main__':
     # Parse args: basically just a flag indicating the code family to explore. 
@@ -33,19 +49,17 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-C', action="store", dest='C', default=0, type=int, required=False)
     parser.add_argument('-N', action="store", dest='N', default=None, type=int, required=False)
-    parser.add_argument('-L', action="store", dest='L', default=None, type=int, required=False)
     parser.add_argument('-p', action="store", dest='p', default=None, type=float, required=False)
     args = parser.parse_args()
 
     # Choose the code family
     C = args.C
-    # Set the number of neighbors and the length of the random walk
-    N, L = exploration_params[C] if (args.N is None or args.L is None) else (args.N, args.L)
+    N = 20 # number of iterations
     # Set the noise level
     p = noise_levels[C] if args.p is None else args.p
-    print(f"{C = }, {N = }, {L = }, {p = }")
+    print(f"Exploring code family {codes[C]} with {N} iterations and {p} noise level with MC_budget = {MC_budget}.")
 
-    # bp_max_iter = 4
+    bp_max_iter = 4
     # osd_order = 60
     osd_order = 2
     ms_scaling_factor = 0.625
@@ -56,9 +70,6 @@ if __name__ == '__main__':
     # Initialize the rw with the corresponding initial state. 
     initial_state = load_tanner_graph(path_to_initial_codes + textfiles[C])
 
-    print(f"Exploring code family {codes[C]} with {N} neighbors and {L} iterations.")
-
-    decoding_runtimes = []
     min_cost = np.inf
     min_state = None
 
@@ -67,71 +78,54 @@ if __name__ == '__main__':
 
     start_time = time.time()
 
-    state = initial_state
+    cost_fn = lambda state: compute_decoding_performance_from_state(
+        state=state, p_vals=[p], MC_budget=MC_budget, bp_max_iter=bp_max_iter, run_label=f"Greedy exploration {codes[C]}"
+    )
+
+    initial_cost_result = cost_fn(initial_state)
+
+    current = State(initial_state, {
+        'logical_error_rate': initial_cost_result['logical_error_rates'][0],
+        'std': initial_cost_result['stds'][0],
+        'runtime': initial_cost_result['runtimes'][0]
+    })
+    neighbor = State(nx.MultiGraph(), {})
+
+    original_cost = current.cost_result['logical_error_rate']
 
     # greedy exploration loop:
-    for l in range(L):
-        # state is either the initial state or the best neighbor found in the previous iteration
-        cost_result = compute_decoding_performance_from_state(state=state, p_vals=[p], MC_budget=MC_budget)
-        
-        logical_error_rate = cost_result['logical_error_rates'][0]
-        decoding_runtime = cost_result['runtimes'][0]
-        std = cost_result['stds'][0]
+    for i in range(N):
+        print(f"Iteration {i+1}/{N}: cost of current state = {current.cost_result['logical_error_rate']:.6f}, decoding time = {current.cost_result['runtime']:.6f} seconds")
 
-        decoding_runtimes.append(decoding_runtime)
-        
-        if l == 0: # initial state
-            original_cost = cost_result['logical_error_rates'][0]
+        if current.cost_result['logical_error_rate'] < min_cost:
+            min_cost = current.cost_result['logical_error_rate']
+            min_state = current.state
 
-        print(f"Iteration {l+1}/{L}: cost of current state = {logical_error_rate:.6f}, decoding time = {decoding_runtime:.6f} seconds")
+            print(f"Found minimum in iteration {i+1}/{N}: {min_cost:.6f} in chosen state")
 
-        if logical_error_rate < min_cost:
-            min_cost = logical_error_rate
-            min_state = state
+        states.append(parse_edgelist(current.state))
+        logical_error_rates.append(current.cost_result['logical_error_rate'])
+        stds.append(current.cost_result['std'])
 
-            print(f"Found minimum in iteration {l+1}/{L}: {min_cost:.6f} in chosen state")
-        
-        states.append(parse_edgelist(state))
-        logical_error_rates.append(logical_error_rate)
-        stds.append(std)
-
-        # Neighbor exploration
-        best_neighbor = None
-        best_neighbor_cost = np.inf
-        for n in range(N-1):
-            print(f"Exploring neighbor {n+1}/{N-1} of iteration {l+1}/{L}...")
-            neighbor, old_edges, new_edges = generate_neighbor_highlight(state)
+        if i < N - 1:  # if not the last iteration
+            # choose a random neighbor from the current state
+            neighbor_state, old_edges, new_edges = generate_neighbor_highlight(current.state)
             # print(f"Old edges: {old_edges}, New edges: {new_edges}")
-            cost_result = compute_decoding_performance_from_state(neighbor, p, osd_order, ms_scaling_factor)
-            logical_error_rate = cost_result['logical_error_rates'][0]
-            decoding_runtime = cost_result['runtimes'][0]
-            std = cost_result['stds'][0]
 
-            decoding_runtimes.append(decoding_runtime)
-
-            if logical_error_rate < best_neighbor_cost:
-                best_neighbor_cost = logical_error_rate
-                best_neighbor = neighbor
-
-                print(f"Found best neighbor {n+1}/{N-1} of iteration {l+1}/{L} for next state: {best_neighbor_cost:.6f}")
-
-            if logical_error_rate < min_cost:
-                min_cost = logical_error_rate
-                min_state = neighbor
-
-                print(f"Found minimum in neighbor {n+1}/{N-1} of iteration {l+1}/{L}: {min_cost:.6f}")
-
-            states.append(parse_edgelist(neighbor))
-            logical_error_rates.append(logical_error_rate)
-            stds.append(std)
+            neighbor_cost_result = cost_fn(neighbor_state)
+            neighbor.state = neighbor_state
+            neighbor.cost_result = {
+                'logical_error_rate': neighbor_cost_result['logical_error_rates'][0],
+                'std': neighbor_cost_result['stds'][0],
+                'runtime': neighbor_cost_result['runtimes'][0]
+            }
+            
+            # If the neighbor is better than the current state, we choose it as the next state
+            if neighbor.cost_result['logical_error_rate'] < current.cost_result['logical_error_rate']:
+                current.state = neighbor.state
+                current.cost_result = neighbor.cost_result
+                print(f"Found better neighbor {i+1}/{N} so it would be the next state: {current.cost_result['logical_error_rate']:.6f}")
         
-        state = best_neighbor
-
-        if state is None:
-            # better neighbor not found, so we choose next state randomly
-            print(f"Iteration {l}/{L}: no better neighbor found, choosing next state randomly.")
-            state, old_edges, new_edges = generate_neighbor_highlight(state)
-    
     print(f"Minimum cost found: {min_cost:.6f} in state {parse_edgelist(min_state)}")
 
     # Exploration finished: store results in hdf5 file
@@ -143,9 +137,6 @@ if __name__ == '__main__':
     end_time = time.time()
     runtime = end_time - start_time
 
-    avg_decoding_runtime = np.mean(decoding_runtimes)
-    print(f"Average decoding runtime per state: {avg_decoding_runtime:.6f} seconds")
-
     print(f"Random exploration finished in {runtime:.2f} seconds.")
 
     with h5py.File(output_file, "a") as f:
@@ -156,6 +147,7 @@ if __name__ == '__main__':
         grp.attrs['original_cost'] = original_cost
         grp.attrs['min_cost'] = min_cost
         grp.attrs['best_gain'] = best_gain
+        grp.attrs['num_iterations'] = N
 
         if "best_state" in grp:
             del grp["best_state"]
@@ -173,8 +165,5 @@ if __name__ == '__main__':
             del grp["logical_error_rates_std"]
         grp.create_dataset("logical_error_rates_std", data=stds)
 
-        if "decoding_runtimes" in grp:
-            del grp["decoding_runtimes"]
-        grp.create_dataset("decoding_runtimes", data=decoding_runtimes)
     print(f"Results saved to {output_file}")
     print(f"Exploration finished for code family {codes[C]}.")
