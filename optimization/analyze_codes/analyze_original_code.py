@@ -16,7 +16,7 @@ MC_budget = int(1e5)
 
 # names = ["PEG_codes", "SA_codes", "PS_codes", "PE_codes"]
 names = ["PEG_codes"]
-output_file = "optimization/results/original_state.hdf5"
+output_file = "optimization/results/analysis_original_state.hdf5"
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
