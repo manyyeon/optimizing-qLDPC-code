@@ -16,31 +16,9 @@ from experiments_settings import generate_neighbor_highlight, load_tanner_graph,
 from experiments_settings import codes, path_to_initial_codes, textfiles
 from experiments_settings import MC_budget, noise_levels
 
-output_file = "optimization/results/greedy_exploration.hdf5"
+from state import State
 
-class State:
-    """
-    A class to represent a state in the greedy exploration process.
-    Attributes:
-        state (nx.MultiGraph): The Tanner graph representing the code.
-        cost_result (dict): A dictionary containing the cost result of the state.
-            'logical_error_rate' (float): The logical error rate of the state.
-            'std' (float): The standard deviation of the logical error rate.
-            'runtime' (float): The runtime of the decoding operation for this state.
-    Methods:
-        __init__(state, cost_result): Initializes the state with a Tanner graph and its cost result.
-        __repr__(): Returns a string representation of the state.
-        __str__(): Returns a string describing the state with its cost.
-        """
-    def __init__(self, state: nx.MultiGraph, cost_result: dict):
-        self.state = state
-        self.cost_result = cost_result
-
-    def __repr__(self):
-        return f"State(cost={self.cost_result['logical_error_rate']:.6f})"
-
-    def __str__(self):
-        return f"State with cost {self.cost_result['logical_error_rate']:.6f}"
+# output_file = "optimization/results/greedy_exploration.hdf5"
 
 if __name__ == '__main__':
     # Parse args: basically just a flag indicating the code family to explore. 
@@ -48,15 +26,17 @@ if __name__ == '__main__':
     # the number of neighbors to explore, the length of the random walk. 
     parser = argparse.ArgumentParser()
     parser.add_argument('-C', action="store", dest='C', default=0, type=int, required=False)
-    parser.add_argument('-N', action="store", dest='N', default=None, type=int, required=False)
+    parser.add_argument('-N', action="store", dest='N', default=20, type=int, required=False)
     parser.add_argument('-p', action="store", dest='p', default=None, type=float, required=False)
+    parser.add_argument('-o', action="store", dest='output_file', default="optimization/results/greedy_exploration.hdf5", type=str, required=False)
     args = parser.parse_args()
 
     # Choose the code family
     C = args.C
-    N = 20 # number of iterations
+    N = args.N  # number of iterations
     # Set the noise level
     p = noise_levels[C] if args.p is None else args.p
+    output_file = args.output_file
     print(f"Exploring code family {codes[C]} with {N} iterations and {p} noise level with MC_budget = {MC_budget}.")
 
     bp_max_iter = 4
@@ -132,7 +112,7 @@ if __name__ == '__main__':
     states = np.row_stack(states, dtype=np.uint8)
     logical_error_rates = np.row_stack(logical_error_rates, dtype=np.float64)
 
-    best_gain = original_cost / min_cost
+    best_gain = original_cost / min_cost if min_cost > 0 else 0.0
 
     end_time = time.time()
     runtime = end_time - start_time
