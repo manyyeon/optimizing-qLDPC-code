@@ -12,7 +12,7 @@ from ldpc.bposd_decoder import BpOsdDecoder
 from logical_operators import get_logical_operators_by_pivoting
 from decoder_performance import compute_logical_error_rate
 
-def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter: int, run_label="Random walk") -> dict:
+def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Random walk") -> dict:
     """
     Evaluate the decoding performance (logical error rates) of a given state.
     Parameters:
@@ -42,6 +42,8 @@ def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.nda
     logical_error_rates = []
     stds = []
     runtimes = []
+
+    print(f"BP max iterations: {bp_max_iter}, OSD order: {osd_order}, MS scaling factor: {ms_scaling_factor}")
 
     for p in p_vals:
         # print(f"Evaluating for p={p}...")
