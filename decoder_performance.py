@@ -49,6 +49,7 @@ def compute_logical_error_rate(H, L, error_rate, run_count, DECODER, run_label, 
     start_time = time.time()
 
     failed_runs_not_bp = []
+    outcomes = np.zeros(run_count, dtype=np.int8)
 
     np.random.randint(low=1,high=2**32-1)
 
@@ -61,10 +62,12 @@ def compute_logical_error_rate(H, L, error_rate, run_count, DECODER, run_label, 
         if isinstance(DECODER, BpDecoder):
             if not DECODER.converge:
                 logical_error += 1
+                outcomes[i] = 1
                 continue
         
         if np.any((L @ residual) % 2):
             logical_error += 1
+            outcomes[i] = 1
             if isinstance(DECODER, BpOsdDecoder):
                 failed_runs_not_bp.append(i)
             if DEBUG:
@@ -74,12 +77,13 @@ def compute_logical_error_rate(H, L, error_rate, run_count, DECODER, run_label, 
     end_time = time.time()
     runtime = end_time - start_time
     logical_error_rate = logical_error / run_count
-    std = np.sqrt(logical_error_rate * (1 - logical_error_rate) / run_count)
+    # std = np.sqrt(logical_error_rate * (1 - logical_error_rate) / (run_count - 1))
+    stderr = np.std(outcomes, ddof=1) / np.sqrt(run_count) 
 
     print(f"Decoder {run_label} finished in {runtime:.2f} seconds with {logical_error} failures out of {run_count} runs.")
-    print(f"Logical error rate for {run_label}: {logical_error_rate} ± {std:.4f} (std)")
+    print(f"Logical error rate for {run_label}: {logical_error_rate} ± {stderr:.7f} (stderr)")
 
-    return logical_error_rate, std, runtime
+    return logical_error_rate, stderr, runtime
 
 if __name__ == "__main__":
     from basic_css_code import toric_code_matrices
