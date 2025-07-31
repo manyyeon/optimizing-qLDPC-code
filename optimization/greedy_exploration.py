@@ -39,7 +39,7 @@ if __name__ == '__main__':
     output_file = args.output_file
     print(f"Exploring code family {codes[C]} with {N} iterations and {p} noise level with MC_budget = {MC_budget}.")
 
-    bp_max_iter = 4
+    bp_max_iter = None
     # osd_order = 60
     osd_order = 2
     ms_scaling_factor = 0.625
@@ -50,6 +50,7 @@ if __name__ == '__main__':
     # Initialize the rw with the corresponding initial state. 
     initial_state = load_tanner_graph(path_to_initial_codes + textfiles[C])
 
+    decoding_runtimes = []
     min_cost = np.inf
     min_state = None
 
@@ -72,6 +73,7 @@ if __name__ == '__main__':
     neighbor = State(nx.MultiGraph(), {})
 
     original_cost = current.cost_result['logical_error_rate']
+    decoding_runtimes.append(current.cost_result['runtime'])
 
     # greedy exploration loop:
     for i in range(N):
@@ -99,6 +101,7 @@ if __name__ == '__main__':
                 'std': neighbor_cost_result['stds'][0],
                 'runtime': neighbor_cost_result['runtimes'][0]
             }
+            decoding_runtimes.append(neighbor.cost_result['runtime'])
             
             # If the neighbor is better than the current state, we choose it as the next state
             if neighbor.cost_result['logical_error_rate'] < current.cost_result['logical_error_rate']:
@@ -144,6 +147,10 @@ if __name__ == '__main__':
         if "logical_error_rates_std" in grp:
             del grp["logical_error_rates_std"]
         grp.create_dataset("logical_error_rates_std", data=stds)
+
+        if "runtimes" in grp:
+            del grp["runtimes"]
+        grp.create_dataset("runtimes", data=decoding_runtimes)
 
     print(f"Results saved to {output_file}")
     print(f"Exploration finished for code family {codes[C]}.")
