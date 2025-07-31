@@ -16,7 +16,7 @@ MC_budget = int(1e5)
 
 # names = ["PEG_codes", "SA_codes", "PS_codes", "PE_codes"]
 names = ["PEG_codes"]
-output_file = "optimization/results/analysis_original_state.hdf5"
+output_file = "optimization/results/analysis_original_state_2.hdf5"
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     logical_error_rates = cost_result['logical_error_rates']
     runtimes = cost_result['runtimes']
-    stds = cost_result['stds']
+    stderrs = cost_result['stderrs']
 
     original_state_edge_list = parse_edgelist(original_state)
 
@@ -60,7 +60,7 @@ if __name__ == '__main__':
 
         if 'logical_error_rates_std' in grp:
             del grp['logical_error_rates_std']
-        grp.create_dataset("logical_error_rates_std", data=stds)
+        grp.create_dataset("logical_error_rates_stderr", data=stderrs)
 
         if 'runtimes' in grp:
             del grp['runtimes']

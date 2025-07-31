@@ -12,12 +12,12 @@ import numpy as np
 
 grpname = codes
 p_vals = np.logspace(-2, -1, 20)
-MC_budget = int(1e5)
+MC_budget = int(1e6)
 
 # names = ["PEG_codes", "SA_codes", "PS_codes", "PE_codes"]
 names = ["PEG_codes"]
-input_file = "optimization/results/greedy_exploration_run8.hdf5"
-output_file = "optimization/results/analysis_best_from_greedy_bpmaxiter2.hdf5"
+input_file = "optimization/results/greedy_exploration_bpmaxiter_62_run4.hdf5"
+output_file = "optimization/results/analysis_best_from_greedy_bpmaxiter_62_run4_2_MC_1e6.hdf5"
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -36,7 +36,7 @@ if __name__ == '__main__':
         best_state = from_edgelist(best_state_edge_list)
 
     cost_result = compute_decoding_performance_from_state(best_state, p_vals, MC_budget, 
-                                                            bp_max_iter=2, run_label="Best state from Greedy Exploration")
+                                                            bp_max_iter=None, run_label="Best state from Greedy Exploration")
 
     logical_error_rates = np.row_stack(cost_result['logical_error_rates'], dtype=np.float64)
 
@@ -52,9 +52,9 @@ if __name__ == '__main__':
             del grp['logical_error_rates']
         grp.create_dataset("logical_error_rates", data=logical_error_rates)
 
-        if 'logical_error_rates_std' in grp:
-            del grp['logical_error_rates_std']
-        grp.create_dataset("logical_error_rates_std", data=cost_result['stds'])
+        if 'logical_error_rates_stderr' in grp:
+            del grp['logical_error_rates_stderr']
+        grp.create_dataset("logical_error_rates_stderr", data=cost_result['stderrs'])
 
         if 'runtimes' in grp:
             del grp['runtimes']

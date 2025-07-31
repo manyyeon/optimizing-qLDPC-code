@@ -40,7 +40,7 @@ def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.nda
     Lx, Lz = get_logical_operators_by_pivoting(Hx, Hz)
 
     logical_error_rates = []
-    stds = []
+    stderrs = []
     runtimes = []
 
     print(f"BP max iterations: {bp_max_iter}, OSD order: {osd_order}, MS scaling factor: {ms_scaling_factor}")
@@ -59,15 +59,15 @@ def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.nda
             osd_order=osd_order,
         )
 
-        logical_error_rate, std, runtime = compute_logical_error_rate(Hz, Lz, p, run_count=MC_budget, DECODER=bp_osd_decoder, run_label=run_label, DEBUG=False)
+        logical_error_rate, stderr, runtime = compute_logical_error_rate(Hz, Lz, p, run_count=MC_budget, DECODER=bp_osd_decoder, run_label=run_label, DEBUG=False)
         print(f"Logical error rate for p={p}: {logical_error_rate}")
         
         logical_error_rates.append(logical_error_rate)
-        stds.append(std)
+        stderrs.append(stderr)
         runtimes.append(runtime)
 
     return {
         "logical_error_rates": logical_error_rates,
-        "stds": stds,
+        "stderrs": stderrs,
         "runtimes": runtimes
     }

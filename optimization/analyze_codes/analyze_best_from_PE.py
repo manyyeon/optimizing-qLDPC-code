@@ -13,10 +13,10 @@ import numpy as np
 
 grpname = codes
 p_vals = np.logspace(-2, -1, 20)
-MC_budget = int(1e5)
+MC_budget = int(1e6)
 
 input_file_path = "optimization/results/best_from_random_walk.hdf5"
-output_file_path = "optimization/results/analysis_best_from_random_walk.hdf5"
+output_file_path = "optimization/results/analysis_best_from_random_walk_MC_1e6.hdf5"
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -51,9 +51,9 @@ if __name__ == '__main__':
             del grp["logical_error_rates"]
         grp.create_dataset("logical_error_rates", data=logical_error_rates)
 
-        if "logical_error_rates_std" in grp:
-            del grp["logical_error_rates_std"]
-        grp.create_dataset("logical_error_rates_std", data=cost_result['stds'])
+        if "logical_error_rates_stderr" in grp:
+            del grp["logical_error_rates_stderr"]
+        grp.create_dataset("logical_error_rates_stderr", data=cost_result['stderrs'])
 
         if "runtimes" in grp:
             del grp["runtimes"]
