@@ -11,21 +11,21 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from optimization.analyze_codes.decoder_performance_from_state import compute_decoding_performance_from_state
-from optimization.experiments_settings import generate_neighbor_highlight, load_tanner_graph, parse_edgelist
+from optimization.experiments_settings import generate_neighbor_highlight, from_edgelist, load_tanner_graph, parse_edgelist
 from optimization.experiments_settings import codes, path_to_initial_codes, textfiles
 from optimization.experiments_settings import MC_budget, noise_levels
 
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (8, 30)]
 
-output_file = "optimization/results/random_exploration.hdf5"
+output_file = "optimization/results/random_walk.hdf5"
 
 if __name__ == '__main__':
     # Parse args: basically just a flag indicating the code family to explore. 
     # Optionally: args for the noise level to choose the cost function, 
     # the number of neighbors to explore, the length of the random walk. 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-C', action="store", dest='C', default=0, type=int, required=False)
+    parser.add_argument('-C', action="store", dest='C', default=3, type=int, required=False)
     parser.add_argument('-N', action="store", dest='N', default=None, type=int, required=False)
     parser.add_argument('-L', action="store", dest='L', default=None, type=int, required=False)
     parser.add_argument('-p', action="store", dest='p', default=None, type=float, required=False)
@@ -49,6 +49,14 @@ if __name__ == '__main__':
 
     # Initialize the rw with the corresponding initial state. 
     initial_state = load_tanner_graph(path_to_initial_codes + textfiles[C])
+
+    # input_file = "optimization/results/random_walk.hdf5"
+    # with h5py.File(input_file, 'r') as f:
+    #     best_state_edge_list = f[codes[C]]['best_state'][:][0]
+    # best_state = from_edgelist(best_state_edge_list)
+    # print(f"See neighbors of the best state found from previous random walk")
+
+    # initial_state = best_state
 
     print(f"Exploring code family {codes[C]} with {N} neighbors and {L} iterations.")
 
@@ -74,7 +82,7 @@ if __name__ == '__main__':
         
         logical_error_rate = cost_result['logical_error_rates'][0]
         decoding_runtime = cost_result['runtimes'][0]
-        std = cost_result['stds'][0]
+        std = cost_result['stderrs'][0]
         
         decoding_runtimes.append(decoding_runtime)
 
@@ -101,7 +109,7 @@ if __name__ == '__main__':
             cost_result = compute_decoding_performance_from_state(state=neighbor, p_vals=[p], MC_budget=MC_budget)
             logical_error_rate = cost_result['logical_error_rates'][0]
             decoding_runtime = cost_result['runtimes'][0]
-            std = cost_result['stds'][0]
+            std = cost_result['stderrs'][0]
 
             decoding_runtimes.append(decoding_runtime)
 
