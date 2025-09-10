@@ -58,8 +58,8 @@ if __name__ == '__main__':
             del grp['logical_error_rates']
         grp.create_dataset("logical_error_rates", data=logical_error_rates)
 
-        if 'logical_error_rates_std' in grp:
-            del grp['logical_error_rates_std']
+        if 'logical_error_rates_stderr' in grp:
+            del grp['logical_error_rates_stderr']
         grp.create_dataset("logical_error_rates_stderr", data=stderrs)
 
         if 'runtimes' in grp:
