@@ -12,10 +12,12 @@ import argparse
 import numpy as np
 
 grpname = codes
-p_vals = np.logspace(-2, -1, 20)
+# p_vals = np.logspace(-2, -1, 20)
+p_vals = [0.03]
 MC_budget = int(1e6)
 
-input_file_path = "optimization/results/best_from_random_walk.hdf5"
+# input_file_path = "optimization/results/best_from_random_walk.hdf5"
+input_file_path = "optimization/results/random_walk.hdf5"
 output_file_path = "optimization/results/analysis_best_from_random_walk_MC_1e6.hdf5"
 
 if __name__ == '__main__':
@@ -29,9 +31,9 @@ if __name__ == '__main__':
     fn_data = {}
 
     with h5py.File(input_file_path, 'r') as f:
-        best_state_edge_list, _ = min(((s, v) for s, v in zip(f[grpname[C]]['states'], f[grpname[C]]['values'])), key=lambda x: x[1])
-        index_of_min = np.argmin(f[grpname[C]]['values'])
-        print(f"Minimum logical error rate found in state {index_of_min} with value {f[grpname[C]]['values'][index_of_min][0]}")
+        best_state_edge_list, _ = min(((s, v) for s, v in zip(f[grpname[C]]['states'], f[grpname[C]]['logical_error_rates'])), key=lambda x: x[1])
+        index_of_min = np.argmin(f[grpname[C]]['logical_error_rates'])
+        print(f"Minimum logical error rate found in state {index_of_min} with value {f[grpname[C]]['logical_error_rates'][index_of_min][0]}")
         best_state = from_edgelist(best_state_edge_list)
 
     cost_result = compute_decoding_performance_from_state(best_state, p_vals, MC_budget, bp_max_iter=None, run_label="Best state from Random Walk Exploration")
