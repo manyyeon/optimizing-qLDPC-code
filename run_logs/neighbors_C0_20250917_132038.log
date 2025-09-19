@@ -1,0 +1,313 @@
+C = 0, N = 50, L = 1, p = 0.03
+Minimum logical error rate found in state 33 with value 0.00378
+Exploring code family [625,25] with 50 neighbors and 1 iterations.
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.68 seconds with 361 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00361 ± 0.0001897 (stderr)
+Logical error rate for p=0.03: 0.00361
+Iteration 1/1: cost of current state = 0.003610, decoding time = 72.681853 seconds
+Found minimum in iteration 1/1: 0.003610 in chosen state
+Exploring neighbor 1/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.04 seconds with 1778 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01778 ± 0.0004179 (stderr)
+Logical error rate for p=0.03: 0.01778
+Exploring neighbor 2/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.39 seconds with 1283 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01283 ± 0.0003559 (stderr)
+Logical error rate for p=0.03: 0.01283
+Exploring neighbor 3/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.02 seconds with 1007 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01007 ± 0.0003157 (stderr)
+Logical error rate for p=0.03: 0.01007
+Exploring neighbor 4/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 63.73 seconds with 565 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00565 ± 0.0002370 (stderr)
+Logical error rate for p=0.03: 0.00565
+Exploring neighbor 5/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.09 seconds with 6111 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06111 ± 0.0007575 (stderr)
+Logical error rate for p=0.03: 0.06111
+Exploring neighbor 6/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.10 seconds with 1935 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01935 ± 0.0004356 (stderr)
+Logical error rate for p=0.03: 0.01935
+Exploring neighbor 7/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.70 seconds with 969 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00969 ± 0.0003098 (stderr)
+Logical error rate for p=0.03: 0.00969
+Exploring neighbor 8/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 86.22 seconds with 933 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00933 ± 0.0003040 (stderr)
+Logical error rate for p=0.03: 0.00933
+Exploring neighbor 9/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.20 seconds with 1071 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01071 ± 0.0003255 (stderr)
+Logical error rate for p=0.03: 0.01071
+Exploring neighbor 10/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.18 seconds with 368 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00368 ± 0.0001915 (stderr)
+Logical error rate for p=0.03: 0.00368
+Exploring neighbor 11/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.11 seconds with 892 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00892 ± 0.0002973 (stderr)
+Logical error rate for p=0.03: 0.00892
+Exploring neighbor 12/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.93 seconds with 5851 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05851 ± 0.0007422 (stderr)
+Logical error rate for p=0.03: 0.05851
+Exploring neighbor 13/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.40 seconds with 953 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00953 ± 0.0003072 (stderr)
+Logical error rate for p=0.03: 0.00953
+Exploring neighbor 14/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.57 seconds with 555 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00555 ± 0.0002349 (stderr)
+Logical error rate for p=0.03: 0.00555
+Exploring neighbor 15/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.13 seconds with 375 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00375 ± 0.0001933 (stderr)
+Logical error rate for p=0.03: 0.00375
+Exploring neighbor 16/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.36 seconds with 374 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00374 ± 0.0001930 (stderr)
+Logical error rate for p=0.03: 0.00374
+Exploring neighbor 17/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.98 seconds with 949 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00949 ± 0.0003066 (stderr)
+Logical error rate for p=0.03: 0.00949
+Exploring neighbor 18/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.41 seconds with 375 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00375 ± 0.0001933 (stderr)
+Logical error rate for p=0.03: 0.00375
+Exploring neighbor 19/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 92.21 seconds with 424 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00424 ± 0.0002055 (stderr)
+Logical error rate for p=0.03: 0.00424
+Exploring neighbor 20/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.75 seconds with 381 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00381 ± 0.0001948 (stderr)
+Logical error rate for p=0.03: 0.00381
+Exploring neighbor 21/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.28 seconds with 5811 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05811 ± 0.0007398 (stderr)
+Logical error rate for p=0.03: 0.05811
+Exploring neighbor 22/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 80.14 seconds with 915 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00915 ± 0.0003011 (stderr)
+Logical error rate for p=0.03: 0.00915
+Exploring neighbor 23/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.77 seconds with 539 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00539 ± 0.0002315 (stderr)
+Logical error rate for p=0.03: 0.00539
+Exploring neighbor 24/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 87.36 seconds with 956 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00956 ± 0.0003077 (stderr)
+Logical error rate for p=0.03: 0.00956
+Exploring neighbor 25/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 82.49 seconds with 1571 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01571 ± 0.0003932 (stderr)
+Logical error rate for p=0.03: 0.01571
+Exploring neighbor 26/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.33 seconds with 904 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00904 ± 0.0002993 (stderr)
+Logical error rate for p=0.03: 0.00904
+Exploring neighbor 27/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.06 seconds with 1555 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01555 ± 0.0003913 (stderr)
+Logical error rate for p=0.03: 0.01555
+Exploring neighbor 28/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.39 seconds with 1043 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01043 ± 0.0003213 (stderr)
+Logical error rate for p=0.03: 0.01043
+Exploring neighbor 29/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 83.38 seconds with 957 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00957 ± 0.0003079 (stderr)
+Logical error rate for p=0.03: 0.00957
+Exploring neighbor 30/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.49 seconds with 498 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00498 ± 0.0002226 (stderr)
+Logical error rate for p=0.03: 0.00498
+Exploring neighbor 31/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 85.38 seconds with 610 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0061 ± 0.0002462 (stderr)
+Logical error rate for p=0.03: 0.0061
+Exploring neighbor 32/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.60 seconds with 1047 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01047 ± 0.0003219 (stderr)
+Logical error rate for p=0.03: 0.01047
+Exploring neighbor 33/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.40 seconds with 5681 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05681 ± 0.0007320 (stderr)
+Logical error rate for p=0.03: 0.05681
+Exploring neighbor 34/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.66 seconds with 1460 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0146 ± 0.0003793 (stderr)
+Logical error rate for p=0.03: 0.0146
+Exploring neighbor 35/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.63 seconds with 887 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00887 ± 0.0002965 (stderr)
+Logical error rate for p=0.03: 0.00887
+Exploring neighbor 36/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.13 seconds with 1091 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01091 ± 0.0003285 (stderr)
+Logical error rate for p=0.03: 0.01091
+Exploring neighbor 37/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.06 seconds with 574 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00574 ± 0.0002389 (stderr)
+Logical error rate for p=0.03: 0.00574
+Exploring neighbor 38/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 83.40 seconds with 829 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00829 ± 0.0002867 (stderr)
+Logical error rate for p=0.03: 0.00829
+Exploring neighbor 39/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.45 seconds with 1347 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01347 ± 0.0003645 (stderr)
+Logical error rate for p=0.03: 0.01347
+Exploring neighbor 40/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.14 seconds with 327 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00327 ± 0.0001805 (stderr)
+Logical error rate for p=0.03: 0.00327
+Found minimum in neighbor 40/49 of iteration 1/1: 0.003270
+Exploring neighbor 41/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.14 seconds with 495 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00495 ± 0.0002219 (stderr)
+Logical error rate for p=0.03: 0.00495
+Exploring neighbor 42/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.24 seconds with 1079 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01079 ± 0.0003267 (stderr)
+Logical error rate for p=0.03: 0.01079
+Exploring neighbor 43/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.80 seconds with 447 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00447 ± 0.0002110 (stderr)
+Logical error rate for p=0.03: 0.00447
+Exploring neighbor 44/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 93.86 seconds with 5786 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05786 ± 0.0007383 (stderr)
+Logical error rate for p=0.03: 0.05786
+Exploring neighbor 45/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.09 seconds with 361 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00361 ± 0.0001897 (stderr)
+Logical error rate for p=0.03: 0.00361
+Exploring neighbor 46/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.16 seconds with 358 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00358 ± 0.0001889 (stderr)
+Logical error rate for p=0.03: 0.00358
+Exploring neighbor 47/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.64 seconds with 930 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0093 ± 0.0003035 (stderr)
+Logical error rate for p=0.03: 0.0093
+Exploring neighbor 48/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.44 seconds with 520 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0052 ± 0.0002274 (stderr)
+Logical error rate for p=0.03: 0.0052
+Exploring neighbor 49/49 of iteration 1/1...
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 90.02 seconds with 435 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00435 ± 0.0002081 (stderr)
+Logical error rate for p=0.03: 0.00435
+Minimum cost found: 0.003270 in state [ 0 19  0 22  0 29  0 33  1 19  1 24  1 25  1 28  2 18  2 18  2 19  2 31
+  2 32  3 15  3 16  3 22  3 34  4 26  4 26  4 30  4 34  5 16  5 22  5 24
+  5 27  6 17  6 28  6 29  6 29  7 17  7 18  7 31  7 33  8 17  8 20  8 20
+  8 25  9 21  9 26  9 32  9 34 10 15 10 23 10 30 10 33 11 16 11 20 11 21
+ 11 28 12 23 12 27 12 30 12 32 13 21 13 24 13 27 13 31 14 15 14 23 14 25]
+Average decoding runtime per state: 76.402855 seconds
+Random exploration finished in 3850.04 seconds.
+Results saved to optimization/results/neighbors_of_best_state_from_random_walk_N50_under_erasure_channel.hdf5 for code family [625,25].
