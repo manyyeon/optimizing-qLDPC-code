@@ -10,22 +10,23 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from optimization.analyze_codes.decoder_performance_from_state import compute_decoding_performance_from_state
+from optimization.analyze_codes.decoder_performance_from_state import evaluate_performance_of_state
 from optimization.experiments_settings import generate_neighbor_highlight, from_edgelist, load_tanner_graph, parse_edgelist
 from optimization.experiments_settings import codes, path_to_initial_codes, textfiles
 from optimization.experiments_settings import MC_budget, noise_levels
+from optimization.compute_code_parameters import compute_code_parameters
 
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
-exploration_params = [(24, 40), (15, 70), (12, 40), (8, 30)]
+exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/random_walk.hdf5"
+output_file = "optimization/results/random_walk_with_distance.hdf5"
 
 if __name__ == '__main__':
     # Parse args: basically just a flag indicating the code family to explore. 
     # Optionally: args for the noise level to choose the cost function, 
     # the number of neighbors to explore, the length of the random walk. 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-C', action="store", dest='C', default=3, type=int, required=False)
+    parser.add_argument('-C', action="store", dest='C', default=0, type=int, required=False)
     parser.add_argument('-N', action="store", dest='N', default=None, type=int, required=False)
     parser.add_argument('-L', action="store", dest='L', default=None, type=int, required=False)
     parser.add_argument('-p', action="store", dest='p', default=None, type=float, required=False)
@@ -67,6 +68,9 @@ if __name__ == '__main__':
     best_gain = 0.0
     original_cost = None
 
+    distances_classical = []
+    distances_quantum = []
+
     start_time = time.time()
 
     # Random Walk loop:
@@ -78,12 +82,14 @@ if __name__ == '__main__':
         else:
             state = initial_state
 
-        cost_result = compute_decoding_performance_from_state(state=state, p_vals=[p], MC_budget=MC_budget)
+        cost_result = evaluate_performance_of_state(state=state, p_vals=[p], MC_budget=MC_budget)
         
         logical_error_rate = cost_result['logical_error_rates'][0]
         decoding_runtime = cost_result['runtimes'][0]
         std = cost_result['stderrs'][0]
-        
+
+        distances_classical.append(cost_result['d_classical'])
+        distances_quantum.append(cost_result['d_quantum'])
         decoding_runtimes.append(decoding_runtime)
 
         if l == 0: # initial state
@@ -106,11 +112,14 @@ if __name__ == '__main__':
             print(f"Exploring neighbor {n+1}/{N-1} of iteration {l+1}/{L}...")
             neighbor, old_edges, new_edges = generate_neighbor_highlight(state)
             # print(f"Old edges: {old_edges}, New edges: {new_edges}")
-            cost_result = compute_decoding_performance_from_state(state=neighbor, p_vals=[p], MC_budget=MC_budget)
+
+            cost_result = evaluate_performance_of_state(state=neighbor, p_vals=[p], MC_budget=MC_budget)
             logical_error_rate = cost_result['logical_error_rates'][0]
             decoding_runtime = cost_result['runtimes'][0]
             std = cost_result['stderrs'][0]
 
+            distances_classical.append(cost_result['d_classical'])
+            distances_quantum.append(cost_result['d_quantum'])
             decoding_runtimes.append(decoding_runtime)
 
             if logical_error_rate < min_cost:
@@ -148,6 +157,10 @@ if __name__ == '__main__':
         grp.attrs['original_cost'] = original_cost
         grp.attrs['min_cost'] = min_cost
         grp.attrs['best_gain'] = best_gain
+        grp.attrs['N'] = N
+        grp.attrs['L'] = L
+        grp.attrs['osd_order'] = osd_order
+        grp.attrs['ms_scaling_factor'] = ms_scaling_factor
 
         if "best_state" in grp:
             del grp["best_state"]
@@ -164,6 +177,14 @@ if __name__ == '__main__':
         if "logical_error_rates_std" in grp:
             del grp["logical_error_rates_std"]
         grp.create_dataset("logical_error_rates_std", data=stds)
+
+        if "distances_classical" in grp:
+            del grp["distances_classical"]
+        grp.create_dataset("distances_classical", data=distances_classical)
+
+        if "distances_quantum" in grp:
+            del grp["distances_quantum"]
+        grp.create_dataset("distances_quantum", data=distances_quantum)
 
         if "decoding_runtimes" in grp:
             del grp["decoding_runtimes"]
