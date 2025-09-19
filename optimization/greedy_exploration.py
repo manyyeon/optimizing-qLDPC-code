@@ -8,7 +8,7 @@ import sys
 import os
 import networkx as nx
 
-from analyze_codes.decoder_performance_from_state import compute_decoding_performance_from_state
+from analyze_codes.decoder_performance_from_state import evaluate_performance_of_state
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
     start_time = time.time()
 
-    cost_fn = lambda state: compute_decoding_performance_from_state(
+    cost_fn = lambda state: evaluate_performance_of_state(
         state=state, p_vals=[p], MC_budget=MC_budget, bp_max_iter=bp_max_iter, run_label=f"Greedy exploration {codes[C]}"
     )
 

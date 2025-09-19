@@ -5,7 +5,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(
 
 from optimization.experiments_settings import codes, load_tanner_graph, parse_edgelist
 from optimization.experiments_settings import MC_budget, p_vals, path_to_initial_codes, textfiles
-from optimization.analyze_codes.decoder_performance_from_state import compute_decoding_performance_from_state
+from optimization.analyze_codes.decoder_performance_from_state import evaluate_performance_of_state
 import h5py
 import argparse
 import numpy as np
@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     original_state = load_tanner_graph(path_to_initial_codes + textfiles[C])
 
-    cost_result = compute_decoding_performance_from_state(original_state, p_vals, MC_budget)
+    cost_result = evaluate_performance_of_state(original_state, p_vals, MC_budget)
 
     logical_error_rates = cost_result['logical_error_rates']
     runtimes = cost_result['runtimes']

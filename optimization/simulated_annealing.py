@@ -18,7 +18,7 @@ from experiments_settings import codes, path_to_initial_codes, textfiles
 from experiments_settings import MC_budget, noise_levels
 
 
-from optimization.analyze_codes.decoder_performance_from_state import compute_decoding_performance_from_state
+from optimization.analyze_codes.decoder_performance_from_state import evaluate_performance_of_state
 
 from state import State
 
@@ -137,7 +137,7 @@ if __name__ == '__main__':
     initial_state = load_tanner_graph(path_to_initial_codes+textfiles[C])
 
     # Define cost and scheduling functions
-    cost_fn = lambda s: compute_decoding_performance_from_state(s, [p], MC_budget, run_label=f"Simulated Annealing")
+    cost_fn = lambda s: evaluate_performance_of_state(s, [p], MC_budget, run_label=f"Simulated Annealing")
     sched_fn = lambda t: arctan_diff_schedule(t, coef=sim_ann_params['beta'])
 
     # Run Simulated Annealing

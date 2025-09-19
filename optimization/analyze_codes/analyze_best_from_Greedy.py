@@ -5,7 +5,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(
 
 from optimization.experiments_settings import codes, from_edgelist, load_tanner_graph, parse_edgelist
 from optimization.experiments_settings import MC_budget, p_vals, path_to_initial_codes, textfiles
-from optimization.analyze_codes.decoder_performance_from_state import compute_decoding_performance_from_state
+from optimization.analyze_codes.decoder_performance_from_state import evaluate_performance_of_state
 import h5py
 import argparse
 import numpy as np
@@ -35,7 +35,7 @@ if __name__ == '__main__':
         print(f"Minimum logical error rate found in state {index_of_min} with value {f[grpname[C]]['logical_error_rates'][index_of_min][0]}")
         best_state = from_edgelist(best_state_edge_list)
 
-    cost_result = compute_decoding_performance_from_state(best_state, p_vals, MC_budget, 
+    cost_result = evaluate_performance_of_state(best_state, p_vals, MC_budget, 
                                                             bp_max_iter=None, run_label="Best state from Greedy Exploration")
 
     logical_error_rates = np.row_stack(cost_result['logical_error_rates'], dtype=np.float64)

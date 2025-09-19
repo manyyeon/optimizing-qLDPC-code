@@ -7,12 +7,15 @@ from optimization.experiments_settings import tanner_graph_to_parity_check_matri
 import numpy as np
 
 import networkx as nx
+from scipy.sparse import csr_matrix
 
+import ldpc
+import ldpc.code_util
 from ldpc.bposd_decoder import BpOsdDecoder
 from logical_operators import get_logical_operators_by_pivoting
 from decoder_performance import compute_logical_error_rate
 
-def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Random walk") -> dict:
+def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Random walk") -> dict:
     """
     Evaluate the decoding performance (logical error rates) of a given state.
     Parameters:
@@ -27,8 +30,20 @@ def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.nda
     """
     H = tanner_graph_to_parity_check_matrix(state)
 
+    n_classical, k_classical, d_classical = ldpc.code_util.compute_code_parameters(csr_matrix(H, dtype=np.uint8))
+    print(f"Code parameters: n={n_classical}, k={k_classical}, d={d_classical}")
+
     # H.data = np.where(np.asarray(H.data) > 0, 1, 0)
     Hx, Hz = construct_HGP_code (H)
+    kx = ldpc.code_util.compute_code_dimension(csr_matrix(Hx, dtype=np.uint8))
+    kz = ldpc.code_util.compute_code_dimension(csr_matrix(Hz, dtype=np.uint8))
+    nx, kx, dx = ldpc.code_util.compute_code_parameters(csr_matrix(Hx, dtype=np.uint8))
+    nz, kz, dz = ldpc.code_util.compute_code_parameters(csr_matrix(Hz, dtype=np.uint8))
+    print(f"CSS Code parameters: nx={nx}, kx={kx}, nz={nz}, kz={kz}, dx={dx}, dz={dz}")
+
+    n_quantum, k_quantum = nx, kx
+    d_quantum = min(dx, dz)
+    print(f"Quantum Code parameters: n={n_quantum}, k={k_quantum}, d={d_quantum}")
 
     if bp_max_iter is None:
         bp_max_iter = int(Hx.shape[1]/10)
@@ -69,5 +84,11 @@ def compute_decoding_performance_from_state(state: nx.MultiGraph, p_vals: np.nda
     return {
         "logical_error_rates": logical_error_rates,
         "stderrs": stderrs,
+        "n_classical": n_classical,
+        "k_classical": k_classical,
+        "d_classical": d_classical,
+        "n_quantum": n_quantum,
+        "k_quantum": k_quantum,
+        "d_quantum": d_quantum,
         "runtimes": runtimes
     }

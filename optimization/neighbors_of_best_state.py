@@ -10,7 +10,7 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from optimization.analyze_codes.decoder_performance_from_state import compute_decoding_performance_from_state
+from optimization.analyze_codes.decoder_performance_from_state import evaluate_performance_of_state
 from optimization.experiments_settings import generate_neighbor_highlight, from_edgelist, load_tanner_graph, parse_edgelist
 from optimization.experiments_settings import codes, path_to_initial_codes, textfiles
 from optimization.experiments_settings import MC_budget, noise_levels
@@ -57,20 +57,20 @@ if __name__ == '__main__':
     # print(f"See neighbors of the best state found from previous random walk")
 
     # best state from random walk under erasure channel
-    # input_file = "optimization/results/exploration.hdf5"
-    # with h5py.File(input_file, 'r') as f:
-    #     best_state_edge_list, _ = min(((s, v) for s, v in zip(f[grpname[C]]['states'], f[grpname[C]]['values'])), key=lambda x: x[1])
-    #     index_of_min = np.argmin(f[grpname[C]]['values'])
-    #     print(f"Minimum logical error rate found in state {index_of_min} with value {f[grpname[C]]['values'][index_of_min][0]}")
-    #     best_state = from_edgelist(best_state_edge_list)
+    input_file = "optimization/results/exploration.hdf5"
+    with h5py.File(input_file, 'r') as f:
+        best_state_edge_list, _ = min(((s, v) for s, v in zip(f[grpname[C]]['states'], f[grpname[C]]['values'])), key=lambda x: x[1])
+        index_of_min = np.argmin(f[grpname[C]]['values'])
+        print(f"Minimum logical error rate found in state {index_of_min} with value {f[grpname[C]]['values'][index_of_min][0]}")
+        best_state = from_edgelist(best_state_edge_list)
     
     # best state from random walk under bit-flip channel (BP+OSD)/ from 2nd neighbors_of_best_state
-    input_file = "optimization/results/neighbors_of_best_state_from_random_walk_N50_under_erasure_channel.hdf5"
-    with h5py.File(input_file, 'r') as f:
-        best_state_edge_list, _ = min(((s, v) for s, v in zip(f[grpname[C]]['states'], f[grpname[C]]['logical_error_rates'])), key=lambda x: x[1])
-        index_of_min = np.argmin(f[grpname[C]]['logical_error_rates'])
-        print(f"Minimum logical error rate found in state {index_of_min} with value {f[grpname[C]]['logical_error_rates'][index_of_min][0]}")
-        best_state = from_edgelist(best_state_edge_list)
+    # input_file = "optimization/results/neighbors_of_best_state_from_random_walk_N50_under_erasure_channel.hdf5"
+    # with h5py.File(input_file, 'r') as f:
+    #     best_state_edge_list, _ = min(((s, v) for s, v in zip(f[grpname[C]]['states'], f[grpname[C]]['logical_error_rates'])), key=lambda x: x[1])
+    #     index_of_min = np.argmin(f[grpname[C]]['logical_error_rates'])
+    #     print(f"Minimum logical error rate found in state {index_of_min} with value {f[grpname[C]]['logical_error_rates'][index_of_min][0]}")
+    #     best_state = from_edgelist(best_state_edge_list)
 
     initial_state = best_state
 
@@ -94,7 +94,7 @@ if __name__ == '__main__':
         else:
             state = initial_state
 
-        cost_result = compute_decoding_performance_from_state(state=state, p_vals=[p], MC_budget=MC_budget)
+        cost_result = evaluate_performance_of_state(state=state, p_vals=[p], MC_budget=MC_budget)
         
         logical_error_rate = cost_result['logical_error_rates'][0]
         decoding_runtime = cost_result['runtimes'][0]
@@ -122,7 +122,7 @@ if __name__ == '__main__':
             print(f"Exploring neighbor {n+1}/{N-1} of iteration {l+1}/{L}...")
             neighbor, old_edges, new_edges = generate_neighbor_highlight(state)
             # print(f"Old edges: {old_edges}, New edges: {new_edges}")
-            cost_result = compute_decoding_performance_from_state(state=neighbor, p_vals=[p], MC_budget=MC_budget)
+            cost_result = evaluate_performance_of_state(state=neighbor, p_vals=[p], MC_budget=MC_budget)
             logical_error_rate = cost_result['logical_error_rates'][0]
             decoding_runtime = cost_result['runtimes'][0]
             std = cost_result['stderrs'][0]
