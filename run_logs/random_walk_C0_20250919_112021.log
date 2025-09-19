@@ -1,0 +1,2596 @@
+C = 0, N = 24, L = 40, p = 0.03
+Exploring code family [625,25] with 24 neighbors and 40 iterations.
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 57.00 seconds with 1202 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01202 ± 0.0003446 (stderr)
+Logical error rate for p=0.03: 0.01202
+Iteration 1/40: cost of current state = 0.012020, decoding time = 57.003915 seconds
+Found minimum in iteration 1/40: 0.012020 in chosen state
+Exploring neighbor 1/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=7
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=7, dz=7
+Quantum Code parameters: n=625, k=325, d=7
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 61.18 seconds with 725 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00725 ± 0.0002683 (stderr)
+Logical error rate for p=0.03: 0.00725
+Found minimum in neighbor 1/23 of iteration 1/40: 0.007250
+Exploring neighbor 2/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 60.25 seconds with 1195 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01195 ± 0.0003436 (stderr)
+Logical error rate for p=0.03: 0.01195
+Exploring neighbor 3/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 59.40 seconds with 1729 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01729 ± 0.0004122 (stderr)
+Logical error rate for p=0.03: 0.01729
+Exploring neighbor 4/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.33 seconds with 2461 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02461 ± 0.0004899 (stderr)
+Logical error rate for p=0.03: 0.02461
+Exploring neighbor 5/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=7, dz=8
+Quantum Code parameters: n=625, k=325, d=7
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 61.20 seconds with 725 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00725 ± 0.0002683 (stderr)
+Logical error rate for p=0.03: 0.00725
+Exploring neighbor 6/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 59.53 seconds with 1793 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01793 ± 0.0004196 (stderr)
+Logical error rate for p=0.03: 0.01793
+Exploring neighbor 7/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.83 seconds with 1758 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01758 ± 0.0004156 (stderr)
+Logical error rate for p=0.03: 0.01758
+Exploring neighbor 8/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 60.30 seconds with 1254 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01254 ± 0.0003519 (stderr)
+Logical error rate for p=0.03: 0.01254
+Exploring neighbor 9/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.63 seconds with 6651 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06651 ± 0.0007880 (stderr)
+Logical error rate for p=0.03: 0.06651
+Exploring neighbor 10/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.10 seconds with 1359 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01359 ± 0.0003661 (stderr)
+Logical error rate for p=0.03: 0.01359
+Exploring neighbor 11/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.69 seconds with 1257 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01257 ± 0.0003523 (stderr)
+Logical error rate for p=0.03: 0.01257
+Exploring neighbor 12/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 57.88 seconds with 1202 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01202 ± 0.0003446 (stderr)
+Logical error rate for p=0.03: 0.01202
+Exploring neighbor 13/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 59.97 seconds with 1532 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01532 ± 0.0003884 (stderr)
+Logical error rate for p=0.03: 0.01532
+Exploring neighbor 14/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 59.31 seconds with 1203 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01203 ± 0.0003448 (stderr)
+Logical error rate for p=0.03: 0.01203
+Exploring neighbor 15/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=7
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 60.27 seconds with 1213 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01213 ± 0.0003462 (stderr)
+Logical error rate for p=0.03: 0.01213
+Exploring neighbor 16/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 58.57 seconds with 1156 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01156 ± 0.0003380 (stderr)
+Logical error rate for p=0.03: 0.01156
+Exploring neighbor 17/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=5
+Quantum Code parameters: n=625, k=325, d=5
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.72 seconds with 1516 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01516 ± 0.0003864 (stderr)
+Logical error rate for p=0.03: 0.01516
+Exploring neighbor 18/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 59.96 seconds with 1610 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0161 ± 0.0003980 (stderr)
+Logical error rate for p=0.03: 0.0161
+Exploring neighbor 19/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.49 seconds with 1209 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01209 ± 0.0003456 (stderr)
+Logical error rate for p=0.03: 0.01209
+Exploring neighbor 20/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.22 seconds with 2089 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02089 ± 0.0004523 (stderr)
+Logical error rate for p=0.03: 0.02089
+Exploring neighbor 21/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.08 seconds with 2050 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0205 ± 0.0004481 (stderr)
+Logical error rate for p=0.03: 0.0205
+Exploring neighbor 22/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.00 seconds with 1659 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01659 ± 0.0004039 (stderr)
+Logical error rate for p=0.03: 0.01659
+Exploring neighbor 23/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 57.60 seconds with 1189 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01189 ± 0.0003428 (stderr)
+Logical error rate for p=0.03: 0.01189
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.44 seconds with 1210 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0121 ± 0.0003457 (stderr)
+Logical error rate for p=0.03: 0.0121
+Iteration 2/40: cost of current state = 0.012100, decoding time = 65.435999 seconds
+Exploring neighbor 1/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.75 seconds with 2173 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02173 ± 0.0004611 (stderr)
+Logical error rate for p=0.03: 0.02173
+Exploring neighbor 2/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.34 seconds with 1264 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01264 ± 0.0003533 (stderr)
+Logical error rate for p=0.03: 0.01264
+Exploring neighbor 3/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.96 seconds with 6432 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06432 ± 0.0007758 (stderr)
+Logical error rate for p=0.03: 0.06432
+Exploring neighbor 4/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.61 seconds with 1258 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01258 ± 0.0003524 (stderr)
+Logical error rate for p=0.03: 0.01258
+Exploring neighbor 5/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.71 seconds with 6326 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06326 ± 0.0007698 (stderr)
+Logical error rate for p=0.03: 0.06326
+Exploring neighbor 6/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.94 seconds with 2161 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02161 ± 0.0004598 (stderr)
+Logical error rate for p=0.03: 0.02161
+Exploring neighbor 7/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.09 seconds with 1169 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01169 ± 0.0003399 (stderr)
+Logical error rate for p=0.03: 0.01169
+Exploring neighbor 8/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.64 seconds with 1607 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01607 ± 0.0003976 (stderr)
+Logical error rate for p=0.03: 0.01607
+Exploring neighbor 9/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.48 seconds with 2104 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02104 ± 0.0004538 (stderr)
+Logical error rate for p=0.03: 0.02104
+Exploring neighbor 10/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.39 seconds with 1247 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01247 ± 0.0003509 (stderr)
+Logical error rate for p=0.03: 0.01247
+Exploring neighbor 11/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.79 seconds with 1307 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01307 ± 0.0003592 (stderr)
+Logical error rate for p=0.03: 0.01307
+Exploring neighbor 12/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.06 seconds with 6328 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06328 ± 0.0007699 (stderr)
+Logical error rate for p=0.03: 0.06328
+Exploring neighbor 13/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.86 seconds with 797 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00797 ± 0.0002812 (stderr)
+Logical error rate for p=0.03: 0.00797
+Exploring neighbor 14/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.99 seconds with 1090 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0109 ± 0.0003283 (stderr)
+Logical error rate for p=0.03: 0.0109
+Exploring neighbor 15/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.79 seconds with 1174 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01174 ± 0.0003406 (stderr)
+Logical error rate for p=0.03: 0.01174
+Exploring neighbor 16/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=2
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=2, dz=2
+Quantum Code parameters: n=625, k=325, d=2
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 261.11 seconds with 45930 failures out of 100000 runs.
+Logical error rate for Random walk: 0.4593 ± 0.0015759 (stderr)
+Logical error rate for p=0.03: 0.4593
+Exploring neighbor 17/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.99 seconds with 1705 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01705 ± 0.0004094 (stderr)
+Logical error rate for p=0.03: 0.01705
+Exploring neighbor 18/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.96 seconds with 6122 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06122 ± 0.0007581 (stderr)
+Logical error rate for p=0.03: 0.06122
+Exploring neighbor 19/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.37 seconds with 1237 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01237 ± 0.0003495 (stderr)
+Logical error rate for p=0.03: 0.01237
+Exploring neighbor 20/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.40 seconds with 6650 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0665 ± 0.0007879 (stderr)
+Logical error rate for p=0.03: 0.0665
+Exploring neighbor 21/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 83.56 seconds with 6924 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06924 ± 0.0008028 (stderr)
+Logical error rate for p=0.03: 0.06924
+Exploring neighbor 22/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.05 seconds with 1151 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01151 ± 0.0003373 (stderr)
+Logical error rate for p=0.03: 0.01151
+Exploring neighbor 23/23 of iteration 2/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.53 seconds with 1156 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01156 ± 0.0003380 (stderr)
+Logical error rate for p=0.03: 0.01156
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.35 seconds with 1713 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01713 ± 0.0004103 (stderr)
+Logical error rate for p=0.03: 0.01713
+Iteration 3/40: cost of current state = 0.017130, decoding time = 71.354998 seconds
+Exploring neighbor 1/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.58 seconds with 1279 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01279 ± 0.0003553 (stderr)
+Logical error rate for p=0.03: 0.01279
+Exploring neighbor 2/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.29 seconds with 1617 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01617 ± 0.0003989 (stderr)
+Logical error rate for p=0.03: 0.01617
+Exploring neighbor 3/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.66 seconds with 1285 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01285 ± 0.0003562 (stderr)
+Logical error rate for p=0.03: 0.01285
+Exploring neighbor 4/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.99 seconds with 1726 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01726 ± 0.0004119 (stderr)
+Logical error rate for p=0.03: 0.01726
+Exploring neighbor 5/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.10 seconds with 1798 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01798 ± 0.0004202 (stderr)
+Logical error rate for p=0.03: 0.01798
+Exploring neighbor 6/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.02 seconds with 1885 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01885 ± 0.0004301 (stderr)
+Logical error rate for p=0.03: 0.01885
+Exploring neighbor 7/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=5
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.85 seconds with 2062 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02062 ± 0.0004494 (stderr)
+Logical error rate for p=0.03: 0.02062
+Exploring neighbor 8/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.02 seconds with 1002 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01002 ± 0.0003150 (stderr)
+Logical error rate for p=0.03: 0.01002
+Exploring neighbor 9/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.02 seconds with 1246 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01246 ± 0.0003508 (stderr)
+Logical error rate for p=0.03: 0.01246
+Exploring neighbor 10/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 79.80 seconds with 6518 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06518 ± 0.0007806 (stderr)
+Logical error rate for p=0.03: 0.06518
+Exploring neighbor 11/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.00 seconds with 1652 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01652 ± 0.0004031 (stderr)
+Logical error rate for p=0.03: 0.01652
+Exploring neighbor 12/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.33 seconds with 1462 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01462 ± 0.0003796 (stderr)
+Logical error rate for p=0.03: 0.01462
+Exploring neighbor 13/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.49 seconds with 998 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00998 ± 0.0003143 (stderr)
+Logical error rate for p=0.03: 0.00998
+Exploring neighbor 14/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=7
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.46 seconds with 618 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00618 ± 0.0002478 (stderr)
+Logical error rate for p=0.03: 0.00618
+Found minimum in neighbor 14/23 of iteration 3/40: 0.006180
+Exploring neighbor 15/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.65 seconds with 763 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00763 ± 0.0002752 (stderr)
+Logical error rate for p=0.03: 0.00763
+Exploring neighbor 16/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.78 seconds with 1220 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0122 ± 0.0003471 (stderr)
+Logical error rate for p=0.03: 0.0122
+Exploring neighbor 17/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.20 seconds with 6394 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06394 ± 0.0007736 (stderr)
+Logical error rate for p=0.03: 0.06394
+Exploring neighbor 18/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.06 seconds with 1689 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01689 ± 0.0004075 (stderr)
+Logical error rate for p=0.03: 0.01689
+Exploring neighbor 19/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.80 seconds with 1642 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01642 ± 0.0004019 (stderr)
+Logical error rate for p=0.03: 0.01642
+Exploring neighbor 20/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.64 seconds with 5979 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05979 ± 0.0007498 (stderr)
+Logical error rate for p=0.03: 0.05979
+Exploring neighbor 21/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.36 seconds with 2117 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02117 ± 0.0004552 (stderr)
+Logical error rate for p=0.03: 0.02117
+Exploring neighbor 22/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.33 seconds with 1658 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01658 ± 0.0004038 (stderr)
+Logical error rate for p=0.03: 0.01658
+Exploring neighbor 23/23 of iteration 3/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.93 seconds with 1182 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01182 ± 0.0003418 (stderr)
+Logical error rate for p=0.03: 0.01182
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.41 seconds with 1658 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01658 ± 0.0004038 (stderr)
+Logical error rate for p=0.03: 0.01658
+Iteration 4/40: cost of current state = 0.016580, decoding time = 62.408707 seconds
+Exploring neighbor 1/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.10 seconds with 1717 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01717 ± 0.0004108 (stderr)
+Logical error rate for p=0.03: 0.01717
+Exploring neighbor 2/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.51 seconds with 1690 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0169 ± 0.0004076 (stderr)
+Logical error rate for p=0.03: 0.0169
+Exploring neighbor 3/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.39 seconds with 1782 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01782 ± 0.0004184 (stderr)
+Logical error rate for p=0.03: 0.01782
+Exploring neighbor 4/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.76 seconds with 1941 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01941 ± 0.0004363 (stderr)
+Logical error rate for p=0.03: 0.01941
+Exploring neighbor 5/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.04 seconds with 6305 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06305 ± 0.0007686 (stderr)
+Logical error rate for p=0.03: 0.06305
+Exploring neighbor 6/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.34 seconds with 1607 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01607 ± 0.0003976 (stderr)
+Logical error rate for p=0.03: 0.01607
+Exploring neighbor 7/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.36 seconds with 2154 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02154 ± 0.0004591 (stderr)
+Logical error rate for p=0.03: 0.02154
+Exploring neighbor 8/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.00 seconds with 1582 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01582 ± 0.0003946 (stderr)
+Logical error rate for p=0.03: 0.01582
+Exploring neighbor 9/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.63 seconds with 6241 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06241 ± 0.0007650 (stderr)
+Logical error rate for p=0.03: 0.06241
+Exploring neighbor 10/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=5
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=7, dz=5
+Quantum Code parameters: n=625, k=325, d=5
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.93 seconds with 2210 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0221 ± 0.0004649 (stderr)
+Logical error rate for p=0.03: 0.0221
+Exploring neighbor 11/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 60.22 seconds with 1241 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01241 ± 0.0003501 (stderr)
+Logical error rate for p=0.03: 0.01241
+Exploring neighbor 12/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.12 seconds with 2072 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02072 ± 0.0004505 (stderr)
+Logical error rate for p=0.03: 0.02072
+Exploring neighbor 13/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.35 seconds with 6106 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06106 ± 0.0007572 (stderr)
+Logical error rate for p=0.03: 0.06106
+Exploring neighbor 14/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=8
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.58 seconds with 1087 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01087 ± 0.0003279 (stderr)
+Logical error rate for p=0.03: 0.01087
+Exploring neighbor 15/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.25 seconds with 1708 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01708 ± 0.0004097 (stderr)
+Logical error rate for p=0.03: 0.01708
+Exploring neighbor 16/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=7
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 59.62 seconds with 699 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00699 ± 0.0002635 (stderr)
+Logical error rate for p=0.03: 0.00699
+Exploring neighbor 17/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=8
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.97 seconds with 1293 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01293 ± 0.0003573 (stderr)
+Logical error rate for p=0.03: 0.01293
+Exploring neighbor 18/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=8
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 63.61 seconds with 1660 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0166 ± 0.0004040 (stderr)
+Logical error rate for p=0.03: 0.0166
+Exploring neighbor 19/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=5
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=5, dz=5
+Quantum Code parameters: n=625, k=325, d=5
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 63.07 seconds with 1631 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01631 ± 0.0004006 (stderr)
+Logical error rate for p=0.03: 0.01631
+Exploring neighbor 20/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.18 seconds with 6578 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06578 ± 0.0007839 (stderr)
+Logical error rate for p=0.03: 0.06578
+Exploring neighbor 21/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=7
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.56 seconds with 1232 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01232 ± 0.0003488 (stderr)
+Logical error rate for p=0.03: 0.01232
+Exploring neighbor 22/23 of iteration 4/40...
+Code parameters: n=20, k=6, d=6
+CSS Code parameters: nx=625, kx=331, nz=625, kz=331, dx=6, dz=6
+Quantum Code parameters: n=625, k=331, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (37, 625), (37, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 80.11 seconds with 2633 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02633 ± 0.0005063 (stderr)
+Logical error rate for p=0.03: 0.02633
+Exploring neighbor 23/23 of iteration 4/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.70 seconds with 1771 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01771 ± 0.0004171 (stderr)
+Logical error rate for p=0.03: 0.01771
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.16 seconds with 1756 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01756 ± 0.0004154 (stderr)
+Logical error rate for p=0.03: 0.01756
+Iteration 5/40: cost of current state = 0.017560, decoding time = 66.155542 seconds
+Exploring neighbor 1/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 63.96 seconds with 1140 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0114 ± 0.0003357 (stderr)
+Logical error rate for p=0.03: 0.0114
+Exploring neighbor 2/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=7
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.62 seconds with 641 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00641 ± 0.0002524 (stderr)
+Logical error rate for p=0.03: 0.00641
+Exploring neighbor 3/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.11 seconds with 2483 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02483 ± 0.0004921 (stderr)
+Logical error rate for p=0.03: 0.02483
+Exploring neighbor 4/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.94 seconds with 1725 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01725 ± 0.0004117 (stderr)
+Logical error rate for p=0.03: 0.01725
+Exploring neighbor 5/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.14 seconds with 1195 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01195 ± 0.0003436 (stderr)
+Logical error rate for p=0.03: 0.01195
+Exploring neighbor 6/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.50 seconds with 1116 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01116 ± 0.0003322 (stderr)
+Logical error rate for p=0.03: 0.01116
+Exploring neighbor 7/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.19 seconds with 1673 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01673 ± 0.0004056 (stderr)
+Logical error rate for p=0.03: 0.01673
+Exploring neighbor 8/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=8
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.07 seconds with 1206 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01206 ± 0.0003452 (stderr)
+Logical error rate for p=0.03: 0.01206
+Exploring neighbor 9/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.25 seconds with 1242 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01242 ± 0.0003502 (stderr)
+Logical error rate for p=0.03: 0.01242
+Exploring neighbor 10/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.73 seconds with 1673 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01673 ± 0.0004056 (stderr)
+Logical error rate for p=0.03: 0.01673
+Exploring neighbor 11/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.86 seconds with 2008 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02008 ± 0.0004436 (stderr)
+Logical error rate for p=0.03: 0.02008
+Exploring neighbor 12/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.59 seconds with 1715 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01715 ± 0.0004106 (stderr)
+Logical error rate for p=0.03: 0.01715
+Exploring neighbor 13/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.29 seconds with 6731 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06731 ± 0.0007923 (stderr)
+Logical error rate for p=0.03: 0.06731
+Exploring neighbor 14/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=5
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=5, dz=5
+Quantum Code parameters: n=625, k=325, d=5
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.01 seconds with 1314 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01314 ± 0.0003601 (stderr)
+Logical error rate for p=0.03: 0.01314
+Exploring neighbor 15/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.38 seconds with 1229 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01229 ± 0.0003484 (stderr)
+Logical error rate for p=0.03: 0.01229
+Exploring neighbor 16/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.41 seconds with 6070 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0607 ± 0.0007551 (stderr)
+Logical error rate for p=0.03: 0.0607
+Exploring neighbor 17/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.25 seconds with 1187 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01187 ± 0.0003425 (stderr)
+Logical error rate for p=0.03: 0.01187
+Exploring neighbor 18/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.83 seconds with 1722 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01722 ± 0.0004114 (stderr)
+Logical error rate for p=0.03: 0.01722
+Exploring neighbor 19/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.54 seconds with 1292 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01292 ± 0.0003571 (stderr)
+Logical error rate for p=0.03: 0.01292
+Exploring neighbor 20/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.15 seconds with 1642 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01642 ± 0.0004019 (stderr)
+Logical error rate for p=0.03: 0.01642
+Exploring neighbor 21/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=5
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=5, dz=5
+Quantum Code parameters: n=625, k=325, d=5
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.51 seconds with 1214 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01214 ± 0.0003463 (stderr)
+Logical error rate for p=0.03: 0.01214
+Exploring neighbor 22/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.02 seconds with 1675 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01675 ± 0.0004058 (stderr)
+Logical error rate for p=0.03: 0.01675
+Exploring neighbor 23/23 of iteration 5/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.86 seconds with 2161 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02161 ± 0.0004598 (stderr)
+Logical error rate for p=0.03: 0.02161
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.91 seconds with 6682 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06682 ± 0.0007897 (stderr)
+Logical error rate for p=0.03: 0.06682
+Iteration 6/40: cost of current state = 0.066820, decoding time = 72.909132 seconds
+Exploring neighbor 1/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.54 seconds with 6408 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06408 ± 0.0007744 (stderr)
+Logical error rate for p=0.03: 0.06408
+Exploring neighbor 2/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 88.03 seconds with 6903 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06903 ± 0.0008017 (stderr)
+Logical error rate for p=0.03: 0.06903
+Exploring neighbor 3/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.41 seconds with 2776 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02776 ± 0.0005195 (stderr)
+Logical error rate for p=0.03: 0.02776
+Exploring neighbor 4/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.57 seconds with 6287 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06287 ± 0.0007676 (stderr)
+Logical error rate for p=0.03: 0.06287
+Exploring neighbor 5/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.96 seconds with 2831 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02831 ± 0.0005245 (stderr)
+Logical error rate for p=0.03: 0.02831
+Exploring neighbor 6/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.63 seconds with 6920 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0692 ± 0.0008026 (stderr)
+Logical error rate for p=0.03: 0.0692
+Exploring neighbor 7/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 87.93 seconds with 11007 failures out of 100000 runs.
+Logical error rate for Random walk: 0.11007 ± 0.0009897 (stderr)
+Logical error rate for p=0.03: 0.11007
+Exploring neighbor 8/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.84 seconds with 6784 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06784 ± 0.0007952 (stderr)
+Logical error rate for p=0.03: 0.06784
+Exploring neighbor 9/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.71 seconds with 1671 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01671 ± 0.0004054 (stderr)
+Logical error rate for p=0.03: 0.01671
+Exploring neighbor 10/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.34 seconds with 1718 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01718 ± 0.0004109 (stderr)
+Logical error rate for p=0.03: 0.01718
+Exploring neighbor 11/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.64 seconds with 6572 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06572 ± 0.0007836 (stderr)
+Logical error rate for p=0.03: 0.06572
+Exploring neighbor 12/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=8
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.79 seconds with 1701 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01701 ± 0.0004089 (stderr)
+Logical error rate for p=0.03: 0.01701
+Exploring neighbor 13/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.06 seconds with 6766 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06766 ± 0.0007942 (stderr)
+Logical error rate for p=0.03: 0.06766
+Exploring neighbor 14/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.62 seconds with 7387 failures out of 100000 runs.
+Logical error rate for Random walk: 0.07387 ± 0.0008271 (stderr)
+Logical error rate for p=0.03: 0.07387
+Exploring neighbor 15/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.16 seconds with 6837 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06837 ± 0.0007981 (stderr)
+Logical error rate for p=0.03: 0.06837
+Exploring neighbor 16/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.69 seconds with 6574 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06574 ± 0.0007837 (stderr)
+Logical error rate for p=0.03: 0.06574
+Exploring neighbor 17/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=8
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.63 seconds with 1657 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01657 ± 0.0004037 (stderr)
+Logical error rate for p=0.03: 0.01657
+Exploring neighbor 18/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.37 seconds with 6512 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06512 ± 0.0007803 (stderr)
+Logical error rate for p=0.03: 0.06512
+Exploring neighbor 19/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.31 seconds with 6754 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06754 ± 0.0007936 (stderr)
+Logical error rate for p=0.03: 0.06754
+Exploring neighbor 20/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.61 seconds with 7079 failures out of 100000 runs.
+Logical error rate for Random walk: 0.07079 ± 0.0008110 (stderr)
+Logical error rate for p=0.03: 0.07079
+Exploring neighbor 21/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.10 seconds with 2714 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02714 ± 0.0005138 (stderr)
+Logical error rate for p=0.03: 0.02714
+Exploring neighbor 22/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 82.82 seconds with 6423 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06423 ± 0.0007753 (stderr)
+Logical error rate for p=0.03: 0.06423
+Exploring neighbor 23/23 of iteration 6/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.78 seconds with 6736 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06736 ± 0.0007926 (stderr)
+Logical error rate for p=0.03: 0.06736
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 97.87 seconds with 10241 failures out of 100000 runs.
+Logical error rate for Random walk: 0.10241 ± 0.0009588 (stderr)
+Logical error rate for p=0.03: 0.10241
+Iteration 7/40: cost of current state = 0.102410, decoding time = 97.869741 seconds
+Exploring neighbor 1/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 96.70 seconds with 6437 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06437 ± 0.0007761 (stderr)
+Logical error rate for p=0.03: 0.06437
+Exploring neighbor 2/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 96.77 seconds with 10084 failures out of 100000 runs.
+Logical error rate for Random walk: 0.10084 ± 0.0009522 (stderr)
+Logical error rate for p=0.03: 0.10084
+Exploring neighbor 3/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 96.40 seconds with 6089 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06089 ± 0.0007562 (stderr)
+Logical error rate for p=0.03: 0.06089
+Exploring neighbor 4/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 97.78 seconds with 13912 failures out of 100000 runs.
+Logical error rate for Random walk: 0.13912 ± 0.0010944 (stderr)
+Logical error rate for p=0.03: 0.13912
+Exploring neighbor 5/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 82.86 seconds with 2469 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02469 ± 0.0004907 (stderr)
+Logical error rate for p=0.03: 0.02469
+Exploring neighbor 6/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=7, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 90.08 seconds with 5661 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05661 ± 0.0007308 (stderr)
+Logical error rate for p=0.03: 0.05661
+Exploring neighbor 7/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=5, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 93.49 seconds with 6985 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06985 ± 0.0008060 (stderr)
+Logical error rate for p=0.03: 0.06985
+Exploring neighbor 8/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 92.59 seconds with 10060 failures out of 100000 runs.
+Logical error rate for Random walk: 0.1006 ± 0.0009512 (stderr)
+Logical error rate for p=0.03: 0.1006
+Exploring neighbor 9/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 99.60 seconds with 2605 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02605 ± 0.0005037 (stderr)
+Logical error rate for p=0.03: 0.02605
+Exploring neighbor 10/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 89.53 seconds with 6405 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06405 ± 0.0007743 (stderr)
+Logical error rate for p=0.03: 0.06405
+Exploring neighbor 11/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.15 seconds with 6458 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06458 ± 0.0007772 (stderr)
+Logical error rate for p=0.03: 0.06458
+Exploring neighbor 12/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 83.02 seconds with 2185 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02185 ± 0.0004623 (stderr)
+Logical error rate for p=0.03: 0.02185
+Exploring neighbor 13/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.70 seconds with 7168 failures out of 100000 runs.
+Logical error rate for Random walk: 0.07168 ± 0.0008157 (stderr)
+Logical error rate for p=0.03: 0.07168
+Exploring neighbor 14/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 96.04 seconds with 6931 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06931 ± 0.0008032 (stderr)
+Logical error rate for p=0.03: 0.06931
+Exploring neighbor 15/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 89.99 seconds with 6977 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06977 ± 0.0008056 (stderr)
+Logical error rate for p=0.03: 0.06977
+Exploring neighbor 16/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=6
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 94.34 seconds with 5826 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05826 ± 0.0007407 (stderr)
+Logical error rate for p=0.03: 0.05826
+Exploring neighbor 17/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 90.23 seconds with 2075 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02075 ± 0.0004508 (stderr)
+Logical error rate for p=0.03: 0.02075
+Exploring neighbor 18/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=2
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=2, dz=2
+Quantum Code parameters: n=625, k=325, d=2
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 257.85 seconds with 45349 failures out of 100000 runs.
+Logical error rate for Random walk: 0.45349 ± 0.0015743 (stderr)
+Logical error rate for p=0.03: 0.45349
+Exploring neighbor 19/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.11 seconds with 7083 failures out of 100000 runs.
+Logical error rate for Random walk: 0.07083 ± 0.0008113 (stderr)
+Logical error rate for p=0.03: 0.07083
+Exploring neighbor 20/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 95.03 seconds with 2543 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02543 ± 0.0004978 (stderr)
+Logical error rate for p=0.03: 0.02543
+Exploring neighbor 21/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 89.98 seconds with 6788 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06788 ± 0.0007954 (stderr)
+Logical error rate for p=0.03: 0.06788
+Exploring neighbor 22/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 86.40 seconds with 5709 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05709 ± 0.0007337 (stderr)
+Logical error rate for p=0.03: 0.05709
+Exploring neighbor 23/23 of iteration 7/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.22 seconds with 6230 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0623 ± 0.0007643 (stderr)
+Logical error rate for p=0.03: 0.0623
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.68 seconds with 10223 failures out of 100000 runs.
+Logical error rate for Random walk: 0.10223 ± 0.0009580 (stderr)
+Logical error rate for p=0.03: 0.10223
+Iteration 8/40: cost of current state = 0.102230, decoding time = 84.675203 seconds
+Exploring neighbor 1/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.55 seconds with 5591 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05591 ± 0.0007265 (stderr)
+Logical error rate for p=0.03: 0.05591
+Exploring neighbor 2/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.00 seconds with 9955 failures out of 100000 runs.
+Logical error rate for Random walk: 0.09955 ± 0.0009468 (stderr)
+Logical error rate for p=0.03: 0.09955
+Exploring neighbor 3/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 93.39 seconds with 6365 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06365 ± 0.0007720 (stderr)
+Logical error rate for p=0.03: 0.06365
+Exploring neighbor 4/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 92.09 seconds with 5906 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05906 ± 0.0007455 (stderr)
+Logical error rate for p=0.03: 0.05906
+Exploring neighbor 5/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 89.22 seconds with 10276 failures out of 100000 runs.
+Logical error rate for Random walk: 0.10276 ± 0.0009602 (stderr)
+Logical error rate for p=0.03: 0.10276
+Exploring neighbor 6/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 94.71 seconds with 5745 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05745 ± 0.0007359 (stderr)
+Logical error rate for p=0.03: 0.05745
+Exploring neighbor 7/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 82.87 seconds with 5714 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05714 ± 0.0007340 (stderr)
+Logical error rate for p=0.03: 0.05714
+Exploring neighbor 8/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 82.19 seconds with 6255 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06255 ± 0.0007658 (stderr)
+Logical error rate for p=0.03: 0.06255
+Exploring neighbor 9/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.61 seconds with 1679 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01679 ± 0.0004063 (stderr)
+Logical error rate for p=0.03: 0.01679
+Exploring neighbor 10/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 96.34 seconds with 9980 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0998 ± 0.0009478 (stderr)
+Logical error rate for p=0.03: 0.0998
+Exploring neighbor 11/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 90.88 seconds with 5604 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05604 ± 0.0007273 (stderr)
+Logical error rate for p=0.03: 0.05604
+Exploring neighbor 12/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.24 seconds with 5867 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05867 ± 0.0007432 (stderr)
+Logical error rate for p=0.03: 0.05867
+Exploring neighbor 13/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 89.11 seconds with 9998 failures out of 100000 runs.
+Logical error rate for Random walk: 0.09998 ± 0.0009486 (stderr)
+Logical error rate for p=0.03: 0.09998
+Exploring neighbor 14/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.83 seconds with 6248 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06248 ± 0.0007654 (stderr)
+Logical error rate for p=0.03: 0.06248
+Exploring neighbor 15/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 107.35 seconds with 13363 failures out of 100000 runs.
+Logical error rate for Random walk: 0.13363 ± 0.0010760 (stderr)
+Logical error rate for p=0.03: 0.13363
+Exploring neighbor 16/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 96.05 seconds with 10489 failures out of 100000 runs.
+Logical error rate for Random walk: 0.10489 ± 0.0009690 (stderr)
+Logical error rate for p=0.03: 0.10489
+Exploring neighbor 17/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 87.86 seconds with 10125 failures out of 100000 runs.
+Logical error rate for Random walk: 0.10125 ± 0.0009539 (stderr)
+Logical error rate for p=0.03: 0.10125
+Exploring neighbor 18/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 88.44 seconds with 10073 failures out of 100000 runs.
+Logical error rate for Random walk: 0.10073 ± 0.0009518 (stderr)
+Logical error rate for p=0.03: 0.10073
+Exploring neighbor 19/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 109.83 seconds with 13904 failures out of 100000 runs.
+Logical error rate for Random walk: 0.13904 ± 0.0010941 (stderr)
+Logical error rate for p=0.03: 0.13904
+Exploring neighbor 20/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 85.99 seconds with 10700 failures out of 100000 runs.
+Logical error rate for Random walk: 0.107 ± 0.0009775 (stderr)
+Logical error rate for p=0.03: 0.107
+Exploring neighbor 21/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 89.07 seconds with 13584 failures out of 100000 runs.
+Logical error rate for Random walk: 0.13584 ± 0.0010835 (stderr)
+Logical error rate for p=0.03: 0.13584
+Exploring neighbor 22/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.23 seconds with 6280 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0628 ± 0.0007672 (stderr)
+Logical error rate for p=0.03: 0.0628
+Exploring neighbor 23/23 of iteration 8/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 86.93 seconds with 5918 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05918 ± 0.0007462 (stderr)
+Logical error rate for p=0.03: 0.05918
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.01 seconds with 5784 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05784 ± 0.0007382 (stderr)
+Logical error rate for p=0.03: 0.05784
+Iteration 9/40: cost of current state = 0.057840, decoding time = 81.007523 seconds
+Exploring neighbor 1/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 93.63 seconds with 6225 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06225 ± 0.0007640 (stderr)
+Logical error rate for p=0.03: 0.06225
+Exploring neighbor 2/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.80 seconds with 1131 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01131 ± 0.0003344 (stderr)
+Logical error rate for p=0.03: 0.01131
+Exploring neighbor 3/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 100.05 seconds with 10728 failures out of 100000 runs.
+Logical error rate for Random walk: 0.10728 ± 0.0009786 (stderr)
+Logical error rate for p=0.03: 0.10728
+Exploring neighbor 4/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.83 seconds with 1496 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01496 ± 0.0003839 (stderr)
+Logical error rate for p=0.03: 0.01496
+Exploring neighbor 5/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 89.08 seconds with 5730 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0573 ± 0.0007350 (stderr)
+Logical error rate for p=0.03: 0.0573
+Exploring neighbor 6/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.58 seconds with 5719 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05719 ± 0.0007343 (stderr)
+Logical error rate for p=0.03: 0.05719
+Exploring neighbor 7/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=2
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=2, dz=2
+Quantum Code parameters: n=625, k=325, d=2
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 258.78 seconds with 47064 failures out of 100000 runs.
+Logical error rate for Random walk: 0.47064 ± 0.0015784 (stderr)
+Logical error rate for p=0.03: 0.47064
+Exploring neighbor 8/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 98.10 seconds with 10516 failures out of 100000 runs.
+Logical error rate for Random walk: 0.10516 ± 0.0009701 (stderr)
+Logical error rate for p=0.03: 0.10516
+Exploring neighbor 9/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 87.76 seconds with 5807 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05807 ± 0.0007396 (stderr)
+Logical error rate for p=0.03: 0.05807
+Exploring neighbor 10/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.97 seconds with 771 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00771 ± 0.0002766 (stderr)
+Logical error rate for p=0.03: 0.00771
+Exploring neighbor 11/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.66 seconds with 5724 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05724 ± 0.0007346 (stderr)
+Logical error rate for p=0.03: 0.05724
+Exploring neighbor 12/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.12 seconds with 6250 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0625 ± 0.0007655 (stderr)
+Logical error rate for p=0.03: 0.0625
+Exploring neighbor 13/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 86.34 seconds with 5795 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05795 ± 0.0007389 (stderr)
+Logical error rate for p=0.03: 0.05795
+Exploring neighbor 14/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.90 seconds with 1167 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01167 ± 0.0003396 (stderr)
+Logical error rate for p=0.03: 0.01167
+Exploring neighbor 15/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.42 seconds with 644 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00644 ± 0.0002530 (stderr)
+Logical error rate for p=0.03: 0.00644
+Exploring neighbor 16/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.76 seconds with 1085 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01085 ± 0.0003276 (stderr)
+Logical error rate for p=0.03: 0.01085
+Exploring neighbor 17/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 82.34 seconds with 5701 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05701 ± 0.0007332 (stderr)
+Logical error rate for p=0.03: 0.05701
+Exploring neighbor 18/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.75 seconds with 5867 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05867 ± 0.0007432 (stderr)
+Logical error rate for p=0.03: 0.05867
+Exploring neighbor 19/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.89 seconds with 6115 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06115 ± 0.0007577 (stderr)
+Logical error rate for p=0.03: 0.06115
+Exploring neighbor 20/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.01 seconds with 5947 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05947 ± 0.0007479 (stderr)
+Logical error rate for p=0.03: 0.05947
+Exploring neighbor 21/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.99 seconds with 5614 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05614 ± 0.0007279 (stderr)
+Logical error rate for p=0.03: 0.05614
+Exploring neighbor 22/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 90.87 seconds with 10002 failures out of 100000 runs.
+Logical error rate for Random walk: 0.10002 ± 0.0009488 (stderr)
+Logical error rate for p=0.03: 0.10002
+Exploring neighbor 23/23 of iteration 9/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.27 seconds with 5817 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05817 ± 0.0007402 (stderr)
+Logical error rate for p=0.03: 0.05817
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.34 seconds with 704 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00704 ± 0.0002644 (stderr)
+Logical error rate for p=0.03: 0.00704
+Iteration 10/40: cost of current state = 0.007040, decoding time = 68.339826 seconds
+Exploring neighbor 1/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=8
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.77 seconds with 1468 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01468 ± 0.0003803 (stderr)
+Logical error rate for p=0.03: 0.01468
+Exploring neighbor 2/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=5
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=5, dz=5
+Quantum Code parameters: n=625, k=325, d=5
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.81 seconds with 1383 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01383 ± 0.0003693 (stderr)
+Logical error rate for p=0.03: 0.01383
+Exploring neighbor 3/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.87 seconds with 910 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0091 ± 0.0003003 (stderr)
+Logical error rate for p=0.03: 0.0091
+Exploring neighbor 4/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=7
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.66 seconds with 1232 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01232 ± 0.0003488 (stderr)
+Logical error rate for p=0.03: 0.01232
+Exploring neighbor 5/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=7
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.54 seconds with 686 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00686 ± 0.0002610 (stderr)
+Logical error rate for p=0.03: 0.00686
+Exploring neighbor 6/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=5
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.74 seconds with 1925 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01925 ± 0.0004345 (stderr)
+Logical error rate for p=0.03: 0.01925
+Exploring neighbor 7/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.30 seconds with 745 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00745 ± 0.0002719 (stderr)
+Logical error rate for p=0.03: 0.00745
+Exploring neighbor 8/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.00 seconds with 1271 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01271 ± 0.0003542 (stderr)
+Logical error rate for p=0.03: 0.01271
+Exploring neighbor 9/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.08 seconds with 1371 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01371 ± 0.0003677 (stderr)
+Logical error rate for p=0.03: 0.01371
+Exploring neighbor 10/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.80 seconds with 1562 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01562 ± 0.0003921 (stderr)
+Logical error rate for p=0.03: 0.01562
+Exploring neighbor 11/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.74 seconds with 1173 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01173 ± 0.0003405 (stderr)
+Logical error rate for p=0.03: 0.01173
+Exploring neighbor 12/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.46 seconds with 1224 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01224 ± 0.0003477 (stderr)
+Logical error rate for p=0.03: 0.01224
+Exploring neighbor 13/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.65 seconds with 1157 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01157 ± 0.0003382 (stderr)
+Logical error rate for p=0.03: 0.01157
+Exploring neighbor 14/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.29 seconds with 802 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00802 ± 0.0002821 (stderr)
+Logical error rate for p=0.03: 0.00802
+Exploring neighbor 15/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=8
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 95.69 seconds with 5997 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05997 ± 0.0007508 (stderr)
+Logical error rate for p=0.03: 0.05997
+Exploring neighbor 16/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=7, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.91 seconds with 1204 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01204 ± 0.0003449 (stderr)
+Logical error rate for p=0.03: 0.01204
+Exploring neighbor 17/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.05 seconds with 1120 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0112 ± 0.0003328 (stderr)
+Logical error rate for p=0.03: 0.0112
+Exploring neighbor 18/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.73 seconds with 862 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00862 ± 0.0002923 (stderr)
+Logical error rate for p=0.03: 0.00862
+Exploring neighbor 19/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.60 seconds with 1665 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01665 ± 0.0004046 (stderr)
+Logical error rate for p=0.03: 0.01665
+Exploring neighbor 20/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.31 seconds with 1213 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01213 ± 0.0003462 (stderr)
+Logical error rate for p=0.03: 0.01213
+Exploring neighbor 21/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.55 seconds with 6274 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06274 ± 0.0007668 (stderr)
+Logical error rate for p=0.03: 0.06274
+Exploring neighbor 22/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 86.54 seconds with 809 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00809 ± 0.0002833 (stderr)
+Logical error rate for p=0.03: 0.00809
+Exploring neighbor 23/23 of iteration 10/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.68 seconds with 1644 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01644 ± 0.0004021 (stderr)
+Logical error rate for p=0.03: 0.01644
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.95 seconds with 1133 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01133 ± 0.0003347 (stderr)
+Logical error rate for p=0.03: 0.01133
+Iteration 11/40: cost of current state = 0.011330, decoding time = 72.946308 seconds
+Exploring neighbor 1/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.06 seconds with 1146 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01146 ± 0.0003366 (stderr)
+Logical error rate for p=0.03: 0.01146
+Exploring neighbor 2/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.89 seconds with 836 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00836 ± 0.0002879 (stderr)
+Logical error rate for p=0.03: 0.00836
+Exploring neighbor 3/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.21 seconds with 6323 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06323 ± 0.0007696 (stderr)
+Logical error rate for p=0.03: 0.06323
+Exploring neighbor 4/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=8
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.62 seconds with 1328 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01328 ± 0.0003620 (stderr)
+Logical error rate for p=0.03: 0.01328
+Exploring neighbor 5/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.20 seconds with 804 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00804 ± 0.0002824 (stderr)
+Logical error rate for p=0.03: 0.00804
+Exploring neighbor 6/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.28 seconds with 1132 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01132 ± 0.0003345 (stderr)
+Logical error rate for p=0.03: 0.01132
+Exploring neighbor 7/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 85.23 seconds with 6966 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06966 ± 0.0008050 (stderr)
+Logical error rate for p=0.03: 0.06966
+Exploring neighbor 8/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.25 seconds with 783 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00783 ± 0.0002787 (stderr)
+Logical error rate for p=0.03: 0.00783
+Exploring neighbor 9/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=5
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=5, dz=5
+Quantum Code parameters: n=625, k=325, d=5
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.23 seconds with 1920 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0192 ± 0.0004340 (stderr)
+Logical error rate for p=0.03: 0.0192
+Exploring neighbor 10/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 93.09 seconds with 1308 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01308 ± 0.0003593 (stderr)
+Logical error rate for p=0.03: 0.01308
+Exploring neighbor 11/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 85.05 seconds with 695 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00695 ± 0.0002627 (stderr)
+Logical error rate for p=0.03: 0.00695
+Exploring neighbor 12/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.61 seconds with 6381 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06381 ± 0.0007729 (stderr)
+Logical error rate for p=0.03: 0.06381
+Exploring neighbor 13/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=8
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.17 seconds with 2447 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02447 ± 0.0004886 (stderr)
+Logical error rate for p=0.03: 0.02447
+Exploring neighbor 14/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.11 seconds with 1149 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01149 ± 0.0003370 (stderr)
+Logical error rate for p=0.03: 0.01149
+Exploring neighbor 15/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 80.84 seconds with 2001 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02001 ± 0.0004428 (stderr)
+Logical error rate for p=0.03: 0.02001
+Exploring neighbor 16/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.75 seconds with 1124 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01124 ± 0.0003334 (stderr)
+Logical error rate for p=0.03: 0.01124
+Exploring neighbor 17/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.38 seconds with 1197 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01197 ± 0.0003439 (stderr)
+Logical error rate for p=0.03: 0.01197
+Exploring neighbor 18/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.68 seconds with 2463 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02463 ± 0.0004901 (stderr)
+Logical error rate for p=0.03: 0.02463
+Exploring neighbor 19/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.23 seconds with 2530 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0253 ± 0.0004966 (stderr)
+Logical error rate for p=0.03: 0.0253
+Exploring neighbor 20/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.66 seconds with 1511 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01511 ± 0.0003858 (stderr)
+Logical error rate for p=0.03: 0.01511
+Exploring neighbor 21/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.26 seconds with 1194 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01194 ± 0.0003435 (stderr)
+Logical error rate for p=0.03: 0.01194
+Exploring neighbor 22/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=8
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 79.32 seconds with 1221 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01221 ± 0.0003473 (stderr)
+Logical error rate for p=0.03: 0.01221
+Exploring neighbor 23/23 of iteration 11/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 85.82 seconds with 1221 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01221 ± 0.0003473 (stderr)
+Logical error rate for p=0.03: 0.01221
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.62 seconds with 1680 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0168 ± 0.0004064 (stderr)
+Logical error rate for p=0.03: 0.0168
+Iteration 12/40: cost of current state = 0.016800, decoding time = 74.617000 seconds
+Exploring neighbor 1/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.36 seconds with 1841 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01841 ± 0.0004251 (stderr)
+Logical error rate for p=0.03: 0.01841
+Exploring neighbor 2/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=5
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=7
+Quantum Code parameters: n=625, k=325, d=7
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.60 seconds with 1465 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01465 ± 0.0003799 (stderr)
+Logical error rate for p=0.03: 0.01465
+Exploring neighbor 3/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.03 seconds with 810 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0081 ± 0.0002835 (stderr)
+Logical error rate for p=0.03: 0.0081
+Exploring neighbor 4/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=3
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=3, dz=3
+Quantum Code parameters: n=625, k=325, d=3
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 82.57 seconds with 6230 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0623 ± 0.0007643 (stderr)
+Logical error rate for p=0.03: 0.0623
+Exploring neighbor 5/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.62 seconds with 1285 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01285 ± 0.0003562 (stderr)
+Logical error rate for p=0.03: 0.01285
+Exploring neighbor 6/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.03 seconds with 1733 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01733 ± 0.0004127 (stderr)
+Logical error rate for p=0.03: 0.01733
+Exploring neighbor 7/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.27 seconds with 615 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00615 ± 0.0002472 (stderr)
+Logical error rate for p=0.03: 0.00615
+Found minimum in neighbor 7/23 of iteration 12/40: 0.006150
+Exploring neighbor 8/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=4
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.12 seconds with 6767 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06767 ± 0.0007943 (stderr)
+Logical error rate for p=0.03: 0.06767
+Exploring neighbor 9/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.05 seconds with 1573 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01573 ± 0.0003935 (stderr)
+Logical error rate for p=0.03: 0.01573
+Exploring neighbor 10/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.62 seconds with 1646 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01646 ± 0.0004024 (stderr)
+Logical error rate for p=0.03: 0.01646
+Exploring neighbor 11/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 82.47 seconds with 1306 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01306 ± 0.0003590 (stderr)
+Logical error rate for p=0.03: 0.01306
+Exploring neighbor 12/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=5
+Quantum Code parameters: n=625, k=325, d=5
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.24 seconds with 1671 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01671 ± 0.0004054 (stderr)
+Logical error rate for p=0.03: 0.01671
+Exploring neighbor 13/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.98 seconds with 1678 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01678 ± 0.0004062 (stderr)
+Logical error rate for p=0.03: 0.01678
+Exploring neighbor 14/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.82 seconds with 2022 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02022 ± 0.0004451 (stderr)
+Logical error rate for p=0.03: 0.02022
+Exploring neighbor 15/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=4
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=4, dz=6
+Quantum Code parameters: n=625, k=325, d=4
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 87.30 seconds with 6654 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06654 ± 0.0007881 (stderr)
+Logical error rate for p=0.03: 0.06654
+Exploring neighbor 16/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.42 seconds with 1592 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01592 ± 0.0003958 (stderr)
+Logical error rate for p=0.03: 0.01592
+Exploring neighbor 17/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.12 seconds with 1692 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01692 ± 0.0004078 (stderr)
+Logical error rate for p=0.03: 0.01692
+Exploring neighbor 18/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.00 seconds with 2042 failures out of 100000 runs.
+Logical error rate for Random walk: 0.02042 ± 0.0004472 (stderr)
+Logical error rate for p=0.03: 0.02042
+Exploring neighbor 19/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.03 seconds with 1640 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0164 ± 0.0004016 (stderr)
+Logical error rate for p=0.03: 0.0164
+Exploring neighbor 20/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.56 seconds with 614 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00614 ± 0.0002470 (stderr)
+Logical error rate for p=0.03: 0.00614
+Found minimum in neighbor 20/23 of iteration 12/40: 0.006140
+Exploring neighbor 21/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=8, dz=8
+Quantum Code parameters: n=625, k=325, d=8
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.52 seconds with 816 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00816 ± 0.0002845 (stderr)
+Logical error rate for p=0.03: 0.00816
+Exploring neighbor 22/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.92 seconds with 1774 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01774 ± 0.0004174 (stderr)
+Logical error rate for p=0.03: 0.01774
+Exploring neighbor 23/23 of iteration 12/40...
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625

@@ -1,0 +1,47 @@
+C = 0, N = 24, L = 40, p = 0.03
+See neighbors of the best state found from previous random walk
+Exploring code family [625,25] with 24 neighbors and 40 iterations.
+Evaluating iteration 1/40...
+Code parameters: n=20, k=5, d=7
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 60.87 seconds with 782 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00782 ± 0.0002785 (stderr)
+Logical error rate for p=0.03: 0.00782
+Iteration 1/40: cost of current state = 0.007820, decoding time = 60.874385 seconds
+Found minimum in iteration 1/40: 0.007820 in chosen state
+Exploring neighbor 1/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=7
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 61.17 seconds with 769 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00769 ± 0.0002762 (stderr)
+Logical error rate for p=0.03: 0.00769
+Found minimum in neighbor 1/23 of iteration 1/40: 0.007690
+Exploring neighbor 2/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=7
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 57.36 seconds with 1718 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01718 ± 0.0004109 (stderr)
+Logical error rate for p=0.03: 0.01718
+Exploring neighbor 3/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=7
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.08 seconds with 764 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00764 ± 0.0002753 (stderr)
+Logical error rate for p=0.03: 0.00764
+Found minimum in neighbor 3/23 of iteration 1/40: 0.007640
+Exploring neighbor 4/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=7
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 61.64 seconds with 631 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00631 ± 0.0002504 (stderr)
+Logical error rate for p=0.03: 0.00631
+Found minimum in neighbor 4/23 of iteration 1/40: 0.006310
+Exploring neighbor 5/23 of iteration 1/40...
+Code parameters: n=20, k=5, d=7
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625

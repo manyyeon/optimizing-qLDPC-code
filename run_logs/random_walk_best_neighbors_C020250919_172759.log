@@ -1,0 +1,8 @@
+C = 0, N = 10, L = 30, p = 0.03
+Minimum logical error rate found in state 1871 with value 0.0091
+Exploring code family [625,25] with 10 neighbors and 30 iterations.
+Code parameters: n=20, k=5, d=8
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=5, dz=5
+Quantum Code parameters: n=625, k=325, d=5
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625

@@ -1,0 +1,12 @@
+C = 0, N = 24, L = 40, p = 0.03
+See neighbors of the best state found from previous random walk
+Exploring code family [625,25] with 24 neighbors and 40 iterations.
+Evaluating iteration 1/40...
+Traceback (most recent call last):
+  File "/Users/dayeon/data/git/optimizing-qLDPC-code/optimization/random_walk.py", line 83, in <module>
+    distance = compute_code_parameters(state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dayeon/data/git/optimizing-qLDPC-code/optimization/compute_distance.py", line 22, in compute_code_parameters
+    n, k, d = ldpc.code_util.compute_code_parameters(H)
+              ^^^^^^^^^^^^^^
+AttributeError: module 'ldpc' has no attribute 'code_util'

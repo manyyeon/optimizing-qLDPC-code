@@ -1,0 +1,15 @@
+C = 0, N = 24, L = 40, p = 0.03
+Exploring code family [625,25] with 24 neighbors and 40 iterations.
+Code parameters: n=20, k=5, d=6
+CSS Code parameters: nx=625, kx=325, nz=625, kz=325, dx=6, dz=6
+Quantum Code parameters: n=625, k=325, d=6
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 57.67 seconds with 1151 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01151 ± 0.0003373 (stderr)
+Logical error rate for p=0.03: 0.01151
+Traceback (most recent call last):
+  File "/Users/dayeon/data/git/optimizing-qLDPC-code/optimization/random_walk.py", line 90, in <module>
+    distances.append(distance)
+                     ^^^^^^^^
+NameError: name 'distance' is not defined. Did you mean: 'distances'?
