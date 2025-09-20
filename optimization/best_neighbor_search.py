@@ -19,7 +19,7 @@ from optimization.compute_code_parameters import compute_code_parameters
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/random_walk_best_neighbors.hdf5"
+output_file = "optimization/results/best_neighbor_search.hdf5"
 
 def _ensure_ds(grp, name, sample, is_row=True):
     """Create a resizable dataset if it doesn't exist; return the dataset."""
@@ -133,7 +133,7 @@ if __name__ == '__main__':
         decoding_runtimes = []  # only for computing avg later
         start_time = time.time()
 
-        cost_result = evaluate_performance_of_state(state=initial_state, p_vals=[p], MC_budget=MC_budget)
+        cost_result = evaluate_performance_of_state(state=initial_state, p_vals=[p], MC_budget=MC_budget, canskip=False)
         logical_error_rate = float(cost_result['logical_error_rates'][0])
         grp.attrs['original_cost'] = logical_error_rate
         decoding_runtimes.append(float(cost_result['runtimes'][0]))
@@ -152,13 +152,19 @@ if __name__ == '__main__':
             ds_dclass   = _ensure_ds(grp, "distances_classical",  np.array(cost_result['d_classical'], dtype=np.int32),    is_row=False)
             ds_dquant   = _ensure_ds(grp, "distances_quantum",    np.array(cost_result['d_quantum'], dtype=np.int32),    is_row=False)
             ds_runtimes = _ensure_ds(grp, "decoding_runtimes",    np.array(cost_result['runtimes'][0], dtype=np.float64),    is_row=False)
+            ds_dhx      = _ensure_ds(grp, "distances_Hx",         np.array(cost_result['d_Hx'], dtype=np.int32),       is_row=False)
+            ds_dhz      = _ensure_ds(grp, "distances_Hz",         np.array(cost_result['d_Hz'], dtype=np.int32),       is_row=False)
+            ds_skipped  = _ensure_ds(grp, "skipped", np.array(int(cost_result['skipped'])), is_row=False)
 
         _append_row(ds_states, parse_edgelist(initial_state).astype(np.uint32))
         _append_row(ds_lers, np.array(logical_error_rate, dtype=np.float64))
         _append_row(ds_stds, np.array(cost_result['stderrs'][0], dtype=np.float64))
         _append_row(ds_dclass, np.array(cost_result['d_classical'], dtype=np.int32))
         _append_row(ds_dquant, np.array(cost_result['d_quantum'], dtype=np.int32))
+        _append_row(ds_dhx, np.array(cost_result['d_Hx'], dtype=np.int32))
+        _append_row(ds_dhz, np.array(cost_result['d_Hz'], dtype=np.int32))
         _append_row(ds_runtimes, np.array(cost_result['runtimes'][0], dtype=np.float64))
+        _append_row(ds_skipped, np.array(int(cost_result['skipped'])))
         
         # Random Walk loop:
         for l in range(L):
@@ -180,17 +186,9 @@ if __name__ == '__main__':
                 print(f"Exploring neighbor {n+1}/{N-1} of iteration {l+1}/{L}...")
                 neighbor, old_edges, new_edges = generate_neighbor_highlight(state)
                 cost_result = evaluate_performance_of_state(state=neighbor, p_vals=[p], MC_budget=MC_budget)
+
                 logical_error_rate = cost_result['logical_error_rates'][0]
                 decoding_runtime = cost_result['runtimes'][0]
-
-                cost_results.append({
-                    'neighbor': neighbor,
-                    'logical_error_rate': logical_error_rate,
-                    'stderrs': cost_result['stderrs'][0],
-                    'd_classical': cost_result['d_classical'],
-                    'd_quantum': cost_result['d_quantum'],
-                    'runtimes': cost_result['runtimes'][0]
-                })
 
                 # Append results
                 _append_row(ds_states, parse_edgelist(neighbor).astype(np.uint32))
@@ -198,9 +196,19 @@ if __name__ == '__main__':
                 _append_row(ds_stds, np.array(cost_result['stderrs'][0], dtype=np.float64))
                 _append_row(ds_dclass, np.array(cost_result['d_classical'], dtype=np.int32))
                 _append_row(ds_dquant, np.array(cost_result['d_quantum'], dtype=np.int32))
+                _append_row(ds_dhx, np.array(cost_result['d_Hx'], dtype=np.int32))
+                _append_row(ds_dhz, np.array(cost_result['d_Hz'], dtype=np.int32))
                 _append_row(ds_runtimes, np.array(decoding_runtime, dtype=np.float64))
+                _append_row(ds_skipped, np.array(int(cost_result['skipped'])))
 
                 decoding_runtimes.append(decoding_runtime)
+
+                if cost_result['skipped']:
+                    grp.attrs['avg_decoding_runtime_so_far'] = float(np.mean(decoding_runtimes))
+                    _flush_file(f)
+
+                    print(f"Skipping neighbor {n+1}/{N-1} due to insufficient distance.")
+                    continue
 
                 # Track the best neighbor to continue the random walk
                 if logical_error_rate < best_neighbor['cost']:
@@ -228,13 +236,20 @@ if __name__ == '__main__':
             next_state   = best_neighbor['state']
             current_cost = best_neighbor['cost']
 
+            if l == L-1 and n == N-2:
+                print("Last iteration and last neighbor reached; not appending best neighbor again.")
+                break
+
             # Append best neighbor again to show as the initial state of next iteration
             _append_row(ds_states, best_neighbor['edge_list'])
             _append_row(ds_lers, np.array(best_neighbor['cost'], dtype=np.float64))
             _append_row(ds_stds, np.array(cost_results[best_neighbor['idx']]['stderrs'], dtype=np.float64))
             _append_row(ds_dclass, np.array(cost_results[best_neighbor['idx']]['d_classical'], dtype=np.int32))
             _append_row(ds_dquant, np.array(cost_results[best_neighbor['idx']]['d_quantum'], dtype=np.int32))
+            _append_row(ds_dhx, np.array(cost_results[best_neighbor['idx']]['d_Hx'], dtype=np.int32))
+            _append_row(ds_dhz, np.array(cost_results[best_neighbor['idx']]['d_Hz'], dtype=np.int32))
             _append_row(ds_runtimes, np.array(cost_results[best_neighbor['idx']]['runtimes'], dtype=np.float64))
+            _append_row(ds_skipped, np.array(int(cost_results[best_neighbor['idx']]['skipped'])))
 
             _flush_file(f)
 
