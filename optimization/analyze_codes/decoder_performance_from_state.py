@@ -15,7 +15,9 @@ from ldpc.bposd_decoder import BpOsdDecoder
 from logical_operators import get_logical_operators_by_pivoting
 from decoder_performance import compute_logical_error_rate
 
-def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Random walk") -> dict:
+DISTANCE_THRESHOLD = 8  # minimum distance threshold to run the decoder performance evaluation
+
+def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Random walk", distance_threshold=DISTANCE_THRESHOLD, canskip=True, initial_rank=None) -> dict:
     """
     Evaluate the decoding performance (logical error rates) of a given state.
     Parameters:
@@ -30,20 +32,57 @@ def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_b
     """
     H = tanner_graph_to_parity_check_matrix(state)
 
-    n_classical, k_classical, d_classical = ldpc.code_util.compute_code_parameters(csr_matrix(H, dtype=np.uint8))
-    print(f"Code parameters: n={n_classical}, k={k_classical}, d={d_classical}")
+    csr_H = csr_matrix(H, dtype=np.uint8)
+    r_classical = ldpc.mod2.rank(csr_H)
+    print(f"Rank of H: {r_classical} out of {H.shape}")
+    n_classical, k_classical, d_classical = ldpc.code_util.compute_code_parameters(csr_H)
+    print(f"H Classical Code parameters: [{n_classical}, {k_classical}, {d_classical}]")
+    if k_classical == n_classical - csr_H.shape[0]:
+        print("H is full rank.")
+        n_T_classical = csr_H.shape[0]
+        k_T_classical = n_T_classical - r_classical
+        d_T_classical = np.inf
+    else:
+        print("H is not full rank; skipping H^T classical code parameters computation.")
+        n_T_classical, k_T_classical, d_T_classical = ldpc.code_util.compute_code_parameters(csr_matrix(H.T, dtype=np.uint8))
+    print(f"H^T Classical Code parameters: [{n_T_classical}, {k_T_classical}, {d_T_classical}]")
 
-    # H.data = np.where(np.asarray(H.data) > 0, 1, 0)
-    Hx, Hz = construct_HGP_code (H)
-    kx = ldpc.code_util.compute_code_dimension(csr_matrix(Hx, dtype=np.uint8))
-    kz = ldpc.code_util.compute_code_dimension(csr_matrix(Hz, dtype=np.uint8))
-    nx, kx, dx = ldpc.code_util.compute_code_parameters(csr_matrix(Hx, dtype=np.uint8))
-    nz, kz, dz = ldpc.code_util.compute_code_parameters(csr_matrix(Hz, dtype=np.uint8))
-    print(f"CSS Code parameters: nx={nx}, kx={kx}, nz={nz}, kz={kz}, dx={dx}, dz={dz}")
+    Hx, Hz = construct_HGP_code(H)
+    nx, _, d_Hx = ldpc.code_util.compute_code_parameters(csr_matrix(Hx, dtype=np.uint8)) 
+    nz, _, d_Hz = ldpc.code_util.compute_code_parameters(csr_matrix(Hz, dtype=np.uint8))
+    print(f"H_X Code parameters: nx={nx}, d_Hx={d_Hx}")
+    print(f"H_Z Code parameters: nz={nz}, d_Hz={d_Hz}")
 
-    n_quantum, k_quantum = nx, kx
-    d_quantum = min(dx, dz)
-    print(f"Quantum Code parameters: n={n_quantum}, k={k_quantum}, d={d_quantum}")
+    n_quantum = nx
+    k_quantum = k_classical**2 + k_T_classical**2
+    d_quantum = min(d_Hx, d_Hz)
+    print(f"Quantum Code parameters: [[{n_quantum}, {k_quantum}, {d_quantum}]]")
+
+    base_payload = {
+        "n_classical": n_classical,
+        "k_classical": k_classical,
+        "d_classical": d_classical,
+        "n_T_classical": n_T_classical,
+        "k_T_classical": k_T_classical,
+        "d_T_classical": d_T_classical,
+        "rank_H": r_classical,
+        "n_quantum": n_quantum,
+        "k_quantum": k_quantum,
+        "d_quantum": d_quantum,
+        "d_Hx": d_Hx,
+        "d_Hz": d_Hz
+    }
+    
+    if (d_quantum < distance_threshold or r_classical > initial_rank) and canskip:
+        print(f"Distance {d_quantum} is below threshold {distance_threshold} or rank_H {r_classical} is above initial_rank {initial_rank}. Skipping performance evaluation.")
+        # save placeholders
+        return {
+            "logical_error_rates": [0.0]*len(p_vals),
+            "stderrs": [0.0]*len(p_vals),
+            **base_payload,
+            "runtimes": [0.0]*len(p_vals),
+            "skipped": True
+        }
 
     if bp_max_iter is None:
         bp_max_iter = int(Hx.shape[1]/10)
@@ -84,11 +123,7 @@ def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_b
     return {
         "logical_error_rates": logical_error_rates,
         "stderrs": stderrs,
-        "n_classical": n_classical,
-        "k_classical": k_classical,
-        "d_classical": d_classical,
-        "n_quantum": n_quantum,
-        "k_quantum": k_quantum,
-        "d_quantum": d_quantum,
-        "runtimes": runtimes
+        **base_payload,
+        "runtimes": runtimes,
+        "skipped": False
     }
