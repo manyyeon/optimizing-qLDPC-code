@@ -22,7 +22,7 @@ state_space_params = [(15, 20, 60),
 MC_budget = int(1e5)
 # noise_levels = [9/32, 8/32, 9/32, 12/32]
 # noise_levels = [0.01, 8/32, 9/32, 12/32]
-noise_levels = [0.03, 8/32, 9/32, 0.03]
+noise_levels = [0.03, 0.03, 0.03, 0.03]
 # times: 15, 40, 80, 200
 p_vals = np.linspace(0.1, 0.5, 15)
 
@@ -83,6 +83,36 @@ def generate_neighbor_highlight(theta: nx.MultiGraph) -> tuple[nx.MultiGraph, tu
     neighbor.add_edges_from([f1, f2])
     
     return neighbor, [e1, e2], [f1, f2]
+
+def add_and_remove_edges(theta: nx.MultiGraph, edges_to_add: list[tuple], edges_to_remove: list[tuple]) -> nx.MultiGraph:
+    neighbor = nx.MultiGraph(theta)
+    neighbor.remove_edges_from(edges_to_remove)
+    neighbor.add_edges_from(edges_to_add)
+    return neighbor
+
+def generate_neighbor_by_adding_and_removing_edges(theta: nx.MultiGraph) -> tuple[nx.MultiGraph, tuple]:
+    # Copy state
+    neighbor = nx.MultiGraph(theta)
+    
+    # get (multi)edge number from state theta
+    E = neighbor.number_of_edges()
+    m = len([n for n, b in neighbor.nodes(data='bipartite') if b == 0])
+    n = len([n for n, b in neighbor.nodes(data='bipartite') if b == 1])
+
+    # sample edges to remove and add
+    edges_to_remove = list(npr.choice(E, size=2, replace=False))
+    edges_to_add = []
+    while len(edges_to_add) < 2:
+        c = npr.choice(m)
+        v = npr.choice(n) + m
+        if not neighbor.has_edge(c, v):
+            edges_to_add.append((c, v))
+    
+    # apply changes
+    neighbor.remove_edges_from([tuple(sorted(edge)) for edge in edges_to_remove])
+    neighbor.add_edges_from([tuple(sorted(edge)) for edge in edges_to_add])
+    
+    return neighbor, edges_to_remove, edges_to_add
 
 
 def generate_neighbor(theta: nx.MultiGraph) -> nx.MultiGraph:
