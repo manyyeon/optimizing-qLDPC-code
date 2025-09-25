@@ -1,0 +1,16 @@
+C = 1, N = 50, L = 10, p = 0.03, distance_threshold = 12
+Exploring code family [1225,65] with 50 neighbors and 10 iterations at p=0.03... with distance threshold 12
+Traceback (most recent call last):
+  File "/Users/dayeon/data/git/optimizing-qLDPC-code/optimization/best_neighbor_search.py", line 167, in <module>
+    with h5py.File(output_file, "a") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dayeon/Library/Python/3.12/lib/python/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dayeon/Library/Python/3.12/lib/python/site-packages/h5py/_hl/files.py", line 250, in make_fid
+    fid = h5f.open(name, h5f.ACC_RDWR, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+BlockingIOError: [Errno 35] Unable to synchronously open file (unable to lock file, errno = 35, error message = 'Resource temporarily unavailable')

@@ -1,0 +1,205 @@
+C = 1, N = 50, L = 10, p = 0.03
+Exploring code family [1225,65] with 50 neighbors and 10 iterations.
+Rank of H: 20 out of (21, 28)
+H Classical Code parameters: [28, 8, 6]
+The parity check matrix is not full rank; skipping H^T classical code parameters computation.
+H^T Classical Code parameters: [21, 1, 12]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 64, 6]]
+Distance 6 is below threshold 12. Skipping performance evaluation.
+Iteration 1/10: cost of current state = 0.000000
+Exploring neighbor 1/49 of iteration 1/10...
+Rank of H: 21 out of (21, 28)
+H Classical Code parameters: [28, 7, 6]
+The parity check matrix is full rank.
+H^T Classical Code parameters: [21, 0, inf]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 49, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to insufficient distance.
+Exploring neighbor 2/49 of iteration 1/10...
+Rank of H: 21 out of (21, 28)
+H Classical Code parameters: [28, 7, 6]
+The parity check matrix is full rank.
+H^T Classical Code parameters: [21, 0, inf]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 49, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 1/10...
+Rank of H: 21 out of (21, 28)
+H Classical Code parameters: [28, 7, 6]
+The parity check matrix is full rank.
+H^T Classical Code parameters: [21, 0, inf]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 49, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to insufficient distance.
+Exploring neighbor 4/49 of iteration 1/10...
+Rank of H: 21 out of (21, 28)
+H Classical Code parameters: [28, 7, 6]
+The parity check matrix is full rank.
+H^T Classical Code parameters: [21, 0, inf]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 49, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to insufficient distance.
+Exploring neighbor 5/49 of iteration 1/10...
+Rank of H: 20 out of (21, 28)
+H Classical Code parameters: [28, 8, 6]
+The parity check matrix is not full rank; skipping H^T classical code parameters computation.
+H^T Classical Code parameters: [21, 1, 12]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 64, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to insufficient distance.
+Exploring neighbor 6/49 of iteration 1/10...
+Rank of H: 21 out of (21, 28)
+H Classical Code parameters: [28, 7, 6]
+The parity check matrix is full rank.
+H^T Classical Code parameters: [21, 0, inf]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 49, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to insufficient distance.
+Exploring neighbor 7/49 of iteration 1/10...
+Rank of H: 20 out of (21, 28)
+H Classical Code parameters: [28, 8, 6]
+The parity check matrix is not full rank; skipping H^T classical code parameters computation.
+H^T Classical Code parameters: [21, 1, 12]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 64, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to insufficient distance.
+Exploring neighbor 8/49 of iteration 1/10...
+Rank of H: 20 out of (21, 28)
+H Classical Code parameters: [28, 8, 6]
+The parity check matrix is not full rank; skipping H^T classical code parameters computation.
+H^T Classical Code parameters: [21, 1, 12]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 64, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to insufficient distance.
+Exploring neighbor 9/49 of iteration 1/10...
+Rank of H: 21 out of (21, 28)
+H Classical Code parameters: [28, 7, 6]
+The parity check matrix is full rank.
+H^T Classical Code parameters: [21, 0, inf]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 49, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to insufficient distance.
+Exploring neighbor 10/49 of iteration 1/10...
+Rank of H: 20 out of (21, 28)
+H Classical Code parameters: [28, 8, 6]
+The parity check matrix is not full rank; skipping H^T classical code parameters computation.
+H^T Classical Code parameters: [21, 1, 12]
+H_X Code parameters: nx=1225, dz=8
+H_Z Code parameters: nz=1225, dx=8
+Quantum Code parameters: [[1225, 64, 8]]
+Hx, Hz, Lx, Lz: (588, 1225), (588, 1225), (65, 1225), (65, 1225)
+BP max iterations: 122, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 204.53 seconds with 1567 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01567 ± 0.0003927 (stderr)
+Logical error rate for p=0.03: 0.01567
+total runtime so far: 208.3s, avg decoding runtime so far: 18.5934s
+Exploring neighbor 11/49 of iteration 1/10...
+Rank of H: 20 out of (21, 28)
+H Classical Code parameters: [28, 8, 6]
+The parity check matrix is not full rank; skipping H^T classical code parameters computation.
+H^T Classical Code parameters: [21, 1, 12]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 64, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to insufficient distance.
+Exploring neighbor 12/49 of iteration 1/10...
+Rank of H: 21 out of (21, 28)
+H Classical Code parameters: [28, 7, 6]
+The parity check matrix is full rank.
+H^T Classical Code parameters: [21, 0, inf]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 49, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to insufficient distance.
+Exploring neighbor 13/49 of iteration 1/10...
+Rank of H: 21 out of (21, 28)
+H Classical Code parameters: [28, 7, 6]
+The parity check matrix is full rank.
+H^T Classical Code parameters: [21, 0, inf]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 49, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to insufficient distance.
+Exploring neighbor 14/49 of iteration 1/10...
+Rank of H: 20 out of (21, 28)
+H Classical Code parameters: [28, 8, 4]
+The parity check matrix is not full rank; skipping H^T classical code parameters computation.
+H^T Classical Code parameters: [21, 1, 12]
+H_X Code parameters: nx=1225, dz=4
+H_Z Code parameters: nz=1225, dx=4
+Quantum Code parameters: [[1225, 64, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 1/10...
+Rank of H: 20 out of (21, 28)
+H Classical Code parameters: [28, 8, 6]
+The parity check matrix is not full rank; skipping H^T classical code parameters computation.
+H^T Classical Code parameters: [21, 1, 12]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 64, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to insufficient distance.
+Exploring neighbor 16/49 of iteration 1/10...
+Rank of H: 20 out of (21, 28)
+H Classical Code parameters: [28, 8, 6]
+The parity check matrix is not full rank; skipping H^T classical code parameters computation.
+H^T Classical Code parameters: [21, 1, 12]
+H_X Code parameters: nx=1225, dz=7
+H_Z Code parameters: nz=1225, dx=7
+Quantum Code parameters: [[1225, 64, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to insufficient distance.
+Exploring neighbor 17/49 of iteration 1/10...
+Rank of H: 20 out of (21, 28)
+H Classical Code parameters: [28, 8, 6]
+The parity check matrix is not full rank; skipping H^T classical code parameters computation.
+H^T Classical Code parameters: [21, 1, 12]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 64, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to insufficient distance.
+Exploring neighbor 18/49 of iteration 1/10...
+Rank of H: 21 out of (21, 28)
+H Classical Code parameters: [28, 7, 6]
+The parity check matrix is full rank.
+H^T Classical Code parameters: [21, 0, inf]
+H_X Code parameters: nx=1225, dz=6
+H_Z Code parameters: nz=1225, dx=6
+Quantum Code parameters: [[1225, 49, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to insufficient distance.
+Exploring neighbor 19/49 of iteration 1/10...
+Rank of H: 21 out of (21, 28)
+H Classical Code parameters: [28, 7, 8]
+The parity check matrix is full rank.
+H^T Classical Code parameters: [21, 0, inf]
+H_X Code parameters: nx=1225, dz=10
+H_Z Code parameters: nz=1225, dx=8
+Quantum Code parameters: [[1225, 49, 8]]
+Hx, Hz, Lx, Lz: (588, 1225), (588, 1225), (49, 1225), (49, 1225)
+BP max iterations: 122, OSD order: 2, MS scaling factor: 0.625

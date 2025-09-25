@@ -1,0 +1,3955 @@
+C = 0, N = 50, L = 10, p = 0.03
+Exploring code family [625,25] with 50 neighbors and 10 iterations.
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 59.61 seconds with 1160 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0116 ± 0.0003386 (stderr)
+Logical error rate for p=0.03: 0.0116
+Iteration 1/10: cost of current state = 0.011600
+Exploring neighbor 1/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to insufficient distance.
+Exploring neighbor 2/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 61.69 seconds with 1308 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01308 ± 0.0003593 (stderr)
+Logical error rate for p=0.03: 0.01308
+Exploring neighbor 4/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to insufficient distance.
+Exploring neighbor 5/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to insufficient distance.
+Exploring neighbor 6/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to insufficient distance.
+Exploring neighbor 7/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to insufficient distance.
+Exploring neighbor 8/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to insufficient distance.
+Exploring neighbor 9/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to insufficient distance.
+Exploring neighbor 10/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to insufficient distance.
+Exploring neighbor 11/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to insufficient distance.
+Exploring neighbor 12/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to insufficient distance.
+Exploring neighbor 13/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to insufficient distance.
+Exploring neighbor 14/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.79 seconds with 751 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00751 ± 0.0002730 (stderr)
+Logical error rate for p=0.03: 0.00751
+Found minimum in neighbor 15/49 of iteration 1/10: 0.007510
+Exploring neighbor 16/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to insufficient distance.
+Exploring neighbor 17/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to insufficient distance.
+Exploring neighbor 18/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to insufficient distance.
+Exploring neighbor 19/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to insufficient distance.
+Exploring neighbor 20/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to insufficient distance.
+Exploring neighbor 21/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to insufficient distance.
+Exploring neighbor 22/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to insufficient distance.
+Exploring neighbor 23/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 56.55 seconds with 1401 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01401 ± 0.0003717 (stderr)
+Logical error rate for p=0.03: 0.01401
+Exploring neighbor 24/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to insufficient distance.
+Exploring neighbor 25/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to insufficient distance.
+Exploring neighbor 26/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.90 seconds with 1284 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01284 ± 0.0003560 (stderr)
+Logical error rate for p=0.03: 0.01284
+Exploring neighbor 27/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.99 seconds with 1150 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0115 ± 0.0003372 (stderr)
+Logical error rate for p=0.03: 0.0115
+Exploring neighbor 28/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.73 seconds with 771 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00771 ± 0.0002766 (stderr)
+Logical error rate for p=0.03: 0.00771
+Exploring neighbor 29/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to insufficient distance.
+Exploring neighbor 30/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to insufficient distance.
+Exploring neighbor 31/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to insufficient distance.
+Exploring neighbor 32/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to insufficient distance.
+Exploring neighbor 33/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to insufficient distance.
+Exploring neighbor 34/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 34/49 due to insufficient distance.
+Exploring neighbor 35/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to insufficient distance.
+Exploring neighbor 36/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to insufficient distance.
+Exploring neighbor 37/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to insufficient distance.
+Exploring neighbor 38/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to insufficient distance.
+Exploring neighbor 39/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 39/49 due to insufficient distance.
+Exploring neighbor 40/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 40/49 due to insufficient distance.
+Exploring neighbor 41/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 41/49 due to insufficient distance.
+Exploring neighbor 42/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 61.93 seconds with 628 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00628 ± 0.0002498 (stderr)
+Logical error rate for p=0.03: 0.00628
+Found minimum in neighbor 42/49 of iteration 1/10: 0.006280
+Exploring neighbor 43/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 43/49 due to insufficient distance.
+Exploring neighbor 44/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 44/49 due to insufficient distance.
+Exploring neighbor 45/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 45/49 due to insufficient distance.
+Exploring neighbor 46/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 46/49 due to insufficient distance.
+Exploring neighbor 47/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 47/49 due to insufficient distance.
+Exploring neighbor 48/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 48/49 due to insufficient distance.
+Exploring neighbor 49/49 of iteration 1/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 49/49 due to insufficient distance.
+Best neighbor in iteration 1/10 has cost 0.006280
+Iteration 2/10: cost of current state = 0.006280
+Exploring neighbor 1/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to insufficient distance.
+Exploring neighbor 2/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.78 seconds with 615 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00615 ± 0.0002472 (stderr)
+Logical error rate for p=0.03: 0.00615
+Found minimum in neighbor 3/49 of iteration 2/10: 0.006150
+Exploring neighbor 4/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to insufficient distance.
+Exploring neighbor 5/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to insufficient distance.
+Exploring neighbor 6/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to insufficient distance.
+Exploring neighbor 7/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to insufficient distance.
+Exploring neighbor 8/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to insufficient distance.
+Exploring neighbor 9/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 61.80 seconds with 620 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0062 ± 0.0002482 (stderr)
+Logical error rate for p=0.03: 0.0062
+Exploring neighbor 10/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to insufficient distance.
+Exploring neighbor 11/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to insufficient distance.
+Exploring neighbor 12/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to insufficient distance.
+Exploring neighbor 13/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to insufficient distance.
+Exploring neighbor 14/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.77 seconds with 1740 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0174 ± 0.0004135 (stderr)
+Logical error rate for p=0.03: 0.0174
+Exploring neighbor 16/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to insufficient distance.
+Exploring neighbor 17/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 63.59 seconds with 616 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00616 ± 0.0002474 (stderr)
+Logical error rate for p=0.03: 0.00616
+Exploring neighbor 18/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.32 seconds with 656 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00656 ± 0.0002553 (stderr)
+Logical error rate for p=0.03: 0.00656
+Exploring neighbor 19/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to insufficient distance.
+Exploring neighbor 20/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to insufficient distance.
+Exploring neighbor 21/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.53 seconds with 653 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00653 ± 0.0002547 (stderr)
+Logical error rate for p=0.03: 0.00653
+Exploring neighbor 22/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.58 seconds with 1251 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01251 ± 0.0003515 (stderr)
+Logical error rate for p=0.03: 0.01251
+Exploring neighbor 23/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.94 seconds with 1244 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01244 ± 0.0003505 (stderr)
+Logical error rate for p=0.03: 0.01244
+Exploring neighbor 24/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to insufficient distance.
+Exploring neighbor 25/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.19 seconds with 726 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00726 ± 0.0002685 (stderr)
+Logical error rate for p=0.03: 0.00726
+Exploring neighbor 26/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to insufficient distance.
+Exploring neighbor 27/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to insufficient distance.
+Exploring neighbor 28/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.08 seconds with 783 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00783 ± 0.0002787 (stderr)
+Logical error rate for p=0.03: 0.00783
+Exploring neighbor 29/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to insufficient distance.
+Exploring neighbor 30/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.29 seconds with 634 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00634 ± 0.0002510 (stderr)
+Logical error rate for p=0.03: 0.00634
+Exploring neighbor 31/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to insufficient distance.
+Exploring neighbor 32/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 63.85 seconds with 711 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00711 ± 0.0002657 (stderr)
+Logical error rate for p=0.03: 0.00711
+Exploring neighbor 33/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to insufficient distance.
+Exploring neighbor 34/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.89 seconds with 605 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00605 ± 0.0002452 (stderr)
+Logical error rate for p=0.03: 0.00605
+Found minimum in neighbor 34/49 of iteration 2/10: 0.006050
+Exploring neighbor 35/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to insufficient distance.
+Exploring neighbor 36/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to insufficient distance.
+Exploring neighbor 37/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to insufficient distance.
+Exploring neighbor 38/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.62 seconds with 6107 failures out of 100000 runs.
+Logical error rate for Random walk: 0.06107 ± 0.0007572 (stderr)
+Logical error rate for p=0.03: 0.06107
+Exploring neighbor 39/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 62.55 seconds with 1769 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01769 ± 0.0004169 (stderr)
+Logical error rate for p=0.03: 0.01769
+Exploring neighbor 40/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 40/49 due to insufficient distance.
+Exploring neighbor 41/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 41/49 due to insufficient distance.
+Exploring neighbor 42/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.45 seconds with 763 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00763 ± 0.0002752 (stderr)
+Logical error rate for p=0.03: 0.00763
+Exploring neighbor 43/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 43/49 due to insufficient distance.
+Exploring neighbor 44/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 44/49 due to insufficient distance.
+Exploring neighbor 45/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 45/49 due to insufficient distance.
+Exploring neighbor 46/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 46/49 due to insufficient distance.
+Exploring neighbor 47/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 47/49 due to insufficient distance.
+Exploring neighbor 48/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 48/49 due to insufficient distance.
+Exploring neighbor 49/49 of iteration 2/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 49/49 due to insufficient distance.
+Best neighbor in iteration 2/10 has cost 0.006050
+Iteration 3/10: cost of current state = 0.006050
+Exploring neighbor 1/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.11 seconds with 760 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0076 ± 0.0002746 (stderr)
+Logical error rate for p=0.03: 0.0076
+Exploring neighbor 2/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to insufficient distance.
+Exploring neighbor 4/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to insufficient distance.
+Exploring neighbor 5/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.99 seconds with 605 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00605 ± 0.0002452 (stderr)
+Logical error rate for p=0.03: 0.00605
+Exploring neighbor 6/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 61.20 seconds with 830 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0083 ± 0.0002869 (stderr)
+Logical error rate for p=0.03: 0.0083
+Exploring neighbor 7/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to insufficient distance.
+Exploring neighbor 8/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to insufficient distance.
+Exploring neighbor 9/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to insufficient distance.
+Exploring neighbor 10/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to insufficient distance.
+Exploring neighbor 11/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to insufficient distance.
+Exploring neighbor 12/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.93 seconds with 693 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00693 ± 0.0002623 (stderr)
+Logical error rate for p=0.03: 0.00693
+Exploring neighbor 13/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to insufficient distance.
+Exploring neighbor 14/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to insufficient distance.
+Exploring neighbor 16/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to insufficient distance.
+Exploring neighbor 17/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to insufficient distance.
+Exploring neighbor 18/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to insufficient distance.
+Exploring neighbor 19/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to insufficient distance.
+Exploring neighbor 20/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 2]
+H_X Code parameters: nx=625, dz=2
+H_Z Code parameters: nz=625, dx=2
+Quantum Code parameters: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to insufficient distance.
+Exploring neighbor 21/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to insufficient distance.
+Exploring neighbor 22/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to insufficient distance.
+Exploring neighbor 23/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.72 seconds with 771 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00771 ± 0.0002766 (stderr)
+Logical error rate for p=0.03: 0.00771
+Exploring neighbor 24/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to insufficient distance.
+Exploring neighbor 25/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.58 seconds with 581 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00581 ± 0.0002403 (stderr)
+Logical error rate for p=0.03: 0.00581
+Found minimum in neighbor 25/49 of iteration 3/10: 0.005810
+Exploring neighbor 26/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.97 seconds with 697 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00697 ± 0.0002631 (stderr)
+Logical error rate for p=0.03: 0.00697
+Exploring neighbor 27/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.21 seconds with 734 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00734 ± 0.0002699 (stderr)
+Logical error rate for p=0.03: 0.00734
+Exploring neighbor 28/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to insufficient distance.
+Exploring neighbor 29/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=10
+H_Z Code parameters: nz=625, dx=10
+Quantum Code parameters: [[625, 25, 10]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.53 seconds with 673 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00673 ± 0.0002585 (stderr)
+Logical error rate for p=0.03: 0.00673
+Exploring neighbor 30/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to insufficient distance.
+Exploring neighbor 31/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to insufficient distance.
+Exploring neighbor 32/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.72 seconds with 648 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00648 ± 0.0002537 (stderr)
+Logical error rate for p=0.03: 0.00648
+Exploring neighbor 33/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to insufficient distance.
+Exploring neighbor 34/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.64 seconds with 1034 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01034 ± 0.0003199 (stderr)
+Logical error rate for p=0.03: 0.01034
+Exploring neighbor 35/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to insufficient distance.
+Exploring neighbor 36/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.53 seconds with 601 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00601 ± 0.0002444 (stderr)
+Logical error rate for p=0.03: 0.00601
+Exploring neighbor 37/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to insufficient distance.
+Exploring neighbor 38/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.48 seconds with 648 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00648 ± 0.0002537 (stderr)
+Logical error rate for p=0.03: 0.00648
+Exploring neighbor 39/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.90 seconds with 594 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00594 ± 0.0002430 (stderr)
+Logical error rate for p=0.03: 0.00594
+Exploring neighbor 40/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 40/49 due to insufficient distance.
+Exploring neighbor 41/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 41/49 due to insufficient distance.
+Exploring neighbor 42/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.48 seconds with 1181 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01181 ± 0.0003416 (stderr)
+Logical error rate for p=0.03: 0.01181
+Exploring neighbor 43/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 43/49 due to insufficient distance.
+Exploring neighbor 44/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 2]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 258.29 seconds with 46136 failures out of 100000 runs.
+Logical error rate for Random walk: 0.46136 ± 0.0015764 (stderr)
+Logical error rate for p=0.03: 0.46136
+Exploring neighbor 45/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.85 seconds with 574 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00574 ± 0.0002389 (stderr)
+Logical error rate for p=0.03: 0.00574
+Found minimum in neighbor 45/49 of iteration 3/10: 0.005740
+Exploring neighbor 46/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 46/49 due to insufficient distance.
+Exploring neighbor 47/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.49 seconds with 636 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00636 ± 0.0002514 (stderr)
+Logical error rate for p=0.03: 0.00636
+Exploring neighbor 48/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.51 seconds with 659 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00659 ± 0.0002559 (stderr)
+Logical error rate for p=0.03: 0.00659
+Exploring neighbor 49/49 of iteration 3/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.98 seconds with 745 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00745 ± 0.0002719 (stderr)
+Logical error rate for p=0.03: 0.00745
+Best neighbor in iteration 3/10 has cost 0.005740
+Iteration 4/10: cost of current state = 0.005740
+Exploring neighbor 1/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to insufficient distance.
+Exploring neighbor 2/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to insufficient distance.
+Exploring neighbor 4/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.56 seconds with 688 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00688 ± 0.0002614 (stderr)
+Logical error rate for p=0.03: 0.00688
+Exploring neighbor 5/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to insufficient distance.
+Exploring neighbor 6/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 68.22 seconds with 593 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00593 ± 0.0002428 (stderr)
+Logical error rate for p=0.03: 0.00593
+Exploring neighbor 7/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 64.84 seconds with 649 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00649 ± 0.0002539 (stderr)
+Logical error rate for p=0.03: 0.00649
+Exploring neighbor 8/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to insufficient distance.
+Exploring neighbor 9/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to insufficient distance.
+Exploring neighbor 10/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.63 seconds with 771 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00771 ± 0.0002766 (stderr)
+Logical error rate for p=0.03: 0.00771
+Exploring neighbor 11/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.27 seconds with 656 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00656 ± 0.0002553 (stderr)
+Logical error rate for p=0.03: 0.00656
+Exploring neighbor 12/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to insufficient distance.
+Exploring neighbor 13/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to insufficient distance.
+Exploring neighbor 14/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to insufficient distance.
+Exploring neighbor 16/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to insufficient distance.
+Exploring neighbor 17/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.14 seconds with 813 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00813 ± 0.0002840 (stderr)
+Logical error rate for p=0.03: 0.00813
+Exploring neighbor 18/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to insufficient distance.
+Exploring neighbor 19/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.99 seconds with 724 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00724 ± 0.0002681 (stderr)
+Logical error rate for p=0.03: 0.00724
+Exploring neighbor 20/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.29 seconds with 1220 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0122 ± 0.0003471 (stderr)
+Logical error rate for p=0.03: 0.0122
+Exploring neighbor 21/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.31 seconds with 596 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00596 ± 0.0002434 (stderr)
+Logical error rate for p=0.03: 0.00596
+Exploring neighbor 22/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to insufficient distance.
+Exploring neighbor 23/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.92 seconds with 1045 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01045 ± 0.0003216 (stderr)
+Logical error rate for p=0.03: 0.01045
+Exploring neighbor 24/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to insufficient distance.
+Exploring neighbor 25/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.24 seconds with 1148 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01148 ± 0.0003369 (stderr)
+Logical error rate for p=0.03: 0.01148
+Exploring neighbor 26/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to insufficient distance.
+Exploring neighbor 27/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to insufficient distance.
+Exploring neighbor 28/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 67.18 seconds with 646 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00646 ± 0.0002533 (stderr)
+Logical error rate for p=0.03: 0.00646
+Exploring neighbor 29/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.57 seconds with 621 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00621 ± 0.0002484 (stderr)
+Logical error rate for p=0.03: 0.00621
+Exploring neighbor 30/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=10
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to insufficient distance.
+Exploring neighbor 31/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.45 seconds with 613 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00613 ± 0.0002468 (stderr)
+Logical error rate for p=0.03: 0.00613
+Exploring neighbor 32/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to insufficient distance.
+Exploring neighbor 33/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to insufficient distance.
+Exploring neighbor 34/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 34/49 due to insufficient distance.
+Exploring neighbor 35/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to insufficient distance.
+Exploring neighbor 36/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 65.62 seconds with 1169 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01169 ± 0.0003399 (stderr)
+Logical error rate for p=0.03: 0.01169
+Exploring neighbor 37/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.69 seconds with 654 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00654 ± 0.0002549 (stderr)
+Logical error rate for p=0.03: 0.00654
+Exploring neighbor 38/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.09 seconds with 580 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0058 ± 0.0002401 (stderr)
+Logical error rate for p=0.03: 0.0058
+Exploring neighbor 39/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 39/49 due to insufficient distance.
+Exploring neighbor 40/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 40/49 due to insufficient distance.
+Exploring neighbor 41/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 41/49 due to insufficient distance.
+Exploring neighbor 42/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 42/49 due to insufficient distance.
+Exploring neighbor 43/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.62 seconds with 1231 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01231 ± 0.0003487 (stderr)
+Logical error rate for p=0.03: 0.01231
+Exploring neighbor 44/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 44/49 due to insufficient distance.
+Exploring neighbor 45/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 45/49 due to insufficient distance.
+Exploring neighbor 46/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 46/49 due to insufficient distance.
+Exploring neighbor 47/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.87 seconds with 831 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00831 ± 0.0002871 (stderr)
+Logical error rate for p=0.03: 0.00831
+Exploring neighbor 48/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 48/49 due to insufficient distance.
+Exploring neighbor 49/49 of iteration 4/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 49/49 due to insufficient distance.
+Best neighbor in iteration 4/10 has cost 0.005800
+Iteration 5/10: cost of current state = 0.005800
+Exploring neighbor 1/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to insufficient distance.
+Exploring neighbor 2/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to insufficient distance.
+Exploring neighbor 4/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 79.15 seconds with 5658 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05658 ± 0.0007306 (stderr)
+Logical error rate for p=0.03: 0.05658
+Exploring neighbor 5/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to insufficient distance.
+Exploring neighbor 6/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to insufficient distance.
+Exploring neighbor 7/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.02 seconds with 753 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00753 ± 0.0002734 (stderr)
+Logical error rate for p=0.03: 0.00753
+Exploring neighbor 8/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.42 seconds with 583 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00583 ± 0.0002408 (stderr)
+Logical error rate for p=0.03: 0.00583
+Exploring neighbor 9/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=9
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to insufficient distance.
+Exploring neighbor 10/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to insufficient distance.
+Exploring neighbor 11/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 2]
+H_X Code parameters: nx=625, dz=2
+H_Z Code parameters: nz=625, dx=2
+Quantum Code parameters: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to insufficient distance.
+Exploring neighbor 12/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.12 seconds with 549 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00549 ± 0.0002337 (stderr)
+Logical error rate for p=0.03: 0.00549
+Found minimum in neighbor 12/49 of iteration 5/10: 0.005490
+Exploring neighbor 13/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 80.30 seconds with 576 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00576 ± 0.0002393 (stderr)
+Logical error rate for p=0.03: 0.00576
+Exploring neighbor 14/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to insufficient distance.
+Exploring neighbor 16/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to insufficient distance.
+Exploring neighbor 17/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.86 seconds with 701 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00701 ± 0.0002638 (stderr)
+Logical error rate for p=0.03: 0.00701
+Exploring neighbor 18/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.70 seconds with 723 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00723 ± 0.0002679 (stderr)
+Logical error rate for p=0.03: 0.00723
+Exploring neighbor 19/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to insufficient distance.
+Exploring neighbor 20/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to insufficient distance.
+Exploring neighbor 21/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to insufficient distance.
+Exploring neighbor 22/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to insufficient distance.
+Exploring neighbor 23/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 23/49 due to insufficient distance.
+Exploring neighbor 24/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to insufficient distance.
+Exploring neighbor 25/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to insufficient distance.
+Exploring neighbor 26/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.35 seconds with 519 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00519 ± 0.0002272 (stderr)
+Logical error rate for p=0.03: 0.00519
+Found minimum in neighbor 26/49 of iteration 5/10: 0.005190
+Exploring neighbor 27/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.93 seconds with 542 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00542 ± 0.0002322 (stderr)
+Logical error rate for p=0.03: 0.00542
+Exploring neighbor 28/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to insufficient distance.
+Exploring neighbor 29/49 of iteration 5/10...
+H Classical Code parameters: [20, 6, 6]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 36, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to insufficient distance.
+Exploring neighbor 30/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to insufficient distance.
+Exploring neighbor 31/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to insufficient distance.
+Exploring neighbor 32/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to insufficient distance.
+Exploring neighbor 33/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to insufficient distance.
+Exploring neighbor 34/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 34/49 due to insufficient distance.
+Exploring neighbor 35/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to insufficient distance.
+Exploring neighbor 36/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to insufficient distance.
+Exploring neighbor 37/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to insufficient distance.
+Exploring neighbor 38/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to insufficient distance.
+Exploring neighbor 39/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 39/49 due to insufficient distance.
+Exploring neighbor 40/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 40/49 due to insufficient distance.
+Exploring neighbor 41/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.51 seconds with 589 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00589 ± 0.0002420 (stderr)
+Logical error rate for p=0.03: 0.00589
+Exploring neighbor 42/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.03 seconds with 701 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00701 ± 0.0002638 (stderr)
+Logical error rate for p=0.03: 0.00701
+Exploring neighbor 43/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.02 seconds with 765 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00765 ± 0.0002755 (stderr)
+Logical error rate for p=0.03: 0.00765
+Exploring neighbor 44/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 44/49 due to insufficient distance.
+Exploring neighbor 45/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.71 seconds with 569 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00569 ± 0.0002379 (stderr)
+Logical error rate for p=0.03: 0.00569
+Exploring neighbor 46/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.06 seconds with 635 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00635 ± 0.0002512 (stderr)
+Logical error rate for p=0.03: 0.00635
+Exploring neighbor 47/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 47/49 due to insufficient distance.
+Exploring neighbor 48/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 48/49 due to insufficient distance.
+Exploring neighbor 49/49 of iteration 5/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 49/49 due to insufficient distance.
+Best neighbor in iteration 5/10 has cost 0.005190
+Iteration 6/10: cost of current state = 0.005190
+Exploring neighbor 1/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to insufficient distance.
+Exploring neighbor 2/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.66 seconds with 726 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00726 ± 0.0002685 (stderr)
+Logical error rate for p=0.03: 0.00726
+Exploring neighbor 4/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to insufficient distance.
+Exploring neighbor 5/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to insufficient distance.
+Exploring neighbor 6/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.37 seconds with 569 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00569 ± 0.0002379 (stderr)
+Logical error rate for p=0.03: 0.00569
+Exploring neighbor 7/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to insufficient distance.
+Exploring neighbor 8/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to insufficient distance.
+Exploring neighbor 9/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to insufficient distance.
+Exploring neighbor 10/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to insufficient distance.
+Exploring neighbor 11/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.45 seconds with 604 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00604 ± 0.0002450 (stderr)
+Logical error rate for p=0.03: 0.00604
+Exploring neighbor 12/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.85 seconds with 728 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00728 ± 0.0002688 (stderr)
+Logical error rate for p=0.03: 0.00728
+Exploring neighbor 13/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to insufficient distance.
+Exploring neighbor 14/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to insufficient distance.
+Exploring neighbor 16/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.94 seconds with 556 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00556 ± 0.0002351 (stderr)
+Logical error rate for p=0.03: 0.00556
+Exploring neighbor 17/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.79 seconds with 591 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00591 ± 0.0002424 (stderr)
+Logical error rate for p=0.03: 0.00591
+Exploring neighbor 18/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.94 seconds with 696 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00696 ± 0.0002629 (stderr)
+Logical error rate for p=0.03: 0.00696
+Exploring neighbor 19/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to insufficient distance.
+Exploring neighbor 20/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to insufficient distance.
+Exploring neighbor 21/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to insufficient distance.
+Exploring neighbor 22/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to insufficient distance.
+Exploring neighbor 23/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.97 seconds with 1263 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01263 ± 0.0003531 (stderr)
+Logical error rate for p=0.03: 0.01263
+Exploring neighbor 24/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to insufficient distance.
+Exploring neighbor 25/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to insufficient distance.
+Exploring neighbor 26/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.87 seconds with 1262 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01262 ± 0.0003530 (stderr)
+Logical error rate for p=0.03: 0.01262
+Exploring neighbor 27/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to insufficient distance.
+Exploring neighbor 28/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to insufficient distance.
+Exploring neighbor 29/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to insufficient distance.
+Exploring neighbor 30/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 2]
+H_X Code parameters: nx=625, dz=2
+H_Z Code parameters: nz=625, dx=2
+Quantum Code parameters: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to insufficient distance.
+Exploring neighbor 31/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to insufficient distance.
+Exploring neighbor 32/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to insufficient distance.
+Exploring neighbor 33/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to insufficient distance.
+Exploring neighbor 34/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.79 seconds with 559 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00559 ± 0.0002358 (stderr)
+Logical error rate for p=0.03: 0.00559
+Exploring neighbor 35/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 79.08 seconds with 590 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0059 ± 0.0002422 (stderr)
+Logical error rate for p=0.03: 0.0059
+Exploring neighbor 36/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.83 seconds with 716 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00716 ± 0.0002666 (stderr)
+Logical error rate for p=0.03: 0.00716
+Exploring neighbor 37/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to insufficient distance.
+Exploring neighbor 38/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to insufficient distance.
+Exploring neighbor 39/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 39/49 due to insufficient distance.
+Exploring neighbor 40/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 40/49 due to insufficient distance.
+Exploring neighbor 41/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 41/49 due to insufficient distance.
+Exploring neighbor 42/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 42/49 due to insufficient distance.
+Exploring neighbor 43/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 43/49 due to insufficient distance.
+Exploring neighbor 44/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 44/49 due to insufficient distance.
+Exploring neighbor 45/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 45/49 due to insufficient distance.
+Exploring neighbor 46/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 79.23 seconds with 633 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00633 ± 0.0002508 (stderr)
+Logical error rate for p=0.03: 0.00633
+Exploring neighbor 47/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 66.28 seconds with 762 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00762 ± 0.0002750 (stderr)
+Logical error rate for p=0.03: 0.00762
+Exploring neighbor 48/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.21 seconds with 642 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00642 ± 0.0002526 (stderr)
+Logical error rate for p=0.03: 0.00642
+Exploring neighbor 49/49 of iteration 6/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.86 seconds with 531 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00531 ± 0.0002298 (stderr)
+Logical error rate for p=0.03: 0.00531
+Best neighbor in iteration 6/10 has cost 0.005310
+Iteration 7/10: cost of current state = 0.005310
+Exploring neighbor 1/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to insufficient distance.
+Exploring neighbor 2/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to insufficient distance.
+Exploring neighbor 4/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to insufficient distance.
+Exploring neighbor 5/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to insufficient distance.
+Exploring neighbor 6/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to insufficient distance.
+Exploring neighbor 7/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 80.66 seconds with 1248 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01248 ± 0.0003511 (stderr)
+Logical error rate for p=0.03: 0.01248
+Exploring neighbor 8/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.84 seconds with 642 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00642 ± 0.0002526 (stderr)
+Logical error rate for p=0.03: 0.00642
+Exploring neighbor 9/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.19 seconds with 773 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00773 ± 0.0002770 (stderr)
+Logical error rate for p=0.03: 0.00773
+Exploring neighbor 10/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to insufficient distance.
+Exploring neighbor 11/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 90.83 seconds with 550 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0055 ± 0.0002339 (stderr)
+Logical error rate for p=0.03: 0.0055
+Exploring neighbor 12/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to insufficient distance.
+Exploring neighbor 13/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to insufficient distance.
+Exploring neighbor 14/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=10
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.62 seconds with 1180 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0118 ± 0.0003415 (stderr)
+Logical error rate for p=0.03: 0.0118
+Exploring neighbor 16/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 79.10 seconds with 682 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00682 ± 0.0002603 (stderr)
+Logical error rate for p=0.03: 0.00682
+Exploring neighbor 17/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to insufficient distance.
+Exploring neighbor 18/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to insufficient distance.
+Exploring neighbor 19/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.03 seconds with 744 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00744 ± 0.0002717 (stderr)
+Logical error rate for p=0.03: 0.00744
+Exploring neighbor 20/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to insufficient distance.
+Exploring neighbor 21/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to insufficient distance.
+Exploring neighbor 22/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.01 seconds with 1239 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01239 ± 0.0003498 (stderr)
+Logical error rate for p=0.03: 0.01239
+Exploring neighbor 23/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 23/49 due to insufficient distance.
+Exploring neighbor 24/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to insufficient distance.
+Exploring neighbor 25/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to insufficient distance.
+Exploring neighbor 26/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to insufficient distance.
+Exploring neighbor 27/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to insufficient distance.
+Exploring neighbor 28/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.78 seconds with 570 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0057 ± 0.0002381 (stderr)
+Logical error rate for p=0.03: 0.0057
+Exploring neighbor 29/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.85 seconds with 1141 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01141 ± 0.0003359 (stderr)
+Logical error rate for p=0.03: 0.01141
+Exploring neighbor 30/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to insufficient distance.
+Exploring neighbor 31/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to insufficient distance.
+Exploring neighbor 32/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to insufficient distance.
+Exploring neighbor 33/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to insufficient distance.
+Exploring neighbor 34/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 111.60 seconds with 666 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00666 ± 0.0002572 (stderr)
+Logical error rate for p=0.03: 0.00666
+Exploring neighbor 35/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 80.80 seconds with 651 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00651 ± 0.0002543 (stderr)
+Logical error rate for p=0.03: 0.00651
+Exploring neighbor 36/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.43 seconds with 617 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00617 ± 0.0002476 (stderr)
+Logical error rate for p=0.03: 0.00617
+Exploring neighbor 37/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to insufficient distance.
+Exploring neighbor 38/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to insufficient distance.
+Exploring neighbor 39/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 39/49 due to insufficient distance.
+Exploring neighbor 40/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 40/49 due to insufficient distance.
+Exploring neighbor 41/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.03 seconds with 621 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00621 ± 0.0002484 (stderr)
+Logical error rate for p=0.03: 0.00621
+Exploring neighbor 42/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 42/49 due to insufficient distance.
+Exploring neighbor 43/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 43/49 due to insufficient distance.
+Exploring neighbor 44/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 44/49 due to insufficient distance.
+Exploring neighbor 45/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 79.63 seconds with 822 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00822 ± 0.0002855 (stderr)
+Logical error rate for p=0.03: 0.00822
+Exploring neighbor 46/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.72 seconds with 1527 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01527 ± 0.0003878 (stderr)
+Logical error rate for p=0.03: 0.01527
+Exploring neighbor 47/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 47/49 due to insufficient distance.
+Exploring neighbor 48/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 48/49 due to insufficient distance.
+Exploring neighbor 49/49 of iteration 7/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.17 seconds with 624 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00624 ± 0.0002490 (stderr)
+Logical error rate for p=0.03: 0.00624
+Best neighbor in iteration 7/10 has cost 0.005500
+Iteration 8/10: cost of current state = 0.005500
+Exploring neighbor 1/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to insufficient distance.
+Exploring neighbor 2/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 2]
+H_X Code parameters: nx=625, dz=2
+H_Z Code parameters: nz=625, dx=2
+Quantum Code parameters: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.56 seconds with 673 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00673 ± 0.0002585 (stderr)
+Logical error rate for p=0.03: 0.00673
+Exploring neighbor 4/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to insufficient distance.
+Exploring neighbor 5/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to insufficient distance.
+Exploring neighbor 6/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to insufficient distance.
+Exploring neighbor 7/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to insufficient distance.
+Exploring neighbor 8/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.39 seconds with 702 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00702 ± 0.0002640 (stderr)
+Logical error rate for p=0.03: 0.00702
+Exploring neighbor 9/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to insufficient distance.
+Exploring neighbor 10/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to insufficient distance.
+Exploring neighbor 11/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to insufficient distance.
+Exploring neighbor 12/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 110.43 seconds with 5598 failures out of 100000 runs.
+Logical error rate for Random walk: 0.05598 ± 0.0007270 (stderr)
+Logical error rate for p=0.03: 0.05598
+Exploring neighbor 13/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=9
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to insufficient distance.
+Exploring neighbor 14/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to insufficient distance.
+Exploring neighbor 16/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 79.44 seconds with 748 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00748 ± 0.0002725 (stderr)
+Logical error rate for p=0.03: 0.00748
+Exploring neighbor 17/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 90.39 seconds with 1081 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01081 ± 0.0003270 (stderr)
+Logical error rate for p=0.03: 0.01081
+Exploring neighbor 18/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to insufficient distance.
+Exploring neighbor 19/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to insufficient distance.
+Exploring neighbor 20/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 83.20 seconds with 761 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00761 ± 0.0002748 (stderr)
+Logical error rate for p=0.03: 0.00761
+Exploring neighbor 21/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to insufficient distance.
+Exploring neighbor 22/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to insufficient distance.
+Exploring neighbor 23/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.71 seconds with 595 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00595 ± 0.0002432 (stderr)
+Logical error rate for p=0.03: 0.00595
+Exploring neighbor 24/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to insufficient distance.
+Exploring neighbor 25/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 90.67 seconds with 522 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00522 ± 0.0002279 (stderr)
+Logical error rate for p=0.03: 0.00522
+Exploring neighbor 26/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to insufficient distance.
+Exploring neighbor 27/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to insufficient distance.
+Exploring neighbor 28/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 5]
+H_X Code parameters: nx=625, dz=5
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to insufficient distance.
+Exploring neighbor 29/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to insufficient distance.
+Exploring neighbor 30/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to insufficient distance.
+Exploring neighbor 31/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to insufficient distance.
+Exploring neighbor 32/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to insufficient distance.
+Exploring neighbor 33/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 92.92 seconds with 778 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00778 ± 0.0002778 (stderr)
+Logical error rate for p=0.03: 0.00778
+Exploring neighbor 34/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 34/49 due to insufficient distance.
+Exploring neighbor 35/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to insufficient distance.
+Exploring neighbor 36/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to insufficient distance.
+Exploring neighbor 37/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to insufficient distance.
+Exploring neighbor 38/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to insufficient distance.
+Exploring neighbor 39/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 91.54 seconds with 596 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00596 ± 0.0002434 (stderr)
+Logical error rate for p=0.03: 0.00596
+Exploring neighbor 40/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 40/49 due to insufficient distance.
+Exploring neighbor 41/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.52 seconds with 576 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00576 ± 0.0002393 (stderr)
+Logical error rate for p=0.03: 0.00576
+Exploring neighbor 42/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.28 seconds with 481 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00481 ± 0.0002188 (stderr)
+Logical error rate for p=0.03: 0.00481
+Found minimum in neighbor 42/49 of iteration 8/10: 0.004810
+Exploring neighbor 43/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 43/49 due to insufficient distance.
+Exploring neighbor 44/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 99.71 seconds with 624 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00624 ± 0.0002490 (stderr)
+Logical error rate for p=0.03: 0.00624
+Exploring neighbor 45/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 91.30 seconds with 655 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00655 ± 0.0002551 (stderr)
+Logical error rate for p=0.03: 0.00655
+Exploring neighbor 46/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 2]
+H_X Code parameters: nx=625, dz=2
+H_Z Code parameters: nz=625, dx=2
+Quantum Code parameters: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 46/49 due to insufficient distance.
+Exploring neighbor 47/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 47/49 due to insufficient distance.
+Exploring neighbor 48/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 48/49 due to insufficient distance.
+Exploring neighbor 49/49 of iteration 8/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 49/49 due to insufficient distance.
+Best neighbor in iteration 8/10 has cost 0.004810
+Iteration 9/10: cost of current state = 0.004810
+Exploring neighbor 1/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to insufficient distance.
+Exploring neighbor 2/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to insufficient distance.
+Exploring neighbor 4/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to insufficient distance.
+Exploring neighbor 5/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 71.13 seconds with 572 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00572 ± 0.0002385 (stderr)
+Logical error rate for p=0.03: 0.00572
+Exploring neighbor 6/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to insufficient distance.
+Exploring neighbor 7/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to insufficient distance.
+Exploring neighbor 8/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to insufficient distance.
+Exploring neighbor 9/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 82.93 seconds with 552 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00552 ± 0.0002343 (stderr)
+Logical error rate for p=0.03: 0.00552
+Exploring neighbor 10/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to insufficient distance.
+Exploring neighbor 11/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to insufficient distance.
+Exploring neighbor 12/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 70.53 seconds with 600 failures out of 100000 runs.
+Logical error rate for Random walk: 0.006 ± 0.0002442 (stderr)
+Logical error rate for p=0.03: 0.006
+Exploring neighbor 13/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to insufficient distance.
+Exploring neighbor 14/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.37 seconds with 653 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00653 ± 0.0002547 (stderr)
+Logical error rate for p=0.03: 0.00653
+Exploring neighbor 16/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.54 seconds with 477 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00477 ± 0.0002179 (stderr)
+Logical error rate for p=0.03: 0.00477
+Found minimum in neighbor 16/49 of iteration 9/10: 0.004770
+Exploring neighbor 17/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to insufficient distance.
+Exploring neighbor 18/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to insufficient distance.
+Exploring neighbor 19/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to insufficient distance.
+Exploring neighbor 20/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.98 seconds with 533 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00533 ± 0.0002303 (stderr)
+Logical error rate for p=0.03: 0.00533
+Exploring neighbor 21/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to insufficient distance.
+Exploring neighbor 22/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to insufficient distance.
+Exploring neighbor 23/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.81 seconds with 484 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00484 ± 0.0002195 (stderr)
+Logical error rate for p=0.03: 0.00484
+Exploring neighbor 24/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to insufficient distance.
+Exploring neighbor 25/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.42 seconds with 448 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00448 ± 0.0002112 (stderr)
+Logical error rate for p=0.03: 0.00448
+Found minimum in neighbor 25/49 of iteration 9/10: 0.004480
+Exploring neighbor 26/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to insufficient distance.
+Exploring neighbor 27/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.37 seconds with 575 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00575 ± 0.0002391 (stderr)
+Logical error rate for p=0.03: 0.00575
+Exploring neighbor 28/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.08 seconds with 658 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00658 ± 0.0002557 (stderr)
+Logical error rate for p=0.03: 0.00658
+Exploring neighbor 29/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to insufficient distance.
+Exploring neighbor 30/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to insufficient distance.
+Exploring neighbor 31/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 72.95 seconds with 447 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00447 ± 0.0002110 (stderr)
+Logical error rate for p=0.03: 0.00447
+Found minimum in neighbor 31/49 of iteration 9/10: 0.004470
+Exploring neighbor 32/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to insufficient distance.
+Exploring neighbor 33/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to insufficient distance.
+Exploring neighbor 34/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 85.65 seconds with 633 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00633 ± 0.0002508 (stderr)
+Logical error rate for p=0.03: 0.00633
+Exploring neighbor 35/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.83 seconds with 467 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00467 ± 0.0002156 (stderr)
+Logical error rate for p=0.03: 0.00467
+Exploring neighbor 36/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.89 seconds with 1161 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01161 ± 0.0003388 (stderr)
+Logical error rate for p=0.03: 0.01161
+Exploring neighbor 37/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to insufficient distance.
+Exploring neighbor 38/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to insufficient distance.
+Exploring neighbor 39/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 39/49 due to insufficient distance.
+Exploring neighbor 40/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.82 seconds with 558 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00558 ± 0.0002356 (stderr)
+Logical error rate for p=0.03: 0.00558
+Exploring neighbor 41/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.60 seconds with 655 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00655 ± 0.0002551 (stderr)
+Logical error rate for p=0.03: 0.00655
+Exploring neighbor 42/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.39 seconds with 522 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00522 ± 0.0002279 (stderr)
+Logical error rate for p=0.03: 0.00522
+Exploring neighbor 43/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.56 seconds with 617 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00617 ± 0.0002476 (stderr)
+Logical error rate for p=0.03: 0.00617
+Exploring neighbor 44/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 44/49 due to insufficient distance.
+Exploring neighbor 45/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 77.02 seconds with 510 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0051 ± 0.0002253 (stderr)
+Logical error rate for p=0.03: 0.0051
+Exploring neighbor 46/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.44 seconds with 510 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0051 ± 0.0002253 (stderr)
+Logical error rate for p=0.03: 0.0051
+Exploring neighbor 47/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 47/49 due to insufficient distance.
+Exploring neighbor 48/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 48/49 due to insufficient distance.
+Exploring neighbor 49/49 of iteration 9/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 49/49 due to insufficient distance.
+Best neighbor in iteration 9/10 has cost 0.004470
+Iteration 10/10: cost of current state = 0.004470
+Exploring neighbor 1/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to insufficient distance.
+Exploring neighbor 2/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to insufficient distance.
+Exploring neighbor 3/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to insufficient distance.
+Exploring neighbor 4/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to insufficient distance.
+Exploring neighbor 5/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to insufficient distance.
+Exploring neighbor 6/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to insufficient distance.
+Exploring neighbor 7/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to insufficient distance.
+Exploring neighbor 8/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.58 seconds with 593 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00593 ± 0.0002428 (stderr)
+Logical error rate for p=0.03: 0.00593
+Exploring neighbor 9/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to insufficient distance.
+Exploring neighbor 10/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.81 seconds with 1480 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0148 ± 0.0003819 (stderr)
+Logical error rate for p=0.03: 0.0148
+Exploring neighbor 11/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to insufficient distance.
+Exploring neighbor 12/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to insufficient distance.
+Exploring neighbor 13/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.01 seconds with 490 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0049 ± 0.0002208 (stderr)
+Logical error rate for p=0.03: 0.0049
+Exploring neighbor 14/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to insufficient distance.
+Exploring neighbor 15/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.57 seconds with 663 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00663 ± 0.0002566 (stderr)
+Logical error rate for p=0.03: 0.00663
+Exploring neighbor 16/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to insufficient distance.
+Exploring neighbor 17/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to insufficient distance.
+Exploring neighbor 18/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to insufficient distance.
+Exploring neighbor 19/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=7
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to insufficient distance.
+Exploring neighbor 20/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to insufficient distance.
+Exploring neighbor 21/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 2]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=2
+Quantum Code parameters: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to insufficient distance.
+Exploring neighbor 22/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to insufficient distance.
+Exploring neighbor 23/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 81.50 seconds with 642 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00642 ± 0.0002526 (stderr)
+Logical error rate for p=0.03: 0.00642
+Exploring neighbor 24/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to insufficient distance.
+Exploring neighbor 25/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to insufficient distance.
+Exploring neighbor 26/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to insufficient distance.
+Exploring neighbor 27/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 69.49 seconds with 1559 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01559 ± 0.0003918 (stderr)
+Logical error rate for p=0.03: 0.01559
+Exploring neighbor 28/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to insufficient distance.
+Exploring neighbor 29/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.23 seconds with 461 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00461 ± 0.0002142 (stderr)
+Logical error rate for p=0.03: 0.00461
+Exploring neighbor 30/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.84 seconds with 480 failures out of 100000 runs.
+Logical error rate for Random walk: 0.0048 ± 0.0002186 (stderr)
+Logical error rate for p=0.03: 0.0048
+Exploring neighbor 31/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=5
+Quantum Code parameters: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to insufficient distance.
+Exploring neighbor 32/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 4]
+H_X Code parameters: nx=625, dz=4
+H_Z Code parameters: nz=625, dx=4
+Quantum Code parameters: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to insufficient distance.
+Exploring neighbor 33/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to insufficient distance.
+Exploring neighbor 34/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 78.07 seconds with 538 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00538 ± 0.0002313 (stderr)
+Logical error rate for p=0.03: 0.00538
+Exploring neighbor 35/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to insufficient distance.
+Exploring neighbor 36/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 84.41 seconds with 1178 failures out of 100000 runs.
+Logical error rate for Random walk: 0.01178 ± 0.0003412 (stderr)
+Logical error rate for p=0.03: 0.01178
+Exploring neighbor 37/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.55 seconds with 467 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00467 ± 0.0002156 (stderr)
+Logical error rate for p=0.03: 0.00467
+Exploring neighbor 38/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to insufficient distance.
+Exploring neighbor 39/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 83.19 seconds with 517 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00517 ± 0.0002268 (stderr)
+Logical error rate for p=0.03: 0.00517
+Exploring neighbor 40/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 75.20 seconds with 621 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00621 ± 0.0002484 (stderr)
+Logical error rate for p=0.03: 0.00621
+Exploring neighbor 41/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 41/49 due to insufficient distance.
+Exploring neighbor 42/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 7]
+H_X Code parameters: nx=625, dz=7
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 42/49 due to insufficient distance.
+Exploring neighbor 43/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 43/49 due to insufficient distance.
+Exploring neighbor 44/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.43 seconds with 756 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00756 ± 0.0002739 (stderr)
+Logical error rate for p=0.03: 0.00756
+Exploring neighbor 45/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=6
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 45/49 due to insufficient distance.
+Exploring neighbor 46/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 74.29 seconds with 488 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00488 ± 0.0002204 (stderr)
+Logical error rate for p=0.03: 0.00488
+Exploring neighbor 47/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 6]
+H_X Code parameters: nx=625, dz=6
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 47/49 due to insufficient distance.
+Exploring neighbor 48/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 76.84 seconds with 632 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00632 ± 0.0002506 (stderr)
+Logical error rate for p=0.03: 0.00632
+Exploring neighbor 49/49 of iteration 10/10...
+H Classical Code parameters: [20, 5, 8]
+H_X Code parameters: nx=625, dz=8
+H_Z Code parameters: nz=625, dx=8
+Quantum Code parameters: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 73.78 seconds with 505 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00505 ± 0.0002242 (stderr)
+Logical error rate for p=0.03: 0.00505
+Best neighbor in iteration 10/10 has cost 0.004610
+Last iteration and last neighbor reached; not appending best neighbor again.
+Streaming results saved to optimization/results/best_neighbor_search.hdf5 for code family [625,25].
