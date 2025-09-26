@@ -139,11 +139,6 @@ if __name__ == '__main__':
     distance_threshold = args.distance_threshold
     print(f"{C = }, {N = }, {L = }, {p = }, {distance_threshold = }")
 
-
-
-    if N < 2:
-        raise ValueError("N (number of neighbors) must be at least 2 to select the best neighbor.")
-
     # bp_max_iter = 4
     # osd_order = 60
     osd_order = 2
@@ -175,6 +170,7 @@ if __name__ == '__main__':
         grp.attrs['ms_scaling_factor'] = ms_scaling_factor
         grp.attrs['total_runtime'] = 0.0
         grp.attrs['avg_decoding_runtime'] = 0.0
+        grp.attrs['distance_threshold'] = distance_threshold
 
         ds_states = None                  # 2D: [num_samples, E] (edge list length)
         ds_lers = None                    # 2D: [num_samples, 1] or we can store 1D—below we use 1D
@@ -266,6 +262,11 @@ if __name__ == '__main__':
                 print(f"total runtime so far: {(time.time() - start_time)//3600}h {(time.time() - start_time)%3600//60}m {(time.time() - start_time)%60}s, avg decoding runtime so far: {grp.attrs['avg_decoding_runtime_so_far']:.4f}s")
 
             print(f"Best neighbor in iteration {l+1}/{L} has cost {best_neighbor['cost']:.6f}")
+            
+            if l == L-1:
+                print("Last iteration and last neighbor reached; not appending best neighbor again.")
+                break
+
             # Prepare for next iteration
             if best_neighbor['state'] is None:
                 print("No better neighbor found; starting next iteration with random state.")
@@ -281,10 +282,6 @@ if __name__ == '__main__':
 
                 # record the best neighbor as the initial state of the next iteration
                 append_record(dsets, next_state, cost_result)
-
-            if l == L-1 and n == N-2:
-                print("Last iteration and last neighbor reached; not appending best neighbor again.")
-                break
             
             _flush_file(f)
 
