@@ -1,0 +1,20 @@
+C = 0, N = 1, L = 1, p = 0.03, distance_threshold = 8
+Minimum logical error rate found in state 1871 with value 0.0091
+Exploring code family [625,25] with 1 neighbors and 1 iterations at p=0.03... with distance threshold 8
+Rank of H: 15 out of (15, 20)
+H Classical Code parameters: [20, 5, 8]
+H is full rank.
+H^T Classical Code parameters: [15, 0, inf]
+H_X Code parameters: nx=625, d_Hx=5
+H_Z Code parameters: nz=625, d_Hz=6
+Quantum Code parameters: [[625, 25, 5]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Random walk finished in 1.0m 20.25s with 435 failures out of 100000 runs.
+Logical error rate for Random walk: 0.00435 ± 0.0002081 (stderr)
+Logical error rate for p=0.03: 0.00435
+Initial state logical error rate: 0.004350, rank_H: 15
+Iteration 1/1: cost of current state = 0.004350
+Best neighbor in iteration 1/1 has cost inf
+Last iteration and last neighbor reached; not appending best neighbor again.
+Streaming results saved to optimization/results/best_state_from_random_walk_erasure_channel.hdf5 for code family [625,25].

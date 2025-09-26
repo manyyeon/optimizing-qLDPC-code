@@ -1,0 +1,12 @@
+C = 0, N = 1, L = 1, p = 0.03, distance_threshold = 8
+Minimum logical error rate found in state 1871 with value 0.0091
+Exploring code family [625,25] with 1 neighbors and 1 iterations at p=0.03... with distance threshold 8
+Rank of H: 15 out of (15, 20)
+H Classical Code parameters: [20, 5, 8]
+H is full rank.
+H^T Classical Code parameters: [15, 0, inf]
+H_X Code parameters: nx=625, d_Hx=6
+H_Z Code parameters: nz=625, d_Hz=6
+Quantum Code parameters: [[625, 25, 6]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
