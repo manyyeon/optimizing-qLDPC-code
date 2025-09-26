@@ -80,7 +80,7 @@ def compute_logical_error_rate(H, L, error_rate, run_count, DECODER, run_label, 
     # std = np.sqrt(logical_error_rate * (1 - logical_error_rate) / (run_count - 1))
     stderr = np.std(outcomes, ddof=1) / np.sqrt(run_count) 
 
-    print(f"Decoder {run_label} finished in {runtime:.2f} seconds with {logical_error} failures out of {run_count} runs.")
+    print(f"Decoder {run_label} finished in {runtime//60}m {runtime%60:.2f}s with {logical_error} failures out of {run_count} runs.")
     print(f"Logical error rate for {run_label}: {logical_error_rate} ± {stderr:.7f} (stderr)")
 
     return logical_error_rate, stderr, runtime
