@@ -17,7 +17,7 @@ from decoder_performance import compute_logical_error_rate
 
 DISTANCE_THRESHOLD = 8  # minimum distance threshold to run the decoder performance evaluation
 
-def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Random walk", distance_threshold=DISTANCE_THRESHOLD, canskip=True, initial_rank=None) -> dict:
+def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Random walk", distance_threshold=DISTANCE_THRESHOLD, canskip=True, initial_rank=0) -> dict:
     """
     Evaluate the decoding performance (logical error rates) of a given state.
     Parameters:
