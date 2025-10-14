@@ -19,7 +19,7 @@ from optimization.compute_code_parameters import compute_code_parameters
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/best_neighbor_search_3.hdf5"
+output_file = "optimization/results/best_neighbor_search_5.hdf5"
 
 def _ensure_ds(grp, name, sample, is_row=True):
     """Create a resizable dataset if it doesn't exist; return the dataset."""
@@ -210,6 +210,7 @@ if __name__ == '__main__':
             else:
                 state = next_state  # chosen from the previous iteration
 
+            print("-"*50)
             print(f"Iteration {l+1}/{L}: cost of current state = {current_cost:.6f}")
 
             # Ensure data hits disk every time (or do this every few appends for speed)
@@ -281,7 +282,7 @@ if __name__ == '__main__':
                 current_cost = best_neighbor['cost']
 
                 # record the best neighbor as the initial state of the next iteration
-                append_record(dsets, next_state, cost_result)
+                append_record(dsets, next_state, best_neighbor['result'])
             
             _flush_file(f)
 
