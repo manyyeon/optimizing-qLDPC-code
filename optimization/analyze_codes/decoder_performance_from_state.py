@@ -1,5 +1,6 @@
 import sys
 import os
+import time
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from basic_css_code import construct_HGP_code
@@ -35,12 +36,14 @@ def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_b
     csr_H = csr_matrix(H, dtype=np.uint8)
     r_classical = ldpc.mod2.rank(csr_H)
     print(f"Rank of H: {r_classical} out of {H.shape}")
-    n_classical, k_classical, d_classical = ldpc.code_util.compute_code_parameters(csr_H)
+    # n_classical, k_classical, d_classical = ldpc.code_util.compute_code_parameters(csr_H)
+    n_classical, k_classical, _ = ldpc.code_util.compute_code_parameters(csr_H)
+    d_classical = ldpc.code_util.compute_exact_code_distance(csr_H)
     print(f"H Classical Code parameters: [{n_classical}, {k_classical}, {d_classical}]")
     if k_classical == n_classical - csr_H.shape[0]:
         print("H is full rank.")
         n_T_classical = csr_H.shape[0]
-        k_T_classical = n_T_classical - r_classical
+        k_T_classical = n_T_classical - r_classical # k will be 0 if full rank
         d_T_classical = np.inf
     else:
         print("H is not full rank; skipping H^T classical code parameters computation.")
@@ -72,9 +75,10 @@ def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_b
         "d_Hx": d_Hx,
         "d_Hz": d_Hz
     }
-    
-    if (d_quantum < distance_threshold or r_classical > initial_rank) and canskip:
-        print(f"Distance {d_quantum} is below threshold {distance_threshold} or rank_H {r_classical} is above initial_rank {initial_rank}. Skipping performance evaluation.")
+
+    min_classical_distance = min(d_classical, d_T_classical)
+    if min_classical_distance < distance_threshold and canskip:
+        print(f"Distance {min_classical_distance} is below threshold {distance_threshold} or rank_H {r_classical} is above initial_rank {initial_rank}. Skipping performance evaluation.")
         # save placeholders
         return {
             "logical_error_rates": [0.0]*len(p_vals),
