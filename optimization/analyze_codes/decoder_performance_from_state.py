@@ -18,6 +18,24 @@ from decoder_performance import compute_logical_error_rate
 
 DISTANCE_THRESHOLD = 8  # minimum distance threshold to run the decoder performance evaluation
 
+def compute_classical_code_parameters(H: csr_matrix) -> tuple[int, int, int]:
+    """Compute the parameters [n, k, d] of a classical linear code given its parity-check matrix H.
+
+    Args:
+        H (csr_matrix): The parity-check matrix of the code.
+
+    Returns:
+        tuple[int, int, int]: A tuple containing the parameters (n, k, d) where
+            n is the length of the code,
+            k is the dimension of the code,
+            d is the minimum distance of the code.
+    """
+    n = H.shape[1]
+    r = ldpc.mod2.rank(H)
+    k = n - r
+    d = ldpc.code_util.compute_exact_code_distance(H)
+    return n, k, d
+
 def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Random walk", distance_threshold=DISTANCE_THRESHOLD, canskip=True, initial_rank=0) -> dict:
     """
     Evaluate the decoding performance (logical error rates) of a given state.
