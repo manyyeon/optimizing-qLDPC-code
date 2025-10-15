@@ -36,6 +36,25 @@ def compute_classical_code_parameters(H: csr_matrix) -> tuple[int, int, int]:
     d = ldpc.code_util.compute_exact_code_distance(H)
     return n, k, d
 
+def compute_hgp_code_distance_lower_bound(H: csr_matrix, HT: csr_matrix) -> int:
+    """Compute the lower bound on the distance of the hypergraph product code constructed from H and H^T.
+
+    Args:
+        H (csr_matrix): The parity-check matrix of the code.
+        HT (csr_matrix): The transpose of the parity-check matrix H.
+
+    Returns:
+        int: The lower bound on the distance of the hypergraph product code.
+    """
+    r_classical = ldpc.mod2.rank(H)
+    _, _, d = compute_classical_code_parameters(H)
+    if r_classical == H.shape[0]:
+        # H is full rank, so we skip computing the parameters of H^T
+        return d
+    else:
+        _, _, dT = compute_classical_code_parameters(HT)
+        return min(d, dT)
+
 def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Random walk", distance_threshold=DISTANCE_THRESHOLD, canskip=True, initial_rank=0) -> dict:
     """
     Evaluate the decoding performance (logical error rates) of a given state.
