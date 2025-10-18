@@ -55,7 +55,7 @@ def compute_hgp_code_distance_lower_bound(H: csr_matrix, HT: csr_matrix) -> int:
         _, _, dT = compute_classical_code_parameters(HT)
         return min(d, dT)
 
-def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Random walk", distance_threshold=DISTANCE_THRESHOLD, canskip=True, initial_rank=0) -> dict:
+def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Best neighbor search", distance_threshold=DISTANCE_THRESHOLD, canskip=True) -> dict:
     """
     Evaluate the decoding performance (logical error rates) of a given state.
     Parameters:
@@ -72,31 +72,25 @@ def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_b
 
     csr_H = csr_matrix(H, dtype=np.uint8)
     r_classical = ldpc.mod2.rank(csr_H)
-    print(f"Rank of H: {r_classical} out of {H.shape}")
+    
     # n_classical, k_classical, d_classical = ldpc.code_util.compute_code_parameters(csr_H)
     n_classical, k_classical, _ = ldpc.code_util.compute_code_parameters(csr_H)
     d_classical = ldpc.code_util.compute_exact_code_distance(csr_H)
-    print(f"H Classical Code parameters: [{n_classical}, {k_classical}, {d_classical}]")
+    print(f"H: [{n_classical}, {k_classical}, {d_classical}]")
     if k_classical == n_classical - csr_H.shape[0]:
-        print("H is full rank.")
         n_T_classical = csr_H.shape[0]
         k_T_classical = n_T_classical - r_classical # k will be 0 if full rank
         d_T_classical = np.inf
     else:
-        print("H is not full rank; skipping H^T classical code parameters computation.")
         n_T_classical, k_T_classical, d_T_classical = ldpc.code_util.compute_code_parameters(csr_matrix(H.T, dtype=np.uint8))
-    print(f"H^T Classical Code parameters: [{n_T_classical}, {k_T_classical}, {d_T_classical}]")
+    print(f"H^T: [{n_T_classical}, {k_T_classical}, {d_T_classical}]")
 
     Hx, Hz = construct_HGP_code(H)
-    nx, _, d_Hx = ldpc.code_util.compute_code_parameters(csr_matrix(Hx, dtype=np.uint8)) 
-    nz, _, d_Hz = ldpc.code_util.compute_code_parameters(csr_matrix(Hz, dtype=np.uint8))
-    print(f"H_X Code parameters: nx={nx}, d_Hx={d_Hx}")
-    print(f"H_Z Code parameters: nz={nz}, d_Hz={d_Hz}")
 
-    n_quantum = nx
+    n_quantum = n_classical**2 + n_T_classical**2
     k_quantum = k_classical**2 + k_T_classical**2
-    d_quantum = min(d_Hx, d_Hz)
-    print(f"Quantum Code parameters: [[{n_quantum}, {k_quantum}, {d_quantum}]]")
+    d_quantum = min(d_classical, d_T_classical)
+    print(f"Q: [[{n_quantum}, {k_quantum}, {d_quantum}]]")
 
     base_payload = {
         "n_classical": n_classical,
@@ -109,13 +103,13 @@ def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_b
         "n_quantum": n_quantum,
         "k_quantum": k_quantum,
         "d_quantum": d_quantum,
-        "d_Hx": d_Hx,
-        "d_Hz": d_Hz
+        "d_Hx": 0,
+        "d_Hz": 0
     }
 
     min_classical_distance = min(d_classical, d_T_classical)
     if min_classical_distance < distance_threshold and canskip:
-        print(f"Distance {min_classical_distance} is below threshold {distance_threshold} or rank_H {r_classical} is above initial_rank {initial_rank}. Skipping performance evaluation.")
+        print(f"Distance {min_classical_distance} is below threshold {distance_threshold}. Skipping performance evaluation.")
         # save placeholders
         return {
             "logical_error_rates": [0.0]*len(p_vals),
@@ -155,7 +149,6 @@ def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_b
         )
 
         logical_error_rate, stderr, runtime = compute_logical_error_rate(Hz, Lz, p, run_count=MC_budget, DECODER=bp_osd_decoder, run_label=run_label, DEBUG=False)
-        print(f"Logical error rate for p={p}: {logical_error_rate}")
         
         logical_error_rates.append(logical_error_rate)
         stderrs.append(stderr)
