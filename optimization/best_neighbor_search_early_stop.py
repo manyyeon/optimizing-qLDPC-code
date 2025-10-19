@@ -18,80 +18,13 @@ from optimization.experiments_settings import MC_budget, noise_levels
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/best_neighbor_search_early_stop_lookahead_2.hdf5"
+output_file = "optimization/results/best_neighbor_search_early_stop_lookahead_3.hdf5"
 EARLY_VALID_TARGET = 10
 run_label = "Best neighbor search"
 
 def _current_stream_len(dsets):
     # Use any 1D stream dataset to infer current row count
     return dsets["logical_error_rates"].shape[0]
-
-def _lookahead_best_distance(state, *, depth=3, branch=2, p=None, MC_budget=None,
-                             distance_threshold=None, dsets=None, rng=None):
-    """
-    Greedy look-ahead chain:
-      - At each level, generate `branch` children (default 2).
-      - Evaluate all children (canskip=True), append each to the stream, and pick
-        the one with the *largest* distance = min(d_classical, d_T_classical).
-      - Continue only with the chosen child to the next level.
-    Tie-breaks are resolved randomly (rng).
-    Returns the *final chosen leaf* and its row index in the stream.
-    """
-    assert branch >= 2, "branch should be >= 2 for a 'binary tree' style look-ahead"
-    if rng is None:
-        rng = np.random.default_rng()
-
-    # Utility: append and get row index
-    def _append_and_idx(ns, res):
-        append_record(dsets, ns, res)
-        return _current_stream_len(dsets) - 1
-
-    cur_state = state
-    cur_res = None
-    cur_idx = None
-    cur_dist = -np.inf
-
-    print("-"*50)
-    print(f"Starting greedy look-ahead (depth={depth}, branch={branch})...")
-
-    for dlevel in range(depth):
-        print(f"  Look-ahead level {dlevel+1}/{depth}...")
-        cand_states = []
-        cand_results = []
-        cand_dists = []
-        cand_idxs = []
-
-        for _ in range(branch):
-            ns, _, _ = generate_neighbor_highlight(cur_state)
-            res = evaluate_performance_of_state(
-                state=ns, p_vals=[p], MC_budget=MC_budget, run_label=run_label,
-                distance_threshold=distance_threshold, canskip=True
-            )
-            idx = _append_and_idx(ns, res)
-            # distance metric = min(d, d^T)
-            dist = min(float(res['d_classical']), float(res['d_T_classical']))
-
-            cand_states.append(ns)
-            cand_results.append(res)
-            cand_dists.append(dist)
-            cand_idxs.append(idx)
-
-        cand_dists = np.asarray(cand_dists, dtype=float)
-        max_val = np.max(cand_dists)
-        # indices within numerical tie (exact ties or nearly equal)
-        winners = np.flatnonzero(np.isclose(cand_dists, max_val, rtol=0, atol=0))
-        win = rng.choice(winners)  # random tie-break
-
-        # choose this child and keep going
-        cur_state = cand_states[win]
-        cur_res   = cand_results[win]
-        cur_idx   = cand_idxs[win]
-        cur_dist  = float(cand_dists[win])
-
-    print(f"Look-ahead completed. Final chosen from look-ahead: dist={cur_dist}")
-    print("-"*50)
-    return {'state': cur_state, 'result': cur_res, 'dist': cur_dist, 'row_idx': cur_idx}
-
 
 def _ensure_ds(grp, name, sample, is_row=True):
     """Create a resizable dataset if it doesn't exist; return the dataset."""
@@ -369,20 +302,6 @@ if __name__ == '__main__':
 
             if valid_found == 0:
                 print(f"No valid neighbors found in iteration {l+1}; running greedy look-ahead.")
-                # la = _lookahead_best_distance(
-                #     state, depth=3, branch=3, p=p, MC_budget=MC_budget,
-                #     distance_threshold=distance_threshold, dsets=dsets
-                # )
-
-                # Compare best distance among neighbors vs look-ahead
-                # cand_dists = np.array([best_any_dist['dist'], la['dist']], dtype=float)
-                # winners = np.flatnonzero(np.isclose(cand_dists, cand_dists.max(), rtol=0, atol=0))
-                # pick = np.random.default_rng().choice(winners)
-
-                # if pick == 0:
-                #     chosen = best_any_dist
-                # else:
-                #     chosen = la
 
                 chosen = best_any_dist  # for now, just use best_any_dist
 
@@ -413,7 +332,7 @@ if __name__ == '__main__':
                 print(f"Best neighbor in iteration {l+1} has cost {best_neighbor['cost']:.6f}")
                 next_state = best_neighbor['state']
                 current_cost = best_neighbor['cost']
-                chosen_result = best_neighbor['result']          # <--- add this
+                chosen_result = best_neighbor['result']
                 append_record(dsets, next_state, chosen_result)
                 chosen_row_index = _current_stream_len(dsets) - 1
 
