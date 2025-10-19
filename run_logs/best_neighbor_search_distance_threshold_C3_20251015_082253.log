@@ -6479,4 +6479,4 @@ Logical error rate for p=0.03: 0.00125
 total runtime so far: 31.0h 6.0m 29.844326972961426s, avg decoding runtime so far: 224.7148s
 Best neighbor in iteration 10/10 has cost 0.001050
 Last iteration and last neighbor reached; not appending best neighbor again.
-Streaming results saved to optimization/results/best_neighbor_search_4.hdf5 for code family [2025,81].
+Streaming results saved to optimization/results/best_neighbor_search_distance_threshold.hdf5 for code family [2025,81].

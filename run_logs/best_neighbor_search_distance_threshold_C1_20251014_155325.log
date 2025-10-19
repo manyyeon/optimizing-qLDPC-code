@@ -5553,4 +5553,4 @@ Distance 6 is below threshold 10 or rank_H 21 is above initial_rank 20. Skipping
 Skipping neighbor 49/49 due to distance or rank criteria.
 Best neighbor in iteration 10/10 has cost inf
 Last iteration and last neighbor reached; not appending best neighbor again.
-Streaming results saved to optimization/results/best_neighbor_search_4.hdf5 for code family [1225,65].
+Streaming results saved to optimization/results/best_neighbor_search_distance_threshold.hdf5 for code family [1225,65].

@@ -8672,4 +8672,4 @@ Distance 6 is below threshold 8 or rank_H 15 is above initial_rank 15. Skipping 
 Skipping neighbor 49/49 due to distance or rank criteria.
 Best neighbor in iteration 15/15 has cost 0.003460
 Last iteration and last neighbor reached; not appending best neighbor again.
-Streaming results saved to optimization/results/best_neighbor_search_5.hdf5 for code family [625,25].
+Streaming results saved to optimization/results/best_neighbor_search_distance_threshold_L=15_[[625,25]].hdf5 for code family [625,25].
