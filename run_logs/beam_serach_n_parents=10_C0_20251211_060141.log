@@ -1,0 +1,1541 @@
+C = 0, N = 30, L = 10, p = 0.03, BEAM_WIDTH = 3
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 1.35s with 1223 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.01223 ± 0.0003476 (stderr)
+Starting Beam Search with Width 3...
+Initial Cost: 0.012230, Distance Threshold: 7
+============================================================
+Iteration 1/10 | Beam Size: 1 | Neighbors per parent: 30
+  >>> [Parent 1/1] Starting scan...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 0.74s with 790 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0079 ± 0.0002800 (stderr)
+      [!] New Global Min: 0.007900
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 2.17s with 672 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00672 ± 0.0002584 (stderr)
+      [!] New Global Min: 0.006720
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 4.91s with 640 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0064 ± 0.0002522 (stderr)
+      [!] New Global Min: 0.006400
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 6.46s with 696 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00696 ± 0.0002629 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 2.88s with 872 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00872 ± 0.0002940 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 9.79s with 679 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00679 ± 0.0002597 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 6.30s with 668 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00668 ± 0.0002576 (stderr)
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 1.79s with 648 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00648 ± 0.0002537 (stderr)
+  <<< [Parent 1] Finished. Found 8 valid.
+  Selection: Keeping 3 best. Costs: [0.00640, 0.00648, 0.00668], Distances: [8, 8, 7]
+  Survivors: [8, 30, 27]
+Updated distance threshold to 8
+============================================================
+Iteration 2/10 | Beam Size: 3 | Neighbors per parent: 10
+  >>> [Parent 1/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 8.89s with 676 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00676 ± 0.0002591 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 14.84s with 683 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00683 ± 0.0002604 (stderr)
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.32s with 715 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00715 ± 0.0002664 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 1] Finished. Found 3 valid.
+  >>> [Parent 2/3] Starting scan...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 2] Finished. Found 0 valid.
+  >>> [Parent 3/3] Starting scan...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 3] Finished. Found 0 valid.
+  Selection: Keeping 3 best. Costs: [0.00676, 0.00683, 0.00715], Distances: [8, 8, 8]
+  Survivors: [35, 36, 38]
+Updated distance threshold to 8
+============================================================
+Iteration 3/10 | Beam Size: 3 | Neighbors per parent: 10
+  >>> [Parent 1/3] Starting scan...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.38s with 509 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00509 ± 0.0002250 (stderr)
+      [!] New Global Min: 0.005090
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 22.48s with 653 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00653 ± 0.0002547 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 1] Finished. Found 2 valid.
+  >>> [Parent 2/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 23.62s with 773 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00773 ± 0.0002770 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 2] Finished. Found 1 valid.
+  >>> [Parent 3/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 15.98s with 776 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00776 ± 0.0002775 (stderr)
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.36s with 730 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0073 ± 0.0002692 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 14.23s with 834 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00834 ± 0.0002876 (stderr)
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 3] Finished. Found 3 valid.
+  Selection: Keeping 3 best. Costs: [0.00509, 0.00653, 0.00730], Distances: [8, 8, 8]
+  Survivors: [63, 65, 86]
+Updated distance threshold to 8
+============================================================
+Iteration 4/10 | Beam Size: 3 | Neighbors per parent: 10
+  >>> [Parent 1/3] Starting scan...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 3]
+H^T: [15, 0, inf]
+Q: [[625, 25, 3]]
+Distance 3 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 1] Finished. Found 0 valid.
+  >>> [Parent 2/3] Starting scan...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.60s with 673 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00673 ± 0.0002585 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 24.18s with 648 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00648 ± 0.0002537 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 14.77s with 671 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00671 ± 0.0002582 (stderr)
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 2] Finished. Found 3 valid.
+  >>> [Parent 3/3] Starting scan...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.78s with 803 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00803 ± 0.0002822 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 5.93s with 792 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00792 ± 0.0002803 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 11.08s with 741 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00741 ± 0.0002712 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 17.95s with 594 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00594 ± 0.0002430 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 17.20s with 826 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00826 ± 0.0002862 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 3] Finished. Found 5 valid.
+  Selection: Keeping 3 best. Costs: [0.00594, 0.00648, 0.00671], Distances: [8, 8, 8]
+  Survivors: [117, 106, 107]
+Updated distance threshold to 8
+============================================================
+Iteration 5/10 | Beam Size: 3 | Neighbors per parent: 10
+  >>> [Parent 1/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+Q: [[625, 25, 2]]
+Distance 2 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 16.68s with 584 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00584 ± 0.0002410 (stderr)
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 1] Finished. Found 1 valid.
+  >>> [Parent 2/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+Q: [[625, 25, 2]]
+Distance 2 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 2] Finished. Found 0 valid.
+  >>> [Parent 3/3] Starting scan...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 15.32s with 684 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00684 ± 0.0002606 (stderr)
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 14.87s with 699 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00699 ± 0.0002635 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 3] Finished. Found 2 valid.
+  Selection: Keeping 3 best. Costs: [0.00584, 0.00684, 0.00699], Distances: [8, 8, 8]
+  Survivors: [128, 143, 145]
+Updated distance threshold to 8
+============================================================
+Iteration 6/10 | Beam Size: 3 | Neighbors per parent: 10
+  >>> [Parent 1/3] Starting scan...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 35.41s with 681 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00681 ± 0.0002601 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 1] Finished. Found 1 valid.
+  >>> [Parent 2/3] Starting scan...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 11.16s with 765 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00765 ± 0.0002755 (stderr)
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.87s with 666 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00666 ± 0.0002572 (stderr)
+  <<< [Parent 2] Finished. Found 2 valid.
+  >>> [Parent 3/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 22.16s with 672 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00672 ± 0.0002584 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 16.31s with 744 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00744 ± 0.0002717 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 3] Finished. Found 2 valid.
+  Selection: Keeping 3 best. Costs: [0.00666, 0.00672, 0.00681], Distances: [8, 8, 8]
+  Survivors: [170, 172, 152]
+Updated distance threshold to 8
+============================================================
+Iteration 7/10 | Beam Size: 3 | Neighbors per parent: 10
+  >>> [Parent 1/3] Starting scan...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 11.67s with 669 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00669 ± 0.0002578 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.59s with 713 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00713 ± 0.0002661 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 1] Finished. Found 2 valid.
+  >>> [Parent 2/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 25.87s with 642 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00642 ± 0.0002526 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 21.51s with 693 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00693 ± 0.0002623 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 33.34s with 788 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00788 ± 0.0002796 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 22.20s with 721 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00721 ± 0.0002675 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 2] Finished. Found 4 valid.
+  >>> [Parent 3/3] Starting scan...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 36.95s with 668 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00668 ± 0.0002576 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 36.86s with 686 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00686 ± 0.0002610 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 19.44s with 779 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00779 ± 0.0002780 (stderr)
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 3] Finished. Found 3 valid.
+  Selection: Keeping 3 best. Costs: [0.00642, 0.00668, 0.00669], Distances: [8, 8, 8]
+  Survivors: [195, 203, 185]
+Updated distance threshold to 8
+============================================================
+Iteration 8/10 | Beam Size: 3 | Neighbors per parent: 10
+  >>> [Parent 1/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 1] Finished. Found 0 valid.
+  >>> [Parent 2/3] Starting scan...
+H: [20, 5, 3]
+H^T: [15, 0, inf]
+Q: [[625, 25, 3]]
+Distance 3 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 39.17s with 711 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00711 ± 0.0002657 (stderr)
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 2] Finished. Found 1 valid.
+  >>> [Parent 3/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.90s with 648 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00648 ± 0.0002537 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.90s with 701 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00701 ± 0.0002638 (stderr)
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+Q: [[625, 25, 2]]
+Distance 2 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 17.15s with 817 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00817 ± 0.0002847 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 14.11s with 725 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00725 ± 0.0002683 (stderr)
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.49s with 679 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00679 ± 0.0002597 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.05s with 669 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00669 ± 0.0002578 (stderr)
+  <<< [Parent 3] Finished. Found 6 valid.
+  Selection: Keeping 3 best. Costs: [0.00648, 0.00669, 0.00679], Distances: [8, 8, 8]
+  Survivors: [233, 240, 239]
+Updated distance threshold to 8
+============================================================
+Iteration 9/10 | Beam Size: 3 | Neighbors per parent: 10
+  >>> [Parent 1/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 27.60s with 668 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00668 ± 0.0002576 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.35s with 642 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00642 ± 0.0002526 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 27.29s with 687 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00687 ± 0.0002612 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.99s with 666 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00666 ± 0.0002572 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.93s with 672 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00672 ± 0.0002584 (stderr)
+  <<< [Parent 1] Finished. Found 5 valid.
+  >>> [Parent 2/3] Starting scan...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.19s with 655 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00655 ± 0.0002551 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.94s with 760 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0076 ± 0.0002746 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 17.75s with 673 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00673 ± 0.0002585 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 21.00s with 844 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00844 ± 0.0002893 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.52s with 675 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00675 ± 0.0002589 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 32.99s with 686 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00686 ± 0.0002610 (stderr)
+  <<< [Parent 2] Finished. Found 6 valid.
+  >>> [Parent 3/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.07s with 738 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00738 ± 0.0002707 (stderr)
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+Q: [[625, 25, 2]]
+Distance 2 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 3] Finished. Found 1 valid.
+  Selection: Keeping 3 best. Costs: [0.00642, 0.00655, 0.00666], Distances: [8, 8, 8]
+  Survivors: [245, 251, 249]
+Updated distance threshold to 8
+============================================================
+Iteration 10/10 | Beam Size: 3 | Neighbors per parent: 10
+  >>> [Parent 1/3] Starting scan...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.00s with 650 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0065 ± 0.0002541 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.47s with 649 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00649 ± 0.0002539 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 8.21s with 594 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00594 ± 0.0002430 (stderr)
+  <<< [Parent 1] Finished. Found 3 valid.
+  >>> [Parent 2/3] Starting scan...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.81s with 657 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00657 ± 0.0002555 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.12s with 882 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00882 ± 0.0002957 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+  <<< [Parent 2] Finished. Found 2 valid.
+  >>> [Parent 3/3] Starting scan...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 25.21s with 867 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00867 ± 0.0002932 (stderr)
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.11s with 635 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00635 ± 0.0002512 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 24.88s with 708 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00708 ± 0.0002651 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 8.48s with 666 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00666 ± 0.0002572 (stderr)
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.79s with 631 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00631 ± 0.0002504 (stderr)
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.40s with 774 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00774 ± 0.0002771 (stderr)
+  <<< [Parent 3] Finished. Found 6 valid.
+  Selection: Keeping 3 best. Costs: [0.00594, 0.00631, 0.00635], Distances: [8, 8, 8]
+  Survivors: [280, 299, 293]
+Updated distance threshold to 8
+Best code found: min cost = 0.005090
+Total runtime: 1.0 hours 33.0 minutes 32.42039179801941 seconds
+Done. Saved to optimization/results/beam_search.hdf5
