@@ -191,8 +191,8 @@ if __name__ == '__main__':
             print("="*60)
             
             # 1. ADJUST BUDGET: Divide N by current beam size
-            n_per_parent = max(1, N // len(current_beam))
-            # n_per_parent = N
+            # n_per_parent = max(1, N // len(current_beam))
+            n_per_parent = N
             
             print(f"Iteration {l+1}/{L} | Beam Size: {len(current_beam)} | Neighbors per parent: {n_per_parent}")
 
@@ -213,7 +213,7 @@ if __name__ == '__main__':
 
                 # Scan neighbors for THIS parent
                 for n in range(n_per_parent):
-                    # print(f"    - Scanning neighbor {n+1}/{n_per_parent} of parent {parent_idx+1}...")
+                    print(f"    - Scanning neighbor {n+1}/{n_per_parent} of parent {parent_idx+1} in Iteration {l+1}...")
                     scanned_total += 1
                     
                     neighbor, _, _ = generate_neighbor_highlight(parent_state)
@@ -322,6 +322,7 @@ if __name__ == '__main__':
             print(f"  Survivors: {survivor_indices}")
 
             print(f"Updated distance threshold to {int(distance_threshold)}")
+            print(f"runtime so far: {time.time() - start_time:.2f} seconds")
 
         grp.attrs['total_runtime'] = time.time() - start_time
         _flush_file(f)
