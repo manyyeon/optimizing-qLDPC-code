@@ -17,10 +17,11 @@ from optimization.experiments_settings import MC_budget, noise_levels
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/beam_search_N=50.hdf5"
+output_file = "optimization/results/beam_search_.hdf5"
 EARLY_VALID_TARGET = 10
 run_label = "Best neighbor search"
 BEAM_WIDTH = 3  # Number of best states to keep at each step
+INCLUDE_PARENTS = True  # Whether to include parents in the selection pool
 
 def _current_stream_len(dsets):
     return dsets["logical_error_rates"].shape[0]
@@ -180,7 +181,8 @@ if __name__ == '__main__':
             'state': initial_state,
             'cost': logical_error_rate,
             'result': cost_result,
-            'row_idx': 0 
+            'row_idx': 0,
+            'dist': init_dist
         }]
 
         print(f"Starting Beam Search with Width {BEAM_WIDTH}...")
@@ -268,17 +270,24 @@ if __name__ == '__main__':
 
             # --- SELECTION STEP ---
             next_beam = []
-            
-            if valid_candidates:
+
+            candidate_pool = list(valid_candidates)
+            if INCLUDE_PARENTS:
+                candidate_pool.extend(current_beam)
+
+            if candidate_pool:
                 # Sort all candidates from ALL parents by cost
-                valid_candidates.sort(key=lambda x: x['cost'])
-                
+                candidate_pool.sort(key=lambda x: x['cost'])
+
                 # Pick top K
-                top_k = valid_candidates[:BEAM_WIDTH]
+                top_k = candidate_pool[:BEAM_WIDTH]
                 next_beam = top_k
                 
                 costs_str = ", ".join([f"{c['cost']:.5f}" for c in top_k])
-                print(f"  Selection: Keeping {len(top_k)} best. Costs: [{costs_str}], Distances: {[int(c['dist']) for c in top_k]}")
+                sources = ["(Parent)" if c['row_idx'] < step_start_row else "(Child)" for c in top_k]
+                print(f"  Selection: Keeping {len(top_k)} best. Costs: [{costs_str}]")
+                print(f"  Sources: {sources}")
+                print(f"  Distances: {[int(c['dist']) for c in top_k]}")
 
                 distance_threshold = max(top_k, key=lambda x: x['dist'])['dist']
 
