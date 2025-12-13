@@ -17,7 +17,7 @@ from optimization.experiments_settings import MC_budget, noise_levels
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/beam_search_.hdf5"
+output_file = "optimization/results/beam_search_old_parents_included_1e4.hdf5"
 EARLY_VALID_TARGET = 10
 run_label = "Best neighbor search"
 BEAM_WIDTH = 3  # Number of best states to keep at each step
@@ -194,7 +194,7 @@ if __name__ == '__main__':
             
             # 1. ADJUST BUDGET: Divide N by current beam size
             # n_per_parent = max(1, N // len(current_beam))
-            n_per_parent = N
+            n_per_parent = N - 1
             
             print(f"Iteration {l+1}/{L} | Beam Size: {len(current_beam)} | Neighbors per parent: {n_per_parent}")
 
@@ -208,14 +208,15 @@ if __name__ == '__main__':
             # --- PROCESS CURRENT BEAM ---
             for parent_idx, parent_info in enumerate(current_beam):
                 parent_state = parent_info['state']
+                parent_row_idx = parent_info['row_idx']
                 
-                print(f"  >>> [Parent {parent_idx+1}/{len(current_beam)}] Starting scan...")
+                print(f"  >>> [Parent {parent_idx+1}/{len(current_beam)} ({parent_row_idx})] Starting scan...")
                 
                 valid_found_this_parent = 0
 
                 # Scan neighbors for THIS parent
                 for n in range(n_per_parent):
-                    print(f"    - Scanning neighbor {n+1}/{n_per_parent} of parent {parent_idx+1} in Iteration {l+1}...")
+                    print(f"    - Scanning neighbor {n+1}/{n_per_parent} of parent {parent_idx+1} ({parent_row_idx}) in Iteration {l+1}...")
                     scanned_total += 1
                     
                     neighbor, _, _ = generate_neighbor_highlight(parent_state)
@@ -331,7 +332,8 @@ if __name__ == '__main__':
             print(f"  Survivors: {survivor_indices}")
 
             print(f"Updated distance threshold to {int(distance_threshold)}")
-            print(f"runtime so far: {time.time() - start_time:.2f} seconds")
+            runtime_so_far = time.time() - start_time
+            print(f"runtime so far: {runtime_so_far // 3600} hours {(runtime_so_far % 3600) // 60} minutes {runtime_so_far % 60} seconds")
 
         grp.attrs['total_runtime'] = time.time() - start_time
         _flush_file(f)
