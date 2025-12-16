@@ -1,0 +1,3229 @@
+C = 0, N = 50, L = 10, p = 0.03
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 1.00s with 1209 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.01209 ± 0.0003456 (stderr)
+Exploring code family [625,25] with 50 neighbors and 10 iterations at p=0.03... with distance threshold 7
+Initial state logical error rate: 0.012090
+--------------------------------------------------
+Iteration 1/10: cost of current state = 0.012090
+--------------------------------------------------
+Exploring neighbor 1/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 1/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 2/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 2/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 3/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 3/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 4/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 4/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 5/49 of iteration 1/10...
+H: [20, 6, 4]
+H^T: [15, 1, 8]
+Q: [[625, 37, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 5/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 6/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 6/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 7/49 of iteration 1/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 7/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 8/49 of iteration 1/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 8/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 9/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 9/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 10/49 of iteration 1/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 10/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 11/49 of iteration 1/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 3.39s with 807 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00807 ± 0.0002829 (stderr)
+Found minimum in neighbor 11/49 of iteration 1/10: 0.008070
+total runtime so far: 0.0h 2.0m 6.105846881866455s
+--------------------------------------------------
+Exploring neighbor 12/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 12/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 13/49 of iteration 1/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 13/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 14/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 14/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 15/49 of iteration 1/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 15/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 16/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 16/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 17/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 17/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 18/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 18/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 19/49 of iteration 1/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 19/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 20/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 20/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 21/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 21/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 22/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 22/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 23/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 23/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 24/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 24/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 25/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 25/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 26/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 26/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 27/49 of iteration 1/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 27/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 28/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 28/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 29/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 29/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 30/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 30/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 31/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 31/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 32/49 of iteration 1/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 6.99s with 787 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00787 ± 0.0002794 (stderr)
+Found minimum in neighbor 32/49 of iteration 1/10: 0.007870
+total runtime so far: 0.0h 3.0m 14.419707775115967s
+--------------------------------------------------
+Exploring neighbor 33/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 33/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 34/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 34/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 35/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 35/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 36/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 36/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 37/49 of iteration 1/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 37/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 38/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 38/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 39/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 39/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 40/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 40/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 41/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 41/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 42/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 42/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 43/49 of iteration 1/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 43/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 44/49 of iteration 1/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 4.57s with 820 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0082 ± 0.0002852 (stderr)
+total runtime so far: 0.0h 4.0m 20.02600073814392s
+--------------------------------------------------
+Exploring neighbor 45/49 of iteration 1/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 45/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 46/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 46/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 47/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 47/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 48/49 of iteration 1/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 3.68s with 555 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00555 ± 0.0002349 (stderr)
+Found minimum in neighbor 48/49 of iteration 1/10: 0.005550
+total runtime so far: 0.0h 5.0m 24.489696979522705s
+--------------------------------------------------
+Exploring neighbor 49/49 of iteration 1/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 7. Skipping performance evaluation.
+Skipping neighbor 49/49 due to distance.
+Iteration 1: valid_found=4, scanned=49
+Best neighbor in iteration 1 has cost 0.005550
+Updated distance threshold to 8.
+--------------------------------------------------
+Iteration 2/10: cost of current state = 0.005550
+--------------------------------------------------
+Exploring neighbor 1/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 2/49 of iteration 2/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 2.57s with 564 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00564 ± 0.0002368 (stderr)
+total runtime so far: 0.0h 6.0m 27.810260772705078s
+--------------------------------------------------
+Exploring neighbor 3/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 4/49 of iteration 2/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 5/49 of iteration 2/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.05s with 544 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00544 ± 0.0002326 (stderr)
+Found minimum in neighbor 5/49 of iteration 2/10: 0.005440
+total runtime so far: 0.0h 7.0m 38.61106467247009s
+--------------------------------------------------
+Exploring neighbor 6/49 of iteration 2/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 4.84s with 541 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00541 ± 0.0002320 (stderr)
+Found minimum in neighbor 6/49 of iteration 2/10: 0.005410
+total runtime so far: 0.0h 8.0m 44.153663873672485s
+--------------------------------------------------
+Exploring neighbor 7/49 of iteration 2/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 8/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 9/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 10/49 of iteration 2/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 14.94s with 646 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00646 ± 0.0002533 (stderr)
+total runtime so far: 0.0h 9.0m 59.887274980545044s
+--------------------------------------------------
+Exploring neighbor 11/49 of iteration 2/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 12/49 of iteration 2/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 4.57s with 644 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00644 ± 0.0002530 (stderr)
+total runtime so far: 0.0h 11.0m 5.170591831207275s
+--------------------------------------------------
+Exploring neighbor 13/49 of iteration 2/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 14/49 of iteration 2/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 15/49 of iteration 2/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 16/49 of iteration 2/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 17/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 18/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 19/49 of iteration 2/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 20/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 21/49 of iteration 2/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 9.99s with 534 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00534 ± 0.0002305 (stderr)
+Found minimum in neighbor 21/49 of iteration 2/10: 0.005340
+total runtime so far: 0.0h 12.0m 16.10736894607544s
+--------------------------------------------------
+Exploring neighbor 22/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 23/49 of iteration 2/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 8.98s with 821 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00821 ± 0.0002854 (stderr)
+total runtime so far: 0.0h 13.0m 25.81122875213623s
+--------------------------------------------------
+Exploring neighbor 24/49 of iteration 2/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 25/49 of iteration 2/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.20s with 588 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00588 ± 0.0002418 (stderr)
+total runtime so far: 0.0h 14.0m 36.72232794761658s
+--------------------------------------------------
+Exploring neighbor 26/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 27/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 28/49 of iteration 2/10...
+H: [20, 5, 3]
+H^T: [15, 0, inf]
+Q: [[625, 25, 3]]
+Distance 3 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 29/49 of iteration 2/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 2.18s with 745 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00745 ± 0.0002719 (stderr)
+total runtime so far: 0.0h 15.0m 39.67261481285095s
+--------------------------------------------------
+Exploring neighbor 30/49 of iteration 2/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 31/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 32/49 of iteration 2/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 33/49 of iteration 2/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 34/49 of iteration 2/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 34/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 35/49 of iteration 2/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 36/49 of iteration 2/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 37/49 of iteration 2/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 4.51s with 730 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0073 ± 0.0002692 (stderr)
+total runtime so far: 0.0h 16.0m 45.08943486213684s
+Reached 10 valid neighbors in iteration 2; early-stopping neighbor scan.
+Iteration 2: valid_found=10, scanned=37
+Best neighbor in iteration 2 has cost 0.005340
+Updated distance threshold to 8.
+--------------------------------------------------
+Iteration 3/10: cost of current state = 0.005340
+--------------------------------------------------
+Exploring neighbor 1/49 of iteration 3/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.26s with 719 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00719 ± 0.0002672 (stderr)
+total runtime so far: 0.0h 17.0m 56.0339629650116s
+--------------------------------------------------
+Exploring neighbor 2/49 of iteration 3/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 3/49 of iteration 3/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 4/49 of iteration 3/10...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+Q: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 5/49 of iteration 3/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 16.88s with 646 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00646 ± 0.0002533 (stderr)
+total runtime so far: 0.0h 19.0m 13.677229642868042s
+--------------------------------------------------
+Exploring neighbor 6/49 of iteration 3/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 7/49 of iteration 3/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 8/49 of iteration 3/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 9/49 of iteration 3/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 10/49 of iteration 3/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 11/49 of iteration 3/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 12/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 13/49 of iteration 3/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 14/49 of iteration 3/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 11.28s with 543 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00543 ± 0.0002324 (stderr)
+total runtime so far: 0.0h 20.0m 25.881683826446533s
+--------------------------------------------------
+Exploring neighbor 15/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 16/49 of iteration 3/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 17/49 of iteration 3/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.58s with 674 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00674 ± 0.0002587 (stderr)
+total runtime so far: 0.0h 21.0m 37.18882870674133s
+--------------------------------------------------
+Exploring neighbor 18/49 of iteration 3/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 19/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 20/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 21/49 of iteration 3/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 22/49 of iteration 3/10...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+Q: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 23/49 of iteration 3/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 23/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 24/49 of iteration 3/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.54s with 547 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00547 ± 0.0002332 (stderr)
+total runtime so far: 0.0h 22.0m 48.59271192550659s
+--------------------------------------------------
+Exploring neighbor 25/49 of iteration 3/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 26/49 of iteration 3/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 20.90s with 722 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00722 ± 0.0002677 (stderr)
+total runtime so far: 0.0h 24.0m 10.20535397529602s
+--------------------------------------------------
+Exploring neighbor 27/49 of iteration 3/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.12s with 587 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00587 ± 0.0002416 (stderr)
+total runtime so far: 0.0h 25.0m 21.005882740020752s
+--------------------------------------------------
+Exploring neighbor 28/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 29/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 30/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 31/49 of iteration 3/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 32/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 33/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 34/49 of iteration 3/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.28s with 542 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00542 ± 0.0002322 (stderr)
+total runtime so far: 0.0h 26.0m 32.154305934906006s
+--------------------------------------------------
+Exploring neighbor 35/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 36/49 of iteration 3/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.98s with 542 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00542 ± 0.0002322 (stderr)
+total runtime so far: 0.0h 27.0m 43.842649698257446s
+--------------------------------------------------
+Exploring neighbor 37/49 of iteration 3/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 38/49 of iteration 3/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 39/49 of iteration 3/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 39/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 40/49 of iteration 3/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 21.38s with 826 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00826 ± 0.0002862 (stderr)
+total runtime so far: 0.0h 29.0m 5.985753774642944s
+Reached 10 valid neighbors in iteration 3; early-stopping neighbor scan.
+Iteration 3: valid_found=10, scanned=40
+Best neighbor in iteration 3 has cost 0.005420
+Updated distance threshold to 8.
+--------------------------------------------------
+Iteration 4/10: cost of current state = 0.005420
+--------------------------------------------------
+Exploring neighbor 1/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 2/49 of iteration 4/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 3/49 of iteration 4/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 4/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 5/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 6/49 of iteration 4/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 9.26s with 491 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00491 ± 0.0002210 (stderr)
+Found minimum in neighbor 6/49 of iteration 4/10: 0.004910
+total runtime so far: 0.0h 30.0m 16.083173751831055s
+--------------------------------------------------
+Exploring neighbor 7/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 8/49 of iteration 4/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 9.84s with 565 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00565 ± 0.0002370 (stderr)
+total runtime so far: 0.0h 31.0m 26.63686776161194s
+--------------------------------------------------
+Exploring neighbor 9/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 10/49 of iteration 4/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.50s with 536 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00536 ± 0.0002309 (stderr)
+total runtime so far: 0.0h 32.0m 37.84829592704773s
+--------------------------------------------------
+Exploring neighbor 11/49 of iteration 4/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 12/49 of iteration 4/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 13/49 of iteration 4/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 14/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 15/49 of iteration 4/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 16/49 of iteration 4/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 11.32s with 632 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00632 ± 0.0002506 (stderr)
+total runtime so far: 0.0h 33.0m 49.99386787414551s
+--------------------------------------------------
+Exploring neighbor 17/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 18/49 of iteration 4/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.09s with 559 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00559 ± 0.0002358 (stderr)
+total runtime so far: 0.0h 35.0m 0.8019299507141113s
+--------------------------------------------------
+Exploring neighbor 19/49 of iteration 4/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 20/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 21/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 22/49 of iteration 4/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 6.60s with 539 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00539 ± 0.0002315 (stderr)
+total runtime so far: 0.0h 36.0m 8.173512935638428s
+--------------------------------------------------
+Exploring neighbor 23/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 23/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 24/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 25/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 26/49 of iteration 4/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 27/49 of iteration 4/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 28/49 of iteration 4/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 29/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 30/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 31/49 of iteration 4/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 22.12s with 775 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00775 ± 0.0002773 (stderr)
+total runtime so far: 0.0h 37.0m 31.225637674331665s
+--------------------------------------------------
+Exploring neighbor 32/49 of iteration 4/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 33/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 34/49 of iteration 4/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 11.63s with 581 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00581 ± 0.0002403 (stderr)
+total runtime so far: 0.0h 38.0m 43.65573501586914s
+--------------------------------------------------
+Exploring neighbor 35/49 of iteration 4/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 36/49 of iteration 4/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 37/49 of iteration 4/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 38/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 39/49 of iteration 4/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 39/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 40/49 of iteration 4/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.49s with 538 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00538 ± 0.0002313 (stderr)
+total runtime so far: 0.0h 39.0m 56.99629282951355s
+--------------------------------------------------
+Exploring neighbor 41/49 of iteration 4/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 41/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 42/49 of iteration 4/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.09s with 546 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00546 ± 0.0002330 (stderr)
+total runtime so far: 0.0h 41.0m 9.803136825561523s
+Reached 10 valid neighbors in iteration 4; early-stopping neighbor scan.
+Iteration 4: valid_found=10, scanned=42
+Best neighbor in iteration 4 has cost 0.004910
+Updated distance threshold to 8.
+--------------------------------------------------
+Iteration 5/10: cost of current state = 0.004910
+--------------------------------------------------
+Exploring neighbor 1/49 of iteration 5/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 2/49 of iteration 5/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 3/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 4/49 of iteration 5/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 15.46s with 629 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00629 ± 0.0002500 (stderr)
+total runtime so far: 0.0h 42.0m 26.038166999816895s
+--------------------------------------------------
+Exploring neighbor 5/49 of iteration 5/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 6/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 7/49 of iteration 5/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 26.59s with 604 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00604 ± 0.0002450 (stderr)
+total runtime so far: 0.0h 43.0m 53.36917591094971s
+--------------------------------------------------
+Exploring neighbor 8/49 of iteration 5/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 9/49 of iteration 5/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 16.78s with 542 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00542 ± 0.0002322 (stderr)
+total runtime so far: 0.0h 45.0m 10.86316990852356s
+--------------------------------------------------
+Exploring neighbor 10/49 of iteration 5/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 11/49 of iteration 5/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 12/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 13/49 of iteration 5/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.34s with 570 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0057 ± 0.0002381 (stderr)
+total runtime so far: 0.0h 46.0m 21.971779823303223s
+--------------------------------------------------
+Exploring neighbor 14/49 of iteration 5/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.39s with 556 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00556 ± 0.0002351 (stderr)
+total runtime so far: 0.0h 47.0m 33.05069160461426s
+--------------------------------------------------
+Exploring neighbor 15/49 of iteration 5/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 16/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 17/49 of iteration 5/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 18/49 of iteration 5/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 19/49 of iteration 5/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 11.73s with 533 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00533 ± 0.0002303 (stderr)
+total runtime so far: 0.0h 48.0m 45.58647704124451s
+--------------------------------------------------
+Exploring neighbor 20/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 21/49 of iteration 5/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.00s with 490 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0049 ± 0.0002208 (stderr)
+Found minimum in neighbor 21/49 of iteration 5/10: 0.004900
+total runtime so far: 0.0h 49.0m 58.300556898117065s
+--------------------------------------------------
+Exploring neighbor 22/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 23/49 of iteration 5/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 7.10s with 502 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00502 ± 0.0002235 (stderr)
+total runtime so far: 0.0h 51.0m 6.098966836929321s
+--------------------------------------------------
+Exploring neighbor 24/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 25/49 of iteration 5/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 26/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 27/49 of iteration 5/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 28/49 of iteration 5/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 16.10s with 669 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00669 ± 0.0002578 (stderr)
+total runtime so far: 0.0h 52.0m 23.002789735794067s
+--------------------------------------------------
+Exploring neighbor 29/49 of iteration 5/10...
+H: [20, 5, 3]
+H^T: [15, 0, inf]
+Q: [[625, 25, 3]]
+Distance 3 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 30/49 of iteration 5/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 31/49 of iteration 5/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 32/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 33/49 of iteration 5/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 34/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 34/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 35/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 36/49 of iteration 5/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 37/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 38/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 39/49 of iteration 5/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 39/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 40/49 of iteration 5/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.31s with 454 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00454 ± 0.0002126 (stderr)
+Found minimum in neighbor 40/49 of iteration 5/10: 0.004540
+total runtime so far: 0.0h 53.0m 42.3506338596344s
+Reached 10 valid neighbors in iteration 5; early-stopping neighbor scan.
+Iteration 5: valid_found=10, scanned=40
+Best neighbor in iteration 5 has cost 0.004540
+Updated distance threshold to 8.
+--------------------------------------------------
+Iteration 6/10: cost of current state = 0.004540
+--------------------------------------------------
+Exploring neighbor 1/49 of iteration 6/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.62s with 602 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00602 ± 0.0002446 (stderr)
+total runtime so far: 0.0h 54.0m 55.647778034210205s
+--------------------------------------------------
+Exploring neighbor 2/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 3/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 4/49 of iteration 6/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 17.44s with 473 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00473 ± 0.0002170 (stderr)
+total runtime so far: 0.0h 56.0m 13.843181610107422s
+--------------------------------------------------
+Exploring neighbor 5/49 of iteration 6/10...
+H: [20, 5, 3]
+H^T: [15, 0, inf]
+Q: [[625, 25, 3]]
+Distance 3 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 6/49 of iteration 6/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 16.90s with 385 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00385 ± 0.0001958 (stderr)
+Found minimum in neighbor 6/49 of iteration 6/10: 0.003850
+total runtime so far: 0.0h 57.0m 31.4705548286438s
+--------------------------------------------------
+Exploring neighbor 7/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 8/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 9/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 10/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 11/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 12/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 13/49 of iteration 6/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.59s with 580 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0058 ± 0.0002401 (stderr)
+total runtime so far: 0.0h 58.0m 50.92587065696716s
+--------------------------------------------------
+Exploring neighbor 14/49 of iteration 6/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 15/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 16/49 of iteration 6/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 22.51s with 570 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0057 ± 0.0002381 (stderr)
+total runtime so far: 1.0h 0.0m 14.190016984939575s
+--------------------------------------------------
+Exploring neighbor 17/49 of iteration 6/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 18/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 19/49 of iteration 6/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 20/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 21/49 of iteration 6/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 16.26s with 416 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00416 ± 0.0002035 (stderr)
+total runtime so far: 1.0h 1.0m 31.269315004348755s
+--------------------------------------------------
+Exploring neighbor 22/49 of iteration 6/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 23/49 of iteration 6/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 21.26s with 626 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00626 ± 0.0002494 (stderr)
+total runtime so far: 1.0h 2.0m 53.23711585998535s
+--------------------------------------------------
+Exploring neighbor 24/49 of iteration 6/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 22.97s with 478 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00478 ± 0.0002181 (stderr)
+total runtime so far: 1.0h 4.0m 16.87865686416626s
+--------------------------------------------------
+Exploring neighbor 25/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 26/49 of iteration 6/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.00s with 445 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00445 ± 0.0002105 (stderr)
+total runtime so far: 1.0h 5.0m 35.60773682594299s
+--------------------------------------------------
+Exploring neighbor 27/49 of iteration 6/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 28/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 29/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 30/49 of iteration 6/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 31/49 of iteration 6/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 32/49 of iteration 6/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 10.61s with 512 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00512 ± 0.0002257 (stderr)
+total runtime so far: 1.0h 6.0m 47.059563875198364s
+Reached 10 valid neighbors in iteration 6; early-stopping neighbor scan.
+Iteration 6: valid_found=10, scanned=32
+Best neighbor in iteration 6 has cost 0.003850
+Updated distance threshold to 8.
+--------------------------------------------------
+Iteration 7/10: cost of current state = 0.003850
+--------------------------------------------------
+Exploring neighbor 1/49 of iteration 7/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 2/49 of iteration 7/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 3/49 of iteration 7/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 4/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 5/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 6/49 of iteration 7/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 13.93s with 482 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00482 ± 0.0002190 (stderr)
+total runtime so far: 1.0h 8.0m 1.8361668586730957s
+--------------------------------------------------
+Exploring neighbor 7/49 of iteration 7/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 19.92s with 585 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00585 ± 0.0002412 (stderr)
+total runtime so far: 1.0h 9.0m 22.433432817459106s
+--------------------------------------------------
+Exploring neighbor 8/49 of iteration 7/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 9/49 of iteration 7/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.44s with 489 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00489 ± 0.0002206 (stderr)
+total runtime so far: 1.0h 10.0m 41.59835886955261s
+--------------------------------------------------
+Exploring neighbor 10/49 of iteration 7/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 11/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 12/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 13/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 14/49 of iteration 7/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 19.21s with 486 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00486 ± 0.0002199 (stderr)
+total runtime so far: 1.0h 12.0m 1.6242458820343018s
+--------------------------------------------------
+Exploring neighbor 15/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 16/49 of iteration 7/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.48s with 459 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00459 ± 0.0002138 (stderr)
+total runtime so far: 1.0h 13.0m 20.82965397834778s
+--------------------------------------------------
+Exploring neighbor 17/49 of iteration 7/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 21.96s with 460 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0046 ± 0.0002140 (stderr)
+total runtime so far: 1.0h 14.0m 43.45890474319458s
+--------------------------------------------------
+Exploring neighbor 18/49 of iteration 7/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 19/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 20/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 21/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 22/49 of iteration 7/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 25.09s with 682 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00682 ± 0.0002603 (stderr)
+total runtime so far: 1.0h 16.0m 9.34251880645752s
+--------------------------------------------------
+Exploring neighbor 23/49 of iteration 7/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 23/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 24/49 of iteration 7/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 25/49 of iteration 7/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 26/49 of iteration 7/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 27/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 28/49 of iteration 7/10...
+H: [20, 5, 3]
+H^T: [15, 0, inf]
+Q: [[625, 25, 3]]
+Distance 3 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 29/49 of iteration 7/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 30/49 of iteration 7/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 31/49 of iteration 7/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 32/49 of iteration 7/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 33/49 of iteration 7/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 24.20s with 732 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00732 ± 0.0002696 (stderr)
+total runtime so far: 1.0h 17.0m 34.52222990989685s
+--------------------------------------------------
+Exploring neighbor 34/49 of iteration 7/10...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+Q: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 34/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 35/49 of iteration 7/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 25.01s with 613 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00613 ± 0.0002468 (stderr)
+total runtime so far: 1.0h 19.0m 0.2641777992248535s
+--------------------------------------------------
+Exploring neighbor 36/49 of iteration 7/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 37/49 of iteration 7/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 19.03s with 438 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00438 ± 0.0002088 (stderr)
+total runtime so far: 1.0h 20.0m 20.025049686431885s
+Reached 10 valid neighbors in iteration 7; early-stopping neighbor scan.
+Iteration 7: valid_found=10, scanned=37
+Best neighbor in iteration 7 has cost 0.004380
+Updated distance threshold to 8.
+--------------------------------------------------
+Iteration 8/10: cost of current state = 0.004380
+--------------------------------------------------
+Exploring neighbor 1/49 of iteration 8/10...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+Q: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 2/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 3/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 4/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 5/49 of iteration 8/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.95s with 481 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00481 ± 0.0002188 (stderr)
+total runtime so far: 1.0h 21.0m 39.7990996837616s
+--------------------------------------------------
+Exploring neighbor 6/49 of iteration 8/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 24.94s with 595 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00595 ± 0.0002432 (stderr)
+total runtime so far: 1.0h 23.0m 5.4374518394470215s
+--------------------------------------------------
+Exploring neighbor 7/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 8/49 of iteration 8/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 9/49 of iteration 8/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 24.81s with 738 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00738 ± 0.0002707 (stderr)
+total runtime so far: 1.0h 24.0m 30.975263833999634s
+--------------------------------------------------
+Exploring neighbor 10/49 of iteration 8/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 11/49 of iteration 8/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 12/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 13/49 of iteration 8/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 14/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 15/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 16/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 17/49 of iteration 8/10...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+Q: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 18/49 of iteration 8/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 19/49 of iteration 8/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 19.04s with 436 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00436 ± 0.0002084 (stderr)
+total runtime so far: 1.0h 25.0m 50.98796081542969s
+--------------------------------------------------
+Exploring neighbor 20/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 21/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 22/49 of iteration 8/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 23/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 23/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 24/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 25/49 of iteration 8/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 15.82s with 666 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00666 ± 0.0002572 (stderr)
+total runtime so far: 1.0h 27.0m 7.656328916549683s
+--------------------------------------------------
+Exploring neighbor 26/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 27/49 of iteration 8/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.53s with 442 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00442 ± 0.0002098 (stderr)
+total runtime so far: 1.0h 28.0m 26.91187286376953s
+--------------------------------------------------
+Exploring neighbor 28/49 of iteration 8/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 29/49 of iteration 8/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 30/49 of iteration 8/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 31/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 32/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 33/49 of iteration 8/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 20.07s with 582 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00582 ± 0.0002405 (stderr)
+total runtime so far: 1.0h 29.0m 47.8314049243927s
+--------------------------------------------------
+Exploring neighbor 34/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 34/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 35/49 of iteration 8/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 36.58s with 498 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00498 ± 0.0002226 (stderr)
+total runtime so far: 1.0h 31.0m 25.12036395072937s
+--------------------------------------------------
+Exploring neighbor 36/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 37/49 of iteration 8/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 38/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 39/49 of iteration 8/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 22.66s with 629 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00629 ± 0.0002500 (stderr)
+total runtime so far: 1.0h 32.0m 48.52757668495178s
+--------------------------------------------------
+Exploring neighbor 40/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 40/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 41/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 41/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 42/49 of iteration 8/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 42/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 43/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 43/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 44/49 of iteration 8/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 44/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 45/49 of iteration 8/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 45/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 46/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 46/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 47/49 of iteration 8/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 47/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 48/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 48/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 49/49 of iteration 8/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 49/49 due to distance.
+Iteration 8: valid_found=9, scanned=49
+Best neighbor in iteration 8 has cost 0.004360
+Updated distance threshold to 8.
+--------------------------------------------------
+Iteration 9/10: cost of current state = 0.004360
+--------------------------------------------------
+Exploring neighbor 1/49 of iteration 9/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.75s with 412 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00412 ± 0.0002026 (stderr)
+total runtime so far: 1.0h 34.0m 8.285380840301514s
+--------------------------------------------------
+Exploring neighbor 2/49 of iteration 9/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 3/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 3/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 4/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 5/49 of iteration 9/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 6/49 of iteration 9/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 7/49 of iteration 9/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 8/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 8/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 9/49 of iteration 9/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 10/49 of iteration 9/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 19.38s with 456 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00456 ± 0.0002131 (stderr)
+total runtime so far: 1.0h 35.0m 28.610570907592773s
+--------------------------------------------------
+Exploring neighbor 11/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 11/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 12/49 of iteration 9/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 12/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 13/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 14/49 of iteration 9/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 14/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 15/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 16/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 17/49 of iteration 9/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 25.87s with 715 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00715 ± 0.0002664 (stderr)
+total runtime so far: 1.0h 36.0m 55.34799575805664s
+--------------------------------------------------
+Exploring neighbor 18/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 19/49 of iteration 9/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 22.38s with 486 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00486 ± 0.0002199 (stderr)
+total runtime so far: 1.0h 38.0m 18.442232608795166s
+--------------------------------------------------
+Exploring neighbor 20/49 of iteration 9/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.70s with 431 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00431 ± 0.0002072 (stderr)
+total runtime so far: 1.0h 39.0m 37.83608865737915s
+--------------------------------------------------
+Exploring neighbor 21/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 22/49 of iteration 9/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 23/49 of iteration 9/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 23/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 24/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 25/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 26/49 of iteration 9/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 26/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 27/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 28/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 29/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 30/49 of iteration 9/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.33s with 454 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00454 ± 0.0002126 (stderr)
+total runtime so far: 1.0h 40.0m 57.14025902748108s
+--------------------------------------------------
+Exploring neighbor 31/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 32/49 of iteration 9/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 26.22s with 565 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00565 ± 0.0002370 (stderr)
+total runtime so far: 1.0h 42.0m 24.084502935409546s
+--------------------------------------------------
+Exploring neighbor 33/49 of iteration 9/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 14.19s with 464 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00464 ± 0.0002149 (stderr)
+total runtime so far: 1.0h 43.0m 38.95964002609253s
+--------------------------------------------------
+Exploring neighbor 34/49 of iteration 9/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.50s with 425 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00425 ± 0.0002057 (stderr)
+total runtime so far: 1.0h 44.0m 58.15912985801697s
+--------------------------------------------------
+Exploring neighbor 35/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 35/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 36/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 37/49 of iteration 9/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 37/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 38/49 of iteration 9/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.56s with 458 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00458 ± 0.0002135 (stderr)
+total runtime so far: 1.0h 46.0m 17.492156744003296s
+Reached 10 valid neighbors in iteration 9; early-stopping neighbor scan.
+Iteration 9: valid_found=10, scanned=38
+Best neighbor in iteration 9 has cost 0.004120
+Updated distance threshold to 8.
+--------------------------------------------------
+Iteration 10/10: cost of current state = 0.004120
+--------------------------------------------------
+Exploring neighbor 1/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 1/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 2/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 2/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 3/49 of iteration 10/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.81s with 458 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00458 ± 0.0002135 (stderr)
+total runtime so far: 1.0h 47.0m 37.06671380996704s
+--------------------------------------------------
+Exploring neighbor 4/49 of iteration 10/10...
+H: [20, 5, 3]
+H^T: [15, 0, inf]
+Q: [[625, 25, 3]]
+Distance 3 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 4/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 5/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 5/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 6/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 6/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 7/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 7/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 8/49 of iteration 10/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 12.25s with 494 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00494 ± 0.0002217 (stderr)
+total runtime so far: 1.0h 48.0m 50.126001834869385s
+--------------------------------------------------
+Exploring neighbor 9/49 of iteration 10/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 9/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 10/49 of iteration 10/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 10/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 11/49 of iteration 10/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 30.58s with 777 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00777 ± 0.0002777 (stderr)
+total runtime so far: 1.0h 50.0m 21.46349573135376s
+--------------------------------------------------
+Exploring neighbor 12/49 of iteration 10/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 17.24s with 602 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00602 ± 0.0002446 (stderr)
+total runtime so far: 1.0h 51.0m 39.38585591316223s
+--------------------------------------------------
+Exploring neighbor 13/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 13/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 14/49 of iteration 10/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 16.59s with 620 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.0062 ± 0.0002482 (stderr)
+total runtime so far: 1.0h 52.0m 56.6900417804718s
+--------------------------------------------------
+Exploring neighbor 15/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 15/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 16/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 16/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 17/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 17/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 18/49 of iteration 10/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 18/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 19/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 19/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 20/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 20/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 21/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 21/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 22/49 of iteration 10/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 22/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 23/49 of iteration 10/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 23/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 24/49 of iteration 10/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 24/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 25/49 of iteration 10/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 25/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 26/49 of iteration 10/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.17s with 425 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00425 ± 0.0002057 (stderr)
+total runtime so far: 1.0h 54.0m 15.903557777404785s
+--------------------------------------------------
+Exploring neighbor 27/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 27/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 28/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 28/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 29/49 of iteration 10/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 29/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 30/49 of iteration 10/10...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+Q: [[625, 25, 2]]
+Distance 2 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 30/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 31/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 31/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 32/49 of iteration 10/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 32/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 33/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 33/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 34/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 34/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 35/49 of iteration 10/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 19.45s with 602 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00602 ± 0.0002446 (stderr)
+total runtime so far: 1.0h 55.0m 36.28023862838745s
+--------------------------------------------------
+Exploring neighbor 36/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 36/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 37/49 of iteration 10/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 19.85s with 501 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00501 ± 0.0002233 (stderr)
+total runtime so far: 1.0h 56.0m 56.82774090766907s
+--------------------------------------------------
+Exploring neighbor 38/49 of iteration 10/10...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+Q: [[625, 25, 4]]
+Distance 4 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 38/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 39/49 of iteration 10/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 39/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 40/49 of iteration 10/10...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+Q: [[625, 25, 7]]
+Distance 7 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 40/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 41/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 41/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 42/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 42/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 43/49 of iteration 10/10...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+Q: [[625, 25, 5]]
+Distance 5 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 43/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 44/49 of iteration 10/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 20.59s with 473 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00473 ± 0.0002170 (stderr)
+total runtime so far: 1.0h 58.0m 18.311543941497803s
+--------------------------------------------------
+Exploring neighbor 45/49 of iteration 10/10...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+Q: [[625, 25, 6]]
+Distance 6 is below threshold 8. Skipping performance evaluation.
+Skipping neighbor 45/49 due to distance.
+--------------------------------------------------
+Exploring neighbor 46/49 of iteration 10/10...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+Q: [[625, 25, 8]]
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 1.0m 18.55s with 466 failures out of 100000 runs.
+Logical error rate for Best neighbor search: 0.00466 ± 0.0002154 (stderr)
+total runtime so far: 1.0h 59.0m 37.59664297103882s
+Reached 10 valid neighbors in iteration 10; early-stopping neighbor scan.
+Iteration 10: valid_found=10, scanned=46
+Last iteration; not appending a next initial state.
+Streaming results saved to optimization/results/best_neighbor_search_early_stop_run2.hdf5 for code family [625,25].
