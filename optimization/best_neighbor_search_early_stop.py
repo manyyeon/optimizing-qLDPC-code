@@ -18,7 +18,7 @@ from optimization.experiments_settings import MC_budget, noise_levels
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/best_neighbor_search_early_stop_run2.hdf5"
+output_file = "optimization/results/best_neighbor_search_early_stop_run3.hdf5"
 EARLY_VALID_TARGET = 10
 run_label = "Best neighbor search"
 
