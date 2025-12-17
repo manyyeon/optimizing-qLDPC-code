@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: white;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#87CEEB", "font": {"color": "black"}, "id": 0, "label": "S0", "physics": false, "shape": "circle", "title": "Symbol Node 0", "x": 62.5, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 1, "label": "S1", "physics": false, "shape": "circle", "title": "Symbol Node 1", "x": 125.0, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 2, "label": "S2", "physics": false, "shape": "circle", "title": "Symbol Node 2", "x": 187.5, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 3, "label": "S3", "physics": false, "shape": "circle", "title": "Symbol Node 3", "x": 250.0, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 4, "label": "S4", "physics": false, "shape": "circle", "title": "Symbol Node 4", "x": 312.5, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 5, "label": "S5", "physics": false, "shape": "circle", "title": "Symbol Node 5", "x": 375.0, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 6, "label": "S6", "physics": false, "shape": "circle", "title": "Symbol Node 6", "x": 437.5, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 7, "label": "S7", "physics": false, "shape": "circle", "title": "Symbol Node 7", "x": 500.0, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 8, "label": "S8", "physics": false, "shape": "circle", "title": "Symbol Node 8", "x": 562.5, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 9, "label": "S9", "physics": false, "shape": "circle", "title": "Symbol Node 9", "x": 625.0, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 10, "label": "S10", "physics": false, "shape": "circle", "title": "Symbol Node 10", "x": 687.5, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 11, "label": "S11", "physics": false, "shape": "circle", "title": "Symbol Node 11", "x": 750.0, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 12, "label": "S12", "physics": false, "shape": "circle", "title": "Symbol Node 12", "x": 812.5, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 13, "label": "S13", "physics": false, "shape": "circle", "title": "Symbol Node 13", "x": 875.0, "y": 100}, {"color": "#87CEEB", "font": {"color": "black"}, "id": 14, "label": "S14", "physics": false, "shape": "circle", "title": "Symbol Node 14", "x": 937.5, "y": 100}, {"color": "#F08080", "font": {"color": "black"}, "id": 15, "label": "C0", "physics": false, "shape": "box", "title": "Check Node 0", "x": 47.61904761904762, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 16, "label": "C1", "physics": false, "shape": "box", "title": "Check Node 1", "x": 95.23809523809524, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 17, "label": "C2", "physics": false, "shape": "box", "title": "Check Node 2", "x": 142.85714285714286, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 18, "label": "C3", "physics": false, "shape": "box", "title": "Check Node 3", "x": 190.47619047619048, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 19, "label": "C4", "physics": false, "shape": "box", "title": "Check Node 4", "x": 238.0952380952381, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 20, "label": "C5", "physics": false, "shape": "box", "title": "Check Node 5", "x": 285.7142857142857, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 21, "label": "C6", "physics": false, "shape": "box", "title": "Check Node 6", "x": 333.33333333333337, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 22, "label": "C7", "physics": false, "shape": "box", "title": "Check Node 7", "x": 380.95238095238096, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 23, "label": "C8", "physics": false, "shape": "box", "title": "Check Node 8", "x": 428.57142857142856, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 24, "label": "C9", "physics": false, "shape": "box", "title": "Check Node 9", "x": 476.1904761904762, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 25, "label": "C10", "physics": false, "shape": "box", "title": "Check Node 10", "x": 523.8095238095239, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 26, "label": "C11", "physics": false, "shape": "box", "title": "Check Node 11", "x": 571.4285714285714, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 27, "label": "C12", "physics": false, "shape": "box", "title": "Check Node 12", "x": 619.047619047619, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 28, "label": "C13", "physics": false, "shape": "box", "title": "Check Node 13", "x": 666.6666666666667, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 29, "label": "C14", "physics": false, "shape": "box", "title": "Check Node 14", "x": 714.2857142857143, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 30, "label": "C15", "physics": false, "shape": "box", "title": "Check Node 15", "x": 761.9047619047619, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 31, "label": "C16", "physics": false, "shape": "box", "title": "Check Node 16", "x": 809.5238095238095, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 32, "label": "C17", "physics": false, "shape": "box", "title": "Check Node 17", "x": 857.1428571428571, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 33, "label": "C18", "physics": false, "shape": "box", "title": "Check Node 18", "x": 904.7619047619048, "y": 400}, {"color": "#F08080", "font": {"color": "black"}, "id": 34, "label": "C19", "physics": false, "shape": "box", "title": "Check Node 19", "x": 952.3809523809524, "y": 400}]);
+                  edges = new vis.DataSet([{"color": "lightgrey", "from": 0, "to": 20}, {"color": "lightgrey", "from": 0, "to": 25}, {"color": "lightgrey", "from": 0, "to": 28}, {"color": "lightgrey", "from": 0, "to": 30}, {"color": "lightgrey", "from": 1, "to": 15}, {"color": "lightgrey", "from": 1, "to": 21}, {"color": "lightgrey", "from": 1, "to": 31}, {"color": "lightgrey", "from": 2, "to": 15}, {"color": "lightgrey", "from": 2, "to": 22}, {"color": "lightgrey", "from": 2, "to": 26}, {"color": "lightgrey", "from": 2, "to": 32}, {"color": "lightgrey", "from": 2, "to": 34}, {"color": "lightgrey", "from": 3, "to": 16}, {"color": "lightgrey", "from": 3, "to": 20}, {"color": "lightgrey", "from": 3, "to": 27}, {"color": "lightgrey", "from": 3, "to": 31}, {"color": "lightgrey", "from": 4, "to": 16}, {"color": "lightgrey", "from": 4, "to": 22}, {"color": "lightgrey", "from": 4, "to": 25}, {"color": "lightgrey", "from": 4, "to": 30}, {"color": "lightgrey", "from": 5, "to": 16}, {"color": "lightgrey", "from": 5, "to": 23}, {"color": "lightgrey", "from": 5, "to": 27}, {"color": "lightgrey", "from": 5, "to": 32}, {"color": "lightgrey", "from": 6, "to": 17}, {"color": "lightgrey", "from": 6, "to": 20}, {"color": "lightgrey", "from": 6, "to": 27}, {"color": "lightgrey", "from": 6, "to": 33}, {"color": "lightgrey", "from": 7, "to": 17}, {"color": "lightgrey", "from": 7, "to": 22}, {"color": "lightgrey", "from": 7, "to": 29}, {"color": "lightgrey", "from": 7, "to": 33}, {"color": "lightgrey", "from": 8, "to": 17}, {"color": "lightgrey", "from": 8, "to": 30}, {"color": "lightgrey", "from": 8, "to": 31}, {"color": "lightgrey", "from": 8, "to": 34}, {"color": "lightgrey", "from": 9, "to": 18}, {"color": "lightgrey", "from": 9, "to": 21}, {"color": "lightgrey", "from": 9, "to": 28}, {"color": "lightgrey", "from": 9, "to": 32}, {"color": "lightgrey", "from": 10, "to": 18}, {"color": "lightgrey", "from": 10, "to": 23}, {"color": "lightgrey", "from": 10, "to": 26}, {"color": "lightgrey", "from": 10, "to": 33}, {"color": "lightgrey", "from": 11, "to": 18}, {"color": "lightgrey", "from": 11, "to": 24}, {"color": "lightgrey", "from": 11, "to": 29}, {"color": "lightgrey", "from": 11, "to": 34}, {"color": "lightgrey", "from": 12, "to": 15}, {"color": "lightgrey", "from": 12, "to": 19}, {"color": "lightgrey", "from": 12, "to": 23}, {"color": "lightgrey", "from": 12, "to": 26}, {"color": "lightgrey", "from": 13, "to": 19}, {"color": "lightgrey", "from": 13, "to": 24}, {"color": "lightgrey", "from": 13, "to": 28}, {"color": "lightgrey", "from": 14, "to": 19}, {"color": "lightgrey", "from": 14, "to": 25}, {"color": "lightgrey", "from": 14, "to": 29}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"interaction": {"dragNodes": true, "zoomView": true, "hover": true}, "physics": {"enabled": false}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
