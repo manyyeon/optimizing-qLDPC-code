@@ -1,0 +1,254 @@
+--- BATCH OPTIMIZATION ---
+Code Family: [1600,64], p=0.03
+Search: 5 steps x 50 neighbors = 250 total scans
+Budgets: Screening=10000, Precision=100000
+
+>>> PHASE 1: Geometric Search (Distance Only)
+/Users/manyyeon/data/git/optimizing-qLDPC-code/venv/lib/python3.13/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Step 1/5 (Current Max Dist: 6)
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 32.76it/s]Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 28.83it/s]Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 31.53it/s]Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:01, 32.88it/s]Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 33.73it/s]Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 34.31it/s]Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 34.65it/s]Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 34.90it/s]Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.09it/s]Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.21it/s]Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.22it/s]Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.29it/s]                                                                   Step 2/5 (Current Max Dist: 8)
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.37it/s]Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.36it/s]Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.39it/s]Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.34it/s]Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.35it/s]Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.36it/s]Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.43it/s]Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.51it/s]Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.57it/s]Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.60it/s]Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.63it/s]Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.58it/s]                                                                   Step 3/5 (Current Max Dist: 10)
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.65it/s]Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.65it/s]Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.68it/s]Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.70it/s]Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.68it/s]Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.68it/s]Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.61it/s]Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.63it/s]Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.61it/s]Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.50it/s]Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.40it/s]Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.46it/s]                                                                   Step 4/5 (Current Max Dist: 10)
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.70it/s]Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.58it/s]Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.46it/s]Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.50it/s]Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.55it/s]Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.60it/s]Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.62it/s]Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.63it/s]Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.57it/s]Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.60it/s]Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.65it/s]Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.66it/s]                                                                   Step 5/5 (Current Max Dist: 10)
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.54it/s]Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.42it/s]Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.41it/s]Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.39it/s]Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.47it/s]Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.51it/s]Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.54it/s]Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.56it/s]Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.61it/s]Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.61it/s]Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.57it/s]Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.50it/s]                                                                   
+>>> PHASE 2: Screening (Budget 10000)
+Found 251 total codes.
+Screening 59 unique candidates with Dist == 10...
+Running MC (Screening):   0%|          | 0/59 [00:00<?, ?it/s]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.42s with 18 failures out of 10000 runs.
+Logical error rate for eval: 0.0018 ± 0.0004239 (stderr)
+Running MC (Screening):   2%|▏         | 1/59 [00:28<27:27, 28.41s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.35s with 21 failures out of 10000 runs.
+Logical error rate for eval: 0.0021 ± 0.0004578 (stderr)
+Running MC (Screening):   3%|▎         | 2/59 [00:56<26:55, 28.33s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.58s with 18 failures out of 10000 runs.
+Logical error rate for eval: 0.0018 ± 0.0004239 (stderr)
+Running MC (Screening):   5%|▌         | 3/59 [01:25<26:29, 28.39s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.34s with 24 failures out of 10000 runs.
+Logical error rate for eval: 0.0024 ± 0.0004893 (stderr)
+Running MC (Screening):   7%|▋         | 4/59 [01:53<25:59, 28.36s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.44s with 20 failures out of 10000 runs.
+Logical error rate for eval: 0.002 ± 0.0004468 (stderr)
+Running MC (Screening):   8%|▊         | 5/59 [02:21<25:31, 28.36s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 26.81s with 22 failures out of 10000 runs.
+Logical error rate for eval: 0.0022 ± 0.0004685 (stderr)
+Running MC (Screening):  10%|█         | 6/59 [02:49<24:51, 28.14s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 26.00s with 15 failures out of 10000 runs.
+Logical error rate for eval: 0.0015 ± 0.0003870 (stderr)
+Running MC (Screening):  12%|█▏        | 7/59 [03:16<24:03, 27.76s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 29.60s with 17 failures out of 10000 runs.
+Logical error rate for eval: 0.0017 ± 0.0004120 (stderr)
+Running MC (Screening):  14%|█▎        | 8/59 [03:47<24:20, 28.63s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 26.76s with 24 failures out of 10000 runs.
+Logical error rate for eval: 0.0024 ± 0.0004893 (stderr)
+Running MC (Screening):  15%|█▌        | 9/59 [04:14<23:37, 28.34s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 32.06s with 29 failures out of 10000 runs.
+Logical error rate for eval: 0.0029 ± 0.0005378 (stderr)
+Running MC (Screening):  17%|█▋        | 10/59 [04:47<24:19, 29.78s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 26.52s with 21 failures out of 10000 runs.
+Logical error rate for eval: 0.0021 ± 0.0004578 (stderr)
+Running MC (Screening):  19%|█▊        | 11/59 [05:15<23:15, 29.06s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.18s with 18 failures out of 10000 runs.
+Logical error rate for eval: 0.0018 ± 0.0004239 (stderr)
+Running MC (Screening):  20%|██        | 12/59 [05:43<22:32, 28.77s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 25.93s with 24 failures out of 10000 runs.
+Logical error rate for eval: 0.0024 ± 0.0004893 (stderr)
+Running MC (Screening):  22%|██▏       | 13/59 [06:10<21:37, 28.21s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.25s with 22 failures out of 10000 runs.
+Logical error rate for eval: 0.0022 ± 0.0004685 (stderr)
+Running MC (Screening):  24%|██▎       | 14/59 [06:38<21:09, 28.22s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.83s with 25 failures out of 10000 runs.
+Logical error rate for eval: 0.0025 ± 0.0004994 (stderr)
+Running MC (Screening):  25%|██▌       | 15/59 [07:07<20:48, 28.38s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 26.85s with 23 failures out of 10000 runs.
+Logical error rate for eval: 0.0023 ± 0.0004791 (stderr)
+Running MC (Screening):  27%|██▋       | 16/59 [07:35<20:13, 28.23s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 26.99s with 23 failures out of 10000 runs.
+Logical error rate for eval: 0.0023 ± 0.0004791 (stderr)
+Running MC (Screening):  29%|██▉       | 17/59 [08:02<19:41, 28.14s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 26.28s with 22 failures out of 10000 runs.
+Logical error rate for eval: 0.0022 ± 0.0004685 (stderr)
+Running MC (Screening):  31%|███       | 18/59 [08:30<19:02, 27.85s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.17s with 21 failures out of 10000 runs.
+Logical error rate for eval: 0.0021 ± 0.0004578 (stderr)
+Running MC (Screening):  32%|███▏      | 19/59 [08:58<18:37, 27.94s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 26.10s with 15 failures out of 10000 runs.
+Logical error rate for eval: 0.0015 ± 0.0003870 (stderr)
+Running MC (Screening):  34%|███▍      | 20/59 [09:25<17:59, 27.67s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 25.89s with 23 failures out of 10000 runs.
+Logical error rate for eval: 0.0023 ± 0.0004791 (stderr)
+Running MC (Screening):  36%|███▌      | 21/59 [09:52<17:22, 27.43s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.21s with 18 failures out of 10000 runs.
+Logical error rate for eval: 0.0018 ± 0.0004239 (stderr)
+Running MC (Screening):  37%|███▋      | 22/59 [10:20<17:03, 27.65s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.52s with 17 failures out of 10000 runs.
+Logical error rate for eval: 0.0017 ± 0.0004120 (stderr)
+Running MC (Screening):  39%|███▉      | 23/59 [10:48<16:44, 27.89s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.12s with 21 failures out of 10000 runs.
+Logical error rate for eval: 0.0021 ± 0.0004578 (stderr)
+Running MC (Screening):  41%|████      | 24/59 [11:16<16:18, 27.95s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.63s with 28 failures out of 10000 runs.
+Logical error rate for eval: 0.0028 ± 0.0005284 (stderr)
+Running MC (Screening):  42%|████▏     | 25/59 [11:45<15:56, 28.13s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 28.01s with 18 failures out of 10000 runs.
+Logical error rate for eval: 0.0018 ± 0.0004239 (stderr)
+Running MC (Screening):  44%|████▍     | 26/59 [12:14<15:36, 28.39s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 25.44s with 21 failures out of 10000 runs.
+Logical error rate for eval: 0.0021 ± 0.0004578 (stderr)
+Running MC (Screening):  46%|████▌     | 27/59 [12:40<14:49, 27.79s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 25.95s with 18 failures out of 10000 runs.
+Logical error rate for eval: 0.0018 ± 0.0004239 (stderr)
+Running MC (Screening):  47%|████▋     | 28/59 [13:07<14:13, 27.52s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.26s with 23 failures out of 10000 runs.
+Logical error rate for eval: 0.0023 ± 0.0004791 (stderr)
+Running MC (Screening):  49%|████▉     | 29/59 [13:35<13:51, 27.73s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 25.98s with 32 failures out of 10000 runs.
+Logical error rate for eval: 0.0032 ± 0.0005648 (stderr)
+Running MC (Screening):  51%|█████     | 30/59 [14:02<13:17, 27.49s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.70s with 16 failures out of 10000 runs.
+Logical error rate for eval: 0.0016 ± 0.0003997 (stderr)
+Running MC (Screening):  53%|█████▎    | 31/59 [14:31<12:59, 27.84s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 29.76s with 22 failures out of 10000 runs.
+Logical error rate for eval: 0.0022 ± 0.0004685 (stderr)
+Running MC (Screening):  54%|█████▍    | 32/59 [15:02<12:54, 28.69s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.92s with 21 failures out of 10000 runs.
+Logical error rate for eval: 0.0021 ± 0.0004578 (stderr)
+Running MC (Screening):  56%|█████▌    | 33/59 [15:31<12:27, 28.73s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 26.72s with 22 failures out of 10000 runs.
+Logical error rate for eval: 0.0022 ± 0.0004685 (stderr)
+Running MC (Screening):  58%|█████▊    | 34/59 [15:58<11:50, 28.42s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 32.19s with 11 failures out of 10000 runs.
+Logical error rate for eval: 0.0011 ± 0.0003315 (stderr)
+Running MC (Screening):  59%|█████▉    | 35/59 [16:31<11:55, 29.83s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 29.52s with 25 failures out of 10000 runs.
+Logical error rate for eval: 0.0025 ± 0.0004994 (stderr)
+Running MC (Screening):  61%|██████    | 36/59 [17:02<11:30, 30.02s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 28.43s with 35 failures out of 10000 runs.
+Logical error rate for eval: 0.0035 ± 0.0005906 (stderr)
+Running MC (Screening):  63%|██████▎   | 37/59 [17:31<10:56, 29.82s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 28.80s with 28 failures out of 10000 runs.
+Logical error rate for eval: 0.0028 ± 0.0005284 (stderr)
+Running MC (Screening):  64%|██████▍   | 38/59 [18:01<10:26, 29.84s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 26.40s with 29 failures out of 10000 runs.
+Logical error rate for eval: 0.0029 ± 0.0005378 (stderr)
+Running MC (Screening):  66%|██████▌   | 39/59 [18:28<09:41, 29.10s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.56s with 20 failures out of 10000 runs.
+Logical error rate for eval: 0.002 ± 0.0004468 (stderr)
+Running MC (Screening):  68%|██████▊   | 40/59 [18:57<09:09, 28.92s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 32.00s with 25 failures out of 10000 runs.
+Logical error rate for eval: 0.0025 ± 0.0004994 (stderr)
+Running MC (Screening):  69%|██████▉   | 41/59 [19:30<09:02, 30.12s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 31.75s with 23 failures out of 10000 runs.
+Logical error rate for eval: 0.0023 ± 0.0004791 (stderr)
+Running MC (Screening):  71%|███████   | 42/59 [20:03<08:45, 30.89s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 4.0m 34.29s with 21 failures out of 10000 runs.
+Logical error rate for eval: 0.0021 ± 0.0004578 (stderr)
+Running MC (Screening):  73%|███████▎  | 43/59 [24:38<27:47, 104.20s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.22s with 16 failures out of 10000 runs.
+Logical error rate for eval: 0.0016 ± 0.0003997 (stderr)
+Running MC (Screening):  75%|███████▍  | 44/59 [25:06<20:21, 81.43s/it] Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 29.88s with 32 failures out of 10000 runs.
+Logical error rate for eval: 0.0032 ± 0.0005648 (stderr)
+Running MC (Screening):  76%|███████▋  | 45/59 [25:37<15:27, 66.24s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 32.02s with 33 failures out of 10000 runs.
+Logical error rate for eval: 0.0033 ± 0.0005735 (stderr)
+Running MC (Screening):  78%|███████▊  | 46/59 [26:10<12:11, 56.25s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 28.29s with 24 failures out of 10000 runs.
+Logical error rate for eval: 0.0024 ± 0.0004893 (stderr)
+Running MC (Screening):  80%|███████▉  | 47/59 [26:39<09:37, 48.14s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 34.98s with 33 failures out of 10000 runs.
+Logical error rate for eval: 0.0033 ± 0.0005735 (stderr)
+Running MC (Screening):  81%|████████▏ | 48/59 [27:15<08:09, 44.48s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 3.0m 44.27s with 21 failures out of 10000 runs.
+Logical error rate for eval: 0.0021 ± 0.0004578 (stderr)
+Running MC (Screening):  83%|████████▎ | 49/59 [31:00<16:26, 98.70s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 3.0m 46.36s with 43 failures out of 10000 runs.
+Logical error rate for eval: 0.0043 ± 0.0006544 (stderr)
+Running MC (Screening):  85%|████████▍ | 50/59 [34:47<20:35, 137.28s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 28.78s with 19 failures out of 10000 runs.
+Logical error rate for eval: 0.0019 ± 0.0004355 (stderr)
+Running MC (Screening):  86%|████████▋ | 51/59 [35:17<14:00, 105.01s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 31.31s with 30 failures out of 10000 runs.
+Logical error rate for eval: 0.003 ± 0.0005469 (stderr)
+Running MC (Screening):  88%|████████▊ | 52/59 [35:49<09:42, 83.18s/it] Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 28.81s with 27 failures out of 10000 runs.
+Logical error rate for eval: 0.0027 ± 0.0005189 (stderr)
+Running MC (Screening):  90%|████████▉ | 53/59 [36:19<06:42, 67.15s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 31.30s with 26 failures out of 10000 runs.
+Logical error rate for eval: 0.0026 ± 0.0005093 (stderr)
+Running MC (Screening):  92%|█████████▏| 54/59 [36:51<04:43, 56.68s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 34.35s with 29 failures out of 10000 runs.
+Logical error rate for eval: 0.0029 ± 0.0005378 (stderr)
+Running MC (Screening):  93%|█████████▎| 55/59 [37:27<03:21, 50.26s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.83s with 34 failures out of 10000 runs.
+Logical error rate for eval: 0.0034 ± 0.0005821 (stderr)
+Running MC (Screening):  95%|█████████▍| 56/59 [37:55<02:11, 43.81s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 27.27s with 25 failures out of 10000 runs.
+Logical error rate for eval: 0.0025 ± 0.0004994 (stderr)
+Running MC (Screening):  97%|█████████▋| 57/59 [38:24<01:18, 39.13s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 33.23s with 26 failures out of 10000 runs.
+Logical error rate for eval: 0.0026 ± 0.0005093 (stderr)
+Running MC (Screening):  98%|█████████▊| 58/59 [38:58<00:37, 37.63s/it]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 0.0m 28.65s with 33 failures out of 10000 runs.
+Logical error rate for eval: 0.0033 ± 0.0005735 (stderr)
+Running MC (Screening): 100%|██████████| 59/59 [39:27<00:00, 35.22s/it]Running MC (Screening): 100%|██████████| 59/59 [39:27<00:00, 40.13s/it]
+Best Screening LER: 1.10e-03
+
+>>> PHASE 3: Precision (Budget 100000)
+Promoting Top 10 to high precision...
+Evaluating Candidate (Row 172)...
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 5.0m 14.67s with 173 failures out of 100000 runs.
+Logical error rate for eval: 0.00173 ± 0.0001314 (stderr)
+  -> LER: 1.73e-03
+Evaluating Candidate (Row 110)...
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 4.0m 28.77s with 184 failures out of 100000 runs.
+Logical error rate for eval: 0.00184 ± 0.0001355 (stderr)
+  -> LER: 1.84e-03
+Evaluating Candidate (Row 145)...
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 4.0m 28.02s with 214 failures out of 100000 runs.
+Logical error rate for eval: 0.00214 ± 0.0001461 (stderr)
+  -> LER: 2.14e-03
+Evaluating Candidate (Row 165)...
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 4.0m 31.67s with 161 failures out of 100000 runs.
+Logical error rate for eval: 0.00161 ± 0.0001268 (stderr)
+  -> LER: 1.61e-03
+Evaluating Candidate (Row 199)...
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 4.0m 35.63s with 195 failures out of 100000 runs.
+Logical error rate for eval: 0.00195 ± 0.0001395 (stderr)
+  -> LER: 1.95e-03
+Evaluating Candidate (Row 112)...
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 4.0m 44.79s with 160 failures out of 100000 runs.
+Logical error rate for eval: 0.0016 ± 0.0001264 (stderr)
+  -> LER: 1.60e-03
+Evaluating Candidate (Row 150)...
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 4.0m 27.23s with 186 failures out of 100000 runs.
+Logical error rate for eval: 0.00186 ± 0.0001363 (stderr)
+  -> LER: 1.86e-03
+Evaluating Candidate (Row 99)...
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 4.0m 27.74s with 221 failures out of 100000 runs.
+Logical error rate for eval: 0.00221 ± 0.0001485 (stderr)
+  -> LER: 2.21e-03
+Evaluating Candidate (Row 105)...
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 4.0m 40.37s with 254 failures out of 100000 runs.
+Logical error rate for eval: 0.00254 ± 0.0001592 (stderr)
+  -> LER: 2.54e-03
+Evaluating Candidate (Row 126)...
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder eval finished in 4.0m 22.09s with 200 failures out of 100000 runs.
+Logical error rate for eval: 0.002 ± 0.0001413 (stderr)
+  -> LER: 2.00e-03
+
+>>> RESULT: Best Code Found
+Distance: 10
+LER: 1.60e-03
+Saved to optimization/results/batch_search_d_first.hdf5

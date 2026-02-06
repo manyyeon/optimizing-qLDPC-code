@@ -1,0 +1,1116 @@
+C=0, N=50, L=3, p=0.03, BEAM_WIDTH=3
+[[ 0 15  0 20  0 24  0 30  1 15  1 20  1 25  1 31  2 17  2 22  2 26  2 32
+   2 34  3 16  3 20  3 26  3 31  4 16  4 22  4 25  4 30  5 16  5 23  5 27
+   5 32  6 17  6 21  6 27  6 33  7 17  7 22  7 30  7 31  8 15  8 23  8 28
+   8 29  9 18  9 21  9 28  9 32 10 18 10 23 10 26 10 33 11 18 11 24 11 29
+  11 34 12 19 12 21 12 27 12 34 13 19 13 24 13 28 13 33 14 19 14 25 14 29]]
+/Users/manyyeon/data/git/optimizing-qLDPC-code/venv/lib/python3.13/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.43s with 54 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0054 ± 0.0007329 (stderr)
+Starting Beam Search with Width 3...
+Initial Cost: 0.005400, Distance Threshold: 9
+============================================================
+Iteration 1/3 | Beam Size: 1 | Neighbors per parent: 49
+  >>> [Parent 1/1 (0)] Starting scan...
+    - Scanning neighbor 1/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 2/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 3/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 4/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 5/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 6/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 7/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 8/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 9/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 10/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 11/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 12/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 13/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 14/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 15/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 16/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 17/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 18/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 19/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 20/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 21/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 22/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 23/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 24/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 25/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 26/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 27/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 28/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 29/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 30/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 31/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 32/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 33/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 34/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 35/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 36/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 37/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 38/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 39/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 40/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 41/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 42/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 43/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 44/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 45/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 46/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 47/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 48/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+    - Scanning neighbor 49/49 of parent 1 (0) in Iteration 1...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 9. Skipping performance evaluation.
+  <<< [Parent 1] Finished. Found 0 valid.
+  Selection: Keeping 1 best. Costs: [0.00540]
+  Sources: ['(Parent)']
+  Distances: [8]
+  Survivors: [0, -1, -1]
+Updated distance threshold to 8
+runtime so far: 0.0 hours 0.0 minutes 9.008968114852905 seconds
+============================================================
+Iteration 2/3 | Beam Size: 1 | Neighbors per parent: 49
+  >>> [Parent 1/1 (0)] Starting scan...
+    - Scanning neighbor 1/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 2/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.24s with 56 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0056 ± 0.0007463 (stderr)
+    - Scanning neighbor 3/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 4/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 5/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 6/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 7/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 8/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.40s with 62 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0062 ± 0.0007850 (stderr)
+    - Scanning neighbor 9/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 10/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.51s with 41 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0041 ± 0.0006390 (stderr)
+      [!] New Global Min: 0.004100
+    - Scanning neighbor 11/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 12/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.35s with 51 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0051 ± 0.0007124 (stderr)
+    - Scanning neighbor 13/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 14/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 15/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 16/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 17/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 18/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.51s with 70 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.007 ± 0.0008338 (stderr)
+    - Scanning neighbor 19/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.52s with 51 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0051 ± 0.0007124 (stderr)
+    - Scanning neighbor 20/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.49s with 64 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0064 ± 0.0007975 (stderr)
+    - Scanning neighbor 21/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 22/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 23/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 24/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 25/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.44s with 64 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0064 ± 0.0007975 (stderr)
+    - Scanning neighbor 26/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 27/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.62s with 67 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0067 ± 0.0008158 (stderr)
+    - Scanning neighbor 28/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8. Skipping performance evaluation.
+    - Scanning neighbor 29/49 of parent 1 (0) in Iteration 2...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.51s with 59 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0059 ± 0.0007659 (stderr)
+      [Parent 1] Reached target (10 valid). Stopping early.
+  <<< [Parent 1] Finished. Found 10 valid.
+  Selection: Keeping 3 best. Costs: [0.00410, 0.00510, 0.00510]
+  Sources: ['(Child)', '(Child)', '(Child)']
+  Distances: [8, 8, 8]
+  Survivors: [59, 61, 68]
+Updated distance threshold to 8
+runtime so far: 0.0 hours 1.0 minutes 25.711477041244507 seconds
+============================================================
+Iteration 3/3 | Beam Size: 3 | Neighbors per parent: 49
+  >>> [Parent 1/3 (59)] Starting scan...
+    - Scanning neighbor 1/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 9.08s with 59 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0059 ± 0.0007659 (stderr)
+    - Scanning neighbor 2/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 3/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 4/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.50s with 51 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0051 ± 0.0007124 (stderr)
+    - Scanning neighbor 5/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 6/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 7/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 8.59s with 59 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0059 ± 0.0007659 (stderr)
+    - Scanning neighbor 8/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.50s with 65 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0065 ± 0.0008036 (stderr)
+    - Scanning neighbor 9/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.58s with 71 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0071 ± 0.0008397 (stderr)
+    - Scanning neighbor 10/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 11/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 6.89s with 65 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0065 ± 0.0008036 (stderr)
+    - Scanning neighbor 12/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 13/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.61s with 67 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0067 ± 0.0008158 (stderr)
+    - Scanning neighbor 14/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.43s with 54 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0054 ± 0.0007329 (stderr)
+    - Scanning neighbor 15/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 16/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 17/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 8.08s with 56 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0056 ± 0.0007463 (stderr)
+    - Scanning neighbor 18/49 of parent 1 (59) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.44s with 59 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0059 ± 0.0007659 (stderr)
+      [Parent 1] Reached target (10 valid). Stopping early.
+  <<< [Parent 1] Finished. Found 10 valid.
+  >>> [Parent 2/3 (61)] Starting scan...
+    - Scanning neighbor 1/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 2/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 3/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 8.61s with 68 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0068 ± 0.0008219 (stderr)
+    - Scanning neighbor 4/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 5/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 8.63s with 56 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0056 ± 0.0007463 (stderr)
+    - Scanning neighbor 6/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.55s with 55 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0055 ± 0.0007396 (stderr)
+    - Scanning neighbor 7/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.70s with 74 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0074 ± 0.0008571 (stderr)
+    - Scanning neighbor 8/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 9/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 10/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 11/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 12/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 13/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 14/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.37s with 70 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.007 ± 0.0008338 (stderr)
+    - Scanning neighbor 15/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 16/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 6.55s with 75 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0075 ± 0.0008628 (stderr)
+    - Scanning neighbor 17/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 18/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 19/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.47s with 61 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0061 ± 0.0007787 (stderr)
+    - Scanning neighbor 20/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 21/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 22/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 23/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 6.75s with 63 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0063 ± 0.0007913 (stderr)
+    - Scanning neighbor 24/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 25/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 26/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 27/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 9.31s with 60 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.006 ± 0.0007723 (stderr)
+    - Scanning neighbor 28/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 29/49 of parent 2 (61) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.65s with 67 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0067 ± 0.0008158 (stderr)
+      [Parent 2] Reached target (10 valid). Stopping early.
+  <<< [Parent 2] Finished. Found 10 valid.
+  >>> [Parent 3/3 (68)] Starting scan...
+    - Scanning neighbor 1/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 2/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.49s with 43 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0043 ± 0.0006544 (stderr)
+    - Scanning neighbor 3/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 3]
+H^T: [15, 0, inf]
+[[625, 25, 3]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 3, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 3}
+Distance 3 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 4/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 6.35s with 76 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0076 ± 0.0008685 (stderr)
+    - Scanning neighbor 5/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.54s with 53 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0053 ± 0.0007261 (stderr)
+    - Scanning neighbor 6/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 7/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 8/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.91s with 75 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0075 ± 0.0008628 (stderr)
+    - Scanning neighbor 9/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 10/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 11/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.07s with 65 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0065 ± 0.0008036 (stderr)
+    - Scanning neighbor 12/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.27s with 48 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0048 ± 0.0006912 (stderr)
+    - Scanning neighbor 13/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 14/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 15/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 16/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.35s with 59 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0059 ± 0.0007659 (stderr)
+    - Scanning neighbor 17/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 18/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 19/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 20/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 21/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 22/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 23/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.41s with 53 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0053 ± 0.0007261 (stderr)
+    - Scanning neighbor 24/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 25/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 26/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 27/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 28/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 29/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 7.05s with 45 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0045 ± 0.0006693 (stderr)
+    - Scanning neighbor 30/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 8.0. Skipping performance evaluation.
+    - Scanning neighbor 31/49 of parent 3 (68) in Iteration 3...
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+BP max iterations: 62, OSD order: 2, MS scaling factor: 0.625
+Decoder Best neighbor search finished in 0.0m 6.75s with 63 failures out of 10000 runs.
+Logical error rate for Best neighbor search: 0.0063 ± 0.0007913 (stderr)
+      [Parent 3] Reached target (10 valid). Stopping early.
+  <<< [Parent 3] Finished. Found 10 valid.
+  Selection: Keeping 3 best. Costs: [0.00410, 0.00430, 0.00450]
+  Sources: ['(Parent)', '(Child)', '(Child)']
+  Distances: [8, 8, 8]
+  Survivors: [59, 127, 154]
+Updated distance threshold to 8
+runtime so far: 0.0 hours 5.0 minutes 19.214173078536987 seconds
+Best code found: min cost = 0.004100
+Total runtime: 0.0 hours 5.0 minutes 19.21417999267578 seconds
+Done. Saved to optimization/results/beam_search_d_first_L3.hdf5

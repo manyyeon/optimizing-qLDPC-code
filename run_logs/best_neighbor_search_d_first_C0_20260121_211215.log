@@ -1,0 +1,2564 @@
+C=0, N=50, L=10, p=0.03
+/Users/manyyeon/data/git/optimizing-qLDPC-code/venv/lib/python3.13/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+Exploring code family [625,25] with 50 neighbors and 10 iterations at p=0.03... with distance threshold 12
+Initial state: Dist=6, LER=0.000000
+--------------------------------------------------
+Iteration 1/10: current dist = 6, current LER = 0.000000
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Iteration 1: valid_found=0, scanned=49
+No valid neighbors (dist >= 12) found; pick the one with the best distance found
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Fallback selected: Dist=8, LER=0.000000
+Updated distance threshold to 12.
+--------------------------------------------------
+Iteration 2/10: current dist = 8, current LER = 0.000000
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+Iteration 2: valid_found=0, scanned=49
+No valid neighbors (dist >= 12) found; pick the one with the best distance found
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Fallback selected: Dist=8, LER=0.000000
+Updated distance threshold to 12.
+--------------------------------------------------
+Iteration 3/10: current dist = 8, current LER = 0.000000
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 3]
+H^T: [15, 0, inf]
+[[625, 25, 3]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 3, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 3}
+Distance 3 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+Iteration 3: valid_found=0, scanned=49
+No valid neighbors (dist >= 12) found; pick the one with the best distance found
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Fallback selected: Dist=8, LER=0.000000
+Updated distance threshold to 12.
+--------------------------------------------------
+Iteration 4/10: current dist = 8, current LER = 0.000000
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Iteration 4: valid_found=0, scanned=49
+No valid neighbors (dist >= 12) found; pick the one with the best distance found
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Fallback selected: Dist=8, LER=0.000000
+Updated distance threshold to 12.
+--------------------------------------------------
+Iteration 5/10: current dist = 8, current LER = 0.000000
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Iteration 5: valid_found=0, scanned=49
+No valid neighbors (dist >= 12) found; pick the one with the best distance found
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Fallback selected: Dist=8, LER=0.000000
+Updated distance threshold to 12.
+--------------------------------------------------
+Iteration 6/10: current dist = 8, current LER = 0.000000
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+Iteration 6: valid_found=0, scanned=49
+No valid neighbors (dist >= 12) found; pick the one with the best distance found
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Fallback selected: Dist=8, LER=0.000000
+Updated distance threshold to 12.
+--------------------------------------------------
+Iteration 7/10: current dist = 8, current LER = 0.000000
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+Iteration 7: valid_found=0, scanned=49
+No valid neighbors (dist >= 12) found; pick the one with the best distance found
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Fallback selected: Dist=8, LER=0.000000
+Updated distance threshold to 12.
+--------------------------------------------------
+Iteration 8/10: current dist = 8, current LER = 0.000000
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Iteration 8: valid_found=0, scanned=49
+No valid neighbors (dist >= 12) found; pick the one with the best distance found
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Fallback selected: Dist=8, LER=0.000000
+Updated distance threshold to 12.
+--------------------------------------------------
+Iteration 9/10: current dist = 8, current LER = 0.000000
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+Iteration 9: valid_found=0, scanned=49
+No valid neighbors (dist >= 12) found; pick the one with the best distance found
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Fallback selected: Dist=8, LER=0.000000
+Updated distance threshold to 12.
+--------------------------------------------------
+Iteration 10/10: current dist = 8, current LER = 0.000000
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 2]
+H^T: [15, 0, inf]
+[[625, 25, 2]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 2, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 2}
+Distance 2 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 3]
+H^T: [15, 0, inf]
+[[625, 25, 3]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 3, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 3}
+Distance 3 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 7]
+H^T: [15, 0, inf]
+[[625, 25, 7]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 7, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 7}
+Distance 7 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 6]
+H^T: [15, 0, inf]
+[[625, 25, 6]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 6, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 6}
+Distance 6 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 5]
+H^T: [15, 0, inf]
+[[625, 25, 5]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 5, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 5}
+Distance 5 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 4]
+H^T: [15, 0, inf]
+[[625, 25, 4]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 4, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 4}
+Distance 4 is below threshold 12. Skipping performance evaluation.
+H: [20, 5, 8]
+H^T: [15, 0, inf]
+[[625, 25, 8]]
+{'n_classical': 20, 'k_classical': 5, 'd_classical': 8, 'n_T_classical': 15, 'k_T_classical': 0, 'd_T_classical': inf, 'rank_H': 15, 'n_quantum': 625, 'k_quantum': 25, 'd_quantum': 8}
+Distance 8 is below threshold 12. Skipping performance evaluation.
+Iteration 10: valid_found=0, scanned=49
+Last iteration.
+Streaming results saved to optimization/results/best_neighbor_search_5.hdf5 for code family [625,25].
