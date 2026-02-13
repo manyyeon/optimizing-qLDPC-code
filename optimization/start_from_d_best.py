@@ -18,7 +18,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/beam_search_d_first_L3.hdf5"
+output_file = "optimization/results/beam_search_d_first.hdf5"
 EARLY_VALID_TARGET = 10
 run_label = "Best neighbor search"
 BEAM_WIDTH = 2  # Number of best states to keep at each step

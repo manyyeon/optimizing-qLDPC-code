@@ -1,0 +1,298 @@
+--- BATCH OPTIMIZATION ---
+Code Family: [2025,81], p=0.03
+Search: 10 steps x 50 neighbors = 500 total scans
+Budgets: Screening=10000, Precision=100000
+
+>>> PHASE 1: Geometric Search (Distance Only)
+/Users/manyyeon/data/git/optimizing-qLDPC-code/venv/lib/python3.13/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Step 1/10 (Current Max Dist: 10)
+
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]
+Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 34.58it/s]
+Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 34.60it/s]
+Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 31.04it/s]
+Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:01, 32.49it/s]
+Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 33.37it/s]
+Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 33.71it/s]
+Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 34.17it/s]
+Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 34.51it/s]
+Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 34.70it/s]
+Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 34.88it/s]
+Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 34.94it/s]
+Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.10it/s]
+                                                                   
+Step 2/10 (Current Max Dist: 10)
+
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]
+Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.25it/s]
+Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.31it/s]
+Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.39it/s]
+Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.30it/s]
+Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.14it/s]
+Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.19it/s]
+Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.26it/s]
+Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.28it/s]
+Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.34it/s]
+Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.25it/s]
+Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.29it/s]
+Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.35it/s]
+                                                                   
+Step 3/10 (Current Max Dist: 10)
+
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]
+Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.35it/s]
+Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.30it/s]
+Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.36it/s]
+Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.37it/s]
+Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.37it/s]
+Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.34it/s]
+Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.29it/s]
+Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.33it/s]
+Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.26it/s]
+Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.21it/s]
+Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.23it/s]
+Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.30it/s]
+                                                                   
+Step 4/10 (Current Max Dist: 10)
+
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]
+Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.43it/s]
+Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.42it/s]
+Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.37it/s]
+Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.38it/s]
+Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.41it/s]
+Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.43it/s]
+Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.38it/s]
+Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.36it/s]
+Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.32it/s]
+Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.34it/s]
+Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.35it/s]
+Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.37it/s]
+                                                                   
+Step 5/10 (Current Max Dist: 10)
+
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]
+Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.41it/s]
+Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.40it/s]
+Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 32.13it/s]
+Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:01, 33.21it/s]
+Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 33.94it/s]
+Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 34.44it/s]
+Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 34.73it/s]
+Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 34.77it/s]
+Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 34.91it/s]
+Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.07it/s]
+Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.16it/s]
+Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.25it/s]
+                                                                   
+Step 6/10 (Current Max Dist: 11)
+
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]
+Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.30it/s]
+Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.40it/s]
+Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.37it/s]
+Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.24it/s]
+Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.18it/s]
+Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.28it/s]
+Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.34it/s]
+Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.30it/s]
+Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.36it/s]
+Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.33it/s]
+Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.36it/s]
+Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.37it/s]
+                                                                   
+Step 7/10 (Current Max Dist: 11)
+
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]
+Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.41it/s]
+Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.30it/s]
+Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.38it/s]
+Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.38it/s]
+Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.28it/s]
+Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.29it/s]
+Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.32it/s]
+Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.24it/s]
+Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.29it/s]
+Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.29it/s]
+Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.27it/s]
+Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.32it/s]
+                                                                   
+Step 8/10 (Current Max Dist: 12)
+
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]
+Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.19it/s]
+Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.29it/s]
+Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.33it/s]
+Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.38it/s]
+Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.42it/s]
+Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.34it/s]
+Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.33it/s]
+Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.33it/s]
+Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.23it/s]
+Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.25it/s]
+Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.31it/s]
+Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.24it/s]
+                                                                   
+Step 9/10 (Current Max Dist: 12)
+
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]
+Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.39it/s]
+Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 30.79it/s]
+Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 32.67it/s]
+Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:01, 33.64it/s]
+Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 34.22it/s]
+Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 34.62it/s]
+Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 34.91it/s]
+Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.08it/s]
+Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.12it/s]
+Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.19it/s]
+Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.25it/s]
+Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.30it/s]
+                                                                   
+Step 10/10 (Current Max Dist: 12)
+
+Scanning Neighbors:   0%|          | 0/50 [00:00<?, ?it/s]
+Scanning Neighbors:   8%|▊         | 4/50 [00:00<00:01, 35.32it/s]
+Scanning Neighbors:  16%|█▌        | 8/50 [00:00<00:01, 35.34it/s]
+Scanning Neighbors:  24%|██▍       | 12/50 [00:00<00:01, 35.31it/s]
+Scanning Neighbors:  32%|███▏      | 16/50 [00:00<00:00, 35.24it/s]
+Scanning Neighbors:  40%|████      | 20/50 [00:00<00:00, 35.27it/s]
+Scanning Neighbors:  48%|████▊     | 24/50 [00:00<00:00, 35.32it/s]
+Scanning Neighbors:  56%|█████▌    | 28/50 [00:00<00:00, 35.37it/s]
+Scanning Neighbors:  64%|██████▍   | 32/50 [00:00<00:00, 35.32it/s]
+Scanning Neighbors:  72%|███████▏  | 36/50 [00:01<00:00, 35.29it/s]
+Scanning Neighbors:  80%|████████  | 40/50 [00:01<00:00, 35.27it/s]
+Scanning Neighbors:  88%|████████▊ | 44/50 [00:01<00:00, 35.30it/s]
+Scanning Neighbors:  96%|█████████▌| 48/50 [00:01<00:00, 35.27it/s]
+                                                                   
+>>> PHASE 2: Screening (Budget 10000)
+Found 501 total codes.
+Screening 16 unique candidates with Dist == 12...
+
+Running MC (Screening):   0%|          | 0/16 [00:00<?, ?it/s]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 37.64s with 13 failures out of 10000 runs.
+Logical error rate for eval: 0.0013 ± 0.0003603 (stderr)
+
+Running MC (Screening):   6%|▋         | 1/16 [00:39<09:46, 39.09s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 37.25s with 9 failures out of 10000 runs.
+Logical error rate for eval: 0.0009 ± 0.0002999 (stderr)
+
+Running MC (Screening):  12%|█▎        | 2/16 [01:17<09:04, 38.87s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 36.53s with 15 failures out of 10000 runs.
+Logical error rate for eval: 0.0015 ± 0.0003870 (stderr)
+
+Running MC (Screening):  19%|█▉        | 3/16 [01:55<08:21, 38.54s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 37.99s with 11 failures out of 10000 runs.
+Logical error rate for eval: 0.0011 ± 0.0003315 (stderr)
+
+Running MC (Screening):  25%|██▌       | 4/16 [02:35<07:47, 38.95s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 37.48s with 13 failures out of 10000 runs.
+Logical error rate for eval: 0.0013 ± 0.0003603 (stderr)
+
+Running MC (Screening):  31%|███▏      | 5/16 [03:14<07:08, 38.99s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 38.58s with 8 failures out of 10000 runs.
+Logical error rate for eval: 0.0008 ± 0.0002827 (stderr)
+
+Running MC (Screening):  38%|███▊      | 6/16 [03:54<06:33, 39.38s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 33.75s with 4 failures out of 10000 runs.
+Logical error rate for eval: 0.0004 ± 0.0002000 (stderr)
+
+Running MC (Screening):  44%|████▍     | 7/16 [04:29<05:42, 38.02s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 34.55s with 11 failures out of 10000 runs.
+Logical error rate for eval: 0.0011 ± 0.0003315 (stderr)
+
+Running MC (Screening):  50%|█████     | 8/16 [05:05<04:59, 37.39s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 31.92s with 10 failures out of 10000 runs.
+Logical error rate for eval: 0.001 ± 0.0003161 (stderr)
+
+Running MC (Screening):  56%|█████▋    | 9/16 [05:39<04:12, 36.13s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 32.94s with 11 failures out of 10000 runs.
+Logical error rate for eval: 0.0011 ± 0.0003315 (stderr)
+
+Running MC (Screening):  62%|██████▎   | 10/16 [06:13<03:33, 35.60s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 33.61s with 11 failures out of 10000 runs.
+Logical error rate for eval: 0.0011 ± 0.0003315 (stderr)
+
+Running MC (Screening):  69%|██████▉   | 11/16 [06:48<02:57, 35.44s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 34.44s with 13 failures out of 10000 runs.
+Logical error rate for eval: 0.0013 ± 0.0003603 (stderr)
+
+Running MC (Screening):  75%|███████▌  | 12/16 [07:24<02:22, 35.59s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 31.71s with 13 failures out of 10000 runs.
+Logical error rate for eval: 0.0013 ± 0.0003603 (stderr)
+
+Running MC (Screening):  81%|████████▏ | 13/16 [07:57<01:44, 34.85s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 36.93s with 11 failures out of 10000 runs.
+Logical error rate for eval: 0.0011 ± 0.0003315 (stderr)
+
+Running MC (Screening):  88%|████████▊ | 14/16 [08:36<01:11, 35.91s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 34.09s with 11 failures out of 10000 runs.
+Logical error rate for eval: 0.0011 ± 0.0003315 (stderr)
+
+Running MC (Screening):  94%|█████████▍| 15/16 [09:11<00:35, 35.79s/it]Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 0.0m 33.91s with 11 failures out of 10000 runs.
+Logical error rate for eval: 0.0011 ± 0.0003315 (stderr)
+
+Running MC (Screening): 100%|██████████| 16/16 [09:47<00:00, 35.66s/it]
+Running MC (Screening): 100%|██████████| 16/16 [09:47<00:00, 36.70s/it]
+Best Screening LER: 4.00e-04
+
+>>> PHASE 3: Precision (Budget 100000)
+Promoting Top 10 to high precision...
+Evaluating Candidate (Row 398)...
+Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 7.0m 12.83s with 107 failures out of 100000 runs.
+Logical error rate for eval: 0.00107 ± 0.0001034 (stderr)
+  -> LER: 1.07e-03
+Evaluating Candidate (Row 394)...
+Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 44.0m 55.79s with 120 failures out of 100000 runs.
+Logical error rate for eval: 0.0012 ± 0.0001095 (stderr)
+  -> LER: 1.20e-03
+Evaluating Candidate (Row 351)...
+Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 6.0m 33.03s with 120 failures out of 100000 runs.
+Logical error rate for eval: 0.0012 ± 0.0001095 (stderr)
+  -> LER: 1.20e-03
+Evaluating Candidate (Row 441)...
+Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 5.0m 30.76s with 96 failures out of 100000 runs.
+Logical error rate for eval: 0.00096 ± 0.0000979 (stderr)
+  -> LER: 9.60e-04
+Evaluating Candidate (Row 368)...
+Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 8.0m 54.21s with 132 failures out of 100000 runs.
+Logical error rate for eval: 0.00132 ± 0.0001148 (stderr)
+  -> LER: 1.32e-03
+Evaluating Candidate (Row 426)...
+Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 5.0m 39.83s with 96 failures out of 100000 runs.
+Logical error rate for eval: 0.00096 ± 0.0000979 (stderr)
+  -> LER: 9.60e-04
+Evaluating Candidate (Row 449)...
+Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 5.0m 40.02s with 118 failures out of 100000 runs.
+Logical error rate for eval: 0.00118 ± 0.0001086 (stderr)
+  -> LER: 1.18e-03
+Evaluating Candidate (Row 462)...
+Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 5.0m 47.61s with 96 failures out of 100000 runs.
+Logical error rate for eval: 0.00096 ± 0.0000979 (stderr)
+  -> LER: 9.60e-04
+Evaluating Candidate (Row 479)...
+Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 5.0m 54.11s with 98 failures out of 100000 runs.
+Logical error rate for eval: 0.00098 ± 0.0000989 (stderr)
+  -> LER: 9.80e-04
+Evaluating Candidate (Row 481)...
+Hx, Hz, Lx, Lz: (972, 2025), (972, 2025), (81, 2025), (81, 2025)
+Decoder eval finished in 5.0m 34.74s with 120 failures out of 100000 runs.
+Logical error rate for eval: 0.0012 ± 0.0001095 (stderr)
+  -> LER: 1.20e-03
+
+>>> RESULT: Best Code Found
+Distance: 12
+LER: 9.60e-04
+Total Time: 1.87 hours 111.97 minutes 6718.44 seconds
+Saved to optimization/results/batch_search_d_first.hdf5

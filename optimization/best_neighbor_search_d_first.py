@@ -159,6 +159,8 @@ if __name__ == '__main__':
 
     initial_state = load_tanner_graph(path_to_initial_codes + textfiles[C])
 
+    start_time = time.time()
+
     with h5py.File(output_file, "a") as f:
         grp = f.require_group(codes[C])
         grp.attrs.update(
@@ -307,4 +309,6 @@ if __name__ == '__main__':
                 "best_state", data=best_edges[np.newaxis, :], dtype=np.uint32)
             grp.attrs['min_cost'] = min_final_ler
 
+    end_time = time.time()
+    print(f"Total Time: {(end_time - start_time)/3600:.2f} hours {(end_time - start_time)/60:.2f} minutes {(end_time - start_time):.2f} seconds")
     print(f"Saved to {output_file}")
