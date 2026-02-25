@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from logical_operators import get_logical_operators_by_pivoting
 from decoder_performance import compute_logical_error_rate
 import ldpc
@@ -14,12 +18,11 @@ import numpy as np
 import argparse
 from tqdm import tqdm
 import h5py
-import sys
-import os
+
 import networkx as nx
 from scipy.sparse import csr_matrix
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 # --- IMPORTS FROM YOUR PROJECT ---
 
