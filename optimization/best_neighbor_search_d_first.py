@@ -313,5 +313,8 @@ if __name__ == '__main__':
             grp.attrs['min_cost'] = min_final_ler
 
     end_time = time.time()
-    print(f"Total Time: {(end_time - start_time)/3600:.2f} hours {(end_time - start_time)/60:.2f} minutes {(end_time - start_time):.2f} seconds")
+    total_time = end_time - start_time
+
+    print(
+        f"Total Time: {total_time//3600:.2f} hours {(total_time//60) % 60:.2f} minutes {total_time % 60:.2f} seconds")
     print(f"Saved to {output_file}")
