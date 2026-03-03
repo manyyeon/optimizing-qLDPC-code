@@ -19,7 +19,7 @@ state_space_params = [(15, 20, 60),
                       (24, 32, 96),
                       (27, 36, 108)]
 
-MC_budget = int(1e4)
+MC_budget = int(5 * 1e4)
 # noise_levels = [9/32, 8/32, 9/32, 12/32]
 # noise_levels = [0.01, 8/32, 9/32, 12/32]
 noise_levels = [0.03, 0.03, 0.03, 0.03]

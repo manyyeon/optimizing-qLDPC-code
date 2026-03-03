@@ -28,7 +28,7 @@ from scipy.sparse import csr_matrix
 
 # --- CONFIGURATION ---
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]  # (N, L)
-output_file = "optimization/results/batch_search_d_first.hdf5"
+output_file = "optimization/results/best_neighbor_search_d_first_2.hdf5"
 
 # MC Budgets
 BUDGET_SCREENING = 10_000   # Phase 2
@@ -268,19 +268,23 @@ if __name__ == '__main__':
 
         # Sort by LER (ascending)
         screened_results.sort(key=lambda x: x['ler'])
-        print(f"Best Screening LER: {screened_results[0]['ler']:.2e}")
+        print(f"Best Screening LER: {screened_results[0]['ler']:.4f} (Dist: {screened_results[0]['dist']})")
 
         # --- PHASE 3: PRECISION (10^5 MC) ---
         print(f"\n>>> PHASE 3: Precision (Budget {BUDGET_PRECISION})")
 
         top_candidates = screened_results[:TOP_K_PRECISION]
         print(f"Promoting Top {len(top_candidates)} to high precision...")
+        print("Candidates:")
+        for i, c in enumerate(top_candidates):
+            print(
+                f"  {i+1}. Row {c['row_idx']} - Dist: {c['dist']}, LER: {c['ler']:.4f}")
 
         final_best_cand = None
         min_final_ler = np.inf
 
         for cand in top_candidates:
-            print(f"Evaluating Candidate (Row {cand['row_idx']})...")
+            print(f"Evaluating Candidate (Row {cand['row_idx']} - LER {cand['ler']:.4f})...")
             params, Hx, Hz = get_code_parameters_and_matrices(cand['state'])
 
             # Note: We run FRESH 10^5, or you could add 90k to the existing 10k.
@@ -290,7 +294,7 @@ if __name__ == '__main__':
             # Overwrite with high-precision result
             update_hdf5_row(grp, cand['row_idx'], ler, std, run_t)
 
-            print(f"  -> LER: {ler:.2e}")
+            print(f"  -> LER: {ler:.4f} ± {std:.4f} (Runtime: {run_t:.2f}s)")
 
             if ler < min_final_ler:
                 min_final_ler = ler
@@ -302,7 +306,7 @@ if __name__ == '__main__':
         if final_best_cand:
             print(f"\n>>> RESULT: Best Code Found")
             print(f"Distance: {final_best_cand['dist']}")
-            print(f"LER: {min_final_ler:.2e}")
+            print(f"LER: {min_final_ler:.2f} ± {std:.4f}")
 
             best_edges = parse_edgelist(
                 final_best_cand['state']).astype(np.uint32)
@@ -314,7 +318,5 @@ if __name__ == '__main__':
 
     end_time = time.time()
     total_time = end_time - start_time
-
-    print(
-        f"Total Time: {total_time//3600:.2f} hours {(total_time//60) % 60:.2f} minutes {total_time % 60:.2f} seconds")
+    print(f"Total Time: {total_time/3600:.2f} hours {total_time/60:.2f} minutes {total_time:.2f} seconds")
     print(f"Saved to {output_file}")

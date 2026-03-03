@@ -18,11 +18,11 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/beam_search_d_first.hdf5"
+output_file = "optimization/results/fast_greedy_start_from_d_best_2_single_parent_excluding_parents.hdf5"
 EARLY_VALID_TARGET = 10
 run_label = "Best neighbor search"
-BEAM_WIDTH = 2  # Number of best states to keep at each step
-INCLUDE_PARENTS = True  # Whether to include parents in the selection pool
+BEAM_WIDTH = 1  # Number of best states to keep at each step
+INCLUDE_PARENTS = False  # Whether to include parents in the selection pool
 
 
 def _current_stream_len(dsets):
@@ -197,7 +197,7 @@ if __name__ == '__main__':
 
     from optimization.analyze_codes.decoder_performance_from_state import evaluate_performance_of_state
 
-    filepath = "optimization/results/batch_search_d_first.hdf5"
+    filepath = "optimization/results/best_neighbor_search_d_first.hdf5"
     code_name = codes[C]
     p = 0.03
 
@@ -398,7 +398,7 @@ if __name__ == '__main__':
                             run_label=run_label, distance_threshold=distance_threshold, canskip=False
                         )
                         append_record(
-                            dsets, best_fallback['state'], full_result, parent_id=best_fallback['parent_idx'])
+                            dsets, best_fallback['state'], full_result, parent_id=best_fallback['parent_idx'] if 'parent_idx' in best_fallback else -1)
                         best_fallback['result'] = full_result
                         best_fallback['cost'] = float(
                             full_result['logical_error_rates'][0])
