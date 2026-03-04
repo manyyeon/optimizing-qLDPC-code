@@ -10,24 +10,22 @@ def repetition_code(distance: int) -> csr_matrix:
     data = np.ones(2 * distance, dtype=np.uint8)
     return csr_matrix((data, (row_ind, col_ind)))
 
-def construct_HGP_code(H: np.ndarray) -> csr_matrix:
+def construct_HGP_code(H) -> Tuple[csr_matrix, csr_matrix]:
     """
-    Constructs the HGP code from a given classical parity-check matrix H.
+    H can be np.ndarray or csr_matrix (classical parity-check).
+    Returns Hx, Hz as csr_matrix.
     """
-    m, n = H.shape
-    # Convert H to sparse matrix
-    H_sparse = csr_matrix(H, dtype=np.uint8)
-    Im = eye(m, dtype=np.uint8)
-    In = eye(n, dtype=np.uint8)
+    Hs = csr_matrix(H, dtype=np.uint8)
+    m, n = Hs.shape
+    Im = eye(m, dtype=np.uint8, format="csr")
+    In = eye(n, dtype=np.uint8, format="csr")
 
-    Hx = csr_matrix(hstack([kron(H, In), kron(Im, H.T)], dtype=np.uint8))
-    Hz = csr_matrix(hstack([kron(In, H), kron(H.T, Im)], dtype=np.uint8))
+    Hx = hstack([kron(Hs, In, format="csr"), kron(Im, Hs.T, format="csr")], format="csr")
+    Hz = hstack([kron(In, Hs, format="csr"), kron(Hs.T, Im, format="csr")], format="csr")
 
-    # print(f"Hx shape: {Hx.shape}")
-    # print(f"Hz shape: {Hz.shape}")  
-    # print(f"Hx:\n{Hx.toarray()}")
-    # print(f"Hz:\n{Hz.toarray()}")
-
+    # keep mod-2 cleanliness if needed
+    Hx.data %= 2; Hx.eliminate_zeros(); Hx.sort_indices()
+    Hz.data %= 2; Hz.eliminate_zeros(); Hz.sort_indices()
     return Hx, Hz
 
 def toric_code_matrices(

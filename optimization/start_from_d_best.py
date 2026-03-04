@@ -18,11 +18,11 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/fast_greedy_start_from_d_best_2_single_parent_excluding_parents.hdf5"
+output_file = "optimization/results/fast_greedy_start_from_d_best_L5_2nd.hdf5"
 EARLY_VALID_TARGET = 10
 run_label = "Best neighbor search"
-BEAM_WIDTH = 1  # Number of best states to keep at each step
-INCLUDE_PARENTS = False  # Whether to include parents in the selection pool
+BEAM_WIDTH = 3  # Number of best states to keep at each step
+INCLUDE_PARENTS = True  # Whether to include parents in the selection pool
 
 
 def _current_stream_len(dsets):

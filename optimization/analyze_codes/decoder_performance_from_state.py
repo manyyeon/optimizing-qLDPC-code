@@ -95,7 +95,7 @@ def compute_hgp_code_distance_lower_bound(H: csr_matrix, HT: csr_matrix) -> int:
         return min(d, dT)
 
 
-def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Best neighbor search", distance_threshold=DISTANCE_THRESHOLD, canskip=True) -> dict:
+def evaluate_performance_of_state(state: nx.MultiGraph | csr_matrix, p_vals: np.ndarray, MC_budget: int, bp_max_iter=None, run_label="Best neighbor search", distance_threshold=DISTANCE_THRESHOLD, canskip=True) -> dict:
     """
     Evaluate the decoding performance (logical error rates) of a given state.
     Parameters:
@@ -108,9 +108,12 @@ def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_b
         stds (list): List of standard deviations of the logical error rates.
         runtimes (list): List of runtimes for each decoding operation.
     """
-    H = tanner_graph_to_parity_check_matrix(state)
-
-    csr_H = csr_matrix(H, dtype=np.uint8)
+    if isinstance(state, csr_matrix):
+        csr_H = state
+    else:
+        H = tanner_graph_to_parity_check_matrix(state)
+        csr_H = csr_matrix(H, dtype=np.uint8)
+    
     base_payload = compute_hgp_code_parameters(H=csr_H)
     print(base_payload)
     d_classical = base_payload['d_classical']
@@ -129,7 +132,7 @@ def evaluate_performance_of_state(state: nx.MultiGraph, p_vals: np.ndarray, MC_b
             "skipped": True
         }
 
-    Hx, Hz = construct_HGP_code(H)
+    Hx, Hz = construct_HGP_code(csr_H)
 
     if bp_max_iter is None:
         bp_max_iter = int(Hx.shape[1]/10)
