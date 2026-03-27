@@ -1,0 +1,88 @@
+
+--- LOGICAL GUIDED SEARCH ---
+Code family: [625,25]
+Noise level p = 0.03
+Search steps = 5
+Trials/step = 20
+Logical type = Z
+Budgets: screening=10000, precision=100000
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+
+>>> PHASE 1: Logical-guided search
+
+Step 1/5 (global max dist so far = 6)
+  Target logical type: Z
+  Target logical weight: 6
+  Current distance: 6
+  Accepted improving move at trial 15: 6 -> 8
+
+Step 2/5 (global max dist so far = 8)
+  Target logical type: Z
+  Target logical weight: 8
+  Current distance: 8
+  Accepted non-decreasing move at trial 2: 8 -> 8
+
+Step 3/5 (global max dist so far = 8)
+  Target logical type: Z
+  Target logical weight: 8
+  Current distance: 8
+  Accepted non-decreasing move at trial 1: 8 -> 8
+
+Step 4/5 (global max dist so far = 8)
+  Target logical type: Z
+  Target logical weight: 8
+  Current distance: 8
+  Accepted non-decreasing move at trial 2: 8 -> 8
+
+Step 5/5 (global max dist so far = 8)
+  Target logical type: Z
+  Target logical weight: 8
+  Current distance: 8
+  Accepted non-decreasing move at trial 1: 8 -> 8
+
+>>> PHASE 2: Screening (10000)
+Found 6 total saved states.
+Screening 5 unique candidates with dist == 8
+Running MC (screening):   0%|          | 0/5 [00:00<?, ?it/s]Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+Decoder screen_row_8 finished in 0.0m 6.56s with 71 failures out of 10000 runs.
+Logical error rate for screen_row_8: 0.0071 ± 0.0008397 (stderr)
+Running MC (screening):  20%|██        | 1/5 [00:07<00:28,  7.22s/it]Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+Decoder screen_row_9 finished in 0.0m 6.32s with 86 failures out of 10000 runs.
+Logical error rate for screen_row_9: 0.0086 ± 0.0009234 (stderr)
+Running MC (screening):  40%|████      | 2/5 [00:14<00:21,  7.08s/it]Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+Decoder screen_row_10 finished in 0.0m 6.54s with 74 failures out of 10000 runs.
+Logical error rate for screen_row_10: 0.0074 ± 0.0008571 (stderr)
+Running MC (screening):  60%|██████    | 3/5 [00:21<00:14,  7.14s/it]Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+Decoder screen_row_11 finished in 0.0m 6.89s with 60 failures out of 10000 runs.
+Logical error rate for screen_row_11: 0.006 ± 0.0007723 (stderr)
+Running MC (screening):  80%|████████  | 4/5 [00:28<00:07,  7.31s/it]Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+Decoder screen_row_12 finished in 0.0m 6.85s with 78 failures out of 10000 runs.
+Logical error rate for screen_row_12: 0.0078 ± 0.0008798 (stderr)
+Running MC (screening): 100%|██████████| 5/5 [00:36<00:00,  7.39s/it]Running MC (screening): 100%|██████████| 5/5 [00:36<00:00,  7.30s/it]
+Best screening LER: 0.006000 (dist=8)
+
+>>> PHASE 3: Precision (100000)
+Promoting top 3 candidates
+Evaluating row 11 | dist=8 | screening LER=0.006000
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+Decoder precision_row_11 finished in 1.0m 6.95s with 740 failures out of 100000 runs.
+Logical error rate for precision_row_11: 0.0074 ± 0.0002710 (stderr)
+  -> LER: 0.007400 ± 0.000271 | runtime=66.95s
+Evaluating row 8 | dist=8 | screening LER=0.007100
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+Decoder precision_row_8 finished in 1.0m 6.03s with 746 failures out of 100000 runs.
+Logical error rate for precision_row_8: 0.00746 ± 0.0002721 (stderr)
+  -> LER: 0.007460 ± 0.000272 | runtime=66.03s
+Evaluating row 10 | dist=8 | screening LER=0.007400
+Hx, Hz, Lx, Lz: (300, 625), (300, 625), (25, 625), (25, 625)
+Decoder precision_row_10 finished in 1.0m 6.46s with 711 failures out of 100000 runs.
+Logical error rate for precision_row_10: 0.00711 ± 0.0002657 (stderr)
+  -> LER: 0.007110 ± 0.000266 | runtime=66.46s
+
+>>> RESULT: Best code found
+Distance: 8
+LER: 0.007110 ± 0.000266
+
+Total time: 0.07 hours
+Saved to optimization/results/logical_guided_search.hdf5
