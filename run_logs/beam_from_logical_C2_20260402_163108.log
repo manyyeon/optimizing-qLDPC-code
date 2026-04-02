@@ -3068,3 +3068,20 @@ Logical error rate for beam_d10_parent188_trial15: 0.0024 ± 0.0004893 (stderr)
 Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
 Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
 Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder precision_row_257 finished in 4.0m 47.61s with 164 failures out of 100000 runs.
+Logical error rate for precision_row_257: 0.00164 ± 0.0001280 (stderr)
+Precision MC:  33%|███▎      | 1/3 [04:52<09:44, 292.35s/it]Decoder precision_row_45 finished in 4.0m 50.52s with 166 failures out of 100000 runs.
+Logical error rate for precision_row_45: 0.00166 ± 0.0001287 (stderr)
+Precision MC:  67%|██████▋   | 2/3 [04:55<02:02, 122.11s/it]Decoder precision_row_188 finished in 4.0m 56.45s with 155 failures out of 100000 runs.
+Logical error rate for precision_row_188: 0.00155 ± 0.0001244 (stderr)
+Precision MC: 100%|██████████| 3/3 [05:01<00:00, 69.04s/it] Precision MC: 100%|██████████| 3/3 [05:01<00:00, 100.39s/it]
+row=45 dist=10 precise LER=0.001660 ± 0.000129
+row=257 dist=10 precise LER=0.001640 ± 0.000128
+row=188 dist=10 precise LER=0.001550 ± 0.000124
+
+Best final result:
+  dist = 10
+  LER  = 0.001550 ± 0.000124
+
+Total time: (0h 23m 29.03s)
+Saved to optimization/results/start_from_logical_guided.hdf5
