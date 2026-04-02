@@ -26,6 +26,11 @@ def append_to_hdf5(
     accepted=False,
     step=-1,
     trial=-1,
+    parent_idx=-1,
+    distance_before=-1.0,
+    distance_after=-1.0,
+    edges_to_add=None,
+    edges_to_remove=None,
 ):
     ds_states = _ensure_ds(grp, "states", (edge_list.shape[0],), np.uint32)
     ds_ler = _ensure_ds(grp, "logical_error_rates", (), np.float64)
@@ -39,6 +44,13 @@ def append_to_hdf5(
     ds_acc = _ensure_ds(grp, "accepted", (), np.uint8)
     ds_step = _ensure_ds(grp, "search_step", (), np.int32)
     ds_trial = _ensure_ds(grp, "search_trial", (), np.int32)
+
+    ds_parent = _ensure_ds(grp, "parent_idx", (), np.int32)
+    ds_dbefore = _ensure_ds(grp, "distance_before", (), np.float64)
+    ds_dafter = _ensure_ds(grp, "distance_after", (), np.float64)
+
+    ds_add = _ensure_ds(grp, "edges_to_add", (4,), np.int32)
+    ds_remove = _ensure_ds(grp, "edges_to_remove", (4,), np.int32)
 
     idx = ds_ler.shape[0]
 
@@ -74,6 +86,29 @@ def append_to_hdf5(
 
     ds_trial.resize(idx + 1, axis=0)
     ds_trial[idx] = trial
+
+    ds_parent.resize(idx + 1, axis=0)
+    ds_parent[idx] = parent_idx
+
+    ds_dbefore.resize(idx + 1, axis=0)
+    ds_dbefore[idx] = distance_before
+
+    ds_dafter.resize(idx + 1, axis=0)
+    ds_dafter[idx] = distance_after
+
+    add_flat = np.full(4, -1, dtype=np.int32)
+    remove_flat = np.full(4, -1, dtype=np.int32)
+
+    if edges_to_add is not None:
+        add_flat[:] = np.asarray(edges_to_add, dtype=np.int32).reshape(-1)
+    if edges_to_remove is not None:
+        remove_flat[:] = np.asarray(edges_to_remove, dtype=np.int32).reshape(-1)
+
+    ds_add.resize(idx + 1, axis=0)
+    ds_add[idx] = add_flat
+
+    ds_remove.resize(idx + 1, axis=0)
+    ds_remove[idx] = remove_flat
 
     return idx
 

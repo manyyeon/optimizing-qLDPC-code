@@ -98,6 +98,104 @@ def propose_targeted_swap_from_logical(
 
     return None
 
+def generate_logical_guided_candidates(
+    state: nx.MultiGraph,
+    get_code_parameters_and_matrices,
+    num_candidates: int = 20,
+    proposal_max_tries: int = 300,
+    logical_max_comb_order: int = 5,
+    require_detectable: bool = True,
+    require_distance_non_decrease: bool = False,
+    verbose: bool = False,
+):
+    """
+    Generate multiple logical-guided child states from one parent state.
+    This is for beam search expansion.
+
+    Returns
+    -------
+    candidates : list[dict]
+        Each dict contains:
+        {
+            "state",
+            "params",
+            "logical_weight",
+            "support",
+            "edges_to_add",
+            "edges_to_remove",
+            "distance_before",
+            "distance_after",
+        }
+    """
+    params, _, _ = get_code_parameters_and_matrices(state)
+    current_distance = min(params["d_classical"], params["d_T_classical"])
+
+    H = tanner_graph_to_parity_check_matrix(state)
+    csr_H = csr_matrix(H, dtype=np.uint8)
+
+    logical_vec, logical_weight = find_low_weight_classical_codeword(
+        csr_H,
+        max_comb_order=logical_max_comb_order,
+    )
+
+    if logical_vec is None:
+        if verbose:
+            print("  No low-weight classical codeword found.")
+        return []
+
+    support = np.where(logical_vec == 1)[0]
+
+    if verbose:
+        print(f"  Target logical weight: {logical_weight}")
+        print(f"  Current distance: {current_distance}")
+
+    tried_proposals = set()
+    candidates = []
+
+    while len(candidates) < num_candidates:
+        proposal = propose_targeted_swap_from_logical(
+            state,
+            support,
+            max_tries=proposal_max_tries,
+            tried_proposals=tried_proposals,
+        )
+
+        if proposal is None:
+            break
+
+        edges_to_add, edges_to_remove = proposal
+        proposal_key = canonicalize_proposal(edges_to_add, edges_to_remove)
+        tried_proposals.add(proposal_key)
+
+        new_state = add_and_remove_edges(state, edges_to_add, edges_to_remove)
+        new_params, _, _ = get_code_parameters_and_matrices(new_state)
+
+        H_new = tanner_graph_to_parity_check_matrix(new_state)
+        if require_detectable and not is_classical_support_detectable(H_new, support):
+            if verbose:
+                print("  Rejected: support still undetectable.")
+            continue
+
+        new_distance = min(new_params["d_classical"], new_params["d_T_classical"])
+
+        if require_distance_non_decrease and new_distance < current_distance:
+            if verbose:
+                print(f"  Rejected: distance {current_distance}->{new_distance}")
+            continue
+
+        candidates.append({
+            "state": new_state,
+            "params": new_params,
+            "logical_weight": logical_weight,
+            "support": support.copy(),
+            "edges_to_add": edges_to_add,
+            "edges_to_remove": edges_to_remove,
+            "distance_before": current_distance,
+            "distance_after": new_distance,
+        })
+
+    return candidates
+
 
 import numpy as np
 from itertools import combinations
@@ -240,7 +338,8 @@ def improve_state_by_breaking_low_weight_logical(
             if verbose:
                 print(f"  Rejected at trial {trial + 1}/{max_trials}: distance {current_distance}->{new_distance}.")
             continue
-
+        
+        # Record this valid attempt, even if it doesn't improve distance, to allow accepting the first non-decreasing move if no improving move is found.
         attempt = {
             "state": new_state,
             "params": new_params,

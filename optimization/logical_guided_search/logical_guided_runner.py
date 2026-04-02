@@ -10,6 +10,8 @@ from tqdm import tqdm
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from concurrent.futures import ProcessPoolExecutor, as_completed
+
 from optimization.experiments_settings import (
     load_tanner_graph,
     parse_edgelist,
@@ -42,6 +44,26 @@ TOP_K_PRECISION = 10
 def state_key(state):
     return tuple(parse_edgelist(state).flatten().tolist())
 
+from optimization.logical_guided_search.logical_guided_eval import (
+    get_code_parameters_and_matrices,
+    evaluate_mc,
+)
+
+def evaluate_candidate_task(task):
+    state = task["state"]
+    p = task["p"]
+    budget = task["budget"]
+    run_label = task["run_label"]
+
+    params, Hx, Hz = get_code_parameters_and_matrices(state)
+    ler, std, runtime = evaluate_mc(Hx, Hz, p, budget, run_label=run_label)
+
+    return {
+        "row_idx": task["row_idx"],
+        "ler": ler,
+        "std": std,
+        "runtime": runtime,
+    }
 
 def main():
     parser = argparse.ArgumentParser()
@@ -52,6 +74,7 @@ def main():
     parser.add_argument("--screen_budget", default=BUDGET_SCREENING, type=int)
     parser.add_argument("--prec_budget", default=BUDGET_PRECISION, type=int)
     parser.add_argument("--topk", default=TOP_K_PRECISION, type=int)
+    parser.add_argument("--workers", default=1, type=int, help="Number of parallel worker processes")
     args = parser.parse_args()
 
     C = args.C
@@ -63,6 +86,7 @@ def main():
     print(f"Search steps = {args.S}")
     print(f"Trials/step = {args.T}")
     print(f"Budgets: screening={args.screen_budget}, precision={args.prec_budget}")
+    print(f"Workers = {args.workers}")
 
     initial_state = load_tanner_graph(path_to_initial_codes + textfiles[C])
     start_time = time.time()
@@ -97,6 +121,11 @@ def main():
             accepted=True,
             step=0,
             trial=0,
+            parent_idx=-1,
+            distance_before=min(params_init["d_classical"], params_init["d_T_classical"]),
+            distance_after=min(params_init["d_classical"], params_init["d_T_classical"]),
+            edges_to_add=None,
+            edges_to_remove=None,
         )
 
         all_candidates = [{
@@ -135,6 +164,11 @@ def main():
                 accepted=result["accepted"],
                 step=step,
                 trial=result["trial"],
+                parent_idx=all_candidates[-1]["row_idx"] if step > 0 else idx_init,
+                distance_before=result["distance_before"],
+                distance_after=result["distance_after"],
+                edges_to_add=result["edges_to_add"],
+                edges_to_remove=result["edges_to_remove"],
             )
 
             all_candidates.append({
@@ -167,21 +201,67 @@ def main():
         print(f"Found {len(all_candidates)} total saved states.")
         print(f"Screening {len(unique_candidates)} unique candidates with dist == {target_dist}")
 
+        print(f"\n>>> PHASE 2: Screening ({args.screen_budget})")
+        target_dist = global_max_dist
+        screening_candidates = [c for c in all_candidates if c["dist"] == target_dist]
+
+        unique_candidates_dict = {}
+        for c in screening_candidates:
+            key = state_key(c["state"])
+            if key not in unique_candidates_dict:
+                unique_candidates_dict[key] = c
+        unique_candidates = list(unique_candidates_dict.values())
+
+        print(f"Found {len(all_candidates)} total saved states.")
+        print(f"Screening {len(unique_candidates)} unique candidates with dist == {target_dist}")
+
         screened_results = []
-        for cand in tqdm(unique_candidates, desc="Running MC (screening)"):
-            _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
-            ler, std, run_t = evaluate_mc(
-                Hx, Hz, p, args.screen_budget,
-                run_label=f"screen_row_{cand['row_idx']}",
-            )
 
-            update_hdf5_row(run_grp, cand["row_idx"], ler, std, run_t)
+        if args.workers == 1:
+            for cand in tqdm(unique_candidates, desc="Running MC (screening)"):
+                _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
+                ler, std, run_t = evaluate_mc(
+                    Hx, Hz, p, args.screen_budget,
+                    run_label=f"screen_row_{cand['row_idx']}",
+                )
 
-            cand["ler"] = ler
-            cand["std"] = std
-            cand["runtime"] = run_t
-            screened_results.append(cand)
-            f.flush()
+                update_hdf5_row(run_grp, cand["row_idx"], ler, std, run_t)
+
+                cand["ler"] = ler
+                cand["std"] = std
+                cand["runtime"] = run_t
+                screened_results.append(cand)
+                f.flush()
+        else:
+            tasks = [
+                {
+                    "state": cand["state"],
+                    "row_idx": cand["row_idx"],
+                    "p": p,
+                    "budget": args.screen_budget,
+                    "run_label": f"screen_row_{cand['row_idx']}",
+                }
+                for cand in unique_candidates
+            ]
+
+            results_by_row = {}
+
+            with ProcessPoolExecutor(max_workers=args.workers) as ex:
+                futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
+
+                for fut in tqdm(as_completed(futures), total=len(futures), desc="Running MC (screening)"):
+                    res = fut.result()
+                    results_by_row[res["row_idx"]] = res
+
+            for cand in unique_candidates:
+                res = results_by_row[cand["row_idx"]]
+                update_hdf5_row(run_grp, cand["row_idx"], res["ler"], res["std"], res["runtime"])
+
+                cand["ler"] = res["ler"]
+                cand["std"] = res["std"]
+                cand["runtime"] = res["runtime"]
+                screened_results.append(cand)
+                f.flush()
 
         if not screened_results:
             print("No candidates to screen.")
@@ -198,24 +278,78 @@ def main():
         min_final_ler = np.inf
         final_best_std = np.inf
 
-        for cand in top_candidates:
-            print(f"Evaluating row {cand['row_idx']} | dist={cand['dist']} | screening LER={cand['ler']:.6f}")
-            _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
+        print(f"\n>>> PHASE 3: Precision ({args.prec_budget})")
+        top_candidates = screened_results[:args.topk]
+        print(f"Promoting top {len(top_candidates)} candidates")
 
-            ler, std, run_t = evaluate_mc(
-                Hx, Hz, p, args.prec_budget,
-                run_label=f"precision_row_{cand['row_idx']}",
-            )
+        final_best_cand = None
+        min_final_ler = np.inf
+        final_best_std = np.inf
 
-            update_hdf5_row(run_grp, cand["row_idx"], ler, std, run_t)
-            print(f"  -> LER: {ler:.6f} ± {std:.6f} | runtime={run_t:.2f}s")
+        if args.workers == 1:
+            for cand in top_candidates:
+                print(f"Evaluating row {cand['row_idx']} | dist={cand['dist']} | screening LER={cand['ler']:.6f}")
+                _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
 
-            if ler < min_final_ler:
-                min_final_ler = ler
-                final_best_std = std
-                final_best_cand = cand
+                ler, std, run_t = evaluate_mc(
+                    Hx, Hz, p, args.prec_budget,
+                    run_label=f"precision_row_{cand['row_idx']}",
+                )
 
-            f.flush()
+                update_hdf5_row(run_grp, cand["row_idx"], ler, std, run_t)
+                print(f"  -> LER: {ler:.6f} ± {std:.6f} | runtime={run_t//3600}h {run_t%3600//60}m {run_t%60:.2f}s")
+
+                cand["prec_ler"] = ler
+                cand["prec_std"] = std
+                cand["prec_runtime"] = run_t
+
+                if ler < min_final_ler:
+                    min_final_ler = ler
+                    final_best_std = std
+                    final_best_cand = cand
+
+                f.flush()
+        else:
+            tasks = [
+                {
+                    "state": cand["state"],
+                    "row_idx": cand["row_idx"],
+                    "p": p,
+                    "budget": args.prec_budget,
+                    "run_label": f"precision_row_{cand['row_idx']}",
+                }
+                for cand in top_candidates
+            ]
+
+            results_by_row = {}
+
+            with ProcessPoolExecutor(max_workers=args.workers) as ex:
+                futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
+
+                for fut in tqdm(as_completed(futures), total=len(futures), desc="Running MC (precision)"):
+                    res = fut.result()
+                    results_by_row[res["row_idx"]] = res
+
+            for cand in top_candidates:
+                res = results_by_row[cand["row_idx"]]
+                update_hdf5_row(run_grp, cand["row_idx"], res["ler"], res["std"], res["runtime"])
+
+                print(
+                    f"Evaluating row {cand['row_idx']} | dist={cand['dist']} | "
+                    f"screening LER={cand['ler']:.6f}"
+                )
+                print(f"  -> LER: {res['ler']:.6f} ± {res['std']:.6f} | runtime={res['runtime']:.2f}s")
+
+                cand["prec_ler"] = res["ler"]
+                cand["prec_std"] = res["std"]
+                cand["prec_runtime"] = res["runtime"]
+
+                if res["ler"] < min_final_ler:
+                    min_final_ler = res["ler"]
+                    final_best_std = res["std"]
+                    final_best_cand = cand
+
+                f.flush()
 
         if final_best_cand is not None:
             print("\n>>> RESULT: Best code found")
