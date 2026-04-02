@@ -33,7 +33,6 @@ OUTPUT_FILE = "optimization/results/start_from_logical_guided.hdf5"
 BEAM_WIDTH = 3
 DEPTH = 10
 EXPAND_PER_PARENT = 12
-TOPK_PER_PARENT_FOR_MC = 5
 SCREEN_BUDGET = 10_000
 PREC_BUDGET = 100_000
 
@@ -75,7 +74,6 @@ def main():
     parser.add_argument("--beam_width", default=BEAM_WIDTH, type=int)
     parser.add_argument("--depth", default=DEPTH, type=int)
     parser.add_argument("--expand_per_parent", default=EXPAND_PER_PARENT, type=int)
-    parser.add_argument("--topk_per_parent", default=TOPK_PER_PARENT_FOR_MC, type=int)
     parser.add_argument("--screen_budget", default=SCREEN_BUDGET, type=int)
     parser.add_argument("--prec_budget", default=PREC_BUDGET, type=int)
     parser.add_argument("--workers", default=1, type=int)
@@ -91,7 +89,6 @@ def main():
     print(f"Beam width = {args.beam_width}")
     print(f"Depth = {args.depth}")
     print(f"Expand per parent = {args.expand_per_parent}")
-    print(f"Top-k per parent for MC = {args.topk_per_parent}")
     print(f"Budgets: screen={args.screen_budget}, precision={args.prec_budget}")
     print(f"Workers = {args.workers}")
     print(f"Source run = {args.input_run}")
@@ -108,7 +105,7 @@ def main():
         grp = f.require_group(code_name)
         run_name = (
             f"beam_from_logical_bw{args.beam_width}_d{args.depth}_"
-            f"exp{args.expand_per_parent}_topk{args.topk_per_parent}_p{p}_"
+            f"exp{args.expand_per_parent}_p{p}_"
             f"{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         )
         run_grp = grp.require_group(run_name)
@@ -117,7 +114,6 @@ def main():
             "beam_width": args.beam_width,
             "depth": args.depth,
             "expand_per_parent": args.expand_per_parent,
-            "topk_per_parent": args.topk_per_parent,
             "p": p,
             "screen_budget": args.screen_budget,
             "prec_budget": args.prec_budget,
@@ -180,15 +176,20 @@ def main():
                     proposal_max_tries=200,
                     logical_max_comb_order=5,
                     require_detectable=True,
-                    require_distance_non_decrease=False,
+                    require_distance_non_decrease=True,
                     verbose=False,
                 )
+
+                print(f"    Generated {len(raw_candidates)} candidates before filtering duplicates")
+                print(f"    Unique candidates before MC screening: {len(set(state_key(c['state']) for c in raw_candidates))}")
+                print(f"    Best candidate distance before MC: {max(c['distance_after'] for c in raw_candidates)}")
+                print(f"    Distance distribution before MC: {[c['distance_after'] for c in raw_candidates]}")
+                print(f"    Logical weight distribution before MC: {[c['logical_weight'] for c in raw_candidates]}")
 
                 raw_candidates.sort(
                     key=lambda c: (c["distance_after"], -c["logical_weight"]),
                     reverse=True,
                 )
-                raw_candidates = raw_candidates[:args.topk_per_parent]
 
                 for trial_idx, cand in enumerate(raw_candidates):
                     key = state_key(cand["state"])

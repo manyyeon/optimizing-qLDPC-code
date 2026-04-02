@@ -1,0 +1,678 @@
+
+--- BEAM SEARCH FROM LOGICAL-GUIDED BEST STATE ---
+Code family: [1600,64]
+Noise level p = 0.03
+Beam width = 3
+Depth = 8
+Expand per parent = 12
+Top-k per parent for MC = 5
+Budgets: screen=10000, precision=100000
+Workers = 100
+Source run = logical_guided_S5_T20_p0.03_10000screen_100000prec_top3_20260402_102058
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder beam_init finished in 0.0m 27.52s with 27 failures out of 10000 runs.
+Logical error rate for beam_init: 0.0027 ± 0.0005189 (stderr)
+
+Initial state: dist=10, LER=0.002700
+
+=== Beam depth 1/8 ===
+  Parent 1/1 | row=0 | dist=10 | ler=0.002700
+Beam depth 1 MC:   0%|          | 0/5 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder beam_d1_parent0_trial2 finished in 0.0m 27.31s with 20 failures out of 10000 runs.
+Logical error rate for beam_d1_parent0_trial2: 0.002 ± 0.0004468 (stderr)
+Beam depth 1 MC:  20%|██        | 1/5 [00:32<02:09, 32.33s/it]Decoder beam_d1_parent0_trial1 finished in 0.0m 28.65s with 23 failures out of 10000 runs.
+Logical error rate for beam_d1_parent0_trial1: 0.0023 ± 0.0004791 (stderr)
+Beam depth 1 MC:  40%|████      | 2/5 [00:33<00:42, 14.12s/it]Decoder beam_d1_parent0_trial4 finished in 0.0m 29.03s with 36 failures out of 10000 runs.
+Logical error rate for beam_d1_parent0_trial4: 0.0036 ± 0.0005989 (stderr)
+Beam depth 1 MC:  60%|██████    | 3/5 [00:34<00:15,  7.84s/it]Decoder beam_d1_parent0_trial0 finished in 0.0m 30.09s with 14 failures out of 10000 runs.
+Logical error rate for beam_d1_parent0_trial0: 0.0014 ± 0.0003739 (stderr)
+Beam depth 1 MC:  80%|████████  | 4/5 [00:35<00:05,  5.15s/it]Decoder beam_d1_parent0_trial3 finished in 0.0m 30.36s with 36 failures out of 10000 runs.
+Logical error rate for beam_d1_parent0_trial3: 0.0036 ± 0.0005989 (stderr)
+Beam depth 1 MC: 100%|██████████| 5/5 [00:35<00:00,  3.40s/it]Beam depth 1 MC: 100%|██████████| 5/5 [00:35<00:00,  7.08s/it]
+    [!] New best global LER: 0.001400, dist=10
+  Survivors:
+    1. row=1 dist=10 ler=0.001400
+    2. row=3 dist=10 ler=0.002000
+    3. row=2 dist=10 ler=0.002300
+
+=== Beam depth 2/8 ===
+  Parent 1/3 | row=1 | dist=10 | ler=0.001400
+  Parent 2/3 | row=3 | dist=10 | ler=0.002000
+  Parent 3/3 | row=2 | dist=10 | ler=0.002300
+Beam depth 2 MC:   0%|          | 0/15 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder beam_d2_parent3_trial4 finished in 0.0m 28.68s with 14 failures out of 10000 runs.
+Logical error rate for beam_d2_parent3_trial4: 0.0014 ± 0.0003739 (stderr)
+Beam depth 2 MC:   7%|▋         | 1/15 [00:34<08:05, 34.71s/it]Decoder beam_d2_parent3_trial0 finished in 0.0m 29.73s with 19 failures out of 10000 runs.
+Logical error rate for beam_d2_parent3_trial0: 0.0019 ± 0.0004355 (stderr)
+Beam depth 2 MC:  13%|█▎        | 2/15 [00:35<03:14, 14.94s/it]Decoder beam_d2_parent1_trial4 finished in 0.0m 30.40s with 35 failures out of 10000 runs.
+Logical error rate for beam_d2_parent1_trial4: 0.0035 ± 0.0005906 (stderr)
+Beam depth 2 MC:  20%|██        | 3/15 [00:36<01:40,  8.37s/it]Decoder beam_d2_parent1_trial3 finished in 0.0m 30.71s with 31 failures out of 10000 runs.
+Logical error rate for beam_d2_parent1_trial3: 0.0031 ± 0.0005559 (stderr)
+Beam depth 2 MC:  27%|██▋       | 4/15 [00:36<00:57,  5.20s/it]Decoder beam_d2_parent2_trial4 finished in 0.0m 30.60s with 12 failures out of 10000 runs.
+Logical error rate for beam_d2_parent2_trial4: 0.0012 ± 0.0003462 (stderr)
+Beam depth 2 MC:  33%|███▎      | 5/15 [00:36<00:33,  3.38s/it]Decoder beam_d2_parent3_trial3 finished in 0.0m 30.79s with 20 failures out of 10000 runs.
+Logical error rate for beam_d2_parent3_trial3: 0.002 ± 0.0004468 (stderr)
+Decoder beam_d2_parent2_trial2 finished in 0.0m 30.80s with 17 failures out of 10000 runs.
+Logical error rate for beam_d2_parent2_trial2: 0.0017 ± 0.0004120 (stderr)
+Beam depth 2 MC:  47%|████▋     | 7/15 [00:36<00:13,  1.69s/it]Decoder beam_d2_parent2_trial0 finished in 0.0m 31.23s with 20 failures out of 10000 runs.
+Logical error rate for beam_d2_parent2_trial0: 0.002 ± 0.0004468 (stderr)
+Beam depth 2 MC:  53%|█████▎    | 8/15 [00:37<00:09,  1.35s/it]Decoder beam_d2_parent3_trial2 finished in 0.0m 31.40s with 18 failures out of 10000 runs.
+Logical error rate for beam_d2_parent3_trial2: 0.0018 ± 0.0004239 (stderr)
+Decoder beam_d2_parent2_trial3 finished in 0.0m 31.64s with 21 failures out of 10000 runs.
+Logical error rate for beam_d2_parent2_trial3: 0.0021 ± 0.0004578 (stderr)
+Beam depth 2 MC:  67%|██████▋   | 10/15 [00:37<00:04,  1.16it/s]Decoder beam_d2_parent1_trial1 finished in 0.0m 32.12s with 15 failures out of 10000 runs.
+Logical error rate for beam_d2_parent1_trial1: 0.0015 ± 0.0003870 (stderr)
+Beam depth 2 MC:  73%|███████▎  | 11/15 [00:38<00:02,  1.37it/s]Decoder beam_d2_parent3_trial1 finished in 0.0m 32.00s with 13 failures out of 10000 runs.
+Logical error rate for beam_d2_parent3_trial1: 0.0013 ± 0.0003603 (stderr)
+Decoder beam_d2_parent1_trial0 finished in 0.0m 32.70s with 13 failures out of 10000 runs.
+Logical error rate for beam_d2_parent1_trial0: 0.0013 ± 0.0003603 (stderr)
+Beam depth 2 MC:  87%|████████▋ | 13/15 [00:38<00:01,  1.88it/s]Decoder beam_d2_parent1_trial2 finished in 0.0m 33.45s with 21 failures out of 10000 runs.
+Logical error rate for beam_d2_parent1_trial2: 0.0021 ± 0.0004578 (stderr)
+Beam depth 2 MC:  93%|█████████▎| 14/15 [00:39<00:00,  1.73it/s]Decoder beam_d2_parent2_trial1 finished in 0.0m 38.25s with 26 failures out of 10000 runs.
+Logical error rate for beam_d2_parent2_trial1: 0.0026 ± 0.0005093 (stderr)
+Beam depth 2 MC: 100%|██████████| 15/15 [00:44<00:00,  1.65s/it]Beam depth 2 MC: 100%|██████████| 15/15 [00:44<00:00,  2.95s/it]
+    [!] New best global LER: 0.001300, dist=10
+    [!] New best global LER: 0.001200, dist=10
+  Survivors:
+    1. row=20 dist=10 ler=0.001200
+    2. row=6 dist=10 ler=0.001300
+    3. row=12 dist=10 ler=0.001300
+
+=== Beam depth 3/8 ===
+  Parent 1/3 | row=20 | dist=10 | ler=0.001200
+  Parent 2/3 | row=6 | dist=10 | ler=0.001300
+  Parent 3/3 | row=12 | dist=10 | ler=0.001300
+Beam depth 3 MC:   0%|          | 0/15 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder beam_d3_parent20_trial4 finished in 0.0m 29.40s with 36 failures out of 10000 runs.
+Logical error rate for beam_d3_parent20_trial4: 0.0036 ± 0.0005989 (stderr)
+Beam depth 3 MC:   7%|▋         | 1/15 [00:34<08:08, 34.86s/it]Decoder beam_d3_parent20_trial1 finished in 0.0m 29.75s with 14 failures out of 10000 runs.
+Logical error rate for beam_d3_parent20_trial1: 0.0014 ± 0.0003739 (stderr)
+Beam depth 3 MC:  13%|█▎        | 2/15 [00:35<03:09, 14.57s/it]Decoder beam_d3_parent20_trial3 finished in 0.0m 29.87s with 31 failures out of 10000 runs.
+Logical error rate for beam_d3_parent20_trial3: 0.0031 ± 0.0005559 (stderr)
+Beam depth 3 MC:  20%|██        | 3/15 [00:35<01:35,  8.00s/it]Decoder beam_d3_parent6_trial3 finished in 0.0m 30.27s with 31 failures out of 10000 runs.
+Logical error rate for beam_d3_parent6_trial3: 0.0031 ± 0.0005559 (stderr)
+Beam depth 3 MC:  27%|██▋       | 4/15 [00:35<00:55,  5.01s/it]Decoder beam_d3_parent6_trial2 finished in 0.0m 31.24s with 33 failures out of 10000 runs.
+Logical error rate for beam_d3_parent6_trial2: 0.0033 ± 0.0005735 (stderr)
+Beam depth 3 MC:  33%|███▎      | 5/15 [00:36<00:35,  3.54s/it]Decoder beam_d3_parent12_trial0 finished in 0.0m 31.83s with 29 failures out of 10000 runs.
+Logical error rate for beam_d3_parent12_trial0: 0.0029 ± 0.0005378 (stderr)
+Beam depth 3 MC:  40%|████      | 6/15 [00:37<00:22,  2.50s/it]Decoder beam_d3_parent12_trial3 finished in 0.0m 32.05s with 18 failures out of 10000 runs.
+Logical error rate for beam_d3_parent12_trial3: 0.0018 ± 0.0004239 (stderr)
+Beam depth 3 MC:  47%|████▋     | 7/15 [00:37<00:14,  1.83s/it]Decoder beam_d3_parent20_trial0 finished in 0.0m 32.43s with 24 failures out of 10000 runs.
+Logical error rate for beam_d3_parent20_trial0: 0.0024 ± 0.0004893 (stderr)
+Beam depth 3 MC:  53%|█████▎    | 8/15 [00:37<00:09,  1.31s/it]Decoder beam_d3_parent12_trial2 finished in 0.0m 32.51s with 27 failures out of 10000 runs.
+Logical error rate for beam_d3_parent12_trial2: 0.0027 ± 0.0005189 (stderr)
+Beam depth 3 MC:  60%|██████    | 9/15 [00:38<00:05,  1.04it/s]Decoder beam_d3_parent6_trial1 finished in 0.0m 33.68s with 25 failures out of 10000 runs.
+Logical error rate for beam_d3_parent6_trial1: 0.0025 ± 0.0004994 (stderr)
+Beam depth 3 MC:  67%|██████▋   | 10/15 [00:39<00:04,  1.04it/s]Decoder beam_d3_parent12_trial4 finished in 0.0m 35.35s with 43 failures out of 10000 runs.
+Logical error rate for beam_d3_parent12_trial4: 0.0043 ± 0.0006544 (stderr)
+Beam depth 3 MC:  73%|███████▎  | 11/15 [00:40<00:05,  1.26s/it]Decoder beam_d3_parent12_trial1 finished in 0.0m 35.88s with 31 failures out of 10000 runs.
+Logical error rate for beam_d3_parent12_trial1: 0.0031 ± 0.0005559 (stderr)
+Beam depth 3 MC:  80%|████████  | 12/15 [00:41<00:03,  1.03s/it]Decoder beam_d3_parent6_trial4 finished in 0.0m 36.97s with 29 failures out of 10000 runs.
+Logical error rate for beam_d3_parent6_trial4: 0.0029 ± 0.0005378 (stderr)
+Beam depth 3 MC:  87%|████████▋ | 13/15 [00:42<00:02,  1.03s/it]Decoder beam_d3_parent20_trial2 finished in 0.0m 37.54s with 21 failures out of 10000 runs.
+Logical error rate for beam_d3_parent20_trial2: 0.0021 ± 0.0004578 (stderr)
+Beam depth 3 MC:  93%|█████████▎| 14/15 [00:42<00:00,  1.17it/s]Decoder beam_d3_parent6_trial0 finished in 0.0m 38.20s with 24 failures out of 10000 runs.
+Logical error rate for beam_d3_parent6_trial0: 0.0024 ± 0.0004893 (stderr)
+Beam depth 3 MC: 100%|██████████| 15/15 [00:43<00:00,  1.28it/s]Beam depth 3 MC: 100%|██████████| 15/15 [00:43<00:00,  2.91s/it]
+  Survivors:
+    1. row=20 dist=10 ler=0.001200
+    2. row=6 dist=10 ler=0.001300
+    3. row=12 dist=10 ler=0.001300
+
+=== Beam depth 4/8 ===
+  Parent 1/3 | row=20 | dist=10 | ler=0.001200
+  Parent 2/3 | row=6 | dist=10 | ler=0.001300
+  Parent 3/3 | row=12 | dist=10 | ler=0.001300
+Beam depth 4 MC:   0%|          | 0/15 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder beam_d4_parent6_trial1 finished in 0.0m 28.72s with 16 failures out of 10000 runs.
+Logical error rate for beam_d4_parent6_trial1: 0.0016 ± 0.0003997 (stderr)
+Beam depth 4 MC:   7%|▋         | 1/15 [00:34<07:57, 34.14s/it]Decoder beam_d4_parent20_trial1 finished in 0.0m 29.80s with 20 failures out of 10000 runs.
+Logical error rate for beam_d4_parent20_trial1: 0.002 ± 0.0004468 (stderr)
+Beam depth 4 MC:  13%|█▎        | 2/15 [00:35<03:11, 14.76s/it]Decoder beam_d4_parent20_trial4 finished in 0.0m 30.61s with 48 failures out of 10000 runs.
+Logical error rate for beam_d4_parent20_trial4: 0.0048 ± 0.0006912 (stderr)
+Beam depth 4 MC:  20%|██        | 3/15 [00:36<01:40,  8.36s/it]Decoder beam_d4_parent12_trial3 finished in 0.0m 30.45s with 23 failures out of 10000 runs.
+Logical error rate for beam_d4_parent12_trial3: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_d4_parent20_trial0 finished in 0.0m 31.40s with 24 failures out of 10000 runs.
+Logical error rate for beam_d4_parent20_trial0: 0.0024 ± 0.0004893 (stderr)
+Beam depth 4 MC:  33%|███▎      | 5/15 [00:36<00:38,  3.84s/it]Decoder beam_d4_parent12_trial2 finished in 0.0m 31.57s with 15 failures out of 10000 runs.
+Logical error rate for beam_d4_parent12_trial2: 0.0015 ± 0.0003870 (stderr)
+Beam depth 4 MC:  40%|████      | 6/15 [00:37<00:25,  2.82s/it]Decoder beam_d4_parent12_trial1 finished in 0.0m 31.65s with 31 failures out of 10000 runs.
+Logical error rate for beam_d4_parent12_trial1: 0.0031 ± 0.0005559 (stderr)
+Decoder beam_d4_parent20_trial2 finished in 0.0m 31.75s with 12 failures out of 10000 runs.
+Logical error rate for beam_d4_parent20_trial2: 0.0012 ± 0.0003462 (stderr)
+Beam depth 4 MC:  53%|█████▎    | 8/15 [00:37<00:11,  1.58s/it]Decoder beam_d4_parent12_trial0 finished in 0.0m 31.64s with 16 failures out of 10000 runs.
+Logical error rate for beam_d4_parent12_trial0: 0.0016 ± 0.0003997 (stderr)
+Decoder beam_d4_parent12_trial4 finished in 0.0m 31.92s with 24 failures out of 10000 runs.
+Logical error rate for beam_d4_parent12_trial4: 0.0024 ± 0.0004893 (stderr)
+Beam depth 4 MC:  67%|██████▋   | 10/15 [00:37<00:04,  1.00it/s]Decoder beam_d4_parent6_trial4 finished in 0.0m 32.52s with 13 failures out of 10000 runs.
+Logical error rate for beam_d4_parent6_trial4: 0.0013 ± 0.0003603 (stderr)
+Beam depth 4 MC:  73%|███████▎  | 11/15 [00:38<00:03,  1.08it/s]Decoder beam_d4_parent6_trial0 finished in 0.0m 34.15s with 22 failures out of 10000 runs.
+Logical error rate for beam_d4_parent6_trial0: 0.0022 ± 0.0004685 (stderr)
+Beam depth 4 MC:  80%|████████  | 12/15 [00:39<00:03,  1.04s/it]Decoder beam_d4_parent6_trial2 finished in 0.0m 35.10s with 19 failures out of 10000 runs.
+Logical error rate for beam_d4_parent6_trial2: 0.0019 ± 0.0004355 (stderr)
+Beam depth 4 MC:  87%|████████▋ | 13/15 [00:40<00:02,  1.07s/it]Decoder beam_d4_parent6_trial3 finished in 0.0m 35.62s with 26 failures out of 10000 runs.
+Logical error rate for beam_d4_parent6_trial3: 0.0026 ± 0.0005093 (stderr)
+Beam depth 4 MC:  93%|█████████▎| 14/15 [00:41<00:00,  1.15it/s]Decoder beam_d4_parent20_trial3 finished in 0.0m 37.86s with 50 failures out of 10000 runs.
+Logical error rate for beam_d4_parent20_trial3: 0.005 ± 0.0007054 (stderr)
+Beam depth 4 MC: 100%|██████████| 15/15 [00:43<00:00,  1.27s/it]Beam depth 4 MC: 100%|██████████| 15/15 [00:43<00:00,  2.89s/it]
+  Survivors:
+    1. row=38 dist=10 ler=0.001200
+    2. row=20 dist=10 ler=0.001200
+    3. row=45 dist=10 ler=0.001300
+
+=== Beam depth 5/8 ===
+  Parent 1/3 | row=38 | dist=10 | ler=0.001200
+  Parent 2/3 | row=20 | dist=10 | ler=0.001200
+  Parent 3/3 | row=45 | dist=10 | ler=0.001300
+Beam depth 5 MC:   0%|          | 0/15 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder beam_d5_parent20_trial3 finished in 0.0m 29.13s with 41 failures out of 10000 runs.
+Logical error rate for beam_d5_parent20_trial3: 0.0041 ± 0.0006390 (stderr)
+Beam depth 5 MC:   7%|▋         | 1/15 [00:34<08:03, 34.55s/it]Decoder beam_d5_parent38_trial3 finished in 0.0m 31.10s with 20 failures out of 10000 runs.
+Logical error rate for beam_d5_parent38_trial3: 0.002 ± 0.0004468 (stderr)
+Beam depth 5 MC:  13%|█▎        | 2/15 [00:36<03:19, 15.36s/it]Decoder beam_d5_parent45_trial4 finished in 0.0m 30.86s with 39 failures out of 10000 runs.
+Logical error rate for beam_d5_parent45_trial4: 0.0039 ± 0.0006233 (stderr)
+Beam depth 5 MC:  20%|██        | 3/15 [00:36<01:40,  8.41s/it]Decoder beam_d5_parent38_trial4 finished in 0.0m 31.62s with 23 failures out of 10000 runs.
+Logical error rate for beam_d5_parent38_trial4: 0.0023 ± 0.0004791 (stderr)
+Beam depth 5 MC:  27%|██▋       | 4/15 [00:37<00:57,  5.25s/it]Decoder beam_d5_parent20_trial4 finished in 0.0m 31.61s with 30 failures out of 10000 runs.
+Logical error rate for beam_d5_parent20_trial4: 0.003 ± 0.0005469 (stderr)
+Beam depth 5 MC:  33%|███▎      | 5/15 [00:37<00:33,  3.39s/it]Decoder beam_d5_parent38_trial2 finished in 0.0m 31.85s with 24 failures out of 10000 runs.
+Logical error rate for beam_d5_parent38_trial2: 0.0024 ± 0.0004893 (stderr)
+Decoder beam_d5_parent45_trial3 finished in 0.0m 31.69s with 17 failures out of 10000 runs.
+Logical error rate for beam_d5_parent45_trial3: 0.0017 ± 0.0004120 (stderr)
+Beam depth 5 MC:  47%|████▋     | 7/15 [00:37<00:13,  1.72s/it]Decoder beam_d5_parent38_trial0 finished in 0.0m 32.04s with 16 failures out of 10000 runs.
+Logical error rate for beam_d5_parent38_trial0: 0.0016 ± 0.0003997 (stderr)
+Beam depth 5 MC:  53%|█████▎    | 8/15 [00:37<00:09,  1.31s/it]Decoder beam_d5_parent20_trial0 finished in 0.0m 32.33s with 25 failures out of 10000 runs.
+Logical error rate for beam_d5_parent20_trial0: 0.0025 ± 0.0004994 (stderr)
+Beam depth 5 MC:  60%|██████    | 9/15 [00:37<00:06,  1.03s/it]Decoder beam_d5_parent20_trial1 finished in 0.0m 32.67s with 28 failures out of 10000 runs.
+Logical error rate for beam_d5_parent20_trial1: 0.0028 ± 0.0005284 (stderr)
+Beam depth 5 MC:  67%|██████▋   | 10/15 [00:38<00:04,  1.22it/s]Decoder beam_d5_parent45_trial0 finished in 0.0m 34.21s with 22 failures out of 10000 runs.
+Logical error rate for beam_d5_parent45_trial0: 0.0022 ± 0.0004685 (stderr)
+Beam depth 5 MC:  73%|███████▎  | 11/15 [00:39<00:04,  1.06s/it]Decoder beam_d5_parent45_trial2 finished in 0.0m 34.70s with 18 failures out of 10000 runs.
+Logical error rate for beam_d5_parent45_trial2: 0.0018 ± 0.0004239 (stderr)
+Beam depth 5 MC:  80%|████████  | 12/15 [00:40<00:02,  1.09it/s]Decoder beam_d5_parent38_trial1 finished in 0.0m 34.79s with 22 failures out of 10000 runs.
+Logical error rate for beam_d5_parent38_trial1: 0.0022 ± 0.0004685 (stderr)
+Decoder beam_d5_parent45_trial1 finished in 0.0m 34.90s with 16 failures out of 10000 runs.
+Logical error rate for beam_d5_parent45_trial1: 0.0016 ± 0.0003997 (stderr)
+Beam depth 5 MC:  93%|█████████▎| 14/15 [00:40<00:00,  1.82it/s]Decoder beam_d5_parent20_trial2 finished in 0.0m 35.19s with 38 failures out of 10000 runs.
+Logical error rate for beam_d5_parent20_trial2: 0.0038 ± 0.0006153 (stderr)
+Beam depth 5 MC: 100%|██████████| 15/15 [00:40<00:00,  2.24it/s]Beam depth 5 MC: 100%|██████████| 15/15 [00:40<00:00,  2.71s/it]
+  Survivors:
+    1. row=38 dist=10 ler=0.001200
+    2. row=20 dist=10 ler=0.001200
+    3. row=45 dist=10 ler=0.001300
+
+=== Beam depth 6/8 ===
+  Parent 1/3 | row=38 | dist=10 | ler=0.001200
+  Parent 2/3 | row=20 | dist=10 | ler=0.001200
+  Parent 3/3 | row=45 | dist=10 | ler=0.001300
+Beam depth 6 MC:   0%|          | 0/15 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder beam_d6_parent20_trial0 finished in 0.0m 31.22s with 31 failures out of 10000 runs.
+Logical error rate for beam_d6_parent20_trial0: 0.0031 ± 0.0005559 (stderr)
+Beam depth 6 MC:   7%|▋         | 1/15 [00:36<08:36, 36.87s/it]Decoder beam_d6_parent20_trial3 finished in 0.0m 31.60s with 42 failures out of 10000 runs.
+Logical error rate for beam_d6_parent20_trial3: 0.0042 ± 0.0006467 (stderr)
+Beam depth 6 MC:  13%|█▎        | 2/15 [00:37<03:20, 15.42s/it]Decoder beam_d6_parent38_trial2 finished in 0.0m 31.85s with 36 failures out of 10000 runs.
+Logical error rate for beam_d6_parent38_trial2: 0.0036 ± 0.0005989 (stderr)
+Beam depth 6 MC:  20%|██        | 3/15 [00:37<01:41,  8.45s/it]Decoder beam_d6_parent45_trial1 finished in 0.0m 31.93s with 21 failures out of 10000 runs.
+Logical error rate for beam_d6_parent45_trial1: 0.0021 ± 0.0004578 (stderr)
+Beam depth 6 MC:  27%|██▋       | 4/15 [00:37<00:56,  5.17s/it]Decoder beam_d6_parent45_trial0 finished in 0.0m 32.48s with 19 failures out of 10000 runs.
+Logical error rate for beam_d6_parent45_trial0: 0.0019 ± 0.0004355 (stderr)
+Beam depth 6 MC:  33%|███▎      | 5/15 [00:38<00:35,  3.55s/it]Decoder beam_d6_parent20_trial4 finished in 0.0m 32.55s with 28 failures out of 10000 runs.
+Logical error rate for beam_d6_parent20_trial4: 0.0028 ± 0.0005284 (stderr)
+Decoder beam_d6_parent45_trial2 finished in 0.0m 32.96s with 16 failures out of 10000 runs.
+Logical error rate for beam_d6_parent45_trial2: 0.0016 ± 0.0003997 (stderr)
+Beam depth 6 MC:  47%|████▋     | 7/15 [00:38<00:14,  1.85s/it]Decoder beam_d6_parent38_trial4 finished in 0.0m 33.81s with 30 failures out of 10000 runs.
+Logical error rate for beam_d6_parent38_trial4: 0.003 ± 0.0005469 (stderr)
+Beam depth 6 MC:  53%|█████▎    | 8/15 [00:39<00:11,  1.58s/it]Decoder beam_d6_parent38_trial0 finished in 0.0m 33.84s with 22 failures out of 10000 runs.
+Logical error rate for beam_d6_parent38_trial0: 0.0022 ± 0.0004685 (stderr)
+Decoder beam_d6_parent45_trial4 finished in 0.0m 33.76s with 29 failures out of 10000 runs.
+Logical error rate for beam_d6_parent45_trial4: 0.0029 ± 0.0005378 (stderr)
+Decoder beam_d6_parent20_trial1 finished in 0.0m 34.17s with 27 failures out of 10000 runs.
+Logical error rate for beam_d6_parent20_trial1: 0.0027 ± 0.0005189 (stderr)
+Beam depth 6 MC:  73%|███████▎  | 11/15 [00:39<00:03,  1.22it/s]Decoder beam_d6_parent20_trial2 finished in 0.0m 34.28s with 28 failures out of 10000 runs.
+Logical error rate for beam_d6_parent20_trial2: 0.0028 ± 0.0005284 (stderr)
+Decoder beam_d6_parent45_trial3 finished in 0.0m 34.91s with 19 failures out of 10000 runs.
+Logical error rate for beam_d6_parent45_trial3: 0.0019 ± 0.0004355 (stderr)
+Beam depth 6 MC:  87%|████████▋ | 13/15 [00:40<00:01,  1.49it/s]Decoder beam_d6_parent38_trial1 finished in 0.0m 36.36s with 23 failures out of 10000 runs.
+Logical error rate for beam_d6_parent38_trial1: 0.0023 ± 0.0004791 (stderr)
+Beam depth 6 MC:  93%|█████████▎| 14/15 [00:41<00:00,  1.28it/s]Decoder beam_d6_parent38_trial3 finished in 0.0m 37.43s with 40 failures out of 10000 runs.
+Logical error rate for beam_d6_parent38_trial3: 0.004 ± 0.0006312 (stderr)
+Beam depth 6 MC: 100%|██████████| 15/15 [00:43<00:00,  1.17it/s]Beam depth 6 MC: 100%|██████████| 15/15 [00:43<00:00,  2.87s/it]
+  Survivors:
+    1. row=38 dist=10 ler=0.001200
+    2. row=20 dist=10 ler=0.001200
+    3. row=45 dist=10 ler=0.001300
+
+=== Beam depth 7/8 ===
+  Parent 1/3 | row=38 | dist=10 | ler=0.001200
+  Parent 2/3 | row=20 | dist=10 | ler=0.001200
+  Parent 3/3 | row=45 | dist=10 | ler=0.001300
+Beam depth 7 MC:   0%|          | 0/15 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder beam_d7_parent20_trial0 finished in 0.0m 31.18s with 18 failures out of 10000 runs.
+Logical error rate for beam_d7_parent20_trial0: 0.0018 ± 0.0004239 (stderr)
+Beam depth 7 MC:   7%|▋         | 1/15 [00:36<08:32, 36.59s/it]Decoder beam_d7_parent45_trial2 finished in 0.0m 31.37s with 22 failures out of 10000 runs.
+Logical error rate for beam_d7_parent45_trial2: 0.0022 ± 0.0004685 (stderr)
+Beam depth 7 MC:  13%|█▎        | 2/15 [00:36<03:18, 15.29s/it]Decoder beam_d7_parent20_trial2 finished in 0.0m 32.43s with 25 failures out of 10000 runs.
+Logical error rate for beam_d7_parent20_trial2: 0.0025 ± 0.0004994 (stderr)
+Beam depth 7 MC:  20%|██        | 3/15 [00:37<01:44,  8.72s/it]Decoder beam_d7_parent38_trial3 finished in 0.0m 32.45s with 21 failures out of 10000 runs.
+Logical error rate for beam_d7_parent38_trial3: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_d7_parent38_trial1 finished in 0.0m 32.48s with 14 failures out of 10000 runs.
+Logical error rate for beam_d7_parent38_trial1: 0.0014 ± 0.0003739 (stderr)
+Beam depth 7 MC:  33%|███▎      | 5/15 [00:38<00:38,  3.83s/it]Decoder beam_d7_parent45_trial0 finished in 0.0m 32.77s with 27 failures out of 10000 runs.
+Logical error rate for beam_d7_parent45_trial0: 0.0027 ± 0.0005189 (stderr)
+Beam depth 7 MC:  40%|████      | 6/15 [00:38<00:25,  2.82s/it]Decoder beam_d7_parent45_trial3 finished in 0.0m 33.61s with 19 failures out of 10000 runs.
+Logical error rate for beam_d7_parent45_trial3: 0.0019 ± 0.0004355 (stderr)
+Beam depth 7 MC:  47%|████▋     | 7/15 [00:39<00:17,  2.24s/it]Decoder beam_d7_parent20_trial1 finished in 0.0m 33.72s with 21 failures out of 10000 runs.
+Logical error rate for beam_d7_parent20_trial1: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_d7_parent20_trial4 finished in 0.0m 33.81s with 19 failures out of 10000 runs.
+Logical error rate for beam_d7_parent20_trial4: 0.0019 ± 0.0004355 (stderr)
+Beam depth 7 MC:  60%|██████    | 9/15 [00:39<00:07,  1.26s/it]Decoder beam_d7_parent20_trial3 finished in 0.0m 33.84s with 19 failures out of 10000 runs.
+Logical error rate for beam_d7_parent20_trial3: 0.0019 ± 0.0004355 (stderr)
+Beam depth 7 MC:  67%|██████▋   | 10/15 [00:39<00:04,  1.02it/s]Decoder beam_d7_parent45_trial4 finished in 0.0m 35.04s with 40 failures out of 10000 runs.
+Logical error rate for beam_d7_parent45_trial4: 0.004 ± 0.0006312 (stderr)
+Beam depth 7 MC:  73%|███████▎  | 11/15 [00:40<00:04,  1.04s/it]Decoder beam_d7_parent38_trial2 finished in 0.0m 36.60s with 12 failures out of 10000 runs.
+Logical error rate for beam_d7_parent38_trial2: 0.0012 ± 0.0003462 (stderr)
+Beam depth 7 MC:  80%|████████  | 12/15 [00:42<00:03,  1.13s/it]Decoder beam_d7_parent45_trial1 finished in 0.0m 36.90s with 24 failures out of 10000 runs.
+Logical error rate for beam_d7_parent45_trial1: 0.0024 ± 0.0004893 (stderr)
+Beam depth 7 MC:  87%|████████▋ | 13/15 [00:42<00:01,  1.04it/s]Decoder beam_d7_parent38_trial0 finished in 0.0m 37.43s with 10 failures out of 10000 runs.
+Logical error rate for beam_d7_parent38_trial0: 0.001 ± 0.0003161 (stderr)
+Beam depth 7 MC:  93%|█████████▎| 14/15 [00:42<00:00,  1.28it/s]Decoder beam_d7_parent38_trial4 finished in 0.0m 40.06s with 24 failures out of 10000 runs.
+Logical error rate for beam_d7_parent38_trial4: 0.0024 ± 0.0004893 (stderr)
+Beam depth 7 MC: 100%|██████████| 15/15 [00:46<00:00,  1.47s/it]Beam depth 7 MC: 100%|██████████| 15/15 [00:46<00:00,  3.07s/it]
+    [!] New best global LER: 0.001000, dist=10
+  Survivors:
+    1. row=81 dist=10 ler=0.001000
+    2. row=83 dist=10 ler=0.001200
+    3. row=38 dist=10 ler=0.001200
+
+=== Beam depth 8/8 ===
+  Parent 1/3 | row=81 | dist=10 | ler=0.001000
+  Parent 2/3 | row=83 | dist=10 | ler=0.001200
+  Parent 3/3 | row=38 | dist=10 | ler=0.001200
+Beam depth 8 MC:   0%|          | 0/15 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder beam_d8_parent38_trial0 finished in 0.0m 30.71s with 19 failures out of 10000 runs.
+Logical error rate for beam_d8_parent38_trial0: 0.0019 ± 0.0004355 (stderr)
+Beam depth 8 MC:   7%|▋         | 1/15 [00:36<08:31, 36.53s/it]Decoder beam_d8_parent38_trial4 finished in 0.0m 31.98s with 25 failures out of 10000 runs.
+Logical error rate for beam_d8_parent38_trial4: 0.0025 ± 0.0004994 (stderr)
+Beam depth 8 MC:  13%|█▎        | 2/15 [00:37<03:25, 15.81s/it]Decoder beam_d8_parent38_trial3 finished in 0.0m 33.16s with 17 failures out of 10000 runs.
+Logical error rate for beam_d8_parent38_trial3: 0.0017 ± 0.0004120 (stderr)
+Beam depth 8 MC:  20%|██        | 3/15 [00:38<01:49,  9.11s/it]Decoder beam_d8_parent38_trial1 finished in 0.0m 33.75s with 23 failures out of 10000 runs.
+Logical error rate for beam_d8_parent38_trial1: 0.0023 ± 0.0004791 (stderr)
+Beam depth 8 MC:  27%|██▋       | 4/15 [00:39<01:02,  5.69s/it]Decoder beam_d8_parent38_trial2 finished in 0.0m 34.10s with 24 failures out of 10000 runs.
+Logical error rate for beam_d8_parent38_trial2: 0.0024 ± 0.0004893 (stderr)
+Beam depth 8 MC:  33%|███▎      | 5/15 [00:39<00:37,  3.78s/it]Decoder beam_d8_parent83_trial0 finished in 0.0m 34.34s with 18 failures out of 10000 runs.
+Logical error rate for beam_d8_parent83_trial0: 0.0018 ± 0.0004239 (stderr)
+Decoder beam_d8_parent83_trial2 finished in 0.0m 34.47s with 17 failures out of 10000 runs.
+Logical error rate for beam_d8_parent83_trial2: 0.0017 ± 0.0004120 (stderr)
+Beam depth 8 MC:  47%|████▋     | 7/15 [00:40<00:15,  1.93s/it]Decoder beam_d8_parent81_trial3 finished in 0.0m 35.52s with 21 failures out of 10000 runs.
+Logical error rate for beam_d8_parent81_trial3: 0.0021 ± 0.0004578 (stderr)
+Beam depth 8 MC:  53%|█████▎    | 8/15 [00:41<00:12,  1.72s/it]Decoder beam_d8_parent81_trial1 finished in 0.0m 35.70s with 24 failures out of 10000 runs.
+Logical error rate for beam_d8_parent81_trial1: 0.0024 ± 0.0004893 (stderr)
+Beam depth 8 MC:  60%|██████    | 9/15 [00:41<00:07,  1.29s/it]Decoder beam_d8_parent83_trial4 finished in 0.0m 35.81s with 24 failures out of 10000 runs.
+Logical error rate for beam_d8_parent83_trial4: 0.0024 ± 0.0004893 (stderr)
+Beam depth 8 MC:  67%|██████▋   | 10/15 [00:41<00:04,  1.02it/s]Decoder beam_d8_parent81_trial0 finished in 0.0m 36.21s with 17 failures out of 10000 runs.
+Logical error rate for beam_d8_parent81_trial0: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_d8_parent83_trial3 finished in 0.0m 36.31s with 26 failures out of 10000 runs.
+Logical error rate for beam_d8_parent83_trial3: 0.0026 ± 0.0005093 (stderr)
+Beam depth 8 MC:  73%|███████▎  | 11/15 [00:41<00:03,  1.26it/s]Decoder beam_d8_parent81_trial4 finished in 0.0m 40.30s with 16 failures out of 10000 runs.
+Logical error rate for beam_d8_parent81_trial4: 0.0016 ± 0.0003997 (stderr)
+Beam depth 8 MC:  87%|████████▋ | 13/15 [00:45<00:02,  1.33s/it]Decoder beam_d8_parent81_trial2 finished in 0.0m 40.53s with 20 failures out of 10000 runs.
+Logical error rate for beam_d8_parent81_trial2: 0.002 ± 0.0004468 (stderr)
+Beam depth 8 MC:  93%|█████████▎| 14/15 [00:46<00:01,  1.07s/it]Decoder beam_d8_parent83_trial1 finished in 0.0m 43.29s with 23 failures out of 10000 runs.
+Logical error rate for beam_d8_parent83_trial1: 0.0023 ± 0.0004791 (stderr)
+Beam depth 8 MC: 100%|██████████| 15/15 [00:48<00:00,  1.53s/it]Beam depth 8 MC: 100%|██████████| 15/15 [00:48<00:00,  3.27s/it]
+  Survivors:
+    1. row=81 dist=10 ler=0.001000
+    2. row=83 dist=10 ler=0.001200
+    3. row=38 dist=10 ler=0.001200
+
+=== Precision evaluation on final beam ===
+Precision MC:   0%|          | 0/3 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder precision_row_38 finished in 4.0m 48.67s with 174 failures out of 100000 runs.
+Logical error rate for precision_row_38: 0.00174 ± 0.0001318 (stderr)
+Precision MC:  33%|███▎      | 1/3 [04:53<09:47, 293.70s/it]Decoder precision_row_81 finished in 5.0m 37.25s with 190 failures out of 100000 runs.
+Logical error rate for precision_row_81: 0.0019 ± 0.0001377 (stderr)
+Precision MC:  67%|██████▋   | 2/3 [05:42<02:29, 149.54s/it]Decoder precision_row_83 finished in 5.0m 39.82s with 239 failures out of 100000 runs.
+Logical error rate for precision_row_83: 0.00239 ± 0.0001544 (stderr)
+Precision MC: 100%|██████████| 3/3 [05:44<00:00, 82.41s/it] Precision MC: 100%|██████████| 3/3 [05:44<00:00, 114.95s/it]
+row=81 dist=10 precise LER=0.001900 ± 0.000138
+row=83 dist=10 precise LER=0.002390 ± 0.000154
+row=38 dist=10 precise LER=0.001740 ± 0.000132
+
+Best final result:
+  dist = 10
+  LER  = 0.001740 ± 0.000132
+
+Total time: (0h 12m 16.23s)
+Saved to optimization/results/start_from_logical_guided.hdf5
