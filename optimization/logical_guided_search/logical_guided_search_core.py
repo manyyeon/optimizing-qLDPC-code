@@ -340,6 +340,7 @@ def improve_state_by_breaking_low_weight_logical(
             continue
         
         # Record this valid attempt, even if it doesn't improve distance, to allow accepting the first non-decreasing move if no improving move is found.
+        print(f"  Valid proposal at trial {trial + 1}/{max_trials}: distance {current_distance}->{new_distance}.")
         attempt = {
             "state": new_state,
             "params": new_params,
@@ -352,6 +353,7 @@ def improve_state_by_breaking_low_weight_logical(
         }
         best_attempts.append(attempt)
 
+        # Accept immediately if it improves distance
         if new_distance > current_distance:
             if verbose:
                 print(
