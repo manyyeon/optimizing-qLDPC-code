@@ -360,9 +360,11 @@ def main():
             run_grp.attrs["min_cost"] = min_final_ler
             run_grp.attrs["best_dist"] = final_best_cand["dist"]
 
+        print(f"Run group name: {run_grp.name}")
+
     total_time = time.time() - start_time
     print(f"\nTotal time: {total_time / 3600:.2f} h ({total_time // 3600:.0f}h {(total_time % 3600) // 60:.0f}m {total_time % 60:.2f}s)")
-    print(f"Saved to {OUTPUT_FILE} {run_grp.name}")
+    print(f"Saved to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
