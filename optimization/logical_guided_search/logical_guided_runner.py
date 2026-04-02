@@ -278,14 +278,6 @@ def main():
         min_final_ler = np.inf
         final_best_std = np.inf
 
-        print(f"\n>>> PHASE 3: Precision ({args.prec_budget})")
-        top_candidates = screened_results[:args.topk]
-        print(f"Promoting top {len(top_candidates)} candidates")
-
-        final_best_cand = None
-        min_final_ler = np.inf
-        final_best_std = np.inf
-
         if args.workers == 1:
             for cand in top_candidates:
                 print(f"Evaluating row {cand['row_idx']} | dist={cand['dist']} | screening LER={cand['ler']:.6f}")
