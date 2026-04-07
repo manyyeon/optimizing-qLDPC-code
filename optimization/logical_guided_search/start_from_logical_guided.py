@@ -29,7 +29,7 @@ from optimization.logical_guided_search.logical_guided_search_core import (
     generate_logical_guided_candidates,
 )
 
-OUTPUT_FILE = "optimization/results/start_from_logical_guided_test.hdf5"
+OUTPUT_FILE = "optimization/results/start_from_logical_guided.hdf5"
 BEAM_WIDTH = 3
 DEPTH = 10
 EXPAND_PER_PARENT = 12
@@ -124,8 +124,9 @@ def main():
     with h5py.File(OUTPUT_FILE, "a") as f:
         grp = f.require_group(code_name)
         run_name = (
-            f"beam_from_logical_bw{args.beam_width}_d{args.depth}_"
-            f"exp{args.expand_per_parent}_p{p}_"
+            f"beam_from_logical_bw{args.beam_width}_d{args.depth}_p{p}_"
+            f"{args.screen_budget}screen_{args.prec_budget}prec_top{args.topk}_"
+            f"exp{args.expand_per_parent}_"
             f"{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         )
         run_grp = grp.require_group(run_name)
