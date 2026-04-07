@@ -29,7 +29,7 @@ from optimization.logical_guided_search.logical_guided_search_core import (
     generate_logical_guided_candidates,
 )
 
-OUTPUT_FILE = "optimization/results/start_from_logical_guided.hdf5"
+OUTPUT_FILE = "optimization/results/start_from_logical_guided_test.hdf5"
 BEAM_WIDTH = 3
 DEPTH = 10
 EXPAND_PER_PARENT = 12
@@ -49,19 +49,39 @@ def load_best_state_from_logical_guided(input_file, code_name, run_name):
 
 
 def evaluate_candidate_task(task):
+    np.random.seed()
+
     state = task["state"]
     p = task["p"]
     budget = task["budget"]
     run_label = task["run_label"]
+    failure_cap = task.get("failure_cap", None)
+    min_runs_before_stop = task.get("min_runs_before_stop", 0)
+    workers = task.get("workers", 1)
+    batch_size = task.get("batch_size", 5000)
 
     _, Hx, Hz = get_code_parameters_and_matrices(state)
-    ler, std, rt = evaluate_mc(Hx, Hz, p, budget, run_label=run_label)
+
+    result = evaluate_mc(
+        Hx,
+        Hz,
+        p,
+        budget,
+        run_label=run_label,
+        failure_cap=failure_cap,
+        min_runs_before_stop=min_runs_before_stop,
+        workers=workers,
+        batch_size=batch_size,
+    )
 
     return {
         "candidate_id": task["candidate_id"],
-        "ler": ler,
-        "std": std,
-        "runtime": rt,
+        "ler": result["ler"],
+        "std": result["stderr"],
+        "runtime": result["runtime"],
+        "failures": result["failures"],
+        "completed_runs": result["completed_runs"],
+        "early_stopped": result["early_stopped"],
     }
 
 
@@ -121,9 +141,25 @@ def main():
             "source_run": args.input_run,
         })
 
+        best_screen_failures = None
+
         params0, Hx0, Hz0 = get_code_parameters_and_matrices(initial_state)
         d0 = min(params0["d_classical"], params0["d_T_classical"])
-        ler0, std0, rt0 = evaluate_mc(Hx0, Hz0, p, args.screen_budget, run_label="beam_init")
+        result0 = evaluate_mc(
+                Hx0,
+                Hz0,
+                p,
+                args.screen_budget,
+                run_label="beam_init",
+                workers=args.workers,
+                batch_size=5000,
+        )
+
+        best_screen_failures = result0["failures"]
+
+        ler0 = result0["ler"]
+        std0 = result0["stderr"]
+        rt0 = result0["runtime"]
 
         idx0 = append_to_hdf5(
             run_grp,
@@ -182,7 +218,8 @@ def main():
 
                 print(f"    Generated {len(raw_candidates)} candidates before filtering duplicates")
                 print(f"    Unique candidates before MC screening: {len(set(state_key(c['state']) for c in raw_candidates))}")
-                print(f"    Best candidate distance before MC: {max(c['distance_after'] for c in raw_candidates)}")
+                if raw_candidates:
+                    print(f"    Best candidate distance before MC: {max(c['distance_after'] for c in raw_candidates)}")
                 print(f"    Distance distribution before MC: {[c['distance_after'] for c in raw_candidates]}")
                 print(f"    Logical weight distribution before MC: {[c['logical_weight'] for c in raw_candidates]}")
 
@@ -217,40 +254,69 @@ def main():
                 for item in tqdm(pending_candidates, desc=f"Beam depth {depth} MC"):
                     cand = item["cand"]
                     _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
-                    ler, std, rt = evaluate_mc(
-                        Hx, Hz, p, args.screen_budget, run_label=item["run_label"]
+                    result = evaluate_mc(
+                        Hx,
+                        Hz,
+                        p,
+                        args.screen_budget,
+                        run_label=item["run_label"],
+                        failure_cap=best_screen_failures,
+                        min_runs_before_stop=500,
                     )
+
+                    if (
+                        result["completed_runs"] == args.screen_budget
+                        and (
+                            best_screen_failures is None
+                            or result["failures"] < best_screen_failures
+                        )
+                    ):
+                        best_screen_failures = result["failures"]
+
                     results_by_id[item["candidate_id"]] = {
-                        "ler": ler,
-                        "std": std,
-                        "runtime": rt,
+                        "ler": result["ler"],
+                        "std": result["stderr"],
+                        "runtime": result["runtime"],
+                        "failures": result["failures"],
+                        "completed_runs": result["completed_runs"],
+                        "early_stopped": result["early_stopped"],
                     }
             else:
-                tasks = [
-                    {
-                        "candidate_id": item["candidate_id"],
-                        "state": item["cand"]["state"],
-                        "p": p,
-                        "budget": args.screen_budget,
-                        "run_label": item["run_label"],
-                    }
-                    for item in pending_candidates
-                ]
+                batch_size = args.workers
+                remaining = pending_candidates
 
                 with ProcessPoolExecutor(max_workers=args.workers) as ex:
-                    futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
+                    for i in range(0, len(remaining), batch_size):
+                        batch = remaining[i:i+batch_size]
 
-                    for fut in tqdm(
-                        as_completed(futures),
-                        total=len(futures),
-                        desc=f"Beam depth {depth} MC",
-                    ):
-                        res = fut.result()
-                        results_by_id[res["candidate_id"]] = {
-                            "ler": res["ler"],
-                            "std": res["std"],
-                            "runtime": res["runtime"],
-                        }
+                        tasks = [
+                            {
+                                "candidate_id": item["candidate_id"],
+                                "state": item["cand"]["state"],
+                                "p": p,
+                                "budget": args.screen_budget,
+                                "run_label": item["run_label"],
+                                "failure_cap": best_screen_failures,
+                                "min_runs_before_stop": 500,
+                            }
+                            for item in batch
+                        ]
+
+                        futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
+
+                        for fut in tqdm(as_completed(futures), total=len(futures), desc=f"Batch {i//batch_size + 1}"):
+                            res = fut.result()
+                            results_by_id[res["candidate_id"]] = res
+
+                            # tighten cap AFTER each batch result
+                            if (
+                                res["completed_runs"] == args.screen_budget
+                                and (
+                                    best_screen_failures is None
+                                    or res["failures"] < best_screen_failures
+                                )
+                            ):
+                                best_screen_failures = res["failures"]
 
             # Stage C: save results in main process only
             for item in pending_candidates:
@@ -283,10 +349,16 @@ def main():
                     "ler": res["ler"],
                     "std": res["std"],
                     "logical_weight": cand["logical_weight"],
+                    "early_stopped": res.get("early_stopped", False),
+                    "failures": res.get("failures", None),
+                    "completed_runs": res.get("completed_runs", None),
                 }
                 all_children.append(child)
 
-                if res["ler"] < best_global["ler"]:
+                if (
+                    not res.get("early_stopped", False)
+                    and res["ler"] < best_global["ler"]
+                ):
                     best_global = child
                     print(f"    [!] New best global LER: {res['ler']:.6f}, dist={cand['distance_after']}")
 
@@ -294,7 +366,14 @@ def main():
 
             # keep parents too, so search is non-regressive
             pool = list(all_children) + list(current_beam)
-            pool.sort(key=lambda x: x["ler"])
+            pool.sort(
+                key=lambda x: (
+                    x["dist"],                          # 1 prioritize distance
+                    not x.get("early_stopped", False),  # 2 full runs
+                    -x["ler"]                           # 3 lower LER
+                ),
+                reverse=True
+            )
             current_beam = pool[:args.beam_width]
 
             print("  Survivors:")
@@ -302,7 +381,13 @@ def main():
                 print(f"    {i+1}. row={s['row_idx']} dist={s['dist']} ler={s['ler']:.6f}")
 
         print("\n=== Precision evaluation on final beam ===")
-        final_candidates = sorted(current_beam, key=lambda x: x["ler"])
+        final_candidates = sorted(
+            current_beam,
+            key=lambda x: (
+                x.get("early_stopped", False),
+                x["ler"]
+            )
+        )
 
         best_precise = None
         best_precise_ler = np.inf
@@ -311,10 +396,18 @@ def main():
         if args.workers == 1:
             for cand in final_candidates:
                 _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
-                ler, std, rt = evaluate_mc(
-                    Hx, Hz, p, args.prec_budget,
+                result = evaluate_mc(
+                    Hx,
+                    Hz,
+                    p,
+                    args.prec_budget,
                     run_label=f"precision_row_{cand['row_idx']}",
                 )
+
+                ler = result["ler"]
+                std = result["stderr"]
+                rt = result["runtime"]
+
                 update_hdf5_row(run_grp, cand["row_idx"], ler, std, rt)
                 print(f"row={cand['row_idx']} dist={cand['dist']} precise LER={ler:.6f} ± {std:.6f}")
 
@@ -332,6 +425,8 @@ def main():
                     "p": p,
                     "budget": args.prec_budget,
                     "run_label": f"precision_row_{cand['row_idx']}",
+                    "workers": args.workers,
+                    "batch_size": 5000,
                 }
                 for i, cand in enumerate(final_candidates)
             ]

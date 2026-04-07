@@ -33,7 +33,7 @@ from optimization.logical_guided_search.logical_guided_search_core import (
     improve_state_by_breaking_low_weight_logical,
 )
 
-OUTPUT_FILE = "optimization/results/logical_guided_search.hdf5"
+OUTPUT_FILE = "optimization/results/logical_guided_search_test.hdf5"
 SEARCH_STEPS = 20
 TRIALS_PER_STEP = 100
 BUDGET_SCREENING = 10_000
@@ -50,19 +50,39 @@ from optimization.logical_guided_search.logical_guided_eval import (
 )
 
 def evaluate_candidate_task(task):
+    np.random.seed()
+
     state = task["state"]
     p = task["p"]
     budget = task["budget"]
     run_label = task["run_label"]
+    failure_cap = task.get("failure_cap", None)
+    min_runs_before_stop = task.get("min_runs_before_stop", 0)
+    workers = task.get("workers", 1)
+    batch_size = task.get("batch_size", 5000)
 
-    params, Hx, Hz = get_code_parameters_and_matrices(state)
-    ler, std, runtime = evaluate_mc(Hx, Hz, p, budget, run_label=run_label)
+    _, Hx, Hz = get_code_parameters_and_matrices(state)
+
+    result = evaluate_mc(
+        Hx,
+        Hz,
+        p,
+        budget,
+        run_label=run_label,
+        failure_cap=failure_cap,
+        min_runs_before_stop=min_runs_before_stop,
+        workers=workers,
+        batch_size=batch_size,
+    )
 
     return {
         "row_idx": task["row_idx"],
-        "ler": ler,
-        "std": std,
-        "runtime": runtime,
+        "ler": result["ler"],
+        "std": result["stderr"],
+        "runtime": result["runtime"],
+        "failures": result["failures"],
+        "completed_runs": result["completed_runs"],
+        "early_stopped": result["early_stopped"],
     }
 
 def main():
@@ -128,6 +148,8 @@ def main():
             edges_to_remove=None,
         )
 
+        current_parent_row_idx = idx_init
+
         all_candidates = [{
             "state": current_state,
             "params": params_init,
@@ -136,6 +158,7 @@ def main():
             "logical_weight": 0.0,
         }]
 
+        last_improvement_step = 0
         global_max_dist = all_candidates[0]["dist"]
 
         print("\n>>> PHASE 1: Logical-guided search")
@@ -181,25 +204,16 @@ def main():
 
             if d_cand > global_max_dist:
                 global_max_dist = d_cand
+                last_improvement_step = step
 
             if result["accepted"]:
                 current_state = state_to_save
 
             f.flush()
 
-        print(f"\n>>> PHASE 2: Screening ({args.screen_budget})")
-        target_dist = global_max_dist
-        screening_candidates = [c for c in all_candidates if c["dist"] == target_dist]
-
-        unique_candidates_dict = {}
-        for c in screening_candidates:
-            key = state_key(c["state"])
-            if key not in unique_candidates_dict:
-                unique_candidates_dict[key] = c
-        unique_candidates = list(unique_candidates_dict.values())
-
-        print(f"Found {len(all_candidates)} total saved states.")
-        print(f"Screening {len(unique_candidates)} unique candidates with dist == {target_dist}")
+            if step - last_improvement_step >= 5:
+                print("Distance has not increased in the last 5 steps, stopping early.")
+                break
 
         print(f"\n>>> PHASE 2: Screening ({args.screen_budget})")
         target_dist = global_max_dist
@@ -214,66 +228,181 @@ def main():
 
         print(f"Found {len(all_candidates)} total saved states.")
         print(f"Screening {len(unique_candidates)} unique candidates with dist == {target_dist}")
+
 
         screened_results = []
+
+        best_screen_failures = None
 
         if args.workers == 1:
             for cand in tqdm(unique_candidates, desc="Running MC (screening)"):
                 _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
-                ler, std, run_t = evaluate_mc(
-                    Hx, Hz, p, args.screen_budget,
+                
+                result = evaluate_mc(Hx, Hz, p,
+                    args.screen_budget,
                     run_label=f"screen_row_{cand['row_idx']}",
+                    failure_cap=best_screen_failures,
+                    min_runs_before_stop=500,
                 )
 
-                update_hdf5_row(run_grp, cand["row_idx"], ler, std, run_t)
+                update_hdf5_row(
+                    run_grp,
+                    cand["row_idx"],
+                    result["ler"],
+                    result["stderr"],
+                    result["runtime"],
+                )
 
-                cand["ler"] = ler
-                cand["std"] = std
-                cand["runtime"] = run_t
+                cand["ler"] = result["ler"]
+                cand["std"] = result["stderr"]
+                cand["runtime"] = result["runtime"]
+                cand["failures"] = result["failures"]
+                cand["completed_runs"] = result["completed_runs"]
+                cand["early_stopped"] = result["early_stopped"]
                 screened_results.append(cand)
                 f.flush()
-        else:
-            tasks = [
-                {
-                    "state": cand["state"],
-                    "row_idx": cand["row_idx"],
-                    "p": p,
-                    "budget": args.screen_budget,
-                    "run_label": f"screen_row_{cand['row_idx']}",
-                }
-                for cand in unique_candidates
-            ]
 
-            results_by_row = {}
+                if (
+                    result["completed_runs"] == args.screen_budget
+                    and (
+                        best_screen_failures is None
+                        or result["failures"] < best_screen_failures
+                    )
+                ):
+                    best_screen_failures = result["failures"]
+        else:
+            if not unique_candidates:
+                print("No candidates to screen.")
+                return
+
+            # 1. Evaluate first candidate fully
+            first_cand = unique_candidates[0]
+            _, Hx0, Hz0 = get_code_parameters_and_matrices(first_cand["state"])
+
+            first_result = evaluate_mc(
+                Hx0,
+                Hz0,
+                p,
+                args.screen_budget,
+                run_label=f"screen_row_{first_cand['row_idx']}",
+                failure_cap=None,
+                min_runs_before_stop=500,
+                workers=args.workers,
+                batch_size=5000,
+            )
+
+            update_hdf5_row(
+                run_grp,
+                first_cand["row_idx"],
+                first_result["ler"],
+                first_result["stderr"],
+                first_result["runtime"],
+            )
+
+            first_cand.update({
+                "ler": first_result["ler"],
+                "std": first_result["stderr"],
+                "runtime": first_result["runtime"],
+                "failures": first_result["failures"],
+                "completed_runs": first_result["completed_runs"],
+                "early_stopped": first_result["early_stopped"],
+            })
+
+            screened_results.append(first_cand)
+            f.flush()
+
+            best_screen_failures = first_result["failures"]
+
+            # 2. Batched parallel
+            remaining = unique_candidates[1:]
+            batch_size = args.workers
 
             with ProcessPoolExecutor(max_workers=args.workers) as ex:
-                futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
+                for i in range(0, len(remaining), batch_size):
+                    batch = remaining[i:i + batch_size]
 
-                for fut in tqdm(as_completed(futures), total=len(futures), desc="Running MC (screening)"):
-                    res = fut.result()
-                    results_by_row[res["row_idx"]] = res
+                    tasks = [
+                        {
+                            "state": cand["state"],
+                            "row_idx": cand["row_idx"],
+                            "p": p,
+                            "budget": args.screen_budget,
+                            "run_label": f"screen_row_{cand['row_idx']}",
+                            "failure_cap": best_screen_failures,
+                            "min_runs_before_stop": 500,
+                        }
+                        for cand in batch
+                    ]
 
-            for cand in unique_candidates:
-                res = results_by_row[cand["row_idx"]]
-                update_hdf5_row(run_grp, cand["row_idx"], res["ler"], res["std"], res["runtime"])
+                    results_by_row = {}
 
-                cand["ler"] = res["ler"]
-                cand["std"] = res["std"]
-                cand["runtime"] = res["runtime"]
-                screened_results.append(cand)
-                f.flush()
+                    
+                    futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
+
+                    for fut in tqdm(
+                        as_completed(futures),
+                        total=len(futures),
+                        desc=f"Batch {i//batch_size + 1}"
+                    ):
+                        res = fut.result()
+                        results_by_row[res["row_idx"]] = res
+
+                    # 3. Update results + tighten cap
+                    for cand in batch:
+                        result = results_by_row[cand["row_idx"]]
+
+                        update_hdf5_row(
+                            run_grp,
+                            cand["row_idx"],
+                            result["ler"],
+                            result["std"],
+                            result["runtime"],
+                        )
+
+                        cand.update({
+                            "ler": result["ler"],
+                            "std": result["std"],
+                            "runtime": result["runtime"],
+                            "failures": result["failures"],
+                            "completed_runs": result["completed_runs"],
+                            "early_stopped": result["early_stopped"],
+                        })
+
+                        screened_results.append(cand)
+                        f.flush()
+
+                        # tighten incumbent
+                        if (
+                            result["completed_runs"] == args.screen_budget
+                            and result["failures"] < best_screen_failures
+                        ):
+                            best_screen_failures = result["failures"]
 
         if not screened_results:
             print("No candidates to screen.")
             return
 
-        screened_results.sort(key=lambda x: x["ler"])
+        screened_results.sort(
+            key=lambda x: (
+                x.get("early_stopped", False),                  # full runs first
+                x.get("failures", np.inf) if not x.get("early_stopped", False) else np.inf,
+                x["ler"],
+            )
+        )
         print(f"Best screening LER: {screened_results[0]['ler']:.6f} (dist={screened_results[0]['dist']})")
 
         print(f"\n>>> PHASE 3: Precision ({args.prec_budget})")
-        top_candidates = screened_results[:args.topk]
-        print(f"Promoting top {len(top_candidates)} candidates")
+        full_candidates = [c for c in screened_results if not c.get("early_stopped", False)]
 
+        if len(full_candidates) == 0:
+            print("WARNING: all candidates early-stopped, using best partial ones")
+            top_candidates = screened_results[:args.topk]
+        else:
+            top_candidates = full_candidates[:args.topk]
+
+        print(f"Promoting top {len(top_candidates)} candidates: {[c['ler'] for c in top_candidates]}")
+        for c in top_candidates:
+            print(f"  - dist={c['dist']} | screening LER={c['ler']:.6f} ± {c['std']:.6f} | runtime={c['runtime']:.2f}s")
         final_best_cand = None
         min_final_ler = np.inf
         final_best_std = np.inf
@@ -283,10 +412,17 @@ def main():
                 print(f"Evaluating row {cand['row_idx']} | dist={cand['dist']} | screening LER={cand['ler']:.6f}")
                 _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
 
-                ler, std, run_t = evaluate_mc(
-                    Hx, Hz, p, args.prec_budget,
+                result = evaluate_mc(
+                    Hx,
+                    Hz,
+                    p,
+                    args.prec_budget,
                     run_label=f"precision_row_{cand['row_idx']}",
                 )
+
+                ler = result["ler"]
+                std = result["stderr"]
+                run_t = result["runtime"]
 
                 update_hdf5_row(run_grp, cand["row_idx"], ler, std, run_t)
                 print(f"  -> LER: {ler:.6f} ± {std:.6f} | runtime={run_t//3600}h {run_t%3600//60}m {run_t%60:.2f}s")
@@ -309,6 +445,8 @@ def main():
                     "p": p,
                     "budget": args.prec_budget,
                     "run_label": f"precision_row_{cand['row_idx']}",
+                    "workers": args.workers,
+                    "batch_size": 5000,
                 }
                 for cand in top_candidates
             ]
@@ -363,7 +501,7 @@ def main():
         print(f"Run group name: {run_grp.name}")
 
     total_time = time.time() - start_time
-    print(f"\nTotal time: {total_time / 3600:.2f} h ({total_time // 3600:.0f}h {(total_time % 3600) // 60:.0f}m {total_time % 60:.2f}s)")
+    print(f"\nTotal time: {total_time // 3600:.0f}h {(total_time % 3600) // 60:.0f}m {total_time % 60:.2f}s")
     print(f"Saved to {OUTPUT_FILE}")
 
 

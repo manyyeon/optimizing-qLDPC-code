@@ -5,7 +5,7 @@ import ldpc.code_util
 from ldpc.bposd_decoder import BpOsdDecoder
 from scipy.sparse import csr_matrix
 
-from decoder_performance import compute_logical_error_rate
+from decoder_performance import compute_logical_error_rate, compute_logical_error_rate_parallel_batched
 from logical_operators import get_logical_operators_by_pivoting
 from basic_css_code import construct_HGP_code
 from optimization.experiments_settings import tanner_graph_to_parity_check_matrix
@@ -49,31 +49,73 @@ def get_code_parameters_and_matrices(state: nx.MultiGraph):
     return params, Hx, Hz
 
 
-def evaluate_mc(Hx, Hz, p, budget, run_label="eval"):
+def evaluate_mc(
+    Hx,
+    Hz,
+    p,
+    budget,
+    run_label="eval",
+    failure_cap=None,
+    min_runs_before_stop=0,
+    workers=1,
+    batch_size=5000,
+):
     if budget == 0:
-        return 0.0, 0.0, 0.0
+        return {
+            "ler": 0.0,
+            "stderr": 0.0,
+            "runtime": 0.0,
+            "failures": 0,
+            "completed_runs": 0,
+            "early_stopped": False,
+        }
 
-    bp_max_iter = int(Hx.shape[1] / 10)
     _, Lz = get_logical_operators_by_pivoting(Hx, Hz)
 
-    bp_osd_decoder = BpOsdDecoder(
-        pcm=Hz,
-        error_rate=float(p),
-        max_iter=bp_max_iter,
-        bp_method="minimum_sum",
-        ms_scaling_factor=0.625,
-        schedule="parallel",
-        osd_method="OSD_CS",
-        osd_order=2,
-    )
+    if workers == 1:
+        bp_max_iter = int(Hx.shape[1] / 10)
 
-    ler, stderr, runtime = compute_logical_error_rate(
-        Hz,
-        Lz,
-        p,
-        run_count=budget,
-        DECODER=bp_osd_decoder,
-        run_label=run_label,
-        DEBUG=False,
-    )
-    return ler, stderr, runtime
+        bp_osd_decoder = BpOsdDecoder(
+            pcm=Hz,
+            error_rate=float(p),
+            max_iter=bp_max_iter,
+            bp_method="minimum_sum",
+            ms_scaling_factor=0.625,
+            schedule="parallel",
+            osd_method="OSD_CS",
+            osd_order=2,
+        )
+
+        ler, stderr, runtime, failures, completed_runs, early_stopped = compute_logical_error_rate(
+            H=Hz,
+            L=Lz,
+            error_rate=p,
+            run_count=budget,
+            DECODER=bp_osd_decoder,
+            run_label=run_label,
+            DEBUG=False,
+            failure_cap=failure_cap,
+            min_runs_before_stop=min_runs_before_stop,
+        )
+
+    else:
+        ler, stderr, runtime, failures, completed_runs, early_stopped = compute_logical_error_rate_parallel_batched(
+            Hz=Hz,
+            Lz=Lz,
+            error_rate=p,
+            run_count=budget,
+            run_label=run_label,
+            workers=workers,
+            batch_size=batch_size,
+            failure_cap=failure_cap,
+            min_runs_before_stop=min_runs_before_stop,
+        )
+
+    return {
+        "ler": ler,
+        "stderr": stderr,
+        "runtime": runtime,
+        "failures": failures,
+        "completed_runs": completed_runs,
+        "early_stopped": early_stopped,
+    }

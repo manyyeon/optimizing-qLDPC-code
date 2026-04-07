@@ -152,6 +152,7 @@ def generate_logical_guided_candidates(
     tried_proposals = set()
     candidates = []
 
+    cand_trial_idx = 1
     while len(candidates) < num_candidates:
         proposal = propose_targeted_swap_from_logical(
             state,
@@ -173,14 +174,14 @@ def generate_logical_guided_candidates(
         H_new = tanner_graph_to_parity_check_matrix(new_state)
         if require_detectable and not is_classical_support_detectable(H_new, support):
             if verbose:
-                print("  Rejected: support still undetectable.")
+                print(f"  Rejected at {cand_trial_idx}/{num_candidates}: support still undetectable.")
             continue
 
         new_distance = min(new_params["d_classical"], new_params["d_T_classical"])
 
         if require_distance_non_decrease and new_distance < current_distance:
             if verbose:
-                print(f"  Rejected: distance {current_distance}->{new_distance}")
+                print(f"  Rejected at {cand_trial_idx}/{num_candidates}: distance {current_distance}->{new_distance}")
             continue
 
         candidates.append({
@@ -193,6 +194,8 @@ def generate_logical_guided_candidates(
             "distance_before": current_distance,
             "distance_after": new_distance,
         })
+
+        cand_trial_idx += 1
 
     return candidates
 
