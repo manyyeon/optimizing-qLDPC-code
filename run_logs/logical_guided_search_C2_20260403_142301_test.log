@@ -1,0 +1,1049 @@
+
+--- LOGICAL GUIDED SEARCH ---
+Code family: [1600,64]
+Noise level p = 0.03
+Search steps = 10
+Trials/step = 100
+Budgets: screening=10000, precision=100000
+Workers = 32
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+
+>>> PHASE 1: Logical-guided search
+
+Step 1/10 (global max dist so far = 6)
+  Target logical weight: 6
+  Current distance: 6
+  Rejected at 1/100: distance 6->4
+
+Step 2/10 (global max dist so far = 10)
+  Target logical weight: 10
+  Current distance: 10
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->4
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->4
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->4
+
+Step 3/10 (global max dist so far = 10)
+  Target logical weight: 10
+  Current distance: 10
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->2
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->6
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+  Rejected at 1/100: distance 10->8
+Distance has not increased in the last 3 steps, stopping early.
+
+>>> PHASE 2: Screening (10000)
+Found 301 total saved states.
+Screening 205 unique candidates with dist == 10
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder screen_row_38 finished in 0.0m 25.57s with 30 failures out of 10000/10000 runs.
+Logical error rate for screen_row_38: 0.003 ± 0.0005469 (stderr)
+Batch 1:   0%|          | 0/32 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder screen_row_39 EARLY-STOPPED in 0.0m 37.79s with 31 failures out of 9436/10000 runs.
+Logical error rate for screen_row_39: 0.0032852903772785077 ± 0.0005891 (stderr)
+Batch 1:   3%|▎         | 1/32 [00:46<23:46, 46.02s/it]Decoder screen_row_113 EARLY-STOPPED in 0.0m 37.87s with 31 failures out of 8625/10000 runs.
+Logical error rate for screen_row_113: 0.0035942028985507246 ± 0.0006444 (stderr)
+Decoder screen_row_104 EARLY-STOPPED in 0.0m 38.22s with 31 failures out of 9815/10000 runs.
+Logical error rate for screen_row_104: 0.0031584309730005094 ± 0.0005664 (stderr)
+Batch 1:   9%|▉         | 3/32 [00:46<05:49, 12.07s/it]Decoder screen_row_102 finished in 0.0m 39.39s with 30 failures out of 10000/10000 runs.
+Logical error rate for screen_row_102: 0.003 ± 0.0005469 (stderr)
+Batch 1:  12%|█▎        | 4/32 [00:47<03:49,  8.21s/it]Decoder screen_row_107 EARLY-STOPPED in 0.0m 39.39s with 31 failures out of 9393/10000 runs.
+Logical error rate for screen_row_107: 0.0033003300330033004 ± 0.0005918 (stderr)
+Batch 1:  16%|█▌        | 5/32 [00:48<02:35,  5.75s/it]Decoder screen_row_119 EARLY-STOPPED in 0.0m 41.58s with 31 failures out of 9556/10000 runs.
+Logical error rate for screen_row_119: 0.003244035161155295 ± 0.0005817 (stderr)
+Batch 1:  19%|█▉        | 6/32 [00:49<01:54,  4.39s/it]Decoder screen_row_112 finished in 0.0m 41.03s with 17 failures out of 10000/10000 runs.
+Logical error rate for screen_row_112: 0.0017 ± 0.0004120 (stderr)
+Batch 1:  22%|██▏       | 7/32 [00:49<01:17,  3.11s/it]Decoder screen_row_110 finished in 0.0m 42.14s with 27 failures out of 10000/10000 runs.
+Logical error rate for screen_row_110: 0.0027 ± 0.0005189 (stderr)
+Batch 1:  25%|██▌       | 8/32 [00:50<00:52,  2.20s/it]Decoder screen_row_103 finished in 0.0m 41.63s with 20 failures out of 10000/10000 runs.
+Logical error rate for screen_row_103: 0.002 ± 0.0004468 (stderr)
+Batch 1:  28%|██▊       | 9/32 [00:50<00:37,  1.64s/it]Decoder screen_row_114 finished in 0.0m 41.80s with 27 failures out of 10000/10000 runs.
+Logical error rate for screen_row_114: 0.0027 ± 0.0005189 (stderr)
+Decoder screen_row_118 finished in 0.0m 41.43s with 10 failures out of 10000/10000 runs.
+Logical error rate for screen_row_118: 0.001 ± 0.0003161 (stderr)
+Decoder screen_row_125 EARLY-STOPPED in 0.0m 40.75s with 31 failures out of 9654/10000 runs.
+Logical error rate for screen_row_125: 0.003211104205510669 ± 0.0005758 (stderr)
+Batch 1:  38%|███▊      | 12/32 [00:50<00:14,  1.35it/s]Decoder screen_row_59 finished in 0.0m 42.23s with 25 failures out of 10000/10000 runs.
+Logical error rate for screen_row_59: 0.0025 ± 0.0004994 (stderr)
+Decoder screen_row_128 finished in 0.0m 41.34s with 21 failures out of 10000/10000 runs.
+Logical error rate for screen_row_128: 0.0021 ± 0.0004578 (stderr)
+Batch 1:  44%|████▍     | 14/32 [00:50<00:09,  1.96it/s]Decoder screen_row_105 finished in 0.0m 42.36s with 17 failures out of 10000/10000 runs.
+Logical error rate for screen_row_105: 0.0017 ± 0.0004120 (stderr)
+Decoder screen_row_124 EARLY-STOPPED in 0.0m 42.19s with 31 failures out of 9533/10000 runs.
+Logical error rate for screen_row_124: 0.0032518619532151474 ± 0.0005831 (stderr)
+Batch 1:  50%|█████     | 16/32 [00:51<00:06,  2.66it/s]Decoder screen_row_122 finished in 0.0m 42.14s with 22 failures out of 10000/10000 runs.
+Logical error rate for screen_row_122: 0.0022 ± 0.0004685 (stderr)
+Batch 1:  53%|█████▎    | 17/32 [00:51<00:04,  3.09it/s]Decoder screen_row_126 finished in 0.0m 41.63s with 29 failures out of 10000/10000 runs.
+Logical error rate for screen_row_126: 0.0029 ± 0.0005378 (stderr)
+Decoder screen_row_123 finished in 0.0m 42.59s with 13 failures out of 10000/10000 runs.
+Logical error rate for screen_row_123: 0.0013 ± 0.0003603 (stderr)
+Decoder screen_row_106 finished in 0.0m 43.59s with 22 failures out of 10000/10000 runs.
+Logical error rate for screen_row_106: 0.0022 ± 0.0004685 (stderr)
+Batch 1:  62%|██████▎   | 20/32 [00:51<00:02,  4.37it/s]Decoder screen_row_45 EARLY-STOPPED in 0.0m 42.98s with 31 failures out of 9922/10000 runs.
+Logical error rate for screen_row_45: 0.0031243700866760734 ± 0.0005603 (stderr)
+Decoder screen_row_127 finished in 0.0m 42.31s with 27 failures out of 10000/10000 runs.
+Logical error rate for screen_row_127: 0.0027 ± 0.0005189 (stderr)
+Batch 1:  69%|██████▉   | 22/32 [00:51<00:01,  5.17it/s]Decoder screen_row_101 finished in 0.0m 43.43s with 22 failures out of 10000/10000 runs.
+Logical error rate for screen_row_101: 0.0022 ± 0.0004685 (stderr)
+Batch 1:  72%|███████▏  | 23/32 [00:51<00:01,  5.28it/s]Decoder screen_row_121 finished in 0.0m 42.96s with 18 failures out of 10000/10000 runs.
+Logical error rate for screen_row_121: 0.0018 ± 0.0004239 (stderr)
+Batch 1:  75%|███████▌  | 24/32 [00:52<00:01,  5.34it/s]Decoder screen_row_116 EARLY-STOPPED in 0.0m 43.34s with 31 failures out of 9996/10000 runs.
+Logical error rate for screen_row_116: 0.0031012404961984793 ± 0.0005562 (stderr)
+Batch 1:  78%|███████▊  | 25/32 [00:52<00:01,  5.44it/s]Decoder screen_row_108 finished in 0.0m 44.66s with 18 failures out of 10000/10000 runs.
+Logical error rate for screen_row_108: 0.0018 ± 0.0004239 (stderr)
+Batch 1:  81%|████████▏ | 26/32 [00:52<00:01,  3.41it/s]Decoder screen_row_109 finished in 0.0m 44.61s with 24 failures out of 10000/10000 runs.
+Logical error rate for screen_row_109: 0.0024 ± 0.0004893 (stderr)
+Decoder screen_row_111 finished in 0.0m 43.75s with 22 failures out of 10000/10000 runs.
+Logical error rate for screen_row_111: 0.0022 ± 0.0004685 (stderr)
+Batch 1:  88%|████████▊ | 28/32 [00:52<00:00,  4.92it/s]Decoder screen_row_115 finished in 0.0m 45.25s with 24 failures out of 10000/10000 runs.
+Logical error rate for screen_row_115: 0.0024 ± 0.0004893 (stderr)
+Batch 1:  91%|█████████ | 29/32 [00:53<00:00,  5.39it/s]Decoder screen_row_117 finished in 0.0m 43.97s with 18 failures out of 10000/10000 runs.
+Logical error rate for screen_row_117: 0.0018 ± 0.0004239 (stderr)
+Batch 1:  94%|█████████▍| 30/32 [00:53<00:00,  5.40it/s]Decoder screen_row_120 finished in 0.0m 43.94s with 21 failures out of 10000/10000 runs.
+Logical error rate for screen_row_120: 0.0021 ± 0.0004578 (stderr)
+Batch 1:  97%|█████████▋| 31/32 [00:53<00:00,  5.20it/s]Decoder screen_row_85 finished in 0.0m 44.93s with 26 failures out of 10000/10000 runs.
+Logical error rate for screen_row_85: 0.0026 ± 0.0005093 (stderr)
+Batch 1: 100%|██████████| 32/32 [00:53<00:00,  5.04it/s]Batch 1: 100%|██████████| 32/32 [00:53<00:00,  1.68s/it]
+Batch 2:   0%|          | 0/32 [00:00<?, ?it/s]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder screen_row_137 EARLY-STOPPED in 0.0m 11.89s with 11 failures out of 2699/10000 runs.
+Logical error rate for screen_row_137: 0.004075583549462764 ± 0.0012266 (stderr)
+Batch 2:   3%|▎         | 1/32 [00:18<09:26, 18.26s/it]Decoder screen_row_134 EARLY-STOPPED in 0.0m 11.75s with 11 failures out of 3166/10000 runs.
+Logical error rate for screen_row_134: 0.003474415666456096 ± 0.0010459 (stderr)
+Batch 2:   6%|▋         | 2/32 [00:18<03:49,  7.65s/it]Decoder screen_row_130 EARLY-STOPPED in 0.0m 11.75s with 11 failures out of 2799/10000 runs.
+Logical error rate for screen_row_130: 0.003929974991068239 ± 0.0011828 (stderr)
+Decoder screen_row_141 EARLY-STOPPED in 0.0m 15.31s with 11 failures out of 3860/10000 runs.
+Logical error rate for screen_row_141: 0.002849740932642487 ± 0.0008581 (stderr)
+Batch 2:  12%|█▎        | 4/32 [00:21<01:45,  3.75s/it]Decoder screen_row_158 EARLY-STOPPED in 0.0m 15.39s with 11 failures out of 3696/10000 runs.
+Logical error rate for screen_row_158: 0.002976190476190476 ± 0.0008961 (stderr)
+Batch 2:  16%|█▌        | 5/32 [00:21<01:12,  2.69s/it]Decoder screen_row_144 EARLY-STOPPED in 0.0m 15.23s with 11 failures out of 3474/10000 runs.
+Logical error rate for screen_row_144: 0.0031663788140472078 ± 0.0009533 (stderr)
+Batch 2:  19%|█▉        | 6/32 [00:22<00:51,  1.97s/it]Decoder screen_row_133 EARLY-STOPPED in 0.0m 15.83s with 11 failures out of 3704/10000 runs.
+Logical error rate for screen_row_133: 0.0029697624190064796 ± 0.0008942 (stderr)
+Batch 2:  22%|██▏       | 7/32 [00:22<00:37,  1.52s/it]Decoder screen_row_149 EARLY-STOPPED in 0.0m 16.14s with 11 failures out of 3777/10000 runs.
+Logical error rate for screen_row_149: 0.0029123643102991793 ± 0.0008769 (stderr)
+Decoder screen_row_153 EARLY-STOPPED in 0.0m 15.88s with 11 failures out of 3757/10000 runs.
+Logical error rate for screen_row_153: 0.002927867979771094 ± 0.0008816 (stderr)
+Batch 2:  28%|██▊       | 9/32 [00:22<00:19,  1.18it/s]Decoder screen_row_147 EARLY-STOPPED in 0.0m 17.49s with 11 failures out of 4313/10000 runs.
+Logical error rate for screen_row_147: 0.002550428935775562 ± 0.0007681 (stderr)
+Batch 2:  31%|███▏      | 10/32 [00:22<00:14,  1.49it/s]Decoder screen_row_139 EARLY-STOPPED in 0.0m 15.98s with 11 failures out of 4358/10000 runs.
+Logical error rate for screen_row_139: 0.0025240936209270305 ± 0.0007602 (stderr)
+Batch 2:  34%|███▍      | 11/32 [00:23<00:13,  1.59it/s]Decoder screen_row_152 EARLY-STOPPED in 0.0m 17.25s with 11 failures out of 4115/10000 runs.
+Logical error rate for screen_row_152: 0.0026731470230862697 ± 0.0008050 (stderr)
+Batch 2:  38%|███▊      | 12/32 [00:23<00:10,  1.99it/s]Decoder screen_row_148 EARLY-STOPPED in 0.0m 19.30s with 11 failures out of 4852/10000 runs.
+Logical error rate for screen_row_148: 0.002267106347897774 ± 0.0006829 (stderr)
+Batch 2:  41%|████      | 13/32 [00:25<00:17,  1.06it/s]Decoder screen_row_154 EARLY-STOPPED in 0.0m 19.34s with 11 failures out of 5172/10000 runs.
+Logical error rate for screen_row_154: 0.0021268368136117557 ± 0.0006406 (stderr)
+Decoder screen_row_159 EARLY-STOPPED in 0.0m 19.85s with 11 failures out of 5112/10000 runs.
+Logical error rate for screen_row_159: 0.0021517996870109544 ± 0.0006482 (stderr)
+Batch 2:  47%|████▋     | 15/32 [00:26<00:11,  1.48it/s]Decoder screen_row_145 EARLY-STOPPED in 0.0m 19.89s with 11 failures out of 5151/10000 runs.
+Logical error rate for screen_row_145: 0.0021355076684139 ± 0.0006433 (stderr)
+Batch 2:  50%|█████     | 16/32 [00:26<00:08,  1.81it/s]Decoder screen_row_135 EARLY-STOPPED in 0.0m 20.49s with 11 failures out of 5729/10000 runs.
+Logical error rate for screen_row_135: 0.0019200558561703613 ± 0.0005784 (stderr)
+Batch 2:  53%|█████▎    | 17/32 [00:26<00:07,  2.07it/s]Decoder screen_row_150 EARLY-STOPPED in 0.0m 21.61s with 11 failures out of 5484/10000 runs.
+Logical error rate for screen_row_150: 0.0020058351568198397 ± 0.0006042 (stderr)
+Batch 2:  56%|█████▋    | 18/32 [00:26<00:05,  2.36it/s]Decoder screen_row_140 EARLY-STOPPED in 0.0m 21.52s with 11 failures out of 5229/10000 runs.
+Logical error rate for screen_row_140: 0.0021036527060623446 ± 0.0006337 (stderr)
+Batch 2:  59%|█████▉    | 19/32 [00:27<00:07,  1.81it/s]Decoder screen_row_129 EARLY-STOPPED in 0.0m 21.37s with 11 failures out of 5179/10000 runs.
+Logical error rate for screen_row_129: 0.0021239621548561497 ± 0.0006398 (stderr)
+Batch 2:  62%|██████▎   | 20/32 [00:28<00:05,  2.24it/s]Decoder screen_row_151 EARLY-STOPPED in 0.0m 21.41s with 11 failures out of 5609/10000 runs.
+Logical error rate for screen_row_151: 0.001961133891959351 ± 0.0005908 (stderr)
+Batch 2:  66%|██████▌   | 21/32 [00:28<00:04,  2.58it/s]Decoder screen_row_132 EARLY-STOPPED in 0.0m 21.66s with 11 failures out of 5789/10000 runs.
+Logical error rate for screen_row_132: 0.0019001554672655036 ± 0.0005724 (stderr)
+Batch 2:  69%|██████▉   | 22/32 [00:28<00:03,  3.19it/s]Decoder screen_row_160 EARLY-STOPPED in 0.0m 21.60s with 11 failures out of 5718/10000 runs.
+Logical error rate for screen_row_160: 0.0019237495627841903 ± 0.0005795 (stderr)
+Batch 2:  72%|███████▏  | 23/32 [00:28<00:02,  3.86it/s]Decoder screen_row_142 EARLY-STOPPED in 0.0m 21.54s with 11 failures out of 5582/10000 runs.
+Logical error rate for screen_row_142: 0.001970619849516302 ± 0.0005936 (stderr)
+Decoder screen_row_146 EARLY-STOPPED in 0.0m 22.73s with 11 failures out of 6258/10000 runs.
+Logical error rate for screen_row_146: 0.001757750079897731 ± 0.0005296 (stderr)
+Batch 2:  78%|███████▊  | 25/32 [00:28<00:01,  4.34it/s]Decoder screen_row_136 EARLY-STOPPED in 0.0m 23.22s with 11 failures out of 5907/10000 runs.
+Logical error rate for screen_row_136: 0.00186219739292365 ± 0.0005610 (stderr)
+Batch 2:  81%|████████▏ | 26/32 [00:29<00:01,  4.70it/s]Decoder screen_row_143 EARLY-STOPPED in 0.0m 23.53s with 11 failures out of 6426/10000 runs.
+Logical error rate for screen_row_143: 0.0017117958294428882 ± 0.0005157 (stderr)
+Batch 2:  84%|████████▍ | 27/32 [00:30<00:02,  2.14it/s]Decoder screen_row_155 EARLY-STOPPED in 0.0m 24.02s with 11 failures out of 6455/10000 runs.
+Logical error rate for screen_row_155: 0.0017041053446940357 ± 0.0005134 (stderr)
+Batch 2:  88%|████████▊ | 28/32 [00:31<00:02,  1.71it/s]Decoder screen_row_157 EARLY-STOPPED in 0.0m 24.69s with 11 failures out of 6676/10000 runs.
+Logical error rate for screen_row_157: 0.0016476932294787298 ± 0.0004964 (stderr)
+Batch 2:  91%|█████████ | 29/32 [00:31<00:01,  1.95it/s]Decoder screen_row_131 EARLY-STOPPED in 0.0m 24.64s with 11 failures out of 6621/10000 runs.
+Logical error rate for screen_row_131: 0.0016613804561244525 ± 0.0005005 (stderr)
+Batch 2:  94%|█████████▍| 30/32 [00:31<00:00,  2.41it/s]Decoder screen_row_156 EARLY-STOPPED in 0.0m 26.47s with 11 failures out of 7102/10000 runs.
+Logical error rate for screen_row_156: 0.0015488594762038863 ± 0.0004667 (stderr)
+Batch 2:  97%|█████████▋| 31/32 [00:33<00:00,  1.31it/s]Decoder screen_row_138 EARLY-STOPPED in 0.0m 28.38s with 11 failures out of 7354/10000 runs.
+Logical error rate for screen_row_138: 0.0014957846070165896 ± 0.0004507 (stderr)
+Batch 2: 100%|██████████| 32/32 [00:34<00:00,  1.00it/s]Batch 2: 100%|██████████| 32/32 [00:34<00:00,  1.09s/it]
+Batch 3:   0%|          | 0/32 [00:00<?, ?it/s]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder screen_row_171 EARLY-STOPPED in 0.0m 10.59s with 11 failures out of 2445/10000 runs.
+Logical error rate for screen_row_171: 0.004498977505112475 ± 0.0013537 (stderr)
+Batch 3:   3%|▎         | 1/32 [00:17<09:13, 17.85s/it]Decoder screen_row_178 EARLY-STOPPED in 0.0m 12.47s with 11 failures out of 3044/10000 runs.
+Logical error rate for screen_row_178: 0.0036136662286465177 ± 0.0010878 (stderr)
+Batch 3:   6%|▋         | 2/32 [00:19<04:09,  8.33s/it]Decoder screen_row_187 EARLY-STOPPED in 0.0m 13.25s with 11 failures out of 3476/10000 runs.
+Logical error rate for screen_row_187: 0.0031645569620253164 ± 0.0009528 (stderr)
+Batch 3:   9%|▉         | 3/32 [00:20<02:22,  4.90s/it]Decoder screen_row_170 EARLY-STOPPED in 0.0m 14.62s with 11 failures out of 3155/10000 runs.
+Logical error rate for screen_row_170: 0.003486529318541997 ± 0.0010496 (stderr)
+Batch 3:  12%|█▎        | 4/32 [00:20<01:25,  3.04s/it]Decoder screen_row_181 EARLY-STOPPED in 0.0m 15.13s with 11 failures out of 3174/10000 runs.
+Logical error rate for screen_row_181: 0.003465658475110271 ± 0.0010433 (stderr)
+Batch 3:  16%|█▌        | 5/32 [00:21<00:58,  2.17s/it]Decoder screen_row_185 EARLY-STOPPED in 0.0m 14.93s with 11 failures out of 3607/10000 runs.
+Logical error rate for screen_row_185: 0.003049625727751594 ± 0.0009182 (stderr)
+Batch 3:  19%|█▉        | 6/32 [00:22<00:48,  1.87s/it]Decoder screen_row_183 EARLY-STOPPED in 0.0m 16.18s with 11 failures out of 4126/10000 runs.
+Logical error rate for screen_row_183: 0.002666020358700921 ± 0.0008029 (stderr)
+Batch 3:  22%|██▏       | 7/32 [00:23<00:38,  1.53s/it]Decoder screen_row_167 EARLY-STOPPED in 0.0m 16.31s with 11 failures out of 3897/10000 runs.
+Logical error rate for screen_row_167: 0.0028226841159866563 ± 0.0008500 (stderr)
+Decoder screen_row_163 EARLY-STOPPED in 0.0m 16.91s with 11 failures out of 3783/10000 runs.
+Logical error rate for screen_row_163: 0.002907745175786413 ± 0.0008756 (stderr)
+Batch 3:  28%|██▊       | 9/32 [00:23<00:18,  1.22it/s]Decoder screen_row_179 EARLY-STOPPED in 0.0m 16.73s with 11 failures out of 3910/10000 runs.
+Logical error rate for screen_row_179: 0.002813299232736573 ± 0.0008472 (stderr)
+Batch 3:  31%|███▏      | 10/32 [00:23<00:16,  1.35it/s]Decoder screen_row_169 EARLY-STOPPED in 0.0m 16.99s with 11 failures out of 3953/10000 runs.
+Logical error rate for screen_row_169: 0.0027826966860612194 ± 0.0008380 (stderr)
+Batch 3:  34%|███▍      | 11/32 [00:24<00:12,  1.73it/s]Decoder screen_row_188 EARLY-STOPPED in 0.0m 17.48s with 11 failures out of 4209/10000 runs.
+Logical error rate for screen_row_188: 0.002613447374673319 ± 0.0007870 (stderr)
+Decoder screen_row_161 EARLY-STOPPED in 0.0m 18.28s with 11 failures out of 4276/10000 runs.
+Logical error rate for screen_row_161: 0.0025724976613657625 ± 0.0007747 (stderr)
+Batch 3:  41%|████      | 13/32 [00:25<00:10,  1.75it/s]Decoder screen_row_164 EARLY-STOPPED in 0.0m 18.09s with 11 failures out of 4616/10000 runs.
+Logical error rate for screen_row_164: 0.002383015597920277 ± 0.0007177 (stderr)
+Batch 3:  44%|████▍     | 14/32 [00:25<00:08,  2.10it/s]Decoder screen_row_191 EARLY-STOPPED in 0.0m 18.26s with 11 failures out of 4508/10000 runs.
+Logical error rate for screen_row_191: 0.0024401064773735583 ± 0.0007349 (stderr)
+Batch 3:  47%|████▋     | 15/32 [00:25<00:08,  2.09it/s]Decoder screen_row_166 EARLY-STOPPED in 0.0m 19.35s with 11 failures out of 5281/10000 runs.
+Logical error rate for screen_row_166: 0.0020829388373414127 ± 0.0006274 (stderr)
+Batch 3:  50%|█████     | 16/32 [00:25<00:06,  2.53it/s]Decoder screen_row_184 EARLY-STOPPED in 0.0m 20.82s with 11 failures out of 5491/10000 runs.
+Logical error rate for screen_row_184: 0.0020032780914223274 ± 0.0006035 (stderr)
+Batch 3:  53%|█████▎    | 17/32 [00:27<00:10,  1.45it/s]Decoder screen_row_192 EARLY-STOPPED in 0.0m 20.39s with 11 failures out of 5439/10000 runs.
+Logical error rate for screen_row_192: 0.0020224305938591654 ± 0.0006092 (stderr)
+Decoder screen_row_175 EARLY-STOPPED in 0.0m 20.38s with 11 failures out of 4913/10000 runs.
+Logical error rate for screen_row_175: 0.0022389578668837776 ± 0.0006744 (stderr)
+Decoder screen_row_173 EARLY-STOPPED in 0.0m 22.18s with 11 failures out of 5753/10000 runs.
+Logical error rate for screen_row_173: 0.0019120458891013384 ± 0.0005760 (stderr)
+Batch 3:  62%|██████▎   | 20/32 [00:28<00:05,  2.33it/s]Decoder screen_row_168 EARLY-STOPPED in 0.0m 21.56s with 11 failures out of 5517/10000 runs.
+Logical error rate for screen_row_168: 0.001993837230378829 ± 0.0006006 (stderr)
+Batch 3:  66%|██████▌   | 21/32 [00:28<00:05,  2.03it/s]Decoder screen_row_174 EARLY-STOPPED in 0.0m 21.96s with 11 failures out of 5878/10000 runs.
+Logical error rate for screen_row_174: 0.00187138482477033 ± 0.0005638 (stderr)
+Decoder screen_row_172 EARLY-STOPPED in 0.0m 22.92s with 11 failures out of 5703/10000 runs.
+Logical error rate for screen_row_172: 0.0019288093985621604 ± 0.0005810 (stderr)
+Batch 3:  72%|███████▏  | 23/32 [00:29<00:03,  2.67it/s]Decoder screen_row_190 EARLY-STOPPED in 0.0m 22.27s with 11 failures out of 5946/10000 runs.
+Logical error rate for screen_row_190: 0.001849983181971073 ± 0.0005573 (stderr)
+Batch 3:  75%|███████▌  | 24/32 [00:29<00:02,  2.93it/s]Decoder screen_row_180 EARLY-STOPPED in 0.0m 22.96s with 11 failures out of 5922/10000 runs.
+Logical error rate for screen_row_180: 0.0018574805808848362 ± 0.0005596 (stderr)
+Batch 3:  78%|███████▊  | 25/32 [00:29<00:02,  2.52it/s]Decoder screen_row_182 EARLY-STOPPED in 0.0m 23.19s with 11 failures out of 6418/10000 runs.
+Logical error rate for screen_row_182: 0.0017139295730757246 ± 0.0005164 (stderr)
+Batch 3:  81%|████████▏ | 26/32 [00:30<00:02,  2.88it/s]Decoder screen_row_189 EARLY-STOPPED in 0.0m 24.02s with 11 failures out of 6073/10000 runs.
+Logical error rate for screen_row_189: 0.0018112958998847356 ± 0.0005457 (stderr)
+Decoder screen_row_177 EARLY-STOPPED in 0.0m 23.23s with 11 failures out of 5342/10000 runs.
+Logical error rate for screen_row_177: 0.0020591538749532012 ± 0.0006203 (stderr)
+Batch 3:  88%|████████▊ | 28/32 [00:30<00:01,  3.90it/s]Decoder screen_row_165 EARLY-STOPPED in 0.0m 24.33s with 11 failures out of 6603/10000 runs.
+Logical error rate for screen_row_165: 0.0016659094351052551 ± 0.0005019 (stderr)
+Batch 3:  91%|█████████ | 29/32 [00:30<00:00,  4.43it/s]Decoder screen_row_162 EARLY-STOPPED in 0.0m 24.82s with 11 failures out of 6622/10000 runs.
+Logical error rate for screen_row_162: 0.0016611295681063123 ± 0.0005005 (stderr)
+Batch 3:  94%|█████████▍| 30/32 [00:30<00:00,  3.62it/s]Decoder screen_row_176 EARLY-STOPPED in 0.0m 29.16s with 11 failures out of 7221/10000 runs.
+Logical error rate for screen_row_176: 0.0015233347181830771 ± 0.0004590 (stderr)
+Batch 3:  97%|█████████▋| 31/32 [00:35<00:01,  1.39s/it]Decoder screen_row_186 EARLY-STOPPED in 0.0m 30.15s with 11 failures out of 9700/10000 runs.
+Logical error rate for screen_row_186: 0.001134020618556701 ± 0.0003417 (stderr)
+Batch 3: 100%|██████████| 32/32 [00:36<00:00,  1.38s/it]Batch 3: 100%|██████████| 32/32 [00:36<00:00,  1.15s/it]
+Batch 4:   0%|          | 0/32 [00:00<?, ?it/s]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder screen_row_212 EARLY-STOPPED in 0.0m 8.49s with 11 failures out of 2012/10000 runs.
+Logical error rate for screen_row_212: 0.0054671968190854875 ± 0.0016443 (stderr)
+Batch 4:   3%|▎         | 1/32 [00:14<07:33, 14.64s/it]Decoder screen_row_201 EARLY-STOPPED in 0.0m 10.29s with 11 failures out of 2487/10000 runs.
+Logical error rate for screen_row_201: 0.004422999597909127 ± 0.0013309 (stderr)
+Batch 4:   6%|▋         | 2/32 [00:16<03:39,  7.33s/it]Decoder screen_row_208 EARLY-STOPPED in 0.0m 11.98s with 11 failures out of 2736/10000 runs.
+Logical error rate for screen_row_208: 0.00402046783625731 ± 0.0012100 (stderr)
+Batch 4:   9%|▉         | 3/32 [00:17<02:04,  4.31s/it]Decoder screen_row_215 EARLY-STOPPED in 0.0m 11.36s with 11 failures out of 2790/10000 runs.
+Logical error rate for screen_row_215: 0.003942652329749104 ± 0.0011866 (stderr)
+Batch 4:  12%|█▎        | 4/32 [00:17<01:16,  2.75s/it]Decoder screen_row_203 EARLY-STOPPED in 0.0m 12.99s with 11 failures out of 2984/10000 runs.
+Logical error rate for screen_row_203: 0.003686327077747989 ± 0.0011096 (stderr)
+Batch 4:  16%|█▌        | 5/32 [00:19<01:04,  2.39s/it]Decoder screen_row_197 EARLY-STOPPED in 0.0m 13.09s with 11 failures out of 3431/10000 runs.
+Logical error rate for screen_row_197: 0.0032060623724861556 ± 0.0009653 (stderr)
+Batch 4:  19%|█▉        | 6/32 [00:19<00:42,  1.63s/it]Decoder screen_row_204 EARLY-STOPPED in 0.0m 13.92s with 11 failures out of 3378/10000 runs.
+Logical error rate for screen_row_204: 0.003256364712847839 ± 0.0009804 (stderr)
+Batch 4:  22%|██▏       | 7/32 [00:20<00:31,  1.28s/it]Decoder screen_row_216 EARLY-STOPPED in 0.0m 14.01s with 11 failures out of 3166/10000 runs.
+Logical error rate for screen_row_216: 0.003474415666456096 ± 0.0010459 (stderr)
+Decoder screen_row_209 EARLY-STOPPED in 0.0m 14.33s with 11 failures out of 3807/10000 runs.
+Logical error rate for screen_row_209: 0.0028894142369319674 ± 0.0008700 (stderr)
+Batch 4:  28%|██▊       | 9/32 [00:20<00:17,  1.30it/s]Decoder screen_row_198 EARLY-STOPPED in 0.0m 15.13s with 11 failures out of 4054/10000 runs.
+Logical error rate for screen_row_198: 0.002713369511593488 ± 0.0008171 (stderr)
+Batch 4:  31%|███▏      | 10/32 [00:21<00:15,  1.45it/s]Decoder screen_row_211 EARLY-STOPPED in 0.0m 14.81s with 11 failures out of 3544/10000 runs.
+Logical error rate for screen_row_211: 0.0031038374717832955 ± 0.0009345 (stderr)
+Batch 4:  34%|███▍      | 11/32 [00:21<00:12,  1.72it/s]Decoder screen_row_196 EARLY-STOPPED in 0.0m 16.09s with 11 failures out of 3917/10000 runs.
+Logical error rate for screen_row_196: 0.002808271636456472 ± 0.0008456 (stderr)
+Batch 4:  38%|███▊      | 12/32 [00:22<00:11,  1.79it/s]Decoder screen_row_214 EARLY-STOPPED in 0.0m 17.13s with 11 failures out of 4410/10000 runs.
+Logical error rate for screen_row_214: 0.002494331065759637 ± 0.0007512 (stderr)
+Batch 4:  41%|████      | 13/32 [00:23<00:13,  1.40it/s]Decoder screen_row_202 EARLY-STOPPED in 0.0m 16.53s with 11 failures out of 4145/10000 runs.
+Logical error rate for screen_row_202: 0.0026537997587454767 ± 0.0007992 (stderr)
+Batch 4:  44%|████▍     | 14/32 [00:23<00:10,  1.80it/s]Decoder screen_row_199 EARLY-STOPPED in 0.0m 17.15s with 11 failures out of 4274/10000 runs.
+Logical error rate for screen_row_199: 0.0025737014506317267 ± 0.0007751 (stderr)
+Batch 4:  47%|████▋     | 15/32 [00:23<00:09,  1.82it/s]Decoder screen_row_220 EARLY-STOPPED in 0.0m 17.74s with 11 failures out of 3998/10000 runs.
+Logical error rate for screen_row_220: 0.002751375687843922 ± 0.0008285 (stderr)
+Batch 4:  50%|█████     | 16/32 [00:24<00:07,  2.07it/s]Decoder screen_row_224 EARLY-STOPPED in 0.0m 18.70s with 11 failures out of 4379/10000 runs.
+Logical error rate for screen_row_224: 0.002511989038593286 ± 0.0007565 (stderr)
+Batch 4:  53%|█████▎    | 17/32 [00:24<00:06,  2.22it/s]Decoder screen_row_210 EARLY-STOPPED in 0.0m 17.92s with 11 failures out of 4624/10000 runs.
+Logical error rate for screen_row_210: 0.002378892733564014 ± 0.0007165 (stderr)
+Batch 4:  56%|█████▋    | 18/32 [00:24<00:05,  2.42it/s]Decoder screen_row_218 EARLY-STOPPED in 0.0m 18.63s with 11 failures out of 4992/10000 runs.
+Logical error rate for screen_row_218: 0.002203525641025641 ± 0.0006637 (stderr)
+Batch 4:  59%|█████▉    | 19/32 [00:25<00:05,  2.30it/s]Decoder screen_row_221 EARLY-STOPPED in 0.0m 18.18s with 11 failures out of 4303/10000 runs.
+Logical error rate for screen_row_221: 0.0025563560306762724 ± 0.0007699 (stderr)
+Batch 4:  62%|██████▎   | 20/32 [00:25<00:04,  2.88it/s]Decoder screen_row_223 EARLY-STOPPED in 0.0m 19.35s with 11 failures out of 5292/10000 runs.
+Logical error rate for screen_row_223: 0.0020786092214663643 ± 0.0006261 (stderr)
+Batch 4:  66%|██████▌   | 21/32 [00:25<00:03,  3.40it/s]Decoder screen_row_213 EARLY-STOPPED in 0.0m 19.66s with 11 failures out of 5612/10000 runs.
+Logical error rate for screen_row_213: 0.0019600855310049894 ± 0.0005905 (stderr)
+Batch 4:  69%|██████▉   | 22/32 [00:26<00:03,  2.63it/s]Decoder screen_row_207 EARLY-STOPPED in 0.0m 19.60s with 11 failures out of 5123/10000 runs.
+Logical error rate for screen_row_207: 0.002147179387077884 ± 0.0006468 (stderr)
+Decoder screen_row_217 EARLY-STOPPED in 0.0m 20.04s with 11 failures out of 4979/10000 runs.
+Logical error rate for screen_row_217: 0.0022092789716810605 ± 0.0006655 (stderr)
+Batch 4:  75%|███████▌  | 24/32 [00:26<00:02,  3.68it/s]Decoder screen_row_194 EARLY-STOPPED in 0.0m 20.62s with 11 failures out of 5649/10000 runs.
+Logical error rate for screen_row_194: 0.0019472473004071517 ± 0.0005866 (stderr)
+Batch 4:  78%|███████▊  | 25/32 [00:27<00:02,  2.68it/s]Decoder screen_row_193 EARLY-STOPPED in 0.0m 20.97s with 11 failures out of 5264/10000 runs.
+Logical error rate for screen_row_193: 0.0020896656534954406 ± 0.0006295 (stderr)
+Batch 4:  81%|████████▏ | 26/32 [00:27<00:02,  2.52it/s]Decoder screen_row_222 EARLY-STOPPED in 0.0m 21.42s with 11 failures out of 5639/10000 runs.
+Logical error rate for screen_row_222: 0.0019507004788082993 ± 0.0005876 (stderr)
+Batch 4:  84%|████████▍ | 27/32 [00:27<00:01,  2.95it/s]Decoder screen_row_205 EARLY-STOPPED in 0.0m 22.11s with 11 failures out of 5473/10000 runs.
+Logical error rate for screen_row_205: 0.0020098666179426275 ± 0.0006054 (stderr)
+Batch 4:  88%|████████▊ | 28/32 [00:28<00:01,  2.01it/s]Decoder screen_row_206 EARLY-STOPPED in 0.0m 23.17s with 11 failures out of 5812/10000 runs.
+Logical error rate for screen_row_206: 0.0018926359256710254 ± 0.0005702 (stderr)
+Batch 4:  91%|█████████ | 29/32 [00:29<00:01,  1.69it/s]Decoder screen_row_195 EARLY-STOPPED in 0.0m 24.67s with 11 failures out of 7131/10000 runs.
+Logical error rate for screen_row_195: 0.001542560650680129 ± 0.0004648 (stderr)
+Batch 4:  94%|█████████▍| 30/32 [00:31<00:01,  1.14it/s]Decoder screen_row_219 EARLY-STOPPED in 0.0m 24.18s with 11 failures out of 6690/10000 runs.
+Logical error rate for screen_row_219: 0.0016442451420029896 ± 0.0004954 (stderr)
+Batch 4:  97%|█████████▋| 31/32 [00:31<00:00,  1.53it/s]Decoder screen_row_200 EARLY-STOPPED in 0.0m 24.93s with 11 failures out of 7600/10000 runs.
+Logical error rate for screen_row_200: 0.0014473684210526317 ± 0.0004361 (stderr)
+Batch 4: 100%|██████████| 32/32 [00:32<00:00,  1.38it/s]Batch 4: 100%|██████████| 32/32 [00:32<00:00,  1.01s/it]
+Batch 5:   0%|          | 0/32 [00:00<?, ?it/s]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder screen_row_248 EARLY-STOPPED in 0.0m 10.87s with 11 failures out of 2679/10000 runs.
+Logical error rate for screen_row_248: 0.004106009705113848 ± 0.0012357 (stderr)
+Batch 5:   3%|▎         | 1/32 [00:17<09:09, 17.73s/it]Decoder screen_row_250 EARLY-STOPPED in 0.0m 12.59s with 11 failures out of 2783/10000 runs.
+Logical error rate for screen_row_250: 0.003952569169960474 ± 0.0011896 (stderr)
+Batch 5:   6%|▋         | 2/32 [00:18<03:57,  7.91s/it]Decoder screen_row_252 EARLY-STOPPED in 0.0m 12.57s with 11 failures out of 2755/10000 runs.
+Logical error rate for screen_row_252: 0.003992740471869328 ± 0.0012017 (stderr)
+Batch 5:   9%|▉         | 3/32 [00:19<02:16,  4.71s/it]Decoder screen_row_229 EARLY-STOPPED in 0.0m 14.17s with 11 failures out of 3295/10000 runs.
+Logical error rate for screen_row_229: 0.003338391502276176 ± 0.0010050 (stderr)
+Batch 5:  12%|█▎        | 4/32 [00:20<01:29,  3.20s/it]Decoder screen_row_253 EARLY-STOPPED in 0.0m 14.20s with 11 failures out of 3226/10000 runs.
+Logical error rate for screen_row_253: 0.0034097954122752636 ± 0.0010265 (stderr)
+Batch 5:  16%|█▌        | 5/32 [00:20<00:58,  2.18s/it]Decoder screen_row_247 EARLY-STOPPED in 0.0m 13.80s with 11 failures out of 3927/10000 runs.
+Logical error rate for screen_row_247: 0.0028011204481792717 ± 0.0008435 (stderr)
+Decoder screen_row_230 EARLY-STOPPED in 0.0m 14.14s with 11 failures out of 3456/10000 runs.
+Logical error rate for screen_row_230: 0.00318287037037037 ± 0.0009583 (stderr)
+Batch 5:  22%|██▏       | 7/32 [00:21<00:28,  1.15s/it]Decoder screen_row_236 EARLY-STOPPED in 0.0m 15.45s with 11 failures out of 3907/10000 runs.
+Logical error rate for screen_row_236: 0.0028154594317890964 ± 0.0008478 (stderr)
+Batch 5:  25%|██▌       | 8/32 [00:21<00:21,  1.13it/s]Decoder screen_row_249 EARLY-STOPPED in 0.0m 15.00s with 11 failures out of 3804/10000 runs.
+Logical error rate for screen_row_249: 0.0028916929547844372 ± 0.0008707 (stderr)
+Batch 5:  28%|██▊       | 9/32 [00:21<00:17,  1.31it/s]Decoder screen_row_243 EARLY-STOPPED in 0.0m 17.07s with 11 failures out of 4363/10000 runs.
+Logical error rate for screen_row_243: 0.0025212010084804033 ± 0.0007593 (stderr)
+Batch 5:  31%|███▏      | 10/32 [00:22<00:13,  1.66it/s]Decoder screen_row_251 EARLY-STOPPED in 0.0m 15.36s with 11 failures out of 3275/10000 runs.
+Logical error rate for screen_row_251: 0.0033587786259541984 ± 0.0010112 (stderr)
+Batch 5:  34%|███▍      | 11/32 [00:22<00:10,  2.10it/s]Decoder screen_row_225 EARLY-STOPPED in 0.0m 15.96s with 11 failures out of 3416/10000 runs.
+Logical error rate for screen_row_225: 0.0032201405152224825 ± 0.0009695 (stderr)
+Batch 5:  38%|███▊      | 12/32 [00:22<00:09,  2.12it/s]Decoder screen_row_242 EARLY-STOPPED in 0.0m 16.89s with 11 failures out of 3925/10000 runs.
+Logical error rate for screen_row_242: 0.002802547770700637 ± 0.0008439 (stderr)
+Decoder screen_row_239 EARLY-STOPPED in 0.0m 16.00s with 11 failures out of 3590/10000 runs.
+Logical error rate for screen_row_239: 0.003064066852367688 ± 0.0009226 (stderr)
+Batch 5:  44%|████▍     | 14/32 [00:22<00:05,  3.21it/s]Decoder screen_row_256 EARLY-STOPPED in 0.0m 16.63s with 11 failures out of 3661/10000 runs.
+Logical error rate for screen_row_256: 0.003004643540016389 ± 0.0009047 (stderr)
+Batch 5:  47%|████▋     | 15/32 [00:23<00:05,  2.91it/s]Decoder screen_row_227 EARLY-STOPPED in 0.0m 16.41s with 11 failures out of 3797/10000 runs.
+Logical error rate for screen_row_227: 0.0028970239662891757 ± 0.0008723 (stderr)
+Batch 5:  50%|█████     | 16/32 [00:23<00:04,  3.31it/s]Decoder screen_row_244 EARLY-STOPPED in 0.0m 16.68s with 11 failures out of 3527/10000 runs.
+Logical error rate for screen_row_244: 0.0031187978451942162 ± 0.0009390 (stderr)
+Batch 5:  53%|█████▎    | 17/32 [00:23<00:04,  3.71it/s]Decoder screen_row_231 EARLY-STOPPED in 0.0m 18.72s with 11 failures out of 4557/10000 runs.
+Logical error rate for screen_row_231: 0.0024138687733157777 ± 0.0007270 (stderr)
+Batch 5:  56%|█████▋    | 18/32 [00:23<00:03,  4.11it/s]Decoder screen_row_232 EARLY-STOPPED in 0.0m 18.24s with 11 failures out of 5119/10000 runs.
+Logical error rate for screen_row_232: 0.0021488571986716157 ± 0.0006473 (stderr)
+Batch 5:  59%|█████▉    | 19/32 [00:24<00:06,  2.02it/s]Decoder screen_row_238 EARLY-STOPPED in 0.0m 18.29s with 11 failures out of 4678/10000 runs.
+Logical error rate for screen_row_238: 0.00235143223599829 ± 0.0007082 (stderr)
+Decoder screen_row_228 EARLY-STOPPED in 0.0m 19.11s with 11 failures out of 4680/10000 runs.
+Logical error rate for screen_row_228: 0.0023504273504273503 ± 0.0007079 (stderr)
+Batch 5:  66%|██████▌   | 21/32 [00:25<00:04,  2.40it/s]Decoder screen_row_241 EARLY-STOPPED in 0.0m 20.38s with 11 failures out of 5336/10000 runs.
+Logical error rate for screen_row_241: 0.0020614692653673165 ± 0.0006210 (stderr)
+Decoder screen_row_226 EARLY-STOPPED in 0.0m 19.15s with 11 failures out of 4292/10000 runs.
+Logical error rate for screen_row_226: 0.0025629077353215286 ± 0.0007718 (stderr)
+Batch 5:  72%|███████▏  | 23/32 [00:25<00:02,  3.54it/s]Decoder screen_row_254 EARLY-STOPPED in 0.0m 19.29s with 11 failures out of 4784/10000 runs.
+Logical error rate for screen_row_254: 0.00229933110367893 ± 0.0006925 (stderr)
+Batch 5:  75%|███████▌  | 24/32 [00:26<00:02,  3.33it/s]Decoder screen_row_245 EARLY-STOPPED in 0.0m 19.97s with 11 failures out of 5422/10000 runs.
+Logical error rate for screen_row_245: 0.002028771670970122 ± 0.0006111 (stderr)
+Batch 5:  78%|███████▊  | 25/32 [00:26<00:01,  3.64it/s]Decoder screen_row_240 EARLY-STOPPED in 0.0m 20.39s with 11 failures out of 4597/10000 runs.
+Logical error rate for screen_row_240: 0.0023928649118990647 ± 0.0007207 (stderr)
+Decoder screen_row_237 EARLY-STOPPED in 0.0m 20.44s with 11 failures out of 5146/10000 runs.
+Logical error rate for screen_row_237: 0.002137582588418189 ± 0.0006439 (stderr)
+Batch 5:  84%|████████▍ | 27/32 [00:27<00:01,  2.61it/s]Decoder screen_row_246 EARLY-STOPPED in 0.0m 22.54s with 11 failures out of 5973/10000 runs.
+Logical error rate for screen_row_246: 0.001841620626151013 ± 0.0005548 (stderr)
+Batch 5:  88%|████████▊ | 28/32 [00:28<00:01,  2.34it/s]Decoder screen_row_255 EARLY-STOPPED in 0.0m 21.90s with 11 failures out of 5781/10000 runs.
+Logical error rate for screen_row_255: 0.0019027849852966616 ± 0.0005732 (stderr)
+Batch 5:  91%|█████████ | 29/32 [00:28<00:01,  2.13it/s]Decoder screen_row_233 EARLY-STOPPED in 0.0m 23.27s with 11 failures out of 6179/10000 runs.
+Logical error rate for screen_row_233: 0.0017802233371095647 ± 0.0005363 (stderr)
+Batch 5:  94%|█████████▍| 30/32 [00:29<00:01,  1.61it/s]Decoder screen_row_234 EARLY-STOPPED in 0.0m 24.25s with 11 failures out of 6684/10000 runs.
+Logical error rate for screen_row_234: 0.0016457211250748055 ± 0.0004958 (stderr)
+Batch 5:  97%|█████████▋| 31/32 [00:30<00:00,  1.77it/s]Decoder screen_row_235 finished in 0.0m 36.27s with 8 failures out of 10000/10000 runs.
+Logical error rate for screen_row_235: 0.0008 ± 0.0002827 (stderr)
+Batch 5: 100%|██████████| 32/32 [00:43<00:00,  4.06s/it]Batch 5: 100%|██████████| 32/32 [00:43<00:00,  1.35s/it]
+Batch 6:   0%|          | 0/32 [00:00<?, ?it/s]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder screen_row_283 EARLY-STOPPED in 0.0m 7.80s with 9 failures out of 1736/10000 runs.
+Logical error rate for screen_row_283: 0.005184331797235023 ± 0.0017241 (stderr)
+Batch 6:   3%|▎         | 1/32 [00:13<06:44, 13.05s/it]Decoder screen_row_265 EARLY-STOPPED in 0.0m 7.08s with 9 failures out of 1617/10000 runs.
+Logical error rate for screen_row_265: 0.0055658627087198514 ± 0.0018507 (stderr)
+Batch 6:   6%|▋         | 2/32 [00:13<02:53,  5.79s/it]Decoder screen_row_281 EARLY-STOPPED in 0.0m 8.36s with 9 failures out of 2130/10000 runs.
+Logical error rate for screen_row_281: 0.004225352112676056 ± 0.0014058 (stderr)
+Batch 6:   9%|▉         | 3/32 [00:14<01:43,  3.57s/it]Decoder screen_row_288 EARLY-STOPPED in 0.0m 7.68s with 9 failures out of 1751/10000 runs.
+Logical error rate for screen_row_288: 0.005139920045688178 ± 0.0017094 (stderr)
+Decoder screen_row_260 EARLY-STOPPED in 0.0m 8.68s with 9 failures out of 1991/10000 runs.
+Logical error rate for screen_row_260: 0.0045203415369161224 ± 0.0015037 (stderr)
+Batch 6:  16%|█▌        | 5/32 [00:15<00:47,  1.75s/it]Decoder screen_row_272 EARLY-STOPPED in 0.0m 9.66s with 9 failures out of 2267/10000 runs.
+Logical error rate for screen_row_272: 0.003970004411116012 ± 0.0013210 (stderr)
+Batch 6:  19%|█▉        | 6/32 [00:15<00:33,  1.29s/it]Decoder screen_row_261 EARLY-STOPPED in 0.0m 11.04s with 9 failures out of 3214/10000 runs.
+Logical error rate for screen_row_261: 0.0028002489110143126 ± 0.0009323 (stderr)
+Batch 6:  22%|██▏       | 7/32 [00:16<00:28,  1.15s/it]Decoder screen_row_277 EARLY-STOPPED in 0.0m 11.59s with 9 failures out of 2644/10000 runs.
+Logical error rate for screen_row_277: 0.00340393343419062 ± 0.0011329 (stderr)
+Batch 6:  25%|██▌       | 8/32 [00:17<00:26,  1.10s/it]Decoder screen_row_287 EARLY-STOPPED in 0.0m 12.05s with 9 failures out of 3131/10000 runs.
+Logical error rate for screen_row_287: 0.0028744809964867456 ± 0.0009569 (stderr)
+Batch 6:  28%|██▊       | 9/32 [00:19<00:29,  1.27s/it]Decoder screen_row_273 EARLY-STOPPED in 0.0m 12.34s with 9 failures out of 3448/10000 runs.
+Logical error rate for screen_row_273: 0.0026102088167053363 ± 0.0008691 (stderr)
+Batch 6:  31%|███▏      | 10/32 [00:19<00:20,  1.05it/s]Decoder screen_row_269 EARLY-STOPPED in 0.0m 12.38s with 9 failures out of 3254/10000 runs.
+Logical error rate for screen_row_269: 0.0027658266748617085 ± 0.0009208 (stderr)
+Batch 6:  34%|███▍      | 11/32 [00:19<00:14,  1.43it/s]Decoder screen_row_267 EARLY-STOPPED in 0.0m 13.90s with 9 failures out of 3979/10000 runs.
+Logical error rate for screen_row_267: 0.002261874842925358 ± 0.0007532 (stderr)
+Batch 6:  38%|███▊      | 12/32 [00:20<00:16,  1.22it/s]Decoder screen_row_276 EARLY-STOPPED in 0.0m 14.51s with 9 failures out of 3410/10000 runs.
+Logical error rate for screen_row_276: 0.0026392961876832845 ± 0.0008787 (stderr)
+Batch 6:  41%|████      | 13/32 [00:20<00:13,  1.38it/s]Decoder screen_row_286 EARLY-STOPPED in 0.0m 14.76s with 9 failures out of 3785/10000 runs.
+Logical error rate for screen_row_286: 0.0023778071334214002 ± 0.0007918 (stderr)
+Batch 6:  44%|████▍     | 14/32 [00:21<00:11,  1.58it/s]Decoder screen_row_262 EARLY-STOPPED in 0.0m 14.89s with 9 failures out of 4036/10000 runs.
+Logical error rate for screen_row_262: 0.0022299306243805748 ± 0.0007426 (stderr)
+Batch 6:  47%|████▋     | 15/32 [00:21<00:08,  2.06it/s]Decoder screen_row_266 EARLY-STOPPED in 0.0m 14.73s with 9 failures out of 3921/10000 runs.
+Logical error rate for screen_row_266: 0.0022953328232593728 ± 0.0007643 (stderr)
+Decoder screen_row_284 EARLY-STOPPED in 0.0m 17.44s with 9 failures out of 4662/10000 runs.
+Logical error rate for screen_row_284: 0.0019305019305019305 ± 0.0006429 (stderr)
+Batch 6:  53%|█████▎    | 17/32 [00:22<00:08,  1.78it/s]Decoder screen_row_279 EARLY-STOPPED in 0.0m 17.44s with 9 failures out of 4752/10000 runs.
+Logical error rate for screen_row_279: 0.001893939393939394 ± 0.0006308 (stderr)
+Batch 6:  56%|█████▋    | 18/32 [00:23<00:07,  1.99it/s]Decoder screen_row_264 EARLY-STOPPED in 0.0m 16.39s with 9 failures out of 4209/10000 runs.
+Logical error rate for screen_row_264: 0.0021382751247327157 ± 0.0007121 (stderr)
+Batch 6:  59%|█████▉    | 19/32 [00:23<00:05,  2.40it/s]Decoder screen_row_278 EARLY-STOPPED in 0.0m 17.38s with 9 failures out of 4273/10000 runs.
+Logical error rate for screen_row_278: 0.0021062485373274046 ± 0.0007014 (stderr)
+Decoder screen_row_280 EARLY-STOPPED in 0.0m 17.17s with 9 failures out of 4337/10000 runs.
+Logical error rate for screen_row_280: 0.0020751671662439476 ± 0.0006911 (stderr)
+Batch 6:  66%|██████▌   | 21/32 [00:23<00:03,  3.34it/s]Decoder screen_row_282 EARLY-STOPPED in 0.0m 16.65s with 9 failures out of 4370/10000 runs.
+Logical error rate for screen_row_282: 0.002059496567505721 ± 0.0006859 (stderr)
+Batch 6:  69%|██████▉   | 22/32 [00:23<00:02,  3.83it/s]Decoder screen_row_271 EARLY-STOPPED in 0.0m 17.35s with 9 failures out of 4518/10000 runs.
+Logical error rate for screen_row_271: 0.00199203187250996 ± 0.0006634 (stderr)
+Decoder screen_row_270 EARLY-STOPPED in 0.0m 17.36s with 9 failures out of 4979/10000 runs.
+Logical error rate for screen_row_270: 0.0018075918859208676 ± 0.0006020 (stderr)
+Batch 6:  75%|███████▌  | 24/32 [00:24<00:01,  4.27it/s]Decoder screen_row_275 EARLY-STOPPED in 0.0m 18.33s with 9 failures out of 4705/10000 runs.
+Logical error rate for screen_row_275: 0.0019128586609989374 ± 0.0006371 (stderr)
+Batch 6:  78%|███████▊  | 25/32 [00:25<00:03,  2.19it/s]Decoder screen_row_258 EARLY-STOPPED in 0.0m 18.71s with 9 failures out of 4975/10000 runs.
+Logical error rate for screen_row_258: 0.0018090452261306533 ± 0.0006025 (stderr)
+Decoder screen_row_263 EARLY-STOPPED in 0.0m 19.69s with 9 failures out of 5748/10000 runs.
+Logical error rate for screen_row_263: 0.0015657620041753654 ± 0.0005216 (stderr)
+Batch 6:  84%|████████▍ | 27/32 [00:25<00:01,  2.76it/s]Decoder screen_row_274 EARLY-STOPPED in 0.0m 19.55s with 9 failures out of 5346/10000 runs.
+Logical error rate for screen_row_274: 0.0016835016835016834 ± 0.0005607 (stderr)
+Batch 6:  88%|████████▊ | 28/32 [00:25<00:01,  3.15it/s]Decoder screen_row_268 EARLY-STOPPED in 0.0m 19.20s with 9 failures out of 5546/10000 runs.
+Logical error rate for screen_row_268: 0.0016227912008654887 ± 0.0005405 (stderr)
+Batch 6:  91%|█████████ | 29/32 [00:26<00:01,  2.95it/s]Decoder screen_row_259 EARLY-STOPPED in 0.0m 20.24s with 9 failures out of 5592/10000 runs.
+Logical error rate for screen_row_259: 0.001609442060085837 ± 0.0005361 (stderr)
+Batch 6:  94%|█████████▍| 30/32 [00:26<00:00,  2.94it/s]Decoder screen_row_285 EARLY-STOPPED in 0.0m 20.99s with 9 failures out of 5458/10000 runs.
+Logical error rate for screen_row_285: 0.0016489556614144375 ± 0.0005492 (stderr)
+Batch 6:  97%|█████████▋| 31/32 [00:27<00:00,  2.76it/s]Decoder screen_row_257 EARLY-STOPPED in 0.0m 21.97s with 9 failures out of 6086/10000 runs.
+Logical error rate for screen_row_257: 0.0014788038120276043 ± 0.0004926 (stderr)
+Batch 6: 100%|██████████| 32/32 [00:28<00:00,  1.42it/s]Batch 6: 100%|██████████| 32/32 [00:28<00:00,  1.12it/s]
+Batch 7:   0%|          | 0/12 [00:00<?, ?it/s]Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder screen_row_296 EARLY-STOPPED in 0.0m 6.99s with 9 failures out of 2584/10000 runs.
+Logical error rate for screen_row_296: 0.00348297213622291 ± 0.0011592 (stderr)
+Batch 7:   8%|▊         | 1/12 [00:10<02:00, 10.97s/it]Decoder screen_row_291 EARLY-STOPPED in 0.0m 7.12s with 9 failures out of 2452/10000 runs.
+Logical error rate for screen_row_291: 0.00367047308319739 ± 0.0012215 (stderr)
+Batch 7:  17%|█▋        | 2/12 [00:11<00:46,  4.64s/it]Decoder screen_row_299 EARLY-STOPPED in 0.0m 9.68s with 9 failures out of 3367/10000 runs.
+Logical error rate for screen_row_299: 0.002673002673002673 ± 0.0008899 (stderr)
+Batch 7:  25%|██▌       | 3/12 [00:13<00:33,  3.68s/it]Decoder screen_row_298 EARLY-STOPPED in 0.0m 10.40s with 9 failures out of 3725/10000 runs.
+Logical error rate for screen_row_298: 0.0024161073825503354 ± 0.0008045 (stderr)
+Batch 7:  33%|███▎      | 4/12 [00:14<00:20,  2.53s/it]Decoder screen_row_292 EARLY-STOPPED in 0.0m 12.54s with 9 failures out of 4550/10000 runs.
+Logical error rate for screen_row_292: 0.001978021978021978 ± 0.0006588 (stderr)
+Batch 7:  42%|████▏     | 5/12 [00:16<00:16,  2.39s/it]Decoder screen_row_294 EARLY-STOPPED in 0.0m 12.93s with 9 failures out of 4703/10000 runs.
+Logical error rate for screen_row_294: 0.0019136721241760578 ± 0.0006373 (stderr)
+Batch 7:  50%|█████     | 6/12 [00:16<00:10,  1.68s/it]Decoder screen_row_297 EARLY-STOPPED in 0.0m 13.74s with 9 failures out of 5035/10000 runs.
+Logical error rate for screen_row_297: 0.0017874875868917578 ± 0.0005954 (stderr)
+Batch 7:  58%|█████▊    | 7/12 [00:17<00:07,  1.41s/it]Decoder screen_row_293 EARLY-STOPPED in 0.0m 14.16s with 9 failures out of 5084/10000 runs.
+Logical error rate for screen_row_293: 0.0017702596380802518 ± 0.0005896 (stderr)
+Batch 7:  67%|██████▋   | 8/12 [00:18<00:04,  1.10s/it]Decoder screen_row_289 EARLY-STOPPED in 0.0m 14.41s with 9 failures out of 4914/10000 runs.
+Logical error rate for screen_row_289: 0.0018315018315018315 ± 0.0006100 (stderr)
+Batch 7:  75%|███████▌  | 9/12 [00:18<00:02,  1.20it/s]Decoder screen_row_290 EARLY-STOPPED in 0.0m 15.06s with 9 failures out of 5469/10000 runs.
+Logical error rate for screen_row_290: 0.0016456390565002743 ± 0.0005481 (stderr)
+Batch 7:  83%|████████▎ | 10/12 [00:19<00:01,  1.30it/s]Decoder screen_row_300 EARLY-STOPPED in 0.0m 16.67s with 9 failures out of 5958/10000 runs.
+Logical error rate for screen_row_300: 0.0015105740181268882 ± 0.0005032 (stderr)
+Batch 7:  92%|█████████▏| 11/12 [00:20<00:01,  1.02s/it]Decoder screen_row_295 EARLY-STOPPED in 0.0m 17.10s with 9 failures out of 5662/10000 runs.
+Logical error rate for screen_row_295: 0.0015895443306252208 ± 0.0005295 (stderr)
+Batch 7: 100%|██████████| 12/12 [00:21<00:00,  1.18it/s]Batch 7: 100%|██████████| 12/12 [00:21<00:00,  1.76s/it]
+Best screening LER: 0.000800 (dist=10)
+
+>>> PHASE 3: Precision (100000)
+Promoting top 3 candidates
+Running MC (precision):   0%|          | 0/3 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Hx, Hz, Lx, Lz: (768, 1600), (768, 1600), (64, 1600), (64, 1600)
+Decoder precision_row_123 finished in 4.0m 30.03s with 245 failures out of 100000/100000 runs.
+Logical error rate for precision_row_123: 0.00245 ± 0.0001563 (stderr)
+Running MC (precision):  33%|███▎      | 1/3 [04:35<09:10, 275.01s/it]Decoder precision_row_118 finished in 4.0m 40.91s with 242 failures out of 100000/100000 runs.
+Logical error rate for precision_row_118: 0.00242 ± 0.0001554 (stderr)
+Running MC (precision):  67%|██████▋   | 2/3 [04:45<01:59, 119.62s/it]Decoder precision_row_235 finished in 5.0m 12.49s with 212 failures out of 100000/100000 runs.
+Logical error rate for precision_row_235: 0.00212 ± 0.0001454 (stderr)
+Running MC (precision): 100%|██████████| 3/3 [05:17<00:00, 79.41s/it] Running MC (precision): 100%|██████████| 3/3 [05:17<00:00, 105.81s/it]
+Evaluating row 235 | dist=10 | screening LER=0.000800
+  -> LER: 0.002120 ± 0.000145 | runtime=312.49s
+Evaluating row 118 | dist=10 | screening LER=0.001000
+  -> LER: 0.002420 ± 0.000155 | runtime=280.91s
+Evaluating row 123 | dist=10 | screening LER=0.001300
+  -> LER: 0.002450 ± 0.000156 | runtime=270.03s
+
+>>> RESULT: Best code found
+Distance: 10
+LER: 0.002120 ± 0.000145
+Run group name: /[1600,64]/logical_guided_S10_T100_p0.03_10000screen_100000prec_top3_20260403_142302
+
+Total time: 0h 10m 18.11s
+Saved to optimization/results/logical_guided_search_test.hdf5
