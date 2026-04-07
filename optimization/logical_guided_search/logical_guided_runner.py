@@ -33,7 +33,7 @@ from optimization.logical_guided_search.logical_guided_search_core import (
     improve_state_by_breaking_low_weight_logical,
 )
 
-OUTPUT_FILE = "optimization/results/logical_guided_search_test.hdf5"
+OUTPUT_FILE = "optimization/results/logical_guided_search.hdf5"
 SEARCH_STEPS = 20
 TRIALS_PER_STEP = 100
 BUDGET_SCREENING = 10_000
