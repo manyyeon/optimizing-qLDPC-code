@@ -125,7 +125,7 @@ def main():
         grp = f.require_group(code_name)
         run_name = (
             f"beam_from_logical_bw{args.beam_width}_d{args.depth}_p{p}_"
-            f"{args.screen_budget}screen_{args.prec_budget}prec_top{args.topk}_"
+            f"{args.screen_budget}screen_{args.prec_budget}prec_"
             f"exp{args.expand_per_parent}_"
             f"{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         )
