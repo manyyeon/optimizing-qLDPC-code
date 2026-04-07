@@ -1,0 +1,16 @@
+
+--- BEAM SEARCH FROM LOGICAL-GUIDED BEST STATE ---
+Code family: [625,25]
+Noise level p = 0.03
+Beam width = 2
+Depth = 10
+Expand per parent = 50
+Budgets: screen=100000, precision=1000000
+Workers = 64
+Source run = logical_guided_S10_T100_p0.03_100000screen_1000000prec_top3_20260407_163139
+Traceback (most recent call last):
+  File "/users/udayeon/optimizing_qecc/optimizing-qLDPC-code/optimization/logical_guided_search/start_from_logical_guided.py", line 481, in <module>
+    main()
+  File "/users/udayeon/optimizing_qecc/optimizing-qLDPC-code/optimization/logical_guided_search/start_from_logical_guided.py", line 128, in main
+    f"{args.screen_budget}screen_{args.prec_budget}prec_top{args.topk}_"
+AttributeError: 'Namespace' object has no attribute 'topk'
