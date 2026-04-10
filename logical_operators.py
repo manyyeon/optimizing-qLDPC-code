@@ -250,7 +250,7 @@ def get_logical_operators_by_pivoting(Hx, Hz):
 
     Lz = np.array(log_z_ops, dtype=np.uint8)
 
-    print(f"Hx, Hz, Lx, Lz: {Hx.shape}, {Hz.shape}, {Lx.shape}, {Lz.shape}")
+    # print(f"Hx, Hz, Lx, Lz: {Hx.shape}, {Hz.shape}, {Lx.shape}, {Lz.shape}")
 
     return Lx, Lz
 

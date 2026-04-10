@@ -31,14 +31,30 @@ def append_to_hdf5(
     distance_after=-1.0,
     edges_to_add=None,
     edges_to_remove=None,
+    screen_ler=None,
+    screen_std=None,
+    screen_runtime=None,
+    prec_ler=None,
+    prec_std=None,
+    prec_runtime=None,
 ):
     ds_states = _ensure_ds(grp, "states", (edge_list.shape[0],), np.uint32)
+
     ds_ler = _ensure_ds(grp, "logical_error_rates", (), np.float64)
     ds_std = _ensure_ds(grp, "logical_error_rates_std", (), np.float64)
+    ds_run = _ensure_ds(grp, "decoding_runtimes", (), np.float64)
+
+    ds_screen_ler = _ensure_ds(grp, "screen_logical_error_rates", (), np.float64)
+    ds_screen_std = _ensure_ds(grp, "screen_logical_error_rates_std", (), np.float64)
+    ds_screen_run = _ensure_ds(grp, "screen_decoding_runtimes", (), np.float64)
+
+    ds_prec_ler = _ensure_ds(grp, "prec_logical_error_rates", (), np.float64)
+    ds_prec_std = _ensure_ds(grp, "prec_logical_error_rates_std", (), np.float64)
+    ds_prec_run = _ensure_ds(grp, "prec_decoding_runtimes", (), np.float64)
+
     ds_dcl = _ensure_ds(grp, "distances_classical", (), np.float64)
     ds_dclT = _ensure_ds(grp, "distances_classical_T", (), np.float64)
     ds_dq = _ensure_ds(grp, "distances_quantum", (), np.float64)
-    ds_run = _ensure_ds(grp, "decoding_runtimes", (), np.float64)
 
     ds_logw = _ensure_ds(grp, "target_logical_weight", (), np.float64)
     ds_acc = _ensure_ds(grp, "accepted", (), np.uint8)
@@ -54,6 +70,14 @@ def append_to_hdf5(
 
     idx = ds_ler.shape[0]
 
+    screen_ler = np.nan if screen_ler is None else screen_ler
+    screen_std = np.nan if screen_std is None else screen_std
+    screen_runtime = np.nan if screen_runtime is None else screen_runtime
+
+    prec_ler = np.nan if prec_ler is None else prec_ler
+    prec_std = np.nan if prec_std is None else prec_std
+    prec_runtime = np.nan if prec_runtime is None else prec_runtime
+
     ds_states.resize(idx + 1, axis=0)
     ds_states[idx] = edge_list
 
@@ -63,6 +87,27 @@ def append_to_hdf5(
     ds_std.resize(idx + 1, axis=0)
     ds_std[idx] = std
 
+    ds_run.resize(idx + 1, axis=0)
+    ds_run[idx] = runtime
+
+    ds_screen_ler.resize(idx + 1, axis=0)
+    ds_screen_ler[idx] = screen_ler
+
+    ds_screen_std.resize(idx + 1, axis=0)
+    ds_screen_std[idx] = screen_std
+
+    ds_screen_run.resize(idx + 1, axis=0)
+    ds_screen_run[idx] = screen_runtime
+
+    ds_prec_ler.resize(idx + 1, axis=0)
+    ds_prec_ler[idx] = prec_ler
+
+    ds_prec_std.resize(idx + 1, axis=0)
+    ds_prec_std[idx] = prec_std
+
+    ds_prec_run.resize(idx + 1, axis=0)
+    ds_prec_run[idx] = prec_runtime
+
     ds_dcl.resize(idx + 1, axis=0)
     ds_dcl[idx] = params["d_classical"]
 
@@ -71,9 +116,6 @@ def append_to_hdf5(
 
     ds_dq.resize(idx + 1, axis=0)
     ds_dq[idx] = params["d_quantum"]
-
-    ds_run.resize(idx + 1, axis=0)
-    ds_run[idx] = runtime
 
     ds_logw.resize(idx + 1, axis=0)
     ds_logw[idx] = logical_weight
@@ -113,7 +155,15 @@ def append_to_hdf5(
     return idx
 
 
-def update_hdf5_row(grp, idx, ler, std, runtime):
-    grp["logical_error_rates"][idx] = ler
-    grp["logical_error_rates_std"][idx] = std
-    grp["decoding_runtimes"][idx] += runtime
+def update_hdf5_row(grp, idx, prec_ler=None, prec_std=None, prec_runtime=None):
+    if prec_ler is not None:
+        grp["prec_logical_error_rates"][idx] = prec_ler
+        grp["logical_error_rates"][idx] = prec_ler
+
+    if prec_std is not None:
+        grp["prec_logical_error_rates_std"][idx] = prec_std
+        grp["logical_error_rates_std"][idx] = prec_std
+
+    if prec_runtime is not None:
+        grp["prec_decoding_runtimes"][idx] = prec_runtime
+        grp["decoding_runtimes"][idx] = prec_runtime

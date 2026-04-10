@@ -38,7 +38,9 @@ PREC_BUDGET = 100_000
 
 
 def state_key(state):
-    return tuple(parse_edgelist(state).flatten().tolist())
+    edge_list = parse_edgelist(state)
+    edge_list = np.asarray(sorted(map(tuple, edge_list.tolist())), dtype=np.int64)
+    return tuple(edge_list.flatten().tolist())
 
 
 def load_best_state_from_logical_guided(input_file, code_name, run_name):
@@ -58,7 +60,7 @@ def evaluate_candidate_task(task):
     failure_cap = task.get("failure_cap", None)
     min_runs_before_stop = task.get("min_runs_before_stop", 0)
     workers = task.get("workers", 1)
-    batch_size = task.get("batch_size", 5000)
+    batch_size = task.get("batch_size", 10000)
 
     _, Hx, Hz = get_code_parameters_and_matrices(state)
 
@@ -84,6 +86,137 @@ def evaluate_candidate_task(task):
         "early_stopped": result["early_stopped"],
     }
 
+def compute_screen_failure_cap(current_beam, screen_budget, slack=20):
+    """
+    Use the 2nd-best parent precise LER as the screening reference.
+    If only one parent exists, use that one.
+    Convert reference LER to a failure cap at screen_budget.
+    """
+    if not current_beam:
+        return None
+
+    precise_parents = [x for x in current_beam if x.get("is_precise", False)]
+    if not precise_parents:
+        # fallback: use current ler values if precision not available yet
+        precise_parents = current_beam
+
+    precise_parents = sorted(precise_parents, key=lambda x: x["ler"])
+
+    if len(precise_parents) >= 2:
+        ref = precise_parents[1]   # second-best
+    else:
+        ref = precise_parents[0]
+
+    ref_ler = ref["ler"]
+    failure_cap = int(np.ceil(ref_ler * screen_budget)) + slack
+    return max(failure_cap, 1)
+
+
+def sort_pool(pool):
+    """
+    Higher distance first, then full runs over early-stopped, then lower LER.
+    """
+    return sorted(
+        pool,
+        key=lambda x: (
+            -x["dist"],
+            x.get("early_stopped", False),
+            x["ler"],
+        )
+    )
+
+
+def precision_re_evaluate_candidates(candidates, p, prec_budget, workers, run_grp, f):
+    """
+    Re-evaluate newly promoted beam states with precision budget.
+    Update both memory copy and HDF5 row.
+    """
+    to_eval = [cand for cand in candidates if not cand.get("is_precise", False)]
+    if not to_eval:
+        return candidates
+
+    print(f"  Precision re-evaluating {len(to_eval)} promoted beam state(s): {[cand['row_idx'] for cand in to_eval]}")
+
+    if workers == 1:
+        for cand in to_eval:
+            _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
+            result = evaluate_mc(
+                Hx,
+                Hz,
+                p,
+                prec_budget,
+                run_label=f"parent_precision_row_{cand['row_idx']}",
+            )
+
+            cand["prec_ler"] = result["ler"]
+            cand["prec_std"] = result["stderr"]
+            cand["prec_runtime"] = result["runtime"]
+
+            cand["ler"] = cand["prec_ler"]
+            cand["std"] = cand["prec_std"]
+            cand["runtime"] = cand["prec_runtime"]
+            cand["failures"] = result["failures"]
+            cand["completed_runs"] = result["completed_runs"]
+            cand["early_stopped"] = result["early_stopped"]
+            cand["is_precise"] = True
+
+            update_hdf5_row(
+                run_grp,
+                cand["row_idx"],
+                prec_ler=cand["prec_ler"],
+                prec_std=cand["prec_std"],
+                prec_runtime=cand["prec_runtime"],
+            )
+            f.flush()
+    else:
+        tasks = [
+            {
+                "candidate_id": i,
+                "state": cand["state"],
+                "p": p,
+                "budget": prec_budget,
+                "run_label": f"parent_precision_row_{cand['row_idx']}",
+                "workers": 1,
+                "batch_size": 10000,
+            }
+            for i, cand in enumerate(to_eval)
+        ]
+
+        results_by_id = {}
+        with ProcessPoolExecutor(max_workers=workers) as ex:
+            futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
+            for fut in tqdm(as_completed(futures), total=len(futures), desc="Parent precision MC"):
+                res = fut.result()
+                results_by_id[res["candidate_id"]] = res
+
+        for i, cand in enumerate(to_eval):
+            res = results_by_id[i]
+
+            cand["prec_ler"] = res["ler"]
+            cand["prec_std"] = res["std"]
+            cand["prec_runtime"] = res["runtime"]
+
+            cand["ler"] = cand["prec_ler"]
+            cand["std"] = cand["prec_std"]
+            cand["runtime"] = cand["prec_runtime"]
+            cand["failures"] = res["failures"]
+            cand["completed_runs"] = res["completed_runs"]
+            cand["early_stopped"] = res["early_stopped"]
+            cand["is_precise"] = True
+
+            update_hdf5_row(
+                run_grp,
+                cand["row_idx"],
+                prec_ler=cand["prec_ler"],
+                prec_std=cand["prec_std"],
+                prec_runtime=cand["prec_runtime"],
+            )
+            f.flush()
+
+    return candidates
+
+def fmt(x):
+    return f"{x:.6f}" if x is not None else "-"
 
 def main():
     parser = argparse.ArgumentParser()
@@ -142,21 +275,17 @@ def main():
             "source_run": args.input_run,
         })
 
-        best_screen_failures = None
-
         params0, Hx0, Hz0 = get_code_parameters_and_matrices(initial_state)
         d0 = min(params0["d_classical"], params0["d_T_classical"])
         result0 = evaluate_mc(
-                Hx0,
-                Hz0,
-                p,
-                args.screen_budget,
-                run_label="beam_init",
-                workers=args.workers,
-                batch_size=5000,
+            Hx0,
+            Hz0,
+            p,
+            args.prec_budget,
+            run_label="beam_init_precise",
+            workers=args.workers,
+            batch_size=10000,
         )
-
-        best_screen_failures = result0["failures"]
 
         ler0 = result0["ler"]
         std0 = result0["stderr"]
@@ -178,6 +307,12 @@ def main():
             distance_after=d0,
             edges_to_add=None,
             edges_to_remove=None,
+            screen_ler=None,
+            screen_std=None,
+            screen_runtime=None,
+            prec_ler=ler0,
+            prec_std=std0,
+            prec_runtime=rt0,
         )
 
         current_beam = [{
@@ -185,18 +320,44 @@ def main():
             "params": params0,
             "row_idx": idx0,
             "dist": d0,
-            "ler": ler0,
+
+            "screen_ler": None,
+            "screen_std": None,
+            "screen_runtime": None,
+
+            "prec_ler": ler0,
+            "prec_std": std0,
+            "prec_runtime": rt0,
+
+            "ler": ler0,   # active ranking score = precise if available
             "std": std0,
+            "runtime": rt0,
+
+            "failures": result0["failures"],
+            "completed_runs": result0["completed_runs"],
+            "early_stopped": result0["early_stopped"],
+            "is_precise": True,
         }]
 
         best_global = current_beam[0]
 
         print(f"\nInitial state: dist={d0}, LER={ler0:.6f}")
 
+        visited_states = {state_key(initial_state)}
+
         for depth in range(1, args.depth + 1):
             print(f"\n=== Beam depth {depth}/{args.depth} ===")
+            
+            screen_failure_cap = compute_screen_failure_cap(
+                current_beam=current_beam,
+                screen_budget=args.screen_budget,
+                slack=20,
+            )
+
+            print(f"  Depth-{depth} screening failure cap = {screen_failure_cap}")
+
             all_children = []
-            seen = set()
+            depth_seen = set()
             pending_candidates = []
 
             # Stage A: generate all unique children serially
@@ -231,9 +392,12 @@ def main():
 
                 for trial_idx, cand in enumerate(raw_candidates):
                     key = state_key(cand["state"])
-                    if key in seen:
+                    if key in depth_seen:
                         continue
-                    seen.add(key)
+                    depth_seen.add(key)
+
+                    if key in visited_states:
+                        continue
 
                     candidate_id = len(pending_candidates)
                     pending_candidates.append({
@@ -242,7 +406,9 @@ def main():
                         "parent_row_idx": parent["row_idx"],
                         "trial_idx": trial_idx,
                         "run_label": f"beam_d{depth}_parent{parent['row_idx']}_trial{trial_idx}",
+                        "state_key": key,
                     })
+                    visited_states.add(key)
 
             if not pending_candidates:
                 print("No children generated. Stopping.")
@@ -261,18 +427,9 @@ def main():
                         p,
                         args.screen_budget,
                         run_label=item["run_label"],
-                        failure_cap=best_screen_failures,
+                        failure_cap=screen_failure_cap,
                         min_runs_before_stop=500,
                     )
-
-                    if (
-                        result["completed_runs"] == args.screen_budget
-                        and (
-                            best_screen_failures is None
-                            or result["failures"] < best_screen_failures
-                        )
-                    ):
-                        best_screen_failures = result["failures"]
 
                     results_by_id[item["candidate_id"]] = {
                         "ler": result["ler"],
@@ -297,7 +454,7 @@ def main():
                                 "p": p,
                                 "budget": args.screen_budget,
                                 "run_label": item["run_label"],
-                                "failure_cap": best_screen_failures,
+                                "failure_cap": screen_failure_cap,
                                 "min_runs_before_stop": 500,
                             }
                             for item in batch
@@ -308,16 +465,6 @@ def main():
                         for fut in tqdm(as_completed(futures), total=len(futures), desc=f"Batch {i//batch_size + 1}"):
                             res = fut.result()
                             results_by_id[res["candidate_id"]] = res
-
-                            # tighten cap AFTER each batch result
-                            if (
-                                res["completed_runs"] == args.screen_budget
-                                and (
-                                    best_screen_failures is None
-                                    or res["failures"] < best_screen_failures
-                                )
-                            ):
-                                best_screen_failures = res["failures"]
 
             # Stage C: save results in main process only
             for item in pending_candidates:
@@ -340,6 +487,12 @@ def main():
                     distance_after=cand["distance_after"],
                     edges_to_add=cand["edges_to_add"],
                     edges_to_remove=cand["edges_to_remove"],
+                    screen_ler=res["ler"],
+                    screen_std=res["std"],
+                    screen_runtime=res["runtime"],
+                    prec_ler=None,
+                    prec_std=None,
+                    prec_runtime=None,
                 )
 
                 child = {
@@ -347,48 +500,71 @@ def main():
                     "params": cand["params"],
                     "row_idx": row_idx,
                     "dist": cand["distance_after"],
-                    "ler": res["ler"],
+
+                    "screen_ler": res["ler"],
+                    "screen_std": res["std"],
+                    "screen_runtime": res["runtime"],
+
+                    "prec_ler": None,
+                    "prec_std": None,
+                    "prec_runtime": None,
+
+                    "ler": res["ler"],      # ranking uses screen until precision exists
                     "std": res["std"],
+                    "runtime": res["runtime"],
+
                     "logical_weight": cand["logical_weight"],
                     "early_stopped": res.get("early_stopped", False),
                     "failures": res.get("failures", None),
                     "completed_runs": res.get("completed_runs", None),
+                    "is_precise": False,
                 }
                 all_children.append(child)
 
-                if (
-                    not res.get("early_stopped", False)
-                    and res["ler"] < best_global["ler"]
-                ):
-                    best_global = child
-                    print(f"    [!] New best global LER: {res['ler']:.6f}, dist={cand['distance_after']}")
-
                 f.flush()
 
-            # keep parents too, so search is non-regressive
-            pool = list(all_children) + list(current_beam)
-            pool.sort(
-                key=lambda x: (
-                    x["dist"],                          # 1 prioritize distance
-                    not x.get("early_stopped", False),  # 2 full runs
-                    -x["ler"]                           # 3 lower LER
-                ),
-                reverse=True
+            # keep current parents automatically
+            protected_parents = list(current_beam)
+            ranked_children = sort_pool(all_children)
+            num_child_slots = max(0, 2 * args.beam_width - len(protected_parents))
+            provisional_beam = protected_parents + ranked_children[:num_child_slots]
+
+            print(f"  Provisional beam candidates (before precision re-eval):")
+            for i, s in enumerate(provisional_beam):
+                print(f"    {i+1}. row={s['row_idx']} dist={s['dist']} ler={s['ler']:.6f} early_stopped={s.get('early_stopped', False)}")
+
+            # precision re-evaluate newly promoted states
+            provisional_beam = precision_re_evaluate_candidates(
+                candidates=provisional_beam,
+                p=p,
+                prec_budget=args.prec_budget,
+                workers=args.workers,
+                run_grp=run_grp,
+                f=f,
             )
-            current_beam = pool[:args.beam_width]
+
+            # re-sort after precision so lucky screen results don't dominate
+            current_beam = sort_pool(provisional_beam)[:args.beam_width]
+            print(f"  Provisional beam candidates screening LER -> precise LER:")
+            for i, s in enumerate(provisional_beam):
+                print(
+                    f"{i+1}. row={s['row_idx']} dist={s['dist']} "
+                    f"screen_ler={fmt(s['screen_ler'])} "
+                    f"precise_ler={fmt(s['prec_ler'])} "
+                    f"early_stopped={s.get('early_stopped', False)}"
+                )
+
+            for cand in provisional_beam:
+                if cand["prec_ler"] < best_global["prec_ler"]:
+                    best_global = cand
+                    print(f"    [!] New best global at row {best_global['row_idx']}, LER: {best_global['ler']:.6f}, dist={best_global['dist']}")
 
             print("  Survivors:")
             for i, s in enumerate(current_beam):
                 print(f"    {i+1}. row={s['row_idx']} dist={s['dist']} ler={s['ler']:.6f}")
 
         print("\n=== Precision evaluation on final beam ===")
-        final_candidates = sorted(
-            current_beam,
-            key=lambda x: (
-                x.get("early_stopped", False),
-                x["ler"]
-            )
-        )
+        final_candidates = sort_pool(current_beam)[:args.beam_width]
 
         best_precise = None
         best_precise_ler = np.inf
@@ -396,20 +572,43 @@ def main():
 
         if args.workers == 1:
             for cand in final_candidates:
-                _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
-                result = evaluate_mc(
-                    Hx,
-                    Hz,
-                    p,
-                    args.prec_budget,
-                    run_label=f"precision_row_{cand['row_idx']}",
+                if cand.get("is_precise", False):
+                    ler = cand["ler"]
+                    std = cand["std"]
+                    rt = cand["runtime"]
+                else:
+                    _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
+                    result = evaluate_mc(
+                        Hx,
+                        Hz,
+                        p,
+                        args.prec_budget,
+                        run_label=f"precision_row_{cand['row_idx']}",
+                    )
+
+                    cand["prec_ler"] = result["ler"]
+                    cand["prec_std"] = result["stderr"]
+                    cand["prec_runtime"] = result["runtime"]
+
+                    cand["ler"] = cand["prec_ler"]
+                    cand["std"] = cand["prec_std"]
+                    cand["runtime"] = cand["prec_runtime"]
+                    cand["failures"] = result["failures"]
+                    cand["completed_runs"] = result["completed_runs"]
+                    cand["early_stopped"] = result["early_stopped"]
+                    cand["is_precise"] = True
+
+                    ler = cand["prec_ler"]
+                    std = cand["prec_std"]
+                    rt = cand["prec_runtime"]
+
+                update_hdf5_row(
+                    run_grp,
+                    cand["row_idx"],
+                    prec_ler=ler,
+                    prec_std=std,
+                    prec_runtime=rt,
                 )
-
-                ler = result["ler"]
-                std = result["stderr"]
-                rt = result["runtime"]
-
-                update_hdf5_row(run_grp, cand["row_idx"], ler, std, rt)
                 print(f"row={cand['row_idx']} dist={cand['dist']} precise LER={ler:.6f} ± {std:.6f}")
 
                 if ler < best_precise_ler:
@@ -418,40 +617,70 @@ def main():
                     best_precise = cand
 
                 f.flush()
+
         else:
-            tasks = [
-                {
-                    "candidate_id": i,
-                    "state": cand["state"],
-                    "p": p,
-                    "budget": args.prec_budget,
-                    "run_label": f"precision_row_{cand['row_idx']}",
-                    "workers": args.workers,
-                    "batch_size": 5000,
-                }
-                for i, cand in enumerate(final_candidates)
-            ]
+            tasks = []
+            task_map = {}
+
+            for i, cand in enumerate(final_candidates):
+                if not cand.get("is_precise", False):
+                    task_id = len(tasks)
+                    tasks.append({
+                        "candidate_id": task_id,
+                        "state": cand["state"],
+                        "p": p,
+                        "budget": args.prec_budget,
+                        "run_label": f"precision_row_{cand['row_idx']}",
+                        "workers": 1,
+                        "batch_size": 10000,
+                    })
+                    task_map[task_id] = i
 
             results_by_id = {}
 
-            with ProcessPoolExecutor(max_workers=args.workers) as ex:
-                futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
-
-                for fut in tqdm(as_completed(futures), total=len(futures), desc="Precision MC"):
-                    res = fut.result()
-                    results_by_id[res["candidate_id"]] = res
+            if tasks:
+                with ProcessPoolExecutor(max_workers=args.workers) as ex:
+                    futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
+                    for fut in tqdm(as_completed(futures), total=len(futures), desc="Precision MC"):
+                        res = fut.result()
+                        results_by_id[res["candidate_id"]] = res
 
             for i, cand in enumerate(final_candidates):
-                res = results_by_id[i]
-                update_hdf5_row(run_grp, cand["row_idx"], res["ler"], res["std"], res["runtime"])
-                print(
-                    f"row={cand['row_idx']} dist={cand['dist']} "
-                    f"precise LER={res['ler']:.6f} ± {res['std']:.6f}"
-                )
+                if cand.get("is_precise", False):
+                    ler = cand["ler"]
+                    std = cand["std"]
+                    rt = cand["runtime"]
+                else:
+                    res = results_by_id[[k for k, v in task_map.items() if v == i][0]]
 
-                if res["ler"] < best_precise_ler:
-                    best_precise_ler = res["ler"]
-                    best_precise_std = res["std"]
+                    cand["prec_ler"] = res["ler"]
+                    cand["prec_std"] = res["std"]
+                    cand["prec_runtime"] = res["runtime"]
+
+                    cand["ler"] = cand["prec_ler"]
+                    cand["std"] = cand["prec_std"]
+                    cand["runtime"] = cand["prec_runtime"]
+                    cand["failures"] = res["failures"]
+                    cand["completed_runs"] = res["completed_runs"]
+                    cand["early_stopped"] = res["early_stopped"]
+                    cand["is_precise"] = True
+
+                    ler = cand["prec_ler"]
+                    std = cand["prec_std"]
+                    rt = cand["prec_runtime"]
+
+                update_hdf5_row(
+                    run_grp,
+                    cand["row_idx"],
+                    prec_ler=ler,
+                    prec_std=std,
+                    prec_runtime=rt,
+                )
+                print(f"row={cand['row_idx']} dist={cand['dist']} precise LER={ler:.6f} ± {std:.6f}")
+
+                if ler < best_precise_ler:
+                    best_precise_ler = ler
+                    best_precise_std = std
                     best_precise = cand
 
                 f.flush()

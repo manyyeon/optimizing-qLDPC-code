@@ -217,7 +217,7 @@ def compute_logical_error_rate_parallel_batched(
     run_count,
     run_label,
     workers=8,
-    batch_size=5000,
+    batch_size=10000,
     failure_cap=None,
     min_runs_before_stop=0,
 ):
