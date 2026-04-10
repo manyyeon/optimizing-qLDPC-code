@@ -38,9 +38,7 @@ PREC_BUDGET = 100_000
 
 
 def state_key(state):
-    edge_list = parse_edgelist(state)
-    edge_list = np.asarray(sorted(map(tuple, edge_list.tolist())), dtype=np.int64)
-    return tuple(edge_list.flatten().tolist())
+    return tuple(parse_edgelist(state).flatten().tolist())
 
 
 def load_best_state_from_logical_guided(input_file, code_name, run_name):
