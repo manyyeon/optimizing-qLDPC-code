@@ -1,0 +1,1657 @@
+
+--- BEAM SEARCH FROM LOGICAL-GUIDED BEST STATE ---
+Code family: [1600,64]
+Noise level p = 0.03
+Beam width = 2
+Depth = 10
+Expand per parent = 50
+Budgets: screen=100000, precision=1000000
+Workers = 32
+Source run = logical_guided_S10_T100_p0.03_10000screen_100000prec_top3_20260403_142302
+/users/udayeon/.local/lib/python3.9/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Decoder beam_init_precise_batch0 finished in 0.0m 2.01s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch0: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch1 finished in 0.0m 2.03s with 18 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch1: 0.0018 ± 0.0004239 (stderr)
+Decoder beam_init_precise_batch2 finished in 0.0m 2.21s with 24 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch2: 0.0024 ± 0.0004893 (stderr)
+Decoder beam_init_precise_batch3 finished in 0.0m 2.01s with 15 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch3: 0.0015 ± 0.0003870 (stderr)
+Decoder beam_init_precise_batch4 finished in 0.0m 2.08s with 21 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch4: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_init_precise_batch5 finished in 0.0m 2.19s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch5: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch6 finished in 0.0m 2.02s with 26 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch6: 0.0026 ± 0.0005093 (stderr)
+Decoder beam_init_precise_batch7 finished in 0.0m 1.99s with 19 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch7: 0.0019 ± 0.0004355 (stderr)
+Decoder beam_init_precise_batch8 finished in 0.0m 2.01s with 18 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch8: 0.0018 ± 0.0004239 (stderr)
+Decoder beam_init_precise_batch9 finished in 0.0m 1.90s with 26 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch9: 0.0026 ± 0.0005093 (stderr)
+Decoder beam_init_precise_batch10 finished in 0.0m 1.98s with 25 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch10: 0.0025 ± 0.0004994 (stderr)
+Decoder beam_init_precise_batch11 finished in 0.0m 2.02s with 17 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch11: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_init_precise_batch12 finished in 0.0m 2.07s with 27 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch12: 0.0027 ± 0.0005189 (stderr)
+Decoder beam_init_precise_batch13 finished in 0.0m 2.00s with 21 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch13: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_init_precise_batch14 finished in 0.0m 2.06s with 17 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch14: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_init_precise_batch15 finished in 0.0m 2.12s with 18 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch15: 0.0018 ± 0.0004239 (stderr)
+Decoder beam_init_precise_batch16 finished in 0.0m 2.03s with 21 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch16: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_init_precise_batch17 finished in 0.0m 1.97s with 20 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch17: 0.002 ± 0.0004468 (stderr)
+Decoder beam_init_precise_batch18 finished in 0.0m 2.00s with 14 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch18: 0.0014 ± 0.0003739 (stderr)
+Decoder beam_init_precise_batch19 finished in 0.0m 2.02s with 24 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch19: 0.0024 ± 0.0004893 (stderr)
+Decoder beam_init_precise_batch20 finished in 0.0m 1.90s with 21 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch20: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_init_precise_batch21 finished in 0.0m 2.16s with 12 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch21: 0.0012 ± 0.0003462 (stderr)
+Decoder beam_init_precise_batch22 finished in 0.0m 1.99s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch22: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch23 finished in 0.0m 2.07s with 22 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch23: 0.0022 ± 0.0004685 (stderr)
+Decoder beam_init_precise_batch24 finished in 0.0m 1.96s with 27 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch24: 0.0027 ± 0.0005189 (stderr)
+Decoder beam_init_precise_batch25 finished in 0.0m 1.97s with 22 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch25: 0.0022 ± 0.0004685 (stderr)
+Decoder beam_init_precise_batch26 finished in 0.0m 2.01s with 19 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch26: 0.0019 ± 0.0004355 (stderr)
+Decoder beam_init_precise_batch27 finished in 0.0m 2.01s with 19 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch27: 0.0019 ± 0.0004355 (stderr)
+Decoder beam_init_precise_batch28 finished in 0.0m 1.99s with 24 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch28: 0.0024 ± 0.0004893 (stderr)
+Decoder beam_init_precise_batch29 finished in 0.0m 2.06s with 27 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch29: 0.0027 ± 0.0005189 (stderr)
+Decoder beam_init_precise_batch30 finished in 0.0m 1.96s with 19 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch30: 0.0019 ± 0.0004355 (stderr)
+Decoder beam_init_precise_batch31 finished in 0.0m 1.99s with 13 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch31: 0.0013 ± 0.0003603 (stderr)
+Decoder beam_init_precise_batch32 finished in 0.0m 2.09s with 19 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch32: 0.0019 ± 0.0004355 (stderr)
+Decoder beam_init_precise_batch33 finished in 0.0m 2.05s with 14 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch33: 0.0014 ± 0.0003739 (stderr)
+Decoder beam_init_precise_batch34 finished in 0.0m 2.08s with 30 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch34: 0.003 ± 0.0005469 (stderr)
+Decoder beam_init_precise_batch35 finished in 0.0m 2.12s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch35: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch36 finished in 0.0m 1.99s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch36: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch37 finished in 0.0m 2.01s with 14 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch37: 0.0014 ± 0.0003739 (stderr)
+Decoder beam_init_precise_batch38 finished in 0.0m 2.06s with 25 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch38: 0.0025 ± 0.0004994 (stderr)
+Decoder beam_init_precise_batch39 finished in 0.0m 2.08s with 26 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch39: 0.0026 ± 0.0005093 (stderr)
+Decoder beam_init_precise_batch40 finished in 0.0m 1.99s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch40: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch41 finished in 0.0m 2.24s with 15 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch41: 0.0015 ± 0.0003870 (stderr)
+Decoder beam_init_precise_batch42 finished in 0.0m 1.99s with 30 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch42: 0.003 ± 0.0005469 (stderr)
+Decoder beam_init_precise_batch43 finished in 0.0m 2.05s with 16 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch43: 0.0016 ± 0.0003997 (stderr)
+Decoder beam_init_precise_batch44 finished in 0.0m 1.98s with 12 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch44: 0.0012 ± 0.0003462 (stderr)
+Decoder beam_init_precise_batch45 finished in 0.0m 1.98s with 25 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch45: 0.0025 ± 0.0004994 (stderr)
+Decoder beam_init_precise_batch46 finished in 0.0m 2.01s with 25 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch46: 0.0025 ± 0.0004994 (stderr)
+Decoder beam_init_precise_batch47 finished in 0.0m 2.06s with 16 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch47: 0.0016 ± 0.0003997 (stderr)
+Decoder beam_init_precise_batch48 finished in 0.0m 2.08s with 26 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch48: 0.0026 ± 0.0005093 (stderr)
+Decoder beam_init_precise_batch49 finished in 0.0m 1.92s with 16 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch49: 0.0016 ± 0.0003997 (stderr)
+Decoder beam_init_precise_batch50 finished in 0.0m 1.98s with 16 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch50: 0.0016 ± 0.0003997 (stderr)
+Decoder beam_init_precise_batch51 finished in 0.0m 2.11s with 15 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch51: 0.0015 ± 0.0003870 (stderr)
+Decoder beam_init_precise_batch52 finished in 0.0m 2.10s with 21 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch52: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_init_precise_batch53 finished in 0.0m 1.98s with 17 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch53: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_init_precise_batch54 finished in 0.0m 2.01s with 22 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch54: 0.0022 ± 0.0004685 (stderr)
+Decoder beam_init_precise_batch55 finished in 0.0m 1.91s with 24 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch55: 0.0024 ± 0.0004893 (stderr)
+Decoder beam_init_precise_batch56 finished in 0.0m 2.13s with 19 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch56: 0.0019 ± 0.0004355 (stderr)
+Decoder beam_init_precise_batch57 finished in 0.0m 2.17s with 22 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch57: 0.0022 ± 0.0004685 (stderr)
+Decoder beam_init_precise_batch58 finished in 0.0m 2.07s with 28 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch58: 0.0028 ± 0.0005284 (stderr)
+Decoder beam_init_precise_batch59 finished in 0.0m 2.14s with 22 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch59: 0.0022 ± 0.0004685 (stderr)
+Decoder beam_init_precise_batch60 finished in 0.0m 2.09s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch60: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch61 finished in 0.0m 2.11s with 26 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch61: 0.0026 ± 0.0005093 (stderr)
+Decoder beam_init_precise_batch62 finished in 0.0m 2.02s with 17 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch62: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_init_precise_batch63 finished in 0.0m 1.93s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch63: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch64 finished in 0.0m 1.96s with 20 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch64: 0.002 ± 0.0004468 (stderr)
+Decoder beam_init_precise_batch65 finished in 0.0m 1.95s with 26 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch65: 0.0026 ± 0.0005093 (stderr)
+Decoder beam_init_precise_batch66 finished in 0.0m 2.09s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch66: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch67 finished in 0.0m 2.03s with 20 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch67: 0.002 ± 0.0004468 (stderr)
+Decoder beam_init_precise_batch68 finished in 0.0m 2.12s with 17 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch68: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_init_precise_batch69 finished in 0.0m 1.98s with 21 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch69: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_init_precise_batch70 finished in 0.0m 2.17s with 17 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch70: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_init_precise_batch71 finished in 0.0m 2.08s with 22 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch71: 0.0022 ± 0.0004685 (stderr)
+Decoder beam_init_precise_batch72 finished in 0.0m 1.98s with 22 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch72: 0.0022 ± 0.0004685 (stderr)
+Decoder beam_init_precise_batch73 finished in 0.0m 2.00s with 19 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch73: 0.0019 ± 0.0004355 (stderr)
+Decoder beam_init_precise_batch74 finished in 0.0m 2.07s with 17 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch74: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_init_precise_batch75 finished in 0.0m 2.16s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch75: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch76 finished in 0.0m 1.96s with 20 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch76: 0.002 ± 0.0004468 (stderr)
+Decoder beam_init_precise_batch77 finished in 0.0m 2.01s with 26 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch77: 0.0026 ± 0.0005093 (stderr)
+Decoder beam_init_precise_batch78 finished in 0.0m 2.06s with 20 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch78: 0.002 ± 0.0004468 (stderr)
+Decoder beam_init_precise_batch79 finished in 0.0m 2.06s with 12 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch79: 0.0012 ± 0.0003462 (stderr)
+Decoder beam_init_precise_batch80 finished in 0.0m 1.83s with 20 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch80: 0.002 ± 0.0004468 (stderr)
+Decoder beam_init_precise_batch81 finished in 0.0m 2.05s with 21 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch81: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_init_precise_batch82 finished in 0.0m 2.17s with 23 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch82: 0.0023 ± 0.0004791 (stderr)
+Decoder beam_init_precise_batch83 finished in 0.0m 2.02s with 21 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch83: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_init_precise_batch84 finished in 0.0m 2.17s with 18 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch84: 0.0018 ± 0.0004239 (stderr)
+Decoder beam_init_precise_batch85 finished in 0.0m 1.98s with 17 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch85: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_init_precise_batch86 finished in 0.0m 1.99s with 33 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch86: 0.0033 ± 0.0005735 (stderr)
+Decoder beam_init_precise_batch87 finished in 0.0m 1.99s with 16 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch87: 0.0016 ± 0.0003997 (stderr)
+Decoder beam_init_precise_batch88 finished in 0.0m 1.98s with 27 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch88: 0.0027 ± 0.0005189 (stderr)
+Decoder beam_init_precise_batch89 finished in 0.0m 1.93s with 25 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch89: 0.0025 ± 0.0004994 (stderr)
+Decoder beam_init_precise_batch90 finished in 0.0m 1.95s with 27 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch90: 0.0027 ± 0.0005189 (stderr)
+Decoder beam_init_precise_batch91 finished in 0.0m 2.01s with 24 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch91: 0.0024 ± 0.0004893 (stderr)
+Decoder beam_init_precise_batch92 finished in 0.0m 2.06s with 12 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch92: 0.0012 ± 0.0003462 (stderr)
+Decoder beam_init_precise_batch93 finished in 0.0m 2.07s with 20 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch93: 0.002 ± 0.0004468 (stderr)
+Decoder beam_init_precise_batch94 finished in 0.0m 2.02s with 19 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch94: 0.0019 ± 0.0004355 (stderr)
+Decoder beam_init_precise_batch95 finished in 0.0m 2.00s with 12 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch95: 0.0012 ± 0.0003462 (stderr)
+Decoder beam_init_precise_batch96 finished in 0.0m 2.01s with 17 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch96: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_init_precise_batch97 finished in 0.0m 2.07s with 20 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch97: 0.002 ± 0.0004468 (stderr)
+Decoder beam_init_precise_batch98 finished in 0.0m 2.06s with 17 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch98: 0.0017 ± 0.0004120 (stderr)
+Decoder beam_init_precise_batch99 finished in 0.0m 2.04s with 21 failures out of 10000/10000 runs.
+Logical error rate for beam_init_precise_batch99: 0.0021 ± 0.0004578 (stderr)
+Decoder beam_init_precise finished in 3.0m 23.45s with 2073 failures out of 1000000/1000000 runs.
+Logical error rate for beam_init_precise: 0.002073 ± 0.0000455 (stderr)
+
+Initial state: dist=10, LER=0.002073
+
+=== Beam depth 1/10 ===
+  Depth-1 screening failure cap = 228
+  Parent 1/1 | row=0 | dist=10 | ler=0.002073
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 10
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+Batch 1:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d1_parent0_trial18 EARLY-STOPPED in 8.0m 30.73s with 229 failures out of 88172/100000 runs.
+Logical error rate for beam_d1_parent0_trial18: 0.002597196388876287 ± 0.0001714 (stderr)
+Batch 1:   3%|▎         | 1/32 [08:34<4:25:37, 514.11s/it]Decoder beam_d1_parent0_trial7 finished in 8.0m 55.57s with 219 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial7: 0.00219 ± 0.0001478 (stderr)
+Batch 1:   6%|▋         | 2/32 [08:58<1:53:04, 226.15s/it]Decoder beam_d1_parent0_trial19 finished in 9.0m 6.70s with 204 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial19: 0.00204 ± 0.0001427 (stderr)
+Batch 1:   9%|▉         | 3/32 [09:10<1:01:53, 128.06s/it]Decoder beam_d1_parent0_trial6 finished in 9.0m 11.41s with 181 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial6: 0.00181 ± 0.0001344 (stderr)
+Batch 1:  12%|█▎        | 4/32 [09:14<37:01, 79.35s/it]   Decoder beam_d1_parent0_trial29 finished in 9.0m 12.22s with 216 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial29: 0.00216 ± 0.0001468 (stderr)
+Batch 1:  16%|█▌        | 5/32 [09:14<22:51, 50.81s/it]Decoder beam_d1_parent0_trial24 EARLY-STOPPED in 9.0m 13.78s with 229 failures out of 95288/100000 runs.
+Logical error rate for beam_d1_parent0_trial24: 0.002403240701872219 ± 0.0001586 (stderr)
+Batch 1:  19%|█▉        | 6/32 [09:17<14:51, 34.28s/it]Decoder beam_d1_parent0_trial27 finished in 9.0m 17.60s with 186 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial27: 0.00186 ± 0.0001363 (stderr)
+Batch 1:  22%|██▏       | 7/32 [09:20<10:08, 24.32s/it]Decoder beam_d1_parent0_trial0 finished in 9.0m 18.87s with 211 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial0: 0.00211 ± 0.0001451 (stderr)
+Batch 1:  25%|██▌       | 8/32 [09:21<06:45, 16.88s/it]Decoder beam_d1_parent0_trial10 finished in 9.0m 22.83s with 214 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial10: 0.00214 ± 0.0001461 (stderr)
+Batch 1:  28%|██▊       | 9/32 [09:25<04:56, 12.88s/it]Decoder beam_d1_parent0_trial17 EARLY-STOPPED in 9.0m 23.57s with 229 failures out of 98577/100000 runs.
+Logical error rate for beam_d1_parent0_trial17: 0.0023230571025695647 ± 0.0001533 (stderr)
+Batch 1:  31%|███▏      | 10/32 [09:26<03:22,  9.23s/it]Decoder beam_d1_parent0_trial9 finished in 9.0m 25.54s with 183 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial9: 0.00183 ± 0.0001352 (stderr)
+Batch 1:  34%|███▍      | 11/32 [09:28<02:26,  7.00s/it]Decoder beam_d1_parent0_trial30 finished in 9.0m 26.11s with 217 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial30: 0.00217 ± 0.0001472 (stderr)
+Batch 1:  38%|███▊      | 12/32 [09:29<01:39,  4.95s/it]Decoder beam_d1_parent0_trial3 finished in 9.0m 27.55s with 220 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial3: 0.0022 ± 0.0001482 (stderr)
+Batch 1:  41%|████      | 13/32 [09:30<01:14,  3.92s/it]Decoder beam_d1_parent0_trial8 finished in 9.0m 27.91s with 169 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial8: 0.00169 ± 0.0001299 (stderr)
+Batch 1:  44%|████▍     | 14/32 [09:31<00:51,  2.88s/it]Decoder beam_d1_parent0_trial20 finished in 9.0m 28.28s with 223 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial20: 0.00223 ± 0.0001492 (stderr)
+Batch 1:  47%|████▋     | 15/32 [09:31<00:35,  2.08s/it]Decoder beam_d1_parent0_trial31 finished in 9.0m 28.71s with 205 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial31: 0.00205 ± 0.0001430 (stderr)
+Batch 1:  50%|█████     | 16/32 [09:32<00:25,  1.62s/it]Decoder beam_d1_parent0_trial12 finished in 9.0m 30.15s with 228 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial12: 0.00228 ± 0.0001508 (stderr)
+Batch 1:  53%|█████▎    | 17/32 [09:33<00:23,  1.57s/it]Decoder beam_d1_parent0_trial23 finished in 9.0m 30.96s with 187 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial23: 0.00187 ± 0.0001366 (stderr)
+Batch 1:  56%|█████▋    | 18/32 [09:34<00:18,  1.34s/it]Decoder beam_d1_parent0_trial21 finished in 9.0m 32.20s with 221 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial21: 0.00221 ± 0.0001485 (stderr)
+Batch 1:  59%|█████▉    | 19/32 [09:35<00:16,  1.27s/it]Decoder beam_d1_parent0_trial25 finished in 9.0m 32.11s with 200 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial25: 0.002 ± 0.0001413 (stderr)
+Batch 1:  62%|██████▎   | 20/32 [09:35<00:11,  1.08it/s]Decoder beam_d1_parent0_trial1 finished in 9.0m 32.33s with 222 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial1: 0.00222 ± 0.0001488 (stderr)
+Decoder beam_d1_parent0_trial28 finished in 9.0m 33.48s with 225 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial28: 0.00225 ± 0.0001498 (stderr)
+Batch 1:  69%|██████▉   | 22/32 [09:36<00:08,  1.25it/s]Decoder beam_d1_parent0_trial16 finished in 9.0m 34.13s with 222 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial16: 0.00222 ± 0.0001488 (stderr)
+Batch 1:  72%|███████▏  | 23/32 [09:37<00:06,  1.36it/s]Decoder beam_d1_parent0_trial11 finished in 9.0m 36.40s with 225 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial11: 0.00225 ± 0.0001498 (stderr)
+Batch 1:  75%|███████▌  | 24/32 [09:39<00:09,  1.16s/it]Decoder beam_d1_parent0_trial4 finished in 9.0m 37.16s with 210 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial4: 0.0021 ± 0.0001448 (stderr)
+Batch 1:  78%|███████▊  | 25/32 [09:40<00:07,  1.08s/it]Decoder beam_d1_parent0_trial26 EARLY-STOPPED in 9.0m 38.98s with 229 failures out of 96973/100000 runs.
+Logical error rate for beam_d1_parent0_trial26: 0.0023614820620172627 ± 0.0001559 (stderr)
+Batch 1:  81%|████████▏ | 26/32 [09:42<00:07,  1.23s/it]Decoder beam_d1_parent0_trial2 finished in 9.0m 42.34s with 176 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial2: 0.00176 ± 0.0001325 (stderr)
+Batch 1:  84%|████████▍ | 27/32 [09:45<00:09,  1.86s/it]Decoder beam_d1_parent0_trial22 EARLY-STOPPED in 9.0m 47.04s with 229 failures out of 98540/100000 runs.
+Logical error rate for beam_d1_parent0_trial22: 0.00232392936878425 ± 0.0001534 (stderr)
+Batch 1:  88%|████████▊ | 28/32 [09:50<00:10,  2.66s/it]Decoder beam_d1_parent0_trial5 EARLY-STOPPED in 9.0m 49.15s with 229 failures out of 98942/100000 runs.
+Logical error rate for beam_d1_parent0_trial5: 0.002314487275373451 ± 0.0001528 (stderr)
+Batch 1:  91%|█████████ | 29/32 [09:52<00:07,  2.49s/it]Decoder beam_d1_parent0_trial15 finished in 9.0m 58.85s with 220 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial15: 0.0022 ± 0.0001482 (stderr)
+Batch 1:  94%|█████████▍| 30/32 [10:01<00:08,  4.50s/it]Decoder beam_d1_parent0_trial13 finished in 9.0m 59.22s with 221 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial13: 0.00221 ± 0.0001485 (stderr)
+Batch 1:  97%|█████████▋| 31/32 [10:02<00:03,  3.40s/it]Decoder beam_d1_parent0_trial14 finished in 10.0m 2.89s with 189 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial14: 0.00189 ± 0.0001373 (stderr)
+Batch 1: 100%|██████████| 32/32 [10:06<00:00,  3.50s/it]Batch 1: 100%|██████████| 32/32 [10:06<00:00, 18.94s/it]
+Batch 2:   0%|          | 0/18 [00:00<?, ?it/s]Decoder beam_d1_parent0_trial44 EARLY-STOPPED in 3.0m 55.26s with 229 failures out of 88785/100000 runs.
+Logical error rate for beam_d1_parent0_trial44: 0.0025792645154023765 ± 0.0001702 (stderr)
+Batch 2:   6%|▌         | 1/18 [03:56<1:07:02, 236.64s/it]Decoder beam_d1_parent0_trial46 EARLY-STOPPED in 4.0m 28.02s with 229 failures out of 87808/100000 runs.
+Logical error rate for beam_d1_parent0_trial46: 0.002607962827988338 ± 0.0001721 (stderr)
+Batch 2:  11%|█         | 2/18 [04:29<31:06, 116.68s/it]  Decoder beam_d1_parent0_trial34 EARLY-STOPPED in 4.0m 38.50s with 229 failures out of 86267/100000 runs.
+Logical error rate for beam_d1_parent0_trial34: 0.00265454924826411 ± 0.0001752 (stderr)
+Batch 2:  17%|█▋        | 3/18 [04:39<17:03, 68.20s/it] Decoder beam_d1_parent0_trial32 finished in 4.0m 43.08s with 217 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial32: 0.00217 ± 0.0001472 (stderr)
+Batch 2:  22%|██▏       | 4/18 [04:44<10:03, 43.09s/it]Decoder beam_d1_parent0_trial36 finished in 4.0m 49.47s with 210 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial36: 0.0021 ± 0.0001448 (stderr)
+Batch 2:  28%|██▊       | 5/18 [04:50<06:27, 29.84s/it]Decoder beam_d1_parent0_trial49 EARLY-STOPPED in 4.0m 52.75s with 229 failures out of 98008/100000 runs.
+Logical error rate for beam_d1_parent0_trial49: 0.0023365439555954617 ± 0.0001542 (stderr)
+Batch 2:  33%|███▎      | 6/18 [04:54<04:10, 20.84s/it]Decoder beam_d1_parent0_trial40 EARLY-STOPPED in 4.0m 58.57s with 229 failures out of 93756/100000 runs.
+Logical error rate for beam_d1_parent0_trial40: 0.0024425103460045225 ± 0.0001612 (stderr)
+Batch 2:  39%|███▉      | 7/18 [04:59<02:55, 15.91s/it]Decoder beam_d1_parent0_trial48 finished in 5.0m 5.28s with 209 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial48: 0.00209 ± 0.0001444 (stderr)
+Batch 2:  44%|████▍     | 8/18 [05:06<02:09, 12.98s/it]Decoder beam_d1_parent0_trial45 EARLY-STOPPED in 5.0m 8.20s with 229 failures out of 90533/100000 runs.
+Logical error rate for beam_d1_parent0_trial45: 0.0025294643941988003 ± 0.0001669 (stderr)
+Batch 2:  50%|█████     | 9/18 [05:10<01:30, 10.03s/it]Decoder beam_d1_parent0_trial43 finished in 5.0m 11.55s with 211 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial43: 0.00211 ± 0.0001451 (stderr)
+Batch 2:  56%|█████▌    | 10/18 [05:12<01:01,  7.75s/it]Decoder beam_d1_parent0_trial42 EARLY-STOPPED in 5.0m 13.74s with 229 failures out of 91990/100000 runs.
+Logical error rate for beam_d1_parent0_trial42: 0.002489401021850201 ± 0.0001643 (stderr)
+Batch 2:  61%|██████    | 11/18 [05:15<00:42,  6.12s/it]Decoder beam_d1_parent0_trial41 finished in 5.0m 17.91s with 206 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial41: 0.00206 ± 0.0001434 (stderr)
+Batch 2:  67%|██████▋   | 12/18 [05:19<00:32,  5.49s/it]Decoder beam_d1_parent0_trial35 finished in 5.0m 21.72s with 216 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial35: 0.00216 ± 0.0001468 (stderr)
+Batch 2:  72%|███████▏  | 13/18 [05:23<00:24,  4.98s/it]Decoder beam_d1_parent0_trial39 finished in 5.0m 27.19s with 211 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial39: 0.00211 ± 0.0001451 (stderr)
+Batch 2:  78%|███████▊  | 14/18 [05:28<00:20,  5.13s/it]Decoder beam_d1_parent0_trial38 EARLY-STOPPED in 5.0m 31.11s with 229 failures out of 89504/100000 runs.
+Logical error rate for beam_d1_parent0_trial38: 0.002558544869503039 ± 0.0001689 (stderr)
+Batch 2:  83%|████████▎ | 15/18 [05:32<00:14,  4.76s/it]Decoder beam_d1_parent0_trial33 finished in 5.0m 35.50s with 203 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial33: 0.00203 ± 0.0001423 (stderr)
+Batch 2:  89%|████████▉ | 16/18 [05:36<00:09,  4.66s/it]Decoder beam_d1_parent0_trial37 finished in 5.0m 43.18s with 224 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial37: 0.00224 ± 0.0001495 (stderr)
+Batch 2:  94%|█████████▍| 17/18 [05:44<00:05,  5.52s/it]Decoder beam_d1_parent0_trial47 finished in 5.0m 56.68s with 207 failures out of 100000/100000 runs.
+Logical error rate for beam_d1_parent0_trial47: 0.00207 ± 0.0001437 (stderr)
+Batch 2: 100%|██████████| 18/18 [05:58<00:00,  7.95s/it]Batch 2: 100%|██████████| 18/18 [05:58<00:00, 19.89s/it]
+  Provisional beam candidates (before precision re-eval):
+    1. row=0 dist=10 ler=0.002073 early_stopped=False
+    2. row=9 dist=10 ler=0.001690 early_stopped=False
+    3. row=3 dist=10 ler=0.001760 early_stopped=False
+    4. row=7 dist=10 ler=0.001810 early_stopped=False
+  Precision re-evaluating 3 promoted beam state(s): [9, 3, 7]
+Parent precision MC:   0%|          | 0/3 [00:00<?, ?it/s]Decoder parent_precision_row_7 finished in 46.0m 29.90s with 1737 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_7: 0.001737 ± 0.0000416 (stderr)
+Parent precision MC:  33%|███▎      | 1/3 [46:31<1:33:02, 2791.15s/it]Decoder parent_precision_row_9 finished in 49.0m 21.24s with 1811 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_9: 0.001811 ± 0.0000425 (stderr)
+Parent precision MC:  67%|██████▋   | 2/3 [49:22<20:50, 1250.05s/it]  Decoder parent_precision_row_3 finished in 50.0m 4.05s with 1811 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_3: 0.001811 ± 0.0000425 (stderr)
+Parent precision MC: 100%|██████████| 3/3 [50:05<00:00, 698.90s/it] Parent precision MC: 100%|██████████| 3/3 [50:05<00:00, 1001.82s/it]
+  Provisional beam candidates screening LER -> precise LER:
+1. row=0 dist=10 screen_ler=- precise_ler=0.002073 early_stopped=False
+2. row=9 dist=10 screen_ler=0.001690 precise_ler=0.001811 early_stopped=False
+3. row=3 dist=10 screen_ler=0.001760 precise_ler=0.001811 early_stopped=False
+4. row=7 dist=10 screen_ler=0.001810 precise_ler=0.001737 early_stopped=False
+    [!] New best global at row 9, LER: 0.001811, dist=10
+    [!] New best global at row 7, LER: 0.001737, dist=10
+  Survivors:
+    1. row=7 dist=10 ler=0.001737
+    2. row=9 dist=10 ler=0.001811
+
+=== Beam depth 2/10 ===
+  Depth-2 screening failure cap = 202
+  Parent 1/2 | row=7 | dist=10 | ler=0.001737
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 10
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+  Parent 2/2 | row=9 | dist=10 | ler=0.001811
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 10
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+Batch 1:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d2_parent7_trial6 EARLY-STOPPED in 7.0m 20.31s with 203 failures out of 84814/100000 runs.
+Logical error rate for beam_d2_parent7_trial6: 0.0023934727757209894 ± 0.0001678 (stderr)
+Batch 1:   3%|▎         | 1/32 [07:22<3:48:45, 442.76s/it]Decoder beam_d2_parent7_trial4 EARLY-STOPPED in 7.0m 50.30s with 203 failures out of 87155/100000 runs.
+Logical error rate for beam_d2_parent7_trial4: 0.0023291836383454766 ± 0.0001633 (stderr)
+Batch 1:   6%|▋         | 2/32 [07:52<1:39:59, 200.00s/it]Decoder beam_d2_parent7_trial21 EARLY-STOPPED in 8.0m 15.21s with 203 failures out of 85447/100000 runs.
+Logical error rate for beam_d2_parent7_trial21: 0.0023757416878298827 ± 0.0001665 (stderr)
+Batch 1:   9%|▉         | 3/32 [08:17<58:02, 120.09s/it]  Decoder beam_d2_parent7_trial8 EARLY-STOPPED in 8.0m 17.90s with 203 failures out of 93820/100000 runs.
+Logical error rate for beam_d2_parent7_trial8: 0.002163717757407802 ± 0.0001517 (stderr)
+Batch 1:  12%|█▎        | 4/32 [08:20<34:22, 73.67s/it] Decoder beam_d2_parent7_trial2 EARLY-STOPPED in 8.0m 25.89s with 203 failures out of 93171/100000 runs.
+Logical error rate for beam_d2_parent7_trial2: 0.0021787895375170387 ± 0.0001528 (stderr)
+Batch 1:  16%|█▌        | 5/32 [08:28<22:30, 50.03s/it]Decoder beam_d2_parent7_trial30 EARLY-STOPPED in 8.0m 29.49s with 203 failures out of 92025/100000 runs.
+Logical error rate for beam_d2_parent7_trial30: 0.0022059223037218145 ± 0.0001547 (stderr)
+Batch 1:  19%|█▉        | 6/32 [08:32<14:50, 34.25s/it]Decoder beam_d2_parent7_trial26 finished in 8.0m 31.51s with 197 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial26: 0.00197 ± 0.0001402 (stderr)
+Batch 1:  22%|██▏       | 7/32 [08:34<09:52, 23.70s/it]Decoder beam_d2_parent7_trial3 finished in 8.0m 38.61s with 178 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial3: 0.00178 ± 0.0001333 (stderr)
+Batch 1:  25%|██▌       | 8/32 [08:40<07:20, 18.36s/it]Decoder beam_d2_parent7_trial25 EARLY-STOPPED in 8.0m 40.46s with 203 failures out of 94081/100000 runs.
+Logical error rate for beam_d2_parent7_trial25: 0.0021577151603405574 ± 0.0001513 (stderr)
+Batch 1:  28%|██▊       | 9/32 [08:42<05:03, 13.19s/it]Decoder beam_d2_parent7_trial22 EARLY-STOPPED in 8.0m 40.54s with 203 failures out of 97212/100000 runs.
+Logical error rate for beam_d2_parent7_trial22: 0.002088219561371024 ± 0.0001464 (stderr)
+Batch 1:  31%|███▏      | 10/32 [08:44<03:30,  9.55s/it]Decoder beam_d2_parent7_trial23 EARLY-STOPPED in 8.0m 45.62s with 203 failures out of 98516/100000 runs.
+Logical error rate for beam_d2_parent7_trial23: 0.0020605789922449147 ± 0.0001445 (stderr)
+Batch 1:  34%|███▍      | 11/32 [08:48<02:44,  7.82s/it]Decoder beam_d2_parent7_trial15 finished in 8.0m 45.73s with 158 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial15: 0.00158 ± 0.0001256 (stderr)
+Batch 1:  38%|███▊      | 12/32 [08:48<01:49,  5.50s/it]Decoder beam_d2_parent7_trial0 finished in 8.0m 47.52s with 178 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial0: 0.00178 ± 0.0001333 (stderr)
+Batch 1:  41%|████      | 13/32 [08:50<01:23,  4.37s/it]Decoder beam_d2_parent7_trial1 finished in 8.0m 48.19s with 201 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial1: 0.00201 ± 0.0001416 (stderr)
+Batch 1:  44%|████▍     | 14/32 [08:50<00:58,  3.26s/it]Decoder beam_d2_parent7_trial7 EARLY-STOPPED in 8.0m 56.63s with 203 failures out of 98651/100000 runs.
+Logical error rate for beam_d2_parent7_trial7: 0.0020577591712197547 ± 0.0001443 (stderr)
+Batch 1:  47%|████▋     | 15/32 [08:59<01:21,  4.82s/it]Decoder beam_d2_parent7_trial27 finished in 9.0m 0.25s with 153 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial27: 0.00153 ± 0.0001236 (stderr)
+Batch 1:  50%|█████     | 16/32 [09:02<01:11,  4.48s/it]Decoder beam_d2_parent7_trial10 EARLY-STOPPED in 9.0m 0.80s with 203 failures out of 99925/100000 runs.
+Logical error rate for beam_d2_parent7_trial10: 0.002031523642732049 ± 0.0001424 (stderr)
+Batch 1:  53%|█████▎    | 17/32 [09:03<00:49,  3.30s/it]Decoder beam_d2_parent7_trial19 finished in 9.0m 1.69s with 162 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial19: 0.00162 ± 0.0001272 (stderr)
+Batch 1:  56%|█████▋    | 18/32 [09:04<00:34,  2.48s/it]Decoder beam_d2_parent7_trial29 finished in 9.0m 1.94s with 183 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial29: 0.00183 ± 0.0001352 (stderr)
+Batch 1:  59%|█████▉    | 19/32 [09:04<00:24,  1.88s/it]Decoder beam_d2_parent7_trial20 finished in 9.0m 2.77s with 201 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial20: 0.00201 ± 0.0001416 (stderr)
+Batch 1:  62%|██████▎   | 20/32 [09:05<00:18,  1.50s/it]Decoder beam_d2_parent7_trial28 finished in 9.0m 5.25s with 180 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial28: 0.0018 ± 0.0001340 (stderr)
+Batch 1:  66%|██████▌   | 21/32 [09:08<00:21,  1.94s/it]Decoder beam_d2_parent7_trial5 finished in 9.0m 5.67s with 195 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial5: 0.00195 ± 0.0001395 (stderr)
+Batch 1:  69%|██████▉   | 22/32 [09:08<00:14,  1.40s/it]Decoder beam_d2_parent7_trial24 finished in 9.0m 6.08s with 168 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial24: 0.00168 ± 0.0001295 (stderr)
+Batch 1:  72%|███████▏  | 23/32 [09:08<00:09,  1.07s/it]Decoder beam_d2_parent7_trial11 finished in 9.0m 6.06s with 190 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial11: 0.0019 ± 0.0001377 (stderr)
+Batch 1:  75%|███████▌  | 24/32 [09:08<00:06,  1.24it/s]Decoder beam_d2_parent7_trial13 finished in 9.0m 7.78s with 154 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial13: 0.00154 ± 0.0001240 (stderr)
+Batch 1:  78%|███████▊  | 25/32 [09:10<00:07,  1.02s/it]Decoder beam_d2_parent7_trial18 finished in 9.0m 10.02s with 171 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial18: 0.00171 ± 0.0001307 (stderr)
+Batch 1:  81%|████████▏ | 26/32 [09:12<00:08,  1.42s/it]Decoder beam_d2_parent7_trial12 finished in 9.0m 12.32s with 199 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial12: 0.00199 ± 0.0001409 (stderr)
+Batch 1:  84%|████████▍ | 27/32 [09:14<00:08,  1.65s/it]Decoder beam_d2_parent7_trial31 finished in 9.0m 20.64s with 180 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial31: 0.0018 ± 0.0001340 (stderr)
+Batch 1:  88%|████████▊ | 28/32 [09:23<00:14,  3.69s/it]Decoder beam_d2_parent7_trial14 finished in 9.0m 22.66s with 154 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial14: 0.00154 ± 0.0001240 (stderr)
+Batch 1:  91%|█████████ | 29/32 [09:25<00:09,  3.15s/it]Decoder beam_d2_parent7_trial17 finished in 9.0m 27.41s with 192 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial17: 0.00192 ± 0.0001384 (stderr)
+Batch 1:  94%|█████████▍| 30/32 [09:29<00:07,  3.60s/it]Decoder beam_d2_parent7_trial16 finished in 9.0m 54.87s with 184 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial16: 0.00184 ± 0.0001355 (stderr)
+Batch 1:  97%|█████████▋| 31/32 [09:57<00:10, 10.78s/it]Decoder beam_d2_parent7_trial9 finished in 10.0m 8.47s with 169 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial9: 0.00169 ± 0.0001299 (stderr)
+Batch 1: 100%|██████████| 32/32 [10:11<00:00, 11.69s/it]Batch 1: 100%|██████████| 32/32 [10:11<00:00, 19.10s/it]
+Batch 2:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d2_parent7_trial38 EARLY-STOPPED in 6.0m 51.00s with 203 failures out of 67961/100000 runs.
+Logical error rate for beam_d2_parent7_trial38: 0.002987007254160474 ± 0.0002093 (stderr)
+Batch 2:   3%|▎         | 1/32 [06:53<3:33:43, 413.66s/it]Decoder beam_d2_parent9_trial9 EARLY-STOPPED in 8.0m 38.01s with 203 failures out of 87891/100000 runs.
+Logical error rate for beam_d2_parent9_trial9: 0.002309679034258343 ± 0.0001619 (stderr)
+Batch 2:   6%|▋         | 2/32 [08:40<1:56:36, 233.21s/it]Decoder beam_d2_parent9_trial12 EARLY-STOPPED in 8.0m 42.39s with 203 failures out of 89418/100000 runs.
+Logical error rate for beam_d2_parent9_trial12: 0.002270236417723501 ± 0.0001592 (stderr)
+Batch 2:   9%|▉         | 3/32 [08:44<1:02:12, 128.72s/it]Decoder beam_d2_parent9_trial13 EARLY-STOPPED in 8.0m 45.20s with 203 failures out of 87629/100000 runs.
+Logical error rate for beam_d2_parent9_trial13: 0.0023165846922822354 ± 0.0001624 (stderr)
+Batch 2:  12%|█▎        | 4/32 [08:47<36:52, 79.01s/it]   Decoder beam_d2_parent7_trial32 finished in 8.0m 49.72s with 179 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial32: 0.00179 ± 0.0001337 (stderr)
+Batch 2:  16%|█▌        | 5/32 [08:52<23:29, 52.19s/it]Decoder beam_d2_parent7_trial34 EARLY-STOPPED in 8.0m 55.02s with 203 failures out of 88836/100000 runs.
+Logical error rate for beam_d2_parent7_trial34: 0.0022851096402359402 ± 0.0001602 (stderr)
+Batch 2:  19%|█▉        | 6/32 [08:57<15:41, 36.22s/it]Decoder beam_d2_parent7_trial48 finished in 8.0m 57.73s with 175 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial48: 0.00175 ± 0.0001322 (stderr)
+Batch 2:  22%|██▏       | 7/32 [09:00<10:32, 25.32s/it]Decoder beam_d2_parent9_trial5 EARLY-STOPPED in 8.0m 58.14s with 203 failures out of 97543/100000 runs.
+Logical error rate for beam_d2_parent9_trial5: 0.0020811334488379483 ± 0.0001459 (stderr)
+Batch 2:  25%|██▌       | 8/32 [09:00<06:56, 17.36s/it]Decoder beam_d2_parent7_trial42 finished in 8.0m 58.82s with 202 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial42: 0.00202 ± 0.0001420 (stderr)
+Batch 2:  28%|██▊       | 9/32 [09:01<04:38, 12.11s/it]Decoder beam_d2_parent7_trial45 finished in 8.0m 59.34s with 183 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial45: 0.00183 ± 0.0001352 (stderr)
+Batch 2:  31%|███▏      | 10/32 [09:01<03:08,  8.56s/it]Decoder beam_d2_parent7_trial40 finished in 9.0m 2.70s with 167 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial40: 0.00167 ± 0.0001291 (stderr)
+Batch 2:  34%|███▍      | 11/32 [09:05<02:26,  6.98s/it]Decoder beam_d2_parent7_trial47 finished in 9.0m 2.55s with 177 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial47: 0.00177 ± 0.0001329 (stderr)
+Batch 2:  38%|███▊      | 12/32 [09:05<01:37,  4.90s/it]Decoder beam_d2_parent7_trial37 finished in 9.0m 5.41s with 193 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial37: 0.00193 ± 0.0001388 (stderr)
+Batch 2:  41%|████      | 13/32 [09:08<01:20,  4.22s/it]Decoder beam_d2_parent7_trial41 EARLY-STOPPED in 9.0m 7.71s with 203 failures out of 96586/100000 runs.
+Logical error rate for beam_d2_parent7_trial41: 0.0021017538773735324 ± 0.0001474 (stderr)
+Batch 2:  44%|████▍     | 14/32 [09:10<01:04,  3.61s/it]Decoder beam_d2_parent7_trial49 finished in 9.0m 8.97s with 174 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial49: 0.00174 ± 0.0001318 (stderr)
+Batch 2:  47%|████▋     | 15/32 [09:11<00:49,  2.92s/it]Decoder beam_d2_parent7_trial46 finished in 9.0m 12.51s with 167 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial46: 0.00167 ± 0.0001291 (stderr)
+Batch 2:  50%|█████     | 16/32 [09:15<00:49,  3.07s/it]Decoder beam_d2_parent9_trial11 EARLY-STOPPED in 9.0m 13.30s with 203 failures out of 84547/100000 runs.
+Logical error rate for beam_d2_parent9_trial11: 0.002401031378996298 ± 0.0001683 (stderr)
+Batch 2:  53%|█████▎    | 17/32 [09:15<00:35,  2.35s/it]Decoder beam_d2_parent9_trial6 finished in 9.0m 13.44s with 186 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial6: 0.00186 ± 0.0001363 (stderr)
+Batch 2:  56%|█████▋    | 18/32 [09:15<00:24,  1.71s/it]Decoder beam_d2_parent9_trial3 EARLY-STOPPED in 9.0m 15.04s with 203 failures out of 98134/100000 runs.
+Logical error rate for beam_d2_parent9_trial3: 0.002068600077445126 ± 0.0001450 (stderr)
+Batch 2:  59%|█████▉    | 19/32 [09:17<00:21,  1.67s/it]Decoder beam_d2_parent9_trial7 EARLY-STOPPED in 9.0m 15.86s with 203 failures out of 96136/100000 runs.
+Logical error rate for beam_d2_parent9_trial7: 0.002111591911458767 ± 0.0001480 (stderr)
+Batch 2:  62%|██████▎   | 20/32 [09:18<00:17,  1.46s/it]Decoder beam_d2_parent9_trial4 finished in 9.0m 16.53s with 182 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial4: 0.00182 ± 0.0001348 (stderr)
+Batch 2:  66%|██████▌   | 21/32 [09:19<00:13,  1.21s/it]Decoder beam_d2_parent7_trial39 finished in 9.0m 18.05s with 168 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial39: 0.00168 ± 0.0001295 (stderr)
+Batch 2:  69%|██████▉   | 22/32 [09:20<00:12,  1.22s/it]Decoder beam_d2_parent9_trial8 finished in 9.0m 20.98s with 164 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial8: 0.00164 ± 0.0001280 (stderr)
+Batch 2:  72%|███████▏  | 23/32 [09:23<00:16,  1.82s/it]Decoder beam_d2_parent7_trial44 EARLY-STOPPED in 9.0m 21.48s with 203 failures out of 98695/100000 runs.
+Logical error rate for beam_d2_parent7_trial44: 0.0020568417852981405 ± 0.0001442 (stderr)
+Batch 2:  75%|███████▌  | 24/32 [09:23<00:10,  1.33s/it]Decoder beam_d2_parent9_trial0 finished in 9.0m 23.10s with 183 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial0: 0.00183 ± 0.0001352 (stderr)
+Batch 2:  78%|███████▊  | 25/32 [09:25<00:10,  1.50s/it]Decoder beam_d2_parent7_trial36 finished in 9.0m 26.84s with 170 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial36: 0.0017 ± 0.0001303 (stderr)
+Batch 2:  81%|████████▏ | 26/32 [09:29<00:13,  2.18s/it]Decoder beam_d2_parent7_trial35 finished in 9.0m 30.50s with 177 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial35: 0.00177 ± 0.0001329 (stderr)
+Batch 2:  84%|████████▍ | 27/32 [09:33<00:12,  2.59s/it]Decoder beam_d2_parent7_trial33 EARLY-STOPPED in 9.0m 33.03s with 203 failures out of 95671/100000 runs.
+Logical error rate for beam_d2_parent7_trial33: 0.002121855107608366 ± 0.0001488 (stderr)
+Batch 2:  88%|████████▊ | 28/32 [09:35<00:10,  2.60s/it]Decoder beam_d2_parent9_trial10 finished in 9.0m 34.76s with 170 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial10: 0.0017 ± 0.0001303 (stderr)
+Batch 2:  91%|█████████ | 29/32 [09:37<00:07,  2.35s/it]Decoder beam_d2_parent7_trial43 finished in 9.0m 42.33s with 157 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent7_trial43: 0.00157 ± 0.0001252 (stderr)
+Batch 2:  94%|█████████▍| 30/32 [09:45<00:07,  3.92s/it]Decoder beam_d2_parent9_trial1 EARLY-STOPPED in 9.0m 50.10s with 203 failures out of 92331/100000 runs.
+Logical error rate for beam_d2_parent9_trial1: 0.002198611517258559 ± 0.0001541 (stderr)
+Batch 2:  97%|█████████▋| 31/32 [09:52<00:04,  4.98s/it]Decoder beam_d2_parent9_trial2 finished in 9.0m 56.17s with 187 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial2: 0.00187 ± 0.0001366 (stderr)
+Batch 2: 100%|██████████| 32/32 [09:58<00:00,  5.37s/it]Batch 2: 100%|██████████| 32/32 [09:58<00:00, 18.71s/it]
+Batch 3:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d2_parent9_trial43 EARLY-STOPPED in 8.0m 3.10s with 203 failures out of 73004/100000 runs.
+Logical error rate for beam_d2_parent9_trial43: 0.002780669552353296 ± 0.0001949 (stderr)
+Batch 3:   3%|▎         | 1/32 [08:05<4:10:53, 485.61s/it]Decoder beam_d2_parent9_trial24 EARLY-STOPPED in 8.0m 15.01s with 203 failures out of 88296/100000 runs.
+Logical error rate for beam_d2_parent9_trial24: 0.002299084896258041 ± 0.0001612 (stderr)
+Batch 3:   6%|▋         | 2/32 [08:17<1:43:23, 206.77s/it]Decoder beam_d2_parent9_trial22 EARLY-STOPPED in 8.0m 16.50s with 203 failures out of 78507/100000 runs.
+Logical error rate for beam_d2_parent9_trial22: 0.00258575668411734 ± 0.0001813 (stderr)
+Batch 3:   9%|▉         | 3/32 [08:19<54:42, 113.18s/it]  Decoder beam_d2_parent9_trial20 EARLY-STOPPED in 8.0m 31.08s with 203 failures out of 82658/100000 runs.
+Logical error rate for beam_d2_parent9_trial20: 0.0024559026349536646 ± 0.0001722 (stderr)
+Batch 3:  12%|█▎        | 4/32 [08:33<34:38, 74.22s/it] Decoder beam_d2_parent9_trial21 EARLY-STOPPED in 8.0m 32.15s with 203 failures out of 88762/100000 runs.
+Logical error rate for beam_d2_parent9_trial21: 0.002287014713503526 ± 0.0001603 (stderr)
+Batch 3:  16%|█▌        | 5/32 [08:34<21:30, 47.79s/it]Decoder beam_d2_parent9_trial30 EARLY-STOPPED in 8.0m 32.21s with 203 failures out of 89534/100000 runs.
+Logical error rate for beam_d2_parent9_trial30: 0.002267295105769875 ± 0.0001590 (stderr)
+Batch 3:  19%|█▉        | 6/32 [08:34<13:42, 31.64s/it]Decoder beam_d2_parent9_trial42 EARLY-STOPPED in 8.0m 32.59s with 203 failures out of 96096/100000 runs.
+Logical error rate for beam_d2_parent9_trial42: 0.0021124708624708625 ± 0.0001481 (stderr)
+Batch 3:  22%|██▏       | 7/32 [08:35<08:56, 21.45s/it]Decoder beam_d2_parent9_trial37 finished in 8.0m 42.59s with 200 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial37: 0.002 ± 0.0001413 (stderr)
+Batch 3:  25%|██▌       | 8/32 [08:45<07:06, 17.78s/it]Decoder beam_d2_parent9_trial23 finished in 8.0m 47.13s with 173 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial23: 0.00173 ± 0.0001314 (stderr)
+Batch 3:  28%|██▊       | 9/32 [08:49<05:13, 13.64s/it]Decoder beam_d2_parent9_trial19 EARLY-STOPPED in 8.0m 50.45s with 203 failures out of 84810/100000 runs.
+Logical error rate for beam_d2_parent9_trial19: 0.002393585662068152 ± 0.0001678 (stderr)
+Batch 3:  31%|███▏      | 10/32 [08:52<03:49, 10.41s/it]Decoder beam_d2_parent9_trial17 EARLY-STOPPED in 8.0m 55.11s with 203 failures out of 97366/100000 runs.
+Logical error rate for beam_d2_parent9_trial17: 0.002084916706037015 ± 0.0001462 (stderr)
+Batch 3:  34%|███▍      | 11/32 [08:57<03:02,  8.70s/it]Decoder beam_d2_parent9_trial39 EARLY-STOPPED in 9.0m 0.75s with 203 failures out of 96732/100000 runs.
+Logical error rate for beam_d2_parent9_trial39: 0.0020985816482653103 ± 0.0001471 (stderr)
+Batch 3:  38%|███▊      | 12/32 [09:03<02:35,  7.76s/it]Decoder beam_d2_parent9_trial25 finished in 9.0m 7.38s with 166 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial25: 0.00166 ± 0.0001287 (stderr)
+Batch 3:  41%|████      | 13/32 [09:09<02:21,  7.45s/it]Decoder beam_d2_parent9_trial31 EARLY-STOPPED in 9.0m 8.53s with 203 failures out of 98128/100000 runs.
+Logical error rate for beam_d2_parent9_trial31: 0.0020687265612261536 ± 0.0001450 (stderr)
+Batch 3:  44%|████▍     | 14/32 [09:11<01:39,  5.52s/it]Decoder beam_d2_parent9_trial36 EARLY-STOPPED in 9.0m 11.91s with 203 failures out of 92839/100000 runs.
+Logical error rate for beam_d2_parent9_trial36: 0.0021865810704553043 ± 0.0001533 (stderr)
+Batch 3:  47%|████▋     | 15/32 [09:14<01:23,  4.90s/it]Decoder beam_d2_parent9_trial27 finished in 9.0m 12.61s with 197 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial27: 0.00197 ± 0.0001402 (stderr)
+Batch 3:  50%|█████     | 16/32 [09:15<00:57,  3.61s/it]Decoder beam_d2_parent9_trial35 EARLY-STOPPED in 9.0m 13.52s with 203 failures out of 97613/100000 runs.
+Logical error rate for beam_d2_parent9_trial35: 0.002079641031419995 ± 0.0001458 (stderr)
+Batch 3:  53%|█████▎    | 17/32 [09:16<00:42,  2.80s/it]Decoder beam_d2_parent9_trial15 finished in 9.0m 15.76s with 158 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial15: 0.00158 ± 0.0001256 (stderr)
+Batch 3:  56%|█████▋    | 18/32 [09:17<00:35,  2.51s/it]Decoder beam_d2_parent9_trial34 finished in 9.0m 17.50s with 196 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial34: 0.00196 ± 0.0001399 (stderr)
+Batch 3:  59%|█████▉    | 19/32 [09:19<00:29,  2.30s/it]Decoder beam_d2_parent9_trial29 finished in 9.0m 17.44s with 184 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial29: 0.00184 ± 0.0001355 (stderr)
+Batch 3:  62%|██████▎   | 20/32 [09:19<00:20,  1.69s/it]Decoder beam_d2_parent9_trial26 EARLY-STOPPED in 9.0m 22.07s with 203 failures out of 91677/100000 runs.
+Logical error rate for beam_d2_parent9_trial26: 0.0022142958430140603 ± 0.0001552 (stderr)
+Batch 3:  66%|██████▌   | 21/32 [09:24<00:26,  2.45s/it]Decoder beam_d2_parent9_trial33 finished in 9.0m 22.17s with 184 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial33: 0.00184 ± 0.0001355 (stderr)
+Batch 3:  69%|██████▉   | 22/32 [09:24<00:18,  1.86s/it]Decoder beam_d2_parent9_trial16 finished in 9.0m 23.87s with 197 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial16: 0.00197 ± 0.0001402 (stderr)
+Batch 3:  72%|███████▏  | 23/32 [09:26<00:16,  1.82s/it]Decoder beam_d2_parent9_trial45 EARLY-STOPPED in 9.0m 24.24s with 203 failures out of 98170/100000 runs.
+Logical error rate for beam_d2_parent9_trial45: 0.0020678414994397473 ± 0.0001450 (stderr)
+Decoder beam_d2_parent9_trial14 finished in 9.0m 33.38s with 175 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial14: 0.00175 ± 0.0001322 (stderr)
+Batch 3:  78%|███████▊  | 25/32 [09:35<00:21,  3.11s/it]Decoder beam_d2_parent9_trial44 finished in 9.0m 38.89s with 185 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial44: 0.00185 ± 0.0001359 (stderr)
+Batch 3:  81%|████████▏ | 26/32 [09:41<00:22,  3.75s/it]Decoder beam_d2_parent9_trial40 finished in 9.0m 40.23s with 193 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial40: 0.00193 ± 0.0001388 (stderr)
+Batch 3:  84%|████████▍ | 27/32 [09:42<00:15,  3.12s/it]Decoder beam_d2_parent9_trial28 finished in 9.0m 44.63s with 178 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial28: 0.00178 ± 0.0001333 (stderr)
+Batch 3:  88%|████████▊ | 28/32 [09:47<00:13,  3.47s/it]Decoder beam_d2_parent9_trial32 finished in 9.0m 46.43s with 201 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial32: 0.00201 ± 0.0001416 (stderr)
+Batch 3:  91%|█████████ | 29/32 [09:49<00:09,  3.05s/it]Decoder beam_d2_parent9_trial38 EARLY-STOPPED in 9.0m 47.08s with 203 failures out of 97221/100000 runs.
+Logical error rate for beam_d2_parent9_trial38: 0.0020880262494728506 ± 0.0001464 (stderr)
+Batch 3:  94%|█████████▍| 30/32 [09:49<00:04,  2.37s/it]Decoder beam_d2_parent9_trial18 finished in 9.0m 56.88s with 177 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial18: 0.00177 ± 0.0001329 (stderr)
+Batch 3:  97%|█████████▋| 31/32 [09:59<00:04,  4.46s/it]Decoder beam_d2_parent9_trial41 finished in 10.0m 12.54s with 170 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial41: 0.0017 ± 0.0001303 (stderr)
+Batch 3: 100%|██████████| 32/32 [10:15<00:00,  7.77s/it]Batch 3: 100%|██████████| 32/32 [10:15<00:00, 19.22s/it]
+Batch 4:   0%|          | 0/4 [00:00<?, ?it/s]Decoder beam_d2_parent9_trial47 EARLY-STOPPED in 4.0m 12.11s with 203 failures out of 86848/100000 runs.
+Logical error rate for beam_d2_parent9_trial47: 0.0023374170965364777 ± 0.0001639 (stderr)
+Batch 4:  25%|██▌       | 1/4 [04:13<12:39, 253.26s/it]Decoder beam_d2_parent9_trial46 finished in 4.0m 46.50s with 185 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial46: 0.00185 ± 0.0001359 (stderr)
+Batch 4:  50%|█████     | 2/4 [04:47<04:09, 124.65s/it]Decoder beam_d2_parent9_trial48 finished in 4.0m 56.05s with 150 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial48: 0.0015 ± 0.0001224 (stderr)
+Batch 4:  75%|███████▌  | 3/4 [04:57<01:12, 72.18s/it] Decoder beam_d2_parent9_trial49 finished in 5.0m 0.32s with 178 failures out of 100000/100000 runs.
+Logical error rate for beam_d2_parent9_trial49: 0.00178 ± 0.0001333 (stderr)
+Batch 4: 100%|██████████| 4/4 [05:01<00:00, 45.22s/it]Batch 4: 100%|██████████| 4/4 [05:01<00:00, 75.38s/it]
+  Provisional beam candidates (before precision re-eval):
+    1. row=7 dist=10 ler=0.001737 early_stopped=False
+    2. row=9 dist=10 ler=0.001811 early_stopped=False
+    3. row=149 dist=10 ler=0.001500 early_stopped=False
+    4. row=78 dist=10 ler=0.001530 early_stopped=False
+  Precision re-evaluating 2 promoted beam state(s): [149, 78]
+Parent precision MC:   0%|          | 0/2 [00:00<?, ?it/s]Decoder parent_precision_row_78 finished in 46.0m 32.04s with 1630 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_78: 0.00163 ± 0.0000403 (stderr)
+Parent precision MC:  50%|█████     | 1/2 [46:33<46:33, 2793.30s/it]Decoder parent_precision_row_149 finished in 49.0m 23.63s with 1548 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_149: 0.001548 ± 0.0000393 (stderr)
+Parent precision MC: 100%|██████████| 2/2 [49:25<00:00, 1251.40s/it]Parent precision MC: 100%|██████████| 2/2 [49:25<00:00, 1482.68s/it]
+  Provisional beam candidates screening LER -> precise LER:
+1. row=7 dist=10 screen_ler=0.001810 precise_ler=0.001737 early_stopped=False
+2. row=9 dist=10 screen_ler=0.001690 precise_ler=0.001811 early_stopped=False
+3. row=149 dist=10 screen_ler=0.001500 precise_ler=0.001548 early_stopped=False
+4. row=78 dist=10 screen_ler=0.001530 precise_ler=0.001630 early_stopped=False
+    [!] New best global at row 149, LER: 0.001548, dist=10
+  Survivors:
+    1. row=149 dist=10 ler=0.001548
+    2. row=78 dist=10 ler=0.001630
+
+=== Beam depth 3/10 ===
+  Depth-3 screening failure cap = 183
+  Parent 1/2 | row=149 | dist=10 | ler=0.001548
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 10
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+  Parent 2/2 | row=78 | dist=10 | ler=0.001630
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 10
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+Batch 1:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d3_parent149_trial29 EARLY-STOPPED in 7.0m 14.61s with 184 failures out of 80969/100000 runs.
+Logical error rate for beam_d3_parent149_trial29: 0.0022724746507922786 ± 0.0001673 (stderr)
+Batch 1:   3%|▎         | 1/32 [07:17<3:45:51, 437.13s/it]Decoder beam_d3_parent149_trial1 EARLY-STOPPED in 7.0m 26.98s with 184 failures out of 75275/100000 runs.
+Logical error rate for beam_d3_parent149_trial1: 0.002444370640983062 ± 0.0001800 (stderr)
+Batch 1:   6%|▋         | 2/32 [07:29<1:33:36, 187.22s/it]Decoder beam_d3_parent149_trial31 EARLY-STOPPED in 7.0m 27.90s with 184 failures out of 76713/100000 runs.
+Logical error rate for beam_d3_parent149_trial31: 0.002398550441255068 ± 0.0001766 (stderr)
+Batch 1:   9%|▉         | 3/32 [07:30<49:22, 102.15s/it]  Decoder beam_d3_parent149_trial28 EARLY-STOPPED in 7.0m 34.09s with 184 failures out of 75938/100000 runs.
+Logical error rate for beam_d3_parent149_trial28: 0.002423029313387237 ± 0.0001784 (stderr)
+Batch 1:  12%|█▎        | 4/32 [07:36<29:59, 64.28s/it] Decoder beam_d3_parent149_trial21 EARLY-STOPPED in 7.0m 36.98s with 184 failures out of 87821/100000 runs.
+Logical error rate for beam_d3_parent149_trial21: 0.002095170858906184 ± 0.0001543 (stderr)
+Batch 1:  16%|█▌        | 5/32 [07:39<18:57, 42.13s/it]Decoder beam_d3_parent149_trial22 EARLY-STOPPED in 7.0m 48.36s with 184 failures out of 76467/100000 runs.
+Logical error rate for beam_d3_parent149_trial22: 0.002406266755593916 ± 0.0001772 (stderr)
+Batch 1:  19%|█▉        | 6/32 [07:50<13:44, 31.70s/it]Decoder beam_d3_parent149_trial18 EARLY-STOPPED in 7.0m 52.23s with 184 failures out of 78227/100000 runs.
+Logical error rate for beam_d3_parent149_trial18: 0.0023521290602988736 ± 0.0001732 (stderr)
+Batch 1:  22%|██▏       | 7/32 [07:54<09:24, 22.57s/it]Decoder beam_d3_parent149_trial7 EARLY-STOPPED in 8.0m 0.15s with 184 failures out of 92416/100000 runs.
+Logical error rate for beam_d3_parent149_trial7: 0.0019909972299168976 ± 0.0001466 (stderr)
+Batch 1:  25%|██▌       | 8/32 [08:02<07:09, 17.91s/it]Decoder beam_d3_parent149_trial11 EARLY-STOPPED in 8.0m 2.73s with 184 failures out of 93333/100000 runs.
+Logical error rate for beam_d3_parent149_trial11: 0.001971435612270044 ± 0.0001452 (stderr)
+Batch 1:  28%|██▊       | 9/32 [08:05<05:02, 13.15s/it]Decoder beam_d3_parent149_trial3 EARLY-STOPPED in 8.0m 7.30s with 184 failures out of 83758/100000 runs.
+Logical error rate for beam_d3_parent149_trial3: 0.0021968050813056662 ± 0.0001618 (stderr)
+Batch 1:  31%|███▏      | 10/32 [08:09<03:49, 10.44s/it]Decoder beam_d3_parent149_trial20 EARLY-STOPPED in 8.0m 22.66s with 184 failures out of 86845/100000 runs.
+Logical error rate for beam_d3_parent149_trial20: 0.002118717254879383 ± 0.0001560 (stderr)
+Batch 1:  34%|███▍      | 11/32 [08:25<04:12, 12.03s/it]Decoder beam_d3_parent149_trial14 EARLY-STOPPED in 8.0m 24.60s with 184 failures out of 97787/100000 runs.
+Logical error rate for beam_d3_parent149_trial14: 0.0018816407088876844 ± 0.0001386 (stderr)
+Batch 1:  38%|███▊      | 12/32 [08:27<02:58,  8.94s/it]Decoder beam_d3_parent149_trial24 EARLY-STOPPED in 8.0m 25.15s with 184 failures out of 96554/100000 runs.
+Logical error rate for beam_d3_parent149_trial24: 0.0019056693663649356 ± 0.0001404 (stderr)
+Batch 1:  41%|████      | 13/32 [08:27<02:01,  6.42s/it]Decoder beam_d3_parent149_trial30 EARLY-STOPPED in 8.0m 27.50s with 184 failures out of 80643/100000 runs.
+Logical error rate for beam_d3_parent149_trial30: 0.00228166114851878 ± 0.0001680 (stderr)
+Batch 1:  44%|████▍     | 14/32 [08:30<01:32,  5.16s/it]Decoder beam_d3_parent149_trial15 EARLY-STOPPED in 8.0m 35.39s with 184 failures out of 75998/100000 runs.
+Logical error rate for beam_d3_parent149_trial15: 0.002421116345166978 ± 0.0001783 (stderr)
+Batch 1:  47%|████▋     | 15/32 [08:37<01:41,  5.99s/it]Decoder beam_d3_parent149_trial23 EARLY-STOPPED in 8.0m 36.60s with 184 failures out of 98792/100000 runs.
+Logical error rate for beam_d3_parent149_trial23: 0.0018624989877722893 ± 0.0001372 (stderr)
+Batch 1:  50%|█████     | 16/32 [08:39<01:13,  4.57s/it]Decoder beam_d3_parent149_trial4 EARLY-STOPPED in 8.0m 37.21s with 184 failures out of 91112/100000 runs.
+Logical error rate for beam_d3_parent149_trial4: 0.0020194924927561682 ± 0.0001487 (stderr)
+Batch 1:  53%|█████▎    | 17/32 [08:39<00:49,  3.32s/it]Decoder beam_d3_parent149_trial2 EARLY-STOPPED in 8.0m 41.53s with 184 failures out of 99754/100000 runs.
+Logical error rate for beam_d3_parent149_trial2: 0.0018445375624035127 ± 0.0001359 (stderr)
+Batch 1:  56%|█████▋    | 18/32 [08:44<00:51,  3.66s/it]Decoder beam_d3_parent149_trial0 finished in 8.0m 42.41s with 142 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial0: 0.00142 ± 0.0001191 (stderr)
+Batch 1:  59%|█████▉    | 19/32 [08:44<00:35,  2.76s/it]Decoder beam_d3_parent149_trial8 EARLY-STOPPED in 8.0m 44.10s with 184 failures out of 87297/100000 runs.
+Logical error rate for beam_d3_parent149_trial8: 0.0021077471161666493 ± 0.0001552 (stderr)
+Batch 1:  62%|██████▎   | 20/32 [08:46<00:29,  2.47s/it]Decoder beam_d3_parent149_trial6 EARLY-STOPPED in 8.0m 45.08s with 184 failures out of 92473/100000 runs.
+Logical error rate for beam_d3_parent149_trial6: 0.0019897699869150997 ± 0.0001465 (stderr)
+Batch 1:  66%|██████▌   | 21/32 [08:47<00:21,  1.99s/it]Decoder beam_d3_parent149_trial10 EARLY-STOPPED in 8.0m 47.25s with 184 failures out of 88823/100000 runs.
+Logical error rate for beam_d3_parent149_trial10: 0.0020715355257084314 ± 0.0001526 (stderr)
+Batch 1:  69%|██████▉   | 22/32 [08:49<00:20,  2.07s/it]Decoder beam_d3_parent149_trial9 finished in 8.0m 47.93s with 178 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial9: 0.00178 ± 0.0001333 (stderr)
+Batch 1:  72%|███████▏  | 23/32 [08:50<00:14,  1.66s/it]Decoder beam_d3_parent149_trial27 EARLY-STOPPED in 8.0m 49.98s with 184 failures out of 97968/100000 runs.
+Logical error rate for beam_d3_parent149_trial27: 0.0018781642985464641 ± 0.0001383 (stderr)
+Batch 1:  75%|███████▌  | 24/32 [08:52<00:14,  1.79s/it]Decoder beam_d3_parent149_trial25 finished in 8.0m 54.16s with 153 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial25: 0.00153 ± 0.0001236 (stderr)
+Batch 1:  78%|███████▊  | 25/32 [08:56<00:17,  2.49s/it]Decoder beam_d3_parent149_trial17 EARLY-STOPPED in 8.0m 55.92s with 184 failures out of 94359/100000 runs.
+Logical error rate for beam_d3_parent149_trial17: 0.0019499994701088397 ± 0.0001436 (stderr)
+Batch 1:  81%|████████▏ | 26/32 [08:58<00:14,  2.39s/it]Decoder beam_d3_parent149_trial26 finished in 8.0m 57.34s with 156 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial26: 0.00156 ± 0.0001248 (stderr)
+Batch 1:  84%|████████▍ | 27/32 [08:59<00:09,  1.99s/it]Decoder beam_d3_parent149_trial16 finished in 8.0m 58.45s with 183 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial16: 0.00183 ± 0.0001352 (stderr)
+Batch 1:  88%|████████▊ | 28/32 [09:00<00:06,  1.69s/it]Decoder beam_d3_parent149_trial19 finished in 9.0m 2.45s with 172 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial19: 0.00172 ± 0.0001310 (stderr)
+Batch 1:  91%|█████████ | 29/32 [09:04<00:07,  2.39s/it]Decoder beam_d3_parent149_trial12 finished in 9.0m 7.27s with 164 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial12: 0.00164 ± 0.0001280 (stderr)
+Batch 1:  94%|█████████▍| 30/32 [09:09<00:06,  3.14s/it]Decoder beam_d3_parent149_trial13 finished in 9.0m 15.22s with 172 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial13: 0.00172 ± 0.0001310 (stderr)
+Batch 1:  97%|█████████▋| 31/32 [09:17<00:04,  4.61s/it]Decoder beam_d3_parent149_trial5 finished in 9.0m 24.31s with 176 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial5: 0.00176 ± 0.0001325 (stderr)
+Batch 1: 100%|██████████| 32/32 [09:26<00:00,  5.99s/it]Batch 1: 100%|██████████| 32/32 [09:26<00:00, 17.72s/it]
+Batch 2:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d3_parent78_trial11 EARLY-STOPPED in 7.0m 11.23s with 184 failures out of 72105/100000 runs.
+Logical error rate for beam_d3_parent78_trial11: 0.002551834130781499 ± 0.0001879 (stderr)
+Batch 2:   3%|▎         | 1/32 [07:14<3:44:20, 434.21s/it]Decoder beam_d3_parent78_trial0 EARLY-STOPPED in 7.0m 19.57s with 184 failures out of 80837/100000 runs.
+Logical error rate for beam_d3_parent78_trial0: 0.002276185410146344 ± 0.0001676 (stderr)
+Batch 2:   6%|▋         | 2/32 [07:22<1:31:49, 183.65s/it]Decoder beam_d3_parent78_trial13 EARLY-STOPPED in 7.0m 22.43s with 184 failures out of 76822/100000 runs.
+Logical error rate for beam_d3_parent78_trial13: 0.0023951472234516155 ± 0.0001764 (stderr)
+Batch 2:   9%|▉         | 3/32 [07:25<48:47, 100.95s/it]  Decoder beam_d3_parent78_trial1 EARLY-STOPPED in 7.0m 25.18s with 184 failures out of 80953/100000 runs.
+Logical error rate for beam_d3_parent78_trial1: 0.002272923795288624 ± 0.0001674 (stderr)
+Batch 2:  12%|█▎        | 4/32 [07:27<28:58, 62.07s/it] Decoder beam_d3_parent149_trial38 EARLY-STOPPED in 7.0m 32.88s with 184 failures out of 87194/100000 runs.
+Logical error rate for beam_d3_parent149_trial38: 0.0021102369429089156 ± 0.0001554 (stderr)
+Batch 2:  16%|█▌        | 5/32 [07:35<19:07, 42.50s/it]Decoder beam_d3_parent78_trial9 EARLY-STOPPED in 8.0m 0.17s with 184 failures out of 88221/100000 runs.
+Logical error rate for beam_d3_parent78_trial9: 0.0020856712120696885 ± 0.0001536 (stderr)
+Batch 2:  19%|█▉        | 6/32 [08:02<16:08, 37.26s/it]Decoder beam_d3_parent78_trial8 EARLY-STOPPED in 8.0m 9.03s with 184 failures out of 90568/100000 runs.
+Logical error rate for beam_d3_parent78_trial8: 0.0020316226481759563 ± 0.0001496 (stderr)
+Batch 2:  22%|██▏       | 7/32 [08:11<11:41, 28.07s/it]Decoder beam_d3_parent78_trial5 EARLY-STOPPED in 8.0m 12.09s with 184 failures out of 90797/100000 runs.
+Logical error rate for beam_d3_parent78_trial5: 0.002026498672863641 ± 0.0001492 (stderr)
+Batch 2:  25%|██▌       | 8/32 [08:14<08:05, 20.24s/it]Decoder beam_d3_parent149_trial40 EARLY-STOPPED in 8.0m 13.84s with 184 failures out of 80257/100000 runs.
+Logical error rate for beam_d3_parent149_trial40: 0.002292634910350499 ± 0.0001688 (stderr)
+Batch 2:  28%|██▊       | 9/32 [08:16<05:28, 14.30s/it]Decoder beam_d3_parent149_trial37 EARLY-STOPPED in 8.0m 23.36s with 184 failures out of 92914/100000 runs.
+Logical error rate for beam_d3_parent149_trial37: 0.001980325892761048 ± 0.0001458 (stderr)
+Batch 2:  31%|███▏      | 10/32 [08:25<04:42, 12.82s/it]Decoder beam_d3_parent78_trial12 EARLY-STOPPED in 8.0m 28.26s with 184 failures out of 94223/100000 runs.
+Logical error rate for beam_d3_parent78_trial12: 0.001952814068751791 ± 0.0001438 (stderr)
+Batch 2:  34%|███▍      | 11/32 [08:30<03:37, 10.37s/it]Decoder beam_d3_parent78_trial10 finished in 8.0m 29.94s with 167 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial10: 0.00167 ± 0.0001291 (stderr)
+Batch 2:  38%|███▊      | 12/32 [08:32<02:34,  7.72s/it]Decoder beam_d3_parent78_trial2 EARLY-STOPPED in 8.0m 29.44s with 184 failures out of 89831/100000 runs.
+Logical error rate for beam_d3_parent78_trial2: 0.0020482906791642083 ± 0.0001508 (stderr)
+Batch 2:  41%|████      | 13/32 [08:32<01:42,  5.42s/it]Decoder beam_d3_parent149_trial45 EARLY-STOPPED in 8.0m 30.30s with 184 failures out of 98444/100000 runs.
+Logical error rate for beam_d3_parent149_trial45: 0.001869082930396977 ± 0.0001377 (stderr)
+Batch 2:  44%|████▍     | 14/32 [08:32<01:09,  3.86s/it]Decoder beam_d3_parent149_trial33 finished in 8.0m 42.41s with 177 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial33: 0.00177 ± 0.0001329 (stderr)
+Batch 2:  47%|████▋     | 15/32 [08:44<01:48,  6.38s/it]Decoder beam_d3_parent149_trial48 EARLY-STOPPED in 8.0m 44.68s with 184 failures out of 97568/100000 runs.
+Logical error rate for beam_d3_parent149_trial48: 0.00188586421777632 ± 0.0001389 (stderr)
+Batch 2:  50%|█████     | 16/32 [08:47<01:22,  5.15s/it]Decoder beam_d3_parent78_trial7 EARLY-STOPPED in 8.0m 46.73s with 184 failures out of 91628/100000 runs.
+Logical error rate for beam_d3_parent78_trial7: 0.0020081197887108744 ± 0.0001479 (stderr)
+Batch 2:  53%|█████▎    | 17/32 [08:49<01:03,  4.21s/it]Decoder beam_d3_parent149_trial32 EARLY-STOPPED in 8.0m 50.90s with 184 failures out of 96255/100000 runs.
+Logical error rate for beam_d3_parent149_trial32: 0.0019115890083632018 ± 0.0001408 (stderr)
+Batch 2:  56%|█████▋    | 18/32 [08:53<00:58,  4.17s/it]Decoder beam_d3_parent149_trial36 EARLY-STOPPED in 8.0m 52.48s with 184 failures out of 92911/100000 runs.
+Logical error rate for beam_d3_parent149_trial36: 0.00198038983543391 ± 0.0001459 (stderr)
+Batch 2:  59%|█████▉    | 19/32 [08:54<00:44,  3.41s/it]Decoder beam_d3_parent149_trial41 EARLY-STOPPED in 8.0m 55.98s with 184 failures out of 92223/100000 runs.
+Logical error rate for beam_d3_parent149_trial41: 0.001995163896208104 ± 0.0001469 (stderr)
+Batch 2:  62%|██████▎   | 20/32 [08:58<00:41,  3.44s/it]Decoder beam_d3_parent149_trial47 finished in 8.0m 57.11s with 170 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial47: 0.0017 ± 0.0001303 (stderr)
+Batch 2:  66%|██████▌   | 21/32 [08:59<00:29,  2.67s/it]Decoder beam_d3_parent78_trial4 finished in 8.0m 56.86s with 178 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial4: 0.00178 ± 0.0001333 (stderr)
+Batch 2:  69%|██████▉   | 22/32 [08:59<00:20,  2.03s/it]Decoder beam_d3_parent149_trial44 finished in 9.0m 4.53s with 165 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial44: 0.00165 ± 0.0001283 (stderr)
+Batch 2:  72%|███████▏  | 23/32 [09:06<00:31,  3.51s/it]Decoder beam_d3_parent149_trial43 EARLY-STOPPED in 9.0m 4.55s with 184 failures out of 99886/100000 runs.
+Logical error rate for beam_d3_parent149_trial43: 0.0018420999939931521 ± 0.0001357 (stderr)
+Batch 2:  75%|███████▌  | 24/32 [09:06<00:19,  2.49s/it]Decoder beam_d3_parent78_trial6 EARLY-STOPPED in 9.0m 5.46s with 184 failures out of 84912/100000 runs.
+Logical error rate for beam_d3_parent78_trial6: 0.0021669493122291315 ± 0.0001596 (stderr)
+Batch 2:  78%|███████▊  | 25/32 [09:08<00:14,  2.10s/it]Decoder beam_d3_parent149_trial46 EARLY-STOPPED in 9.0m 6.48s with 184 failures out of 93832/100000 runs.
+Logical error rate for beam_d3_parent149_trial46: 0.001960951487765368 ± 0.0001444 (stderr)
+Batch 2:  81%|████████▏ | 26/32 [09:08<00:10,  1.70s/it]Decoder beam_d3_parent149_trial35 finished in 9.0m 6.69s with 153 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial35: 0.00153 ± 0.0001236 (stderr)
+Batch 2:  84%|████████▍ | 27/32 [09:08<00:06,  1.24s/it]Decoder beam_d3_parent149_trial42 finished in 9.0m 7.70s with 166 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial42: 0.00166 ± 0.0001287 (stderr)
+Batch 2:  88%|████████▊ | 28/32 [09:10<00:04,  1.18s/it]Decoder beam_d3_parent149_trial34 EARLY-STOPPED in 9.0m 11.21s with 184 failures out of 94841/100000 runs.
+Logical error rate for beam_d3_parent149_trial34: 0.0019400892019274365 ± 0.0001429 (stderr)
+Batch 2:  91%|█████████ | 29/32 [09:13<00:05,  1.90s/it]Decoder beam_d3_parent149_trial39 finished in 9.0m 12.01s with 166 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent149_trial39: 0.00166 ± 0.0001287 (stderr)
+Batch 2:  94%|█████████▍| 30/32 [09:14<00:03,  1.58s/it]Decoder beam_d3_parent149_trial49 EARLY-STOPPED in 9.0m 19.02s with 184 failures out of 97639/100000 runs.
+Logical error rate for beam_d3_parent149_trial49: 0.0018844928768217619 ± 0.0001388 (stderr)
+Batch 2:  97%|█████████▋| 31/32 [09:21<00:03,  3.20s/it]Decoder beam_d3_parent78_trial3 EARLY-STOPPED in 9.0m 31.52s with 184 failures out of 93468/100000 runs.
+Logical error rate for beam_d3_parent78_trial3: 0.0019685881799118413 ± 0.0001450 (stderr)
+Batch 2: 100%|██████████| 32/32 [09:34<00:00,  6.14s/it]Batch 2: 100%|██████████| 32/32 [09:34<00:00, 17.95s/it]
+Batch 3:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d3_parent78_trial24 EARLY-STOPPED in 6.0m 19.09s with 184 failures out of 73862/100000 runs.
+Logical error rate for beam_d3_parent78_trial24: 0.0024911321112344644 ± 0.0001834 (stderr)
+Batch 3:   3%|▎         | 1/32 [06:21<3:17:08, 381.56s/it]Decoder beam_d3_parent78_trial22 EARLY-STOPPED in 7.0m 58.90s with 184 failures out of 87689/100000 runs.
+Logical error rate for beam_d3_parent78_trial22: 0.002098324761372578 ± 0.0001545 (stderr)
+Batch 3:   6%|▋         | 2/32 [08:01<1:47:56, 215.89s/it]Decoder beam_d3_parent78_trial14 EARLY-STOPPED in 8.0m 0.81s with 184 failures out of 77933/100000 runs.
+Logical error rate for beam_d3_parent78_trial14: 0.0023610023994970037 ± 0.0001739 (stderr)
+Batch 3:   9%|▉         | 3/32 [08:03<57:06, 118.17s/it]  Decoder beam_d3_parent78_trial20 EARLY-STOPPED in 8.0m 7.78s with 184 failures out of 80987/100000 runs.
+Logical error rate for beam_d3_parent78_trial20: 0.0022719695753639474 ± 0.0001673 (stderr)
+Batch 3:  12%|█▎        | 4/32 [08:10<34:39, 74.28s/it] Decoder beam_d3_parent78_trial29 EARLY-STOPPED in 8.0m 13.43s with 184 failures out of 93844/100000 runs.
+Logical error rate for beam_d3_parent78_trial29: 0.001960700737393973 ± 0.0001444 (stderr)
+Batch 3:  16%|█▌        | 5/32 [08:15<22:16, 49.50s/it]Decoder beam_d3_parent78_trial15 EARLY-STOPPED in 8.0m 14.29s with 184 failures out of 95994/100000 runs.
+Logical error rate for beam_d3_parent78_trial15: 0.0019167864658207806 ± 0.0001412 (stderr)
+Batch 3:  19%|█▉        | 6/32 [08:16<14:17, 32.99s/it]Decoder beam_d3_parent78_trial38 EARLY-STOPPED in 8.0m 15.67s with 184 failures out of 93927/100000 runs.
+Logical error rate for beam_d3_parent78_trial38: 0.001958968134828111 ± 0.0001443 (stderr)
+Batch 3:  22%|██▏       | 7/32 [08:18<09:26, 22.66s/it]Decoder beam_d3_parent78_trial31 finished in 8.0m 22.29s with 164 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial31: 0.00164 ± 0.0001280 (stderr)
+Batch 3:  25%|██▌       | 8/32 [08:25<07:06, 17.77s/it]Decoder beam_d3_parent78_trial42 EARLY-STOPPED in 8.0m 33.39s with 184 failures out of 95935/100000 runs.
+Logical error rate for beam_d3_parent78_trial42: 0.0019179652889977589 ± 0.0001413 (stderr)
+Batch 3:  28%|██▊       | 9/32 [08:35<05:54, 15.40s/it]Decoder beam_d3_parent78_trial30 EARLY-STOPPED in 8.0m 39.92s with 184 failures out of 94062/100000 runs.
+Logical error rate for beam_d3_parent78_trial30: 0.001956156577576492 ± 0.0001441 (stderr)
+Batch 3:  31%|███▏      | 10/32 [08:42<04:38, 12.66s/it]Decoder beam_d3_parent78_trial43 finished in 8.0m 40.67s with 172 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial43: 0.00172 ± 0.0001310 (stderr)
+Batch 3:  34%|███▍      | 11/32 [08:43<03:10,  9.05s/it]Decoder beam_d3_parent78_trial35 EARLY-STOPPED in 8.0m 41.12s with 184 failures out of 93343/100000 runs.
+Logical error rate for beam_d3_parent78_trial35: 0.001971224408900507 ± 0.0001452 (stderr)
+Batch 3:  38%|███▊      | 12/32 [08:43<02:09,  6.47s/it]Decoder beam_d3_parent78_trial19 finished in 8.0m 43.64s with 180 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial19: 0.0018 ± 0.0001340 (stderr)
+Batch 3:  41%|████      | 13/32 [08:45<01:37,  5.12s/it]Decoder beam_d3_parent78_trial44 EARLY-STOPPED in 8.0m 43.59s with 184 failures out of 95337/100000 runs.
+Logical error rate for beam_d3_parent78_trial44: 0.0019299956994661045 ± 0.0001421 (stderr)
+Batch 3:  44%|████▍     | 14/32 [08:46<01:06,  3.71s/it]Decoder beam_d3_parent78_trial18 EARLY-STOPPED in 8.0m 46.72s with 184 failures out of 98610/100000 runs.
+Logical error rate for beam_d3_parent78_trial18: 0.0018659365175945645 ± 0.0001374 (stderr)
+Batch 3:  47%|████▋     | 15/32 [08:49<01:00,  3.53s/it]Decoder beam_d3_parent78_trial45 EARLY-STOPPED in 8.0m 46.85s with 184 failures out of 98762/100000 runs.
+Logical error rate for beam_d3_parent78_trial45: 0.0018630647414997672 ± 0.0001372 (stderr)
+Batch 3:  50%|█████     | 16/32 [08:49<00:40,  2.50s/it]Decoder beam_d3_parent78_trial36 EARLY-STOPPED in 8.0m 51.99s with 184 failures out of 95574/100000 runs.
+Logical error rate for beam_d3_parent78_trial36: 0.0019252097850879946 ± 0.0001418 (stderr)
+Batch 3:  53%|█████▎    | 17/32 [08:54<00:49,  3.27s/it]Decoder beam_d3_parent78_trial37 finished in 8.0m 52.45s with 181 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial37: 0.00181 ± 0.0001344 (stderr)
+Batch 3:  56%|█████▋    | 18/32 [08:54<00:33,  2.40s/it]Decoder beam_d3_parent78_trial28 EARLY-STOPPED in 8.0m 52.53s with 184 failures out of 89899/100000 runs.
+Logical error rate for beam_d3_parent78_trial28: 0.0020467413430627704 ± 0.0001507 (stderr)
+Batch 3:  59%|█████▉    | 19/32 [08:55<00:22,  1.73s/it]Decoder beam_d3_parent78_trial41 finished in 8.0m 53.87s with 167 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial41: 0.00167 ± 0.0001291 (stderr)
+Batch 3:  62%|██████▎   | 20/32 [08:56<00:19,  1.64s/it]Decoder beam_d3_parent78_trial34 finished in 8.0m 56.16s with 166 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial34: 0.00166 ± 0.0001287 (stderr)
+Batch 3:  66%|██████▌   | 21/32 [08:58<00:20,  1.84s/it]Decoder beam_d3_parent78_trial21 EARLY-STOPPED in 8.0m 56.47s with 184 failures out of 95531/100000 runs.
+Logical error rate for beam_d3_parent78_trial21: 0.0019260763521788738 ± 0.0001419 (stderr)
+Decoder beam_d3_parent78_trial17 finished in 8.0m 57.36s with 161 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial17: 0.00161 ± 0.0001268 (stderr)
+Batch 3:  72%|███████▏  | 23/32 [08:59<00:10,  1.17s/it]Decoder beam_d3_parent78_trial27 finished in 8.0m 57.46s with 160 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial27: 0.0016 ± 0.0001264 (stderr)
+Batch 3:  75%|███████▌  | 24/32 [09:00<00:08,  1.00s/it]Decoder beam_d3_parent78_trial39 finished in 9.0m 2.43s with 147 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial39: 0.00147 ± 0.0001212 (stderr)
+Batch 3:  78%|███████▊  | 25/32 [09:04<00:14,  2.04s/it]Decoder beam_d3_parent78_trial23 finished in 9.0m 4.92s with 164 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial23: 0.00164 ± 0.0001280 (stderr)
+Batch 3:  81%|████████▏ | 26/32 [09:07<00:12,  2.08s/it]Decoder beam_d3_parent78_trial25 finished in 9.0m 6.28s with 172 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial25: 0.00172 ± 0.0001310 (stderr)
+Batch 3:  84%|████████▍ | 27/32 [09:08<00:09,  1.83s/it]Decoder beam_d3_parent78_trial32 finished in 9.0m 12.52s with 139 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial32: 0.00139 ± 0.0001178 (stderr)
+Batch 3:  88%|████████▊ | 28/32 [09:14<00:12,  3.18s/it]Decoder beam_d3_parent78_trial40 finished in 9.0m 16.84s with 154 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial40: 0.00154 ± 0.0001240 (stderr)
+Batch 3:  91%|█████████ | 29/32 [09:19<00:10,  3.57s/it]Decoder beam_d3_parent78_trial26 finished in 9.0m 21.31s with 158 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial26: 0.00158 ± 0.0001256 (stderr)
+Batch 3:  94%|█████████▍| 30/32 [09:23<00:07,  3.74s/it]Decoder beam_d3_parent78_trial33 finished in 10.0m 0.59s with 157 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial33: 0.00157 ± 0.0001252 (stderr)
+Batch 3:  97%|█████████▋| 31/32 [10:02<00:14, 14.25s/it]Decoder beam_d3_parent78_trial16 EARLY-STOPPED in 10.0m 17.82s with 184 failures out of 95053/100000 runs.
+Logical error rate for beam_d3_parent78_trial16: 0.0019357621537458049 ± 0.0001426 (stderr)
+Batch 3: 100%|██████████| 32/32 [10:20<00:00, 15.19s/it]Batch 3: 100%|██████████| 32/32 [10:20<00:00, 19.39s/it]
+Batch 4:   0%|          | 0/4 [00:00<?, ?it/s]Decoder beam_d3_parent78_trial46 EARLY-STOPPED in 3.0m 57.78s with 184 failures out of 73664/100000 runs.
+Logical error rate for beam_d3_parent78_trial46: 0.0024978279756733275 ± 0.0001839 (stderr)
+Batch 4:  25%|██▌       | 1/4 [03:58<11:56, 238.94s/it]Decoder beam_d3_parent78_trial47 finished in 4.0m 23.25s with 168 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial47: 0.00168 ± 0.0001295 (stderr)
+Batch 4:  50%|█████     | 2/4 [04:24<03:46, 113.39s/it]Decoder beam_d3_parent78_trial49 finished in 4.0m 42.69s with 182 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial49: 0.00182 ± 0.0001348 (stderr)
+Batch 4:  75%|███████▌  | 3/4 [04:43<01:10, 70.47s/it] Decoder beam_d3_parent78_trial48 finished in 4.0m 47.72s with 183 failures out of 100000/100000 runs.
+Logical error rate for beam_d3_parent78_trial48: 0.00183 ± 0.0001352 (stderr)
+Batch 4: 100%|██████████| 4/4 [04:48<00:00, 44.66s/it]Batch 4: 100%|██████████| 4/4 [04:48<00:00, 72.24s/it]
+  Provisional beam candidates (before precision re-eval):
+    1. row=149 dist=10 ler=0.001548 early_stopped=False
+    2. row=78 dist=10 ler=0.001630 early_stopped=False
+    3. row=233 dist=10 ler=0.001390 early_stopped=False
+    4. row=151 dist=10 ler=0.001420 early_stopped=False
+  Precision re-evaluating 2 promoted beam state(s): [233, 151]
+Parent precision MC:   0%|          | 0/2 [00:00<?, ?it/s]Decoder parent_precision_row_151 finished in 48.0m 21.10s with 1557 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_151: 0.001557 ± 0.0000394 (stderr)
+Parent precision MC:  50%|█████     | 1/2 [48:22<48:22, 2902.24s/it]Decoder parent_precision_row_233 finished in 48.0m 41.29s with 1478 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_233: 0.001478 ± 0.0000384 (stderr)
+Parent precision MC: 100%|██████████| 2/2 [48:42<00:00, 1206.93s/it]Parent precision MC: 100%|██████████| 2/2 [48:42<00:00, 1461.23s/it]
+  Provisional beam candidates screening LER -> precise LER:
+1. row=149 dist=10 screen_ler=0.001500 precise_ler=0.001548 early_stopped=False
+2. row=78 dist=10 screen_ler=0.001530 precise_ler=0.001630 early_stopped=False
+3. row=233 dist=10 screen_ler=0.001390 precise_ler=0.001478 early_stopped=False
+4. row=151 dist=10 screen_ler=0.001420 precise_ler=0.001557 early_stopped=False
+    [!] New best global at row 233, LER: 0.001478, dist=10
+  Survivors:
+    1. row=233 dist=10 ler=0.001478
+    2. row=149 dist=10 ler=0.001548
+
+=== Beam depth 4/10 ===
+  Depth-4 screening failure cap = 175
+  Parent 1/2 | row=233 | dist=10 | ler=0.001478
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 10
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+  Parent 2/2 | row=149 | dist=10 | ler=0.001548
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 10
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+Batch 1:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d4_parent233_trial18 EARLY-STOPPED in 5.0m 10.21s with 176 failures out of 47838/100000 runs.
+Logical error rate for beam_d4_parent233_trial18: 0.003679083573727999 ± 0.0002768 (stderr)
+Batch 1:   3%|▎         | 1/32 [05:13<2:41:53, 313.32s/it]Decoder beam_d4_parent233_trial13 EARLY-STOPPED in 7.0m 16.50s with 176 failures out of 85816/100000 runs.
+Logical error rate for beam_d4_parent233_trial13: 0.002050899599142351 ± 0.0001544 (stderr)
+Batch 1:   6%|▋         | 2/32 [07:19<1:41:39, 203.30s/it]Decoder beam_d4_parent233_trial27 EARLY-STOPPED in 7.0m 57.41s with 176 failures out of 77689/100000 runs.
+Logical error rate for beam_d4_parent233_trial27: 0.0022654429842062585 ± 0.0001706 (stderr)
+Batch 1:   9%|▉         | 3/32 [08:00<1:02:27, 129.21s/it]Decoder beam_d4_parent233_trial17 EARLY-STOPPED in 8.0m 2.98s with 176 failures out of 93032/100000 runs.
+Logical error rate for beam_d4_parent233_trial17: 0.0018918221687161407 ± 0.0001425 (stderr)
+Batch 1:  12%|█▎        | 4/32 [08:06<37:32, 80.44s/it]   Decoder beam_d4_parent233_trial2 EARLY-STOPPED in 8.0m 13.01s with 176 failures out of 82528/100000 runs.
+Logical error rate for beam_d4_parent233_trial2: 0.0021326095385808454 ± 0.0001606 (stderr)
+Batch 1:  16%|█▌        | 5/32 [08:16<24:45, 55.01s/it]Decoder beam_d4_parent233_trial16 EARLY-STOPPED in 8.0m 18.85s with 176 failures out of 84644/100000 runs.
+Logical error rate for beam_d4_parent233_trial16: 0.002079296819621001 ± 0.0001566 (stderr)
+Batch 1:  19%|█▉        | 6/32 [08:21<16:34, 38.25s/it]Decoder beam_d4_parent233_trial0 EARLY-STOPPED in 8.0m 24.89s with 176 failures out of 92183/100000 runs.
+Logical error rate for beam_d4_parent233_trial0: 0.0019092457394530445 ± 0.0001438 (stderr)
+Batch 1:  22%|██▏       | 7/32 [08:27<11:28, 27.53s/it]Decoder beam_d4_parent233_trial7 EARLY-STOPPED in 8.0m 24.13s with 176 failures out of 94429/100000 runs.
+Logical error rate for beam_d4_parent233_trial7: 0.0018638342034756272 ± 0.0001404 (stderr)
+Decoder beam_d4_parent233_trial30 EARLY-STOPPED in 8.0m 29.04s with 176 failures out of 92708/100000 runs.
+Logical error rate for beam_d4_parent233_trial30: 0.0018984337921214998 ± 0.0001430 (stderr)
+Batch 1:  28%|██▊       | 9/32 [08:32<05:54, 15.43s/it]Decoder beam_d4_parent233_trial22 EARLY-STOPPED in 8.0m 29.99s with 176 failures out of 90509/100000 runs.
+Logical error rate for beam_d4_parent233_trial22: 0.0019445579997569302 ± 0.0001464 (stderr)
+Batch 1:  31%|███▏      | 10/32 [08:33<04:16, 11.66s/it]Decoder beam_d4_parent233_trial10 EARLY-STOPPED in 8.0m 36.65s with 176 failures out of 94196/100000 runs.
+Logical error rate for beam_d4_parent233_trial10: 0.0018684445199371523 ± 0.0001407 (stderr)
+Batch 1:  34%|███▍      | 11/32 [08:39<03:37, 10.36s/it]Decoder beam_d4_parent233_trial29 EARLY-STOPPED in 8.0m 37.31s with 176 failures out of 95047/100000 runs.
+Logical error rate for beam_d4_parent233_trial29: 0.0018517154670847054 ± 0.0001394 (stderr)
+Decoder beam_d4_parent233_trial3 EARLY-STOPPED in 8.0m 39.34s with 176 failures out of 89392/100000 runs.
+Logical error rate for beam_d4_parent233_trial3: 0.001968856273492035 ± 0.0001483 (stderr)
+Batch 1:  41%|████      | 13/32 [08:42<02:01,  6.42s/it]Decoder beam_d4_parent233_trial12 EARLY-STOPPED in 8.0m 40.20s with 176 failures out of 93995/100000 runs.
+Logical error rate for beam_d4_parent233_trial12: 0.0018724400234055004 ± 0.0001410 (stderr)
+Batch 1:  44%|████▍     | 14/32 [08:43<01:31,  5.11s/it]Decoder beam_d4_parent233_trial19 EARLY-STOPPED in 8.0m 45.82s with 176 failures out of 94422/100000 runs.
+Logical error rate for beam_d4_parent233_trial19: 0.0018639723793183792 ± 0.0001404 (stderr)
+Batch 1:  47%|████▋     | 15/32 [08:48<01:28,  5.22s/it]Decoder beam_d4_parent233_trial1 finished in 8.0m 48.63s with 160 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial1: 0.0016 ± 0.0001264 (stderr)
+Batch 1:  50%|█████     | 16/32 [08:51<01:14,  4.65s/it]Decoder beam_d4_parent233_trial31 EARLY-STOPPED in 8.0m 49.34s with 176 failures out of 92216/100000 runs.
+Logical error rate for beam_d4_parent233_trial31: 0.0019085625054220527 ± 0.0001437 (stderr)
+Batch 1:  53%|█████▎    | 17/32 [08:52<00:52,  3.51s/it]Decoder beam_d4_parent233_trial23 EARLY-STOPPED in 8.0m 49.35s with 176 failures out of 96596/100000 runs.
+Logical error rate for beam_d4_parent233_trial23: 0.0018220216158018965 ± 0.0001372 (stderr)
+Decoder beam_d4_parent233_trial25 EARLY-STOPPED in 8.0m 49.27s with 176 failures out of 93349/100000 runs.
+Logical error rate for beam_d4_parent233_trial25: 0.001885397808225048 ± 0.0001420 (stderr)
+Decoder beam_d4_parent233_trial6 finished in 8.0m 51.72s with 160 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial6: 0.0016 ± 0.0001264 (stderr)
+Batch 1:  62%|██████▎   | 20/32 [08:54<00:23,  1.94s/it]Decoder beam_d4_parent233_trial14 finished in 8.0m 57.11s with 148 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial14: 0.00148 ± 0.0001216 (stderr)
+Batch 1:  66%|██████▌   | 21/32 [09:00<00:30,  2.77s/it]Decoder beam_d4_parent233_trial21 EARLY-STOPPED in 8.0m 57.49s with 176 failures out of 88953/100000 runs.
+Logical error rate for beam_d4_parent233_trial21: 0.0019785729542567423 ± 0.0001490 (stderr)
+Batch 1:  69%|██████▉   | 22/32 [09:00<00:22,  2.22s/it]Decoder beam_d4_parent233_trial11 finished in 8.0m 58.49s with 139 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial11: 0.00139 ± 0.0001178 (stderr)
+Batch 1:  72%|███████▏  | 23/32 [09:01<00:16,  1.87s/it]Decoder beam_d4_parent233_trial8 EARLY-STOPPED in 8.0m 58.66s with 176 failures out of 95571/100000 runs.
+Logical error rate for beam_d4_parent233_trial8: 0.0018415628171725732 ± 0.0001387 (stderr)
+Batch 1:  75%|███████▌  | 24/32 [09:01<00:11,  1.49s/it]Decoder beam_d4_parent233_trial5 EARLY-STOPPED in 8.0m 59.18s with 176 failures out of 99526/100000 runs.
+Logical error rate for beam_d4_parent233_trial5: 0.0017683821313023733 ± 0.0001332 (stderr)
+Batch 1:  78%|███████▊  | 25/32 [09:02<00:08,  1.21s/it]Decoder beam_d4_parent233_trial24 finished in 9.0m 2.37s with 134 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial24: 0.00134 ± 0.0001157 (stderr)
+Batch 1:  81%|████████▏ | 26/32 [09:05<00:11,  1.84s/it]Decoder beam_d4_parent233_trial28 EARLY-STOPPED in 9.0m 3.78s with 176 failures out of 98847/100000 runs.
+Logical error rate for beam_d4_parent233_trial28: 0.001780529505194897 ± 0.0001341 (stderr)
+Batch 1:  84%|████████▍ | 27/32 [09:06<00:08,  1.63s/it]Decoder beam_d4_parent233_trial20 finished in 9.0m 8.66s with 166 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial20: 0.00166 ± 0.0001287 (stderr)
+Batch 1:  88%|████████▊ | 28/32 [09:11<00:10,  2.59s/it]Decoder beam_d4_parent233_trial15 finished in 9.0m 10.50s with 138 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial15: 0.00138 ± 0.0001174 (stderr)
+Batch 1:  91%|█████████ | 29/32 [09:13<00:07,  2.43s/it]Decoder beam_d4_parent233_trial4 finished in 9.0m 11.15s with 158 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial4: 0.00158 ± 0.0001256 (stderr)
+Batch 1:  94%|█████████▍| 30/32 [09:14<00:03,  1.79s/it]Decoder beam_d4_parent233_trial26 finished in 9.0m 21.07s with 156 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial26: 0.00156 ± 0.0001248 (stderr)
+Batch 1:  97%|█████████▋| 31/32 [09:24<00:04,  4.28s/it]Decoder beam_d4_parent233_trial9 EARLY-STOPPED in 9.0m 22.69s with 176 failures out of 91373/100000 runs.
+Logical error rate for beam_d4_parent233_trial9: 0.0019261707506593852 ± 0.0001451 (stderr)
+Batch 1: 100%|██████████| 32/32 [09:25<00:00,  3.29s/it]Batch 1: 100%|██████████| 32/32 [09:25<00:00, 17.66s/it]
+Batch 2:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d4_parent149_trial11 EARLY-STOPPED in 7.0m 1.29s with 176 failures out of 68878/100000 runs.
+Logical error rate for beam_d4_parent149_trial11: 0.002555242602863033 ± 0.0001924 (stderr)
+Batch 2:   3%|▎         | 1/32 [07:04<3:39:19, 424.49s/it]Decoder beam_d4_parent149_trial3 EARLY-STOPPED in 7.0m 4.00s with 176 failures out of 62889/100000 runs.
+Logical error rate for beam_d4_parent149_trial3: 0.002798581627947654 ± 0.0002107 (stderr)
+Batch 2:   6%|▋         | 2/32 [07:07<1:28:14, 176.49s/it]Decoder beam_d4_parent149_trial8 EARLY-STOPPED in 7.0m 24.01s with 176 failures out of 77103/100000 runs.
+Logical error rate for beam_d4_parent149_trial8: 0.002282660856257214 ± 0.0001719 (stderr)
+Batch 2:   9%|▉         | 3/32 [07:27<50:44, 105.00s/it]  Decoder beam_d4_parent233_trial33 EARLY-STOPPED in 7.0m 37.21s with 176 failures out of 80975/100000 runs.
+Logical error rate for beam_d4_parent233_trial33: 0.0021735103426983636 ± 0.0001637 (stderr)
+Batch 2:  12%|█▎        | 4/32 [07:40<32:04, 68.73s/it] Decoder beam_d4_parent149_trial14 EARLY-STOPPED in 7.0m 43.05s with 176 failures out of 69574/100000 runs.
+Logical error rate for beam_d4_parent149_trial14: 0.0025296806278207375 ± 0.0001904 (stderr)
+Batch 2:  16%|█▌        | 5/32 [07:46<20:44, 46.11s/it]Decoder beam_d4_parent149_trial6 EARLY-STOPPED in 7.0m 49.79s with 176 failures out of 69449/100000 runs.
+Logical error rate for beam_d4_parent149_trial6: 0.00253423375426572 ± 0.0001908 (stderr)
+Batch 2:  19%|█▉        | 6/32 [07:53<14:11, 32.76s/it]Decoder beam_d4_parent149_trial10 EARLY-STOPPED in 7.0m 58.22s with 176 failures out of 82210/100000 runs.
+Logical error rate for beam_d4_parent149_trial10: 0.002140858776304586 ± 0.0001612 (stderr)
+Batch 2:  22%|██▏       | 7/32 [08:01<10:18, 24.73s/it]Decoder beam_d4_parent233_trial34 EARLY-STOPPED in 8.0m 1.51s with 176 failures out of 82921/100000 runs.
+Logical error rate for beam_d4_parent233_trial34: 0.0021225021405916473 ± 0.0001598 (stderr)
+Batch 2:  25%|██▌       | 8/32 [08:04<07:09, 17.91s/it]Decoder beam_d4_parent149_trial2 EARLY-STOPPED in 8.0m 15.29s with 176 failures out of 85209/100000 runs.
+Logical error rate for beam_d4_parent149_trial2: 0.0020655095119060194 ± 0.0001555 (stderr)
+Batch 2:  28%|██▊       | 9/32 [08:18<06:22, 16.63s/it]Decoder beam_d4_parent149_trial1 finished in 8.0m 16.83s with 147 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial1: 0.00147 ± 0.0001212 (stderr)
+Batch 2:  31%|███▏      | 10/32 [08:19<04:21, 11.88s/it]Decoder beam_d4_parent233_trial49 EARLY-STOPPED in 8.0m 23.59s with 176 failures out of 79847/100000 runs.
+Logical error rate for beam_d4_parent233_trial49: 0.0022042155622628277 ± 0.0001660 (stderr)
+Batch 2:  34%|███▍      | 11/32 [08:26<03:39, 10.43s/it]Decoder beam_d4_parent233_trial48 EARLY-STOPPED in 8.0m 25.73s with 176 failures out of 87052/100000 runs.
+Logical error rate for beam_d4_parent233_trial48: 0.002021780085466158 ± 0.0001522 (stderr)
+Batch 2:  38%|███▊      | 12/32 [08:28<02:37,  7.86s/it]Decoder beam_d4_parent233_trial45 EARLY-STOPPED in 8.0m 27.33s with 176 failures out of 95023/100000 runs.
+Logical error rate for beam_d4_parent233_trial45: 0.0018521831556570514 ± 0.0001395 (stderr)
+Batch 2:  41%|████      | 13/32 [08:30<01:51,  5.89s/it]Decoder beam_d4_parent233_trial40 EARLY-STOPPED in 8.0m 30.24s with 176 failures out of 90259/100000 runs.
+Logical error rate for beam_d4_parent233_trial40: 0.001949944049900841 ± 0.0001468 (stderr)
+Batch 2:  44%|████▍     | 14/32 [08:33<01:32,  5.11s/it]Decoder beam_d4_parent233_trial46 EARLY-STOPPED in 8.0m 30.61s with 176 failures out of 81690/100000 runs.
+Logical error rate for beam_d4_parent233_trial46: 0.00215448647325254 ± 0.0001622 (stderr)
+Batch 2:  47%|████▋     | 15/32 [08:33<01:02,  3.68s/it]Decoder beam_d4_parent233_trial44 EARLY-STOPPED in 8.0m 32.51s with 176 failures out of 94487/100000 runs.
+Logical error rate for beam_d4_parent233_trial44: 0.0018626901055171612 ± 0.0001403 (stderr)
+Batch 2:  50%|█████     | 16/32 [08:36<00:50,  3.18s/it]Decoder beam_d4_parent149_trial5 EARLY-STOPPED in 8.0m 37.28s with 176 failures out of 95642/100000 runs.
+Logical error rate for beam_d4_parent149_trial5: 0.001840195729909454 ± 0.0001386 (stderr)
+Batch 2:  53%|█████▎    | 17/32 [08:40<00:53,  3.57s/it]Decoder beam_d4_parent233_trial42 EARLY-STOPPED in 8.0m 42.63s with 176 failures out of 92211/100000 runs.
+Logical error rate for beam_d4_parent233_trial42: 0.0019086659942956915 ± 0.0001437 (stderr)
+Batch 2:  56%|█████▋    | 18/32 [08:45<00:57,  4.10s/it]Decoder beam_d4_parent233_trial32 EARLY-STOPPED in 8.0m 43.45s with 176 failures out of 93701/100000 runs.
+Logical error rate for beam_d4_parent233_trial32: 0.0018783150660078335 ± 0.0001415 (stderr)
+Batch 2:  59%|█████▉    | 19/32 [08:46<00:41,  3.20s/it]Decoder beam_d4_parent233_trial35 EARLY-STOPPED in 8.0m 47.09s with 176 failures out of 91508/100000 runs.
+Logical error rate for beam_d4_parent233_trial35: 0.001923329107837566 ± 0.0001448 (stderr)
+Batch 2:  62%|██████▎   | 20/32 [08:50<00:39,  3.31s/it]Decoder beam_d4_parent149_trial12 finished in 8.0m 49.60s with 162 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial12: 0.00162 ± 0.0001272 (stderr)
+Batch 2:  66%|██████▌   | 21/32 [08:52<00:33,  3.01s/it]Decoder beam_d4_parent233_trial39 finished in 8.0m 52.43s with 170 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial39: 0.0017 ± 0.0001303 (stderr)
+Batch 2:  69%|██████▉   | 22/32 [08:55<00:28,  2.89s/it]Decoder beam_d4_parent149_trial7 finished in 8.0m 57.96s with 173 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial7: 0.00173 ± 0.0001314 (stderr)
+Batch 2:  72%|███████▏  | 23/32 [09:00<00:32,  3.60s/it]Decoder beam_d4_parent233_trial41 finished in 8.0m 57.76s with 168 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial41: 0.00168 ± 0.0001295 (stderr)
+Batch 2:  75%|███████▌  | 24/32 [09:01<00:21,  2.67s/it]Decoder beam_d4_parent233_trial47 EARLY-STOPPED in 8.0m 58.79s with 176 failures out of 96585/100000 runs.
+Logical error rate for beam_d4_parent233_trial47: 0.00182222912460527 ± 0.0001372 (stderr)
+Batch 2:  78%|███████▊  | 25/32 [09:02<00:15,  2.20s/it]Decoder beam_d4_parent149_trial4 finished in 9.0m 0.86s with 159 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial4: 0.00159 ± 0.0001260 (stderr)
+Batch 2:  81%|████████▏ | 26/32 [09:04<00:12,  2.14s/it]Decoder beam_d4_parent233_trial37 finished in 9.0m 1.11s with 167 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial37: 0.00167 ± 0.0001291 (stderr)
+Batch 2:  84%|████████▍ | 27/32 [09:04<00:07,  1.54s/it]Decoder beam_d4_parent233_trial43 EARLY-STOPPED in 9.0m 2.89s with 176 failures out of 97909/100000 runs.
+Logical error rate for beam_d4_parent233_trial43: 0.0017975875557916024 ± 0.0001354 (stderr)
+Batch 2:  88%|████████▊ | 28/32 [09:06<00:06,  1.64s/it]Decoder beam_d4_parent233_trial38 finished in 9.0m 3.51s with 157 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial38: 0.00157 ± 0.0001252 (stderr)
+Batch 2:  91%|█████████ | 29/32 [09:06<00:03,  1.31s/it]Decoder beam_d4_parent149_trial0 finished in 9.0m 5.03s with 150 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial0: 0.0015 ± 0.0001224 (stderr)
+Batch 2:  94%|█████████▍| 30/32 [09:08<00:02,  1.34s/it]Decoder beam_d4_parent233_trial36 finished in 9.0m 11.65s with 170 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent233_trial36: 0.0017 ± 0.0001303 (stderr)
+Batch 2:  97%|█████████▋| 31/32 [09:14<00:02,  2.83s/it]Decoder beam_d4_parent149_trial9 finished in 9.0m 16.51s with 165 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial9: 0.00165 ± 0.0001283 (stderr)
+Batch 2: 100%|██████████| 32/32 [09:20<00:00,  3.62s/it]Batch 2: 100%|██████████| 32/32 [09:20<00:00, 17.50s/it]
+Batch 3:   0%|          | 0/29 [00:00<?, ?it/s]Decoder beam_d4_parent149_trial33 EARLY-STOPPED in 5.0m 37.64s with 176 failures out of 57669/100000 runs.
+Logical error rate for beam_d4_parent149_trial33: 0.0030518996341188506 ± 0.0002297 (stderr)
+Batch 3:   3%|▎         | 1/29 [05:40<2:38:40, 340.01s/it]Decoder beam_d4_parent149_trial38 EARLY-STOPPED in 6.0m 34.21s with 176 failures out of 80735/100000 runs.
+Logical error rate for beam_d4_parent149_trial38: 0.0021799715117359264 ± 0.0001641 (stderr)
+Batch 3:   7%|▋         | 2/29 [06:36<1:18:03, 173.48s/it]Decoder beam_d4_parent149_trial17 EARLY-STOPPED in 6.0m 52.57s with 176 failures out of 83670/100000 runs.
+Logical error rate for beam_d4_parent149_trial17: 0.002103501852515836 ± 0.0001584 (stderr)
+Batch 3:  10%|█         | 3/29 [06:55<44:27, 102.61s/it]  Decoder beam_d4_parent149_trial18 EARLY-STOPPED in 7.0m 4.51s with 176 failures out of 78395/100000 runs.
+Logical error rate for beam_d4_parent149_trial18: 0.0022450411378276674 ± 0.0001690 (stderr)
+Batch 3:  14%|█▍        | 4/29 [07:07<27:50, 66.81s/it] Decoder beam_d4_parent149_trial37 EARLY-STOPPED in 7.0m 12.27s with 176 failures out of 78923/100000 runs.
+Logical error rate for beam_d4_parent149_trial37: 0.0022300216666877844 ± 0.0001679 (stderr)
+Batch 3:  17%|█▋        | 5/29 [07:14<18:13, 45.55s/it]Decoder beam_d4_parent149_trial49 EARLY-STOPPED in 7.0m 28.42s with 176 failures out of 85850/100000 runs.
+Logical error rate for beam_d4_parent149_trial49: 0.0020500873616773442 ± 0.0001544 (stderr)
+Batch 3:  21%|██        | 6/29 [07:31<13:37, 35.55s/it]Decoder beam_d4_parent149_trial47 EARLY-STOPPED in 7.0m 34.39s with 176 failures out of 91837/100000 runs.
+Logical error rate for beam_d4_parent149_trial47: 0.0019164389080653767 ± 0.0001443 (stderr)
+Batch 3:  24%|██▍       | 7/29 [07:37<09:29, 25.89s/it]Decoder beam_d4_parent149_trial29 EARLY-STOPPED in 7.0m 37.01s with 176 failures out of 95854/100000 runs.
+Logical error rate for beam_d4_parent149_trial29: 0.0018361257746155612 ± 0.0001383 (stderr)
+Batch 3:  28%|██▊       | 8/29 [07:39<06:27, 18.47s/it]Decoder beam_d4_parent149_trial34 finished in 7.0m 38.80s with 172 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial34: 0.00172 ± 0.0001310 (stderr)
+Batch 3:  31%|███       | 9/29 [07:41<04:25, 13.26s/it]Decoder beam_d4_parent149_trial45 EARLY-STOPPED in 7.0m 41.83s with 176 failures out of 93183/100000 runs.
+Logical error rate for beam_d4_parent149_trial45: 0.0018887565328439737 ± 0.0001422 (stderr)
+Batch 3:  34%|███▍      | 10/29 [07:44<03:09,  9.98s/it]Decoder beam_d4_parent149_trial42 EARLY-STOPPED in 7.0m 43.11s with 176 failures out of 79893/100000 runs.
+Logical error rate for beam_d4_parent149_trial42: 0.0022029464408646563 ± 0.0001659 (stderr)
+Batch 3:  38%|███▊      | 11/29 [07:45<02:12,  7.34s/it]Decoder beam_d4_parent149_trial24 EARLY-STOPPED in 7.0m 43.67s with 176 failures out of 92086/100000 runs.
+Logical error rate for beam_d4_parent149_trial24: 0.0019112568685793715 ± 0.0001439 (stderr)
+Batch 3:  41%|████▏     | 12/29 [07:46<01:31,  5.37s/it]Decoder beam_d4_parent149_trial28 finished in 7.0m 43.78s with 165 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial28: 0.00165 ± 0.0001283 (stderr)
+Batch 3:  45%|████▍     | 13/29 [07:46<01:00,  3.78s/it]Decoder beam_d4_parent149_trial36 finished in 7.0m 45.79s with 140 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial36: 0.0014 ± 0.0001182 (stderr)
+Batch 3:  48%|████▊     | 14/29 [07:48<00:48,  3.24s/it]Decoder beam_d4_parent149_trial46 EARLY-STOPPED in 7.0m 48.56s with 176 failures out of 88491/100000 runs.
+Logical error rate for beam_d4_parent149_trial46: 0.0019889028262761186 ± 0.0001498 (stderr)
+Batch 3:  52%|█████▏    | 15/29 [07:51<00:42,  3.07s/it]Decoder beam_d4_parent149_trial26 EARLY-STOPPED in 7.0m 57.74s with 176 failures out of 90746/100000 runs.
+Logical error rate for beam_d4_parent149_trial26: 0.0019394794260904063 ± 0.0001461 (stderr)
+Batch 3:  55%|█████▌    | 16/29 [08:00<01:03,  4.91s/it]Decoder beam_d4_parent149_trial23 EARLY-STOPPED in 7.0m 59.09s with 176 failures out of 84451/100000 runs.
+Logical error rate for beam_d4_parent149_trial23: 0.00208404873832163 ± 0.0001569 (stderr)
+Batch 3:  59%|█████▊    | 17/29 [08:01<00:46,  3.87s/it]Decoder beam_d4_parent149_trial20 finished in 8.0m 0.73s with 173 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial20: 0.00173 ± 0.0001314 (stderr)
+Batch 3:  62%|██████▏   | 18/29 [08:03<00:34,  3.17s/it]Decoder beam_d4_parent149_trial25 finished in 8.0m 4.98s with 173 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial25: 0.00173 ± 0.0001314 (stderr)
+Batch 3:  66%|██████▌   | 19/29 [08:07<00:34,  3.50s/it]Decoder beam_d4_parent149_trial19 finished in 8.0m 10.43s with 150 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial19: 0.0015 ± 0.0001224 (stderr)
+Batch 3:  69%|██████▉   | 20/29 [08:12<00:36,  4.05s/it]Decoder beam_d4_parent149_trial44 EARLY-STOPPED in 8.0m 11.83s with 176 failures out of 74640/100000 runs.
+Logical error rate for beam_d4_parent149_trial44: 0.002357984994640943 ± 0.0001775 (stderr)
+Batch 3:  72%|███████▏  | 21/29 [08:14<00:25,  3.19s/it]Decoder beam_d4_parent149_trial31 finished in 8.0m 14.12s with 152 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial31: 0.00152 ± 0.0001232 (stderr)
+Batch 3:  76%|███████▌  | 22/29 [08:16<00:21,  3.05s/it]Decoder beam_d4_parent149_trial35 finished in 8.0m 16.37s with 146 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial35: 0.00146 ± 0.0001207 (stderr)
+Batch 3:  79%|███████▉  | 23/29 [08:18<00:16,  2.69s/it]Decoder beam_d4_parent149_trial32 finished in 8.0m 20.24s with 170 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial32: 0.0017 ± 0.0001303 (stderr)
+Batch 3:  83%|████████▎ | 24/29 [08:22<00:15,  3.13s/it]Decoder beam_d4_parent149_trial16 finished in 8.0m 23.77s with 160 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial16: 0.0016 ± 0.0001264 (stderr)
+Batch 3:  86%|████████▌ | 25/29 [08:26<00:12,  3.25s/it]Decoder beam_d4_parent149_trial41 finished in 8.0m 26.49s with 172 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial41: 0.00172 ± 0.0001310 (stderr)
+Batch 3:  90%|████████▉ | 26/29 [08:28<00:08,  2.92s/it]Decoder beam_d4_parent149_trial39 finished in 8.0m 26.78s with 159 failures out of 100000/100000 runs.
+Logical error rate for beam_d4_parent149_trial39: 0.00159 ± 0.0001260 (stderr)
+Batch 3:  93%|█████████▎| 27/29 [08:29<00:04,  2.27s/it]Decoder beam_d4_parent149_trial40 EARLY-STOPPED in 8.0m 57.45s with 176 failures out of 98847/100000 runs.
+Logical error rate for beam_d4_parent149_trial40: 0.001780529505194897 ± 0.0001341 (stderr)
+Batch 3:  97%|█████████▋| 28/29 [09:00<00:10, 10.83s/it]Decoder beam_d4_parent149_trial21 EARLY-STOPPED in 9.0m 20.88s with 176 failures out of 85770/100000 runs.
+Logical error rate for beam_d4_parent149_trial21: 0.0020519995336364697 ± 0.0001545 (stderr)
+Batch 3: 100%|██████████| 29/29 [09:23<00:00, 14.52s/it]Batch 3: 100%|██████████| 29/29 [09:23<00:00, 19.42s/it]
+  Provisional beam candidates (before precision re-eval):
+    1. row=233 dist=10 ler=0.001478 early_stopped=False
+    2. row=149 dist=10 ler=0.001548 early_stopped=False
+    3. row=275 dist=10 ler=0.001340 early_stopped=False
+    4. row=266 dist=10 ler=0.001380 early_stopped=False
+  Precision re-evaluating 2 promoted beam state(s): [275, 266]
+Parent precision MC:   0%|          | 0/2 [00:00<?, ?it/s]Decoder parent_precision_row_266 finished in 49.0m 34.24s with 1512 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_266: 0.001512 ± 0.0000389 (stderr)
+Parent precision MC:  50%|█████     | 1/2 [49:35<49:35, 2975.37s/it]Decoder parent_precision_row_275 finished in 49.0m 41.77s with 1572 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_275: 0.001572 ± 0.0000396 (stderr)
+Parent precision MC: 100%|██████████| 2/2 [49:42<00:00, 1229.60s/it]Parent precision MC: 100%|██████████| 2/2 [49:42<00:00, 1491.47s/it]
+  Provisional beam candidates screening LER -> precise LER:
+1. row=233 dist=10 screen_ler=0.001390 precise_ler=0.001478 early_stopped=False
+2. row=149 dist=10 screen_ler=0.001500 precise_ler=0.001548 early_stopped=False
+3. row=275 dist=10 screen_ler=0.001340 precise_ler=0.001572 early_stopped=False
+4. row=266 dist=10 screen_ler=0.001380 precise_ler=0.001512 early_stopped=False
+  Survivors:
+    1. row=233 dist=10 ler=0.001478
+    2. row=266 dist=10 ler=0.001512
+
+=== Beam depth 5/10 ===
+  Depth-5 screening failure cap = 172
+  Parent 1/2 | row=233 | dist=10 | ler=0.001478
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 10
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+  Parent 2/2 | row=266 | dist=10 | ler=0.001512
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 10
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+Batch 1:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d5_parent233_trial1 EARLY-STOPPED in 7.0m 17.32s with 173 failures out of 68995/100000 runs.
+Logical error rate for beam_d5_parent233_trial1: 0.002507428074498152 ± 0.0001904 (stderr)
+Batch 1:   3%|▎         | 1/32 [07:20<3:47:45, 440.81s/it]Decoder beam_d5_parent233_trial5 EARLY-STOPPED in 7.0m 25.76s with 173 failures out of 80133/100000 runs.
+Logical error rate for beam_d5_parent233_trial5: 0.002158910810777083 ± 0.0001640 (stderr)
+Batch 1:   6%|▋         | 2/32 [07:29<1:33:10, 186.34s/it]Decoder beam_d5_parent233_trial15 EARLY-STOPPED in 7.0m 35.73s with 173 failures out of 82587/100000 runs.
+Logical error rate for beam_d5_parent233_trial15: 0.002094760676619807 ± 0.0001591 (stderr)
+Batch 1:   9%|▉         | 3/32 [07:38<51:07, 105.79s/it]  Decoder beam_d5_parent233_trial30 EARLY-STOPPED in 7.0m 47.44s with 173 failures out of 83185/100000 runs.
+Logical error rate for beam_d5_parent233_trial30: 0.002079701869327403 ± 0.0001580 (stderr)
+Batch 1:  12%|█▎        | 4/32 [07:50<32:03, 68.68s/it] Decoder beam_d5_parent233_trial19 EARLY-STOPPED in 7.0m 58.32s with 173 failures out of 81196/100000 runs.
+Logical error rate for beam_d5_parent233_trial19: 0.002130646829893098 ± 0.0001618 (stderr)
+Batch 1:  16%|█▌        | 5/32 [08:01<21:31, 47.84s/it]Decoder beam_d5_parent233_trial34 EARLY-STOPPED in 8.0m 2.81s with 173 failures out of 87122/100000 runs.
+Logical error rate for beam_d5_parent233_trial34: 0.001985721172608526 ± 0.0001508 (stderr)
+Batch 1:  19%|█▉        | 6/32 [08:06<14:21, 33.14s/it]Decoder beam_d5_parent233_trial11 EARLY-STOPPED in 8.0m 21.24s with 173 failures out of 77381/100000 runs.
+Logical error rate for beam_d5_parent233_trial11: 0.0022356909318825033 ± 0.0001698 (stderr)
+Batch 1:  22%|██▏       | 7/32 [08:24<11:46, 28.28s/it]Decoder beam_d5_parent233_trial25 EARLY-STOPPED in 8.0m 28.67s with 173 failures out of 84427/100000 runs.
+Logical error rate for beam_d5_parent233_trial25: 0.002049107512999396 ± 0.0001556 (stderr)
+Batch 1:  25%|██▌       | 8/32 [08:31<08:38, 21.61s/it]Decoder beam_d5_parent233_trial29 EARLY-STOPPED in 8.0m 29.61s with 173 failures out of 94592/100000 runs.
+Logical error rate for beam_d5_parent233_trial29: 0.0018289073071718538 ± 0.0001389 (stderr)
+Batch 1:  28%|██▊       | 9/32 [08:32<05:48, 15.16s/it]Decoder beam_d5_parent233_trial0 EARLY-STOPPED in 8.0m 31.94s with 173 failures out of 94022/100000 runs.
+Logical error rate for beam_d5_parent233_trial0: 0.0018399948948118526 ± 0.0001398 (stderr)
+Batch 1:  31%|███▏      | 10/32 [08:35<04:06, 11.20s/it]Decoder beam_d5_parent233_trial13 finished in 8.0m 37.04s with 154 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial13: 0.00154 ± 0.0001240 (stderr)
+Batch 1:  34%|███▍      | 11/32 [08:40<03:16,  9.34s/it]Decoder beam_d5_parent233_trial12 EARLY-STOPPED in 8.0m 40.68s with 173 failures out of 92983/100000 runs.
+Logical error rate for beam_d5_parent233_trial12: 0.0018605551552434317 ± 0.0001413 (stderr)
+Batch 1:  38%|███▊      | 12/32 [08:43<02:32,  7.61s/it]Decoder beam_d5_parent233_trial16 EARLY-STOPPED in 8.0m 41.90s with 173 failures out of 94999/100000 runs.
+Logical error rate for beam_d5_parent233_trial16: 0.0018210718007557975 ± 0.0001383 (stderr)
+Batch 1:  41%|████      | 13/32 [08:45<01:47,  5.67s/it]Decoder beam_d5_parent233_trial6 EARLY-STOPPED in 8.0m 42.61s with 173 failures out of 94417/100000 runs.
+Logical error rate for beam_d5_parent233_trial6: 0.0018322971498776703 ± 0.0001392 (stderr)
+Batch 1:  44%|████▍     | 14/32 [08:45<01:14,  4.16s/it]Decoder beam_d5_parent233_trial3 finished in 8.0m 45.66s with 147 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial3: 0.00147 ± 0.0001212 (stderr)
+Batch 1:  47%|████▋     | 15/32 [08:48<01:04,  3.81s/it]Decoder beam_d5_parent233_trial22 EARLY-STOPPED in 8.0m 48.02s with 173 failures out of 90897/100000 runs.
+Logical error rate for beam_d5_parent233_trial22: 0.0019032531326666447 ± 0.0001446 (stderr)
+Batch 1:  50%|█████     | 16/32 [08:50<00:51,  3.22s/it]Decoder beam_d5_parent233_trial7 EARLY-STOPPED in 8.0m 49.15s with 173 failures out of 95258/100000 runs.
+Logical error rate for beam_d5_parent233_trial7: 0.0018161204308299566 ± 0.0001380 (stderr)
+Batch 1:  53%|█████▎    | 17/32 [08:52<00:41,  2.77s/it]Decoder beam_d5_parent233_trial26 EARLY-STOPPED in 8.0m 49.95s with 173 failures out of 93959/100000 runs.
+Logical error rate for beam_d5_parent233_trial26: 0.0018412286209942635 ± 0.0001399 (stderr)
+Batch 1:  56%|█████▋    | 18/32 [08:53<00:30,  2.21s/it]Decoder beam_d5_parent233_trial14 finished in 8.0m 52.36s with 166 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial14: 0.00166 ± 0.0001287 (stderr)
+Batch 1:  59%|█████▉    | 19/32 [08:55<00:29,  2.24s/it]Decoder beam_d5_parent233_trial17 EARLY-STOPPED in 8.0m 57.10s with 173 failures out of 98743/100000 runs.
+Logical error rate for beam_d5_parent233_trial17: 0.0017520229282075692 ± 0.0001331 (stderr)
+Batch 1:  62%|██████▎   | 20/32 [09:00<00:36,  3.05s/it]Decoder beam_d5_parent233_trial20 EARLY-STOPPED in 8.0m 57.39s with 173 failures out of 97447/100000 runs.
+Logical error rate for beam_d5_parent233_trial20: 0.001775324022289039 ± 0.0001349 (stderr)
+Batch 1:  66%|██████▌   | 21/32 [09:00<00:23,  2.16s/it]Decoder beam_d5_parent233_trial8 EARLY-STOPPED in 8.0m 57.59s with 173 failures out of 96363/100000 runs.
+Logical error rate for beam_d5_parent233_trial8: 0.0017952948745887944 ± 0.0001364 (stderr)
+Batch 1:  69%|██████▉   | 22/32 [09:00<00:15,  1.57s/it]Decoder beam_d5_parent233_trial4 EARLY-STOPPED in 8.0m 59.04s with 173 failures out of 90516/100000 runs.
+Logical error rate for beam_d5_parent233_trial4: 0.0019112643068628751 ± 0.0001452 (stderr)
+Batch 1:  72%|███████▏  | 23/32 [09:02<00:14,  1.56s/it]Decoder beam_d5_parent233_trial2 EARLY-STOPPED in 9.0m 1.99s with 173 failures out of 94537/100000 runs.
+Logical error rate for beam_d5_parent233_trial2: 0.0018299713339750574 ± 0.0001390 (stderr)
+Batch 1:  75%|███████▌  | 24/32 [09:05<00:16,  2.01s/it]Decoder beam_d5_parent233_trial32 EARLY-STOPPED in 9.0m 4.00s with 173 failures out of 90632/100000 runs.
+Logical error rate for beam_d5_parent233_trial32: 0.0019088180775002207 ± 0.0001450 (stderr)
+Batch 1:  78%|███████▊  | 25/32 [09:07<00:13,  1.89s/it]Decoder beam_d5_parent233_trial21 finished in 9.0m 4.12s with 163 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial21: 0.00163 ± 0.0001276 (stderr)
+Batch 1:  81%|████████▏ | 26/32 [09:07<00:08,  1.42s/it]Decoder beam_d5_parent233_trial24 finished in 9.0m 4.20s with 146 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial24: 0.00146 ± 0.0001207 (stderr)
+Batch 1:  84%|████████▍ | 27/32 [09:07<00:05,  1.08s/it]Decoder beam_d5_parent233_trial28 finished in 9.0m 6.70s with 144 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial28: 0.00144 ± 0.0001199 (stderr)
+Batch 1:  88%|████████▊ | 28/32 [09:09<00:05,  1.44s/it]Decoder beam_d5_parent233_trial31 finished in 9.0m 11.21s with 147 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial31: 0.00147 ± 0.0001212 (stderr)
+Batch 1:  91%|█████████ | 29/32 [09:14<00:07,  2.36s/it]Decoder beam_d5_parent233_trial33 finished in 9.0m 16.44s with 155 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial33: 0.00155 ± 0.0001244 (stderr)
+Batch 1:  94%|█████████▍| 30/32 [09:19<00:06,  3.31s/it]Decoder beam_d5_parent233_trial10 finished in 9.0m 41.13s with 168 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial10: 0.00168 ± 0.0001295 (stderr)
+Batch 1:  97%|█████████▋| 31/32 [09:44<00:09,  9.66s/it]Decoder beam_d5_parent233_trial23 EARLY-STOPPED in 10.0m 10.06s with 173 failures out of 96989/100000 runs.
+Logical error rate for beam_d5_parent233_trial23: 0.0017837074307395684 ± 0.0001355 (stderr)
+Batch 1: 100%|██████████| 32/32 [10:13<00:00, 15.41s/it]Batch 1: 100%|██████████| 32/32 [10:13<00:00, 19.17s/it]
+Batch 2:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d5_parent266_trial11 EARLY-STOPPED in 4.0m 36.47s with 173 failures out of 44731/100000 runs.
+Logical error rate for beam_d5_parent266_trial11: 0.0038675638818716327 ± 0.0002935 (stderr)
+Batch 2:   3%|▎         | 1/32 [04:39<2:24:34, 279.82s/it]Decoder beam_d5_parent233_trial46 EARLY-STOPPED in 4.0m 53.02s with 173 failures out of 45739/100000 runs.
+Logical error rate for beam_d5_parent233_trial46: 0.003782330177747655 ± 0.0002870 (stderr)
+Batch 2:   6%|▋         | 2/32 [04:55<1:02:19, 124.65s/it]Decoder beam_d5_parent266_trial18 EARLY-STOPPED in 6.0m 48.28s with 173 failures out of 76342/100000 runs.
+Logical error rate for beam_d5_parent266_trial18: 0.0022661182573157634 ± 0.0001721 (stderr)
+Batch 2:   9%|▉         | 3/32 [06:51<58:14, 120.50s/it]  Decoder beam_d5_parent233_trial48 EARLY-STOPPED in 7.0m 20.01s with 173 failures out of 75762/100000 runs.
+Logical error rate for beam_d5_parent233_trial48: 0.0022834666455479 ± 0.0001734 (stderr)
+Batch 2:  12%|█▎        | 4/32 [07:22<39:48, 85.29s/it] Decoder beam_d5_parent266_trial5 EARLY-STOPPED in 7.0m 31.08s with 173 failures out of 78038/100000 runs.
+Logical error rate for beam_d5_parent266_trial5: 0.0022168687049898767 ± 0.0001684 (stderr)
+Batch 2:  16%|█▌        | 5/32 [07:33<26:19, 58.49s/it]Decoder beam_d5_parent266_trial17 EARLY-STOPPED in 7.0m 30.67s with 173 failures out of 83364/100000 runs.
+Logical error rate for beam_d5_parent266_trial17: 0.0020752363130368025 ± 0.0001576 (stderr)
+Decoder beam_d5_parent266_trial12 EARLY-STOPPED in 7.0m 37.21s with 173 failures out of 77740/100000 runs.
+Logical error rate for beam_d5_parent266_trial12: 0.0022253666066375096 ± 0.0001690 (stderr)
+Batch 2:  22%|██▏       | 7/32 [07:40<12:41, 30.46s/it]Decoder beam_d5_parent233_trial42 EARLY-STOPPED in 7.0m 41.72s with 173 failures out of 78808/100000 runs.
+Logical error rate for beam_d5_parent233_trial42: 0.0021952086082631206 ± 0.0001667 (stderr)
+Batch 2:  25%|██▌       | 8/32 [07:44<09:26, 23.62s/it]Decoder beam_d5_parent233_trial47 EARLY-STOPPED in 7.0m 49.20s with 173 failures out of 79459/100000 runs.
+Logical error rate for beam_d5_parent233_trial47: 0.0021772234737411746 ± 0.0001654 (stderr)
+Batch 2:  28%|██▊       | 9/32 [07:52<07:20, 19.17s/it]Decoder beam_d5_parent266_trial20 EARLY-STOPPED in 8.0m 5.07s with 173 failures out of 90674/100000 runs.
+Logical error rate for beam_d5_parent266_trial20: 0.0019079339171096455 ± 0.0001449 (stderr)
+Batch 2:  31%|███▏      | 10/32 [08:08<06:41, 18.25s/it]Decoder beam_d5_parent233_trial41 EARLY-STOPPED in 8.0m 6.22s with 173 failures out of 83070/100000 runs.
+Logical error rate for beam_d5_parent233_trial41: 0.0020825809558203926 ± 0.0001582 (stderr)
+Batch 2:  34%|███▍      | 11/32 [08:09<04:38, 13.27s/it]Decoder beam_d5_parent266_trial19 EARLY-STOPPED in 8.0m 9.14s with 173 failures out of 92401/100000 runs.
+Logical error rate for beam_d5_parent266_trial19: 0.0018722741095875586 ± 0.0001422 (stderr)
+Batch 2:  38%|███▊      | 12/32 [08:12<03:25, 10.26s/it]Decoder beam_d5_parent266_trial4 EARLY-STOPPED in 8.0m 17.63s with 173 failures out of 95359/100000 runs.
+Logical error rate for beam_d5_parent266_trial4: 0.0018141968770645665 ± 0.0001378 (stderr)
+Batch 2:  41%|████      | 13/32 [08:20<03:06,  9.79s/it]Decoder beam_d5_parent266_trial16 EARLY-STOPPED in 8.0m 18.44s with 173 failures out of 94076/100000 runs.
+Logical error rate for beam_d5_parent266_trial16: 0.0018389387303881968 ± 0.0001397 (stderr)
+Batch 2:  44%|████▍     | 14/32 [08:21<02:07,  7.10s/it]Decoder beam_d5_parent233_trial43 EARLY-STOPPED in 8.0m 22.69s with 173 failures out of 91327/100000 runs.
+Logical error rate for beam_d5_parent233_trial43: 0.0018942919399520405 ± 0.0001439 (stderr)
+Batch 2:  47%|████▋     | 15/32 [08:25<01:46,  6.24s/it]Decoder beam_d5_parent266_trial6 EARLY-STOPPED in 8.0m 24.03s with 173 failures out of 87215/100000 runs.
+Logical error rate for beam_d5_parent266_trial6: 0.0019836037378891244 ± 0.0001507 (stderr)
+Batch 2:  50%|█████     | 16/32 [08:27<01:16,  4.81s/it]Decoder beam_d5_parent266_trial14 EARLY-STOPPED in 8.0m 29.46s with 173 failures out of 92264/100000 runs.
+Logical error rate for beam_d5_parent266_trial14: 0.001875054192317697 ± 0.0001424 (stderr)
+Batch 2:  53%|█████▎    | 17/32 [08:32<01:14,  4.96s/it]Decoder beam_d5_parent266_trial3 finished in 8.0m 31.10s with 136 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial3: 0.00136 ± 0.0001165 (stderr)
+Batch 2:  56%|█████▋    | 18/32 [08:33<00:53,  3.85s/it]Decoder beam_d5_parent233_trial45 EARLY-STOPPED in 8.0m 31.42s with 173 failures out of 96065/100000 runs.
+Logical error rate for beam_d5_parent233_trial45: 0.001800863998334461 ± 0.0001368 (stderr)
+Batch 2:  59%|█████▉    | 19/32 [08:34<00:37,  2.91s/it]Decoder beam_d5_parent233_trial35 EARLY-STOPPED in 8.0m 32.34s with 173 failures out of 95176/100000 runs.
+Logical error rate for beam_d5_parent233_trial35: 0.0018176851307052197 ± 0.0001381 (stderr)
+Batch 2:  62%|██████▎   | 20/32 [08:34<00:25,  2.14s/it]Decoder beam_d5_parent233_trial38 EARLY-STOPPED in 8.0m 32.79s with 173 failures out of 96752/100000 runs.
+Logical error rate for beam_d5_parent233_trial38: 0.0017880767322639324 ± 0.0001358 (stderr)
+Batch 2:  66%|██████▌   | 21/32 [08:35<00:19,  1.78s/it]Decoder beam_d5_parent266_trial9 EARLY-STOPPED in 8.0m 37.06s with 173 failures out of 97415/100000 runs.
+Logical error rate for beam_d5_parent266_trial9: 0.0017759072011497203 ± 0.0001349 (stderr)
+Batch 2:  69%|██████▉   | 22/32 [08:40<00:25,  2.53s/it]Decoder beam_d5_parent266_trial0 EARLY-STOPPED in 8.0m 39.93s with 173 failures out of 94198/100000 runs.
+Logical error rate for beam_d5_parent266_trial0: 0.0018365570394275887 ± 0.0001395 (stderr)
+Batch 2:  72%|███████▏  | 23/32 [08:42<00:23,  2.66s/it]Decoder beam_d5_parent266_trial15 finished in 8.0m 40.66s with 150 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial15: 0.0015 ± 0.0001224 (stderr)
+Batch 2:  75%|███████▌  | 24/32 [08:43<00:16,  2.05s/it]Decoder beam_d5_parent266_trial13 finished in 8.0m 47.53s with 165 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial13: 0.00165 ± 0.0001283 (stderr)
+Batch 2:  78%|███████▊  | 25/32 [08:50<00:25,  3.61s/it]Decoder beam_d5_parent233_trial44 finished in 8.0m 48.51s with 144 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial44: 0.00144 ± 0.0001199 (stderr)
+Batch 2:  81%|████████▏ | 26/32 [08:51<00:16,  2.74s/it]Decoder beam_d5_parent266_trial8 finished in 8.0m 49.28s with 156 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial8: 0.00156 ± 0.0001248 (stderr)
+Batch 2:  84%|████████▍ | 27/32 [08:52<00:10,  2.15s/it]Decoder beam_d5_parent266_trial10 finished in 8.0m 54.23s with 169 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial10: 0.00169 ± 0.0001299 (stderr)
+Batch 2:  88%|████████▊ | 28/32 [08:57<00:11,  2.99s/it]Decoder beam_d5_parent233_trial37 finished in 8.0m 57.80s with 158 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent233_trial37: 0.00158 ± 0.0001256 (stderr)
+Batch 2:  91%|█████████ | 29/32 [09:00<00:09,  3.19s/it]Decoder beam_d5_parent266_trial1 EARLY-STOPPED in 9.0m 2.12s with 173 failures out of 96058/100000 runs.
+Logical error rate for beam_d5_parent266_trial1: 0.0018009952320473047 ± 0.0001368 (stderr)
+Batch 2:  94%|█████████▍| 30/32 [09:05<00:07,  3.52s/it]Decoder beam_d5_parent266_trial7 EARLY-STOPPED in 9.0m 7.49s with 173 failures out of 98990/100000 runs.
+Logical error rate for beam_d5_parent266_trial7: 0.0017476512779068592 ± 0.0001328 (stderr)
+Batch 2:  97%|█████████▋| 31/32 [09:10<00:04,  4.03s/it]Decoder beam_d5_parent266_trial2 finished in 9.0m 43.10s with 155 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial2: 0.00155 ± 0.0001244 (stderr)
+Batch 2: 100%|██████████| 32/32 [09:46<00:00, 13.53s/it]Batch 2: 100%|██████████| 32/32 [09:46<00:00, 18.32s/it]
+Batch 3:   0%|          | 0/29 [00:00<?, ?it/s]Decoder beam_d5_parent266_trial35 EARLY-STOPPED in 6.0m 39.57s with 173 failures out of 74104/100000 runs.
+Logical error rate for beam_d5_parent266_trial35: 0.002334556839037029 ± 0.0001773 (stderr)
+Batch 3:   3%|▎         | 1/29 [06:42<3:07:43, 402.27s/it]Decoder beam_d5_parent266_trial29 EARLY-STOPPED in 7.0m 2.58s with 173 failures out of 90876/100000 runs.
+Logical error rate for beam_d5_parent266_trial29: 0.0019036929442317004 ± 0.0001446 (stderr)
+Batch 3:   7%|▋         | 2/29 [07:04<1:20:29, 178.88s/it]Decoder beam_d5_parent266_trial26 EARLY-STOPPED in 7.0m 10.89s with 173 failures out of 88398/100000 runs.
+Logical error rate for beam_d5_parent266_trial26: 0.0019570578519876015 ± 0.0001486 (stderr)
+Batch 3:  10%|█         | 3/29 [07:13<43:51, 101.23s/it]  Decoder beam_d5_parent266_trial33 EARLY-STOPPED in 7.0m 15.18s with 173 failures out of 86904/100000 runs.
+Logical error rate for beam_d5_parent266_trial33: 0.001990702384240081 ± 0.0001512 (stderr)
+Batch 3:  14%|█▍        | 4/29 [07:18<26:15, 63.02s/it] Decoder beam_d5_parent266_trial34 EARLY-STOPPED in 7.0m 17.99s with 173 failures out of 81673/100000 runs.
+Logical error rate for beam_d5_parent266_trial34: 0.002118203078128635 ± 0.0001609 (stderr)
+Batch 3:  17%|█▋        | 5/29 [07:20<16:31, 41.31s/it]Decoder beam_d5_parent266_trial49 EARLY-STOPPED in 7.0m 18.36s with 173 failures out of 84439/100000 runs.
+Logical error rate for beam_d5_parent266_trial49: 0.0020488163052617865 ± 0.0001556 (stderr)
+Batch 3:  21%|██        | 6/29 [07:21<10:29, 27.36s/it]Decoder beam_d5_parent266_trial41 EARLY-STOPPED in 7.0m 20.56s with 173 failures out of 81652/100000 runs.
+Logical error rate for beam_d5_parent266_trial41: 0.0021187478567579483 ± 0.0001609 (stderr)
+Batch 3:  24%|██▍       | 7/29 [07:23<06:59, 19.09s/it]Decoder beam_d5_parent266_trial44 EARLY-STOPPED in 7.0m 25.90s with 173 failures out of 83956/100000 runs.
+Logical error rate for beam_d5_parent266_trial44: 0.0020606031730906666 ± 0.0001565 (stderr)
+Batch 3:  28%|██▊       | 8/29 [07:28<05:09, 14.72s/it]Decoder beam_d5_parent266_trial39 finished in 7.0m 31.69s with 165 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial39: 0.00165 ± 0.0001283 (stderr)
+Batch 3:  31%|███       | 9/29 [07:34<03:58, 11.93s/it]Decoder beam_d5_parent266_trial36 EARLY-STOPPED in 7.0m 33.92s with 173 failures out of 84450/100000 runs.
+Logical error rate for beam_d5_parent266_trial36: 0.0020485494375370042 ± 0.0001556 (stderr)
+Batch 3:  34%|███▍      | 10/29 [07:36<02:49,  8.93s/it]Decoder beam_d5_parent266_trial30 EARLY-STOPPED in 7.0m 37.31s with 173 failures out of 95364/100000 runs.
+Logical error rate for beam_d5_parent266_trial30: 0.001814101757476616 ± 0.0001378 (stderr)
+Batch 3:  38%|███▊      | 11/29 [07:40<02:10,  7.24s/it]Decoder beam_d5_parent266_trial28 EARLY-STOPPED in 7.0m 44.02s with 173 failures out of 87466/100000 runs.
+Logical error rate for beam_d5_parent266_trial28: 0.0019779114170077514 ± 0.0001502 (stderr)
+Batch 3:  41%|████▏     | 12/29 [07:46<02:01,  7.14s/it]Decoder beam_d5_parent266_trial37 EARLY-STOPPED in 7.0m 47.89s with 173 failures out of 89000/100000 runs.
+Logical error rate for beam_d5_parent266_trial37: 0.0019438202247191011 ± 0.0001476 (stderr)
+Batch 3:  45%|████▍     | 13/29 [07:50<01:37,  6.08s/it]Decoder beam_d5_parent266_trial40 finished in 7.0m 56.35s with 158 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial40: 0.00158 ± 0.0001256 (stderr)
+Batch 3:  48%|████▊     | 14/29 [07:59<01:42,  6.80s/it]Decoder beam_d5_parent266_trial23 EARLY-STOPPED in 7.0m 57.78s with 173 failures out of 95799/100000 runs.
+Logical error rate for beam_d5_parent266_trial23: 0.0018058643618409378 ± 0.0001372 (stderr)
+Batch 3:  52%|█████▏    | 15/29 [08:00<01:12,  5.19s/it]Decoder beam_d5_parent266_trial32 finished in 7.0m 59.02s with 155 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial32: 0.00155 ± 0.0001244 (stderr)
+Batch 3:  55%|█████▌    | 16/29 [08:01<00:52,  4.03s/it]Decoder beam_d5_parent266_trial48 finished in 8.0m 1.46s with 166 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial48: 0.00166 ± 0.0001287 (stderr)
+Batch 3:  59%|█████▊    | 17/29 [08:04<00:41,  3.48s/it]Decoder beam_d5_parent266_trial24 EARLY-STOPPED in 8.0m 2.51s with 173 failures out of 98832/100000 runs.
+Logical error rate for beam_d5_parent266_trial24: 0.0017504451999352437 ± 0.0001330 (stderr)
+Batch 3:  62%|██████▏   | 18/29 [08:05<00:31,  2.84s/it]Decoder beam_d5_parent266_trial42 finished in 8.0m 7.95s with 157 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial42: 0.00157 ± 0.0001252 (stderr)
+Batch 3:  66%|██████▌   | 19/29 [08:10<00:36,  3.63s/it]Decoder beam_d5_parent266_trial45 EARLY-STOPPED in 8.0m 8.09s with 173 failures out of 93894/100000 runs.
+Logical error rate for beam_d5_parent266_trial45: 0.001842503248343877 ± 0.0001400 (stderr)
+Batch 3:  69%|██████▉   | 20/29 [08:10<00:23,  2.58s/it]Decoder beam_d5_parent266_trial25 finished in 8.0m 10.63s with 145 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial25: 0.00145 ± 0.0001203 (stderr)
+Batch 3:  72%|███████▏  | 21/29 [08:13<00:19,  2.48s/it]Decoder beam_d5_parent266_trial43 finished in 8.0m 13.14s with 163 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial43: 0.00163 ± 0.0001276 (stderr)
+Batch 3:  76%|███████▌  | 22/29 [08:15<00:17,  2.52s/it]Decoder beam_d5_parent266_trial31 finished in 8.0m 14.21s with 150 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial31: 0.0015 ± 0.0001224 (stderr)
+Batch 3:  79%|███████▉  | 23/29 [08:17<00:12,  2.14s/it]Decoder beam_d5_parent266_trial38 EARLY-STOPPED in 8.0m 17.97s with 173 failures out of 97330/100000 runs.
+Logical error rate for beam_d5_parent266_trial38: 0.0017774581321278126 ± 0.0001350 (stderr)
+Batch 3:  83%|████████▎ | 24/29 [08:20<00:12,  2.56s/it]Decoder beam_d5_parent266_trial47 finished in 8.0m 18.46s with 165 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial47: 0.00165 ± 0.0001283 (stderr)
+Batch 3:  86%|████████▌ | 25/29 [08:21<00:08,  2.00s/it]Decoder beam_d5_parent266_trial22 EARLY-STOPPED in 8.0m 22.44s with 173 failures out of 99774/100000 runs.
+Logical error rate for beam_d5_parent266_trial22: 0.0017339186561629281 ± 0.0001317 (stderr)
+Batch 3:  90%|████████▉ | 26/29 [08:25<00:07,  2.60s/it]Decoder beam_d5_parent266_trial27 finished in 8.0m 27.32s with 166 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial27: 0.00166 ± 0.0001287 (stderr)
+Batch 3:  93%|█████████▎| 27/29 [08:30<00:06,  3.23s/it]Decoder beam_d5_parent266_trial46 finished in 8.0m 36.42s with 127 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial46: 0.00127 ± 0.0001126 (stderr)
+Batch 3:  97%|█████████▋| 28/29 [08:39<00:04,  4.99s/it]Decoder beam_d5_parent266_trial21 finished in 8.0m 41.05s with 169 failures out of 100000/100000 runs.
+Logical error rate for beam_d5_parent266_trial21: 0.00169 ± 0.0001299 (stderr)
+Batch 3: 100%|██████████| 29/29 [08:43<00:00,  4.82s/it]Batch 3: 100%|██████████| 29/29 [08:43<00:00, 18.05s/it]
+  Provisional beam candidates (before precision re-eval):
+    1. row=233 dist=10 ler=0.001478 early_stopped=False
+    2. row=266 dist=10 ler=0.001512 early_stopped=False
+    3. row=433 dist=10 ler=0.001270 early_stopped=False
+    4. row=390 dist=10 ler=0.001360 early_stopped=False
+  Precision re-evaluating 2 promoted beam state(s): [433, 390]
+Parent precision MC:   0%|          | 0/2 [00:00<?, ?it/s]Decoder parent_precision_row_390 finished in 47.0m 6.23s with 1631 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_390: 0.001631 ± 0.0000404 (stderr)
+Parent precision MC:  50%|█████     | 1/2 [47:07<47:07, 2827.71s/it]Decoder parent_precision_row_433 finished in 53.0m 22.34s with 1524 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_433: 0.001524 ± 0.0000390 (stderr)
+Parent precision MC: 100%|██████████| 2/2 [53:23<00:00, 1385.39s/it]Parent precision MC: 100%|██████████| 2/2 [53:23<00:00, 1601.74s/it]
+  Provisional beam candidates screening LER -> precise LER:
+1. row=233 dist=10 screen_ler=0.001390 precise_ler=0.001478 early_stopped=False
+2. row=266 dist=10 screen_ler=0.001380 precise_ler=0.001512 early_stopped=False
+3. row=433 dist=10 screen_ler=0.001270 precise_ler=0.001524 early_stopped=False
+4. row=390 dist=10 screen_ler=0.001360 precise_ler=0.001631 early_stopped=False
+  Survivors:
+    1. row=233 dist=10 ler=0.001478
+    2. row=266 dist=10 ler=0.001512
+
+=== Beam depth 6/10 ===
+  Depth-6 screening failure cap = 172
+  Parent 1/2 | row=233 | dist=10 | ler=0.001478
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 10
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+  Parent 2/2 | row=266 | dist=10 | ler=0.001512
+    Generated 50 candidates before filtering duplicates
+    Unique candidates before MC screening: 50
+    Best candidate distance before MC: 12
+    Distance distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 12, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 12, 10, 10, 12, 10, 10, 10, 10, 10]
+    Logical weight distribution before MC: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+Batch 1:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d6_parent233_trial37 EARLY-STOPPED in 6.0m 58.48s with 173 failures out of 76555/100000 runs.
+Logical error rate for beam_d6_parent233_trial37: 0.002259813206191627 ± 0.0001716 (stderr)
+Batch 1:   3%|▎         | 1/32 [07:00<3:37:25, 420.83s/it]Decoder beam_d6_parent233_trial33 EARLY-STOPPED in 7.0m 12.99s with 173 failures out of 80558/100000 runs.
+Logical error rate for beam_d6_parent233_trial33: 0.002147521040740833 ± 0.0001631 (stderr)
+Batch 1:   6%|▋         | 2/32 [07:15<1:30:56, 181.87s/it]Decoder beam_d6_parent233_trial3 EARLY-STOPPED in 7.0m 14.10s with 173 failures out of 79431/100000 runs.
+Logical error rate for beam_d6_parent233_trial3: 0.002177990960708036 ± 0.0001654 (stderr)
+Batch 1:   9%|▉         | 3/32 [07:16<48:00, 99.34s/it]   Decoder beam_d6_parent233_trial28 EARLY-STOPPED in 7.0m 33.33s with 173 failures out of 82793/100000 runs.
+Logical error rate for beam_d6_parent233_trial28: 0.0020895486333385675 ± 0.0001587 (stderr)
+Batch 1:  12%|█▎        | 4/32 [07:35<31:34, 67.67s/it]Decoder beam_d6_parent233_trial24 EARLY-STOPPED in 7.0m 33.93s with 173 failures out of 71524/100000 runs.
+Logical error rate for beam_d6_parent233_trial24: 0.0024187685252502656 ± 0.0001837 (stderr)
+Batch 1:  16%|█▌        | 5/32 [07:36<19:34, 43.51s/it]Decoder beam_d6_parent233_trial26 EARLY-STOPPED in 7.0m 49.61s with 173 failures out of 79188/100000 runs.
+Logical error rate for beam_d6_parent233_trial26: 0.002184674445623074 ± 0.0001659 (stderr)
+Batch 1:  19%|█▉        | 6/32 [07:51<14:43, 33.99s/it]Decoder beam_d6_parent233_trial36 EARLY-STOPPED in 7.0m 51.69s with 173 failures out of 78526/100000 runs.
+Logical error rate for beam_d6_parent233_trial36: 0.0022030919695387517 ± 0.0001673 (stderr)
+Batch 1:  22%|██▏       | 7/32 [07:54<09:49, 23.60s/it]Decoder beam_d6_parent233_trial39 EARLY-STOPPED in 7.0m 52.52s with 173 failures out of 85157/100000 runs.
+Logical error rate for beam_d6_parent233_trial39: 0.002031541740549808 ± 0.0001543 (stderr)
+Batch 1:  25%|██▌       | 8/32 [07:54<06:30, 16.25s/it]Decoder beam_d6_parent233_trial25 EARLY-STOPPED in 8.0m 1.57s with 173 failures out of 85234/100000 runs.
+Logical error rate for beam_d6_parent233_trial25: 0.0020297064551704717 ± 0.0001542 (stderr)
+Batch 1:  28%|██▊       | 9/32 [08:03<05:24, 14.09s/it]Decoder beam_d6_parent233_trial14 EARLY-STOPPED in 8.0m 4.12s with 173 failures out of 86766/100000 runs.
+Logical error rate for beam_d6_parent233_trial14: 0.0019938685660281677 ± 0.0001514 (stderr)
+Batch 1:  31%|███▏      | 10/32 [08:06<03:51, 10.51s/it]Decoder beam_d6_parent233_trial40 EARLY-STOPPED in 8.0m 7.98s with 173 failures out of 83156/100000 runs.
+Logical error rate for beam_d6_parent233_trial40: 0.0020804271489730146 ± 0.0001580 (stderr)
+Batch 1:  34%|███▍      | 11/32 [08:10<02:57,  8.43s/it]Decoder beam_d6_parent233_trial6 EARLY-STOPPED in 8.0m 16.92s with 173 failures out of 89318/100000 runs.
+Logical error rate for beam_d6_parent233_trial6: 0.0019368996170984571 ± 0.0001471 (stderr)
+Batch 1:  38%|███▊      | 12/32 [08:19<02:52,  8.65s/it]Decoder beam_d6_parent233_trial8 EARLY-STOPPED in 8.0m 17.41s with 173 failures out of 91568/100000 runs.
+Logical error rate for beam_d6_parent233_trial8: 0.0018893063078804823 ± 0.0001435 (stderr)
+Batch 1:  41%|████      | 13/32 [08:19<01:57,  6.17s/it]Decoder beam_d6_parent233_trial4 EARLY-STOPPED in 8.0m 29.18s with 173 failures out of 95334/100000 runs.
+Logical error rate for beam_d6_parent233_trial4: 0.0018146726246669603 ± 0.0001378 (stderr)
+Batch 1:  44%|████▍     | 14/32 [08:31<02:22,  7.90s/it]Decoder beam_d6_parent233_trial15 EARLY-STOPPED in 8.0m 34.95s with 173 failures out of 91736/100000 runs.
+Logical error rate for beam_d6_parent233_trial15: 0.001885846341676114 ± 0.0001432 (stderr)
+Batch 1:  47%|████▋     | 15/32 [08:37<02:02,  7.23s/it]Decoder beam_d6_parent233_trial19 EARLY-STOPPED in 8.0m 35.74s with 173 failures out of 99172/100000 runs.
+Logical error rate for beam_d6_parent233_trial19: 0.0017444439962892753 ± 0.0001325 (stderr)
+Batch 1:  50%|█████     | 16/32 [08:38<01:25,  5.32s/it]Decoder beam_d6_parent233_trial1 EARLY-STOPPED in 8.0m 37.22s with 173 failures out of 99988/100000 runs.
+Logical error rate for beam_d6_parent233_trial1: 0.0017302076249149899 ± 0.0001314 (stderr)
+Batch 1:  53%|█████▎    | 17/32 [08:39<01:01,  4.11s/it]Decoder beam_d6_parent233_trial30 finished in 8.0m 37.44s with 162 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial30: 0.00162 ± 0.0001272 (stderr)
+Batch 1:  56%|█████▋    | 18/32 [08:39<00:41,  2.94s/it]Decoder beam_d6_parent233_trial18 EARLY-STOPPED in 8.0m 41.51s with 173 failures out of 89583/100000 runs.
+Logical error rate for beam_d6_parent233_trial18: 0.001931169976446424 ± 0.0001467 (stderr)
+Batch 1:  59%|█████▉    | 19/32 [08:43<00:42,  3.30s/it]Decoder beam_d6_parent233_trial34 EARLY-STOPPED in 8.0m 41.91s with 173 failures out of 92085/100000 runs.
+Logical error rate for beam_d6_parent233_trial34: 0.00187869902807189 ± 0.0001427 (stderr)
+Batch 1:  62%|██████▎   | 20/32 [08:44<00:29,  2.46s/it]Decoder beam_d6_parent233_trial22 EARLY-STOPPED in 8.0m 43.02s with 173 failures out of 96121/100000 runs.
+Logical error rate for beam_d6_parent233_trial22: 0.001799814816741399 ± 0.0001367 (stderr)
+Batch 1:  66%|██████▌   | 21/32 [08:45<00:21,  2.00s/it]Decoder beam_d6_parent233_trial2 EARLY-STOPPED in 8.0m 45.52s with 173 failures out of 98933/100000 runs.
+Logical error rate for beam_d6_parent233_trial2: 0.001748658182810589 ± 0.0001328 (stderr)
+Batch 1:  69%|██████▉   | 22/32 [08:47<00:22,  2.21s/it]Decoder beam_d6_parent233_trial13 finished in 8.0m 47.70s with 171 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial13: 0.00171 ± 0.0001307 (stderr)
+Batch 1:  72%|███████▏  | 23/32 [08:50<00:19,  2.20s/it]Decoder beam_d6_parent233_trial5 EARLY-STOPPED in 8.0m 50.56s with 173 failures out of 97226/100000 runs.
+Logical error rate for beam_d6_parent233_trial5: 0.0017793594306049821 ± 0.0001352 (stderr)
+Batch 1:  75%|███████▌  | 24/32 [08:52<00:18,  2.37s/it]Decoder beam_d6_parent233_trial12 finished in 8.0m 58.32s with 163 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial12: 0.00163 ± 0.0001276 (stderr)
+Batch 1:  78%|███████▊  | 25/32 [09:00<00:28,  4.01s/it]Decoder beam_d6_parent233_trial31 EARLY-STOPPED in 8.0m 59.07s with 173 failures out of 97850/100000 runs.
+Logical error rate for beam_d6_parent233_trial31: 0.001768012263668881 ± 0.0001343 (stderr)
+Batch 1:  81%|████████▏ | 26/32 [09:01<00:18,  3.01s/it]Decoder beam_d6_parent233_trial16 finished in 8.0m 59.09s with 163 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial16: 0.00163 ± 0.0001276 (stderr)
+Decoder beam_d6_parent233_trial9 finished in 8.0m 59.40s with 172 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial9: 0.00172 ± 0.0001310 (stderr)
+Batch 1:  88%|████████▊ | 28/32 [09:01<00:06,  1.69s/it]Decoder beam_d6_parent233_trial20 finished in 9.0m 1.20s with 160 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial20: 0.0016 ± 0.0001264 (stderr)
+Batch 1:  91%|█████████ | 29/32 [09:03<00:05,  1.70s/it]Decoder beam_d6_parent233_trial38 finished in 9.0m 2.77s with 130 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial38: 0.0013 ± 0.0001139 (stderr)
+Batch 1:  94%|█████████▍| 30/32 [09:05<00:03,  1.70s/it]Decoder beam_d6_parent233_trial27 finished in 9.0m 16.05s with 142 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial27: 0.00142 ± 0.0001191 (stderr)
+Batch 1:  97%|█████████▋| 31/32 [09:18<00:04,  4.79s/it]Decoder beam_d6_parent233_trial29 finished in 9.0m 38.60s with 144 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial29: 0.00144 ± 0.0001199 (stderr)
+Batch 1: 100%|██████████| 32/32 [09:40<00:00,  9.79s/it]Batch 1: 100%|██████████| 32/32 [09:40<00:00, 18.15s/it]
+Batch 2:   0%|          | 0/32 [00:00<?, ?it/s]Decoder beam_d6_parent266_trial13 EARLY-STOPPED in 7.0m 9.56s with 173 failures out of 80124/100000 runs.
+Logical error rate for beam_d6_parent266_trial13: 0.002159153312365833 ± 0.0001640 (stderr)
+Batch 2:   3%|▎         | 1/32 [07:11<3:43:04, 431.76s/it]Decoder beam_d6_parent266_trial18 EARLY-STOPPED in 7.0m 33.02s with 173 failures out of 83105/100000 runs.
+Logical error rate for beam_d6_parent266_trial18: 0.002081703868599964 ± 0.0001581 (stderr)
+Batch 2:   6%|▋         | 2/32 [07:35<1:35:46, 191.56s/it]Decoder beam_d6_parent233_trial48 EARLY-STOPPED in 7.0m 52.10s with 173 failures out of 92523/100000 runs.
+Logical error rate for beam_d6_parent233_trial48: 0.0018698053456978265 ± 0.0001420 (stderr)
+Batch 2:   9%|▉         | 3/32 [07:54<54:33, 112.86s/it]  Decoder beam_d6_parent266_trial20 EARLY-STOPPED in 8.0m 14.23s with 173 failures out of 85457/100000 runs.
+Logical error rate for beam_d6_parent266_trial20: 0.0020244099371613793 ± 0.0001538 (stderr)
+Batch 2:  12%|█▎        | 4/32 [08:16<35:57, 77.07s/it] Decoder beam_d6_parent233_trial43 finished in 8.0m 18.81s with 143 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial43: 0.00143 ± 0.0001195 (stderr)
+Batch 2:  16%|█▌        | 5/32 [08:21<22:54, 50.90s/it]Decoder beam_d6_parent266_trial24 EARLY-STOPPED in 8.0m 19.60s with 173 failures out of 90642/100000 runs.
+Logical error rate for beam_d6_parent266_trial24: 0.0019086074888021007 ± 0.0001450 (stderr)
+Batch 2:  19%|█▉        | 6/32 [08:21<14:39, 33.84s/it]Decoder beam_d6_parent266_trial6 EARLY-STOPPED in 8.0m 30.72s with 173 failures out of 91045/100000 runs.
+Logical error rate for beam_d6_parent266_trial6: 0.0019001592619034544 ± 0.0001443 (stderr)
+Batch 2:  22%|██▏       | 7/32 [08:33<11:01, 26.47s/it]Decoder beam_d6_parent233_trial47 EARLY-STOPPED in 8.0m 32.43s with 173 failures out of 90141/100000 runs.
+Logical error rate for beam_d6_parent233_trial47: 0.001919215451348443 ± 0.0001458 (stderr)
+Batch 2:  25%|██▌       | 8/32 [08:34<07:25, 18.55s/it]Decoder beam_d6_parent266_trial23 finished in 8.0m 35.61s with 163 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial23: 0.00163 ± 0.0001276 (stderr)
+Batch 2:  28%|██▊       | 9/32 [08:37<05:16, 13.75s/it]Decoder beam_d6_parent266_trial12 EARLY-STOPPED in 8.0m 36.79s with 173 failures out of 94524/100000 runs.
+Logical error rate for beam_d6_parent266_trial12: 0.0018302230121450638 ± 0.0001390 (stderr)
+Batch 2:  31%|███▏      | 10/32 [08:39<03:37,  9.87s/it]Decoder beam_d6_parent266_trial2 finished in 8.0m 40.20s with 153 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial2: 0.00153 ± 0.0001236 (stderr)
+Batch 2:  34%|███▍      | 11/32 [08:42<02:45,  7.86s/it]Decoder beam_d6_parent266_trial5 finished in 8.0m 42.59s with 142 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial5: 0.00142 ± 0.0001191 (stderr)
+Batch 2:  38%|███▊      | 12/32 [08:44<02:04,  6.23s/it]Decoder beam_d6_parent266_trial17 finished in 8.0m 43.98s with 154 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial17: 0.00154 ± 0.0001240 (stderr)
+Batch 2:  41%|████      | 13/32 [08:46<01:31,  4.79s/it]Decoder beam_d6_parent266_trial21 finished in 8.0m 47.06s with 156 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial21: 0.00156 ± 0.0001248 (stderr)
+Batch 2:  44%|████▍     | 14/32 [08:49<01:16,  4.27s/it]Decoder beam_d6_parent233_trial49 EARLY-STOPPED in 8.0m 48.76s with 173 failures out of 87033/100000 runs.
+Logical error rate for beam_d6_parent233_trial49: 0.0019877517723162477 ± 0.0001510 (stderr)
+Batch 2:  47%|████▋     | 15/32 [08:51<00:58,  3.47s/it]Decoder beam_d6_parent266_trial4 finished in 8.0m 52.75s with 147 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial4: 0.00147 ± 0.0001212 (stderr)
+Batch 2:  50%|█████     | 16/32 [08:55<00:58,  3.63s/it]Decoder beam_d6_parent266_trial9 EARLY-STOPPED in 8.0m 53.95s with 173 failures out of 94213/100000 runs.
+Logical error rate for beam_d6_parent266_trial9: 0.0018362646343922813 ± 0.0001395 (stderr)
+Batch 2:  53%|█████▎    | 17/32 [08:56<00:43,  2.87s/it]Decoder beam_d6_parent266_trial7 finished in 8.0m 58.07s with 151 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial7: 0.00151 ± 0.0001228 (stderr)
+Batch 2:  56%|█████▋    | 18/32 [09:00<00:45,  3.28s/it]Decoder beam_d6_parent233_trial44 finished in 9.0m 0.61s with 166 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial44: 0.00166 ± 0.0001287 (stderr)
+Batch 2:  59%|█████▉    | 19/32 [09:02<00:39,  3.05s/it]Decoder beam_d6_parent266_trial0 finished in 9.0m 3.05s with 134 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial0: 0.00134 ± 0.0001157 (stderr)
+Batch 2:  62%|██████▎   | 20/32 [09:05<00:34,  2.86s/it]Decoder beam_d6_parent266_trial3 EARLY-STOPPED in 9.0m 4.79s with 173 failures out of 98111/100000 runs.
+Logical error rate for beam_d6_parent266_trial3: 0.0017633089052195982 ± 0.0001339 (stderr)
+Batch 2:  66%|██████▌   | 21/32 [09:06<00:27,  2.51s/it]Decoder beam_d6_parent266_trial1 finished in 9.0m 5.80s with 148 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial1: 0.00148 ± 0.0001216 (stderr)
+Batch 2:  69%|██████▉   | 22/32 [09:08<00:21,  2.14s/it]Decoder beam_d6_parent233_trial45 EARLY-STOPPED in 9.0m 8.66s with 173 failures out of 89963/100000 runs.
+Logical error rate for beam_d6_parent233_trial45: 0.0019230127941487055 ± 0.0001461 (stderr)
+Batch 2:  72%|███████▏  | 23/32 [09:10<00:20,  2.30s/it]Decoder beam_d6_parent266_trial19 finished in 9.0m 9.69s with 165 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial19: 0.00165 ± 0.0001283 (stderr)
+Batch 2:  75%|███████▌  | 24/32 [09:11<00:15,  1.92s/it]Decoder beam_d6_parent266_trial16 finished in 9.0m 10.55s with 158 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial16: 0.00158 ± 0.0001256 (stderr)
+Batch 2:  78%|███████▊  | 25/32 [09:12<00:10,  1.53s/it]Decoder beam_d6_parent266_trial11 finished in 9.0m 12.35s with 153 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial11: 0.00153 ± 0.0001236 (stderr)
+Batch 2:  81%|████████▏ | 26/32 [09:14<00:10,  1.68s/it]Decoder beam_d6_parent266_trial15 finished in 9.0m 13.31s with 161 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial15: 0.00161 ± 0.0001268 (stderr)
+Batch 2:  84%|████████▍ | 27/32 [09:15<00:07,  1.46s/it]Decoder beam_d6_parent233_trial46 finished in 9.0m 19.00s with 168 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial46: 0.00168 ± 0.0001295 (stderr)
+Batch 2:  88%|████████▊ | 28/32 [09:21<00:10,  2.70s/it]Decoder beam_d6_parent266_trial10 EARLY-STOPPED in 9.0m 21.35s with 173 failures out of 99218/100000 runs.
+Logical error rate for beam_d6_parent266_trial10: 0.0017436352274788848 ± 0.0001325 (stderr)
+Batch 2:  91%|█████████ | 29/32 [09:23<00:07,  2.63s/it]Decoder beam_d6_parent266_trial8 EARLY-STOPPED in 9.0m 36.63s with 173 failures out of 92611/100000 runs.
+Logical error rate for beam_d6_parent266_trial8: 0.0018680286359071816 ± 0.0001419 (stderr)
+Batch 2:  94%|█████████▍| 30/32 [09:38<00:12,  6.40s/it]Decoder beam_d6_parent233_trial41 finished in 9.0m 38.15s with 172 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent233_trial41: 0.00172 ± 0.0001310 (stderr)
+Batch 2:  97%|█████████▋| 31/32 [09:40<00:04,  4.90s/it]Decoder beam_d6_parent266_trial22 EARLY-STOPPED in 9.0m 44.77s with 173 failures out of 89013/100000 runs.
+Logical error rate for beam_d6_parent266_trial22: 0.0019435363373889207 ± 0.0001476 (stderr)
+Batch 2: 100%|██████████| 32/32 [09:46<00:00,  5.45s/it]Batch 2: 100%|██████████| 32/32 [09:46<00:00, 18.34s/it]
+Batch 3:   0%|          | 0/21 [00:00<?, ?it/s]Decoder beam_d6_parent266_trial33 EARLY-STOPPED in 4.0m 18.29s with 173 failures out of 63249/100000 runs.
+Logical error rate for beam_d6_parent266_trial33: 0.002735221110215181 ± 0.0002077 (stderr)
+Batch 3:   5%|▍         | 1/21 [04:19<1:26:36, 259.82s/it]Decoder beam_d6_parent266_trial36 EARLY-STOPPED in 5.0m 16.22s with 173 failures out of 92152/100000 runs.
+Logical error rate for beam_d6_parent266_trial36: 0.0018773331018317563 ± 0.0001426 (stderr)
+Batch 3:  10%|▉         | 2/21 [05:18<44:43, 141.23s/it]  Decoder beam_d6_parent266_trial31 EARLY-STOPPED in 5.0m 25.49s with 173 failures out of 86305/100000 runs.
+Logical error rate for beam_d6_parent266_trial31: 0.0020045188575401195 ± 0.0001522 (stderr)
+Batch 3:  14%|█▍        | 3/21 [05:27<24:15, 80.87s/it] Decoder beam_d6_parent266_trial45 EARLY-STOPPED in 5.0m 25.61s with 173 failures out of 93380/100000 runs.
+Logical error rate for beam_d6_parent266_trial45: 0.0018526451060184193 ± 0.0001407 (stderr)
+Decoder beam_d6_parent266_trial40 EARLY-STOPPED in 5.0m 25.87s with 173 failures out of 87952/100000 runs.
+Logical error rate for beam_d6_parent266_trial40: 0.00196698199017646 ± 0.0001494 (stderr)
+Batch 3:  24%|██▍       | 5/21 [05:27<09:22, 35.15s/it]Decoder beam_d6_parent266_trial39 EARLY-STOPPED in 5.0m 30.00s with 173 failures out of 95844/100000 runs.
+Logical error rate for beam_d6_parent266_trial39: 0.001805016485121656 ± 0.0001371 (stderr)
+Batch 3:  29%|██▊       | 6/21 [05:31<06:33, 26.25s/it]Decoder beam_d6_parent266_trial25 EARLY-STOPPED in 5.0m 30.96s with 173 failures out of 89526/100000 runs.
+Logical error rate for beam_d6_parent266_trial25: 0.0019323995263945668 ± 0.0001468 (stderr)
+Batch 3:  33%|███▎      | 7/21 [05:32<04:23, 18.85s/it]Decoder beam_d6_parent266_trial35 EARLY-STOPPED in 5.0m 33.07s with 173 failures out of 91670/100000 runs.
+Logical error rate for beam_d6_parent266_trial35: 0.0018872041016690301 ± 0.0001433 (stderr)
+Batch 3:  38%|███▊      | 8/21 [05:34<03:01, 13.95s/it]Decoder beam_d6_parent266_trial29 EARLY-STOPPED in 5.0m 40.85s with 173 failures out of 89362/100000 runs.
+Logical error rate for beam_d6_parent266_trial29: 0.0019359459277992882 ± 0.0001470 (stderr)
+Batch 3:  43%|████▎     | 9/21 [05:42<02:26, 12.17s/it]Decoder beam_d6_parent266_trial27 EARLY-STOPPED in 5.0m 42.24s with 173 failures out of 94797/100000 runs.
+Logical error rate for beam_d6_parent266_trial27: 0.0018249522664219333 ± 0.0001386 (stderr)
+Batch 3:  48%|████▊     | 10/21 [05:43<01:38,  8.99s/it]Decoder beam_d6_parent266_trial46 EARLY-STOPPED in 5.0m 45.48s with 173 failures out of 92751/100000 runs.
+Logical error rate for beam_d6_parent266_trial46: 0.0018652090004420438 ± 0.0001417 (stderr)
+Batch 3:  52%|█████▏    | 11/21 [05:47<01:12,  7.22s/it]Decoder beam_d6_parent266_trial43 EARLY-STOPPED in 5.0m 47.32s with 173 failures out of 95870/100000 runs.
+Logical error rate for beam_d6_parent266_trial43: 0.001804526963596537 ± 0.0001371 (stderr)
+Batch 3:  57%|█████▋    | 12/21 [05:48<00:50,  5.60s/it]Decoder beam_d6_parent266_trial28 EARLY-STOPPED in 5.0m 48.06s with 173 failures out of 92460/100000 runs.
+Logical error rate for beam_d6_parent266_trial28: 0.0018710793856802942 ± 0.0001421 (stderr)
+Batch 3:  62%|██████▏   | 13/21 [05:49<00:33,  4.16s/it]Decoder beam_d6_parent266_trial41 EARLY-STOPPED in 5.0m 50.69s with 173 failures out of 86192/100000 runs.
+Logical error rate for beam_d6_parent266_trial41: 0.0020071468349730833 ± 0.0001524 (stderr)
+Batch 3:  67%|██████▋   | 14/21 [05:52<00:26,  3.72s/it]Decoder beam_d6_parent266_trial48 finished in 5.0m 56.51s with 165 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial48: 0.00165 ± 0.0001283 (stderr)
+Batch 3:  71%|███████▏  | 15/21 [05:58<00:25,  4.33s/it]Decoder beam_d6_parent266_trial26 EARLY-STOPPED in 6.0m 5.24s with 173 failures out of 99053/100000 runs.
+Logical error rate for beam_d6_parent266_trial26: 0.0017465397312549848 ± 0.0001327 (stderr)
+Batch 3:  76%|███████▌  | 16/21 [06:06<00:28,  5.68s/it]Decoder beam_d6_parent266_trial49 EARLY-STOPPED in 6.0m 10.58s with 173 failures out of 97263/100000 runs.
+Logical error rate for beam_d6_parent266_trial49: 0.0017786825411513114 ± 0.0001351 (stderr)
+Batch 3:  81%|████████  | 17/21 [06:12<00:22,  5.52s/it]Decoder beam_d6_parent266_trial38 finished in 6.0m 17.21s with 158 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial38: 0.00158 ± 0.0001256 (stderr)
+Batch 3:  86%|████████▌ | 18/21 [06:18<00:17,  5.84s/it]Decoder beam_d6_parent266_trial30 EARLY-STOPPED in 6.0m 17.70s with 173 failures out of 97267/100000 runs.
+Logical error rate for beam_d6_parent266_trial30: 0.0017786093947587567 ± 0.0001351 (stderr)
+Batch 3:  90%|█████████ | 19/21 [06:19<00:08,  4.33s/it]Decoder beam_d6_parent266_trial32 EARLY-STOPPED in 6.0m 37.18s with 173 failures out of 85341/100000 runs.
+Logical error rate for beam_d6_parent266_trial32: 0.0020271616221980058 ± 0.0001540 (stderr)
+Batch 3:  95%|█████████▌| 20/21 [06:38<00:08,  8.78s/it]Decoder beam_d6_parent266_trial44 finished in 6.0m 45.90s with 172 failures out of 100000/100000 runs.
+Logical error rate for beam_d6_parent266_trial44: 0.00172 ± 0.0001310 (stderr)
+Batch 3: 100%|██████████| 21/21 [06:47<00:00,  8.83s/it]Batch 3: 100%|██████████| 21/21 [06:47<00:00, 19.41s/it]
+  Provisional beam candidates (before precision re-eval):
+    1. row=233 dist=10 ler=0.001478 early_stopped=False
+    2. row=266 dist=10 ler=0.001512 early_stopped=False
+    3. row=477 dist=12 ler=0.001340 early_stopped=False
+    4. row=478 dist=12 ler=0.001480 early_stopped=False
+  Precision re-evaluating 2 promoted beam state(s): [477, 478]
+Parent precision MC:   0%|          | 0/2 [00:00<?, ?it/s]Decoder parent_precision_row_478 finished in 48.0m 43.06s with 1483 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_478: 0.001483 ± 0.0000385 (stderr)
+Parent precision MC:  50%|█████     | 1/2 [48:44<48:44, 2924.29s/it]Decoder parent_precision_row_477 finished in 49.0m 20.91s with 1357 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_477: 0.001357 ± 0.0000368 (stderr)
+Parent precision MC: 100%|██████████| 2/2 [49:22<00:00, 1226.36s/it]Parent precision MC: 100%|██████████| 2/2 [49:22<00:00, 1481.05s/it]
+  Provisional beam candidates screening LER -> precise LER:
+1. row=233 dist=10 screen_ler=0.001390 precise_ler=0.001478 early_stopped=False
+2. row=266 dist=10 screen_ler=0.001380 precise_ler=0.001512 early_stopped=False
+3. row=477 dist=12 screen_ler=0.001340 precise_ler=0.001357 early_stopped=False
+4. row=478 dist=12 screen_ler=0.001480 precise_ler=0.001483 early_stopped=False
+    [!] New best global at row 477, LER: 0.001357, dist=12
+  Survivors:
+    1. row=477 dist=12 ler=0.001357
+    2. row=478 dist=12 ler=0.001483
+
+=== Beam depth 7/10 ===
+  Depth-7 screening failure cap = 169
+  Parent 1/2 | row=477 | dist=12 | ler=0.001357
+    Generated 3 candidates before filtering duplicates
+    Unique candidates before MC screening: 3
+    Best candidate distance before MC: 12
+    Distance distribution before MC: [12, 12, 12]
+    Logical weight distribution before MC: [12, 12, 12]
+  Parent 2/2 | row=478 | dist=12 | ler=0.001483
+    Generated 3 candidates before filtering duplicates
+    Unique candidates before MC screening: 3
+    Best candidate distance before MC: 12
+    Distance distribution before MC: [12, 12, 12]
+    Logical weight distribution before MC: [12, 12, 12]
+Batch 1:   0%|          | 0/6 [00:00<?, ?it/s]Decoder beam_d7_parent477_trial1 finished in 4.0m 19.88s with 105 failures out of 100000/100000 runs.
+Logical error rate for beam_d7_parent477_trial1: 0.00105 ± 0.0001024 (stderr)
+Batch 1:  17%|█▋        | 1/6 [04:21<21:45, 261.11s/it]Decoder beam_d7_parent478_trial0 finished in 4.0m 32.15s with 134 failures out of 100000/100000 runs.
+Logical error rate for beam_d7_parent478_trial0: 0.00134 ± 0.0001157 (stderr)
+Batch 1:  33%|███▎      | 2/6 [04:33<07:38, 114.72s/it]Decoder beam_d7_parent477_trial2 finished in 4.0m 51.22s with 138 failures out of 100000/100000 runs.
+Logical error rate for beam_d7_parent477_trial2: 0.00138 ± 0.0001174 (stderr)
+Batch 1:  50%|█████     | 3/6 [04:52<03:33, 71.03s/it] Decoder beam_d7_parent478_trial1 finished in 5.0m 4.47s with 139 failures out of 100000/100000 runs.
+Logical error rate for beam_d7_parent478_trial1: 0.00139 ± 0.0001178 (stderr)
+Batch 1:  67%|██████▋   | 4/6 [05:05<01:36, 48.24s/it]Decoder beam_d7_parent478_trial2 finished in 5.0m 5.85s with 133 failures out of 100000/100000 runs.
+Logical error rate for beam_d7_parent478_trial2: 0.00133 ± 0.0001152 (stderr)
+Batch 1:  83%|████████▎ | 5/6 [05:07<00:31, 31.33s/it]Decoder beam_d7_parent477_trial0 finished in 5.0m 43.70s with 155 failures out of 100000/100000 runs.
+Logical error rate for beam_d7_parent477_trial0: 0.00155 ± 0.0001244 (stderr)
+Batch 1: 100%|██████████| 6/6 [05:44<00:00, 33.52s/it]Batch 1: 100%|██████████| 6/6 [05:44<00:00, 57.47s/it]
+  Provisional beam candidates (before precision re-eval):
+    1. row=477 dist=12 ler=0.001357 early_stopped=False
+    2. row=478 dist=12 ler=0.001483 early_stopped=False
+    3. row=523 dist=12 ler=0.001050 early_stopped=False
+    4. row=527 dist=12 ler=0.001330 early_stopped=False
+  Precision re-evaluating 2 promoted beam state(s): [523, 527]
+Parent precision MC:   0%|          | 0/2 [00:00<?, ?it/s]Decoder parent_precision_row_523 finished in 43.0m 30.65s with 1276 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_523: 0.001276 ± 0.0000357 (stderr)
+Parent precision MC:  50%|█████     | 1/2 [43:31<43:31, 2611.81s/it]Decoder parent_precision_row_527 finished in 51.0m 2.79s with 1409 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_527: 0.001409 ± 0.0000375 (stderr)
+Parent precision MC: 100%|██████████| 2/2 [51:03<00:00, 1341.42s/it]Parent precision MC: 100%|██████████| 2/2 [51:03<00:00, 1531.98s/it]
+  Provisional beam candidates screening LER -> precise LER:
+1. row=477 dist=12 screen_ler=0.001340 precise_ler=0.001357 early_stopped=False
+2. row=478 dist=12 screen_ler=0.001480 precise_ler=0.001483 early_stopped=False
+3. row=523 dist=12 screen_ler=0.001050 precise_ler=0.001276 early_stopped=False
+4. row=527 dist=12 screen_ler=0.001330 precise_ler=0.001409 early_stopped=False
+    [!] New best global at row 523, LER: 0.001276, dist=12
+  Survivors:
+    1. row=523 dist=12 ler=0.001276
+    2. row=477 dist=12 ler=0.001357
+
+=== Beam depth 8/10 ===
+  Depth-8 screening failure cap = 156
+  Parent 1/2 | row=523 | dist=12 | ler=0.001276
+    Generated 10 candidates before filtering duplicates
+    Unique candidates before MC screening: 10
+    Best candidate distance before MC: 12
+    Distance distribution before MC: [12, 12, 12, 12, 12, 12, 12, 12, 12, 12]
+    Logical weight distribution before MC: [12, 12, 12, 12, 12, 12, 12, 12, 12, 12]
+  Parent 2/2 | row=477 | dist=12 | ler=0.001357
+    Generated 3 candidates before filtering duplicates
+    Unique candidates before MC screening: 3
+    Best candidate distance before MC: 12
+    Distance distribution before MC: [12, 12, 12]
+    Logical weight distribution before MC: [12, 12, 12]
+Batch 1:   0%|          | 0/10 [00:00<?, ?it/s]Decoder beam_d8_parent523_trial8 EARLY-STOPPED in 4.0m 5.49s with 157 failures out of 89900/100000 runs.
+Logical error rate for beam_d8_parent523_trial8: 0.001746384872080089 ± 0.0001393 (stderr)
+Batch 1:  10%|█         | 1/10 [04:06<36:59, 246.65s/it]Decoder beam_d8_parent523_trial6 finished in 4.0m 12.10s with 134 failures out of 100000/100000 runs.
+Logical error rate for beam_d8_parent523_trial6: 0.00134 ± 0.0001157 (stderr)
+Batch 1:  20%|██        | 2/10 [04:13<14:03, 105.48s/it]Decoder beam_d8_parent523_trial5 finished in 4.0m 12.59s with 136 failures out of 100000/100000 runs.
+Logical error rate for beam_d8_parent523_trial5: 0.00136 ± 0.0001165 (stderr)
+Batch 1:  30%|███       | 3/10 [04:13<06:42, 57.56s/it] Decoder beam_d8_parent523_trial1 finished in 4.0m 21.72s with 132 failures out of 100000/100000 runs.
+Logical error rate for beam_d8_parent523_trial1: 0.00132 ± 0.0001148 (stderr)
+Batch 1:  40%|████      | 4/10 [04:22<03:50, 38.42s/it]Decoder beam_d8_parent523_trial2 finished in 4.0m 22.73s with 124 failures out of 100000/100000 runs.
+Logical error rate for beam_d8_parent523_trial2: 0.00124 ± 0.0001113 (stderr)
+Batch 1:  50%|█████     | 5/10 [04:23<02:04, 24.91s/it]Decoder beam_d8_parent523_trial4 finished in 4.0m 23.94s with 135 failures out of 100000/100000 runs.
+Logical error rate for beam_d8_parent523_trial4: 0.00135 ± 0.0001161 (stderr)
+Batch 1:  60%|██████    | 6/10 [04:25<01:07, 16.86s/it]Decoder beam_d8_parent523_trial7 finished in 4.0m 27.18s with 139 failures out of 100000/100000 runs.
+Logical error rate for beam_d8_parent523_trial7: 0.00139 ± 0.0001178 (stderr)
+Batch 1:  70%|███████   | 7/10 [04:28<00:37, 12.42s/it]Decoder beam_d8_parent523_trial9 finished in 4.0m 30.19s with 140 failures out of 100000/100000 runs.
+Logical error rate for beam_d8_parent523_trial9: 0.0014 ± 0.0001182 (stderr)
+Batch 1:  80%|████████  | 8/10 [04:31<00:18,  9.42s/it]Decoder beam_d8_parent523_trial3 finished in 4.0m 38.61s with 153 failures out of 100000/100000 runs.
+Logical error rate for beam_d8_parent523_trial3: 0.00153 ± 0.0001236 (stderr)
+Batch 1:  90%|█████████ | 9/10 [04:39<00:09,  9.08s/it]Decoder beam_d8_parent523_trial0 finished in 4.0m 48.88s with 142 failures out of 100000/100000 runs.
+Logical error rate for beam_d8_parent523_trial0: 0.00142 ± 0.0001191 (stderr)
+Batch 1: 100%|██████████| 10/10 [04:50<00:00,  9.47s/it]Batch 1: 100%|██████████| 10/10 [04:50<00:00, 29.01s/it]
+  Provisional beam candidates (before precision re-eval):
+    1. row=523 dist=12 ler=0.001276 early_stopped=False
+    2. row=477 dist=12 ler=0.001357 early_stopped=False
+    3. row=530 dist=12 ler=0.001240 early_stopped=False
+    4. row=529 dist=12 ler=0.001320 early_stopped=False
+  Precision re-evaluating 2 promoted beam state(s): [530, 529]
+Parent precision MC:   0%|          | 0/2 [00:00<?, ?it/s]Decoder parent_precision_row_529 finished in 43.0m 14.39s with 1401 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_529: 0.001401 ± 0.0000374 (stderr)
+Parent precision MC:  50%|█████     | 1/2 [43:15<43:15, 2595.55s/it]Decoder parent_precision_row_530 finished in 43.0m 43.28s with 1299 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_530: 0.001299 ± 0.0000360 (stderr)
+Parent precision MC: 100%|██████████| 2/2 [43:44<00:00, 1085.73s/it]Parent precision MC: 100%|██████████| 2/2 [43:44<00:00, 1312.21s/it]
+  Provisional beam candidates screening LER -> precise LER:
+1. row=523 dist=12 screen_ler=0.001050 precise_ler=0.001276 early_stopped=False
+2. row=477 dist=12 screen_ler=0.001340 precise_ler=0.001357 early_stopped=False
+3. row=530 dist=12 screen_ler=0.001240 precise_ler=0.001299 early_stopped=False
+4. row=529 dist=12 screen_ler=0.001320 precise_ler=0.001401 early_stopped=False
+  Survivors:
+    1. row=523 dist=12 ler=0.001276
+    2. row=530 dist=12 ler=0.001299
+
+=== Beam depth 9/10 ===
+  Depth-9 screening failure cap = 150
+  Parent 1/2 | row=523 | dist=12 | ler=0.001276
+    Generated 10 candidates before filtering duplicates
+    Unique candidates before MC screening: 10
+    Best candidate distance before MC: 12
+    Distance distribution before MC: [12, 12, 12, 12, 12, 12, 12, 12, 12, 12]
+    Logical weight distribution before MC: [12, 12, 12, 12, 12, 12, 12, 12, 12, 12]
+  Parent 2/2 | row=530 | dist=12 | ler=0.001299
+    Generated 6 candidates before filtering duplicates
+    Unique candidates before MC screening: 6
+    Best candidate distance before MC: 12
+    Distance distribution before MC: [12, 12, 12, 12, 12, 12]
+    Logical weight distribution before MC: [12, 12, 12, 12, 12, 12]
+Batch 1:   0%|          | 0/5 [00:00<?, ?it/s]Decoder beam_d9_parent530_trial4 finished in 4.0m 23.19s with 131 failures out of 100000/100000 runs.
+Logical error rate for beam_d9_parent530_trial4: 0.00131 ± 0.0001144 (stderr)
+Batch 1:  20%|██        | 1/5 [04:24<17:37, 264.34s/it]Decoder beam_d9_parent530_trial0 finished in 4.0m 34.61s with 117 failures out of 100000/100000 runs.
+Logical error rate for beam_d9_parent530_trial0: 0.00117 ± 0.0001081 (stderr)
+Batch 1:  40%|████      | 2/5 [04:35<05:46, 115.55s/it]Decoder beam_d9_parent530_trial1 finished in 4.0m 39.16s with 128 failures out of 100000/100000 runs.
+Logical error rate for beam_d9_parent530_trial1: 0.00128 ± 0.0001131 (stderr)
+Batch 1:  60%|██████    | 3/5 [04:40<02:09, 64.88s/it] Decoder beam_d9_parent530_trial5 finished in 5.0m 4.56s with 141 failures out of 100000/100000 runs.
+Logical error rate for beam_d9_parent530_trial5: 0.00141 ± 0.0001187 (stderr)
+Batch 1:  80%|████████  | 4/5 [05:05<00:49, 49.28s/it]Decoder beam_d9_parent530_trial3 finished in 5.0m 43.69s with 122 failures out of 100000/100000 runs.
+Logical error rate for beam_d9_parent530_trial3: 0.00122 ± 0.0001104 (stderr)
+Batch 1: 100%|██████████| 5/5 [05:44<00:00, 45.60s/it]Batch 1: 100%|██████████| 5/5 [05:44<00:00, 68.95s/it]
+  Provisional beam candidates (before precision re-eval):
+    1. row=523 dist=12 ler=0.001276 early_stopped=False
+    2. row=530 dist=12 ler=0.001299 early_stopped=False
+    3. row=538 dist=12 ler=0.001170 early_stopped=False
+    4. row=540 dist=12 ler=0.001220 early_stopped=False
+  Precision re-evaluating 2 promoted beam state(s): [538, 540]
+Parent precision MC:   0%|          | 0/2 [00:00<?, ?it/s]Decoder parent_precision_row_538 finished in 44.0m 25.76s with 1362 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_538: 0.001362 ± 0.0000369 (stderr)
+Parent precision MC:  50%|█████     | 1/2 [44:26<44:26, 2666.88s/it]Decoder parent_precision_row_540 finished in 54.0m 50.31s with 1393 failures out of 1000000/1000000 runs.
+Logical error rate for parent_precision_row_540: 0.001393 ± 0.0000373 (stderr)
+Parent precision MC: 100%|██████████| 2/2 [54:51<00:00, 1465.47s/it]Parent precision MC: 100%|██████████| 2/2 [54:51<00:00, 1645.68s/it]
+  Provisional beam candidates screening LER -> precise LER:
+1. row=523 dist=12 screen_ler=0.001050 precise_ler=0.001276 early_stopped=False
+2. row=530 dist=12 screen_ler=0.001240 precise_ler=0.001299 early_stopped=False
+3. row=538 dist=12 screen_ler=0.001170 precise_ler=0.001362 early_stopped=False
+4. row=540 dist=12 screen_ler=0.001220 precise_ler=0.001393 early_stopped=False
+  Survivors:
+    1. row=523 dist=12 ler=0.001276
+    2. row=530 dist=12 ler=0.001299
+
+=== Beam depth 10/10 ===
+  Depth-10 screening failure cap = 150
+  Parent 1/2 | row=523 | dist=12 | ler=0.001276
+    Generated 10 candidates before filtering duplicates
+    Unique candidates before MC screening: 10
+    Best candidate distance before MC: 12
+    Distance distribution before MC: [12, 12, 12, 12, 12, 12, 12, 12, 12, 12]
+    Logical weight distribution before MC: [12, 12, 12, 12, 12, 12, 12, 12, 12, 12]
+  Parent 2/2 | row=530 | dist=12 | ler=0.001299
+    Generated 6 candidates before filtering duplicates
+    Unique candidates before MC screening: 6
+    Best candidate distance before MC: 12
+    Distance distribution before MC: [12, 12, 12, 12, 12, 12]
+    Logical weight distribution before MC: [12, 12, 12, 12, 12, 12]
+No children generated. Stopping.
+
+=== Precision evaluation on final beam ===
+row=523 dist=12 precise LER=0.001276 ± 0.000036
+row=530 dist=12 precise LER=0.001299 ± 0.000036
+
+Best final result:
+  dist = 12
+  LER  = 0.001276 ± 0.000036
+
+Total time: (10h 42m 42.19s)
+Saved to optimization/results/start_from_logical_guided.hdf5
