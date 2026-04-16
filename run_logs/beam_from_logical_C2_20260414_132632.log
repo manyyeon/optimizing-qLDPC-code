@@ -1,0 +1,9 @@
+usage: start_from_logical_guided.py [-h] [-C C] [-p P]
+                                    [--input_file INPUT_FILE] --input_run
+                                    INPUT_RUN [--beam_width BEAM_WIDTH]
+                                    [--depth DEPTH]
+                                    [--expand_per_parent EXPAND_PER_PARENT]
+                                    [--screen_budget SCREEN_BUDGET]
+                                    [--prec_budget PREC_BUDGET]
+                                    [--workers WORKERS]
+start_from_logical_guided.py: error: unrecognized arguments: ch.hdf5

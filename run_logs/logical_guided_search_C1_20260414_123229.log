@@ -1,0 +1,1841 @@
+
+--- LOGICAL GUIDED SEARCH ---
+Code family: [1225,65]
+Noise level p = 0.03
+Search steps = 10
+Trials/step = 100
+Budgets: screening=100000, precision=1000000
+Workers = 64
+/users/udayeon/.local/lib/python3.9/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+
+>>> PHASE 1: Logical-guided search
+
+Step 1/10 (global max dist so far = 6)
+  Target logical weight: 6
+  Current distance: 6
+  Valid proposal at trial 1/100: distance 6->6.
+  Valid proposal at trial 2/100: distance 6->6.
+  Valid proposal at trial 3/100: distance 6->8.
+  Accepted at trial 3/100: distance 6->8
+
+Step 2/10 (global max dist so far = 8)
+  Target logical weight: 8
+  Current distance: 8
+  Valid proposal at trial 1/100: distance 8->8.
+  Valid proposal at trial 2/100: distance 8->8.
+  Valid proposal at trial 3/100: distance 8->8.
+  Valid proposal at trial 4/100: distance 8->8.
+  Rejected at trial 5/100: distance 8->6.
+  Valid proposal at trial 6/100: distance 8->8.
+  Valid proposal at trial 7/100: distance 8->10.
+  Accepted at trial 7/100: distance 8->10
+
+Step 3/10 (global max dist so far = 10)
+  Target logical weight: 10
+  Current distance: 10
+  Rejected at trial 1/100: distance 10->8.
+  Rejected at trial 2/100: distance 10->6.
+  Rejected at trial 3/100: distance 10->8.
+  Rejected at trial 4/100: distance 10->8.
+  Rejected at trial 5/100: distance 10->8.
+  Rejected at trial 6/100: distance 10->8.
+  Rejected at trial 7/100: distance 10->8.
+  Rejected at trial 8/100: distance 10->8.
+  Valid proposal at trial 9/100: distance 10->10.
+  Rejected at trial 10/100: distance 10->8.
+  Rejected at trial 11/100: distance 10->8.
+  Rejected at trial 12/100: distance 10->8.
+  Rejected at trial 13/100: distance 10->4.
+  Rejected at trial 14/100: distance 10->8.
+  Rejected at trial 15/100: distance 10->8.
+  Rejected at trial 16/100: distance 10->4.
+  Rejected at trial 17/100: distance 10->6.
+  Rejected at trial 18/100: distance 10->8.
+  Rejected at trial 19/100: distance 10->8.
+  Rejected at trial 20/100: distance 10->8.
+  Rejected at trial 21/100: distance 10->2.
+  Valid proposal at trial 22/100: distance 10->10.
+  Rejected at trial 23/100: distance 10->8.
+  Rejected at trial 24/100: distance 10->8.
+  Rejected at trial 25/100: distance 10->8.
+  Rejected at trial 26/100: distance 10->8.
+  Rejected at trial 27/100: distance 10->8.
+  Rejected at trial 28/100: distance 10->8.
+  Rejected at trial 29/100: distance 10->8.
+  Rejected at trial 30/100: distance 10->6.
+  Valid proposal at trial 31/100: distance 10->10.
+  Rejected at trial 32/100: distance 10->8.
+  Rejected at trial 33/100: distance 10->8.
+  Valid proposal at trial 34/100: distance 10->10.
+  Rejected at trial 35/100: distance 10->8.
+  Rejected at trial 36/100: distance 10->8.
+  Rejected at trial 37/100: distance 10->8.
+  Rejected at trial 38/100: distance 10->8.
+  Rejected at trial 39/100: distance 10->6.
+  Rejected at trial 40/100: distance 10->8.
+  Rejected at trial 41/100: distance 10->8.
+  Rejected at trial 42/100: distance 10->8.
+  Rejected at trial 43/100: distance 10->6.
+  Rejected at trial 44/100: distance 10->8.
+  Valid proposal at trial 45/100: distance 10->10.
+  Rejected at trial 46/100: distance 10->6.
+  Rejected at trial 47/100: distance 10->8.
+  Rejected at trial 48/100: distance 10->6.
+  Rejected at trial 49/100: distance 10->8.
+  Rejected at trial 50/100: distance 10->8.
+  Rejected at trial 51/100: distance 10->8.
+  Rejected at trial 52/100: distance 10->8.
+  Valid proposal at trial 53/100: distance 10->10.
+  Rejected at trial 54/100: distance 10->8.
+  Rejected at trial 55/100: distance 10->6.
+  Rejected at trial 56/100: distance 10->8.
+  Valid proposal at trial 57/100: distance 10->10.
+  Valid proposal at trial 58/100: distance 10->10.
+  Valid proposal at trial 59/100: distance 10->10.
+  Rejected at trial 60/100: distance 10->8.
+  Rejected at trial 61/100: distance 10->6.
+  Rejected at trial 62/100: distance 10->8.
+  Rejected at trial 63/100: distance 10->8.
+  Valid proposal at trial 64/100: distance 10->10.
+  Rejected at trial 65/100: distance 10->8.
+  Rejected at trial 66/100: distance 10->8.
+  Rejected at trial 67/100: distance 10->6.
+  Valid proposal at trial 68/100: distance 10->10.
+  Rejected at trial 69/100: distance 10->8.
+  Rejected at trial 70/100: distance 10->8.
+  Valid proposal at trial 71/100: distance 10->10.
+  Rejected at trial 72/100: distance 10->8.
+  Rejected at trial 73/100: distance 10->4.
+  Rejected at trial 74/100: distance 10->6.
+  Rejected at trial 75/100: distance 10->6.
+  Rejected at trial 76/100: distance 10->2.
+  Rejected at trial 77/100: distance 10->4.
+  Rejected at trial 78/100: distance 10->6.
+  Rejected at trial 79/100: distance 10->8.
+  Rejected at trial 80/100: distance 10->8.
+  Rejected at trial 81/100: distance 10->4.
+  Rejected at trial 82/100: distance 10->8.
+  Rejected at trial 83/100: distance 10->8.
+  Rejected at trial 84/100: distance 10->8.
+  Valid proposal at trial 85/100: distance 10->10.
+  Rejected at trial 86/100: distance 10->6.
+  Rejected at trial 87/100: distance 10->6.
+  Rejected at trial 88/100: distance 10->8.
+  Rejected at trial 89/100: distance 10->8.
+  Rejected at trial 90/100: distance 10->8.
+  Rejected at trial 91/100: distance 10->6.
+  Rejected at trial 92/100: distance 10->8.
+  Rejected at trial 93/100: distance 10->6.
+  Rejected at trial 94/100: distance 10->6.
+  Rejected at trial 95/100: distance 10->8.
+  Rejected at trial 96/100: distance 10->8.
+  Rejected at trial 97/100: distance 10->4.
+  Rejected at trial 98/100: distance 10->8.
+  Rejected at trial 99/100: distance 10->6.
+  Rejected at trial 100/100: distance 10->6.
+  Accepted first non-decreasing valid move.
+
+Step 4/10 (global max dist so far = 10)
+  Target logical weight: 10
+  Current distance: 10
+  Valid proposal at trial 1/100: distance 10->10.
+  Rejected at trial 2/100: distance 10->8.
+  Rejected at trial 3/100: distance 10->8.
+  Rejected at trial 4/100: distance 10->4.
+  Rejected at trial 5/100: distance 10->8.
+  Rejected at trial 6/100: distance 10->8.
+  Rejected at trial 7/100: distance 10->8.
+  Rejected at trial 8/100: distance 10->6.
+  Valid proposal at trial 9/100: distance 10->10.
+  Rejected at trial 10/100: distance 10->8.
+  Valid proposal at trial 11/100: distance 10->10.
+  Rejected at trial 12/100: distance 10->8.
+  Rejected at trial 13/100: distance 10->8.
+  Rejected at trial 14/100: distance 10->8.
+  Rejected at trial 15/100: distance 10->6.
+  Rejected at trial 16/100: distance 10->8.
+  Rejected at trial 17/100: distance 10->6.
+  Rejected at trial 18/100: distance 10->6.
+  Rejected at trial 19/100: distance 10->8.
+  Valid proposal at trial 20/100: distance 10->10.
+  Rejected at trial 21/100: distance 10->8.
+  Rejected at trial 22/100: distance 10->8.
+  Valid proposal at trial 23/100: distance 10->10.
+  Rejected at trial 24/100: distance 10->6.
+  Rejected at trial 25/100: distance 10->8.
+  Rejected at trial 26/100: distance 10->8.
+  Rejected at trial 27/100: distance 10->6.
+  Rejected at trial 28/100: distance 10->8.
+  Rejected at trial 29/100: distance 10->8.
+  Valid proposal at trial 30/100: distance 10->10.
+  Valid proposal at trial 31/100: distance 10->10.
+  Valid proposal at trial 32/100: distance 10->10.
+  Rejected at trial 33/100: distance 10->6.
+  Rejected at trial 34/100: distance 10->6.
+  Rejected at trial 35/100: distance 10->8.
+  Rejected at trial 36/100: distance 10->8.
+  Rejected at trial 37/100: distance 10->8.
+  Rejected at trial 38/100: distance 10->8.
+  Rejected at trial 39/100: distance 10->6.
+  Rejected at trial 40/100: distance 10->8.
+  Rejected at trial 41/100: distance 10->8.
+  Rejected at trial 42/100: distance 10->8.
+  Rejected at trial 43/100: distance 10->8.
+  Valid proposal at trial 44/100: distance 10->10.
+  Rejected at trial 45/100: distance 10->8.
+  Rejected at trial 46/100: distance 10->8.
+  Rejected at trial 47/100: distance 10->6.
+  Rejected at trial 48/100: distance 10->4.
+  Rejected at trial 49/100: distance 10->8.
+  Rejected at trial 50/100: distance 10->2.
+  Rejected at trial 51/100: distance 10->6.
+  Rejected at trial 52/100: distance 10->8.
+  Rejected at trial 53/100: distance 10->6.
+  Valid proposal at trial 54/100: distance 10->10.
+  Rejected at trial 55/100: distance 10->8.
+  Rejected at trial 56/100: distance 10->8.
+  Rejected at trial 57/100: distance 10->8.
+  Rejected at trial 58/100: distance 10->8.
+  Rejected at trial 59/100: distance 10->6.
+  Rejected at trial 60/100: distance 10->6.
+  Rejected at trial 61/100: distance 10->8.
+  Valid proposal at trial 62/100: distance 10->10.
+  Rejected at trial 63/100: distance 10->6.
+  Rejected at trial 64/100: distance 10->8.
+  Valid proposal at trial 65/100: distance 10->10.
+  Rejected at trial 66/100: distance 10->4.
+  Rejected at trial 67/100: distance 10->6.
+  Rejected at trial 68/100: distance 10->8.
+  Rejected at trial 69/100: distance 10->6.
+  Rejected at trial 70/100: distance 10->8.
+  Rejected at trial 71/100: distance 10->8.
+  Rejected at trial 72/100: distance 10->6.
+  Valid proposal at trial 73/100: distance 10->10.
+  Rejected at trial 74/100: distance 10->8.
+  Rejected at trial 75/100: distance 10->6.
+  Rejected at trial 76/100: distance 10->8.
+  Rejected at trial 77/100: distance 10->8.
+  Valid proposal at trial 78/100: distance 10->10.
+  Rejected at trial 79/100: distance 10->8.
+  Rejected at trial 80/100: distance 10->8.
+  Rejected at trial 81/100: distance 10->8.
+  Rejected at trial 82/100: distance 10->8.
+  Rejected at trial 83/100: distance 10->6.
+  Rejected at trial 84/100: distance 10->8.
+  Rejected at trial 85/100: distance 10->8.
+  Rejected at trial 86/100: distance 10->6.
+  Valid proposal at trial 87/100: distance 10->10.
+  Rejected at trial 88/100: distance 10->8.
+  Rejected at trial 89/100: distance 10->8.
+  Rejected at trial 90/100: distance 10->4.
+  Rejected at trial 91/100: distance 10->6.
+  Rejected at trial 92/100: distance 10->8.
+  Valid proposal at trial 93/100: distance 10->10.
+  Rejected at trial 94/100: distance 10->6.
+  Rejected at trial 95/100: distance 10->8.
+  Rejected at trial 96/100: distance 10->4.
+  Rejected at trial 97/100: distance 10->8.
+  Rejected at trial 98/100: distance 10->6.
+  Rejected at trial 99/100: distance 10->8.
+  Rejected at trial 100/100: distance 10->6.
+  Accepted first non-decreasing valid move.
+
+Step 5/10 (global max dist so far = 10)
+  Target logical weight: 10
+  Current distance: 10
+  Rejected at trial 1/100: distance 10->6.
+  Rejected at trial 2/100: distance 10->8.
+  Valid proposal at trial 3/100: distance 10->10.
+  Valid proposal at trial 4/100: distance 10->10.
+  Rejected at trial 5/100: distance 10->8.
+  Valid proposal at trial 6/100: distance 10->10.
+  Rejected at trial 7/100: distance 10->6.
+  Valid proposal at trial 8/100: distance 10->10.
+  Valid proposal at trial 9/100: distance 10->10.
+  Valid proposal at trial 10/100: distance 10->10.
+  Rejected at trial 11/100: distance 10->6.
+  Rejected at trial 12/100: distance 10->8.
+  Rejected at trial 13/100: distance 10->8.
+  Valid proposal at trial 14/100: distance 10->10.
+  Rejected at trial 15/100: distance 10->8.
+  Rejected at trial 16/100: distance 10->8.
+  Rejected at trial 17/100: distance 10->6.
+  Rejected at trial 18/100: distance 10->4.
+  Rejected at trial 19/100: distance 10->8.
+  Rejected at trial 20/100: distance 10->4.
+  Rejected at trial 21/100: distance 10->4.
+  Valid proposal at trial 22/100: distance 10->10.
+  Rejected at trial 23/100: distance 10->8.
+  Valid proposal at trial 24/100: distance 10->10.
+  Rejected at trial 25/100: distance 10->8.
+  Valid proposal at trial 26/100: distance 10->10.
+  Rejected at trial 27/100: distance 10->6.
+  Rejected at trial 28/100: distance 10->8.
+  Rejected at trial 29/100: distance 10->8.
+  Rejected at trial 30/100: distance 10->8.
+  Rejected at trial 31/100: distance 10->6.
+  Rejected at trial 32/100: distance 10->8.
+  Rejected at trial 33/100: distance 10->8.
+  Valid proposal at trial 34/100: distance 10->10.
+  Rejected at trial 35/100: distance 10->6.
+  Rejected at trial 36/100: distance 10->8.
+  Rejected at trial 37/100: distance 10->8.
+  Valid proposal at trial 38/100: distance 10->10.
+  Valid proposal at trial 39/100: distance 10->10.
+  Rejected at trial 40/100: distance 10->8.
+  Rejected at trial 41/100: distance 10->8.
+  Valid proposal at trial 42/100: distance 10->10.
+  Valid proposal at trial 43/100: distance 10->10.
+  Rejected at trial 44/100: distance 10->6.
+  Rejected at trial 45/100: distance 10->8.
+  Rejected at trial 46/100: distance 10->6.
+  Rejected at trial 47/100: distance 10->8.
+  Rejected at trial 48/100: distance 10->6.
+  Rejected at trial 49/100: distance 10->6.
+  Rejected at trial 50/100: distance 10->8.
+  Rejected at trial 51/100: distance 10->8.
+  Rejected at trial 52/100: distance 10->6.
+  Rejected at trial 53/100: distance 10->8.
+  Rejected at trial 54/100: distance 10->8.
+  Rejected at trial 55/100: distance 10->6.
+  Rejected at trial 56/100: distance 10->8.
+  Rejected at trial 57/100: distance 10->8.
+  Rejected at trial 58/100: distance 10->8.
+  Rejected at trial 59/100: distance 10->6.
+  Rejected at trial 60/100: distance 10->8.
+  Rejected at trial 61/100: distance 10->6.
+  Rejected at trial 62/100: distance 10->6.
+  Valid proposal at trial 63/100: distance 10->10.
+  Valid proposal at trial 64/100: distance 10->10.
+  Rejected at trial 65/100: distance 10->6.
+  Rejected at trial 66/100: distance 10->6.
+  Rejected at trial 67/100: distance 10->8.
+  Rejected at trial 68/100: distance 10->8.
+  Rejected at trial 69/100: distance 10->8.
+  Rejected at trial 70/100: distance 10->8.
+  Rejected at trial 71/100: distance 10->8.
+  Rejected at trial 72/100: distance 10->8.
+  Rejected at trial 73/100: distance 10->8.
+  Valid proposal at trial 74/100: distance 10->10.
+  Rejected at trial 75/100: distance 10->8.
+  Valid proposal at trial 76/100: distance 10->10.
+  Rejected at trial 77/100: distance 10->8.
+  Valid proposal at trial 78/100: distance 10->10.
+  Rejected at trial 79/100: distance 10->8.
+  Valid proposal at trial 80/100: distance 10->10.
+  Rejected at trial 81/100: distance 10->6.
+  Valid proposal at trial 82/100: distance 10->10.
+  Rejected at trial 83/100: distance 10->6.
+  Rejected at trial 84/100: distance 10->8.
+  Rejected at trial 85/100: distance 10->8.
+  Rejected at trial 86/100: distance 10->8.
+  Rejected at trial 87/100: distance 10->8.
+  Rejected at trial 88/100: distance 10->8.
+  Valid proposal at trial 89/100: distance 10->10.
+  Rejected at trial 90/100: distance 10->6.
+  Rejected at trial 91/100: distance 10->6.
+  Valid proposal at trial 92/100: distance 10->10.
+  Rejected at trial 93/100: distance 10->8.
+  Rejected at trial 94/100: distance 10->6.
+  Valid proposal at trial 95/100: distance 10->10.
+  Rejected at trial 96/100: distance 10->6.
+  Valid proposal at trial 97/100: distance 10->10.
+  Rejected at trial 98/100: distance 10->8.
+  Rejected at trial 99/100: distance 10->6.
+  Rejected at trial 100/100: distance 10->8.
+  Accepted first non-decreasing valid move.
+
+Step 6/10 (global max dist so far = 10)
+  Target logical weight: 10
+  Current distance: 10
+  Rejected at trial 1/100: distance 10->8.
+  Rejected at trial 2/100: distance 10->8.
+  Rejected at trial 3/100: distance 10->8.
+  Rejected at trial 4/100: distance 10->8.
+  Rejected at trial 5/100: distance 10->8.
+  Rejected at trial 6/100: distance 10->6.
+  Rejected at trial 7/100: distance 10->6.
+  Rejected at trial 8/100: distance 10->6.
+  Rejected at trial 9/100: distance 10->4.
+  Rejected at trial 10/100: distance 10->8.
+  Rejected at trial 11/100: distance 10->6.
+  Valid proposal at trial 12/100: distance 10->10.
+  Valid proposal at trial 13/100: distance 10->10.
+  Rejected at trial 14/100: distance 10->8.
+  Rejected at trial 15/100: distance 10->8.
+  Rejected at trial 16/100: distance 10->6.
+  Rejected at trial 17/100: distance 10->8.
+  Rejected at trial 18/100: distance 10->8.
+  Rejected at trial 19/100: distance 10->8.
+  Rejected at trial 20/100: distance 10->8.
+  Rejected at trial 21/100: distance 10->4.
+  Rejected at trial 22/100: distance 10->8.
+  Rejected at trial 23/100: distance 10->6.
+  Rejected at trial 24/100: distance 10->8.
+  Rejected at trial 25/100: distance 10->8.
+  Rejected at trial 26/100: distance 10->8.
+  Rejected at trial 27/100: distance 10->8.
+  Rejected at trial 28/100: distance 10->8.
+  Rejected at trial 29/100: distance 10->6.
+  Rejected at trial 30/100: distance 10->8.
+  Rejected at trial 31/100: distance 10->8.
+  Rejected at trial 32/100: distance 10->6.
+  Rejected at trial 33/100: distance 10->8.
+  Rejected at trial 34/100: distance 10->8.
+  Rejected at trial 35/100: distance 10->8.
+  Rejected at trial 36/100: distance 10->6.
+  Rejected at trial 37/100: distance 10->6.
+  Rejected at trial 38/100: distance 10->6.
+  Rejected at trial 39/100: distance 10->8.
+  Rejected at trial 40/100: distance 10->8.
+  Rejected at trial 41/100: distance 10->6.
+  Valid proposal at trial 42/100: distance 10->10.
+  Rejected at trial 43/100: distance 10->6.
+  Valid proposal at trial 44/100: distance 10->10.
+  Rejected at trial 45/100: distance 10->8.
+  Rejected at trial 46/100: distance 10->6.
+  Rejected at trial 47/100: distance 10->8.
+  Rejected at trial 48/100: distance 10->8.
+  Rejected at trial 49/100: distance 10->8.
+  Rejected at trial 50/100: distance 10->4.
+  Rejected at trial 51/100: distance 10->6.
+  Rejected at trial 52/100: distance 10->8.
+  Valid proposal at trial 53/100: distance 10->10.
+  Rejected at trial 54/100: distance 10->8.
+  Rejected at trial 55/100: distance 10->8.
+  Rejected at trial 56/100: distance 10->8.
+  Valid proposal at trial 57/100: distance 10->10.
+  Rejected at trial 58/100: distance 10->8.
+  Rejected at trial 59/100: distance 10->8.
+  Rejected at trial 60/100: distance 10->8.
+  Rejected at trial 61/100: distance 10->6.
+  Rejected at trial 62/100: distance 10->8.
+  Rejected at trial 63/100: distance 10->8.
+  Rejected at trial 64/100: distance 10->6.
+  Rejected at trial 65/100: distance 10->8.
+  Rejected at trial 66/100: distance 10->6.
+  Rejected at trial 67/100: distance 10->8.
+  Rejected at trial 68/100: distance 10->8.
+  Rejected at trial 69/100: distance 10->8.
+  Rejected at trial 70/100: distance 10->6.
+  Rejected at trial 71/100: distance 10->6.
+  Rejected at trial 72/100: distance 10->8.
+  Rejected at trial 73/100: distance 10->8.
+  Rejected at trial 74/100: distance 10->8.
+  Rejected at trial 75/100: distance 10->8.
+  Rejected at trial 76/100: distance 10->8.
+  Rejected at trial 77/100: distance 10->6.
+  Rejected at trial 78/100: distance 10->8.
+  Rejected at trial 79/100: distance 10->8.
+  Rejected at trial 80/100: distance 10->2.
+  Rejected at trial 81/100: distance 10->4.
+  Rejected at trial 82/100: distance 10->8.
+  Valid proposal at trial 83/100: distance 10->10.
+  Rejected at trial 84/100: distance 10->8.
+  Valid proposal at trial 85/100: distance 10->10.
+  Rejected at trial 86/100: distance 10->8.
+  Rejected at trial 87/100: distance 10->8.
+  Rejected at trial 88/100: distance 10->8.
+  Rejected at trial 89/100: distance 10->6.
+  Rejected at trial 90/100: distance 10->4.
+  Rejected at trial 91/100: distance 10->4.
+  Rejected at trial 92/100: distance 10->8.
+  Rejected at trial 93/100: distance 10->4.
+  Rejected at trial 94/100: distance 10->8.
+  Rejected at trial 95/100: distance 10->8.
+  Rejected at trial 96/100: distance 10->6.
+  Rejected at trial 97/100: distance 10->8.
+  Valid proposal at trial 98/100: distance 10->10.
+  Valid proposal at trial 99/100: distance 10->10.
+  Rejected at trial 100/100: distance 10->6.
+  Accepted first non-decreasing valid move.
+
+Step 7/10 (global max dist so far = 10)
+  Target logical weight: 10
+  Current distance: 10
+  Rejected at trial 1/100: distance 10->8.
+  Rejected at trial 2/100: distance 10->8.
+  Rejected at trial 3/100: distance 10->6.
+  Rejected at trial 4/100: distance 10->8.
+  Valid proposal at trial 5/100: distance 10->10.
+  Rejected at trial 6/100: distance 10->8.
+  Rejected at trial 7/100: distance 10->8.
+  Valid proposal at trial 8/100: distance 10->10.
+  Valid proposal at trial 9/100: distance 10->10.
+  Rejected at trial 10/100: distance 10->8.
+  Rejected at trial 11/100: distance 10->8.
+  Rejected at trial 12/100: distance 10->6.
+  Valid proposal at trial 13/100: distance 10->10.
+  Rejected at trial 14/100: distance 10->6.
+  Rejected at trial 15/100: distance 10->6.
+  Valid proposal at trial 16/100: distance 10->10.
+  Rejected at trial 17/100: distance 10->6.
+  Rejected at trial 18/100: distance 10->8.
+  Valid proposal at trial 19/100: distance 10->10.
+  Valid proposal at trial 20/100: distance 10->10.
+  Rejected at trial 21/100: distance 10->8.
+  Rejected at trial 22/100: distance 10->8.
+  Rejected at trial 23/100: distance 10->8.
+  Rejected at trial 24/100: distance 10->8.
+  Rejected at trial 25/100: distance 10->6.
+  Valid proposal at trial 26/100: distance 10->10.
+  Rejected at trial 27/100: distance 10->8.
+  Rejected at trial 28/100: distance 10->8.
+  Rejected at trial 29/100: distance 10->6.
+  Valid proposal at trial 30/100: distance 10->10.
+  Rejected at trial 31/100: distance 10->8.
+  Rejected at trial 32/100: distance 10->8.
+  Rejected at trial 33/100: distance 10->8.
+  Rejected at trial 34/100: distance 10->8.
+  Valid proposal at trial 35/100: distance 10->10.
+  Rejected at trial 36/100: distance 10->8.
+  Rejected at trial 37/100: distance 10->8.
+  Rejected at trial 38/100: distance 10->6.
+  Valid proposal at trial 39/100: distance 10->10.
+  Valid proposal at trial 40/100: distance 10->10.
+  Valid proposal at trial 41/100: distance 10->10.
+  Rejected at trial 42/100: distance 10->8.
+  Rejected at trial 43/100: distance 10->8.
+  Rejected at trial 44/100: distance 10->8.
+  Rejected at trial 45/100: distance 10->8.
+  Rejected at trial 46/100: distance 10->8.
+  Rejected at trial 47/100: distance 10->4.
+  Rejected at trial 48/100: distance 10->8.
+  Rejected at trial 49/100: distance 10->8.
+  Rejected at trial 50/100: distance 10->8.
+  Rejected at trial 51/100: distance 10->8.
+  Rejected at trial 52/100: distance 10->8.
+  Rejected at trial 53/100: distance 10->8.
+  Valid proposal at trial 54/100: distance 10->10.
+  Rejected at trial 55/100: distance 10->6.
+  Rejected at trial 56/100: distance 10->6.
+  Valid proposal at trial 57/100: distance 10->10.
+  Rejected at trial 58/100: distance 10->6.
+  Rejected at trial 59/100: distance 10->8.
+  Valid proposal at trial 60/100: distance 10->10.
+  Rejected at trial 61/100: distance 10->8.
+  Rejected at trial 62/100: distance 10->8.
+  Rejected at trial 63/100: distance 10->8.
+  Rejected at trial 64/100: distance 10->4.
+  Rejected at trial 65/100: distance 10->8.
+  Valid proposal at trial 66/100: distance 10->10.
+  Valid proposal at trial 67/100: distance 10->10.
+  Rejected at trial 68/100: distance 10->8.
+  Valid proposal at trial 69/100: distance 10->10.
+  Rejected at trial 70/100: distance 10->6.
+  Rejected at trial 71/100: distance 10->8.
+  Rejected at trial 72/100: distance 10->8.
+  Valid proposal at trial 73/100: distance 10->10.
+  Rejected at trial 74/100: distance 10->6.
+  Rejected at trial 75/100: distance 10->6.
+  Rejected at trial 76/100: distance 10->6.
+  Rejected at trial 77/100: distance 10->8.
+  Rejected at trial 78/100: distance 10->6.
+  Rejected at trial 79/100: distance 10->8.
+  Rejected at trial 80/100: distance 10->6.
+  Rejected at trial 81/100: distance 10->8.
+  Rejected at trial 82/100: distance 10->6.
+  Rejected at trial 83/100: distance 10->6.
+  Valid proposal at trial 84/100: distance 10->10.
+  Rejected at trial 85/100: distance 10->6.
+  Rejected at trial 86/100: distance 10->8.
+  Rejected at trial 87/100: distance 10->4.
+  Rejected at trial 88/100: distance 10->8.
+  Rejected at trial 89/100: distance 10->8.
+  Rejected at trial 90/100: distance 10->8.
+  Rejected at trial 91/100: distance 10->8.
+  Rejected at trial 92/100: distance 10->8.
+  Rejected at trial 93/100: distance 10->6.
+  Rejected at trial 94/100: distance 10->8.
+  Rejected at trial 95/100: distance 10->8.
+  Valid proposal at trial 96/100: distance 10->10.
+  Rejected at trial 97/100: distance 10->6.
+  Rejected at trial 98/100: distance 10->8.
+  Rejected at trial 99/100: distance 10->6.
+  Rejected at trial 100/100: distance 10->6.
+  Accepted first non-decreasing valid move.
+Distance has not increased in the last 5 steps, stopping early.
+
+>>> PHASE 2: Screening (100000)
+Found 8 total saved states.
+Screening 5 unique candidates with dist == 10
+Decoder screen_row_2_batch0 finished in 0.0m 0.77s with 17 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch0: 0.0034 ± 0.0008233 (stderr)
+Decoder screen_row_2_batch1 finished in 0.0m 0.70s with 16 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch1: 0.0032 ± 0.0007988 (stderr)
+Decoder screen_row_2_batch2 finished in 0.0m 0.72s with 17 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch2: 0.0034 ± 0.0008233 (stderr)
+Decoder screen_row_2_batch3 finished in 0.0m 0.69s with 18 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch3: 0.0036 ± 0.0008471 (stderr)
+Decoder screen_row_2_batch4 finished in 0.0m 0.69s with 12 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch4: 0.0024 ± 0.0006921 (stderr)
+Decoder screen_row_2_batch5 finished in 0.0m 0.75s with 19 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch5: 0.0038 ± 0.0008702 (stderr)
+Decoder screen_row_2_batch6 finished in 0.0m 0.71s with 17 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch6: 0.0034 ± 0.0008233 (stderr)
+Decoder screen_row_2_batch7 finished in 0.0m 0.71s with 20 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch7: 0.004 ± 0.0008927 (stderr)
+Decoder screen_row_2_batch8 finished in 0.0m 0.64s with 17 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch8: 0.0034 ± 0.0008233 (stderr)
+Decoder screen_row_2_batch9 finished in 0.0m 0.69s with 15 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch9: 0.003 ± 0.0007735 (stderr)
+Decoder screen_row_2_batch10 finished in 0.0m 0.71s with 21 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch10: 0.0042 ± 0.0009147 (stderr)
+Decoder screen_row_2_batch11 finished in 0.0m 0.69s with 13 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch11: 0.0026 ± 0.0007202 (stderr)
+Decoder screen_row_2_batch12 finished in 0.0m 0.70s with 13 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch12: 0.0026 ± 0.0007202 (stderr)
+Decoder screen_row_2_batch13 finished in 0.0m 0.71s with 12 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch13: 0.0024 ± 0.0006921 (stderr)
+Decoder screen_row_2_batch14 finished in 0.0m 0.69s with 14 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch14: 0.0028 ± 0.0007474 (stderr)
+Decoder screen_row_2_batch15 finished in 0.0m 0.70s with 12 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch15: 0.0024 ± 0.0006921 (stderr)
+Decoder screen_row_2_batch16 finished in 0.0m 0.70s with 13 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch16: 0.0026 ± 0.0007202 (stderr)
+Decoder screen_row_2_batch17 finished in 0.0m 0.70s with 22 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch17: 0.0044 ± 0.0009361 (stderr)
+Decoder screen_row_2_batch18 finished in 0.0m 0.71s with 9 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch18: 0.0018 ± 0.0005995 (stderr)
+Decoder screen_row_2_batch19 finished in 0.0m 0.69s with 10 failures out of 5000/5000 runs.
+Logical error rate for screen_row_2_batch19: 0.002 ± 0.0006319 (stderr)
+Decoder screen_row_2 finished in 0.0m 14.07s with 307 failures out of 100000/100000 runs.
+Logical error rate for screen_row_2: 0.00307 ± 0.0001749 (stderr)
+Batch 1:   0%|          | 0/4 [00:00<?, ?it/s]Decoder screen_row_3 EARLY-STOPPED in 2.0m 49.89s with 308 failures out of 95860/100000 runs.
+Logical error rate for screen_row_3: 0.003213018986021281 ± 0.0001828 (stderr)
+Batch 1:  25%|██▌       | 1/4 [02:50<08:31, 170.53s/it]Decoder screen_row_4 finished in 2.0m 53.80s with 261 failures out of 100000/100000 runs.
+Logical error rate for screen_row_4: 0.00261 ± 0.0001613 (stderr)
+Batch 1:  50%|█████     | 2/4 [02:54<02:25, 72.51s/it] Decoder screen_row_7 finished in 2.0m 56.72s with 258 failures out of 100000/100000 runs.
+Logical error rate for screen_row_7: 0.00258 ± 0.0001604 (stderr)
+Batch 1:  75%|███████▌  | 3/4 [02:57<00:40, 40.75s/it]Decoder screen_row_5 finished in 3.0m 3.31s with 262 failures out of 100000/100000 runs.
+Logical error rate for screen_row_5: 0.00262 ± 0.0001617 (stderr)
+Batch 1: 100%|██████████| 4/4 [03:03<00:00, 27.26s/it]Batch 1: 100%|██████████| 4/4 [03:03<00:00, 45.99s/it]
+Best screening LER: 0.002580 (dist=10)
+
+>>> PHASE 3: Precision (1000000)
+Promoting top 3 candidates: [0.00258, 0.00261, 0.00262]
+  - dist=10 | screening LER=0.002580 ± 0.000160 | runtime=176.72s
+  - dist=10 | screening LER=0.002610 ± 0.000161 | runtime=173.80s
+  - dist=10 | screening LER=0.002620 ± 0.000162 | runtime=183.31s
+Running MC (precision):   0%|          | 0/3 [00:00<?, ?it/s]Decoder precision_row_4_batch0 finished in 0.0m 1.88s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch0: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch0 finished in 0.0m 1.98s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch0: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_5_batch0 finished in 0.0m 2.07s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch0: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch1 finished in 0.0m 1.51s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch1: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch1 finished in 0.0m 2.30s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch1: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_5_batch1 finished in 0.0m 2.21s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch1: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch2 finished in 0.0m 1.19s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch2: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch2 finished in 0.0m 1.79s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch2: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch2 finished in 0.0m 2.01s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch2: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch3 finished in 0.0m 2.22s with 26 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch3: 0.0052 ± 0.0010173 (stderr)
+Decoder precision_row_7_batch3 finished in 0.0m 1.59s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch3: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_5_batch3 finished in 0.0m 1.88s with 23 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch3: 0.0046 ± 0.0009571 (stderr)
+Decoder precision_row_4_batch4 finished in 0.0m 1.99s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch4: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch4 finished in 0.0m 1.72s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch4: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch4 finished in 0.0m 1.80s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch4: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch5 finished in 0.0m 1.81s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch5: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_7_batch5 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch5: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch5 finished in 0.0m 1.82s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch5: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch6 finished in 0.0m 1.79s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch6: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch6 finished in 0.0m 1.70s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch6: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch6 finished in 0.0m 1.88s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch6: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch7 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch7: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch7 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch7: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch7 finished in 0.0m 2.00s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch7: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch8 finished in 0.0m 1.91s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch8: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch8 finished in 0.0m 1.90s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch8: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch8 finished in 0.0m 1.71s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch8: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch9 finished in 0.0m 2.20s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch9: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch9 finished in 0.0m 1.79s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch9: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch9 finished in 0.0m 1.49s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch9: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch10 finished in 0.0m 1.88s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch10: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_7_batch10 finished in 0.0m 2.20s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch10: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch10 finished in 0.0m 2.39s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch10: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch11 finished in 0.0m 1.51s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch11: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch11 finished in 0.0m 1.70s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch11: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_5_batch11 finished in 0.0m 1.81s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch11: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch12 finished in 0.0m 1.91s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch12: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch12 finished in 0.0m 1.89s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch12: 0.0012 ± 0.0004897 (stderr)
+Decoder precision_row_5_batch12 finished in 0.0m 1.90s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch12: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch13 finished in 0.0m 1.92s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch13: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_7_batch13 finished in 0.0m 1.81s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch13: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch13 finished in 0.0m 1.80s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch13: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch14 finished in 0.0m 1.69s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch14: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch14 finished in 0.0m 1.91s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch14: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch14 finished in 0.0m 1.89s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch14: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch15 finished in 0.0m 1.91s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch15: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_7_batch15 finished in 0.0m 1.88s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch15: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch15 finished in 0.0m 1.90s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch15: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch16 finished in 0.0m 1.98s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch16: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch16 finished in 0.0m 1.99s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch16: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch16 finished in 0.0m 2.00s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch16: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch17 finished in 0.0m 1.82s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch17: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch17 finished in 0.0m 1.81s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch17: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_5_batch17 finished in 0.0m 2.30s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch17: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_4_batch18 finished in 0.0m 1.80s with 4 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch18: 0.0008 ± 0.0003999 (stderr)
+Decoder precision_row_7_batch18 finished in 0.0m 1.49s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch18: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch18 finished in 0.0m 1.71s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch18: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch19 finished in 0.0m 2.08s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch19: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch19 finished in 0.0m 2.22s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch19: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch19 finished in 0.0m 1.60s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch19: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_4_batch20 finished in 0.0m 2.00s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch20: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch20 finished in 0.0m 1.90s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch20: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch20 finished in 0.0m 1.99s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch20: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch21 finished in 0.0m 1.70s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch21: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch21 finished in 0.0m 1.89s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch21: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch21 finished in 0.0m 1.80s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch21: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch22 finished in 0.0m 1.91s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch22: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch22 finished in 0.0m 2.00s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch22: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch22 finished in 0.0m 1.91s with 21 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch22: 0.0042 ± 0.0009147 (stderr)
+Decoder precision_row_4_batch23 finished in 0.0m 1.89s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch23: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch23 finished in 0.0m 1.99s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch23: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_5_batch23 finished in 0.0m 1.90s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch23: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch24 finished in 0.0m 1.91s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch24: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch24 finished in 0.0m 1.61s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch24: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch24 finished in 0.0m 1.81s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch24: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch25 finished in 0.0m 1.80s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch25: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch25 finished in 0.0m 1.91s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch25: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_5_batch25 finished in 0.0m 1.90s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch25: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch26 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch26: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch26 finished in 0.0m 1.88s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch26: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch26 finished in 0.0m 1.81s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch26: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch27 finished in 0.0m 2.10s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch27: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch27 finished in 0.0m 1.90s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch27: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch27 finished in 0.0m 1.88s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch27: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch28 finished in 0.0m 1.79s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch28: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch28 finished in 0.0m 1.91s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch28: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch28 finished in 0.0m 1.90s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch28: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch29 finished in 0.0m 1.70s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch29: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch29 finished in 0.0m 1.81s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch29: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch29 finished in 0.0m 2.10s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch29: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch30 finished in 0.0m 1.82s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch30: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch30 finished in 0.0m 1.79s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch30: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_5_batch30 finished in 0.0m 1.60s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch30: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch31 finished in 0.0m 1.88s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch31: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_7_batch31 finished in 0.0m 1.90s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch31: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch31 finished in 0.0m 2.10s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch31: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_4_batch32 finished in 0.0m 2.00s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch32: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_7_batch32 finished in 0.0m 1.89s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch32: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_5_batch32 finished in 0.0m 1.61s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch32: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch33 finished in 0.0m 1.80s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch33: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch33 finished in 0.0m 1.99s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch33: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_5_batch33 finished in 0.0m 1.89s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch33: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch34 finished in 0.0m 1.81s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch34: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_7_batch34 finished in 0.0m 1.81s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch34: 0.0012 ± 0.0004897 (stderr)
+Decoder precision_row_5_batch34 finished in 0.0m 1.98s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch34: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch35 finished in 0.0m 1.90s with 21 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch35: 0.0042 ± 0.0009147 (stderr)
+Decoder precision_row_7_batch35 finished in 0.0m 1.91s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch35: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch35 finished in 0.0m 2.01s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch35: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch36 finished in 0.0m 2.00s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch36: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch36 finished in 0.0m 1.90s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch36: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch36 finished in 0.0m 1.79s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch36: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch37 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch37: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch37 finished in 0.0m 1.98s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch37: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch37 finished in 0.0m 1.91s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch37: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch38 finished in 0.0m 1.90s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch38: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch38 finished in 0.0m 1.92s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch38: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_5_batch38 finished in 0.0m 1.80s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch38: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch39 finished in 0.0m 1.90s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch39: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch39 finished in 0.0m 1.79s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch39: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_5_batch39 finished in 0.0m 1.90s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch39: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch40 finished in 0.0m 2.01s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch40: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch40 finished in 0.0m 1.80s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch40: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_5_batch40 finished in 0.0m 2.00s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch40: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch41 finished in 0.0m 1.69s with 22 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch41: 0.0044 ± 0.0009361 (stderr)
+Decoder precision_row_7_batch41 finished in 0.0m 1.90s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch41: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_5_batch41 finished in 0.0m 1.71s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch41: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch42 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch42: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch42 finished in 0.0m 1.91s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch42: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_5_batch42 finished in 0.0m 2.28s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch42: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_4_batch43 finished in 0.0m 1.81s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch43: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch43 finished in 0.0m 1.88s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch43: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch43 finished in 0.0m 1.51s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch43: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch44 finished in 0.0m 1.89s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch44: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch44 finished in 0.0m 1.92s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch44: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch44 finished in 0.0m 1.90s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch44: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch45 finished in 0.0m 1.92s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch45: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_7_batch45 finished in 0.0m 1.80s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch45: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch45 finished in 0.0m 1.81s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch45: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch46 finished in 0.0m 1.80s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch46: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_7_batch46 finished in 0.0m 1.89s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch46: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch46 finished in 0.0m 1.88s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch46: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch47 finished in 0.0m 1.89s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch47: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch47 finished in 0.0m 1.90s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch47: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch47 finished in 0.0m 1.82s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch47: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch48 finished in 0.0m 1.91s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch48: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch48 finished in 0.0m 1.90s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch48: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch48 finished in 0.0m 1.92s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch48: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch49 finished in 0.0m 1.89s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch49: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch49 finished in 0.0m 1.82s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch49: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch49 finished in 0.0m 1.79s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch49: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch50 finished in 0.0m 2.01s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch50: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch50 finished in 0.0m 1.79s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch50: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch50 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch50: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch51 finished in 0.0m 1.79s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch51: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_7_batch51 finished in 0.0m 1.90s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch51: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch51 finished in 0.0m 2.30s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch51: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch52 finished in 0.0m 2.00s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch52: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch52 finished in 0.0m 1.99s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch52: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch52 finished in 0.0m 1.50s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch52: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch53 finished in 0.0m 1.80s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch53: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch53 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch53: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch53 finished in 0.0m 2.09s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch53: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch54 finished in 0.0m 2.10s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch54: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch54 finished in 0.0m 1.91s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch54: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch54 finished in 0.0m 1.69s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch54: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch55 finished in 0.0m 1.61s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch55: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_7_batch55 finished in 0.0m 2.09s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch55: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch55 finished in 0.0m 1.91s with 24 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch55: 0.0048 ± 0.0009775 (stderr)
+Decoder precision_row_4_batch56 finished in 0.0m 1.89s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch56: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch56 finished in 0.0m 1.59s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch56: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch56 finished in 0.0m 2.01s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch56: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch57 finished in 0.0m 1.81s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch57: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch57 finished in 0.0m 1.89s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch57: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch57 finished in 0.0m 1.60s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch57: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch58 finished in 0.0m 1.90s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch58: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_7_batch58 finished in 0.0m 1.82s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch58: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_5_batch58 finished in 0.0m 2.00s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch58: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch59 finished in 0.0m 1.89s with 25 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch59: 0.005 ± 0.0009976 (stderr)
+Decoder precision_row_7_batch59 finished in 0.0m 2.00s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch59: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch59 finished in 0.0m 1.80s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch59: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch60 finished in 0.0m 1.82s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch60: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch60 finished in 0.0m 1.79s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch60: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch60 finished in 0.0m 1.89s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch60: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch61 finished in 0.0m 1.82s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch61: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch61 finished in 0.0m 1.89s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch61: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch61 finished in 0.0m 1.89s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch61: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_4_batch62 finished in 0.0m 1.88s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch62: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch62 finished in 0.0m 1.81s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch62: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch62 finished in 0.0m 1.92s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch62: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch63 finished in 0.0m 2.01s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch63: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_7_batch63 finished in 0.0m 1.89s with 21 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch63: 0.0042 ± 0.0009147 (stderr)
+Decoder precision_row_5_batch63 finished in 0.0m 1.80s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch63: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch64 finished in 0.0m 1.71s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch64: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_7_batch64 finished in 0.0m 1.91s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch64: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch64 finished in 0.0m 2.20s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch64: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch65 finished in 0.0m 1.89s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch65: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch65 finished in 0.0m 1.89s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch65: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch65 finished in 0.0m 1.60s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch65: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch66 finished in 0.0m 1.91s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch66: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch66 finished in 0.0m 2.00s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch66: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch66 finished in 0.0m 1.89s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch66: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch67 finished in 0.0m 1.92s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch67: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch67 finished in 0.0m 1.79s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch67: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_5_batch67 finished in 0.0m 1.99s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch67: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch68 finished in 0.0m 1.78s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch68: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch68 finished in 0.0m 1.81s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch68: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch68 finished in 0.0m 1.71s with 22 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch68: 0.0044 ± 0.0009361 (stderr)
+Decoder precision_row_4_batch69 finished in 0.0m 1.90s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch69: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch69 finished in 0.0m 1.80s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch69: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch69 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch69: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch70 finished in 0.0m 1.90s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch70: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_7_batch70 finished in 0.0m 2.01s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch70: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch70 finished in 0.0m 1.99s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch70: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_4_batch71 finished in 0.0m 1.82s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch71: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch71 finished in 0.0m 1.81s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch71: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch71 finished in 0.0m 1.82s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch71: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch72 finished in 0.0m 1.90s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch72: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_7_batch72 finished in 0.0m 1.90s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch72: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_5_batch72 finished in 0.0m 1.88s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch72: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch73 finished in 0.0m 1.99s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch73: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_7_batch73 finished in 0.0m 1.81s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch73: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch73 finished in 0.0m 2.00s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch73: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch74 finished in 0.0m 1.82s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch74: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch74 finished in 0.0m 1.99s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch74: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch74 finished in 0.0m 1.80s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch74: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch75 finished in 0.0m 2.08s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch75: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_7_batch75 finished in 0.0m 1.91s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch75: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch75 finished in 0.0m 1.90s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch75: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch76 finished in 0.0m 1.81s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch76: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_7_batch76 finished in 0.0m 1.98s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch76: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch76 finished in 0.0m 1.90s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch76: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch77 finished in 0.0m 1.80s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch77: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch77 finished in 0.0m 1.80s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch77: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch77 finished in 0.0m 1.90s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch77: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch78 finished in 0.0m 1.90s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch78: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch78 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch78: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch78 finished in 0.0m 1.89s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch78: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_4_batch79 finished in 0.0m 1.91s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch79: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch79 finished in 0.0m 1.90s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch79: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch79 finished in 0.0m 1.90s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch79: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch80 finished in 0.0m 1.99s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch80: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_7_batch80 finished in 0.0m 1.90s with 21 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch80: 0.0042 ± 0.0009147 (stderr)
+Decoder precision_row_5_batch80 finished in 0.0m 2.10s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch80: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch81 finished in 0.0m 1.89s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch81: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_7_batch81 finished in 0.0m 1.91s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch81: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch81 finished in 0.0m 1.69s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch81: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_4_batch82 finished in 0.0m 1.80s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch82: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch82 finished in 0.0m 1.89s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch82: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch82 finished in 0.0m 1.89s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch82: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch83 finished in 0.0m 2.10s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch83: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch83 finished in 0.0m 1.72s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch83: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch83 finished in 0.0m 2.01s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch83: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch84 finished in 0.0m 1.70s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch84: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch84 finished in 0.0m 1.98s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch84: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch84 finished in 0.0m 1.71s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch84: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch85 finished in 0.0m 1.89s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch85: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch85 finished in 0.0m 2.32s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch85: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch85 finished in 0.0m 1.98s with 21 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch85: 0.0042 ± 0.0009147 (stderr)
+Decoder precision_row_4_batch86 finished in 0.0m 1.41s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch86: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch86 finished in 0.0m 1.60s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch86: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch86 finished in 0.0m 2.32s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch86: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch87 finished in 0.0m 2.39s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch87: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch87 finished in 0.0m 1.39s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch87: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch87 finished in 0.0m 1.49s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch87: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch88 finished in 0.0m 1.90s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch88: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch88 finished in 0.0m 2.30s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch88: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_5_batch88 finished in 0.0m 1.89s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch88: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch89 finished in 0.0m 1.91s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch89: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch89 finished in 0.0m 1.90s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch89: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch89 finished in 0.0m 1.91s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch89: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch90 finished in 0.0m 1.90s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch90: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch90 finished in 0.0m 1.91s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch90: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch90 finished in 0.0m 1.90s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch90: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch91 finished in 0.0m 1.91s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch91: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch91 finished in 0.0m 1.99s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch91: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch91 finished in 0.0m 2.01s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch91: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch92 finished in 0.0m 1.89s with 21 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch92: 0.0042 ± 0.0009147 (stderr)
+Decoder precision_row_7_batch92 finished in 0.0m 1.92s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch92: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch92 finished in 0.0m 1.81s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch92: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch93 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch93: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch93 finished in 0.0m 1.89s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch93: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_5_batch93 finished in 0.0m 1.89s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch93: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_4_batch94 finished in 0.0m 1.89s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch94: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch94 finished in 0.0m 1.81s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch94: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch94 finished in 0.0m 1.80s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch94: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch95 finished in 0.0m 1.81s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch95: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch95 finished in 0.0m 2.10s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch95: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_5_batch95 finished in 0.0m 1.99s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch95: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch96 finished in 0.0m 1.99s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch96: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch96 finished in 0.0m 1.70s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch96: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch96 finished in 0.0m 1.90s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch96: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch97 finished in 0.0m 1.80s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch97: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch97 finished in 0.0m 1.81s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch97: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_5_batch97 finished in 0.0m 2.39s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch97: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch98 finished in 0.0m 1.90s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch98: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch98 finished in 0.0m 1.49s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch98: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch98 finished in 0.0m 2.02s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch98: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_4_batch99 finished in 0.0m 2.09s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch99: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_7_batch99 finished in 0.0m 2.01s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch99: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch99 finished in 0.0m 1.79s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch99: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch100 finished in 0.0m 2.01s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch100: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_7_batch100 finished in 0.0m 2.39s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch100: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_5_batch100 finished in 0.0m 1.41s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch100: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch101 finished in 0.0m 1.79s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch101: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch101 finished in 0.0m 1.91s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch101: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch101 finished in 0.0m 1.99s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch101: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch102 finished in 0.0m 1.82s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch102: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_7_batch102 finished in 0.0m 1.89s with 23 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch102: 0.0046 ± 0.0009571 (stderr)
+Decoder precision_row_5_batch102 finished in 0.0m 2.02s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch102: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch103 finished in 0.0m 1.98s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch103: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch103 finished in 0.0m 2.09s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch103: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_5_batch103 finished in 0.0m 1.70s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch103: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch104 finished in 0.0m 1.90s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch104: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch104 finished in 0.0m 1.71s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch104: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_5_batch104 finished in 0.0m 1.82s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch104: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_4_batch105 finished in 0.0m 1.90s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch105: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch105 finished in 0.0m 1.91s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch105: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch105 finished in 0.0m 2.18s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch105: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch106 finished in 0.0m 1.81s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch106: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch106 finished in 0.0m 1.88s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch106: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch106 finished in 0.0m 1.52s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch106: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch107 finished in 0.0m 1.89s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch107: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch107 finished in 0.0m 1.89s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch107: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch107 finished in 0.0m 1.98s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch107: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch108 finished in 0.0m 1.90s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch108: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch108 finished in 0.0m 1.82s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch108: 0.0012 ± 0.0004897 (stderr)
+Decoder precision_row_5_batch108 finished in 0.0m 1.90s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch108: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_4_batch109 finished in 0.0m 1.90s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch109: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch109 finished in 0.0m 1.98s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch109: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch109 finished in 0.0m 2.01s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch109: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch110 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch110: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch110 finished in 0.0m 1.91s with 21 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch110: 0.0042 ± 0.0009147 (stderr)
+Decoder precision_row_5_batch110 finished in 0.0m 1.79s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch110: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch111 finished in 0.0m 2.00s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch111: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch111 finished in 0.0m 1.81s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch111: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_5_batch111 finished in 0.0m 1.90s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch111: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch112 finished in 0.0m 1.90s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch112: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_7_batch112 finished in 0.0m 1.81s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch112: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch112 finished in 0.0m 1.99s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch112: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch113 finished in 0.0m 1.81s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch113: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_7_batch113 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch113: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch113 finished in 0.0m 1.70s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch113: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch114 finished in 0.0m 1.79s with 23 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch114: 0.0046 ± 0.0009571 (stderr)
+Decoder precision_row_7_batch114 finished in 0.0m 1.81s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch114: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch114 finished in 0.0m 1.91s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch114: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch115 finished in 0.0m 1.91s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch115: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch115 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch115: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch115 finished in 0.0m 1.90s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch115: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch116 finished in 0.0m 1.90s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch116: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_7_batch116 finished in 0.0m 1.89s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch116: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch116 finished in 0.0m 1.81s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch116: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch117 finished in 0.0m 1.79s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch117: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_7_batch117 finished in 0.0m 1.81s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch117: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_5_batch117 finished in 0.0m 2.01s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch117: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_4_batch118 finished in 0.0m 1.82s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch118: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch118 finished in 0.0m 1.80s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch118: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch118 finished in 0.0m 1.70s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch118: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch119 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch119: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch119 finished in 0.0m 1.91s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch119: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch119 finished in 0.0m 2.11s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch119: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_4_batch120 finished in 0.0m 1.90s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch120: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch120 finished in 0.0m 1.82s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch120: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_5_batch120 finished in 0.0m 1.61s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch120: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_4_batch121 finished in 0.0m 1.99s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch121: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch121 finished in 0.0m 2.10s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch121: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch121 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch121: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch122 finished in 0.0m 1.81s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch122: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch122 finished in 0.0m 1.71s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch122: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch122 finished in 0.0m 1.90s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch122: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch123 finished in 0.0m 1.98s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch123: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch123 finished in 0.0m 1.82s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch123: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch123 finished in 0.0m 1.89s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch123: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_4_batch124 finished in 0.0m 1.90s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch124: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch124 finished in 0.0m 1.91s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch124: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch124 finished in 0.0m 1.91s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch124: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch125 finished in 0.0m 1.80s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch125: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch125 finished in 0.0m 1.80s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch125: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch125 finished in 0.0m 1.79s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch125: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch126 finished in 0.0m 1.80s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch126: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_7_batch126 finished in 0.0m 1.81s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch126: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_5_batch126 finished in 0.0m 1.90s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch126: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_4_batch127 finished in 0.0m 1.90s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch127: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch127 finished in 0.0m 1.88s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch127: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch127 finished in 0.0m 1.80s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch127: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch128 finished in 0.0m 1.81s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch128: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch128 finished in 0.0m 1.81s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch128: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch128 finished in 0.0m 1.90s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch128: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_4_batch129 finished in 0.0m 1.89s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch129: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_7_batch129 finished in 0.0m 1.90s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch129: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_5_batch129 finished in 0.0m 1.80s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch129: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch130 finished in 0.0m 1.91s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch130: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch130 finished in 0.0m 1.89s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch130: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch130 finished in 0.0m 1.89s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch130: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch131 finished in 0.0m 2.21s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch131: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch131 finished in 0.0m 1.72s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch131: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch131 finished in 0.0m 1.44s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch131: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch132 finished in 0.0m 1.90s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch132: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch132 finished in 0.0m 2.12s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch132: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch132 finished in 0.0m 1.96s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch132: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch133 finished in 0.0m 1.68s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch133: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch133 finished in 0.0m 1.71s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch133: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch133 finished in 0.0m 2.20s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch133: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch134 finished in 0.0m 1.60s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch134: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch134 finished in 0.0m 1.71s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch134: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_5_batch134 finished in 0.0m 1.90s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch134: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_4_batch135 finished in 0.0m 1.91s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch135: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_7_batch135 finished in 0.0m 1.90s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch135: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_5_batch135 finished in 0.0m 1.81s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch135: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_4_batch136 finished in 0.0m 1.89s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch136: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch136 finished in 0.0m 2.29s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch136: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch136 finished in 0.0m 1.80s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch136: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_4_batch137 finished in 0.0m 1.41s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch137: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_7_batch137 finished in 0.0m 1.60s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch137: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch137 finished in 0.0m 2.08s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch137: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch138 finished in 0.0m 2.29s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch138: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch138 finished in 0.0m 1.71s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch138: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_5_batch138 finished in 0.0m 1.71s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch138: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch139 finished in 0.0m 1.82s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch139: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_7_batch139 finished in 0.0m 1.90s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch139: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch139 finished in 0.0m 1.89s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch139: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch140 finished in 0.0m 1.98s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch140: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch140 finished in 0.0m 1.99s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch140: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_5_batch140 finished in 0.0m 1.91s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch140: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_4_batch141 finished in 0.0m 1.90s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch141: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_7_batch141 finished in 0.0m 1.81s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch141: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch141 finished in 0.0m 2.01s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch141: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_4_batch142 finished in 0.0m 1.81s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch142: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_7_batch142 finished in 0.0m 1.80s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch142: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch142 finished in 0.0m 1.70s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch142: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_4_batch143 finished in 0.0m 1.88s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch143: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch143 finished in 0.0m 1.91s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch143: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch143 finished in 0.0m 2.29s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch143: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch144 finished in 0.0m 1.82s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch144: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch144 finished in 0.0m 1.44s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch144: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch144 finished in 0.0m 1.70s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch144: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch145 finished in 0.0m 2.09s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch145: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch145 finished in 0.0m 2.25s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch145: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch145 finished in 0.0m 1.71s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch145: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch146 finished in 0.0m 1.80s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch146: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch146 finished in 0.0m 2.00s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch146: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch146 finished in 0.0m 1.78s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch146: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_4_batch147 finished in 0.0m 2.11s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch147: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch147 finished in 0.0m 1.79s with 23 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch147: 0.0046 ± 0.0009571 (stderr)
+Decoder precision_row_5_batch147 finished in 0.0m 1.82s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch147: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch148 finished in 0.0m 1.50s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch148: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_7_batch148 finished in 0.0m 2.01s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch148: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_5_batch148 finished in 0.0m 1.91s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch148: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_4_batch149 finished in 0.0m 1.88s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch149: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_7_batch149 finished in 0.0m 1.80s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch149: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch149 finished in 0.0m 1.89s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch149: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch150 finished in 0.0m 1.90s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch150: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_7_batch150 finished in 0.0m 1.81s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch150: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch150 finished in 0.0m 1.90s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch150: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch151 finished in 0.0m 1.79s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch151: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch151 finished in 0.0m 1.89s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch151: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch151 finished in 0.0m 1.71s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch151: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch152 finished in 0.0m 1.91s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch152: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch152 finished in 0.0m 2.19s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch152: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch152 finished in 0.0m 1.91s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch152: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_4_batch153 finished in 0.0m 1.90s with 24 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch153: 0.0048 ± 0.0009775 (stderr)
+Decoder precision_row_7_batch153 finished in 0.0m 1.62s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch153: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch153 finished in 0.0m 1.90s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch153: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_4_batch154 finished in 0.0m 1.81s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch154: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch154 finished in 0.0m 1.99s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch154: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_5_batch154 finished in 0.0m 1.81s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch154: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_4_batch155 finished in 0.0m 1.90s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch155: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch155 finished in 0.0m 1.69s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch155: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch155 finished in 0.0m 2.10s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch155: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch156 finished in 0.0m 1.90s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch156: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_7_batch156 finished in 0.0m 1.82s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch156: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_5_batch156 finished in 0.0m 1.61s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch156: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch157 finished in 0.0m 1.88s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch157: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch157 finished in 0.0m 1.80s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch157: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch157 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch157: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch158 finished in 0.0m 1.81s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch158: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch158 finished in 0.0m 2.00s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch158: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch158 finished in 0.0m 1.91s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch158: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch159 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch159: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch159 finished in 0.0m 1.80s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch159: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_5_batch159 finished in 0.0m 1.88s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch159: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch160 finished in 0.0m 2.00s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch160: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch160 finished in 0.0m 1.80s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch160: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_5_batch160 finished in 0.0m 1.81s with 22 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch160: 0.0044 ± 0.0009361 (stderr)
+Decoder precision_row_4_batch161 finished in 0.0m 1.70s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch161: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_7_batch161 finished in 0.0m 1.98s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch161: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch161 finished in 0.0m 1.89s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch161: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_4_batch162 finished in 0.0m 2.01s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch162: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_7_batch162 finished in 0.0m 1.80s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch162: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch162 finished in 0.0m 1.89s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch162: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch163 finished in 0.0m 1.79s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch163: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_7_batch163 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch163: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch163 finished in 0.0m 1.72s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch163: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch164 finished in 0.0m 1.80s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch164: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch164 finished in 0.0m 1.80s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch164: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch164 finished in 0.0m 2.29s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch164: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch165 finished in 0.0m 1.81s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch165: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_7_batch165 finished in 0.0m 1.81s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch165: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch165 finished in 0.0m 1.60s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch165: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch166 finished in 0.0m 1.89s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch166: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch166 finished in 0.0m 1.51s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch166: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch166 finished in 0.0m 1.80s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch166: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch167 finished in 0.0m 1.90s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch167: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_7_batch167 finished in 0.0m 2.29s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch167: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_5_batch167 finished in 0.0m 1.88s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch167: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_4_batch168 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch168: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch168 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch168: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch168 finished in 0.0m 1.80s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch168: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch169 finished in 0.0m 1.71s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch169: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch169 finished in 0.0m 1.72s with 21 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch169: 0.0042 ± 0.0009147 (stderr)
+Decoder precision_row_5_batch169 finished in 0.0m 1.91s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch169: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch170 finished in 0.0m 1.90s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch170: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch170 finished in 0.0m 1.98s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch170: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch170 finished in 0.0m 1.71s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch170: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch171 finished in 0.0m 1.89s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch171: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch171 finished in 0.0m 2.01s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch171: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch171 finished in 0.0m 1.90s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch171: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch172 finished in 0.0m 1.90s with 22 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch172: 0.0044 ± 0.0009361 (stderr)
+Decoder precision_row_7_batch172 finished in 0.0m 1.79s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch172: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch172 finished in 0.0m 1.89s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch172: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch173 finished in 0.0m 1.80s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch173: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch173 finished in 0.0m 1.71s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch173: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch173 finished in 0.0m 2.09s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch173: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_4_batch174 finished in 0.0m 1.81s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch174: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_7_batch174 finished in 0.0m 1.80s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch174: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch174 finished in 0.0m 1.50s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch174: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch175 finished in 0.0m 2.01s with 20 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch175: 0.004 ± 0.0008927 (stderr)
+Decoder precision_row_7_batch175 finished in 0.0m 1.81s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch175: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch175 finished in 0.0m 2.00s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch175: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch176 finished in 0.0m 1.70s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch176: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_7_batch176 finished in 0.0m 1.88s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch176: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_5_batch176 finished in 0.0m 1.90s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch176: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch177 finished in 0.0m 1.81s with 23 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch177: 0.0046 ± 0.0009571 (stderr)
+Decoder precision_row_7_batch177 finished in 0.0m 1.90s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch177: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch177 finished in 0.0m 1.69s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch177: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch178 finished in 0.0m 1.98s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch178: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch178 finished in 0.0m 1.81s with 3 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch178: 0.0006 ± 0.0003463 (stderr)
+Decoder precision_row_5_batch178 finished in 0.0m 1.80s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch178: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch179 finished in 0.0m 1.92s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch179: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch179 finished in 0.0m 1.81s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch179: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_5_batch179 finished in 0.0m 1.91s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch179: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_4_batch180 finished in 0.0m 1.69s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch180: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch180 finished in 0.0m 1.89s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch180: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch180 finished in 0.0m 1.80s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch180: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch181 finished in 0.0m 1.81s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch181: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_7_batch181 finished in 0.0m 1.81s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch181: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch181 finished in 0.0m 1.98s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch181: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch182 finished in 0.0m 1.88s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch182: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch182 finished in 0.0m 1.89s with 21 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch182: 0.0042 ± 0.0009147 (stderr)
+Decoder precision_row_5_batch182 finished in 0.0m 1.71s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch182: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch183 finished in 0.0m 1.82s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch183: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch183 finished in 0.0m 1.89s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch183: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch183 finished in 0.0m 2.19s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch183: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch184 finished in 0.0m 1.80s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch184: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch184 finished in 0.0m 1.81s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch184: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch184 finished in 0.0m 1.51s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch184: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch185 finished in 0.0m 2.00s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch185: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_7_batch185 finished in 0.0m 1.80s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch185: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch185 finished in 0.0m 1.90s with 23 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch185: 0.0046 ± 0.0009571 (stderr)
+Decoder precision_row_4_batch186 finished in 0.0m 1.80s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch186: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch186 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch186: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_5_batch186 finished in 0.0m 1.80s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch186: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_4_batch187 finished in 0.0m 1.90s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch187: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch187 finished in 0.0m 1.90s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch187: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch187 finished in 0.0m 1.89s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch187: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_4_batch188 finished in 0.0m 1.71s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch188: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_7_batch188 finished in 0.0m 1.80s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch188: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch188 finished in 0.0m 1.81s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch188: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch189 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch189: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7_batch189 finished in 0.0m 1.90s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch189: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_5_batch189 finished in 0.0m 2.10s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch189: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch190 finished in 0.0m 1.88s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch190: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch190 finished in 0.0m 1.91s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch190: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_5_batch190 finished in 0.0m 1.60s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch190: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch191 finished in 0.0m 2.01s with 19 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch191: 0.0038 ± 0.0008702 (stderr)
+Decoder precision_row_7_batch191 finished in 0.0m 1.79s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch191: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_5_batch191 finished in 0.0m 1.99s with 15 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch191: 0.003 ± 0.0007735 (stderr)
+Decoder precision_row_4_batch192 finished in 0.0m 1.70s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch192: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_7_batch192 finished in 0.0m 1.81s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch192: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_5_batch192 finished in 0.0m 1.80s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch192: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_4_batch193 finished in 0.0m 1.91s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch193: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch193 finished in 0.0m 1.90s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch193: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch193 finished in 0.0m 1.90s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch193: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_4_batch194 finished in 0.0m 1.88s with 16 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch194: 0.0032 ± 0.0007988 (stderr)
+Decoder precision_row_7_batch194 finished in 0.0m 1.81s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch194: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch194 finished in 0.0m 1.81s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch194: 0.0012 ± 0.0004897 (stderr)
+Decoder precision_row_4_batch195 finished in 0.0m 1.90s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch195: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_7_batch195 finished in 0.0m 1.91s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch195: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_5_batch195 finished in 0.0m 1.90s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch195: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch196 finished in 0.0m 1.79s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch196: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch196 finished in 0.0m 1.80s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch196: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_5_batch196 finished in 0.0m 1.89s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch196: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_4_batch197 finished in 0.0m 2.01s with 14 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch197: 0.0028 ± 0.0007474 (stderr)
+Decoder precision_row_7_batch197 finished in 0.0m 1.80s with 18 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch197: 0.0036 ± 0.0008471 (stderr)
+Decoder precision_row_5_batch197 finished in 0.0m 1.80s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch197: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_4_batch198 finished in 0.0m 1.59s with 13 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch198: 0.0026 ± 0.0007202 (stderr)
+Decoder precision_row_7_batch198 finished in 0.0m 1.70s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch198: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_5_batch198 finished in 0.0m 1.91s with 17 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch198: 0.0034 ± 0.0008233 (stderr)
+Decoder precision_row_4_batch199 finished in 0.0m 1.90s with 21 failures out of 5000/5000 runs.
+Logical error rate for precision_row_4_batch199: 0.0042 ± 0.0009147 (stderr)
+Decoder precision_row_4 finished in 6.0m 14.48s with 2856 failures out of 1000000/1000000 runs.
+Logical error rate for precision_row_4: 0.002856 ± 0.0000534 (stderr)
+Running MC (precision):  33%|███▎      | 1/3 [06:15<12:30, 375.12s/it]Decoder precision_row_7_batch199 finished in 0.0m 1.98s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_7_batch199: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_7 finished in 6.0m 15.07s with 2653 failures out of 1000000/1000000 runs.
+Logical error rate for precision_row_7: 0.002653 ± 0.0000514 (stderr)
+Running MC (precision):  67%|██████▋   | 2/3 [06:15<02:34, 154.81s/it]Decoder precision_row_5_batch199 finished in 0.0m 1.31s with 22 failures out of 5000/5000 runs.
+Logical error rate for precision_row_5_batch199: 0.0044 ± 0.0009361 (stderr)
+Decoder precision_row_5 finished in 6.0m 15.29s with 2867 failures out of 1000000/1000000 runs.
+Logical error rate for precision_row_5: 0.002867 ± 0.0000535 (stderr)
+Running MC (precision): 100%|██████████| 3/3 [06:15<00:00, 84.22s/it] Running MC (precision): 100%|██████████| 3/3 [06:15<00:00, 125.31s/it]
+Evaluating row 7 | dist=10 | screening LER=0.002580
+  -> LER: 0.002653 ± 0.000051 | runtime=375.07s
+Evaluating row 4 | dist=10 | screening LER=0.002610
+  -> LER: 0.002856 ± 0.000053 | runtime=374.48s
+Evaluating row 5 | dist=10 | screening LER=0.002620
+  -> LER: 0.002867 ± 0.000053 | runtime=375.29s
+
+>>> RESULT: Best code found
+Distance: 10
+LER: 0.002653 ± 0.000051
+Run group name: /[1225,65]/logical_guided_S10_T100_p0.03_100000screen_1000000prec_top3_20260414_123231
+
+Total time: 0h 9m 49.56s
+Saved to optimization/results/logical_guided_search.hdf5
