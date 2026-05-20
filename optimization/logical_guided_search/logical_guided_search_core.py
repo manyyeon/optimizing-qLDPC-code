@@ -1,4 +1,5 @@
 import random
+from concurrent.futures import ProcessPoolExecutor
 from itertools import combinations
 from typing import Optional
 
@@ -106,6 +107,7 @@ def generate_logical_guided_candidates(
     logical_max_comb_order: int = 5,
     require_detectable: bool = True,
     require_distance_non_decrease: bool = False,
+    candidate_workers: int = 1,
     verbose: bool = False,
 ):
     """
@@ -150,10 +152,10 @@ def generate_logical_guided_candidates(
         print(f"  Current distance: {current_distance}")
 
     tried_proposals = set()
-    candidates = []
+    proposals = []
 
-    cand_trial_idx = 1
-    while len(candidates) < num_candidates:
+    # Stage 1: build unique proposals.
+    while len(proposals) < num_candidates:
         proposal = propose_targeted_swap_from_logical(
             state,
             support,
@@ -168,36 +170,94 @@ def generate_logical_guided_candidates(
         proposal_key = canonicalize_proposal(edges_to_add, edges_to_remove)
         tried_proposals.add(proposal_key)
 
-        new_state = add_and_remove_edges(state, edges_to_add, edges_to_remove)
-        new_params, _, _ = get_code_parameters_and_matrices(new_state)
+        proposals.append((edges_to_add, edges_to_remove))
 
-        H_new = tanner_graph_to_parity_check_matrix(new_state)
-        if require_detectable and not is_classical_support_detectable(H_new, support):
-            if verbose:
-                print(f"  Rejected at {cand_trial_idx}/{num_candidates}: support still undetectable.")
-            continue
+    if not proposals:
+        return []
 
-        new_distance = min(new_params["d_classical"], new_params["d_T_classical"])
+    eval_tasks = [(i + 1, a, r) for i, (a, r) in enumerate(proposals)]
 
-        if require_distance_non_decrease and new_distance < current_distance:
-            if verbose:
-                print(f"  Rejected at {cand_trial_idx}/{num_candidates}: distance {current_distance}->{new_distance}")
-            continue
+    # Stage 2: evaluate proposals (optionally parallel across candidates).
+    if candidate_workers > 1 and len(eval_tasks) > 1:
+        packed_tasks = [
+            (
+                state,
+                get_code_parameters_and_matrices,
+                support,
+                logical_weight,
+                current_distance,
+                require_detectable,
+                require_distance_non_decrease,
+                num_candidates,
+                task,
+            )
+            for task in eval_tasks
+        ]
+        with ProcessPoolExecutor(max_workers=candidate_workers) as ex:
+            evaluated = list(ex.map(_evaluate_proposal_worker, packed_tasks))
+    else:
+        evaluated = [
+            _evaluate_proposal_worker(
+                (
+                    state,
+                    get_code_parameters_and_matrices,
+                    support,
+                    logical_weight,
+                    current_distance,
+                    require_detectable,
+                    require_distance_non_decrease,
+                    num_candidates,
+                    task,
+                )
+            )
+            for task in eval_tasks
+        ]
 
-        candidates.append({
-            "state": new_state,
-            "params": new_params,
-            "logical_weight": logical_weight,
-            "support": support.copy(),
-            "edges_to_add": edges_to_add,
-            "edges_to_remove": edges_to_remove,
-            "distance_before": current_distance,
-            "distance_after": new_distance,
-        })
+    candidates = [cand for cand in evaluated if cand is not None][:num_candidates]
 
-        cand_trial_idx += 1
+    if verbose and candidate_workers > 1:
+        print(f"  Candidate evaluation used process workers={candidate_workers}")
 
     return candidates
+
+
+def _evaluate_proposal_worker(args):
+    (
+        state,
+        get_code_parameters_and_matrices,
+        support,
+        logical_weight,
+        current_distance,
+        require_detectable,
+        require_distance_non_decrease,
+        _num_candidates,
+        task,
+    ) = args
+
+    _trial_idx, edges_to_add, edges_to_remove = task
+
+    new_state = add_and_remove_edges(state, edges_to_add, edges_to_remove)
+    new_params, _, _ = get_code_parameters_and_matrices(new_state)
+
+    H_new = tanner_graph_to_parity_check_matrix(new_state)
+    if require_detectable and not is_classical_support_detectable(H_new, support):
+        return None
+
+    new_distance = min(new_params["d_classical"], new_params["d_T_classical"])
+
+    if require_distance_non_decrease and new_distance < current_distance:
+        return None
+
+    return {
+        "state": new_state,
+        "params": new_params,
+        "logical_weight": logical_weight,
+        "support": support.copy(),
+        "edges_to_add": edges_to_add,
+        "edges_to_remove": edges_to_remove,
+        "distance_before": current_distance,
+        "distance_after": new_distance,
+    }
 
 
 import numpy as np
@@ -310,6 +370,7 @@ def improve_state_by_breaking_low_weight_logical(
     best_attempts = []
 
     for trial in range(max_trials):
+        reject_count = 0
         proposal = propose_targeted_swap_from_logical(
             state,
             support,
@@ -339,6 +400,7 @@ def improve_state_by_breaking_low_weight_logical(
 
         if require_distance_non_decrease and new_distance < current_distance:
             if verbose:
+                reject_count += 1
                 print(f"  Rejected at trial {trial + 1}/{max_trials}: distance {current_distance}->{new_distance}.")
             continue
         
