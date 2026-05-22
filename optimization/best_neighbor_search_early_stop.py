@@ -18,7 +18,7 @@ from optimization.experiments_settings import MC_budget, noise_levels
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/best_neighbor_search_early_stop_run3.hdf5"
+output_file = os.environ.get('OUTPUT_HDF5', "optimization/results/best_neighbor_search_early_stop_run4.hdf5")
 EARLY_VALID_TARGET = 10
 run_label = "Best neighbor search"
 
@@ -91,15 +91,17 @@ def init_dsets(grp, initial_state, initial_result):
     dsets["distances_classical"]   = _ensure_ds(grp, "distances_classical",   np.array(float(initial_result['d_classical']), dtype=np.float64), is_row=False)
     dsets["distances_classical_T"] = _ensure_ds(grp, "distances_classical_T", np.array(float(initial_result['d_T_classical']), dtype=np.float64), is_row=False)
     dsets["distances_quantum"]     = _ensure_ds(grp, "distances_quantum",     np.array(float(initial_result['d_quantum']), dtype=np.float64), is_row=False)
-    dsets["distances_Hx"]          = _ensure_ds(grp, "distances_Hx",          np.array(float(initial_result['d_Hx']), dtype=np.float64), is_row=False)
-    dsets["distances_Hz"]          = _ensure_ds(grp, "distances_Hz",          np.array(float(initial_result['d_Hz']), dtype=np.float64), is_row=False)
+    dsets["distances_Hx"]          = _ensure_ds(grp, "distances_Hx",          np.array(float(initial_result.get('d_Hx', 0.0)), dtype=np.float64), is_row=False)
+    dsets["distances_Hz"]          = _ensure_ds(grp, "distances_Hz",          np.array(float(initial_result.get('d_Hz', 0.0)), dtype=np.float64), is_row=False)
     dsets["decoding_runtimes"]     = _ensure_ds(grp, "decoding_runtimes",     np.array(float(initial_result['runtimes'][0]), dtype=np.float64), is_row=False)
+    dsets["wall_times"]            = _ensure_ds(grp, "wall_times",            np.array(0.0, dtype=np.float64), is_row=False)
+    dsets["ler_wall_times"]        = _ensure_ds(grp, "ler_wall_times",        np.array(0.0, dtype=np.float64), is_row=False)
     dsets["step_summaries"]        = _ensure_ds(grp, "step_summaries",        np.array([0, 0, 0, -1], dtype=np.int64), is_row=True)
 
 
     return dsets
 
-def append_record(dsets, state, result):
+def append_record(dsets, state, result, wall_time=np.nan):
     """Append one row for all tracked fields."""
     edge_list = parse_edgelist(state).astype(np.uint32)
 
@@ -122,9 +124,11 @@ def append_record(dsets, state, result):
     _append_row(dsets["distances_classical"],   np.array(float(result['d_classical']), dtype=np.float64))
     _append_row(dsets["distances_classical_T"], np.array(float(result['d_T_classical']), dtype=np.float64))
     _append_row(dsets["distances_quantum"],     np.array(float(result['d_quantum']), dtype=np.float64))
-    _append_row(dsets["distances_Hx"],          np.array(float(result['d_Hx']), dtype=np.float64))
-    _append_row(dsets["distances_Hz"],          np.array(float(result['d_Hz']), dtype=np.float64))
+    _append_row(dsets["distances_Hx"],          np.array(float(result.get('d_Hx', 0.0)), dtype=np.float64))
+    _append_row(dsets["distances_Hz"],          np.array(float(result.get('d_Hz', 0.0)), dtype=np.float64))
     _append_row(dsets["decoding_runtimes"],     np.array(runtime, dtype=np.float64))
+    _append_row(dsets["wall_times"],            np.array(wall_time, dtype=np.float64))
+    _append_row(dsets["ler_wall_times"],        np.array(wall_time if ler > 0 else np.nan, dtype=np.float64))
 
 if __name__ == '__main__':
     # Parse args: basically just a flag indicating the code family to explore. 
@@ -135,6 +139,7 @@ if __name__ == '__main__':
     parser.add_argument('-N', action="store", dest='N', default=None, type=int, required=False)
     parser.add_argument('-L', action="store", dest='L', default=None, type=int, required=False)
     parser.add_argument('-p', action="store", dest='p', default=None, type=float, required=False)
+    parser.add_argument("--mc-budget", type=int, default=100000, help="Monte Carlo budget")
     args = parser.parse_args()
 
     # Choose the code family
@@ -184,7 +189,7 @@ if __name__ == '__main__':
         decoding_runtimes = []  # only for computing avg later
         start_time = time.time()
 
-        cost_result = evaluate_performance_of_state(state=initial_state, p_vals=[p], MC_budget=MC_budget, run_label=run_label, canskip=False) # ensure initial state is always evaluated
+        cost_result = evaluate_performance_of_state(state=initial_state, p_vals=[p], MC_budget=args.mc_budget, run_label=run_label, canskip=False) # ensure initial state is always evaluated
         init_dist = int(min(float(cost_result['d_classical']), float(cost_result['d_T_classical'])))
         distance_threshold = init_dist + 1 # set the distance threshold as one above the initial state's threshold
         logical_error_rate = float(cost_result['logical_error_rates'][0])
@@ -196,7 +201,7 @@ if __name__ == '__main__':
         print(f"Initial state logical error rate: {logical_error_rate:.6f}")
 
         dsets = init_dsets(grp, initial_state, cost_result)
-        append_record(dsets, initial_state, cost_result)
+        append_record(dsets, initial_state, cost_result, time.time() - start_time)
 
         grp.attrs['original_cost'] = logical_error_rate
         decoding_runtimes.append(float(cost_result['runtimes'][0]))
@@ -237,9 +242,9 @@ if __name__ == '__main__':
                 print(f"Exploring neighbor {n+1}/{N-1} of iteration {l+1}/{L}...")
 
                 neighbor, old_edges, new_edges = generate_neighbor_highlight(state)
-                cost_result = evaluate_performance_of_state(state=neighbor, p_vals=[p], MC_budget=MC_budget, run_label=run_label, distance_threshold=distance_threshold)
+                cost_result = evaluate_performance_of_state(state=neighbor, p_vals=[p], MC_budget=args.mc_budget, run_label=run_label, distance_threshold=distance_threshold)
 
-                append_record(dsets, neighbor, cost_result)
+                append_record(dsets, neighbor, cost_result, time.time() - start_time)
 
                 dist_any = min(float(cost_result['d_classical']), float(cost_result['d_T_classical']))
                 row_idx_any = _current_stream_len(dsets) - 1
@@ -312,10 +317,10 @@ if __name__ == '__main__':
                 # Ensure the chosen next-initial has a non-skipped evaluation saved
                 if chosen_result.get('skipped', False):
                     chosen_result = evaluate_performance_of_state(
-                        state=next_state, p_vals=[p], MC_budget=MC_budget, run_label=run_label,
+                        state=next_state, p_vals=[p], MC_budget=args.mc_budget, run_label=run_label,
                         distance_threshold=distance_threshold, canskip=False
                     )
-                    append_record(dsets, next_state, chosen_result)
+                    append_record(dsets, next_state, chosen_result, time.time() - start_time)
                     chosen_row_index = _current_stream_len(dsets) - 1  # new non-skipped row
 
                 current_cost = float(chosen_result['logical_error_rates'][0])
@@ -333,7 +338,7 @@ if __name__ == '__main__':
                 next_state = best_neighbor['state']
                 current_cost = best_neighbor['cost']
                 chosen_result = best_neighbor['result']
-                append_record(dsets, next_state, chosen_result)
+                append_record(dsets, next_state, chosen_result, time.time() - start_time)
                 chosen_row_index = _current_stream_len(dsets) - 1
 
                 chosen_dist = int(min(float(chosen_result['d_classical']), float(chosen_result['d_T_classical'])))

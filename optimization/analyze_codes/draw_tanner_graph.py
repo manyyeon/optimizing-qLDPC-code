@@ -14,26 +14,26 @@ def draw_interactive_tanner_graph(G, filename="tanner_graph.html"):
 
     # 2. Separate Nodes
     top_nodes = [n for n, d in G.nodes(
-        data=True) if d.get('bipartite') == 1]  # Checks
+        data=True) if d.get('bipartite') == 1]  # Variable nodes
     bottom_nodes = [n for n, d in G.nodes(
-        data=True) if d.get('bipartite') == 0]  # Symbols
+        data=True) if d.get('bipartite') == 0]  # Check nodes
 
     top_nodes.sort()
     bottom_nodes.sort()
 
     # 3. Add Nodes (Explicitly casting to int)
-    canvas_width = 1000
+    canvas_width = 10000
 
-    # --- Add Symbol Nodes (Top visual row: y=100) ---
-    spacing_x_symbols = canvas_width / (len(bottom_nodes) + 1)
+    # --- Add Check Nodes (Top visual row: y=100) ---
+    spacing_x_checks = canvas_width / (len(bottom_nodes) + 1)
     for i, node in enumerate(bottom_nodes):
-        x_pos = (i + 1) * spacing_x_symbols
+        x_pos = (i + 1) * spacing_x_checks
         y_pos = 100
 
         net.add_node(
             int(node),                 # <--- FIX: Cast numpy.int64 to int
-            label=f"S{i}",
-            title=f"Symbol Node {i}",
+            label=f"C{i}",
+            title=f"Check Node {i}",
             color="#87CEEB",           # SkyBlue
             x=x_pos,
             y=y_pos,
@@ -41,16 +41,16 @@ def draw_interactive_tanner_graph(G, filename="tanner_graph.html"):
             shape="circle"
         )
 
-    # --- Add Check Nodes (Bottom visual row: y=400) ---
-    spacing_x_checks = canvas_width / (len(top_nodes) + 1)
+    # --- Add Variable Nodes (Bottom visual row: y=400) ---
+    spacing_x_variables = canvas_width / (len(top_nodes) + 1)
     for i, node in enumerate(top_nodes):
-        x_pos = (i + 1) * spacing_x_checks
+        x_pos = (i + 1) * spacing_x_variables
         y_pos = 400
 
         net.add_node(
             int(node),                 # <--- FIX: Cast numpy.int64 to int
-            label=f"C{i}",
-            title=f"Check Node {i}",
+            label=f"V{i}",
+            title=f"Variable Node {i}",
             color="#F08080",           # LightCoral
             x=x_pos,
             y=y_pos,

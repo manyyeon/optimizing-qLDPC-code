@@ -101,8 +101,8 @@ def generate_neighbor_by_adding_and_removing_edges(theta: nx.MultiGraph) -> tupl
 
     # get (multi)edge number from state theta
     E = neighbor.number_of_edges()
-    m = len([n for n, b in neighbor.nodes(data='bipartite') if b == 0])
-    n = len([n for n, b in neighbor.nodes(data='bipartite') if b == 1])
+    m = len([n for n, b in neighbor.nodes(data='bipartite') if b == 0]) # Check nodes are indexed from 0 to m-1
+    n = len([n for n, b in neighbor.nodes(data='bipartite') if b == 1]) # Data nodes are indexed from m to m+n-1
 
     # sample edges to remove and add
     edges_to_remove = list(npr.choice(E, size=2, replace=False))

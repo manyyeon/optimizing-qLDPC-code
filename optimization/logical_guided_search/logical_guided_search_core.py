@@ -10,6 +10,7 @@ from scipy.sparse import csr_matrix
 from optimization.experiments_settings import (
     add_and_remove_edges,
     tanner_graph_to_parity_check_matrix,
+    parse_edgelist,
 )
 
 
@@ -109,6 +110,7 @@ def generate_logical_guided_candidates(
     require_distance_non_decrease: bool = False,
     candidate_workers: int = 1,
     verbose: bool = False,
+    seen_keys: Optional[set] = None,
 ):
     """
     Generate multiple logical-guided child states from one parent state.
@@ -154,7 +156,7 @@ def generate_logical_guided_candidates(
     tried_proposals = set()
     proposals = []
 
-    # Stage 1: build unique proposals.
+    # Stage 1: build unique proposals, optionally skipping already-seen states.
     while len(proposals) < num_candidates:
         proposal = propose_targeted_swap_from_logical(
             state,
@@ -168,8 +170,20 @@ def generate_logical_guided_candidates(
 
         edges_to_add, edges_to_remove = proposal
         proposal_key = canonicalize_proposal(edges_to_add, edges_to_remove)
-        tried_proposals.add(proposal_key)
 
+        # Tentatively build the new state to check whether we've seen it before
+        new_state = add_and_remove_edges(state, edges_to_add, edges_to_remove)
+        try:
+            new_key = tuple(parse_edgelist(new_state).tolist())
+        except Exception:
+            new_key = None
+
+        if seen_keys is not None and new_key is not None and new_key in seen_keys:
+            # skip this proposal
+            tried_proposals.add(proposal_key)
+            continue
+
+        tried_proposals.add(proposal_key)
         proposals.append((edges_to_add, edges_to_remove))
 
     if not proposals:
@@ -369,8 +383,8 @@ def improve_state_by_breaking_low_weight_logical(
     tried_proposals = set()
     best_attempts = []
 
+    reject_count = 0
     for trial in range(max_trials):
-        reject_count = 0
         proposal = propose_targeted_swap_from_logical(
             state,
             support,
@@ -425,7 +439,10 @@ def improve_state_by_breaking_low_weight_logical(
                     f"  Accepted at trial {trial + 1}/{max_trials}: "
                     f"distance {current_distance}->{new_distance}"
                 )
+            print(f"  Trials completed: {trial + 1}/{max_trials}, valid proposals found: {len(best_attempts)}, rejections due to distance decrease: {reject_count}.")
             return {"accepted": True, **attempt}
+        
+    print(f"  Trials completed: {trial + 1}/{max_trials}, valid proposals found: {len(best_attempts)}, rejections due to distance decrease: {reject_count}.")
 
     if best_attempts:
         if verbose:

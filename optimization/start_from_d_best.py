@@ -1,3 +1,8 @@
+import os
+import sys
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from optimization.experiments_settings import from_edgelist
 from optimization.experiments_settings import MC_budget, noise_levels
 from optimization.experiments_settings import codes, path_to_initial_codes, textfiles
@@ -9,16 +14,13 @@ import numpy as np
 import argparse
 from tqdm import tqdm
 import h5py
-import sys
-import os
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 # exploration_params = [(24, 120), (15, 70), (12, 40), (8, 30)]
 exploration_params = [(24, 40), (15, 70), (12, 40), (12, 40)]
 
-output_file = "optimization/results/fast_greedy_start_from_d_best_L5_2nd.hdf5"
+output_file = os.environ.get(
+    "OUTPUT_HDF5", "optimization/results/fast_greedy_start_from_d_best_L5_2nd.hdf5")
 EARLY_VALID_TARGET = 10
 run_label = "Best neighbor search"
 BEAM_WIDTH = 3  # Number of best states to keep at each step
@@ -119,6 +121,10 @@ def init_dsets(grp, initial_state, initial_result):
         float(initial_result['d_quantum']), dtype=np.float64), is_row=False)
     dsets["decoding_runtimes"] = _ensure_ds(grp, "decoding_runtimes",     np.array(
         float(initial_result['runtimes'][0]), dtype=np.float64), is_row=False)
+    dsets["wall_times"] = _ensure_ds(grp, "wall_times", np.array(
+        0.0, dtype=np.float64), is_row=False)
+    dsets["ler_wall_times"] = _ensure_ds(grp, "ler_wall_times", np.array(
+        0.0, dtype=np.float64), is_row=False)
     dsets["step_summaries"] = _ensure_ds(grp, "step_summaries",        np.array([
                                          0, 0, 0, -1], dtype=np.int64), is_row=True)
 
@@ -135,7 +141,7 @@ def init_dsets(grp, initial_state, initial_result):
     return dsets
 
 
-def append_record(dsets, state, result, parent_id):
+def append_record(dsets, state, result, parent_id, wall_time=np.nan):
     """Append one row for all tracked fields."""
     edge_list = parse_edgelist(state).astype(np.uint32)
 
@@ -170,6 +176,8 @@ def append_record(dsets, state, result, parent_id):
         float(result['d_quantum']), dtype=np.float64))
     _append_row(dsets["decoding_runtimes"],
                 np.array(runtime, dtype=np.float64))
+    _append_row(dsets["wall_times"], np.array(wall_time, dtype=np.float64))
+    _append_row(dsets["ler_wall_times"], np.array(wall_time, dtype=np.float64))
 
     _append_row(dsets["parent_idx"], int(parent_id))
 
@@ -184,27 +192,47 @@ if __name__ == '__main__':
                         default=None, type=int, required=False)
     parser.add_argument('-p', action="store", dest='p',
                         default=None, type=float, required=False)
+    parser.add_argument('--input-file', default="optimization/results/best_neighbor_search_d_first.hdf5",
+                        help='Stage-1 distance-first HDF5 file containing best_state.')
+    parser.add_argument('--beam-width', default=BEAM_WIDTH, type=int,
+                        help='Number of states to keep after each step. Use 1 for greedy.')
+    parser.add_argument('--include-parents', dest='include_parents',
+                        action='store_true', default=INCLUDE_PARENTS,
+                        help='Allow current parents to survive into the next step.')
+    parser.add_argument('--exclude-parents', dest='include_parents',
+                        action='store_false',
+                        help='Select the next state only from newly generated children.')
+    parser.add_argument('--mc-budget', default=MC_budget, type=int,
+                        help='Monte Carlo budget for each LER evaluation.')
+    parser.add_argument('--early-valid-target', default=EARLY_VALID_TARGET, type=int,
+                        help='Stop scanning a parent after this many non-skipped children.')
+    parser.add_argument('--distance-threshold', default=None, type=float,
+                        help='Override the initial distance threshold for skipping.')
     args = parser.parse_args()
 
+    BEAM_WIDTH = args.beam_width
+    INCLUDE_PARENTS = args.include_parents
+    early_valid_target = args.early_valid_target
+    mc_budget = args.mc_budget
     C = args.C
     N, L = exploration_params[C] if (
         args.N is None or args.L is None) else (args.N, args.L)
     p = noise_levels[C] if args.p is None else args.p
-    print(f"{C=}, {N=}, {L=}, {p=}, {BEAM_WIDTH=}")
+    print(f"{C=}, {N=}, {L=}, {p=}, {BEAM_WIDTH=}, {INCLUDE_PARENTS=}, {mc_budget=}")
 
     osd_order = 2
     ms_scaling_factor = 0.625
 
     from optimization.analyze_codes.decoder_performance_from_state import evaluate_performance_of_state
 
-    filepath = "optimization/results/best_neighbor_search_d_first.hdf5"
+    filepath = args.input_file
     code_name = codes[C]
-    p = 0.03
 
     with h5py.File(filepath, "r") as f:
         grp = f[code_name]
         # Load datasets
-        best_state_edge_list = grp["best_state"][:]
+        best_state_ds = grp["best_state"]
+        best_state_edge_list = best_state_ds[0] if best_state_ds.ndim == 2 else best_state_ds[:]
         best_state = from_edgelist(best_state_edge_list)
 
         print(best_state_edge_list)
@@ -217,26 +245,29 @@ if __name__ == '__main__':
 
     with h5py.File(output_file, "a") as f:
         grp = f.require_group(codes[C])
-        grp.attrs['MC_budget'] = MC_budget
+        grp.attrs['MC_budget'] = mc_budget
         grp.attrs['p'] = p
         grp.attrs['N'] = N
         grp.attrs['L'] = L
         grp.attrs['BEAM_WIDTH'] = BEAM_WIDTH
-        grp.attrs['run_label'] = "Beam Search"
+        grp.attrs['INCLUDE_PARENTS'] = bool(INCLUDE_PARENTS)
+        grp.attrs['run_label'] = "Greedy from distance-best" if BEAM_WIDTH == 1 else "Beam from distance-best"
+        grp.attrs['source_stage1_file'] = filepath
 
         # --- Initial Evaluation ---
         cost_result = evaluate_performance_of_state(state=initial_state, p_vals=[
-                                                    p], MC_budget=MC_budget, run_label=run_label, canskip=False)
+                                                    p], MC_budget=mc_budget, run_label=run_label, canskip=False)
 
         init_dist = int(
             min(float(cost_result['d_classical']), float(cost_result['d_T_classical'])))
-        distance_threshold = init_dist + 1
+        distance_threshold = args.distance_threshold if args.distance_threshold is not None else init_dist + 1
         logical_error_rate = float(cost_result['logical_error_rates'][0])
         min_cost = logical_error_rate
 
         # Initialize Datasets
         dsets = init_dsets(grp, initial_state, cost_result)
-        append_record(dsets, initial_state, cost_result, parent_id=-1)
+        append_record(dsets, initial_state, cost_result,
+                      parent_id=-1, wall_time=time.time() - start_time)
 
         _append_row(dsets["beam_survivors"], np.pad(
             [0], (0, BEAM_WIDTH-1), constant_values=-1))
@@ -301,13 +332,14 @@ if __name__ == '__main__':
                     cost_result = evaluate_performance_of_state(
                         state=neighbor,
                         p_vals=[p],
-                        MC_budget=MC_budget,
+                        MC_budget=mc_budget,
                         run_label=run_label,
                         distance_threshold=distance_threshold
                     )
 
                     append_record(dsets, neighbor, cost_result,
-                                  parent_id=parent_idx)
+                                  parent_id=parent_row_idx,
+                                  wall_time=time.time() - start_time)
                     current_row_idx = _current_stream_len(dsets) - 1
 
                     ler = float(cost_result['logical_error_rates'][0]) if len(
@@ -338,7 +370,8 @@ if __name__ == '__main__':
                     else:
                         fallback_candidates.append({
                             'dist': dist_any, 'cost': ler, 'state': neighbor,
-                            'result': cost_result, 'row_idx': current_row_idx
+                            'result': cost_result, 'row_idx': current_row_idx,
+                            'parent_idx': parent_row_idx
                         })
 
                     # Periodic Flush
@@ -346,9 +379,9 @@ if __name__ == '__main__':
                         _flush_file(f)
 
                     # 2. PER-PARENT EARLY STOP
-                    if valid_found_this_parent >= EARLY_VALID_TARGET:
+                    if valid_found_this_parent >= early_valid_target:
                         print(
-                            f"      [Parent {parent_idx+1}] Reached target ({EARLY_VALID_TARGET} valid). Stopping early.")
+                            f"      [Parent {parent_idx+1}] Reached target ({early_valid_target} valid). Stopping early.")
                         break
 
                 print(
@@ -394,11 +427,13 @@ if __name__ == '__main__':
                         print("    Forcing evaluation of best fallback...")
                         full_result = evaluate_performance_of_state(
                             state=best_fallback['state'], p_vals=[
-                                p], MC_budget=MC_budget,
+                                p], MC_budget=mc_budget,
                             run_label=run_label, distance_threshold=distance_threshold, canskip=False
                         )
                         append_record(
-                            dsets, best_fallback['state'], full_result, parent_id=best_fallback['parent_idx'] if 'parent_idx' in best_fallback else -1)
+                            dsets, best_fallback['state'], full_result,
+                            parent_id=best_fallback.get('parent_idx', -1),
+                            wall_time=time.time() - start_time)
                         best_fallback['result'] = full_result
                         best_fallback['cost'] = float(
                             full_result['logical_error_rates'][0])
@@ -430,6 +465,7 @@ if __name__ == '__main__':
 
             print(f"Updated distance threshold to {int(distance_threshold)}")
             runtime_so_far = time.time() - start_time
+            grp.attrs['total_runtime'] = runtime_so_far
             print(
                 f"runtime so far: {runtime_so_far // 3600} hours {(runtime_so_far % 3600) // 60} minutes {runtime_so_far % 60} seconds")
 

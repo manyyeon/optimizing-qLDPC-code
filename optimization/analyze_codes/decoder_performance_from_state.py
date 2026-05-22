@@ -164,8 +164,12 @@ def evaluate_performance_of_state(state: nx.MultiGraph | csr_matrix, p_vals: np.
             osd_order=osd_order,
         )
 
-        logical_error_rate, stderr, runtime = compute_logical_error_rate(
+        res = compute_logical_error_rate(
             Hz, Lz, p, run_count=MC_budget, DECODER=bp_osd_decoder, run_label=run_label, DEBUG=False)
+        if isinstance(res, (list, tuple)) and len(res) >= 3:
+            logical_error_rate, stderr, runtime = res[0], res[1], res[2]
+        else:
+            logical_error_rate, stderr, runtime = res, 0.0, 0.0
 
         logical_error_rates.append(logical_error_rate)
         stderrs.append(stderr)
@@ -269,10 +273,14 @@ def evaluate_performance_of_state_2(state: nx.MultiGraph, p_vals: np.ndarray, MC
             schedule='parallel', osd_method='OSD_CS', osd_order=osd_order,
         )
 
-        ler, stderr, runtime = compute_logical_error_rate(
+        res = compute_logical_error_rate(
             Hz, Lz, p, run_count=MC_budget, DECODER=bp_osd_decoder,
             run_label=run_label, DEBUG=False
         )
+        if isinstance(res, (list, tuple)) and len(res) >= 3:
+            ler, stderr, runtime = res[0], res[1], res[2]
+        else:
+            ler, stderr, runtime = res, 0.0, 0.0
 
         result["logical_error_rates"].append(ler)
         result["stderrs"].append(stderr)
