@@ -49,14 +49,18 @@ def _read_run(input_file: Path, code: str, run_name: str):
 
         code_grp = f[code]
 
-        if run_name not in code_grp:
+        if run_name is None:
+            grp = code_grp
+        
+        elif run_name in code_grp:
+            grp = code_grp[run_name]
+
+        elif run_name not in code_grp:
             raise KeyError(
                 f"{run_name!r} not found under {code!r}. "
                 f"Available: {list(code_grp.keys())}"
             )
-
-        grp = code_grp[run_name]
-
+        
         data = {
             "states": grp["states"][:],
             "ler": grp["logical_error_rates"][:].astype(float),
@@ -79,10 +83,13 @@ def _read_run(input_file: Path, code: str, run_name: str):
     return data
 
 
-def analyze_states(input_file: Path, code: str, run_name: str, max_weight: int, beta: float):
+def analyze_states(input_file: Path, code: str, run_name: str, min_weight: int, max_weight: int, beta: float, metric: str, filter_distance: int | None) -> pd.DataFrame:
     data = _read_run(input_file, code, run_name)
 
     records = []
+
+    
+    data = {k: v[(data["distance"] >= min_weight)] for k, v in data.items()}
 
     for i, state_edge_list in enumerate(data["states"]):
         distance = data["distance"][i]
@@ -93,6 +100,8 @@ def analyze_states(input_file: Path, code: str, run_name: str, max_weight: int, 
 
         state = from_edgelist(state_edge_list)
         H = tanner_graph_to_parity_check_matrix(state)
+
+        max_weight = int(distance) if filter_distance is not None and metric == 'A_at_d' else max_weight
 
         counts = count_parent_low_weight_patterns(H, max_weight=max_weight)
         counts_total = counts["counts_total"]
@@ -109,10 +118,14 @@ def analyze_states(input_file: Path, code: str, run_name: str, max_weight: int, 
         )
 
         weighted_score = np.nan
-        if d_q <= max_weight:
+        if min_weight <= max_weight:
             weighted_score = 0.0
-            for w in range(d_q, max_weight + 1):
-                weighted_score += float(counts_total[w]) * (beta ** (w - d_q))
+            for w in range(min_weight, max_weight + 1):
+                weighted_score += float(counts_total[w]) * (beta ** (w - min_weight))
+
+        print(f"State {i}: distance={distance}, LER={ler:.2e}", 
+            f", weight patterns: {dict((w, counts_total[w]) for w in range(int(distance), max_weight+1))}",
+            f", weighted_score={weighted_score:.6f}")
 
         records.append(
             {
@@ -181,10 +194,12 @@ def plot_scatter(
         plot_df[x_col],
         plot_df["ler"],
         c=plot_df["distance"],
-        s=42,
+        s=32,
         alpha=0.85,
     )
 
+    ax.set_xticks(ax.get_xticks())
+    ax.set_xticklabels([f"{int(tick):d}" for tick in ax.get_xticks()])
     ax.set_xlabel(x_label)
     ax.set_ylabel("Logical error rate")
     ax.set_yscale("log")
@@ -198,6 +213,7 @@ def plot_scatter(
     if filter_distance is None:
         cbar = fig.colorbar(sc, ax=ax)
         cbar.set_label(r"HGP distance $d_Q$")
+        cbar.set_ticks(sorted(plot_df["distance"].unique()))
 
     output_prefix.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(output_prefix.with_suffix(".pdf"))
@@ -226,18 +242,24 @@ def print_correlation(df: pd.DataFrame, filter_distance: int | None, metric: str
     print(f"  Spearman: {spearman:.4f}")
     print()
     print("Summary:")
-    print(df[["distance", "ler", "A_at_d", "A_leq_dplus2", "weighted_score"]].describe())
+    print(df[["distance", "ler", "weighted_score"]].describe())
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input-file", required=True, type=Path)
     parser.add_argument("--code", required=True)
-    parser.add_argument("--run-name", required=True)
+    parser.add_argument("--run-name", required=False, default=None)
     parser.add_argument(
         "--max-weight",
         type=int,
         default=14,
         help="Maximum weight to count. Must be at least d_Q+2.",
+    )
+    parser.add_argument(
+        "--min-weight",
+        type=int,
+        default=10,
+        help="Minimum weight to count. Must be at least 1.",
     )
     parser.add_argument(
         "--filter-distance",
@@ -269,8 +291,11 @@ def main():
         input_file=args.input_file,
         code=args.code,
         run_name=args.run_name,
+        min_weight=args.min_weight,
         max_weight=args.max_weight,
         beta=args.beta,
+        metric=args.metric,
+        filter_distance=args.filter_distance,
     )
 
     csv_path = args.output_prefix.with_suffix(".csv")
