@@ -1,0 +1,26 @@
+code,method,group,distance,ler,ler_std,runtime
+code,method,group,distance,ler,ler_std,runtime
+"[[625,25]]",Random walk,Previous work,8,0.0045166,0.0000300,2d 1h
+"[[625,25]]",Simulated annealing,Previous work,8,0.0035142,0.0000265,40h
+"[[625,25]]",Greedy,This work,8,0.0037024,0.0000272,1h 50m
+"[[625,25]]",Beam search,This work,8,0.0044188,0.0000297,4h 49m
+"[[625,25]]",Distance preproc. + greedy,This work,8,0.0034464,0.0000262,1h 23m
+"[[625,25]]",Distance preproc. + Logical-guided beam,This work,8,0.0047330,0.0000690,11h
+"[[1225,49]]",Random walk,Previous work,10,0.0020482,0.0000202,87h 30m
+"[[1225,49]]",Simulated annealing,Previous work,10,0.0021668,0.0000208,82h 30m
+"[[1225,49]]",Greedy,This work,10,0.0023538,0.0000217,3h 50m
+"[[1225,49]]",Beam search,This work,10,0.0021286,0.0000206,11h 55m
+"[[1225,49]]",Distance preproc. + greedy,This work,10,0.0023218,0.0000215,3h 6m
+"[[1225,49]]",Distance preproc. + Logical-guided beam,This work,10,0.0020868,0.0000204,1h 50m
+"[[1600,64]]",Random walk,Previous work,10,0.0021126,0.0000205,44h 24m
+"[[1600,64]]",Simulated annealing,Previous work,10,0.0020254,0.0000201,88h 15m
+"[[1600,64]]",Greedy,This work,10,0.0015472,0.0000176,9h 3m
+"[[1600,64]]",Beam search,This work,10,0.0014748,0.0000172,21h 44m
+"[[1600,64]]",Distance preproc. + greedy,This work,11,0.0014154,0.0000168,15m
+"[[1600,64]]",Distance preproc. + Logical-guided beam,This work,12,0.0012906,0.0000161,10h 42m
+"[[2025,81]]",Random walk,Previous work,10,0.0016184,0.0000180,34h 20m
+"[[2025,81]]",Simulated annealing,Previous work,11,0.0010534,0.0000145,22h 54m
+"[[2025,81]]",Greedy,This work,12,0.0011098,0.0000149,4h 42m
+"[[2025,81]]",Beam search,This work,12,0.000989,0.0000141,15h 20m
+"[[2025,81]]",Distance preproc. + beam,This work,12,0.00098,0.0000313,1h 52m
+"[[2025,81]]",Distance preproc. + Logical-guided beam,This work,12,0.0009166,0.0000135,11h 30m
