@@ -106,6 +106,10 @@ def analyze_states(input_file: Path, code: str, run_name: str, min_weight: int, 
         counts = count_parent_low_weight_patterns(H, max_weight=max_weight)
         counts_total = counts["counts_total"]
 
+        print("H counts: ", {w: int(counts['counts_H'][w]) for w in range(min_weight, max_weight+1)})
+        print("H^T counts: ", {w: int(counts['counts_HT'][w]) for w in range(min_weight, max_weight+1)})
+        print("Total counts: ", {w: int(counts_total[w]) for w in range(min_weight, max_weight+1)})
+
         d_q = int(distance)
         W_dynamic = min(d_q + 2, max_weight)
 
@@ -157,7 +161,8 @@ def plot_scatter(
         title_suffix = rf"$d_Q={filter_distance}$ only"
     else:
         plot_df = df.copy()
-        title_suffix = r"all distances"
+        # title_suffix = r"all distances"
+        title_suffix = None
 
     if len(plot_df) == 0:
         raise ValueError("No rows to plot after filtering.")
@@ -180,11 +185,14 @@ def plot_scatter(
 
     elif metric == "weighted_score":
         x_col = "weighted_score"
-        x_label = rf"Weighted low-weight score $S_{{W,\beta}}$, $\beta={beta:g}$"
-        title_metric = rf"weighted score, $\beta={beta:g}$"
+        x_label = rf"weight score $S_{{W,\beta}}$, $\beta={beta:g}$"
+        title_metric = rf"weight score, $\beta={beta:g}$"
 
     else:
         raise ValueError(f"Unknown metric: {metric}")
+    
+
+    title_suffix = f"({title_suffix})" if title_suffix is not None else ""
 
     plot_df = plot_df[np.isfinite(plot_df[x_col]) & np.isfinite(plot_df["ler"])].copy()
 
@@ -208,7 +216,7 @@ def plot_scatter(
         ax.set_xscale("log")
 
     ax.grid(True, which="both", alpha=0.25)
-    ax.set_title(f"LER vs. {title_metric} ({title_suffix})")
+    ax.set_title(f"LER vs. {title_metric} {title_suffix}")
 
     if filter_distance is None:
         cbar = fig.colorbar(sc, ax=ax)

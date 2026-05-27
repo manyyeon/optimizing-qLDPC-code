@@ -15,6 +15,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from optimization.experiments_settings import (
     load_tanner_graph,
     parse_edgelist,
+    from_edgelist,
     codes,
     path_to_initial_codes,
     textfiles,
@@ -24,6 +25,7 @@ from optimization.experiments_settings import (
 from optimization.logical_guided_search.logical_guided_eval import (
     get_code_parameters_and_matrices,
     evaluate_mc,
+    compute_weighted_low_weight_score,
 )
 from optimization.logical_guided_search.logical_guided_hdf5 import (
     append_to_hdf5,
@@ -31,23 +33,62 @@ from optimization.logical_guided_search.logical_guided_hdf5 import (
 )
 from optimization.logical_guided_search.logical_guided_search_core import (
     improve_state_by_breaking_low_weight_logical,
+    format_score_info,
 )
 
-OUTPUT_FILE = "optimization/results/logical_guided_search.hdf5"
-SEARCH_STEPS = 20
+SEARCH_STEPS = 50
 TRIALS_PER_STEP = 100
 BUDGET_SCREENING = 10_000
 BUDGET_PRECISION = 100_000
 TOP_K_PRECISION = 10
+STOP_IF_NO_IMPROVEMENT_FOR = 100
 
 
 def state_key(state):
     return tuple(parse_edgelist(state).flatten().tolist())
 
-from optimization.logical_guided_search.logical_guided_eval import (
-    get_code_parameters_and_matrices,
-    evaluate_mc,
-)
+def load_initial_state_from_hdf5(
+    input_file: str,
+    input_code: str,
+    input_run_name: str | None = None,
+    input_dataset: str = "best_state",
+):
+    with h5py.File(input_file, "r") as f:
+        if input_code not in f:
+            raise KeyError(
+                f"{input_code!r} not found in {input_file}. "
+                f"Available code groups: {list(f.keys())}"
+            )
+
+        grp = f[input_code]
+
+        if input_run_name is not None:
+            if input_run_name not in grp:
+                raise KeyError(
+                    f"{input_run_name!r} not found under {input_code!r}. "
+                    f"Available groups: {list(grp.keys())}"
+                )
+            grp = grp[input_run_name]
+
+        if input_dataset not in grp:
+            raise KeyError(
+                f"{input_dataset!r} not found in input group. "
+                f"Available datasets/keys: {list(grp.keys())}"
+            )
+
+        edge_list = np.asarray(grp[input_dataset][:])
+
+    # Many of your best_state datasets are saved as shape (1, E).
+    # Convert that to shape (E,) before from_edgelist.
+    if edge_list.ndim == 2 and edge_list.shape[0] == 1:
+        edge_list = edge_list[0]
+
+    return from_edgelist(edge_list)
+
+def score_top_count(n: int, frac: float, min_top: int, max_top: int) -> int:
+    if n <= 0:
+        return 0
+    return min(max(int(np.ceil(frac * n)), min_top), max_top, n)
 
 def evaluate_candidate_task(task):
     np.random.seed()
@@ -59,7 +100,7 @@ def evaluate_candidate_task(task):
     failure_cap = task.get("failure_cap", None)
     min_runs_before_stop = task.get("min_runs_before_stop", 0)
     workers = task.get("workers", 1)
-    batch_size = task.get("batch_size", 5000)
+    batch_size = task.get("batch_size", 10000)
 
     _, Hx, Hz = get_code_parameters_and_matrices(state)
 
@@ -91,31 +132,103 @@ def main():
     parser.add_argument("-p", default=None, type=float, help="Physical error rate")
     parser.add_argument("-S", default=SEARCH_STEPS, type=int, help="Search steps")
     parser.add_argument("-T", default=TRIALS_PER_STEP, type=int, help="Trials per step")
+    parser.add_argument("--OUTPUT_FILE", default=None, type=str, help="HDF5 file to save results")
     parser.add_argument("--screen_budget", default=BUDGET_SCREENING, type=int)
     parser.add_argument("--prec_budget", default=BUDGET_PRECISION, type=int)
     parser.add_argument("--topk", default=TOP_K_PRECISION, type=int)
     parser.add_argument("--workers", default=1, type=int, help="Number of parallel worker processes")
+    parser.add_argument("--score-beta", default=0.3, type=float)
+    parser.add_argument("--score-window", default=2, type=int)
+    parser.add_argument("--score-top-frac", default=0.10, type=float)
+    parser.add_argument("--score-min-top", default=3, type=int)
+    parser.add_argument("--score-max-top", default=5, type=int)
+    parser.add_argument(
+    "--input-file",
+    default=None,
+    type=str,
+    help="Optional HDF5 file to load the initial state from.",
+    )
+    parser.add_argument(
+        "--input-code",
+        default=None,
+        type=str,
+        help="Code group name in the input HDF5 file, e.g. '[625,25]'.",
+    )
+    parser.add_argument(
+        "--input-run-name",
+        default=None,
+        type=str,
+        help="Optional run group name under the code group.",
+    )
+    parser.add_argument(
+        "--input-dataset",
+        default="best_state",
+        type=str,
+        help="Dataset name containing the initial state edge list.",
+    )
     args = parser.parse_args()
 
     C = args.C
     p = noise_levels[C] if args.p is None else args.p
+    OUTPUT_FILE = (
+        args.OUTPUT_FILE
+        if args.OUTPUT_FILE is not None
+        else "optimization/results/logical_guided_search.hdf5"
+    )
+
+    def score_candidate(state, params=None):
+        return compute_weighted_low_weight_score(
+            state=state,
+            params=params,
+            beta=args.score_beta,
+            max_weight_offset=args.score_window,
+        )
 
     print("\n--- LOGICAL GUIDED SEARCH ---")
     print(f"Code family: {codes[C]}")
     print(f"Noise level p = {p}")
     print(f"Search steps = {args.S}")
     print(f"Trials/step = {args.T}")
-    print(f"Budgets: screening={args.screen_budget}, precision={args.prec_budget}")
+    print(f"Precision budget = {args.prec_budget}")
+    print(
+        f"Score selection: beta={args.score_beta}, "
+        f"window={args.score_window}, "
+        f"top_frac={args.score_top_frac}, "
+        f"min_top={args.score_min_top}, "
+        f"max_top={args.score_max_top}"
+    )
     print(f"Workers = {args.workers}")
+    print(f"Output HDF5: {OUTPUT_FILE}")
+    print(f"Stop if no improvement for {STOP_IF_NO_IMPROVEMENT_FOR} steps")
 
-    initial_state = load_tanner_graph(path_to_initial_codes + textfiles[C])
+    
+    if args.input_file is not None:
+        input_code = args.input_code if args.input_code is not None else codes[C]
+
+        print(f"Loading initial state from HDF5:")
+        print(f"  input_file={args.input_file}")
+        print(f"  input_code={input_code}")
+        print(f"  input_run_name={args.input_run_name}")
+        print(f"  input_dataset={args.input_dataset}")
+
+        initial_state = load_initial_state_from_hdf5(
+            input_file=args.input_file,
+            input_code=input_code,
+            input_run_name=args.input_run_name,
+            input_dataset=args.input_dataset,
+        )
+    else:
+        initial_state = load_tanner_graph(path_to_initial_codes + textfiles[C])
+
     start_time = time.time()
 
     with h5py.File(OUTPUT_FILE, "a") as f:
         grp = f.require_group(codes[C])
         run_name = (
-            f"logical_guided_S{args.S}_T{args.T}_p{p}_"
-            f"{args.screen_budget}screen_{args.prec_budget}prec_top{args.topk}_"
+            f"logical_guided_score_S{args.S}_T{args.T}_p{p}_"
+            f"beta{args.score_beta}_win{args.score_window}_"
+            f"scoretop{args.score_top_frac}_min{args.score_min_top}_max{args.score_max_top}_"
+            f"{args.prec_budget}prec_"
             f"{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         )
         run_grp = grp.require_group(run_name)
@@ -127,10 +240,16 @@ def main():
             "screen_budget": args.screen_budget,
             "prec_budget": args.prec_budget,
             "topk": args.topk,
+            "score_beta": args.score_beta,
+            "score_window": args.score_window,
+            "score_top_frac": args.score_top_frac,
+            "score_min_top": args.score_min_top,
+            "score_max_top": args.score_max_top,
         })
 
         current_state = initial_state
         params_init, Hx_init, Hz_init = get_code_parameters_and_matrices(current_state)
+        score_info_init = score_candidate(current_state, params_init)
         edges_init = parse_edgelist(current_state).astype(np.uint32)
 
         idx_init = append_to_hdf5(
@@ -156,14 +275,18 @@ def main():
             "row_idx": idx_init,
             "dist": min(params_init["d_classical"], params_init["d_T_classical"]),
             "logical_weight": 0.0,
+            "low_weight_score": score_info_init["score"],
+            "score_info": score_info_init,
         }]
 
         last_improvement_step = 0
         global_max_dist = all_candidates[0]["dist"]
 
         print("\n>>> PHASE 1: Logical-guided search")
+
         for step in range(1, args.S + 1):
             print(f"\nStep {step}/{args.S} (global max dist so far = {global_max_dist})")
+            print(f"Score Info of current state: {format_score_info(all_candidates[-1].get('score_info'))}")
 
             result = improve_state_by_breaking_low_weight_logical(
                 state=current_state,
@@ -171,12 +294,19 @@ def main():
                 max_trials=args.T,
                 require_distance_non_decrease=True,
                 verbose=True,
+                score_candidate_fn=score_candidate,
             )
 
             state_to_save = result["state"]
             params = result["params"]
             d_cand = min(params["d_classical"], params["d_T_classical"])
             logical_weight = result["logical_weight"]
+
+            score_info = result.get("score_info")
+            if score_info is None:
+                score_info = score_candidate(state_to_save, params)
+
+            low_weight_score = float(score_info["score"])
 
             edges = parse_edgelist(state_to_save).astype(np.uint32)
             row_idx = append_to_hdf5(
@@ -200,6 +330,8 @@ def main():
                 "row_idx": row_idx,
                 "dist": d_cand,
                 "logical_weight": logical_weight,
+                "low_weight_score": low_weight_score,
+                "score_info": score_info,
             })
 
             if d_cand > global_max_dist:
@@ -211,205 +343,80 @@ def main():
 
             f.flush()
 
-            if step - last_improvement_step >= 5:
-                print("Distance has not increased in the last 5 steps, stopping early.")
+            if step - last_improvement_step >= STOP_IF_NO_IMPROVEMENT_FOR:
+                print(f"Distance has not increased in the last {STOP_IF_NO_IMPROVEMENT_FOR} steps, stopping early.")
                 break
 
-        print(f"\n>>> PHASE 2: Screening ({args.screen_budget})")
+        print(f"\n>>> PHASE 2: Weighted-score selection")
         target_dist = global_max_dist
-        screening_candidates = [c for c in all_candidates if c["dist"] == target_dist]
+        score_candidates = [c for c in all_candidates if c["dist"] == target_dist]
 
         unique_candidates_dict = {}
-        for c in screening_candidates:
+        for c in score_candidates:
             key = state_key(c["state"])
             if key not in unique_candidates_dict:
                 unique_candidates_dict[key] = c
+
         unique_candidates = list(unique_candidates_dict.values())
 
-        print(f"Found {len(all_candidates)} total saved states.")
-        print(f"Screening {len(unique_candidates)} unique candidates with dist == {target_dist}")
+        # Make sure every max-distance candidate has a weighted score.
+        for cand in unique_candidates:
+            if "low_weight_score" not in cand or not np.isfinite(cand["low_weight_score"]):
+                score_info = score_candidate(cand["state"], cand["params"])
+                cand["score_info"] = score_info
+                cand["low_weight_score"] = float(score_info["score"])
 
-
-        screened_results = []
-
-        best_screen_failures = None
-
-        if args.workers == 1:
-            for cand in tqdm(unique_candidates, desc="Running MC (screening)"):
-                _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
-                
-                result = evaluate_mc(Hx, Hz, p,
-                    args.screen_budget,
-                    run_label=f"screen_row_{cand['row_idx']}",
-                    failure_cap=best_screen_failures,
-                    min_runs_before_stop=500,
-                )
-
-                update_hdf5_row(
-                    run_grp,
-                    cand["row_idx"],
-                    result["ler"],
-                    result["stderr"],
-                    result["runtime"],
-                )
-
-                cand["ler"] = result["ler"]
-                cand["std"] = result["stderr"]
-                cand["runtime"] = result["runtime"]
-                cand["failures"] = result["failures"]
-                cand["completed_runs"] = result["completed_runs"]
-                cand["early_stopped"] = result["early_stopped"]
-                screened_results.append(cand)
-                f.flush()
-
-                if (
-                    result["completed_runs"] == args.screen_budget
-                    and (
-                        best_screen_failures is None
-                        or result["failures"] < best_screen_failures
-                    )
-                ):
-                    best_screen_failures = result["failures"]
-        else:
-            if not unique_candidates:
-                print("No candidates to screen.")
-                return
-
-            # 1. Evaluate first candidate fully
-            first_cand = unique_candidates[0]
-            _, Hx0, Hz0 = get_code_parameters_and_matrices(first_cand["state"])
-
-            first_result = evaluate_mc(
-                Hx0,
-                Hz0,
-                p,
-                args.screen_budget,
-                run_label=f"screen_row_{first_cand['row_idx']}",
-                failure_cap=None,
-                min_runs_before_stop=500,
-                workers=args.workers,
-                batch_size=5000,
-            )
-
-            update_hdf5_row(
-                run_grp,
-                first_cand["row_idx"],
-                first_result["ler"],
-                first_result["stderr"],
-                first_result["runtime"],
-            )
-
-            first_cand.update({
-                "ler": first_result["ler"],
-                "std": first_result["stderr"],
-                "runtime": first_result["runtime"],
-                "failures": first_result["failures"],
-                "completed_runs": first_result["completed_runs"],
-                "early_stopped": first_result["early_stopped"],
-            })
-
-            screened_results.append(first_cand)
-            f.flush()
-
-            best_screen_failures = first_result["failures"]
-
-            # 2. Batched parallel
-            remaining = unique_candidates[1:]
-            batch_size = args.workers
-
-            with ProcessPoolExecutor(max_workers=args.workers) as ex:
-                for i in range(0, len(remaining), batch_size):
-                    batch = remaining[i:i + batch_size]
-
-                    tasks = [
-                        {
-                            "state": cand["state"],
-                            "row_idx": cand["row_idx"],
-                            "p": p,
-                            "budget": args.screen_budget,
-                            "run_label": f"screen_row_{cand['row_idx']}",
-                            "failure_cap": best_screen_failures,
-                            "min_runs_before_stop": 500,
-                        }
-                        for cand in batch
-                    ]
-
-                    results_by_row = {}
-
-                    
-                    futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
-
-                    for fut in tqdm(
-                        as_completed(futures),
-                        total=len(futures),
-                        desc=f"Batch {i//batch_size + 1}"
-                    ):
-                        res = fut.result()
-                        results_by_row[res["row_idx"]] = res
-
-                    # 3. Update results + tighten cap
-                    for cand in batch:
-                        result = results_by_row[cand["row_idx"]]
-
-                        update_hdf5_row(
-                            run_grp,
-                            cand["row_idx"],
-                            result["ler"],
-                            result["std"],
-                            result["runtime"],
-                        )
-
-                        cand.update({
-                            "ler": result["ler"],
-                            "std": result["std"],
-                            "runtime": result["runtime"],
-                            "failures": result["failures"],
-                            "completed_runs": result["completed_runs"],
-                            "early_stopped": result["early_stopped"],
-                        })
-
-                        screened_results.append(cand)
-                        f.flush()
-
-                        # tighten incumbent
-                        if (
-                            result["completed_runs"] == args.screen_budget
-                            and result["failures"] < best_screen_failures
-                        ):
-                            best_screen_failures = result["failures"]
-
-        if not screened_results:
-            print("No candidates to screen.")
-            return
-
-        screened_results.sort(
-            key=lambda x: (
-                x.get("early_stopped", False),                  # full runs first
-                x.get("failures", np.inf) if not x.get("early_stopped", False) else np.inf,
-                x["ler"],
+        # Rank by weighted score. Lower score is better.
+        unique_candidates.sort(
+            key=lambda c: (
+                float(c.get("low_weight_score", np.inf)),
+                float(c.get("logical_weight", np.inf)),
+                int(c.get("row_idx", 10**18)),
             )
         )
-        print(f"Best screening LER: {screened_results[0]['ler']:.6f} (dist={screened_results[0]['dist']})")
 
-        print(f"\n>>> PHASE 3: Precision ({args.prec_budget})")
-        full_candidates = [c for c in screened_results if not c.get("early_stopped", False)]
+        num_to_eval = score_top_count(
+            len(unique_candidates),
+            frac=args.score_top_frac,
+            min_top=args.score_min_top,
+            max_top=args.score_max_top,
+        )
 
-        if len(full_candidates) == 0:
-            print("WARNING: all candidates early-stopped, using best partial ones")
-            top_candidates = screened_results[:args.topk]
-        else:
-            top_candidates = full_candidates[:args.topk]
+        top_candidates = unique_candidates[:num_to_eval]
 
-        print(f"Promoting top {len(top_candidates)} candidates: {[c['ler'] for c in top_candidates]}")
-        for c in top_candidates:
-            print(f"  - dist={c['dist']} | screening LER={c['ler']:.6f} ± {c['std']:.6f} | runtime={c['runtime']:.2f}s")
+        print(f"Found {len(all_candidates)} total saved states.")
+        print(f"Found {len(unique_candidates)} unique candidates with dist == {target_dist}.")
+        print(
+            f"Selecting top {num_to_eval} candidates by weighted score only "
+            f"(beta={args.score_beta}, window={args.score_window})."
+        )
+
+        for cand in top_candidates:
+            print(
+                f"  row={cand['row_idx']} | "
+                f"dist={cand['dist']} | "
+                f"target_weight_before_swap={cand['logical_weight']} | "
+                f"{format_score_info(cand.get('score_info'))}"
+            )
+
+        if not top_candidates:
+            print("No candidates selected for precision evaluation.")
+            return
+
+        print(f"\n>>> PHASE 3: Precision LER evaluation ({args.prec_budget})")
         final_best_cand = None
         min_final_ler = np.inf
         final_best_std = np.inf
 
         if args.workers == 1:
             for cand in top_candidates:
-                print(f"Evaluating row {cand['row_idx']} | dist={cand['dist']} | screening LER={cand['ler']:.6f}")
+                print(
+                    f"Evaluating row {cand['row_idx']} | "
+                    f"dist={cand['dist']} | "
+                    f"target_weight={cand['logical_weight']} | "
+                    f"{format_score_info(cand.get('score_info'))}"
+                )
+
                 _, Hx, Hz = get_code_parameters_and_matrices(cand["state"])
 
                 result = evaluate_mc(
@@ -425,7 +432,11 @@ def main():
                 run_t = result["runtime"]
 
                 update_hdf5_row(run_grp, cand["row_idx"], ler, std, run_t)
-                print(f"  -> LER: {ler:.6f} ± {std:.6f} | runtime={run_t//3600}h {run_t%3600//60}m {run_t%60:.2f}s")
+
+                print(
+                    f"  -> LER: {ler:.6f} ± {std:.6f} | "
+                    f"runtime={run_t//3600}h {run_t%3600//60}m {run_t%60:.2f}s"
+                )
 
                 cand["prec_ler"] = ler
                 cand["prec_std"] = std
@@ -437,6 +448,7 @@ def main():
                     final_best_cand = cand
 
                 f.flush()
+
         else:
             tasks = [
                 {
@@ -456,19 +468,35 @@ def main():
             with ProcessPoolExecutor(max_workers=args.workers) as ex:
                 futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
 
-                for fut in tqdm(as_completed(futures), total=len(futures), desc="Running MC (precision)"):
+                for fut in tqdm(
+                    as_completed(futures),
+                    total=len(futures),
+                    desc="Running MC (precision)",
+                ):
                     res = fut.result()
                     results_by_row[res["row_idx"]] = res
 
             for cand in top_candidates:
                 res = results_by_row[cand["row_idx"]]
-                update_hdf5_row(run_grp, cand["row_idx"], res["ler"], res["std"], res["runtime"])
+
+                update_hdf5_row(
+                    run_grp,
+                    cand["row_idx"],
+                    res["ler"],
+                    res["std"],
+                    res["runtime"],
+                )
 
                 print(
-                    f"Evaluating row {cand['row_idx']} | dist={cand['dist']} | "
-                    f"screening LER={cand['ler']:.6f}"
+                    f"Evaluating row {cand['row_idx']} | "
+                    f"dist={cand['dist']} | "
+                    f"score={cand['low_weight_score']:.6g} | "
+                    f"{format_score_info(cand.get('score_info'))}"
                 )
-                print(f"  -> LER: {res['ler']:.6f} ± {res['std']:.6f} | runtime={res['runtime']:.2f}s")
+                print(
+                    f"  -> LER: {res['ler']:.6f} ± {res['std']:.6f} | "
+                    f"runtime={res['runtime']:.2f}s"
+                )
 
                 cand["prec_ler"] = res["ler"]
                 cand["prec_std"] = res["std"]

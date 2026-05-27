@@ -1,0 +1,2045 @@
+
+=== Re-evaluating row 23 with MC budget 1000000 ===
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Distance: 12
+Previous stored LER: 0.00111
+Decoder reeval_1000000_row_23_batch0 finished in 0.0m 9.65s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch0: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_23_batch1 finished in 0.0m 8.34s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch1: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch2 finished in 0.0m 9.24s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch2: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch3 finished in 0.0m 9.04s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch3: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch4 finished in 0.0m 8.41s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch4: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch5 finished in 0.0m 8.73s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch5: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch6 finished in 0.0m 8.53s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch6: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch7 finished in 0.0m 10.40s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch7: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_23_batch8 finished in 0.0m 9.21s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch8: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch9 finished in 0.0m 8.39s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch9: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch10 finished in 0.0m 9.12s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch10: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch11 finished in 0.0m 8.41s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch11: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_23_batch12 finished in 0.0m 8.83s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch12: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch13 finished in 0.0m 8.72s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch13: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch14 finished in 0.0m 8.48s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch14: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch15 finished in 0.0m 8.94s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch15: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch16 finished in 0.0m 9.08s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch16: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_23_batch17 finished in 0.0m 8.26s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch17: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch18 finished in 0.0m 9.95s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch18: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch19 finished in 0.0m 8.67s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch19: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch20 finished in 0.0m 8.42s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch20: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch21 finished in 0.0m 9.58s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch21: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch22 finished in 0.0m 8.60s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch22: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_23_batch23 finished in 0.0m 9.12s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch23: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch24 finished in 0.0m 9.48s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch24: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch25 finished in 0.0m 9.36s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch25: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch26 finished in 0.0m 8.99s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch26: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch27 finished in 0.0m 9.83s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch27: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_23_batch28 finished in 0.0m 7.89s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch28: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch29 finished in 0.0m 9.13s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch29: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch30 finished in 0.0m 8.65s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch30: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch31 finished in 0.0m 8.21s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch31: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch32 finished in 0.0m 8.60s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch32: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch33 finished in 0.0m 8.08s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch33: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_23_batch34 finished in 0.0m 8.58s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch34: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch35 finished in 0.0m 8.46s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch35: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch36 finished in 0.0m 9.84s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch36: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_23_batch37 finished in 0.0m 9.63s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch37: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch38 finished in 0.0m 9.30s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch38: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch39 finished in 0.0m 8.11s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch39: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch40 finished in 0.0m 8.84s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch40: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_23_batch41 finished in 0.0m 8.05s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch41: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch42 finished in 0.0m 9.40s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch42: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch43 finished in 0.0m 8.31s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch43: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch44 finished in 0.0m 8.30s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch44: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch45 finished in 0.0m 9.02s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch45: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch46 finished in 0.0m 8.49s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch46: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch47 finished in 0.0m 9.23s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch47: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_23_batch48 finished in 0.0m 8.60s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch48: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch49 finished in 0.0m 9.19s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch49: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch50 finished in 0.0m 9.36s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch50: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch51 finished in 0.0m 8.53s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch51: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch52 finished in 0.0m 9.18s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch52: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch53 finished in 0.0m 8.52s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch53: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch54 finished in 0.0m 8.88s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch54: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch55 finished in 0.0m 9.03s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch55: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch56 finished in 0.0m 8.17s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch56: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch57 finished in 0.0m 8.74s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch57: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch58 finished in 0.0m 9.65s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch58: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch59 finished in 0.0m 8.47s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch59: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch60 finished in 0.0m 8.68s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch60: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch61 finished in 0.0m 7.95s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch61: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch62 finished in 0.0m 9.28s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch62: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch63 finished in 0.0m 8.54s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch63: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch64 finished in 0.0m 8.83s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch64: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_23_batch65 finished in 0.0m 8.97s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch65: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch66 finished in 0.0m 8.60s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch66: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch67 finished in 0.0m 8.64s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch67: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch68 finished in 0.0m 8.65s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch68: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_23_batch69 finished in 0.0m 9.09s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch69: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch70 finished in 0.0m 9.05s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch70: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch71 finished in 0.0m 9.92s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch71: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch72 finished in 0.0m 9.00s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch72: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch73 finished in 0.0m 9.60s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch73: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_23_batch74 finished in 0.0m 8.88s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch74: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch75 finished in 0.0m 9.05s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch75: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch76 finished in 0.0m 9.12s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch76: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch77 finished in 0.0m 8.29s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch77: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_23_batch78 finished in 0.0m 8.57s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch78: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch79 finished in 0.0m 8.15s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch79: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch80 finished in 0.0m 8.96s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch80: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_23_batch81 finished in 0.0m 8.53s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch81: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch82 finished in 0.0m 8.86s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch82: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch83 finished in 0.0m 9.01s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch83: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch84 finished in 0.0m 8.50s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch84: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch85 finished in 0.0m 8.59s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch85: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch86 finished in 0.0m 8.28s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch86: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch87 finished in 0.0m 9.23s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch87: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch88 finished in 0.0m 8.45s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch88: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch89 finished in 0.0m 9.51s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch89: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch90 finished in 0.0m 9.06s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch90: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch91 finished in 0.0m 8.16s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch91: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch92 finished in 0.0m 9.05s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch92: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch93 finished in 0.0m 8.08s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch93: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch94 finished in 0.0m 9.94s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch94: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch95 finished in 0.0m 8.88s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch95: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch96 finished in 0.0m 8.46s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch96: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch97 finished in 0.0m 8.32s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch97: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch98 finished in 0.0m 8.45s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch98: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_23_batch99 finished in 0.0m 9.07s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch99: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch100 finished in 0.0m 8.15s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch100: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch101 finished in 0.0m 9.37s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch101: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch102 finished in 0.0m 8.71s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch102: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch103 finished in 0.0m 8.32s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch103: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch104 finished in 0.0m 9.73s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch104: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch105 finished in 0.0m 8.26s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch105: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch106 finished in 0.0m 9.05s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch106: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch107 finished in 0.0m 8.90s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch107: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch108 finished in 0.0m 8.17s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch108: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch109 finished in 0.0m 8.64s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch109: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_23_batch110 finished in 0.0m 7.80s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch110: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch111 finished in 0.0m 8.43s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch111: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch112 finished in 0.0m 8.51s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch112: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch113 finished in 0.0m 8.92s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch113: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch114 finished in 0.0m 9.73s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch114: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch115 finished in 0.0m 8.66s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch115: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch116 finished in 0.0m 9.11s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch116: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch117 finished in 0.0m 8.87s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch117: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch118 finished in 0.0m 9.94s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch118: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch119 finished in 0.0m 9.29s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch119: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch120 finished in 0.0m 9.27s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch120: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch121 finished in 0.0m 8.76s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch121: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch122 finished in 0.0m 8.91s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch122: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch123 finished in 0.0m 8.24s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch123: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch124 finished in 0.0m 9.04s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch124: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch125 finished in 0.0m 8.71s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch125: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch126 finished in 0.0m 9.36s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch126: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch127 finished in 0.0m 9.73s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch127: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_23_batch128 finished in 0.0m 8.57s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch128: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch129 finished in 0.0m 8.72s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch129: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch130 finished in 0.0m 8.42s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch130: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_23_batch131 finished in 0.0m 9.12s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch131: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch132 finished in 0.0m 8.67s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch132: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch133 finished in 0.0m 8.36s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch133: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch134 finished in 0.0m 8.96s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch134: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch135 finished in 0.0m 8.11s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch135: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch136 finished in 0.0m 9.64s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch136: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch137 finished in 0.0m 8.66s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch137: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch138 finished in 0.0m 8.97s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch138: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch139 finished in 0.0m 9.27s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch139: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch140 finished in 0.0m 8.16s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch140: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch141 finished in 0.0m 9.41s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch141: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch142 finished in 0.0m 8.85s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch142: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch143 finished in 0.0m 8.15s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch143: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch144 finished in 0.0m 8.08s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch144: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_23_batch145 finished in 0.0m 8.47s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch145: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch146 finished in 0.0m 8.59s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch146: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch147 finished in 0.0m 8.46s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch147: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch148 finished in 0.0m 7.89s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch148: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch149 finished in 0.0m 8.95s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch149: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch150 finished in 0.0m 9.32s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch150: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_23_batch151 finished in 0.0m 8.52s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch151: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch152 finished in 0.0m 8.92s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch152: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch153 finished in 0.0m 8.71s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch153: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch154 finished in 0.0m 8.46s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch154: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch155 finished in 0.0m 8.52s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch155: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch156 finished in 0.0m 7.93s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch156: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch157 finished in 0.0m 10.44s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch157: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch158 finished in 0.0m 8.64s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch158: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch159 finished in 0.0m 9.08s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch159: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch160 finished in 0.0m 9.19s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch160: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch161 finished in 0.0m 8.44s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch161: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch162 finished in 0.0m 8.61s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch162: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch163 finished in 0.0m 9.41s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch163: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch164 finished in 0.0m 9.15s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch164: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch165 finished in 0.0m 8.79s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch165: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch166 finished in 0.0m 9.04s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch166: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_23_batch167 finished in 0.0m 9.00s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch167: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch168 finished in 0.0m 8.55s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch168: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch169 finished in 0.0m 8.69s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch169: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch170 finished in 0.0m 9.19s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch170: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch171 finished in 0.0m 8.48s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch171: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch172 finished in 0.0m 8.75s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch172: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch173 finished in 0.0m 9.00s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch173: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch174 finished in 0.0m 8.29s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch174: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_23_batch175 finished in 0.0m 9.25s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch175: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch176 finished in 0.0m 9.16s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch176: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_23_batch177 finished in 0.0m 8.25s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch177: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch178 finished in 0.0m 9.02s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch178: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch179 finished in 0.0m 8.58s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch179: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_23_batch180 finished in 0.0m 8.81s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch180: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_23_batch181 finished in 0.0m 8.58s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch181: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch182 finished in 0.0m 8.90s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch182: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_23_batch183 finished in 0.0m 8.04s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch183: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch184 finished in 0.0m 9.38s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch184: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch185 finished in 0.0m 7.94s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch185: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_23_batch186 finished in 0.0m 8.67s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch186: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_23_batch187 finished in 0.0m 8.36s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch187: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_23_batch188 finished in 0.0m 8.01s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch188: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_23_batch189 finished in 0.0m 8.54s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch189: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch190 finished in 0.0m 7.61s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch190: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_23_batch191 finished in 0.0m 9.43s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch191: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_23_batch192 finished in 0.0m 8.93s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch192: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch193 finished in 0.0m 8.30s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch193: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch194 finished in 0.0m 9.00s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch194: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch195 finished in 0.0m 8.00s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch195: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_23_batch196 finished in 0.0m 10.30s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch196: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23_batch197 finished in 0.0m 7.93s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch197: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_23_batch198 finished in 0.0m 9.18s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch198: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_23_batch199 finished in 0.0m 8.59s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_23_batch199: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_23 finished in 29.0m 21.60s with 1099 failures out of 1000000/1000000 runs.
+Logical error rate for reeval_1000000_row_23: 0.001099 ± 0.0000331 (stderr)
+New LER: 0.001099 ± 3.3132964e-05 | failures=1099 / 1000000 | runtime=1761.60s
+
+=== Re-evaluating row 39 with MC budget 1000000 ===
+Distance: 12
+Previous stored LER: 0.00094
+Decoder reeval_1000000_row_39_batch0 finished in 0.0m 9.11s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch0: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch1 finished in 0.0m 9.59s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch1: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch2 finished in 0.0m 9.01s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch2: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch3 finished in 0.0m 8.50s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch3: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch4 finished in 0.0m 10.68s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch4: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch5 finished in 0.0m 10.33s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch5: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch6 finished in 0.0m 9.56s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch6: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch7 finished in 0.0m 9.56s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch7: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_39_batch8 finished in 0.0m 9.55s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch8: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch9 finished in 0.0m 10.09s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch9: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch10 finished in 0.0m 9.24s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch10: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch11 finished in 0.0m 9.29s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch11: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch12 finished in 0.0m 9.12s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch12: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch13 finished in 0.0m 10.16s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch13: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch14 finished in 0.0m 9.08s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch14: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch15 finished in 0.0m 10.05s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch15: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch16 finished in 0.0m 9.81s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch16: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch17 finished in 0.0m 9.41s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch17: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch18 finished in 0.0m 9.40s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch18: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_39_batch19 finished in 0.0m 9.67s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch19: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch20 finished in 0.0m 9.53s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch20: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch21 finished in 0.0m 9.46s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch21: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch22 finished in 0.0m 9.71s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch22: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch23 finished in 0.0m 9.96s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch23: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch24 finished in 0.0m 10.00s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch24: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch25 finished in 0.0m 9.60s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch25: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch26 finished in 0.0m 10.45s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch26: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch27 finished in 0.0m 9.06s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch27: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_39_batch28 finished in 0.0m 9.18s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch28: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch29 finished in 0.0m 9.17s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch29: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch30 finished in 0.0m 9.43s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch30: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch31 finished in 0.0m 9.62s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch31: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch32 finished in 0.0m 8.74s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch32: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch33 finished in 0.0m 10.26s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch33: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch34 finished in 0.0m 9.36s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch34: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch35 finished in 0.0m 8.97s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch35: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch36 finished in 0.0m 9.50s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch36: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch37 finished in 0.0m 8.71s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch37: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch38 finished in 0.0m 8.75s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch38: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch39 finished in 0.0m 9.43s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch39: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch40 finished in 0.0m 8.82s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch40: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch41 finished in 0.0m 9.59s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch41: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch42 finished in 0.0m 9.03s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch42: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch43 finished in 0.0m 10.56s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch43: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch44 finished in 0.0m 9.34s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch44: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch45 finished in 0.0m 8.82s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch45: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch46 finished in 0.0m 9.17s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch46: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch47 finished in 0.0m 9.54s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch47: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch48 finished in 0.0m 9.81s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch48: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch49 finished in 0.0m 8.99s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch49: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch50 finished in 0.0m 10.00s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch50: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch51 finished in 0.0m 9.72s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch51: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch52 finished in 0.0m 9.23s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch52: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch53 finished in 0.0m 9.69s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch53: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch54 finished in 0.0m 10.08s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch54: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch55 finished in 0.0m 8.86s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch55: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch56 finished in 0.0m 9.23s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch56: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_39_batch57 finished in 0.0m 9.29s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch57: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch58 finished in 0.0m 8.26s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch58: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch59 finished in 0.0m 5.30s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch59: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch60 finished in 0.0m 5.67s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch60: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch61 finished in 0.0m 5.58s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch61: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch62 finished in 0.0m 5.57s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch62: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch63 finished in 0.0m 5.52s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch63: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_39_batch64 finished in 0.0m 5.56s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch64: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch65 finished in 0.0m 5.53s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch65: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch66 finished in 0.0m 5.54s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch66: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch67 finished in 0.0m 5.71s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch67: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch68 finished in 0.0m 6.02s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch68: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch69 finished in 0.0m 5.32s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch69: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch70 finished in 0.0m 5.58s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch70: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch71 finished in 0.0m 5.59s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch71: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_39_batch72 finished in 0.0m 5.99s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch72: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch73 finished in 0.0m 6.26s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch73: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch74 finished in 0.0m 5.56s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch74: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch75 finished in 0.0m 5.78s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch75: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_39_batch76 finished in 0.0m 5.53s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch76: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch77 finished in 0.0m 5.51s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch77: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_39_batch78 finished in 0.0m 5.63s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch78: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch79 finished in 0.0m 5.53s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch79: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_39_batch80 finished in 0.0m 5.66s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch80: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch81 finished in 0.0m 5.64s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch81: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch82 finished in 0.0m 5.51s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch82: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch83 finished in 0.0m 5.58s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch83: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch84 finished in 0.0m 5.72s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch84: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch85 finished in 0.0m 5.82s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch85: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch86 finished in 0.0m 5.68s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch86: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_39_batch87 finished in 0.0m 5.60s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch87: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch88 finished in 0.0m 5.48s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch88: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch89 finished in 0.0m 5.86s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch89: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch90 finished in 0.0m 5.39s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch90: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch91 finished in 0.0m 5.33s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch91: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch92 finished in 0.0m 6.03s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch92: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch93 finished in 0.0m 5.60s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch93: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch94 finished in 0.0m 5.51s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch94: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch95 finished in 0.0m 5.47s with 0 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch95: 0.0 ± 0.0000000 (stderr)
+Decoder reeval_1000000_row_39_batch96 finished in 0.0m 5.64s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch96: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch97 finished in 0.0m 5.47s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch97: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch98 finished in 0.0m 5.55s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch98: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch99 finished in 0.0m 5.72s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch99: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch100 finished in 0.0m 5.56s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch100: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch101 finished in 0.0m 5.62s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch101: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch102 finished in 0.0m 5.46s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch102: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch103 finished in 0.0m 5.74s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch103: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch104 finished in 0.0m 5.97s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch104: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch105 finished in 0.0m 5.48s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch105: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch106 finished in 0.0m 5.66s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch106: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_39_batch107 finished in 0.0m 5.65s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch107: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch108 finished in 0.0m 5.28s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch108: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch109 finished in 0.0m 5.86s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch109: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch110 finished in 0.0m 5.57s with 0 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch110: 0.0 ± 0.0000000 (stderr)
+Decoder reeval_1000000_row_39_batch111 finished in 0.0m 5.73s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch111: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_39_batch112 finished in 0.0m 5.72s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch112: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch113 finished in 0.0m 5.57s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch113: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch114 finished in 0.0m 6.19s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch114: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch115 finished in 0.0m 5.57s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch115: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch116 finished in 0.0m 5.39s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch116: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch117 finished in 0.0m 5.63s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch117: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch118 finished in 0.0m 5.60s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch118: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_39_batch119 finished in 0.0m 5.32s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch119: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch120 finished in 0.0m 6.14s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch120: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_39_batch121 finished in 0.0m 5.85s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch121: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch122 finished in 0.0m 5.73s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch122: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch123 finished in 0.0m 5.19s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch123: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch124 finished in 0.0m 5.66s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch124: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch125 finished in 0.0m 5.69s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch125: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch126 finished in 0.0m 5.42s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch126: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch127 finished in 0.0m 5.65s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch127: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch128 finished in 0.0m 5.57s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch128: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch129 finished in 0.0m 5.36s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch129: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch130 finished in 0.0m 5.41s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch130: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch131 finished in 0.0m 5.58s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch131: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_39_batch132 finished in 0.0m 5.79s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch132: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch133 finished in 0.0m 5.46s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch133: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch134 finished in 0.0m 5.59s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch134: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch135 finished in 0.0m 5.31s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch135: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch136 finished in 0.0m 5.64s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch136: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_39_batch137 finished in 0.0m 5.57s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch137: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch138 finished in 0.0m 5.34s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch138: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch139 finished in 0.0m 5.65s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch139: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch140 finished in 0.0m 5.65s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch140: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch141 finished in 0.0m 5.88s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch141: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_39_batch142 finished in 0.0m 5.46s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch142: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch143 finished in 0.0m 5.99s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch143: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch144 finished in 0.0m 5.50s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch144: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch145 finished in 0.0m 5.30s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch145: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch146 finished in 0.0m 5.67s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch146: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch147 finished in 0.0m 5.28s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch147: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch148 finished in 0.0m 5.65s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch148: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch149 finished in 0.0m 5.74s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch149: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch150 finished in 0.0m 5.78s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch150: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_39_batch151 finished in 0.0m 5.77s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch151: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch152 finished in 0.0m 5.53s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch152: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch153 finished in 0.0m 5.67s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch153: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch154 finished in 0.0m 5.44s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch154: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch155 finished in 0.0m 5.64s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch155: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch156 finished in 0.0m 5.75s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch156: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch157 finished in 0.0m 5.57s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch157: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch158 finished in 0.0m 5.71s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch158: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch159 finished in 0.0m 5.36s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch159: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch160 finished in 0.0m 5.55s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch160: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_39_batch161 finished in 0.0m 5.69s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch161: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch162 finished in 0.0m 5.72s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch162: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch163 finished in 0.0m 5.43s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch163: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch164 finished in 0.0m 5.21s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch164: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_39_batch165 finished in 0.0m 5.76s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch165: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch166 finished in 0.0m 5.71s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch166: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch167 finished in 0.0m 5.61s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch167: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_39_batch168 finished in 0.0m 5.81s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch168: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch169 finished in 0.0m 5.50s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch169: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch170 finished in 0.0m 5.53s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch170: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch171 finished in 0.0m 5.82s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch171: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch172 finished in 0.0m 5.48s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch172: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_39_batch173 finished in 0.0m 5.68s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch173: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch174 finished in 0.0m 5.65s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch174: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_39_batch175 finished in 0.0m 5.73s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch175: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch176 finished in 0.0m 5.84s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch176: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_39_batch177 finished in 0.0m 5.77s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch177: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch178 finished in 0.0m 5.45s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch178: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch179 finished in 0.0m 5.32s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch179: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch180 finished in 0.0m 5.34s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch180: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch181 finished in 0.0m 5.54s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch181: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch182 finished in 0.0m 5.62s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch182: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch183 finished in 0.0m 5.82s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch183: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch184 finished in 0.0m 5.63s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch184: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch185 finished in 0.0m 5.95s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch185: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_39_batch186 finished in 0.0m 5.71s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch186: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch187 finished in 0.0m 5.56s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch187: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39_batch188 finished in 0.0m 5.65s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch188: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch189 finished in 0.0m 5.59s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch189: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch190 finished in 0.0m 5.38s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch190: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch191 finished in 0.0m 5.47s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch191: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch192 finished in 0.0m 5.60s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch192: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_39_batch193 finished in 0.0m 5.65s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch193: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch194 finished in 0.0m 5.56s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch194: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch195 finished in 0.0m 5.64s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch195: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_39_batch196 finished in 0.0m 5.26s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch196: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_39_batch197 finished in 0.0m 5.70s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch197: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_39_batch198 finished in 0.0m 5.64s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch198: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_39_batch199 finished in 0.0m 5.60s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_39_batch199: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_39 finished in 22.0m 29.42s with 1018 failures out of 1000000/1000000 runs.
+Logical error rate for reeval_1000000_row_39: 0.001018 ± 0.0000319 (stderr)
+New LER: 0.001018 ± 3.1889884e-05 | failures=1018 / 1000000 | runtime=1349.42s
+
+=== Re-evaluating row 16 with MC budget 1000000 ===
+Distance: 12
+Previous stored LER: 0.00121
+Decoder reeval_1000000_row_16_batch0 finished in 0.0m 5.21s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch0: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch1 finished in 0.0m 5.20s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch1: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch2 finished in 0.0m 5.36s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch2: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch3 finished in 0.0m 4.88s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch3: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch4 finished in 0.0m 5.14s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch4: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch5 finished in 0.0m 5.16s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch5: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch6 finished in 0.0m 4.92s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch6: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch7 finished in 0.0m 5.57s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch7: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch8 finished in 0.0m 5.02s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch8: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch9 finished in 0.0m 5.12s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch9: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch10 finished in 0.0m 5.27s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch10: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch11 finished in 0.0m 5.39s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch11: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch12 finished in 0.0m 5.38s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch12: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch13 finished in 0.0m 5.07s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch13: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch14 finished in 0.0m 5.01s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch14: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch15 finished in 0.0m 5.03s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch15: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch16 finished in 0.0m 5.13s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch16: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch17 finished in 0.0m 5.02s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch17: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch18 finished in 0.0m 5.26s with 14 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch18: 0.0028 ± 0.0007474 (stderr)
+Decoder reeval_1000000_row_16_batch19 finished in 0.0m 5.06s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch19: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch20 finished in 0.0m 5.00s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch20: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch21 finished in 0.0m 4.98s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch21: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_16_batch22 finished in 0.0m 5.09s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch22: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch23 finished in 0.0m 5.33s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch23: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_16_batch24 finished in 0.0m 5.29s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch24: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch25 finished in 0.0m 5.06s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch25: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch26 finished in 0.0m 5.27s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch26: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch27 finished in 0.0m 5.33s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch27: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch28 finished in 0.0m 5.22s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch28: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch29 finished in 0.0m 5.19s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch29: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch30 finished in 0.0m 5.27s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch30: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch31 finished in 0.0m 5.29s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch31: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch32 finished in 0.0m 5.14s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch32: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch33 finished in 0.0m 5.21s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch33: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch34 finished in 0.0m 5.08s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch34: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch35 finished in 0.0m 5.23s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch35: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch36 finished in 0.0m 5.23s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch36: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch37 finished in 0.0m 5.34s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch37: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch38 finished in 0.0m 4.98s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch38: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch39 finished in 0.0m 5.23s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch39: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch40 finished in 0.0m 5.44s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch40: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch41 finished in 0.0m 5.34s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch41: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch42 finished in 0.0m 4.94s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch42: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_16_batch43 finished in 0.0m 5.09s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch43: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch44 finished in 0.0m 4.89s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch44: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch45 finished in 0.0m 4.99s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch45: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch46 finished in 0.0m 5.34s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch46: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch47 finished in 0.0m 5.38s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch47: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch48 finished in 0.0m 4.92s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch48: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch49 finished in 0.0m 5.34s with 18 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch49: 0.0036 ± 0.0008471 (stderr)
+Decoder reeval_1000000_row_16_batch50 finished in 0.0m 5.02s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch50: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_16_batch51 finished in 0.0m 4.99s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch51: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch52 finished in 0.0m 5.01s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch52: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch53 finished in 0.0m 5.42s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch53: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_16_batch54 finished in 0.0m 5.14s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch54: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch55 finished in 0.0m 5.00s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch55: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch56 finished in 0.0m 4.94s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch56: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch57 finished in 0.0m 5.06s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch57: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch58 finished in 0.0m 5.18s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch58: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch59 finished in 0.0m 4.78s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch59: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch60 finished in 0.0m 5.30s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch60: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch61 finished in 0.0m 5.10s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch61: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch62 finished in 0.0m 5.05s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch62: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch63 finished in 0.0m 5.00s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch63: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch64 finished in 0.0m 4.89s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch64: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch65 finished in 0.0m 5.13s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch65: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch66 finished in 0.0m 5.15s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch66: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch67 finished in 0.0m 5.08s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch67: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch68 finished in 0.0m 5.50s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch68: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch69 finished in 0.0m 5.26s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch69: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch70 finished in 0.0m 5.25s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch70: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch71 finished in 0.0m 5.59s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch71: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch72 finished in 0.0m 4.92s with 14 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch72: 0.0028 ± 0.0007474 (stderr)
+Decoder reeval_1000000_row_16_batch73 finished in 0.0m 5.30s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch73: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch74 finished in 0.0m 5.07s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch74: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch75 finished in 0.0m 5.47s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch75: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch76 finished in 0.0m 5.08s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch76: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch77 finished in 0.0m 5.38s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch77: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_16_batch78 finished in 0.0m 5.00s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch78: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch79 finished in 0.0m 5.07s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch79: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch80 finished in 0.0m 5.31s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch80: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch81 finished in 0.0m 5.64s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch81: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch82 finished in 0.0m 4.84s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch82: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch83 finished in 0.0m 5.16s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch83: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_16_batch84 finished in 0.0m 5.26s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch84: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch85 finished in 0.0m 5.14s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch85: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch86 finished in 0.0m 5.12s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch86: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch87 finished in 0.0m 5.44s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch87: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch88 finished in 0.0m 5.41s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch88: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch89 finished in 0.0m 5.31s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch89: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_16_batch90 finished in 0.0m 5.17s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch90: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch91 finished in 0.0m 5.30s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch91: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch92 finished in 0.0m 5.38s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch92: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch93 finished in 0.0m 5.07s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch93: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_16_batch94 finished in 0.0m 5.42s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch94: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch95 finished in 0.0m 5.23s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch95: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch96 finished in 0.0m 5.37s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch96: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch97 finished in 0.0m 5.56s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch97: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch98 finished in 0.0m 5.07s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch98: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch99 finished in 0.0m 5.21s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch99: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch100 finished in 0.0m 5.23s with 13 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch100: 0.0026 ± 0.0007202 (stderr)
+Decoder reeval_1000000_row_16_batch101 finished in 0.0m 4.93s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch101: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch102 finished in 0.0m 5.27s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch102: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_16_batch103 finished in 0.0m 5.16s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch103: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch104 finished in 0.0m 5.56s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch104: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch105 finished in 0.0m 5.08s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch105: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch106 finished in 0.0m 5.14s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch106: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch107 finished in 0.0m 5.15s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch107: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch108 finished in 0.0m 5.15s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch108: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch109 finished in 0.0m 5.26s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch109: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch110 finished in 0.0m 5.25s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch110: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_16_batch111 finished in 0.0m 4.97s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch111: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch112 finished in 0.0m 4.82s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch112: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch113 finished in 0.0m 5.19s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch113: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch114 finished in 0.0m 4.94s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch114: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch115 finished in 0.0m 5.11s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch115: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch116 finished in 0.0m 5.25s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch116: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch117 finished in 0.0m 5.10s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch117: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch118 finished in 0.0m 5.11s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch118: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch119 finished in 0.0m 5.33s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch119: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch120 finished in 0.0m 5.32s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch120: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch121 finished in 0.0m 5.43s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch121: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch122 finished in 0.0m 4.76s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch122: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch123 finished in 0.0m 5.29s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch123: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch124 finished in 0.0m 5.14s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch124: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_16_batch125 finished in 0.0m 4.85s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch125: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch126 finished in 0.0m 5.29s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch126: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch127 finished in 0.0m 5.02s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch127: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch128 finished in 0.0m 5.21s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch128: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch129 finished in 0.0m 5.11s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch129: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch130 finished in 0.0m 4.92s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch130: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch131 finished in 0.0m 5.17s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch131: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch132 finished in 0.0m 5.68s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch132: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch133 finished in 0.0m 5.14s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch133: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch134 finished in 0.0m 5.01s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch134: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch135 finished in 0.0m 4.97s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch135: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch136 finished in 0.0m 5.39s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch136: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch137 finished in 0.0m 5.23s with 15 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch137: 0.003 ± 0.0007735 (stderr)
+Decoder reeval_1000000_row_16_batch138 finished in 0.0m 5.24s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch138: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch139 finished in 0.0m 5.47s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch139: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch140 finished in 0.0m 5.42s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch140: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_16_batch141 finished in 0.0m 5.04s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch141: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch142 finished in 0.0m 5.23s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch142: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch143 finished in 0.0m 5.18s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch143: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch144 finished in 0.0m 5.06s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch144: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch145 finished in 0.0m 5.03s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch145: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch146 finished in 0.0m 4.98s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch146: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch147 finished in 0.0m 4.95s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch147: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch148 finished in 0.0m 4.94s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch148: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch149 finished in 0.0m 4.78s with 16 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch149: 0.0032 ± 0.0007988 (stderr)
+Decoder reeval_1000000_row_16_batch150 finished in 0.0m 5.25s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch150: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch151 finished in 0.0m 5.27s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch151: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch152 finished in 0.0m 5.32s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch152: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch153 finished in 0.0m 5.14s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch153: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch154 finished in 0.0m 5.20s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch154: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch155 finished in 0.0m 5.52s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch155: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch156 finished in 0.0m 5.31s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch156: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch157 finished in 0.0m 5.29s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch157: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_16_batch158 finished in 0.0m 5.31s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch158: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch159 finished in 0.0m 4.98s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch159: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_16_batch160 finished in 0.0m 5.14s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch160: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch161 finished in 0.0m 5.13s with 15 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch161: 0.003 ± 0.0007735 (stderr)
+Decoder reeval_1000000_row_16_batch162 finished in 0.0m 5.20s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch162: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch163 finished in 0.0m 5.26s with 13 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch163: 0.0026 ± 0.0007202 (stderr)
+Decoder reeval_1000000_row_16_batch164 finished in 0.0m 4.84s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch164: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch165 finished in 0.0m 5.00s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch165: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_16_batch166 finished in 0.0m 5.33s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch166: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch167 finished in 0.0m 5.01s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch167: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch168 finished in 0.0m 5.19s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch168: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_16_batch169 finished in 0.0m 5.67s with 16 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch169: 0.0032 ± 0.0007988 (stderr)
+Decoder reeval_1000000_row_16_batch170 finished in 0.0m 4.75s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch170: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch171 finished in 0.0m 4.94s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch171: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch172 finished in 0.0m 5.14s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch172: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch173 finished in 0.0m 5.14s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch173: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch174 finished in 0.0m 5.15s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch174: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch175 finished in 0.0m 5.28s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch175: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch176 finished in 0.0m 5.08s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch176: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch177 finished in 0.0m 5.40s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch177: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch178 finished in 0.0m 5.22s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch178: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch179 finished in 0.0m 5.06s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch179: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch180 finished in 0.0m 5.55s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch180: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch181 finished in 0.0m 5.32s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch181: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch182 finished in 0.0m 5.48s with 13 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch182: 0.0026 ± 0.0007202 (stderr)
+Decoder reeval_1000000_row_16_batch183 finished in 0.0m 5.35s with 14 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch183: 0.0028 ± 0.0007474 (stderr)
+Decoder reeval_1000000_row_16_batch184 finished in 0.0m 5.56s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch184: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch185 finished in 0.0m 5.50s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch185: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch186 finished in 0.0m 5.22s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch186: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_16_batch187 finished in 0.0m 5.45s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch187: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_16_batch188 finished in 0.0m 5.35s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch188: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch189 finished in 0.0m 5.18s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch189: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_16_batch190 finished in 0.0m 5.06s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch190: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch191 finished in 0.0m 5.11s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch191: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch192 finished in 0.0m 5.04s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch192: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_16_batch193 finished in 0.0m 5.40s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch193: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16_batch194 finished in 0.0m 5.34s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch194: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_16_batch195 finished in 0.0m 5.62s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch195: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_16_batch196 finished in 0.0m 5.16s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch196: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_16_batch197 finished in 0.0m 5.41s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch197: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_16_batch198 finished in 0.0m 5.33s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch198: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_16_batch199 finished in 0.0m 5.11s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_16_batch199: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_16 finished in 17.0m 17.63s with 1536 failures out of 1000000/1000000 runs.
+Logical error rate for reeval_1000000_row_16: 0.001536 ± 0.0000392 (stderr)
+New LER: 0.001536 ± 3.9161745e-05 | failures=1536 / 1000000 | runtime=1037.63s
+
+=== Re-evaluating row 44 with MC budget 1000000 ===
+Distance: 12
+Previous stored LER: 0.00102
+Decoder reeval_1000000_row_44_batch0 finished in 0.0m 5.65s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch0: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch1 finished in 0.0m 5.79s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch1: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch2 finished in 0.0m 5.85s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch2: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch3 finished in 0.0m 5.59s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch3: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch4 finished in 0.0m 5.72s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch4: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch5 finished in 0.0m 5.82s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch5: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch6 finished in 0.0m 5.56s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch6: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch7 finished in 0.0m 5.73s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch7: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_44_batch8 finished in 0.0m 5.85s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch8: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch9 finished in 0.0m 5.83s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch9: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch10 finished in 0.0m 5.93s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch10: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch11 finished in 0.0m 6.03s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch11: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch12 finished in 0.0m 5.65s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch12: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch13 finished in 0.0m 5.48s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch13: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch14 finished in 0.0m 6.12s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch14: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch15 finished in 0.0m 5.82s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch15: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch16 finished in 0.0m 5.61s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch16: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch17 finished in 0.0m 5.85s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch17: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch18 finished in 0.0m 5.88s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch18: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch19 finished in 0.0m 5.59s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch19: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch20 finished in 0.0m 6.10s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch20: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch21 finished in 0.0m 5.63s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch21: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch22 finished in 0.0m 6.31s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch22: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch23 finished in 0.0m 5.56s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch23: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch24 finished in 0.0m 5.58s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch24: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch25 finished in 0.0m 5.85s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch25: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch26 finished in 0.0m 6.10s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch26: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch27 finished in 0.0m 5.72s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch27: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch28 finished in 0.0m 5.46s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch28: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch29 finished in 0.0m 5.15s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch29: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch30 finished in 0.0m 5.81s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch30: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch31 finished in 0.0m 5.92s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch31: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch32 finished in 0.0m 5.87s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch32: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch33 finished in 0.0m 5.86s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch33: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch34 finished in 0.0m 5.61s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch34: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch35 finished in 0.0m 6.23s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch35: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_44_batch36 finished in 0.0m 5.70s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch36: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch37 finished in 0.0m 5.80s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch37: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch38 finished in 0.0m 5.74s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch38: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch39 finished in 0.0m 5.90s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch39: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch40 finished in 0.0m 6.02s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch40: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch41 finished in 0.0m 5.98s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch41: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch42 finished in 0.0m 6.14s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch42: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch43 finished in 0.0m 5.75s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch43: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch44 finished in 0.0m 5.69s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch44: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch45 finished in 0.0m 5.84s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch45: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch46 finished in 0.0m 5.40s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch46: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch47 finished in 0.0m 5.50s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch47: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch48 finished in 0.0m 6.01s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch48: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch49 finished in 0.0m 5.48s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch49: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch50 finished in 0.0m 5.66s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch50: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch51 finished in 0.0m 5.82s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch51: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_44_batch52 finished in 0.0m 5.24s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch52: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch53 finished in 0.0m 5.70s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch53: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch54 finished in 0.0m 5.48s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch54: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch55 finished in 0.0m 5.48s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch55: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch56 finished in 0.0m 5.38s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch56: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch57 finished in 0.0m 5.73s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch57: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch58 finished in 0.0m 5.63s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch58: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch59 finished in 0.0m 5.84s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch59: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch60 finished in 0.0m 5.62s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch60: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch61 finished in 0.0m 5.93s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch61: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch62 finished in 0.0m 5.62s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch62: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch63 finished in 0.0m 5.79s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch63: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_44_batch64 finished in 0.0m 5.52s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch64: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch65 finished in 0.0m 5.37s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch65: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch66 finished in 0.0m 5.78s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch66: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch67 finished in 0.0m 5.72s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch67: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch68 finished in 0.0m 5.87s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch68: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch69 finished in 0.0m 5.57s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch69: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch70 finished in 0.0m 5.71s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch70: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch71 finished in 0.0m 5.74s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch71: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch72 finished in 0.0m 5.63s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch72: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch73 finished in 0.0m 5.95s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch73: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch74 finished in 0.0m 6.01s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch74: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_44_batch75 finished in 0.0m 5.54s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch75: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch76 finished in 0.0m 5.59s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch76: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch77 finished in 0.0m 5.69s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch77: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch78 finished in 0.0m 5.74s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch78: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch79 finished in 0.0m 5.62s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch79: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch80 finished in 0.0m 5.56s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch80: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch81 finished in 0.0m 5.44s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch81: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch82 finished in 0.0m 5.61s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch82: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch83 finished in 0.0m 5.72s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch83: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch84 finished in 0.0m 5.51s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch84: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch85 finished in 0.0m 5.19s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch85: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch86 finished in 0.0m 6.00s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch86: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch87 finished in 0.0m 5.69s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch87: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch88 finished in 0.0m 5.78s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch88: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch89 finished in 0.0m 5.53s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch89: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch90 finished in 0.0m 5.58s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch90: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch91 finished in 0.0m 5.58s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch91: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch92 finished in 0.0m 5.49s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch92: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch93 finished in 0.0m 5.49s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch93: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch94 finished in 0.0m 5.85s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch94: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch95 finished in 0.0m 5.86s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch95: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_44_batch96 finished in 0.0m 5.78s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch96: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_44_batch97 finished in 0.0m 5.34s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch97: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch98 finished in 0.0m 5.82s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch98: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_44_batch99 finished in 0.0m 5.60s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch99: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch100 finished in 0.0m 5.68s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch100: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch101 finished in 0.0m 5.60s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch101: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch102 finished in 0.0m 5.70s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch102: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch103 finished in 0.0m 6.08s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch103: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch104 finished in 0.0m 5.78s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch104: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch105 finished in 0.0m 5.80s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch105: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch106 finished in 0.0m 5.78s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch106: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch107 finished in 0.0m 5.67s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch107: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch108 finished in 0.0m 5.65s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch108: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch109 finished in 0.0m 6.20s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch109: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch110 finished in 0.0m 5.79s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch110: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch111 finished in 0.0m 5.86s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch111: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch112 finished in 0.0m 5.97s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch112: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch113 finished in 0.0m 5.55s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch113: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_44_batch114 finished in 0.0m 5.53s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch114: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch115 finished in 0.0m 5.67s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch115: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch116 finished in 0.0m 6.14s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch116: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch117 finished in 0.0m 5.99s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch117: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch118 finished in 0.0m 6.33s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch118: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch119 finished in 0.0m 6.28s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch119: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch120 finished in 0.0m 5.95s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch120: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch121 finished in 0.0m 6.51s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch121: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch122 finished in 0.0m 6.50s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch122: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch123 finished in 0.0m 5.85s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch123: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch124 finished in 0.0m 5.79s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch124: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch125 finished in 0.0m 6.08s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch125: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch126 finished in 0.0m 6.24s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch126: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch127 finished in 0.0m 5.80s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch127: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch128 finished in 0.0m 6.11s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch128: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch129 finished in 0.0m 6.06s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch129: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch130 finished in 0.0m 6.68s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch130: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch131 finished in 0.0m 6.02s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch131: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch132 finished in 0.0m 5.97s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch132: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch133 finished in 0.0m 6.09s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch133: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch134 finished in 0.0m 6.37s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch134: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch135 finished in 0.0m 6.20s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch135: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch136 finished in 0.0m 5.86s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch136: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch137 finished in 0.0m 6.44s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch137: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch138 finished in 0.0m 5.57s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch138: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch139 finished in 0.0m 5.82s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch139: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_44_batch140 finished in 0.0m 6.43s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch140: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch141 finished in 0.0m 6.36s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch141: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch142 finished in 0.0m 6.32s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch142: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch143 finished in 0.0m 6.74s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch143: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch144 finished in 0.0m 6.10s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch144: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch145 finished in 0.0m 5.51s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch145: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch146 finished in 0.0m 5.43s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch146: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch147 finished in 0.0m 5.64s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch147: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch148 finished in 0.0m 5.55s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch148: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch149 finished in 0.0m 5.36s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch149: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch150 finished in 0.0m 5.75s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch150: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch151 finished in 0.0m 5.60s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch151: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch152 finished in 0.0m 5.84s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch152: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_44_batch153 finished in 0.0m 5.79s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch153: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch154 finished in 0.0m 5.85s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch154: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch155 finished in 0.0m 5.66s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch155: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch156 finished in 0.0m 5.71s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch156: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch157 finished in 0.0m 5.64s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch157: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch158 finished in 0.0m 5.97s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch158: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch159 finished in 0.0m 5.25s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch159: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch160 finished in 0.0m 5.32s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch160: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch161 finished in 0.0m 5.71s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch161: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch162 finished in 0.0m 5.68s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch162: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch163 finished in 0.0m 5.60s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch163: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch164 finished in 0.0m 5.87s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch164: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_44_batch165 finished in 0.0m 5.33s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch165: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch166 finished in 0.0m 5.53s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch166: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch167 finished in 0.0m 5.60s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch167: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch168 finished in 0.0m 5.90s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch168: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch169 finished in 0.0m 5.61s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch169: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch170 finished in 0.0m 5.46s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch170: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch171 finished in 0.0m 5.49s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch171: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch172 finished in 0.0m 5.52s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch172: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch173 finished in 0.0m 5.86s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch173: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch174 finished in 0.0m 5.63s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch174: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch175 finished in 0.0m 5.61s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch175: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch176 finished in 0.0m 5.81s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch176: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch177 finished in 0.0m 5.74s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch177: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_44_batch178 finished in 0.0m 5.53s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch178: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch179 finished in 0.0m 5.57s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch179: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch180 finished in 0.0m 5.38s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch180: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch181 finished in 0.0m 5.57s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch181: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch182 finished in 0.0m 5.79s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch182: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_44_batch183 finished in 0.0m 5.93s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch183: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch184 finished in 0.0m 6.18s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch184: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch185 finished in 0.0m 5.94s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch185: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch186 finished in 0.0m 5.54s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch186: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_44_batch187 finished in 0.0m 5.59s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch187: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch188 finished in 0.0m 5.64s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch188: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch189 finished in 0.0m 5.73s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch189: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch190 finished in 0.0m 5.82s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch190: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_44_batch191 finished in 0.0m 6.31s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch191: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_44_batch192 finished in 0.0m 6.05s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch192: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_44_batch193 finished in 0.0m 5.65s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch193: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44_batch194 finished in 0.0m 5.42s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch194: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_44_batch195 finished in 0.0m 5.48s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch195: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_44_batch196 finished in 0.0m 5.49s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch196: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch197 finished in 0.0m 5.59s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch197: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_44_batch198 finished in 0.0m 5.55s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch198: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_44_batch199 finished in 0.0m 5.39s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_44_batch199: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_44 finished in 19.0m 13.41s with 1081 failures out of 1000000/1000000 runs.
+Logical error rate for reeval_1000000_row_44: 0.001081 ± 0.0000329 (stderr)
+New LER: 0.001081 ± 3.2860805e-05 | failures=1081 / 1000000 | runtime=1153.41s
+
+=== Re-evaluating row 47 with MC budget 1000000 ===
+Distance: 12
+Previous stored LER: 0.00095
+Decoder reeval_1000000_row_47_batch0 finished in 0.0m 5.71s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch0: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch1 finished in 0.0m 5.77s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch1: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch2 finished in 0.0m 5.81s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch2: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch3 finished in 0.0m 5.74s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch3: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch4 finished in 0.0m 5.66s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch4: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch5 finished in 0.0m 5.71s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch5: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_47_batch6 finished in 0.0m 5.79s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch6: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch7 finished in 0.0m 5.59s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch7: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch8 finished in 0.0m 5.58s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch8: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch9 finished in 0.0m 5.79s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch9: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch10 finished in 0.0m 6.00s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch10: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_47_batch11 finished in 0.0m 5.29s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch11: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch12 finished in 0.0m 5.98s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch12: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_47_batch13 finished in 0.0m 5.56s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch13: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch14 finished in 0.0m 5.94s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch14: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch15 finished in 0.0m 6.50s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch15: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch16 finished in 0.0m 5.68s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch16: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch17 finished in 0.0m 5.70s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch17: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch18 finished in 0.0m 5.87s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch18: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch19 finished in 0.0m 5.67s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch19: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch20 finished in 0.0m 5.76s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch20: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch21 finished in 0.0m 5.86s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch21: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch22 finished in 0.0m 6.13s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch22: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_47_batch23 finished in 0.0m 5.59s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch23: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch24 finished in 0.0m 6.05s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch24: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch25 finished in 0.0m 5.53s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch25: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch26 finished in 0.0m 5.65s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch26: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch27 finished in 0.0m 5.91s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch27: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch28 finished in 0.0m 6.00s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch28: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch29 finished in 0.0m 5.56s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch29: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch30 finished in 0.0m 5.86s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch30: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch31 finished in 0.0m 5.92s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch31: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch32 finished in 0.0m 5.67s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch32: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch33 finished in 0.0m 5.62s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch33: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch34 finished in 0.0m 5.54s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch34: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch35 finished in 0.0m 5.63s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch35: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch36 finished in 0.0m 5.83s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch36: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch37 finished in 0.0m 5.27s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch37: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch38 finished in 0.0m 5.86s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch38: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch39 finished in 0.0m 5.81s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch39: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch40 finished in 0.0m 5.65s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch40: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch41 finished in 0.0m 5.57s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch41: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch42 finished in 0.0m 5.71s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch42: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch43 finished in 0.0m 6.12s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch43: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch44 finished in 0.0m 5.53s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch44: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch45 finished in 0.0m 5.74s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch45: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch46 finished in 0.0m 5.77s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch46: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_47_batch47 finished in 0.0m 5.79s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch47: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_47_batch48 finished in 0.0m 5.87s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch48: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch49 finished in 0.0m 5.59s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch49: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch50 finished in 0.0m 5.44s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch50: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch51 finished in 0.0m 5.81s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch51: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch52 finished in 0.0m 5.60s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch52: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch53 finished in 0.0m 5.61s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch53: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch54 finished in 0.0m 5.32s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch54: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch55 finished in 0.0m 5.62s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch55: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch56 finished in 0.0m 5.59s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch56: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch57 finished in 0.0m 5.85s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch57: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_47_batch58 finished in 0.0m 5.70s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch58: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch59 finished in 0.0m 5.82s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch59: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch60 finished in 0.0m 5.62s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch60: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_47_batch61 finished in 0.0m 5.57s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch61: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch62 finished in 0.0m 5.55s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch62: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_47_batch63 finished in 0.0m 5.75s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch63: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch64 finished in 0.0m 5.68s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch64: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch65 finished in 0.0m 5.70s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch65: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch66 finished in 0.0m 5.49s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch66: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch67 finished in 0.0m 5.42s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch67: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch68 finished in 0.0m 5.68s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch68: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch69 finished in 0.0m 6.17s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch69: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch70 finished in 0.0m 6.73s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch70: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch71 finished in 0.0m 6.58s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch71: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_47_batch72 finished in 0.0m 6.30s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch72: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch73 finished in 0.0m 6.30s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch73: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch74 finished in 0.0m 5.57s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch74: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch75 finished in 0.0m 5.79s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch75: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch76 finished in 0.0m 5.73s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch76: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch77 finished in 0.0m 5.81s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch77: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch78 finished in 0.0m 5.88s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch78: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch79 finished in 0.0m 5.75s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch79: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch80 finished in 0.0m 5.71s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch80: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch81 finished in 0.0m 5.82s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch81: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch82 finished in 0.0m 5.78s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch82: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch83 finished in 0.0m 5.83s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch83: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch84 finished in 0.0m 5.88s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch84: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch85 finished in 0.0m 5.65s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch85: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_47_batch86 finished in 0.0m 5.71s with 11 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch86: 0.0022 ± 0.0006627 (stderr)
+Decoder reeval_1000000_row_47_batch87 finished in 0.0m 6.00s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch87: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_47_batch88 finished in 0.0m 5.59s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch88: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch89 finished in 0.0m 5.28s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch89: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_47_batch90 finished in 0.0m 5.41s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch90: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch91 finished in 0.0m 5.39s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch91: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch92 finished in 0.0m 5.47s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch92: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch93 finished in 0.0m 5.71s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch93: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch94 finished in 0.0m 5.42s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch94: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch95 finished in 0.0m 5.73s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch95: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch96 finished in 0.0m 5.65s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch96: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch97 finished in 0.0m 5.91s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch97: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch98 finished in 0.0m 5.80s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch98: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch99 finished in 0.0m 6.02s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch99: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch100 finished in 0.0m 5.74s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch100: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch101 finished in 0.0m 6.25s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch101: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch102 finished in 0.0m 5.67s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch102: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch103 finished in 0.0m 5.65s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch103: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_47_batch104 finished in 0.0m 5.91s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch104: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch105 finished in 0.0m 5.56s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch105: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch106 finished in 0.0m 5.92s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch106: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch107 finished in 0.0m 5.85s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch107: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch108 finished in 0.0m 5.56s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch108: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch109 finished in 0.0m 5.50s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch109: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch110 finished in 0.0m 5.27s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch110: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch111 finished in 0.0m 5.57s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch111: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch112 finished in 0.0m 5.62s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch112: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch113 finished in 0.0m 5.54s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch113: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch114 finished in 0.0m 5.77s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch114: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch115 finished in 0.0m 5.67s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch115: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch116 finished in 0.0m 5.37s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch116: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch117 finished in 0.0m 5.76s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch117: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_47_batch118 finished in 0.0m 5.79s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch118: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch119 finished in 0.0m 5.42s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch119: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch120 finished in 0.0m 5.73s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch120: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch121 finished in 0.0m 5.67s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch121: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch122 finished in 0.0m 5.60s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch122: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch123 finished in 0.0m 5.89s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch123: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch124 finished in 0.0m 5.62s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch124: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch125 finished in 0.0m 5.49s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch125: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch126 finished in 0.0m 5.61s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch126: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_47_batch127 finished in 0.0m 5.56s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch127: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch128 finished in 0.0m 5.57s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch128: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch129 finished in 0.0m 5.37s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch129: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch130 finished in 0.0m 5.57s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch130: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch131 finished in 0.0m 5.38s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch131: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch132 finished in 0.0m 5.34s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch132: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch133 finished in 0.0m 5.20s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch133: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch134 finished in 0.0m 5.32s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch134: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch135 finished in 0.0m 5.49s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch135: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch136 finished in 0.0m 5.81s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch136: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch137 finished in 0.0m 5.57s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch137: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch138 finished in 0.0m 5.23s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch138: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch139 finished in 0.0m 5.51s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch139: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch140 finished in 0.0m 5.32s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch140: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch141 finished in 0.0m 5.89s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch141: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch142 finished in 0.0m 5.65s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch142: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch143 finished in 0.0m 5.66s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch143: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch144 finished in 0.0m 5.42s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch144: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch145 finished in 0.0m 5.53s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch145: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch146 finished in 0.0m 5.96s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch146: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch147 finished in 0.0m 5.78s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch147: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch148 finished in 0.0m 5.58s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch148: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch149 finished in 0.0m 5.59s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch149: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch150 finished in 0.0m 5.63s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch150: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch151 finished in 0.0m 5.45s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch151: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch152 finished in 0.0m 5.57s with 2 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch152: 0.0004 ± 0.0002828 (stderr)
+Decoder reeval_1000000_row_47_batch153 finished in 0.0m 5.42s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch153: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch154 finished in 0.0m 5.56s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch154: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch155 finished in 0.0m 5.37s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch155: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch156 finished in 0.0m 5.66s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch156: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch157 finished in 0.0m 5.35s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch157: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch158 finished in 0.0m 5.42s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch158: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch159 finished in 0.0m 5.69s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch159: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch160 finished in 0.0m 5.73s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch160: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch161 finished in 0.0m 5.70s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch161: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch162 finished in 0.0m 5.69s with 0 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch162: 0.0 ± 0.0000000 (stderr)
+Decoder reeval_1000000_row_47_batch163 finished in 0.0m 5.42s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch163: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch164 finished in 0.0m 6.02s with 6 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch164: 0.0012 ± 0.0004897 (stderr)
+Decoder reeval_1000000_row_47_batch165 finished in 0.0m 5.50s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch165: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch166 finished in 0.0m 5.61s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch166: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch167 finished in 0.0m 5.58s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch167: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch168 finished in 0.0m 5.66s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch168: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_47_batch169 finished in 0.0m 5.25s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch169: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch170 finished in 0.0m 5.57s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch170: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch171 finished in 0.0m 5.45s with 9 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch171: 0.0018 ± 0.0005995 (stderr)
+Decoder reeval_1000000_row_47_batch172 finished in 0.0m 5.41s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch172: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch173 finished in 0.0m 5.49s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch173: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch174 finished in 0.0m 5.46s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch174: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch175 finished in 0.0m 5.60s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch175: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch176 finished in 0.0m 5.73s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch176: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch177 finished in 0.0m 5.86s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch177: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch178 finished in 0.0m 5.63s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch178: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch179 finished in 0.0m 5.50s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch179: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch180 finished in 0.0m 6.01s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch180: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch181 finished in 0.0m 5.55s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch181: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch182 finished in 0.0m 5.65s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch182: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_47_batch183 finished in 0.0m 5.45s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch183: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_47_batch184 finished in 0.0m 5.40s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch184: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch185 finished in 0.0m 5.84s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch185: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch186 finished in 0.0m 5.46s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch186: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47_batch187 finished in 0.0m 5.48s with 10 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch187: 0.002 ± 0.0006319 (stderr)
+Decoder reeval_1000000_row_47_batch188 finished in 0.0m 5.95s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch188: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_47_batch189 finished in 0.0m 6.33s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch189: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch190 finished in 0.0m 6.20s with 1 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch190: 0.0002 ± 0.0002000 (stderr)
+Decoder reeval_1000000_row_47_batch191 finished in 0.0m 6.07s with 8 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch191: 0.0016 ± 0.0005653 (stderr)
+Decoder reeval_1000000_row_47_batch192 finished in 0.0m 6.58s with 12 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch192: 0.0024 ± 0.0006921 (stderr)
+Decoder reeval_1000000_row_47_batch193 finished in 0.0m 6.58s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch193: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch194 finished in 0.0m 6.29s with 4 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch194: 0.0008 ± 0.0003999 (stderr)
+Decoder reeval_1000000_row_47_batch195 finished in 0.0m 6.58s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch195: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch196 finished in 0.0m 6.36s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch196: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch197 finished in 0.0m 5.90s with 3 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch197: 0.0006 ± 0.0003463 (stderr)
+Decoder reeval_1000000_row_47_batch198 finished in 0.0m 6.32s with 5 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch198: 0.001 ± 0.0004470 (stderr)
+Decoder reeval_1000000_row_47_batch199 finished in 0.0m 5.95s with 7 failures out of 5000/5000 runs.
+Logical error rate for reeval_1000000_row_47_batch199: 0.0014 ± 0.0005288 (stderr)
+Decoder reeval_1000000_row_47 finished in 19.0m 2.25s with 1086 failures out of 1000000/1000000 runs.
+Logical error rate for reeval_1000000_row_47: 0.001086 ± 0.0000329 (stderr)
+New LER: 0.001086 ± 3.2936631e-05 | failures=1086 / 1000000 | runtime=1142.25s
+
+=== Best after re-evaluation ===
+Best row: 39
+Distance: 12
+LER: 0.001018 ± 3.1889884e-05
+
+Wrote re-evaluation datasets with prefix: reeval_1000000
+Updated best_state and min_cost in: /[2025,81]/logical_guided_score_S50_T100_p0.03_beta0.3_win4_scoretop0.1_min3_max5_100000prec_20260526_180624

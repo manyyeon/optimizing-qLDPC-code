@@ -10,6 +10,51 @@ from logical_operators import get_logical_operators_by_pivoting
 from basic_css_code import construct_HGP_code
 from optimization.experiments_settings import tanner_graph_to_parity_check_matrix
 
+from optimization.analyze_codes.count_low_weight_patterns import (
+    count_parent_low_weight_patterns,
+)
+
+def compute_weighted_low_weight_score(
+    state: nx.MultiGraph,
+    params: dict | None = None,
+    beta: float = 0.3,
+    max_weight_offset: int = 2,
+):
+    """
+    Compute weighted low-weight parent-code spectrum score.
+
+    S_{W,beta}^{parent}
+      = sum_{w=d_Q}^{W} (A_w(H) + A_w(H^T)) beta^{w-d_Q}
+
+    Lower score is better.
+    """
+    if params is None:
+        params, _, _ = get_code_parameters_and_matrices(state)
+
+    d_q = int(min(params["d_classical"], params["d_T_classical"]))
+    min_weight = d_q
+    max_weight = d_q + max_weight_offset
+
+    H = tanner_graph_to_parity_check_matrix(state)
+    counts = count_parent_low_weight_patterns(H, max_weight=max_weight)
+    counts_total = counts["counts_total"]
+
+    score = 0.0
+    components = {}
+
+    for w in range(min_weight, max_weight + 1):
+        count_w = int(counts_total[w])
+        components[w] = count_w
+        score += float(count_w) * (beta ** (w - min_weight))
+
+    return {
+        "score": float(score),
+        "d_q": d_q,
+        "min_weight": min_weight,
+        "max_weight": max_weight,
+        "beta": beta,
+        "components": components,
+    }
 
 def get_code_parameters_and_matrices(state: nx.MultiGraph):
     H = tanner_graph_to_parity_check_matrix(state)
@@ -58,7 +103,7 @@ def evaluate_mc(
     failure_cap=None,
     min_runs_before_stop=0,
     workers=1,
-    batch_size=5000,
+    batch_size=10000,
 ):
     if budget == 0:
         return {
@@ -118,4 +163,48 @@ def evaluate_mc(
         "failures": failures,
         "completed_runs": completed_runs,
         "early_stopped": early_stopped,
+    }
+
+def compute_weighted_low_weight_score(
+    state: nx.MultiGraph,
+    params: dict | None = None,
+    beta: float = 0.3,
+    max_weight_offset: int = 2,
+):
+    """
+    Compute weighted low-weight parent-code spectrum score.
+
+    S = sum_{w=d_Q}^{d_Q+max_weight_offset}
+        (A_w(H) + A_w(H^T)) beta^{w-d_Q}
+
+    Lower score is better.
+    """
+    from optimization.analyze_codes.count_low_weight_patterns import (
+        count_parent_low_weight_patterns,
+    )
+
+    if params is None:
+        params, _, _ = get_code_parameters_and_matrices(state)
+
+    d_q = int(min(params["d_classical"], params["d_T_classical"]))
+    max_weight = d_q + max_weight_offset
+
+    H = tanner_graph_to_parity_check_matrix(state)
+    counts = count_parent_low_weight_patterns(H, max_weight=max_weight)
+    counts_total = counts["counts_total"]
+
+    components = {}
+    score = 0.0
+
+    for w in range(d_q, max_weight + 1):
+        count_w = int(counts_total[w])
+        components[w] = count_w
+        score += count_w * (beta ** (w - d_q))
+
+    return {
+        "score": float(score),
+        "d_q": d_q,
+        "max_weight": max_weight,
+        "beta": beta,
+        "components": components,
     }

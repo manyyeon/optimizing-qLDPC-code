@@ -1,0 +1,2508 @@
+
+--- LOGICAL GUIDED SEARCH ---
+Code family: [2025,81]
+Noise level p = 0.03
+Search steps = 50
+Trials/step = 100
+Precision budget = 100000
+Score selection: beta=0.3, window=4, top_frac=0.1, min_top=3, max_top=5
+Workers = 8
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+
+>>> PHASE 1: Logical-guided search
+
+Step 1/50 (global max dist so far = 10)
+Score Info of current state: weight_patterns={10: 8, 11: 0, 12: 23, 13: 0, 14: 70}, score=10.637
+  Target logical weight: 10
+  Current distance: 10
+  Valid proposal at trial 1/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 7, 11: 0, 12: 23, 13: 0, 14: 66}, score=9.6046
+  Valid proposal at trial 2/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 15, 13: 0, 14: 49}, score=6.7469
+  Valid proposal at trial 3/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 13, 13: 0, 14: 63}, score=7.6803
+  Valid proposal at trial 4/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 17, 13: 0, 14: 51}, score=7.9431
+  Rejected at trial 5/100: distance 10->8.
+  Valid proposal at trial 6/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 26, 13: 0, 14: 74}, score=7.9394
+  Valid proposal at trial 7/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 15, 13: 0, 14: 57}, score=5.8117
+  Valid proposal at trial 8/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 8, 11: 0, 12: 22, 13: 0, 14: 69}, score=10.5389
+  Rejected at trial 9/100: distance 10->8.
+  Valid proposal at trial 10/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 19, 13: 0, 14: 53}, score=7.1393
+  Valid proposal at trial 11/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 7, 11: 0, 12: 17, 13: 0, 14: 54}, score=8.9674
+  Valid proposal at trial 12/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 14, 13: 0, 14: 58}, score=5.7298
+  Valid proposal at trial 13/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 16, 13: 0, 14: 57}, score=6.9017
+  Rejected at trial 14/100: distance 10->8.
+  Valid proposal at trial 15/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 18, 13: 0, 14: 53}, score=6.0493
+  Valid proposal at trial 16/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 17, 13: 0, 14: 51}, score=6.9431
+  Valid proposal at trial 17/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 9, 11: 0, 12: 21, 13: 0, 14: 65}, score=11.4165
+  Rejected at trial 18/100: distance 10->6.
+  Valid proposal at trial 19/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 24, 13: 0, 14: 44}, score=6.5164
+  Valid proposal at trial 20/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 16, 13: 0, 14: 49}, score=7.8369
+  Rejected at trial 21/100: distance 10->8.
+  Valid proposal at trial 22/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 7, 11: 0, 12: 12, 13: 0, 14: 63}, score=8.5903
+  Rejected at trial 23/100: distance 10->8.
+  Rejected at trial 24/100: distance 10->8.
+  Valid proposal at trial 25/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 14, 13: 0, 14: 57}, score=7.7217
+  Valid proposal at trial 26/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 17, 13: 0, 14: 48}, score=6.9188
+  Valid proposal at trial 27/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 7, 11: 0, 12: 18, 13: 0, 14: 71}, score=9.1951
+  Rejected at trial 28/100: distance 10->8.
+  Rejected at trial 29/100: distance 10->6.
+  Valid proposal at trial 30/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 16, 13: 0, 14: 53}, score=5.8693
+  Rejected at trial 31/100: distance 10->8.
+  Valid proposal at trial 32/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 18, 13: 0, 14: 57}, score=5.0817
+  Rejected at trial 33/100: distance 10->8.
+  Valid proposal at trial 34/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 25, 13: 0, 14: 42}, score=8.5902
+  Valid proposal at trial 35/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 11, 11: 0, 12: 24, 13: 0, 14: 67}, score=13.7027
+  Rejected at trial 36/100: distance 10->8.
+  Rejected at trial 37/100: distance 10->8.
+  Valid proposal at trial 38/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 17, 13: 0, 14: 52}, score=3.9512
+  Valid proposal at trial 39/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 17, 13: 0, 14: 64}, score=4.0484
+  Valid proposal at trial 40/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 20, 13: 0, 14: 50}, score=6.205
+  Rejected at trial 41/100: distance 10->8.
+  Rejected at trial 42/100: distance 10->6.
+  Valid proposal at trial 43/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 16, 13: 0, 14: 55}, score=7.8855
+  Rejected at trial 44/100: distance 10->8.
+  Rejected at trial 45/100: distance 10->8.
+  Valid proposal at trial 46/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 8, 11: 0, 12: 16, 13: 0, 14: 50}, score=9.845
+  Valid proposal at trial 47/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 23, 13: 0, 14: 40}, score=8.394
+  Valid proposal at trial 48/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 9, 11: 0, 12: 32, 13: 0, 14: 57}, score=12.3417
+  Valid proposal at trial 49/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 7, 11: 0, 12: 24, 13: 0, 14: 74}, score=9.7594
+  Valid proposal at trial 50/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 7, 11: 0, 12: 13, 13: 0, 14: 55}, score=8.6155
+  Valid proposal at trial 51/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 17, 13: 0, 14: 53}, score=5.9593
+  Valid proposal at trial 52/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 7, 11: 0, 12: 16, 13: 0, 14: 51}, score=8.8531
+  Valid proposal at trial 53/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 18, 13: 0, 14: 51}, score=6.0331
+  Valid proposal at trial 54/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 15, 13: 0, 14: 58}, score=6.8198
+  Rejected at trial 55/100: distance 10->8.
+  Valid proposal at trial 56/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 13, 13: 0, 14: 59}, score=6.6479
+  Rejected at trial 57/100: distance 10->8.
+  Rejected at trial 58/100: distance 10->4.
+  Valid proposal at trial 59/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 8, 11: 0, 12: 22, 13: 0, 14: 67}, score=10.5227
+  Valid proposal at trial 60/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 20, 13: 0, 14: 52}, score=6.2212
+  Valid proposal at trial 61/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 17, 13: 0, 14: 56}, score=6.9836
+  Valid proposal at trial 62/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 19, 13: 0, 14: 56}, score=6.1636
+  Valid proposal at trial 63/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 25, 13: 0, 14: 75}, score=8.8575
+  Rejected at trial 64/100: distance 10->8.
+  Valid proposal at trial 65/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 7, 11: 0, 12: 23, 13: 0, 14: 69}, score=9.6289
+  Valid proposal at trial 66/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 18, 13: 0, 14: 49}, score=6.0169
+  Valid proposal at trial 67/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 20, 13: 0, 14: 52}, score=7.2212
+  Valid proposal at trial 68/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 9, 11: 0, 12: 20, 13: 0, 14: 73}, score=11.3913
+  Valid proposal at trial 69/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 25, 13: 0, 14: 68}, score=7.8008
+  Rejected at trial 70/100: distance 10->8.
+  Rejected at trial 71/100: distance 10->8.
+  Valid proposal at trial 72/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 18, 13: 0, 14: 54}, score=7.0574
+  Valid proposal at trial 73/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 18, 13: 0, 14: 51}, score=8.0331
+  Valid proposal at trial 74/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 17, 13: 0, 14: 63}, score=7.0403
+  Valid proposal at trial 75/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 29, 13: 0, 14: 70}, score=7.177
+  Valid proposal at trial 76/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 30, 13: 0, 14: 65}, score=9.2265
+  Valid proposal at trial 77/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 16, 13: 0, 14: 53}, score=4.8693
+  Rejected at trial 78/100: distance 10->4.
+  Valid proposal at trial 79/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 16, 13: 0, 14: 59}, score=5.9179
+  Valid proposal at trial 80/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 10, 11: 0, 12: 21, 13: 0, 14: 71}, score=12.4651
+  Valid proposal at trial 81/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 8, 11: 0, 12: 13, 13: 0, 14: 59}, score=9.6479
+  Rejected at trial 82/100: distance 10->6.
+  Rejected at trial 83/100: distance 10->8.
+  Valid proposal at trial 84/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 7, 11: 0, 12: 12, 13: 0, 14: 61}, score=8.5741
+  Rejected at trial 85/100: distance 10->8.
+  Rejected at trial 86/100: distance 10->8.
+  Valid proposal at trial 87/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 20, 13: 0, 14: 43}, score=6.1483
+  Valid proposal at trial 88/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 11, 11: 0, 12: 19, 13: 0, 14: 69}, score=13.2689
+  Valid proposal at trial 89/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 10, 11: 0, 12: 19, 13: 0, 14: 65}, score=12.2365
+  Valid proposal at trial 90/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 7, 11: 0, 12: 24, 13: 0, 14: 66}, score=9.6946
+  Valid proposal at trial 91/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 16, 13: 0, 14: 60}, score=4.926
+  Valid proposal at trial 92/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 19, 13: 0, 14: 57}, score=6.1717
+  Rejected at trial 93/100: distance 10->8.
+  Valid proposal at trial 94/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 13, 13: 0, 14: 62}, score=6.6722
+  Rejected at trial 95/100: distance 10->4.
+  Valid proposal at trial 96/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 8, 11: 0, 12: 28, 13: 0, 14: 61}, score=11.0141
+  Valid proposal at trial 97/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 6, 11: 0, 12: 16, 13: 0, 14: 54}, score=7.8774
+  Rejected at trial 98/100: distance 10->6.
+  Rejected at trial 99/100: distance 10->8.
+  Valid proposal at trial 100/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 8, 11: 0, 12: 18, 13: 0, 14: 52}, score=10.0412
+  Trials completed: 100/100, valid proposals found: 68, rejections due to distance decrease: 32.
+  Accepted best valid move: distance 10->10, target_weight_before_swap=10, weight_patterns=weight_patterns={10: 2, 11: 0, 12: 17, 13: 0, 14: 52}, score=3.9512, score=3.9512
+
+Step 2/50 (global max dist so far = 10)
+Score Info of current state: weight_patterns={10: 2, 11: 0, 12: 17, 13: 0, 14: 52}, score=3.9512
+  Target logical weight: 10
+  Current distance: 10
+  Rejected at trial 1/100: distance 10->8.
+  Valid proposal at trial 2/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 16, 13: 0, 14: 56}, score=3.8936
+  Valid proposal at trial 3/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 17, 13: 0, 14: 53}, score=3.9593
+  Valid proposal at trial 4/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 21, 13: 0, 14: 55}, score=4.3355
+  Valid proposal at trial 5/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 1, 11: 0, 12: 22, 13: 0, 14: 53}, score=3.4093
+  Valid proposal at trial 6/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 18, 13: 0, 14: 49}, score=4.0169
+  Valid proposal at trial 7/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 1, 11: 0, 12: 16, 13: 0, 14: 58}, score=2.9098
+  Valid proposal at trial 8/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 19, 13: 0, 14: 47}, score=4.0907
+  Valid proposal at trial 9/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 21, 13: 0, 14: 51}, score=4.3031
+  Rejected at trial 10/100: distance 10->6.
+  Rejected at trial 11/100: distance 10->8.
+  Valid proposal at trial 12/100: distance 10->12, target_weight_before_swap=10, weight_patterns={12: 19, 13: 0, 14: 54, 15: 0, 16: 106}, score=24.7186
+  Valid proposal at trial 13/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 21, 13: 0, 14: 45}, score=4.2545
+  Valid proposal at trial 14/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 16, 13: 0, 14: 46}, score=6.8126
+  Valid proposal at trial 15/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 22, 13: 0, 14: 46}, score=4.3526
+  Rejected at trial 16/100: distance 10->8.
+  Valid proposal at trial 17/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 18, 13: 0, 14: 49}, score=6.0169
+  Valid proposal at trial 18/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 18, 13: 0, 14: 55}, score=5.0655
+  Valid proposal at trial 19/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 17, 13: 0, 14: 52}, score=5.9512
+  Valid proposal at trial 20/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 1, 11: 0, 12: 21, 13: 0, 14: 47}, score=3.2707
+  Rejected at trial 21/100: distance 10->8.
+  Valid proposal at trial 22/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 19, 13: 0, 14: 51}, score=6.1231
+  Rejected at trial 23/100: distance 10->8.
+  Rejected at trial 24/100: distance 10->8.
+  Rejected at trial 25/100: distance 10->4.
+  Valid proposal at trial 26/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 19, 13: 0, 14: 45}, score=6.0745
+  Valid proposal at trial 27/100: distance 10->12, target_weight_before_swap=10, weight_patterns={12: 21, 13: 0, 14: 55, 15: 0, 16: 105}, score=26.8005
+  Valid proposal at trial 28/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 16, 13: 0, 14: 56}, score=4.8936
+  Valid proposal at trial 29/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 19, 13: 0, 14: 51}, score=7.1231
+  Valid proposal at trial 30/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 1, 11: 0, 12: 20, 13: 0, 14: 47}, score=3.1807
+  Valid proposal at trial 31/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 17, 13: 0, 14: 49}, score=3.9269
+  Valid proposal at trial 32/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 1, 11: 0, 12: 20, 13: 0, 14: 56}, score=3.2536
+  Valid proposal at trial 33/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 1, 11: 0, 12: 19, 13: 0, 14: 54}, score=3.1474
+  Valid proposal at trial 34/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 20, 13: 0, 14: 50}, score=4.205
+  Rejected at trial 35/100: distance 10->8.
+  Valid proposal at trial 36/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 1, 11: 0, 12: 19, 13: 0, 14: 53}, score=3.1393
+  Valid proposal at trial 37/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 11, 13: 0, 14: 56}, score=5.4436
+  Valid proposal at trial 38/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 17, 13: 0, 14: 47}, score=6.9107
+  Valid proposal at trial 39/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 15, 13: 0, 14: 51}, score=3.7631
+  Valid proposal at trial 40/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 15, 13: 0, 14: 47}, score=4.7307
+  Valid proposal at trial 41/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 17, 13: 0, 14: 59}, score=4.0079
+  Rejected at trial 42/100: distance 10->8.
+  Rejected at trial 43/100: distance 10->8.
+  Valid proposal at trial 44/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 16, 13: 0, 14: 54}, score=4.8774
+  Valid proposal at trial 45/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 18, 13: 0, 14: 55}, score=5.0655
+  Valid proposal at trial 46/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 12, 13: 0, 14: 60}, score=5.566
+  Rejected at trial 47/100: distance 10->8.
+  Rejected at trial 48/100: distance 10->8.
+  Rejected at trial 49/100: distance 10->8.
+  Valid proposal at trial 50/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 11, 13: 0, 14: 57}, score=5.4517
+  Rejected at trial 51/100: distance 10->8.
+  Valid proposal at trial 52/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 15, 13: 0, 14: 57}, score=4.8117
+  Valid proposal at trial 53/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 17, 13: 0, 14: 56}, score=3.9836
+  Valid proposal at trial 54/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 19, 13: 0, 14: 52}, score=5.1312
+  Valid proposal at trial 55/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 1, 11: 0, 12: 19, 13: 0, 14: 53}, score=3.1393
+  Rejected at trial 56/100: distance 10->8.
+  Valid proposal at trial 57/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 15, 13: 0, 14: 52}, score=5.7712
+  Valid proposal at trial 58/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 18, 13: 0, 14: 52}, score=5.0412
+  Valid proposal at trial 59/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 21, 13: 0, 14: 49}, score=5.2869
+  Rejected at trial 60/100: distance 10->8.
+  Valid proposal at trial 61/100: distance 10->12, target_weight_before_swap=10, weight_patterns={12: 26, 13: 0, 14: 53, 15: 0, 16: 114}, score=31.6934
+  Rejected at trial 62/100: distance 10->8.
+  Valid proposal at trial 63/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 5, 11: 0, 12: 14, 13: 0, 14: 54}, score=6.6974
+  Rejected at trial 64/100: distance 10->6.
+  Rejected at trial 65/100: distance 10->8.
+  Rejected at trial 66/100: distance 10->8.
+  Rejected at trial 67/100: distance 10->6.
+  Valid proposal at trial 68/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 19, 13: 0, 14: 49}, score=5.1069
+  Valid proposal at trial 69/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 15, 13: 0, 14: 51}, score=5.7631
+  Rejected at trial 70/100: distance 10->8.
+  Valid proposal at trial 71/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 13, 13: 0, 14: 61}, score=5.6641
+  Valid proposal at trial 72/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 17, 13: 0, 14: 55}, score=4.9755
+  Rejected at trial 73/100: distance 10->6.
+  Rejected at trial 74/100: distance 10->8.
+  Valid proposal at trial 75/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 17, 13: 0, 14: 47}, score=3.9107
+  Valid proposal at trial 76/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 15, 13: 0, 14: 52}, score=4.7712
+  Valid proposal at trial 77/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 16, 13: 0, 14: 63}, score=3.9503
+  Valid proposal at trial 78/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 19, 13: 0, 14: 47}, score=5.0907
+  Rejected at trial 79/100: distance 10->8.
+  Rejected at trial 80/100: distance 10->8.
+  Rejected at trial 81/100: distance 10->8.
+  Rejected at trial 82/100: distance 10->8.
+  Valid proposal at trial 83/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 18, 13: 0, 14: 54}, score=4.0574
+  Valid proposal at trial 84/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 14, 13: 0, 14: 57}, score=5.7217
+  Valid proposal at trial 85/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 17, 13: 0, 14: 51}, score=4.9431
+  Valid proposal at trial 86/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 19, 13: 0, 14: 53}, score=4.1393
+  Rejected at trial 87/100: distance 10->8.
+  Valid proposal at trial 88/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 18, 13: 0, 14: 49}, score=5.0169
+  Valid proposal at trial 89/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 22, 13: 0, 14: 53}, score=4.4093
+  Valid proposal at trial 90/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 23, 13: 0, 14: 50}, score=4.475
+  Valid proposal at trial 91/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 2, 11: 0, 12: 15, 13: 0, 14: 55}, score=3.7955
+  Rejected at trial 92/100: distance 10->8.
+  Valid proposal at trial 93/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 16, 13: 0, 14: 48}, score=5.8288
+  Valid proposal at trial 94/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 17, 13: 0, 14: 52}, score=4.9512
+  Valid proposal at trial 95/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 4, 11: 0, 12: 19, 13: 0, 14: 47}, score=6.0907
+  Valid proposal at trial 96/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 1, 11: 0, 12: 21, 13: 0, 14: 50}, score=3.295
+  Rejected at trial 97/100: distance 10->8.
+  Valid proposal at trial 98/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 1, 11: 0, 12: 24, 13: 0, 14: 52}, score=3.5812
+  Rejected at trial 99/100: distance 10->6.
+  Valid proposal at trial 100/100: distance 10->10, target_weight_before_swap=10, weight_patterns={10: 3, 11: 0, 12: 19, 13: 0, 14: 49}, score=5.1069
+  Trials completed: 100/100, valid proposals found: 67, rejections due to distance decrease: 33.
+  Accepted best valid move: distance 10->12, target_weight_before_swap=10, weight_patterns=weight_patterns={12: 19, 13: 0, 14: 54, 15: 0, 16: 106}, score=24.7186, score=24.7186
+
+Step 3/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 19, 13: 0, 14: 54, 15: 0, 16: 106}, score=24.7186
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->10.
+  Rejected at trial 3/100: distance 12->10.
+  Rejected at trial 4/100: distance 12->10.
+  Rejected at trial 5/100: distance 12->8.
+  Rejected at trial 6/100: distance 12->10.
+  Rejected at trial 7/100: distance 12->10.
+  Rejected at trial 8/100: distance 12->8.
+  Rejected at trial 9/100: distance 12->6.
+  Rejected at trial 10/100: distance 12->8.
+  Rejected at trial 11/100: distance 12->4.
+  Rejected at trial 12/100: distance 12->10.
+  Rejected at trial 13/100: distance 12->8.
+  Rejected at trial 14/100: distance 12->6.
+  Rejected at trial 15/100: distance 12->6.
+  Rejected at trial 16/100: distance 12->8.
+  Valid proposal at trial 17/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 22, 13: 0, 14: 52, 15: 0, 16: 111}, score=27.5791
+  Rejected at trial 18/100: distance 12->10.
+  Valid proposal at trial 19/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 22, 13: 0, 14: 58, 15: 0, 16: 106}, score=28.0786
+  Rejected at trial 20/100: distance 12->8.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->8.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->8.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->10.
+  Rejected at trial 28/100: distance 12->10.
+  Rejected at trial 29/100: distance 12->8.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->8.
+  Rejected at trial 32/100: distance 12->8.
+  Rejected at trial 33/100: distance 12->10.
+  Rejected at trial 34/100: distance 12->8.
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->10.
+  Rejected at trial 37/100: distance 12->8.
+  Rejected at trial 38/100: distance 12->10.
+  Rejected at trial 39/100: distance 12->10.
+  Rejected at trial 40/100: distance 12->10.
+  Valid proposal at trial 41/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 21, 13: 0, 14: 54, 15: 0, 16: 97}, score=26.6457
+  Rejected at trial 42/100: distance 12->8.
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->8.
+  Rejected at trial 45/100: distance 12->6.
+  Valid proposal at trial 46/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 21, 13: 0, 14: 47, 15: 0, 16: 113}, score=26.1453
+  Rejected at trial 47/100: distance 12->8.
+  Rejected at trial 48/100: distance 12->8.
+  Rejected at trial 49/100: distance 12->6.
+  Rejected at trial 50/100: distance 12->8.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->10.
+  Valid proposal at trial 53/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 24, 13: 0, 14: 52, 15: 0, 16: 97}, score=29.4657
+  Rejected at trial 54/100: distance 12->8.
+  Rejected at trial 55/100: distance 12->10.
+  Rejected at trial 56/100: distance 12->8.
+  Rejected at trial 57/100: distance 12->10.
+  Rejected at trial 58/100: distance 12->8.
+  Rejected at trial 59/100: distance 12->8.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->8.
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->8.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->8.
+  Rejected at trial 66/100: distance 12->8.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->8.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->8.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->8.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->10.
+  Rejected at trial 77/100: distance 12->8.
+  Rejected at trial 78/100: distance 12->8.
+  Valid proposal at trial 79/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 55, 15: 0, 16: 117}, score=24.8977
+  Rejected at trial 80/100: distance 12->8.
+  Rejected at trial 81/100: distance 12->6.
+  Rejected at trial 82/100: distance 12->8.
+  Rejected at trial 83/100: distance 12->6.
+  Rejected at trial 84/100: distance 12->10.
+  Rejected at trial 85/100: distance 12->8.
+  Rejected at trial 86/100: distance 12->10.
+  Rejected at trial 87/100: distance 12->8.
+  Rejected at trial 88/100: distance 12->10.
+  Rejected at trial 89/100: distance 12->8.
+  Rejected at trial 90/100: distance 12->6.
+  Rejected at trial 91/100: distance 12->8.
+  Rejected at trial 92/100: distance 12->8.
+  Rejected at trial 93/100: distance 12->6.
+  Rejected at trial 94/100: distance 12->10.
+  Rejected at trial 95/100: distance 12->10.
+  Rejected at trial 96/100: distance 12->10.
+  Rejected at trial 97/100: distance 12->6.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->10.
+  Rejected at trial 100/100: distance 12->6.
+  Trials completed: 100/100, valid proposals found: 6, rejections due to distance decrease: 94.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 19, 13: 0, 14: 55, 15: 0, 16: 117}, score=24.8977, score=24.8977
+
+Step 4/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 19, 13: 0, 14: 55, 15: 0, 16: 117}, score=24.8977
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->8.
+  Valid proposal at trial 3/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 55, 15: 0, 16: 116}, score=24.8896
+  Rejected at trial 4/100: distance 12->10.
+  Rejected at trial 5/100: distance 12->10.
+  Rejected at trial 6/100: distance 12->8.
+  Valid proposal at trial 7/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 23, 13: 0, 14: 53, 15: 0, 16: 107}, score=28.6367
+  Rejected at trial 8/100: distance 12->10.
+  Valid proposal at trial 9/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 20, 13: 0, 14: 56, 15: 0, 16: 112}, score=25.9472
+  Rejected at trial 10/100: distance 12->8.
+  Rejected at trial 11/100: distance 12->6.
+  Rejected at trial 12/100: distance 12->8.
+  Rejected at trial 13/100: distance 12->10.
+  Rejected at trial 14/100: distance 12->10.
+  Rejected at trial 15/100: distance 12->8.
+  Valid proposal at trial 16/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 54, 15: 0, 16: 118}, score=23.8158
+  Rejected at trial 17/100: distance 12->10.
+  Rejected at trial 18/100: distance 12->8.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->6.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->8.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->10.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->8.
+  Rejected at trial 27/100: distance 12->10.
+  Rejected at trial 28/100: distance 12->8.
+  Rejected at trial 29/100: distance 12->10.
+  Rejected at trial 30/100: distance 12->8.
+  Rejected at trial 31/100: distance 12->8.
+  Rejected at trial 32/100: distance 12->8.
+  Rejected at trial 33/100: distance 12->8.
+  Rejected at trial 34/100: distance 12->10.
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->8.
+  Rejected at trial 37/100: distance 12->8.
+  Rejected at trial 38/100: distance 12->10.
+  Rejected at trial 39/100: distance 12->10.
+  Rejected at trial 40/100: distance 12->8.
+  Rejected at trial 41/100: distance 12->8.
+  Rejected at trial 42/100: distance 12->8.
+  Rejected at trial 43/100: distance 12->10.
+  Valid proposal at trial 44/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 56, 15: 0, 16: 114}, score=24.9634
+  Rejected at trial 45/100: distance 12->8.
+  Rejected at trial 46/100: distance 12->8.
+  Rejected at trial 47/100: distance 12->10.
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->8.
+  Rejected at trial 50/100: distance 12->10.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->10.
+  Rejected at trial 53/100: distance 12->8.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->10.
+  Valid proposal at trial 56/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 57, 15: 0, 16: 108}, score=25.0048
+  Rejected at trial 57/100: distance 12->10.
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->8.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->8.
+  Rejected at trial 65/100: distance 12->6.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->10.
+  Valid proposal at trial 70/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 56, 15: 0, 16: 107}, score=24.9067
+  Rejected at trial 71/100: distance 12->8.
+  Rejected at trial 72/100: distance 12->8.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->10.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->8.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->8.
+  Rejected at trial 79/100: distance 12->10.
+  Rejected at trial 80/100: distance 12->8.
+  Rejected at trial 81/100: distance 12->8.
+  Rejected at trial 82/100: distance 12->10.
+  Rejected at trial 83/100: distance 12->10.
+  Rejected at trial 84/100: distance 12->10.
+  Rejected at trial 85/100: distance 12->8.
+  Rejected at trial 86/100: distance 12->10.
+  Rejected at trial 87/100: distance 12->8.
+  Rejected at trial 88/100: distance 12->10.
+  Rejected at trial 89/100: distance 12->6.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->8.
+  Rejected at trial 92/100: distance 12->10.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->8.
+  Rejected at trial 95/100: distance 12->10.
+  Rejected at trial 96/100: distance 12->2.
+  Rejected at trial 97/100: distance 12->10.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->8.
+  Rejected at trial 100/100: distance 12->10.
+  Trials completed: 100/100, valid proposals found: 7, rejections due to distance decrease: 93.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 18, 13: 0, 14: 54, 15: 0, 16: 118}, score=23.8158, score=23.8158
+
+Step 5/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 18, 13: 0, 14: 54, 15: 0, 16: 118}, score=23.8158
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->6.
+  Rejected at trial 3/100: distance 12->10.
+  Rejected at trial 4/100: distance 12->6.
+  Rejected at trial 5/100: distance 12->10.
+  Valid proposal at trial 6/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 52, 15: 0, 16: 120}, score=24.652
+  Rejected at trial 7/100: distance 12->10.
+  Rejected at trial 8/100: distance 12->10.
+  Rejected at trial 9/100: distance 12->8.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->8.
+  Rejected at trial 13/100: distance 12->10.
+  Valid proposal at trial 14/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 21, 13: 0, 14: 52, 15: 0, 16: 123}, score=26.6763
+  Rejected at trial 15/100: distance 12->10.
+  Rejected at trial 16/100: distance 12->10.
+  Rejected at trial 17/100: distance 12->10.
+  Rejected at trial 18/100: distance 12->8.
+  Rejected at trial 19/100: distance 12->8.
+  Rejected at trial 20/100: distance 12->6.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->8.
+  Rejected at trial 24/100: distance 12->10.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->10.
+  Rejected at trial 28/100: distance 12->10.
+  Rejected at trial 29/100: distance 12->8.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->10.
+  Rejected at trial 32/100: distance 12->8.
+  Rejected at trial 33/100: distance 12->8.
+  Rejected at trial 34/100: distance 12->6.
+  Rejected at trial 35/100: distance 12->6.
+  Rejected at trial 36/100: distance 12->10.
+  Rejected at trial 37/100: distance 12->10.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->10.
+  Rejected at trial 40/100: distance 12->8.
+  Rejected at trial 41/100: distance 12->8.
+  Rejected at trial 42/100: distance 12->10.
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->6.
+  Rejected at trial 45/100: distance 12->8.
+  Rejected at trial 46/100: distance 12->8.
+  Rejected at trial 47/100: distance 12->10.
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->8.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->10.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->10.
+  Rejected at trial 56/100: distance 12->8.
+  Rejected at trial 57/100: distance 12->10.
+  Rejected at trial 58/100: distance 12->8.
+  Rejected at trial 59/100: distance 12->6.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->8.
+  Rejected at trial 65/100: distance 12->10.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->8.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->8.
+  Rejected at trial 74/100: distance 12->6.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->10.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->10.
+  Rejected at trial 79/100: distance 12->10.
+  Rejected at trial 80/100: distance 12->8.
+  Rejected at trial 81/100: distance 12->8.
+  Rejected at trial 82/100: distance 12->6.
+  Valid proposal at trial 83/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 22, 13: 0, 14: 54, 15: 0, 16: 104}, score=27.7024
+  Rejected at trial 84/100: distance 12->10.
+  Valid proposal at trial 85/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 52, 15: 0, 16: 121}, score=22.6601
+  Rejected at trial 86/100: distance 12->10.
+  Rejected at trial 87/100: distance 12->10.
+  Rejected at trial 88/100: distance 12->10.
+  Rejected at trial 89/100: distance 12->10.
+  Rejected at trial 90/100: distance 12->8.
+  Rejected at trial 91/100: distance 12->10.
+  Valid proposal at trial 92/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 21, 13: 0, 14: 52, 15: 0, 16: 113}, score=26.5953
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->8.
+  Rejected at trial 95/100: distance 12->8.
+  Rejected at trial 96/100: distance 12->6.
+  Rejected at trial 97/100: distance 12->8.
+  Rejected at trial 98/100: distance 12->8.
+  Rejected at trial 99/100: distance 12->10.
+  Rejected at trial 100/100: distance 12->6.
+  Trials completed: 100/100, valid proposals found: 5, rejections due to distance decrease: 95.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 17, 13: 0, 14: 52, 15: 0, 16: 121}, score=22.6601, score=22.6601
+
+Step 6/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 17, 13: 0, 14: 52, 15: 0, 16: 121}, score=22.6601
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->10.
+  Rejected at trial 3/100: distance 12->8.
+  Valid proposal at trial 4/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 55, 15: 0, 16: 109}, score=23.8329
+  Rejected at trial 5/100: distance 12->10.
+  Rejected at trial 6/100: distance 12->10.
+  Rejected at trial 7/100: distance 12->6.
+  Rejected at trial 8/100: distance 12->10.
+  Rejected at trial 9/100: distance 12->10.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->10.
+  Rejected at trial 13/100: distance 12->6.
+  Rejected at trial 14/100: distance 12->10.
+  Rejected at trial 15/100: distance 12->8.
+  Rejected at trial 16/100: distance 12->10.
+  Rejected at trial 17/100: distance 12->8.
+  Rejected at trial 18/100: distance 12->6.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->10.
+  Rejected at trial 25/100: distance 12->8.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->6.
+  Rejected at trial 28/100: distance 12->10.
+  Rejected at trial 29/100: distance 12->8.
+  Rejected at trial 30/100: distance 12->8.
+  Rejected at trial 31/100: distance 12->8.
+  Rejected at trial 32/100: distance 12->8.
+  Rejected at trial 33/100: distance 12->6.
+  Rejected at trial 34/100: distance 12->8.
+  Rejected at trial 35/100: distance 12->10.
+  Valid proposal at trial 36/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 57, 15: 0, 16: 110}, score=24.021
+  Rejected at trial 37/100: distance 12->10.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->10.
+  Rejected at trial 40/100: distance 12->10.
+  Rejected at trial 41/100: distance 12->10.
+  Rejected at trial 42/100: distance 12->10.
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->8.
+  Rejected at trial 45/100: distance 12->10.
+  Rejected at trial 46/100: distance 12->10.
+  Valid proposal at trial 47/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 53, 15: 0, 16: 109}, score=24.6529
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->10.
+  Rejected at trial 51/100: distance 12->8.
+  Rejected at trial 52/100: distance 12->10.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->10.
+  Valid proposal at trial 56/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 52, 15: 0, 16: 120}, score=23.652
+  Rejected at trial 57/100: distance 12->10.
+  Rejected at trial 58/100: distance 12->8.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->8.
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->8.
+  Rejected at trial 65/100: distance 12->8.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->8.
+  Rejected at trial 68/100: distance 12->8.
+  Rejected at trial 69/100: distance 12->8.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->8.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->8.
+  Rejected at trial 74/100: distance 12->8.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->8.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->10.
+  Rejected at trial 79/100: distance 12->10.
+  Rejected at trial 80/100: distance 12->10.
+  Rejected at trial 81/100: distance 12->8.
+  Rejected at trial 82/100: distance 12->8.
+  Valid proposal at trial 83/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 14, 13: 0, 14: 60, 15: 0, 16: 116}, score=20.3396
+  Rejected at trial 84/100: distance 12->8.
+  Rejected at trial 85/100: distance 12->10.
+  Rejected at trial 86/100: distance 12->10.
+  Rejected at trial 87/100: distance 12->8.
+  Rejected at trial 88/100: distance 12->8.
+  Rejected at trial 89/100: distance 12->8.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->10.
+  Rejected at trial 92/100: distance 12->8.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->8.
+  Rejected at trial 95/100: distance 12->8.
+  Rejected at trial 96/100: distance 12->10.
+  Rejected at trial 97/100: distance 12->8.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->10.
+  Rejected at trial 100/100: distance 12->10.
+  Trials completed: 100/100, valid proposals found: 5, rejections due to distance decrease: 95.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 14, 13: 0, 14: 60, 15: 0, 16: 116}, score=20.3396, score=20.3396
+
+Step 7/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 14, 13: 0, 14: 60, 15: 0, 16: 116}, score=20.3396
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->10.
+  Rejected at trial 3/100: distance 12->10.
+  Rejected at trial 4/100: distance 12->8.
+  Rejected at trial 5/100: distance 12->8.
+  Rejected at trial 6/100: distance 12->10.
+  Rejected at trial 7/100: distance 12->10.
+  Rejected at trial 8/100: distance 12->10.
+  Rejected at trial 9/100: distance 12->8.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Valid proposal at trial 12/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 47, 15: 0, 16: 126}, score=24.2506
+  Rejected at trial 13/100: distance 12->10.
+  Rejected at trial 14/100: distance 12->10.
+  Rejected at trial 15/100: distance 12->10.
+  Rejected at trial 16/100: distance 12->8.
+  Rejected at trial 17/100: distance 12->8.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->10.
+  Valid proposal at trial 21/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 56, 15: 0, 16: 125}, score=21.0525
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->10.
+  Rejected at trial 25/100: distance 12->6.
+  Rejected at trial 26/100: distance 12->6.
+  Rejected at trial 27/100: distance 12->8.
+  Rejected at trial 28/100: distance 12->8.
+  Rejected at trial 29/100: distance 12->10.
+  Rejected at trial 30/100: distance 12->4.
+  Rejected at trial 31/100: distance 12->10.
+  Rejected at trial 32/100: distance 12->6.
+  Rejected at trial 33/100: distance 12->10.
+  Valid proposal at trial 34/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 55, 15: 0, 16: 109}, score=23.8329
+  Rejected at trial 35/100: distance 12->6.
+  Rejected at trial 36/100: distance 12->10.
+  Rejected at trial 37/100: distance 12->10.
+  Rejected at trial 38/100: distance 12->10.
+  Rejected at trial 39/100: distance 12->8.
+  Rejected at trial 40/100: distance 12->10.
+  Rejected at trial 41/100: distance 12->8.
+  Rejected at trial 42/100: distance 12->10.
+  Rejected at trial 43/100: distance 12->8.
+  Rejected at trial 44/100: distance 12->10.
+  Rejected at trial 45/100: distance 12->10.
+  Rejected at trial 46/100: distance 12->10.
+  Rejected at trial 47/100: distance 12->10.
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->10.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->10.
+  Rejected at trial 53/100: distance 12->10.
+  Valid proposal at trial 54/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 21, 13: 0, 14: 47, 15: 0, 16: 120}, score=26.202
+  Rejected at trial 55/100: distance 12->10.
+  Valid proposal at trial 56/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 60, 15: 0, 16: 109}, score=21.2829
+  Rejected at trial 57/100: distance 12->10.
+  Rejected at trial 58/100: distance 12->8.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->8.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->6.
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->8.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->8.
+  Rejected at trial 69/100: distance 12->6.
+  Valid proposal at trial 70/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 22, 13: 0, 14: 47, 15: 0, 16: 116}, score=27.1696
+  Rejected at trial 71/100: distance 12->6.
+  Rejected at trial 72/100: distance 12->4.
+  Rejected at trial 73/100: distance 12->8.
+  Rejected at trial 74/100: distance 12->10.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->10.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->10.
+  Rejected at trial 79/100: distance 12->8.
+  Rejected at trial 80/100: distance 12->10.
+  Rejected at trial 81/100: distance 12->8.
+  Rejected at trial 82/100: distance 12->10.
+  Rejected at trial 83/100: distance 12->10.
+  Rejected at trial 84/100: distance 12->10.
+  Rejected at trial 85/100: distance 12->6.
+  Rejected at trial 86/100: distance 12->10.
+  Rejected at trial 87/100: distance 12->10.
+  Rejected at trial 88/100: distance 12->8.
+  Rejected at trial 89/100: distance 12->10.
+  Rejected at trial 90/100: distance 12->8.
+  Rejected at trial 91/100: distance 12->8.
+  Rejected at trial 92/100: distance 12->6.
+  Rejected at trial 93/100: distance 12->8.
+  Rejected at trial 94/100: distance 12->10.
+  Rejected at trial 95/100: distance 12->8.
+  Rejected at trial 96/100: distance 12->8.
+  Rejected at trial 97/100: distance 12->10.
+  Valid proposal at trial 98/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 62, 15: 0, 16: 106}, score=23.4386
+  Rejected at trial 99/100: distance 12->8.
+  Valid proposal at trial 100/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 16, 13: 0, 14: 56, 15: 0, 16: 120}, score=22.012
+  Trials completed: 100/100, valid proposals found: 8, rejections due to distance decrease: 92.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 15, 13: 0, 14: 56, 15: 0, 16: 125}, score=21.0525, score=21.0525
+
+Step 8/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 15, 13: 0, 14: 56, 15: 0, 16: 125}, score=21.0525
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->8.
+  Rejected at trial 3/100: distance 12->10.
+  Rejected at trial 4/100: distance 12->8.
+  Rejected at trial 5/100: distance 12->10.
+  Rejected at trial 6/100: distance 12->10.
+  Rejected at trial 7/100: distance 12->6.
+  Rejected at trial 8/100: distance 12->10.
+  Rejected at trial 9/100: distance 12->10.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->10.
+  Rejected at trial 13/100: distance 12->8.
+  Rejected at trial 14/100: distance 12->8.
+  Rejected at trial 15/100: distance 12->8.
+  Rejected at trial 16/100: distance 12->8.
+  Rejected at trial 17/100: distance 12->10.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->8.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Valid proposal at trial 23/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 58, 15: 0, 16: 125}, score=21.2325
+  Rejected at trial 24/100: distance 12->6.
+  Rejected at trial 25/100: distance 12->8.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->10.
+  Rejected at trial 28/100: distance 12->8.
+  Rejected at trial 29/100: distance 12->8.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->8.
+  Rejected at trial 32/100: distance 12->8.
+  Rejected at trial 33/100: distance 12->10.
+  Rejected at trial 34/100: distance 12->10.
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->8.
+  Rejected at trial 37/100: distance 12->4.
+  Rejected at trial 38/100: distance 12->6.
+  Rejected at trial 39/100: distance 12->4.
+  Rejected at trial 40/100: distance 12->10.
+  Rejected at trial 41/100: distance 12->8.
+  Valid proposal at trial 42/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 58, 15: 0, 16: 122}, score=23.2082
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->10.
+  Rejected at trial 45/100: distance 12->10.
+  Rejected at trial 46/100: distance 12->8.
+  Rejected at trial 47/100: distance 12->10.
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->10.
+  Rejected at trial 51/100: distance 12->8.
+  Rejected at trial 52/100: distance 12->8.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->8.
+  Rejected at trial 56/100: distance 12->8.
+  Valid proposal at trial 57/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 20, 13: 0, 14: 51, 15: 0, 16: 110}, score=25.481
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->8.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->8.
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->4.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->6.
+  Rejected at trial 68/100: distance 12->6.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->8.
+  Valid proposal at trial 71/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 21, 13: 0, 14: 50, 15: 0, 16: 116}, score=26.4396
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->8.
+  Rejected at trial 74/100: distance 12->10.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->10.
+  Rejected at trial 77/100: distance 12->8.
+  Rejected at trial 78/100: distance 12->10.
+  Rejected at trial 79/100: distance 12->6.
+  Rejected at trial 80/100: distance 12->8.
+  Rejected at trial 81/100: distance 12->8.
+  Rejected at trial 82/100: distance 12->8.
+  Rejected at trial 83/100: distance 12->8.
+  Rejected at trial 84/100: distance 12->10.
+  Rejected at trial 85/100: distance 12->10.
+  Rejected at trial 86/100: distance 12->10.
+  Valid proposal at trial 87/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 55, 15: 0, 16: 123}, score=20.9463
+  Rejected at trial 88/100: distance 12->8.
+  Rejected at trial 89/100: distance 12->8.
+  Rejected at trial 90/100: distance 12->8.
+  Valid proposal at trial 91/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 20, 13: 0, 14: 50, 15: 0, 16: 119}, score=25.4639
+  Rejected at trial 92/100: distance 12->10.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->10.
+  Rejected at trial 95/100: distance 12->10.
+  Rejected at trial 96/100: distance 12->10.
+  Rejected at trial 97/100: distance 12->10.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->6.
+  Rejected at trial 100/100: distance 12->10.
+  Trials completed: 100/100, valid proposals found: 6, rejections due to distance decrease: 94.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 15, 13: 0, 14: 55, 15: 0, 16: 123}, score=20.9463, score=20.9463
+
+Step 9/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 15, 13: 0, 14: 55, 15: 0, 16: 123}, score=20.9463
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->8.
+  Rejected at trial 2/100: distance 12->10.
+  Rejected at trial 3/100: distance 12->10.
+  Rejected at trial 4/100: distance 12->8.
+  Rejected at trial 5/100: distance 12->8.
+  Rejected at trial 6/100: distance 12->10.
+  Rejected at trial 7/100: distance 12->6.
+  Rejected at trial 8/100: distance 12->8.
+  Rejected at trial 9/100: distance 12->10.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->8.
+  Rejected at trial 13/100: distance 12->10.
+  Rejected at trial 14/100: distance 12->10.
+  Rejected at trial 15/100: distance 12->10.
+  Rejected at trial 16/100: distance 12->8.
+  Rejected at trial 17/100: distance 12->10.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->10.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->8.
+  Rejected at trial 28/100: distance 12->10.
+  Rejected at trial 29/100: distance 12->8.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->8.
+  Rejected at trial 32/100: distance 12->10.
+  Rejected at trial 33/100: distance 12->10.
+  Rejected at trial 34/100: distance 12->8.
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->6.
+  Rejected at trial 37/100: distance 12->6.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->8.
+  Rejected at trial 40/100: distance 12->8.
+  Rejected at trial 41/100: distance 12->8.
+  Rejected at trial 42/100: distance 12->8.
+  Rejected at trial 43/100: distance 12->6.
+  Rejected at trial 44/100: distance 12->6.
+  Rejected at trial 45/100: distance 12->8.
+  Rejected at trial 46/100: distance 12->8.
+  Rejected at trial 47/100: distance 12->10.
+  Rejected at trial 48/100: distance 12->8.
+  Rejected at trial 49/100: distance 12->8.
+  Rejected at trial 50/100: distance 12->10.
+  Rejected at trial 51/100: distance 12->8.
+  Rejected at trial 52/100: distance 12->10.
+  Rejected at trial 53/100: distance 12->6.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->10.
+  Rejected at trial 56/100: distance 12->10.
+  Rejected at trial 57/100: distance 12->10.
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->8.
+  Rejected at trial 60/100: distance 12->8.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->6.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->10.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->8.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->8.
+  Rejected at trial 73/100: distance 12->8.
+  Rejected at trial 74/100: distance 12->6.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->8.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->8.
+  Rejected at trial 79/100: distance 12->10.
+  Rejected at trial 80/100: distance 12->6.
+  Rejected at trial 81/100: distance 12->10.
+  Rejected at trial 82/100: distance 12->8.
+  Rejected at trial 83/100: distance 12->10.
+  Rejected at trial 84/100: distance 12->10.
+  Valid proposal at trial 85/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 52, 15: 0, 16: 112}, score=24.5872
+  Rejected at trial 86/100: distance 12->8.
+  Rejected at trial 87/100: distance 12->10.
+  Rejected at trial 88/100: distance 12->10.
+  Rejected at trial 89/100: distance 12->6.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->10.
+  Rejected at trial 92/100: distance 12->10.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->8.
+  Rejected at trial 95/100: distance 12->10.
+  Rejected at trial 96/100: distance 12->8.
+  Rejected at trial 97/100: distance 12->8.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->6.
+  Rejected at trial 100/100: distance 12->8.
+  Trials completed: 100/100, valid proposals found: 1, rejections due to distance decrease: 99.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 19, 13: 0, 14: 52, 15: 0, 16: 112}, score=24.5872, score=24.5872
+
+Step 10/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 19, 13: 0, 14: 52, 15: 0, 16: 112}, score=24.5872
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->8.
+  Rejected at trial 3/100: distance 12->10.
+  Rejected at trial 4/100: distance 12->8.
+  Rejected at trial 5/100: distance 12->2.
+  Rejected at trial 6/100: distance 12->8.
+  Rejected at trial 7/100: distance 12->10.
+  Valid proposal at trial 8/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 16, 13: 0, 14: 63, 15: 0, 16: 99}, score=22.4719
+  Rejected at trial 9/100: distance 12->8.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->8.
+  Rejected at trial 13/100: distance 12->6.
+  Rejected at trial 14/100: distance 12->8.
+  Rejected at trial 15/100: distance 12->10.
+  Rejected at trial 16/100: distance 12->8.
+  Rejected at trial 17/100: distance 12->6.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->8.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->8.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->10.
+  Rejected at trial 28/100: distance 12->10.
+  Rejected at trial 29/100: distance 12->10.
+  Rejected at trial 30/100: distance 12->8.
+  Rejected at trial 31/100: distance 12->6.
+  Rejected at trial 32/100: distance 12->10.
+  Rejected at trial 33/100: distance 12->10.
+  Valid proposal at trial 34/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 24, 13: 0, 14: 46, 15: 0, 16: 111}, score=29.0391
+  Rejected at trial 35/100: distance 12->8.
+  Rejected at trial 36/100: distance 12->8.
+  Rejected at trial 37/100: distance 12->8.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->8.
+  Rejected at trial 40/100: distance 12->4.
+  Rejected at trial 41/100: distance 12->10.
+  Rejected at trial 42/100: distance 12->8.
+  Valid proposal at trial 43/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 54, 15: 0, 16: 115}, score=22.7915
+  Rejected at trial 44/100: distance 12->6.
+  Valid proposal at trial 45/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 22, 13: 0, 14: 48, 15: 0, 16: 111}, score=27.2191
+  Rejected at trial 46/100: distance 12->10.
+  Rejected at trial 47/100: distance 12->10.
+  Rejected at trial 48/100: distance 12->8.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->8.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->8.
+  Rejected at trial 53/100: distance 12->6.
+  Rejected at trial 54/100: distance 12->8.
+  Rejected at trial 55/100: distance 12->8.
+  Rejected at trial 56/100: distance 12->10.
+  Valid proposal at trial 57/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 20, 13: 0, 14: 46, 15: 0, 16: 119}, score=25.1039
+  Rejected at trial 58/100: distance 12->8.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->4.
+  Rejected at trial 62/100: distance 12->8.
+  Rejected at trial 63/100: distance 12->8.
+  Rejected at trial 64/100: distance 12->8.
+  Rejected at trial 65/100: distance 12->8.
+  Rejected at trial 66/100: distance 12->8.
+  Rejected at trial 67/100: distance 12->8.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->8.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->8.
+  Valid proposal at trial 73/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 20, 13: 0, 14: 53, 15: 0, 16: 108}, score=25.6448
+  Rejected at trial 74/100: distance 12->10.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->10.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->10.
+  Rejected at trial 79/100: distance 12->10.
+  Rejected at trial 80/100: distance 12->10.
+  Rejected at trial 81/100: distance 12->10.
+  Valid proposal at trial 82/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 20, 13: 0, 14: 53, 15: 0, 16: 109}, score=25.6529
+  Rejected at trial 83/100: distance 12->6.
+  Rejected at trial 84/100: distance 12->8.
+  Valid proposal at trial 85/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 52, 15: 0, 16: 112}, score=24.5872
+  Rejected at trial 86/100: distance 12->10.
+  Rejected at trial 87/100: distance 12->10.
+  Valid proposal at trial 88/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 54, 15: 0, 16: 110}, score=24.751
+  Rejected at trial 89/100: distance 12->10.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->10.
+  Rejected at trial 92/100: distance 12->8.
+  Rejected at trial 93/100: distance 12->8.
+  Rejected at trial 94/100: distance 12->10.
+  Rejected at trial 95/100: distance 12->8.
+  Rejected at trial 96/100: distance 12->6.
+  Valid proposal at trial 97/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 59, 15: 0, 16: 99}, score=25.1119
+  Rejected at trial 98/100: distance 12->4.
+  Rejected at trial 99/100: distance 12->10.
+  Rejected at trial 100/100: distance 12->8.
+  Trials completed: 100/100, valid proposals found: 10, rejections due to distance decrease: 90.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 16, 13: 0, 14: 63, 15: 0, 16: 99}, score=22.4719, score=22.4719
+
+Step 11/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 16, 13: 0, 14: 63, 15: 0, 16: 99}, score=22.4719
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->10.
+  Rejected at trial 3/100: distance 12->10.
+  Rejected at trial 4/100: distance 12->10.
+  Rejected at trial 5/100: distance 12->8.
+  Rejected at trial 6/100: distance 12->10.
+  Rejected at trial 7/100: distance 12->10.
+  Rejected at trial 8/100: distance 12->8.
+  Rejected at trial 9/100: distance 12->10.
+  Rejected at trial 10/100: distance 12->8.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->8.
+  Rejected at trial 13/100: distance 12->10.
+  Rejected at trial 14/100: distance 12->10.
+  Valid proposal at trial 15/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 16, 13: 0, 14: 58, 15: 0, 16: 114}, score=22.1434
+  Rejected at trial 16/100: distance 12->10.
+  Rejected at trial 17/100: distance 12->8.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->6.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->8.
+  Rejected at trial 22/100: distance 12->10.
+  Valid proposal at trial 23/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 63, 15: 0, 16: 109}, score=21.5529
+  Rejected at trial 24/100: distance 12->10.
+  Valid proposal at trial 25/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 59, 15: 0, 16: 103}, score=24.1443
+  Rejected at trial 26/100: distance 12->8.
+  Rejected at trial 27/100: distance 12->8.
+  Rejected at trial 28/100: distance 12->10.
+  Rejected at trial 29/100: distance 12->6.
+  Valid proposal at trial 30/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 22, 13: 0, 14: 60, 15: 0, 16: 93}, score=28.1533
+  Rejected at trial 31/100: distance 12->10.
+  Rejected at trial 32/100: distance 12->8.
+  Rejected at trial 33/100: distance 12->10.
+  Rejected at trial 34/100: distance 12->10.
+  Rejected at trial 35/100: distance 12->8.
+  Rejected at trial 36/100: distance 12->8.
+  Rejected at trial 37/100: distance 12->4.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->8.
+  Rejected at trial 40/100: distance 12->10.
+  Rejected at trial 41/100: distance 12->10.
+  Rejected at trial 42/100: distance 12->8.
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->6.
+  Rejected at trial 45/100: distance 12->8.
+  Rejected at trial 46/100: distance 12->10.
+  Rejected at trial 47/100: distance 12->6.
+  Rejected at trial 48/100: distance 12->8.
+  Rejected at trial 49/100: distance 12->8.
+  Rejected at trial 50/100: distance 12->6.
+  Rejected at trial 51/100: distance 12->8.
+  Rejected at trial 52/100: distance 12->10.
+  Rejected at trial 53/100: distance 12->8.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->10.
+  Rejected at trial 56/100: distance 12->10.
+  Rejected at trial 57/100: distance 12->8.
+  Rejected at trial 58/100: distance 12->8.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->8.
+  Rejected at trial 62/100: distance 12->8.
+  Rejected at trial 63/100: distance 12->6.
+  Valid proposal at trial 64/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 16, 13: 0, 14: 60, 15: 0, 16: 108}, score=22.2748
+  Rejected at trial 65/100: distance 12->8.
+  Rejected at trial 66/100: distance 12->8.
+  Rejected at trial 67/100: distance 12->6.
+  Rejected at trial 68/100: distance 12->6.
+  Rejected at trial 69/100: distance 12->8.
+  Rejected at trial 70/100: distance 12->8.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->6.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->8.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->8.
+  Rejected at trial 79/100: distance 12->8.
+  Rejected at trial 80/100: distance 12->8.
+  Rejected at trial 81/100: distance 12->10.
+  Rejected at trial 82/100: distance 12->10.
+  Rejected at trial 83/100: distance 12->8.
+  Rejected at trial 84/100: distance 12->10.
+  Rejected at trial 85/100: distance 12->8.
+  Rejected at trial 86/100: distance 12->10.
+  Valid proposal at trial 87/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 21, 13: 0, 14: 54, 15: 0, 16: 111}, score=26.7591
+  Rejected at trial 88/100: distance 12->8.
+  Rejected at trial 89/100: distance 12->10.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->10.
+  Rejected at trial 92/100: distance 12->10.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->8.
+  Rejected at trial 95/100: distance 12->8.
+  Rejected at trial 96/100: distance 12->10.
+  Rejected at trial 97/100: distance 12->10.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->8.
+  Rejected at trial 100/100: distance 12->8.
+  Trials completed: 100/100, valid proposals found: 6, rejections due to distance decrease: 94.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 15, 13: 0, 14: 63, 15: 0, 16: 109}, score=21.5529, score=21.5529
+
+Step 12/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 15, 13: 0, 14: 63, 15: 0, 16: 109}, score=21.5529
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->10.
+  Rejected at trial 3/100: distance 12->8.
+  Rejected at trial 4/100: distance 12->8.
+  Rejected at trial 5/100: distance 12->10.
+  Rejected at trial 6/100: distance 12->10.
+  Rejected at trial 7/100: distance 12->8.
+  Rejected at trial 8/100: distance 12->10.
+  Rejected at trial 9/100: distance 12->6.
+  Rejected at trial 10/100: distance 12->6.
+  Rejected at trial 11/100: distance 12->8.
+  Rejected at trial 12/100: distance 12->8.
+  Rejected at trial 13/100: distance 12->8.
+  Rejected at trial 14/100: distance 12->8.
+  Rejected at trial 15/100: distance 12->8.
+  Rejected at trial 16/100: distance 12->10.
+  Rejected at trial 17/100: distance 12->8.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->8.
+  Rejected at trial 20/100: distance 12->2.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->8.
+  Rejected at trial 25/100: distance 12->8.
+  Rejected at trial 26/100: distance 12->4.
+  Rejected at trial 27/100: distance 12->10.
+  Rejected at trial 28/100: distance 12->8.
+  Rejected at trial 29/100: distance 12->8.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->6.
+  Rejected at trial 32/100: distance 12->8.
+  Rejected at trial 33/100: distance 12->8.
+  Rejected at trial 34/100: distance 12->10.
+  Rejected at trial 35/100: distance 12->8.
+  Rejected at trial 36/100: distance 12->8.
+  Rejected at trial 37/100: distance 12->10.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->10.
+  Rejected at trial 40/100: distance 12->8.
+  Rejected at trial 41/100: distance 12->10.
+  Rejected at trial 42/100: distance 12->10.
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->8.
+  Rejected at trial 45/100: distance 12->10.
+  Rejected at trial 46/100: distance 12->8.
+  Rejected at trial 47/100: distance 12->8.
+  Rejected at trial 48/100: distance 12->8.
+  Rejected at trial 49/100: distance 12->8.
+  Rejected at trial 50/100: distance 12->8.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->6.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->10.
+  Rejected at trial 56/100: distance 12->6.
+  Rejected at trial 57/100: distance 12->6.
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->8.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->8.
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->10.
+  Rejected at trial 66/100: distance 12->8.
+  Rejected at trial 67/100: distance 12->8.
+  Rejected at trial 68/100: distance 12->8.
+  Rejected at trial 69/100: distance 12->8.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->8.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->8.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->8.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->8.
+  Rejected at trial 79/100: distance 12->8.
+  Valid proposal at trial 80/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 59, 15: 0, 16: 110}, score=23.201
+  Rejected at trial 81/100: distance 12->10.
+  Rejected at trial 82/100: distance 12->8.
+  Rejected at trial 83/100: distance 12->8.
+  Rejected at trial 84/100: distance 12->10.
+  Rejected at trial 85/100: distance 12->10.
+  Rejected at trial 86/100: distance 12->8.
+  Rejected at trial 87/100: distance 12->10.
+  Rejected at trial 88/100: distance 12->8.
+  Rejected at trial 89/100: distance 12->10.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->8.
+  Rejected at trial 92/100: distance 12->10.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->10.
+  Rejected at trial 95/100: distance 12->8.
+  Valid proposal at trial 96/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 59, 15: 0, 16: 112}, score=24.2172
+  Rejected at trial 97/100: distance 12->10.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->10.
+  Rejected at trial 100/100: distance 12->10.
+  Trials completed: 100/100, valid proposals found: 2, rejections due to distance decrease: 98.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 17, 13: 0, 14: 59, 15: 0, 16: 110}, score=23.201, score=23.201
+
+Step 13/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 17, 13: 0, 14: 59, 15: 0, 16: 110}, score=23.201
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->2.
+  Rejected at trial 3/100: distance 12->10.
+  Valid proposal at trial 4/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 58, 15: 0, 16: 103}, score=24.0543
+  Rejected at trial 5/100: distance 12->8.
+  Valid proposal at trial 6/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 60, 15: 0, 16: 111}, score=21.2991
+  Rejected at trial 7/100: distance 12->6.
+  Rejected at trial 8/100: distance 12->10.
+  Rejected at trial 9/100: distance 12->10.
+  Rejected at trial 10/100: distance 12->8.
+  Rejected at trial 11/100: distance 12->10.
+  Valid proposal at trial 12/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 14, 13: 0, 14: 64, 15: 0, 16: 112}, score=20.6672
+  Rejected at trial 13/100: distance 12->8.
+  Rejected at trial 14/100: distance 12->8.
+  Rejected at trial 15/100: distance 12->10.
+  Rejected at trial 16/100: distance 12->8.
+  Rejected at trial 17/100: distance 12->10.
+  Rejected at trial 18/100: distance 12->6.
+  Rejected at trial 19/100: distance 12->6.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->6.
+  Rejected at trial 22/100: distance 12->8.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->8.
+  Rejected at trial 25/100: distance 12->8.
+  Rejected at trial 26/100: distance 12->6.
+  Rejected at trial 27/100: distance 12->10.
+  Rejected at trial 28/100: distance 12->10.
+  Rejected at trial 29/100: distance 12->10.
+  Rejected at trial 30/100: distance 12->8.
+  Rejected at trial 31/100: distance 12->8.
+  Rejected at trial 32/100: distance 12->8.
+  Rejected at trial 33/100: distance 12->2.
+  Valid proposal at trial 34/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 124}, score=18.4944
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->10.
+  Rejected at trial 37/100: distance 12->8.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->8.
+  Valid proposal at trial 40/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 20, 13: 0, 14: 61, 15: 0, 16: 92}, score=26.2352
+  Rejected at trial 41/100: distance 12->8.
+  Rejected at trial 42/100: distance 12->8.
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->8.
+  Rejected at trial 45/100: distance 12->8.
+  Rejected at trial 46/100: distance 12->10.
+  Rejected at trial 47/100: distance 12->8.
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->8.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->8.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->8.
+  Rejected at trial 55/100: distance 12->8.
+  Rejected at trial 56/100: distance 12->10.
+  Rejected at trial 57/100: distance 12->8.
+  Rejected at trial 58/100: distance 12->8.
+  Valid proposal at trial 59/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 55, 15: 0, 16: 116}, score=23.8896
+  Rejected at trial 60/100: distance 12->8.
+  Rejected at trial 61/100: distance 12->4.
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->6.
+  Valid proposal at trial 64/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 21, 13: 0, 14: 50, 15: 0, 16: 117}, score=26.4477
+  Rejected at trial 65/100: distance 12->10.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->8.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->8.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->10.
+  Valid proposal at trial 77/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 16, 13: 0, 14: 62, 15: 0, 16: 107}, score=22.4467
+  Rejected at trial 78/100: distance 12->6.
+  Rejected at trial 79/100: distance 12->10.
+  Rejected at trial 80/100: distance 12->8.
+  Rejected at trial 81/100: distance 12->10.
+  Rejected at trial 82/100: distance 12->8.
+  Rejected at trial 83/100: distance 12->10.
+  Valid proposal at trial 84/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 63, 15: 0, 16: 112}, score=21.5772
+  Valid proposal at trial 85/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 56, 15: 0, 16: 118}, score=22.9958
+  Rejected at trial 86/100: distance 12->10.
+  Rejected at trial 87/100: distance 12->10.
+  Rejected at trial 88/100: distance 12->10.
+  Rejected at trial 89/100: distance 12->8.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->8.
+  Rejected at trial 92/100: distance 12->10.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->10.
+  Rejected at trial 95/100: distance 12->10.
+  Rejected at trial 96/100: distance 12->8.
+  Rejected at trial 97/100: distance 12->10.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->10.
+  Rejected at trial 100/100: distance 12->8.
+  Trials completed: 100/100, valid proposals found: 10, rejections due to distance decrease: 90.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 124}, score=18.4944, score=18.4944
+
+Step 14/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 124}, score=18.4944
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->8.
+  Rejected at trial 3/100: distance 12->8.
+  Rejected at trial 4/100: distance 12->8.
+  Rejected at trial 5/100: distance 12->10.
+  Rejected at trial 6/100: distance 12->8.
+  Rejected at trial 7/100: distance 12->8.
+  Rejected at trial 8/100: distance 12->8.
+  Rejected at trial 9/100: distance 12->10.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->8.
+  Valid proposal at trial 13/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 56, 15: 0, 16: 112}, score=24.9472
+  Rejected at trial 14/100: distance 12->10.
+  Rejected at trial 15/100: distance 12->10.
+  Rejected at trial 16/100: distance 12->10.
+  Rejected at trial 17/100: distance 12->8.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->6.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->10.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->10.
+  Valid proposal at trial 27/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 58, 15: 0, 16: 110}, score=24.111
+  Rejected at trial 28/100: distance 12->8.
+  Rejected at trial 29/100: distance 12->8.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->10.
+  Rejected at trial 32/100: distance 12->10.
+  Rejected at trial 33/100: distance 12->6.
+  Rejected at trial 34/100: distance 12->10.
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->10.
+  Rejected at trial 37/100: distance 12->10.
+  Rejected at trial 38/100: distance 12->10.
+  Rejected at trial 39/100: distance 12->10.
+  Rejected at trial 40/100: distance 12->8.
+  Rejected at trial 41/100: distance 12->4.
+  Rejected at trial 42/100: distance 12->10.
+  Rejected at trial 43/100: distance 12->8.
+  Valid proposal at trial 44/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 19, 13: 0, 14: 56, 15: 0, 16: 112}, score=24.9472
+  Rejected at trial 45/100: distance 12->10.
+  Rejected at trial 46/100: distance 12->8.
+  Rejected at trial 47/100: distance 12->6.
+  Rejected at trial 48/100: distance 12->8.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->10.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->8.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->8.
+  Rejected at trial 55/100: distance 12->8.
+  Valid proposal at trial 56/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 11, 13: 0, 14: 65, 15: 0, 16: 115}, score=17.7815
+  Rejected at trial 57/100: distance 12->10.
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->8.
+  Rejected at trial 63/100: distance 12->8.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->8.
+  Rejected at trial 66/100: distance 12->6.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->8.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->6.
+  Rejected at trial 74/100: distance 12->10.
+  Rejected at trial 75/100: distance 12->8.
+  Rejected at trial 76/100: distance 12->10.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->8.
+  Rejected at trial 79/100: distance 12->10.
+  Rejected at trial 80/100: distance 12->10.
+  Rejected at trial 81/100: distance 12->10.
+  Rejected at trial 82/100: distance 12->8.
+  Rejected at trial 83/100: distance 12->10.
+  Rejected at trial 84/100: distance 12->10.
+  Rejected at trial 85/100: distance 12->10.
+  Rejected at trial 86/100: distance 12->6.
+  Rejected at trial 87/100: distance 12->10.
+  Rejected at trial 88/100: distance 12->8.
+  Rejected at trial 89/100: distance 12->10.
+  Rejected at trial 90/100: distance 12->8.
+  Rejected at trial 91/100: distance 12->10.
+  Rejected at trial 92/100: distance 12->10.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->8.
+  Rejected at trial 95/100: distance 12->10.
+  Rejected at trial 96/100: distance 12->10.
+  Rejected at trial 97/100: distance 12->10.
+  Rejected at trial 98/100: distance 12->8.
+  Rejected at trial 99/100: distance 12->8.
+  Rejected at trial 100/100: distance 12->8.
+  Trials completed: 100/100, valid proposals found: 4, rejections due to distance decrease: 96.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 11, 13: 0, 14: 65, 15: 0, 16: 115}, score=17.7815, score=17.7815
+
+Step 15/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 11, 13: 0, 14: 65, 15: 0, 16: 115}, score=17.7815
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->6.
+  Rejected at trial 2/100: distance 12->6.
+  Rejected at trial 3/100: distance 12->6.
+  Rejected at trial 4/100: distance 12->10.
+  Rejected at trial 5/100: distance 12->10.
+  Rejected at trial 6/100: distance 12->8.
+  Rejected at trial 7/100: distance 12->6.
+  Rejected at trial 8/100: distance 12->8.
+  Rejected at trial 9/100: distance 12->8.
+  Rejected at trial 10/100: distance 12->8.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->10.
+  Rejected at trial 13/100: distance 12->10.
+  Rejected at trial 14/100: distance 12->10.
+  Rejected at trial 15/100: distance 12->8.
+  Rejected at trial 16/100: distance 12->8.
+  Rejected at trial 17/100: distance 12->8.
+  Valid proposal at trial 18/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 14, 13: 0, 14: 57, 15: 0, 16: 122}, score=20.1182
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->10.
+  Valid proposal at trial 22/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 124}, score=18.4944
+  Rejected at trial 23/100: distance 12->8.
+  Rejected at trial 24/100: distance 12->10.
+  Rejected at trial 25/100: distance 12->2.
+  Rejected at trial 26/100: distance 12->2.
+  Rejected at trial 27/100: distance 12->6.
+  Rejected at trial 28/100: distance 12->8.
+  Rejected at trial 29/100: distance 12->10.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->10.
+  Rejected at trial 32/100: distance 12->10.
+  Rejected at trial 33/100: distance 12->10.
+  Rejected at trial 34/100: distance 12->6.
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->8.
+  Rejected at trial 37/100: distance 12->8.
+  Valid proposal at trial 38/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 14, 13: 0, 14: 59, 15: 0, 16: 110}, score=20.201
+  Rejected at trial 39/100: distance 12->10.
+  Rejected at trial 40/100: distance 12->10.
+  Rejected at trial 41/100: distance 12->10.
+  Rejected at trial 42/100: distance 12->10.
+  Valid proposal at trial 43/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 122}, score=18.4782
+  Rejected at trial 44/100: distance 12->8.
+  Rejected at trial 45/100: distance 12->10.
+  Rejected at trial 46/100: distance 12->6.
+  Rejected at trial 47/100: distance 12->8.
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->10.
+  Valid proposal at trial 50/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 54, 15: 0, 16: 116}, score=23.7996
+  Rejected at trial 51/100: distance 12->8.
+  Rejected at trial 52/100: distance 12->8.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->8.
+  Rejected at trial 55/100: distance 12->10.
+  Rejected at trial 56/100: distance 12->8.
+  Rejected at trial 57/100: distance 12->8.
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->8.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->6.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->8.
+  Rejected at trial 66/100: distance 12->8.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->10.
+  Valid proposal at trial 73/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 57, 15: 0, 16: 120}, score=21.102
+  Rejected at trial 74/100: distance 12->8.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->8.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->8.
+  Rejected at trial 79/100: distance 12->10.
+  Rejected at trial 80/100: distance 12->10.
+  Valid proposal at trial 81/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 60, 15: 0, 16: 108}, score=21.2748
+  Rejected at trial 82/100: distance 12->10.
+  Rejected at trial 83/100: distance 12->6.
+  Rejected at trial 84/100: distance 12->8.
+  Valid proposal at trial 85/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 16, 13: 0, 14: 65, 15: 0, 16: 107}, score=22.7167
+  Rejected at trial 86/100: distance 12->8.
+  Rejected at trial 87/100: distance 12->10.
+  Rejected at trial 88/100: distance 12->10.
+  Rejected at trial 89/100: distance 12->8.
+  Rejected at trial 90/100: distance 12->8.
+  Rejected at trial 91/100: distance 12->8.
+  Rejected at trial 92/100: distance 12->8.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->8.
+  Rejected at trial 95/100: distance 12->6.
+  Rejected at trial 96/100: distance 12->10.
+  Rejected at trial 97/100: distance 12->8.
+  Rejected at trial 98/100: distance 12->6.
+  Rejected at trial 99/100: distance 12->8.
+  Rejected at trial 100/100: distance 12->8.
+  Trials completed: 100/100, valid proposals found: 8, rejections due to distance decrease: 92.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 122}, score=18.4782, score=18.4782
+
+Step 16/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 122}, score=18.4782
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->10.
+  Rejected at trial 3/100: distance 12->10.
+  Valid proposal at trial 4/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 12, 13: 0, 14: 64, 15: 0, 16: 115}, score=18.6915
+  Rejected at trial 5/100: distance 12->8.
+  Rejected at trial 6/100: distance 12->6.
+  Rejected at trial 7/100: distance 12->10.
+  Rejected at trial 8/100: distance 12->4.
+  Rejected at trial 9/100: distance 12->10.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Valid proposal at trial 12/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 61, 15: 0, 16: 109}, score=21.3729
+  Rejected at trial 13/100: distance 12->10.
+  Rejected at trial 14/100: distance 12->6.
+  Rejected at trial 15/100: distance 12->4.
+  Rejected at trial 16/100: distance 12->10.
+  Rejected at trial 17/100: distance 12->10.
+  Rejected at trial 18/100: distance 12->6.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->8.
+  Rejected at trial 24/100: distance 12->8.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->10.
+  Rejected at trial 28/100: distance 12->10.
+  Rejected at trial 29/100: distance 12->10.
+  Rejected at trial 30/100: distance 12->8.
+  Rejected at trial 31/100: distance 12->10.
+  Rejected at trial 32/100: distance 12->10.
+  Valid proposal at trial 33/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 58, 15: 0, 16: 119}, score=21.1839
+  Valid proposal at trial 34/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 127}, score=18.5187
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->10.
+  Rejected at trial 37/100: distance 12->8.
+  Rejected at trial 38/100: distance 12->10.
+  Rejected at trial 39/100: distance 12->10.
+  Rejected at trial 40/100: distance 12->8.
+  Rejected at trial 41/100: distance 12->8.
+  Rejected at trial 42/100: distance 12->10.
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->10.
+  Rejected at trial 45/100: distance 12->10.
+  Rejected at trial 46/100: distance 12->10.
+  Rejected at trial 47/100: distance 12->10.
+  Rejected at trial 48/100: distance 12->8.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->6.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->10.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->10.
+  Rejected at trial 56/100: distance 12->10.
+  Rejected at trial 57/100: distance 12->10.
+  Rejected at trial 58/100: distance 12->8.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->8.
+  Valid proposal at trial 61/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 128}, score=18.5268
+  Rejected at trial 62/100: distance 12->2.
+  Rejected at trial 63/100: distance 12->8.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->8.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->6.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->8.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->8.
+  Rejected at trial 75/100: distance 12->8.
+  Rejected at trial 76/100: distance 12->10.
+  Valid proposal at trial 77/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 64, 15: 0, 16: 112}, score=21.6672
+  Rejected at trial 78/100: distance 12->10.
+  Rejected at trial 79/100: distance 12->8.
+  Rejected at trial 80/100: distance 12->8.
+  Rejected at trial 81/100: distance 12->10.
+  Valid proposal at trial 82/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 14, 13: 0, 14: 62, 15: 0, 16: 107}, score=20.4467
+  Rejected at trial 83/100: distance 12->8.
+  Valid proposal at trial 84/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 122}, score=18.4782
+  Rejected at trial 85/100: distance 12->8.
+  Rejected at trial 86/100: distance 12->8.
+  Rejected at trial 87/100: distance 12->10.
+  Valid proposal at trial 88/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 12, 13: 0, 14: 66, 15: 0, 16: 110}, score=18.831
+  Rejected at trial 89/100: distance 12->10.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->10.
+  Rejected at trial 92/100: distance 12->10.
+  Rejected at trial 93/100: distance 12->8.
+  Rejected at trial 94/100: distance 12->10.
+  Rejected at trial 95/100: distance 12->10.
+  Rejected at trial 96/100: distance 12->10.
+  Rejected at trial 97/100: distance 12->10.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->10.
+  Rejected at trial 100/100: distance 12->10.
+  Trials completed: 100/100, valid proposals found: 9, rejections due to distance decrease: 91.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 122}, score=18.4782, score=18.4782
+
+Step 17/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 122}, score=18.4782
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->8.
+  Rejected at trial 3/100: distance 12->6.
+  Rejected at trial 4/100: distance 12->8.
+  Rejected at trial 5/100: distance 12->10.
+  Rejected at trial 6/100: distance 12->10.
+  Rejected at trial 7/100: distance 12->10.
+  Rejected at trial 8/100: distance 12->10.
+  Rejected at trial 9/100: distance 12->8.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->6.
+  Rejected at trial 13/100: distance 12->8.
+  Rejected at trial 14/100: distance 12->6.
+  Rejected at trial 15/100: distance 12->8.
+  Rejected at trial 16/100: distance 12->8.
+  Rejected at trial 17/100: distance 12->10.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->6.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->6.
+  Rejected at trial 27/100: distance 12->10.
+  Rejected at trial 28/100: distance 12->10.
+  Rejected at trial 29/100: distance 12->8.
+  Rejected at trial 30/100: distance 12->8.
+  Rejected at trial 31/100: distance 12->4.
+  Rejected at trial 32/100: distance 12->10.
+  Rejected at trial 33/100: distance 12->8.
+  Rejected at trial 34/100: distance 12->10.
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->10.
+  Rejected at trial 37/100: distance 12->10.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->8.
+  Rejected at trial 40/100: distance 12->10.
+  Rejected at trial 41/100: distance 12->10.
+  Rejected at trial 42/100: distance 12->6.
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->10.
+  Rejected at trial 45/100: distance 12->2.
+  Rejected at trial 46/100: distance 12->10.
+  Rejected at trial 47/100: distance 12->10.
+  Rejected at trial 48/100: distance 12->8.
+  Rejected at trial 49/100: distance 12->8.
+  Rejected at trial 50/100: distance 12->10.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->10.
+  Rejected at trial 53/100: distance 12->8.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->10.
+  Rejected at trial 56/100: distance 12->8.
+  Valid proposal at trial 57/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 56, 15: 0, 16: 112}, score=23.9472
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->8.
+  Rejected at trial 61/100: distance 12->8.
+  Rejected at trial 62/100: distance 12->8.
+  Valid proposal at trial 63/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 61, 15: 0, 16: 111}, score=21.3891
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->10.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->8.
+  Rejected at trial 70/100: distance 12->8.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->10.
+  Rejected at trial 75/100: distance 12->8.
+  Rejected at trial 76/100: distance 12->10.
+  Rejected at trial 77/100: distance 12->8.
+  Rejected at trial 78/100: distance 12->10.
+  Rejected at trial 79/100: distance 12->6.
+  Rejected at trial 80/100: distance 12->8.
+  Rejected at trial 81/100: distance 12->8.
+  Rejected at trial 82/100: distance 12->10.
+  Rejected at trial 83/100: distance 12->10.
+  Rejected at trial 84/100: distance 12->10.
+  Rejected at trial 85/100: distance 12->10.
+  Rejected at trial 86/100: distance 12->10.
+  Rejected at trial 87/100: distance 12->8.
+  Rejected at trial 88/100: distance 12->10.
+  Valid proposal at trial 89/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 63, 15: 0, 16: 112}, score=24.5772
+  Rejected at trial 90/100: distance 12->8.
+  Rejected at trial 91/100: distance 12->10.
+  Rejected at trial 92/100: distance 12->8.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->8.
+  Rejected at trial 95/100: distance 12->10.
+  Rejected at trial 96/100: distance 12->8.
+  Rejected at trial 97/100: distance 12->10.
+  Valid proposal at trial 98/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 16, 13: 0, 14: 56, 15: 0, 16: 114}, score=21.9634
+  Rejected at trial 99/100: distance 12->8.
+  Rejected at trial 100/100: distance 12->8.
+  Trials completed: 100/100, valid proposals found: 4, rejections due to distance decrease: 96.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 15, 13: 0, 14: 61, 15: 0, 16: 111}, score=21.3891, score=21.3891
+
+Step 18/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 15, 13: 0, 14: 61, 15: 0, 16: 111}, score=21.3891
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->8.
+  Rejected at trial 2/100: distance 12->8.
+  Rejected at trial 3/100: distance 12->8.
+  Rejected at trial 4/100: distance 12->10.
+  Rejected at trial 5/100: distance 12->10.
+  Rejected at trial 6/100: distance 12->10.
+  Rejected at trial 7/100: distance 12->8.
+  Rejected at trial 8/100: distance 12->4.
+  Rejected at trial 9/100: distance 12->10.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->10.
+  Rejected at trial 13/100: distance 12->10.
+  Rejected at trial 14/100: distance 12->10.
+  Rejected at trial 15/100: distance 12->8.
+  Rejected at trial 16/100: distance 12->8.
+  Rejected at trial 17/100: distance 12->10.
+  Rejected at trial 18/100: distance 12->6.
+  Rejected at trial 19/100: distance 12->4.
+  Rejected at trial 20/100: distance 12->8.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->6.
+  Rejected at trial 24/100: distance 12->10.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->8.
+  Rejected at trial 28/100: distance 12->10.
+  Rejected at trial 29/100: distance 12->10.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->10.
+  Rejected at trial 32/100: distance 12->10.
+  Rejected at trial 33/100: distance 12->10.
+  Rejected at trial 34/100: distance 12->10.
+  Rejected at trial 35/100: distance 12->8.
+  Rejected at trial 36/100: distance 12->8.
+  Rejected at trial 37/100: distance 12->10.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->8.
+  Rejected at trial 40/100: distance 12->6.
+  Rejected at trial 41/100: distance 12->6.
+  Rejected at trial 42/100: distance 12->10.
+  Rejected at trial 43/100: distance 12->8.
+  Rejected at trial 44/100: distance 12->10.
+  Rejected at trial 45/100: distance 12->10.
+  Rejected at trial 46/100: distance 12->10.
+  Rejected at trial 47/100: distance 12->8.
+  Rejected at trial 48/100: distance 12->8.
+  Rejected at trial 49/100: distance 12->8.
+  Rejected at trial 50/100: distance 12->8.
+  Rejected at trial 51/100: distance 12->8.
+  Rejected at trial 52/100: distance 12->8.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->10.
+  Rejected at trial 56/100: distance 12->8.
+  Rejected at trial 57/100: distance 12->10.
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->8.
+  Rejected at trial 60/100: distance 12->8.
+  Valid proposal at trial 61/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 13, 13: 0, 14: 68, 15: 0, 16: 104}, score=19.9624
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->8.
+  Rejected at trial 66/100: distance 12->8.
+  Rejected at trial 67/100: distance 12->8.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->8.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->8.
+  Rejected at trial 74/100: distance 12->8.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->8.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->8.
+  Rejected at trial 79/100: distance 12->6.
+  Rejected at trial 80/100: distance 12->6.
+  Rejected at trial 81/100: distance 12->8.
+  Rejected at trial 82/100: distance 12->8.
+  Rejected at trial 83/100: distance 12->10.
+  Rejected at trial 84/100: distance 12->8.
+  Rejected at trial 85/100: distance 12->4.
+  Valid proposal at trial 86/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 58, 15: 0, 16: 112}, score=23.1272
+  Rejected at trial 87/100: distance 12->8.
+  Valid proposal at trial 88/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 58, 15: 0, 16: 106}, score=23.0786
+  Rejected at trial 89/100: distance 12->8.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->10.
+  Rejected at trial 92/100: distance 12->8.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->8.
+  Rejected at trial 95/100: distance 12->8.
+  Rejected at trial 96/100: distance 12->10.
+  Rejected at trial 97/100: distance 12->10.
+  Rejected at trial 98/100: distance 12->6.
+  Rejected at trial 99/100: distance 12->10.
+  Rejected at trial 100/100: distance 12->10.
+  Trials completed: 100/100, valid proposals found: 3, rejections due to distance decrease: 97.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 13, 13: 0, 14: 68, 15: 0, 16: 104}, score=19.9624, score=19.9624
+
+Step 19/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 13, 13: 0, 14: 68, 15: 0, 16: 104}, score=19.9624
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->10.
+  Rejected at trial 3/100: distance 12->8.
+  Rejected at trial 4/100: distance 12->8.
+  Rejected at trial 5/100: distance 12->6.
+  Rejected at trial 6/100: distance 12->6.
+  Rejected at trial 7/100: distance 12->10.
+  Rejected at trial 8/100: distance 12->8.
+  Rejected at trial 9/100: distance 12->8.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->10.
+  Rejected at trial 13/100: distance 12->10.
+  Rejected at trial 14/100: distance 12->8.
+  Rejected at trial 15/100: distance 12->6.
+  Rejected at trial 16/100: distance 12->10.
+  Rejected at trial 17/100: distance 12->8.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->6.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->10.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->10.
+  Valid proposal at trial 28/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 61, 15: 0, 16: 113}, score=21.4053
+  Rejected at trial 29/100: distance 12->2.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->6.
+  Rejected at trial 32/100: distance 12->10.
+  Rejected at trial 33/100: distance 12->10.
+  Rejected at trial 34/100: distance 12->10.
+  Rejected at trial 35/100: distance 12->8.
+  Rejected at trial 36/100: distance 12->10.
+  Rejected at trial 37/100: distance 12->10.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->8.
+  Valid proposal at trial 40/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 57, 15: 0, 16: 111}, score=23.0291
+  Rejected at trial 41/100: distance 12->10.
+  Valid proposal at trial 42/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 60, 15: 0, 16: 108}, score=23.2748
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->10.
+  Rejected at trial 45/100: distance 12->10.
+  Valid proposal at trial 46/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 13, 13: 0, 14: 65, 15: 0, 16: 107}, score=19.7167
+  Rejected at trial 47/100: distance 12->10.
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->8.
+  Valid proposal at trial 51/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 63, 15: 0, 16: 110}, score=21.561
+  Rejected at trial 52/100: distance 12->8.
+  Rejected at trial 53/100: distance 12->8.
+  Rejected at trial 54/100: distance 12->8.
+  Rejected at trial 55/100: distance 12->8.
+  Rejected at trial 56/100: distance 12->8.
+  Valid proposal at trial 57/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 18, 13: 0, 14: 59, 15: 0, 16: 103}, score=24.1443
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->8.
+  Rejected at trial 60/100: distance 12->8.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->10.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->8.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->10.
+  Rejected at trial 75/100: distance 12->8.
+  Rejected at trial 76/100: distance 12->10.
+  Rejected at trial 77/100: distance 12->10.
+  Rejected at trial 78/100: distance 12->8.
+  Rejected at trial 79/100: distance 12->10.
+  Rejected at trial 80/100: distance 12->6.
+  Rejected at trial 81/100: distance 12->8.
+  Valid proposal at trial 82/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 59, 15: 0, 16: 109}, score=23.1929
+  Rejected at trial 83/100: distance 12->10.
+  Rejected at trial 84/100: distance 12->10.
+  Rejected at trial 85/100: distance 12->10.
+  Rejected at trial 86/100: distance 12->10.
+  Rejected at trial 87/100: distance 12->10.
+  Rejected at trial 88/100: distance 12->8.
+  Rejected at trial 89/100: distance 12->6.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->8.
+  Rejected at trial 92/100: distance 12->10.
+  Rejected at trial 93/100: distance 12->8.
+  Rejected at trial 94/100: distance 12->10.
+  Rejected at trial 95/100: distance 12->10.
+  Rejected at trial 96/100: distance 12->8.
+  Rejected at trial 97/100: distance 12->8.
+  Rejected at trial 98/100: distance 12->8.
+  Rejected at trial 99/100: distance 12->10.
+  Rejected at trial 100/100: distance 12->6.
+  Trials completed: 100/100, valid proposals found: 7, rejections due to distance decrease: 93.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 13, 13: 0, 14: 65, 15: 0, 16: 107}, score=19.7167, score=19.7167
+
+Step 20/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 13, 13: 0, 14: 65, 15: 0, 16: 107}, score=19.7167
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->8.
+  Rejected at trial 3/100: distance 12->10.
+  Rejected at trial 4/100: distance 12->8.
+  Rejected at trial 5/100: distance 12->8.
+  Rejected at trial 6/100: distance 12->8.
+  Rejected at trial 7/100: distance 12->10.
+  Rejected at trial 8/100: distance 12->10.
+  Rejected at trial 9/100: distance 12->6.
+  Rejected at trial 10/100: distance 12->8.
+  Rejected at trial 11/100: distance 12->10.
+  Rejected at trial 12/100: distance 12->10.
+  Rejected at trial 13/100: distance 12->8.
+  Rejected at trial 14/100: distance 12->10.
+  Rejected at trial 15/100: distance 12->10.
+  Rejected at trial 16/100: distance 12->8.
+  Rejected at trial 17/100: distance 12->10.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->8.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->10.
+  Rejected at trial 25/100: distance 12->8.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->10.
+  Rejected at trial 28/100: distance 12->8.
+  Rejected at trial 29/100: distance 12->6.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->10.
+  Rejected at trial 32/100: distance 12->10.
+  Rejected at trial 33/100: distance 12->8.
+  Rejected at trial 34/100: distance 12->8.
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->10.
+  Rejected at trial 37/100: distance 12->10.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->8.
+  Rejected at trial 40/100: distance 12->10.
+  Rejected at trial 41/100: distance 12->10.
+  Rejected at trial 42/100: distance 12->8.
+  Rejected at trial 43/100: distance 12->10.
+  Valid proposal at trial 44/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 14, 13: 0, 14: 63, 15: 0, 16: 112}, score=20.5772
+  Rejected at trial 45/100: distance 12->6.
+  Rejected at trial 46/100: distance 12->8.
+  Rejected at trial 47/100: distance 12->8.
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->10.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->10.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->10.
+  Valid proposal at trial 55/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 20, 13: 0, 14: 58, 15: 0, 16: 98}, score=26.0138
+  Rejected at trial 56/100: distance 12->4.
+  Rejected at trial 57/100: distance 12->8.
+  Rejected at trial 58/100: distance 12->8.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->10.
+  Rejected at trial 66/100: distance 12->10.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->10.
+  Rejected at trial 69/100: distance 12->6.
+  Rejected at trial 70/100: distance 12->10.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->10.
+  Rejected at trial 75/100: distance 12->10.
+  Valid proposal at trial 76/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 14, 13: 0, 14: 61, 15: 0, 16: 111}, score=20.3891
+  Rejected at trial 77/100: distance 12->8.
+  Rejected at trial 78/100: distance 12->10.
+  Valid proposal at trial 79/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 13, 13: 0, 14: 65, 15: 0, 16: 107}, score=19.7167
+  Valid proposal at trial 80/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 20, 13: 0, 14: 59, 15: 0, 16: 104}, score=26.1524
+  Rejected at trial 81/100: distance 12->10.
+  Rejected at trial 82/100: distance 12->10.
+  Rejected at trial 83/100: distance 12->4.
+  Rejected at trial 84/100: distance 12->10.
+  Valid proposal at trial 85/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 56, 15: 0, 16: 113}, score=22.9553
+  Rejected at trial 86/100: distance 12->6.
+  Rejected at trial 87/100: distance 12->10.
+  Rejected at trial 88/100: distance 12->8.
+  Rejected at trial 89/100: distance 12->10.
+  Rejected at trial 90/100: distance 12->2.
+  Rejected at trial 91/100: distance 12->10.
+  Rejected at trial 92/100: distance 12->6.
+  Rejected at trial 93/100: distance 12->6.
+  Rejected at trial 94/100: distance 12->10.
+  Rejected at trial 95/100: distance 12->8.
+  Rejected at trial 96/100: distance 12->6.
+  Rejected at trial 97/100: distance 12->10.
+  Rejected at trial 98/100: distance 12->8.
+  Rejected at trial 99/100: distance 12->8.
+  Rejected at trial 100/100: distance 12->10.
+  Trials completed: 100/100, valid proposals found: 6, rejections due to distance decrease: 94.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 13, 13: 0, 14: 65, 15: 0, 16: 107}, score=19.7167, score=19.7167
+
+Step 21/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 13, 13: 0, 14: 65, 15: 0, 16: 107}, score=19.7167
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->8.
+  Rejected at trial 2/100: distance 12->8.
+  Rejected at trial 3/100: distance 12->10.
+  Rejected at trial 4/100: distance 12->10.
+  Rejected at trial 5/100: distance 12->8.
+  Rejected at trial 6/100: distance 12->8.
+  Rejected at trial 7/100: distance 12->10.
+  Rejected at trial 8/100: distance 12->10.
+  Rejected at trial 9/100: distance 12->8.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->8.
+  Rejected at trial 12/100: distance 12->8.
+  Valid proposal at trial 13/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 10, 13: 0, 14: 68, 15: 0, 16: 119}, score=17.0839
+  Rejected at trial 14/100: distance 12->10.
+  Rejected at trial 15/100: distance 12->10.
+  Rejected at trial 16/100: distance 12->8.
+  Rejected at trial 17/100: distance 12->8.
+  Rejected at trial 18/100: distance 12->8.
+  Rejected at trial 19/100: distance 12->6.
+  Rejected at trial 20/100: distance 12->8.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->8.
+  Rejected at trial 24/100: distance 12->6.
+  Rejected at trial 25/100: distance 12->4.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->6.
+  Rejected at trial 28/100: distance 12->6.
+  Rejected at trial 29/100: distance 12->10.
+  Rejected at trial 30/100: distance 12->6.
+  Rejected at trial 31/100: distance 12->8.
+  Rejected at trial 32/100: distance 12->8.
+  Rejected at trial 33/100: distance 12->10.
+  Rejected at trial 34/100: distance 12->10.
+  Valid proposal at trial 35/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 14, 13: 0, 14: 60, 15: 0, 16: 118}, score=20.3558
+  Rejected at trial 36/100: distance 12->8.
+  Rejected at trial 37/100: distance 12->8.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->10.
+  Rejected at trial 40/100: distance 12->8.
+  Rejected at trial 41/100: distance 12->10.
+  Rejected at trial 42/100: distance 12->10.
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->6.
+  Rejected at trial 45/100: distance 12->10.
+  Rejected at trial 46/100: distance 12->10.
+  Rejected at trial 47/100: distance 12->10.
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->8.
+  Rejected at trial 51/100: distance 12->10.
+  Rejected at trial 52/100: distance 12->8.
+  Rejected at trial 53/100: distance 12->6.
+  Rejected at trial 54/100: distance 12->8.
+  Rejected at trial 55/100: distance 12->6.
+  Rejected at trial 56/100: distance 12->10.
+  Valid proposal at trial 57/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 53, 15: 0, 16: 117}, score=22.7177
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->8.
+  Valid proposal at trial 62/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 13, 13: 0, 14: 65, 15: 0, 16: 107}, score=19.7167
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->6.
+  Rejected at trial 65/100: distance 12->10.
+  Rejected at trial 66/100: distance 12->8.
+  Rejected at trial 67/100: distance 12->10.
+  Rejected at trial 68/100: distance 12->8.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->8.
+  Rejected at trial 71/100: distance 12->10.
+  Rejected at trial 72/100: distance 12->10.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->8.
+  Rejected at trial 75/100: distance 12->10.
+  Rejected at trial 76/100: distance 12->10.
+  Rejected at trial 77/100: distance 12->8.
+  Rejected at trial 78/100: distance 12->10.
+  Rejected at trial 79/100: distance 12->10.
+  Rejected at trial 80/100: distance 12->8.
+  Rejected at trial 81/100: distance 12->8.
+  Rejected at trial 82/100: distance 12->10.
+  Rejected at trial 83/100: distance 12->10.
+  Rejected at trial 84/100: distance 12->10.
+  Rejected at trial 85/100: distance 12->8.
+  Rejected at trial 86/100: distance 12->8.
+  Valid proposal at trial 87/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 17, 13: 0, 14: 69, 15: 0, 16: 95}, score=23.9795
+  Rejected at trial 88/100: distance 12->10.
+  Rejected at trial 89/100: distance 12->10.
+  Rejected at trial 90/100: distance 12->10.
+  Rejected at trial 91/100: distance 12->10.
+  Rejected at trial 92/100: distance 12->10.
+  Rejected at trial 93/100: distance 12->10.
+  Rejected at trial 94/100: distance 12->10.
+  Valid proposal at trial 95/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 13, 13: 0, 14: 64, 15: 0, 16: 110}, score=19.651
+  Rejected at trial 96/100: distance 12->10.
+  Rejected at trial 97/100: distance 12->8.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->8.
+  Rejected at trial 100/100: distance 12->10.
+  Trials completed: 100/100, valid proposals found: 6, rejections due to distance decrease: 94.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 10, 13: 0, 14: 68, 15: 0, 16: 119}, score=17.0839, score=17.0839
+
+Step 22/50 (global max dist so far = 12)
+Score Info of current state: weight_patterns={12: 10, 13: 0, 14: 68, 15: 0, 16: 119}, score=17.0839
+  Target logical weight: 12
+  Current distance: 12
+  Rejected at trial 1/100: distance 12->10.
+  Rejected at trial 2/100: distance 12->8.
+  Rejected at trial 3/100: distance 12->8.
+  Rejected at trial 4/100: distance 12->10.
+  Rejected at trial 5/100: distance 12->8.
+  Rejected at trial 6/100: distance 12->8.
+  Rejected at trial 7/100: distance 12->6.
+  Rejected at trial 8/100: distance 12->8.
+  Rejected at trial 9/100: distance 12->8.
+  Rejected at trial 10/100: distance 12->10.
+  Rejected at trial 11/100: distance 12->6.
+  Rejected at trial 12/100: distance 12->10.
+  Rejected at trial 13/100: distance 12->8.
+  Rejected at trial 14/100: distance 12->10.
+  Rejected at trial 15/100: distance 12->10.
+  Rejected at trial 16/100: distance 12->10.
+  Rejected at trial 17/100: distance 12->6.
+  Rejected at trial 18/100: distance 12->10.
+  Rejected at trial 19/100: distance 12->10.
+  Rejected at trial 20/100: distance 12->10.
+  Rejected at trial 21/100: distance 12->10.
+  Rejected at trial 22/100: distance 12->10.
+  Rejected at trial 23/100: distance 12->10.
+  Rejected at trial 24/100: distance 12->8.
+  Rejected at trial 25/100: distance 12->10.
+  Rejected at trial 26/100: distance 12->10.
+  Rejected at trial 27/100: distance 12->6.
+  Rejected at trial 28/100: distance 12->8.
+  Rejected at trial 29/100: distance 12->10.
+  Rejected at trial 30/100: distance 12->10.
+  Rejected at trial 31/100: distance 12->10.
+  Rejected at trial 32/100: distance 12->10.
+  Rejected at trial 33/100: distance 12->8.
+  Rejected at trial 34/100: distance 12->10.
+  Rejected at trial 35/100: distance 12->10.
+  Rejected at trial 36/100: distance 12->10.
+  Rejected at trial 37/100: distance 12->8.
+  Rejected at trial 38/100: distance 12->8.
+  Rejected at trial 39/100: distance 12->8.
+  Rejected at trial 40/100: distance 12->10.
+  Rejected at trial 41/100: distance 12->10.
+  Rejected at trial 42/100: distance 12->10.
+  Rejected at trial 43/100: distance 12->10.
+  Rejected at trial 44/100: distance 12->10.
+  Rejected at trial 45/100: distance 12->2.
+  Rejected at trial 46/100: distance 12->10.
+  Rejected at trial 47/100: distance 12->6.
+  Rejected at trial 48/100: distance 12->10.
+  Rejected at trial 49/100: distance 12->10.
+  Rejected at trial 50/100: distance 12->10.
+  Rejected at trial 51/100: distance 12->8.
+  Rejected at trial 52/100: distance 12->10.
+  Rejected at trial 53/100: distance 12->10.
+  Rejected at trial 54/100: distance 12->10.
+  Rejected at trial 55/100: distance 12->10.
+  Rejected at trial 56/100: distance 12->10.
+  Valid proposal at trial 57/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 14, 13: 0, 14: 62, 15: 0, 16: 113}, score=20.4953
+  Rejected at trial 58/100: distance 12->10.
+  Rejected at trial 59/100: distance 12->10.
+  Rejected at trial 60/100: distance 12->10.
+  Rejected at trial 61/100: distance 12->10.
+  Rejected at trial 62/100: distance 12->10.
+  Rejected at trial 63/100: distance 12->10.
+  Rejected at trial 64/100: distance 12->10.
+  Rejected at trial 65/100: distance 12->8.
+  Rejected at trial 66/100: distance 12->8.
+  Rejected at trial 67/100: distance 12->8.
+  Rejected at trial 68/100: distance 12->8.
+  Rejected at trial 69/100: distance 12->10.
+  Rejected at trial 70/100: distance 12->6.
+  Rejected at trial 71/100: distance 12->8.
+  Rejected at trial 72/100: distance 12->8.
+  Rejected at trial 73/100: distance 12->10.
+  Rejected at trial 74/100: distance 12->10.
+  Rejected at trial 75/100: distance 12->10.
+  Valid proposal at trial 76/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 13, 13: 0, 14: 61, 15: 0, 16: 115}, score=19.4215
+  Rejected at trial 77/100: distance 12->8.
+  Rejected at trial 78/100: distance 12->10.
+  Valid proposal at trial 79/100: distance 12->12, target_weight_before_swap=12, weight_patterns={12: 15, 13: 0, 14: 59, 15: 0, 16: 114}, score=21.2334
+  Rejected at trial 80/100: distance 12->10.
+  Rejected at trial 81/100: distance 12->8.
+  Rejected at trial 82/100: distance 12->8.
+  Rejected at trial 83/100: distance 12->10.
+  Rejected at trial 84/100: distance 12->6.
+  Rejected at trial 85/100: distance 12->10.
+  Rejected at trial 86/100: distance 12->6.
+  Rejected at trial 87/100: distance 12->10.
+  Rejected at trial 88/100: distance 12->10.
+  Rejected at trial 89/100: distance 12->10.
+  Rejected at trial 90/100: distance 12->6.
+  Rejected at trial 91/100: distance 12->8.
+  Rejected at trial 92/100: distance 12->8.
+  Rejected at trial 93/100: distance 12->6.
+  Rejected at trial 94/100: distance 12->10.
+  Rejected at trial 95/100: distance 12->10.
+  Rejected at trial 96/100: distance 12->8.
+  Rejected at trial 97/100: distance 12->10.
+  Rejected at trial 98/100: distance 12->10.
+  Rejected at trial 99/100: distance 12->10.
+  Rejected at trial 100/100: distance 12->10.
+  Trials completed: 100/100, valid proposals found: 3, rejections due to distance decrease: 97.
+  Accepted best valid move: distance 12->12, target_weight_before_swap=12, weight_patterns=weight_patterns={12: 13, 13: 0, 14: 61, 15: 0, 16: 115}, score=19.4215, score=19.4215
+Distance has not increased in the last 20 steps, stopping early.
+
+>>> PHASE 2: Weighted-score selection
+Found 23 total saved states.
+Found 21 unique candidates with dist == 12.
+Selecting top 3 candidates by weighted score only (beta=0.3, window=4).
+  row=21 | dist=12 | target_weight_before_swap=12 | weight_patterns={12: 10, 13: 0, 14: 68, 15: 0, 16: 119}, score=17.0839
+  row=14 | dist=12 | target_weight_before_swap=12 | weight_patterns={12: 11, 13: 0, 14: 65, 15: 0, 16: 115}, score=17.7815
+  row=15 | dist=12 | target_weight_before_swap=12 | weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 122}, score=18.4782
+
+>>> PHASE 3: Precision LER evaluation (100000)
+
+Running MC (precision):   0%|          | 0/3 [00:00<?, ?it/s]/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Decoder precision_row_21_batch0 finished in 0.0m 5.60s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch0: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_14_batch0 finished in 0.0m 5.89s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch0: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_15_batch0 finished in 0.0m 5.95s with 2 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch0: 0.0004 ± 0.0002828 (stderr)
+Decoder precision_row_21_batch1 finished in 0.0m 6.46s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch1: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_15_batch1 finished in 0.0m 6.12s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch1: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_14_batch1 finished in 0.0m 6.68s with 2 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch1: 0.0004 ± 0.0002828 (stderr)
+Decoder precision_row_21_batch2 finished in 0.0m 6.27s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch2: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_15_batch2 finished in 0.0m 6.55s with 4 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch2: 0.0008 ± 0.0003999 (stderr)
+Decoder precision_row_14_batch2 finished in 0.0m 6.55s with 4 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch2: 0.0008 ± 0.0003999 (stderr)
+Decoder precision_row_21_batch3 finished in 0.0m 6.28s with 11 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch3: 0.0022 ± 0.0006627 (stderr)
+Decoder precision_row_14_batch3 finished in 0.0m 5.71s with 3 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch3: 0.0006 ± 0.0003463 (stderr)
+Decoder precision_row_15_batch3 finished in 0.0m 6.25s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch3: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_21_batch4 finished in 0.0m 6.40s with 4 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch4: 0.0008 ± 0.0003999 (stderr)
+Decoder precision_row_14_batch4 finished in 0.0m 5.67s with 3 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch4: 0.0006 ± 0.0003463 (stderr)
+Decoder precision_row_15_batch4 finished in 0.0m 6.45s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch4: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_14_batch5 finished in 0.0m 6.48s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch5: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_15_batch5 finished in 0.0m 5.77s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch5: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_21_batch5 finished in 0.0m 7.13s with 4 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch5: 0.0008 ± 0.0003999 (stderr)
+Decoder precision_row_21_batch9 finished in 0.0m 5.98s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch9: 0.0012 ± 0.0004897 (stderr)
+Decoder precision_row_15_batch9 finished in 0.0m 6.68s with 1 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch9: 0.0002 ± 0.0002000 (stderr)
+Decoder precision_row_14_batch9 finished in 0.0m 6.76s with 7 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch9: 0.0014 ± 0.0005288 (stderr)
+Decoder precision_row_15_batch10 finished in 0.0m 6.36s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch10: 0.0012 ± 0.0004897 (stderr)
+Decoder precision_row_21_batch10 finished in 0.0m 6.51s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch10: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_14_batch10 finished in 0.0m 6.75s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch10: 0.0012 ± 0.0004897 (stderr)
+Decoder precision_row_21_batch11 finished in 0.0m 6.66s with 3 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch11: 0.0006 ± 0.0003463 (stderr)
+Decoder precision_row_15_batch11 finished in 0.0m 6.83s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch11: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_14_batch11 finished in 0.0m 6.43s with 3 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch11: 0.0006 ± 0.0003463 (stderr)
+Decoder precision_row_21_batch12 finished in 0.0m 6.14s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch12: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_15_batch12 finished in 0.0m 6.14s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch12: 0.0012 ± 0.0004897 (stderr)
+Decoder precision_row_14_batch12 finished in 0.0m 6.19s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch12: 0.0012 ± 0.0004897 (stderr)
+Decoder precision_row_15_batch13 finished in 0.0m 6.29s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch13: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_21_batch13 finished in 0.0m 6.40s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch13: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_14_batch13 finished in 0.0m 6.37s with 12 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch13: 0.0024 ± 0.0006921 (stderr)
+Decoder precision_row_15_batch14 finished in 0.0m 5.93s with 8 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch14: 0.0016 ± 0.0005653 (stderr)
+Decoder precision_row_21_batch14 finished in 0.0m 6.04s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch14: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_14_batch14 finished in 0.0m 6.10s with 2 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch14: 0.0004 ± 0.0002828 (stderr)
+Decoder precision_row_15_batch15 finished in 0.0m 5.75s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch15: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_21_batch15 finished in 0.0m 6.49s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch15: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_14_batch15 finished in 0.0m 6.62s with 10 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch15: 0.002 ± 0.0006319 (stderr)
+Decoder precision_row_15_batch16 finished in 0.0m 6.79s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch16: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_21_batch16 finished in 0.0m 6.71s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch16: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_14_batch16 finished in 0.0m 6.50s with 3 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch16: 0.0006 ± 0.0003463 (stderr)
+Decoder precision_row_15_batch17 finished in 0.0m 6.00s with 4 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch17: 0.0008 ± 0.0003999 (stderr)
+Decoder precision_row_21_batch17 finished in 0.0m 6.01s with 4 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch17: 0.0008 ± 0.0003999 (stderr)
+Decoder precision_row_14_batch17 finished in 0.0m 6.39s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch17: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_21_batch18 finished in 0.0m 5.99s with 4 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch18: 0.0008 ± 0.0003999 (stderr)
+Decoder precision_row_15_batch18 finished in 0.0m 6.86s with 1 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch18: 0.0002 ± 0.0002000 (stderr)
+Decoder precision_row_14_batch18 finished in 0.0m 6.16s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch18: 0.0012 ± 0.0004897 (stderr)
+Running MC (precision):  33%|███▎      | 1/3 [02:13<04:26, 133.02s/it]Running MC (precision):  67%|██████▋   | 2/3 [02:13<00:54, 54.96s/it] Running MC (precision): 100%|██████████| 3/3 [02:14<00:00, 30.26s/it]Running MC (precision): 100%|██████████| 3/3 [02:14<00:00, 44.74s/it]
+Decoder precision_row_15_batch19 finished in 0.0m 5.93s with 5 failures out of 5000/5000 runs.
+Logical error rate for precision_row_15_batch19: 0.001 ± 0.0004470 (stderr)
+Decoder precision_row_15 finished in 2.0m 5.86s with 111 failures out of 100000/100000 runs.
+Logical error rate for precision_row_15: 0.00111 ± 0.0001053 (stderr)
+Decoder precision_row_21_batch19 finished in 0.0m 6.34s with 6 failures out of 5000/5000 runs.
+Logical error rate for precision_row_21_batch19: 0.0012 ± 0.0004897 (stderr)
+Decoder precision_row_21 finished in 2.0m 6.71s with 115 failures out of 100000/100000 runs.
+Logical error rate for precision_row_21: 0.00115 ± 0.0001072 (stderr)
+Decoder precision_row_14_batch19 finished in 0.0m 5.87s with 9 failures out of 5000/5000 runs.
+Logical error rate for precision_row_14_batch19: 0.0018 ± 0.0005995 (stderr)
+Decoder precision_row_14 finished in 2.0m 7.07s with 108 failures out of 100000/100000 runs.
+Logical error rate for precision_row_14: 0.00108 ± 0.0001039 (stderr)
+Evaluating row 21 | dist=12 | score=17.0839 | weight_patterns={12: 10, 13: 0, 14: 68, 15: 0, 16: 119}, score=17.0839
+  -> LER: 0.001150 ± 0.000107 | runtime=126.71s
+Evaluating row 14 | dist=12 | score=17.7815 | weight_patterns={12: 11, 13: 0, 14: 65, 15: 0, 16: 115}, score=17.7815
+  -> LER: 0.001080 ± 0.000104 | runtime=127.07s
+Evaluating row 15 | dist=12 | score=18.4782 | weight_patterns={12: 12, 13: 0, 14: 61, 15: 0, 16: 122}, score=18.4782
+  -> LER: 0.001110 ± 0.000105 | runtime=125.86s
+
+>>> RESULT: Best code found
+Distance: 12
+LER: 0.001080 ± 0.000104
+Run group name: /[2025,81]/logical_guided_score_S50_T100_p0.03_beta0.3_win4_scoretop0.1_min3_max5_100000prec_20260526_180053
+
+Total time: 0h 5m 14.79s
+Saved to optimization/results/logical_guided_score_beta03.hdf5

@@ -13,6 +13,17 @@ from optimization.experiments_settings import (
     parse_edgelist,
 )
 
+def format_score_info(score_info):
+    if score_info is None:
+        return "weight_patterns={}"
+
+    components = score_info.get("components", {})
+    components = {int(k): int(v) for k, v in components.items()}
+
+    return (
+        f"weight_patterns={components}, "
+        f"score={float(score_info.get('score', np.nan)):.6g}"
+    )
 
 def get_variable_nodes(G: nx.MultiGraph) -> list[int]:
     return sorted([n for n, b in G.nodes(data="bipartite") if b == 1])
@@ -152,6 +163,7 @@ def generate_logical_guided_candidates(
     if verbose:
         print(f"  Target logical weight: {logical_weight}")
         print(f"  Current distance: {current_distance}")
+        print(f"  Generating up to {num_candidates} candidates with proposal_max_tries={proposal_max_tries} and logical_max_comb_order={logical_max_comb_order}...")
 
     tried_proposals = set()
     proposals = []
@@ -347,6 +359,7 @@ def improve_state_by_breaking_low_weight_logical(
     max_trials: int = 100,
     require_distance_non_decrease: bool = True,
     verbose: bool = True,
+    score_candidate_fn=None,
 ):
     params, _, _ = get_code_parameters_and_matrices(state)
     current_distance = min(params["d_classical"], params["d_T_classical"])
@@ -372,6 +385,8 @@ def improve_state_by_breaking_low_weight_logical(
             "edges_to_remove": None,
             "distance_before": current_distance,
             "distance_after": current_distance,
+            "low_weight_score": np.inf,
+            "score_info": None,
         }
 
     support = np.where(logical_vec == 1)[0]
@@ -381,9 +396,9 @@ def improve_state_by_breaking_low_weight_logical(
         print(f"  Current distance: {current_distance}")
 
     tried_proposals = set()
-    best_attempts = []
-
+    valid_attempts = []
     reject_count = 0
+
     for trial in range(max_trials):
         proposal = propose_targeted_swap_from_logical(
             state,
@@ -413,41 +428,79 @@ def improve_state_by_breaking_low_weight_logical(
         new_distance = min(new_params["d_classical"], new_params["d_T_classical"])
 
         if require_distance_non_decrease and new_distance < current_distance:
-            if verbose:
-                reject_count += 1
-                print(f"  Rejected at trial {trial + 1}/{max_trials}: distance {current_distance}->{new_distance}.")
-            continue
-        
-        # Record this valid attempt, even if it doesn't improve distance, to allow accepting the first non-decreasing move if no improving move is found.
-        print(f"  Valid proposal at trial {trial + 1}/{max_trials}: distance {current_distance}->{new_distance}.")
-        attempt = {
-            "state": new_state,
-            "params": new_params,
-            "logical_weight": logical_weight,
-            "trial": trial,
-            "edges_to_add": edges_to_add,
-            "edges_to_remove": edges_to_remove,
-            "distance_before": current_distance,
-            "distance_after": new_distance,
-        }
-        best_attempts.append(attempt)
-
-        # Accept immediately if it improves distance
-        if new_distance > current_distance:
+            reject_count += 1
             if verbose:
                 print(
-                    f"  Accepted at trial {trial + 1}/{max_trials}: "
-                    f"distance {current_distance}->{new_distance}"
+                    f"  Rejected at trial {trial + 1}/{max_trials}: "
+                    f"distance {current_distance}->{new_distance}."
                 )
-            print(f"  Trials completed: {trial + 1}/{max_trials}, valid proposals found: {len(best_attempts)}, rejections due to distance decrease: {reject_count}.")
-            return {"accepted": True, **attempt}
-        
-    print(f"  Trials completed: {trial + 1}/{max_trials}, valid proposals found: {len(best_attempts)}, rejections due to distance decrease: {reject_count}.")
+            continue
 
-    if best_attempts:
+        score_info = None
+        low_weight_score = np.inf
+
+        if score_candidate_fn is not None:
+            try:
+                score_info = score_candidate_fn(new_state, new_params)
+                low_weight_score = float(score_info["score"])
+            except Exception as exc:
+                if verbose:
+                    print(f"  WARNING: score computation failed: {exc}")
+                low_weight_score = np.inf
+
         if verbose:
-            print("  Accepted first non-decreasing valid move.")
-        return {"accepted": True, **best_attempts[0]}
+            print(
+                f"  Valid proposal at trial {trial + 1}/{max_trials}: "
+                f"distance {current_distance}->{new_distance}, "
+                f"target_weight_before_swap={logical_weight}, "
+                f"{format_score_info(score_info)}"
+            )
+
+        valid_attempts.append(
+            {
+                "state": new_state,
+                "params": new_params,
+                "logical_weight": logical_weight,
+                "trial": trial,
+                "edges_to_add": edges_to_add,
+                "edges_to_remove": edges_to_remove,
+                "distance_before": current_distance,
+                "distance_after": new_distance,
+                "low_weight_score": low_weight_score,
+                "score_info": score_info,
+            }
+        )
+
+    if verbose:
+        print(
+            f"  Trials completed: {trial + 1}/{max_trials}, "
+            f"valid proposals found: {len(valid_attempts)}, "
+            f"rejections due to distance decrease: {reject_count}."
+        )
+
+    if valid_attempts:
+        # Main rule:
+        #   1. maximize distance
+        #   2. minimize weighted low-weight score
+        valid_attempts.sort(
+            key=lambda a: (
+                -float(a["distance_after"]),
+                float(a.get("low_weight_score", np.inf)),
+            )
+        )
+
+        best = valid_attempts[0]
+
+        if verbose:
+            print(
+                "  Accepted best valid move: "
+                f"distance {best['distance_before']}->{best['distance_after']}, "
+                f"target_weight_before_swap={best['logical_weight']}, "
+                f"weight_patterns={format_score_info(best.get('score_info'))}, "
+                f"score={best['low_weight_score']:.6g}"
+            )
+
+        return {"accepted": True, **best}
 
     return {
         "accepted": False,
@@ -459,6 +512,8 @@ def improve_state_by_breaking_low_weight_logical(
         "edges_to_remove": None,
         "distance_before": current_distance,
         "distance_after": current_distance,
+        "low_weight_score": np.inf,
+        "score_info": None,
     }
 
 
