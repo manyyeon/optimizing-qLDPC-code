@@ -106,10 +106,6 @@ def analyze_states(input_file: Path, code: str, run_name: str, min_weight: int, 
         counts = count_parent_low_weight_patterns(H, max_weight=max_weight)
         counts_total = counts["counts_total"]
 
-        print("H counts: ", {w: int(counts['counts_H'][w]) for w in range(min_weight, max_weight+1)})
-        print("H^T counts: ", {w: int(counts['counts_HT'][w]) for w in range(min_weight, max_weight+1)})
-        print("Total counts: ", {w: int(counts_total[w]) for w in range(min_weight, max_weight+1)})
-
         d_q = int(distance)
         W_dynamic = min(d_q + 2, max_weight)
 
