@@ -32,8 +32,9 @@ from optimization.logical_guided_search.logical_guided_hdf5 import (
     update_hdf5_row,
 )
 from optimization.logical_guided_search.logical_guided_search_core import (
-    improve_state_by_breaking_low_weight_logical,
+    generate_logical_guided_candidates,
     format_score_info,
+    beam_rank_key
 )
 
 SEARCH_STEPS = 50
@@ -84,6 +85,45 @@ def load_initial_state_from_hdf5(
         edge_list = edge_list[0]
 
     return from_edgelist(edge_list)
+
+
+def select_beam_with_backups(candidates, beam_width):
+    """
+    Distance-priority beam selection, but keep lower-distance backup states
+    if there are fewer than beam_width states at the current max distance.
+    """
+    if not candidates:
+        return []
+
+    candidates = sorted(candidates, key=beam_rank_key)
+    max_dist = max(int(c["dist"]) for c in candidates)
+
+    selected = []
+    selected_keys = set()
+
+    # First take max-distance candidates.
+    max_dist_candidates = [c for c in candidates if int(c["dist"]) == max_dist]
+
+    for cand in max_dist_candidates:
+        key = state_key(cand["state"])
+        if key in selected_keys:
+            continue
+        selected.append(cand)
+        selected_keys.add(key)
+        if len(selected) >= beam_width:
+            return selected
+
+    # Then fill remaining slots with lower-distance backup states.
+    for cand in candidates:
+        key = state_key(cand["state"])
+        if key in selected_keys:
+            continue
+        selected.append(cand)
+        selected_keys.add(key)
+        if len(selected) >= beam_width:
+            break
+
+    return selected
 
 def score_top_count(n: int, frac: float, min_top: int, max_top: int) -> int:
     if n <= 0:
@@ -142,6 +182,10 @@ def main():
     parser.add_argument("--score-top-frac", default=0.10, type=float)
     parser.add_argument("--score-min-top", default=3, type=int)
     parser.add_argument("--score-max-top", default=5, type=int)
+    parser.add_argument("--beam-width", default=5, type=int)
+    parser.add_argument("--children-per-parent", default=20, type=int)
+    parser.add_argument("--stop-distance", default=None, type=int)
+    parser.add_argument("--candidate-workers", default=1, type=int)
     parser.add_argument(
     "--input-file",
     default=None,
@@ -282,69 +326,146 @@ def main():
         last_improvement_step = 0
         global_max_dist = all_candidates[0]["dist"]
 
-        print("\n>>> PHASE 1: Logical-guided search")
+        print(f"\n>>> PHASE 1: Beam {args.beam_width} Logical-guided search")
+
+        beam = [all_candidates[0]]
+        seen_state_keys = {state_key(current_state)}
 
         for step in range(1, args.S + 1):
-            print(f"\nStep {step}/{args.S} (global max dist so far = {global_max_dist})")
-            print(f"Score Info of current state: {format_score_info(all_candidates[-1].get('score_info'))}")
+            print(f"\nBeam depth {step}/{args.S} (global max dist so far = {global_max_dist})")
 
-            result = improve_state_by_breaking_low_weight_logical(
-                state=current_state,
-                get_code_parameters_and_matrices=get_code_parameters_and_matrices,
-                max_trials=args.T,
-                require_distance_non_decrease=True,
-                verbose=True,
-                score_candidate_fn=score_candidate,
-            )
+            print("Current beam:")
+            for b_i, cand in enumerate(beam):
+                print(
+                    f"  beam[{b_i}] row={cand['row_idx']} | "
+                    f"dist={cand['dist']} | "
+                    f"{format_score_info(cand.get('score_info'))}"
+                )
 
-            state_to_save = result["state"]
-            params = result["params"]
-            d_cand = min(params["d_classical"], params["d_T_classical"])
-            logical_weight = result["logical_weight"]
+            children = []
 
-            score_info = result.get("score_info")
-            if score_info is None:
-                score_info = score_candidate(state_to_save, params)
+            for parent_i, parent in enumerate(beam):
+                print(f"\nExpanding parent beam[{parent_i}] row={parent['row_idx']}")
 
-            low_weight_score = float(score_info["score"])
+                raw_children = generate_logical_guided_candidates(
+                    state=parent["state"],
+                    get_code_parameters_and_matrices=get_code_parameters_and_matrices,
+                    max_trials=args.T,
+                    logical_max_comb_order=5,
+                    require_detectable=True,
+                    require_distance_non_decrease=True,
+                    verbose=True,
+                    seen_keys=seen_state_keys,
+                    score_candidate_fn=score_candidate,
+                )
 
-            edges = parse_edgelist(state_to_save).astype(np.uint32)
-            row_idx = append_to_hdf5(
-                run_grp,
-                edge_list=edges,
-                params=params,
-                logical_weight=logical_weight,
-                accepted=result["accepted"],
-                step=step,
-                trial=result["trial"],
-                parent_idx=all_candidates[-1]["row_idx"] if step > 0 else idx_init,
-                distance_before=result["distance_before"],
-                distance_after=result["distance_after"],
-                edges_to_add=result["edges_to_add"],
-                edges_to_remove=result["edges_to_remove"],
-            )
+                appended_count = 0
 
-            all_candidates.append({
-                "state": state_to_save,
-                "params": params,
-                "row_idx": row_idx,
-                "dist": d_cand,
-                "logical_weight": logical_weight,
-                "low_weight_score": low_weight_score,
-                "score_info": score_info,
-            })
+                for child_i, result in enumerate(raw_children):
+                    state_to_save = result["state"]
+                    key = state_key(state_to_save)
 
-            if d_cand > global_max_dist:
-                global_max_dist = d_cand
-                last_improvement_step = step
+                    if key in seen_state_keys:
+                        continue
 
-            if result["accepted"]:
-                current_state = state_to_save
+                    seen_state_keys.add(key)
 
-            f.flush()
+                    params = result["params"]
+                    d_cand = min(params["d_classical"], params["d_T_classical"])
+                    logical_weight = result["logical_weight"]
+
+                    score_info = result.get("score_info")
+                    if score_info is None:
+                        score_info = score_candidate(state_to_save, params)
+
+                    low_weight_score = float(score_info["score"])
+
+                    edges = parse_edgelist(state_to_save).astype(np.uint32)
+                    row_idx = append_to_hdf5(
+                        run_grp,
+                        edge_list=edges,
+                        params=params,
+                        logical_weight=logical_weight,
+                        accepted=True,
+                        step=step,
+                        trial=result["trial"],
+                        parent_idx=parent["row_idx"],
+                        distance_before=result["distance_before"],
+                        distance_after=result["distance_after"],
+                        edges_to_add=result["edges_to_add"],
+                        edges_to_remove=result["edges_to_remove"],
+                    )
+
+                    cand = {
+                        "state": state_to_save,
+                        "params": params,
+                        "row_idx": row_idx,
+                        "parent_idx": parent["row_idx"],
+                        "dist": d_cand,
+                        "logical_weight": logical_weight,
+                        "low_weight_score": low_weight_score,
+                        "score_info": score_info,
+                    }
+
+                    children.append(cand)
+                    all_candidates.append(cand)
+                    appended_count += 1
+
+                    if d_cand > global_max_dist:
+                        global_max_dist = d_cand
+                        last_improvement_step = step
+
+                    print(
+                        f"  child row={row_idx} | "
+                        f"parent={parent['row_idx']} | "
+                        f"dist={d_cand} | "
+                        f"target_weight_before_swap={logical_weight} | "
+                        f"{format_score_info(score_info)}"
+                    )
+
+                    f.flush()
+
+                print(
+                    f"  parent row={parent['row_idx']} appended "
+                    f"{appended_count}/{len(raw_children)} children"
+                )
+
+            if not children:
+                print("No new children generated.")
+                continue
+
+            # Deduplicate children again just in case.
+            unique_pool = {}
+            for cand in children:
+                key = state_key(cand["state"])
+                if key not in unique_pool:
+                    unique_pool[key] = cand
+                elif beam_rank_key(cand) < beam_rank_key(unique_pool[key]):
+                    unique_pool[key] = cand
+
+            candidate_pool = list(unique_pool.values())
+            candidate_pool.sort(key=beam_rank_key)
+
+            beam = select_beam_with_backups(candidate_pool, args.beam_width)
+
+            print("\nSelected next beam:")
+            for b_i, cand in enumerate(beam):
+                print(
+                    f"  beam[{b_i}] row={cand['row_idx']} | "
+                    f"dist={cand['dist']} | "
+                    f"parent={cand.get('parent_idx', -1)} | "
+                    f"{format_score_info(cand.get('score_info'))}"
+                )
+
+            if args.stop_distance is not None and global_max_dist >= args.stop_distance:
+                print(f"Reached stop distance {args.stop_distance}. Stopping beam search.")
+                break
 
             if step - last_improvement_step >= STOP_IF_NO_IMPROVEMENT_FOR:
-                print(f"Distance has not increased in the last {STOP_IF_NO_IMPROVEMENT_FOR} steps, stopping early.")
+                print(
+                    f"Distance has not increased in the last "
+                    f"{STOP_IF_NO_IMPROVEMENT_FOR} steps, stopping early."
+                )
                 break
 
         print(f"\n>>> PHASE 2: Weighted-score selection")
@@ -458,7 +579,7 @@ def main():
                     "budget": args.prec_budget,
                     "run_label": f"precision_row_{cand['row_idx']}",
                     "workers": args.workers,
-                    "batch_size": 5000,
+                    "batch_size": 10000,
                 }
                 for cand in top_candidates
             ]

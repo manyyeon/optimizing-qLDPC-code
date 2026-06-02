@@ -7,6 +7,9 @@ import numpy as np
 import networkx as nx
 from scipy.sparse import csr_matrix
 
+from itertools import combinations
+from ldpc import mod2
+
 from optimization.experiments_settings import (
     add_and_remove_edges,
     tanner_graph_to_parity_check_matrix,
@@ -23,6 +26,24 @@ def format_score_info(score_info):
     return (
         f"weight_patterns={components}, "
         f"score={float(score_info.get('score', np.nan)):.6g}"
+    )
+
+def get_A_dq(cand):
+    d = int(cand["dist"])
+    score_info = cand.get("score_info", {})
+    components = score_info.get("components", {})
+    return int(components.get(d, 10**18))
+
+
+def beam_rank_key(cand):
+    """
+    Larger distance first, then fewer minimum-weight patterns, then lower score.
+    """
+    return (
+        -int(cand["dist"]),
+        get_A_dq(cand),
+        float(cand.get("low_weight_score", np.inf)),
+        int(cand.get("row_idx", 10**18)),
     )
 
 def get_variable_nodes(G: nx.MultiGraph) -> list[int]:
@@ -97,8 +118,12 @@ def propose_targeted_swap_from_logical(
         f1 = (c1, v2)
         f2 = (c2, v1)
 
-        if state.has_edge(*f1) or state.has_edge(*f2):
-            continue
+        if state.has_edge(*f1):
+            print(f"WARNING: proposed edge already exists in state, losing one edge: f1={f1}")
+            # continue
+        if state.has_edge(*f2):
+            print(f"WARNING: proposed edge already exists in state, losing one edge: f2={f2}")
+            # continue
 
         edges_to_remove = [e1, e2]
         edges_to_add = [f1, f2]
@@ -114,33 +139,19 @@ def propose_targeted_swap_from_logical(
 def generate_logical_guided_candidates(
     state: nx.MultiGraph,
     get_code_parameters_and_matrices,
-    num_candidates: int = 20,
-    proposal_max_tries: int = 300,
+    max_trials: int = 100,
     logical_max_comb_order: int = 5,
     require_detectable: bool = True,
-    require_distance_non_decrease: bool = False,
-    candidate_workers: int = 1,
+    require_distance_non_decrease: bool = True,
     verbose: bool = False,
     seen_keys: Optional[set] = None,
+    score_candidate_fn=None,
 ):
     """
     Generate multiple logical-guided child states from one parent state.
-    This is for beam search expansion.
 
-    Returns
-    -------
-    candidates : list[dict]
-        Each dict contains:
-        {
-            "state",
-            "params",
-            "logical_weight",
-            "support",
-            "edges_to_add",
-            "edges_to_remove",
-            "distance_before",
-            "distance_after",
-        }
+    This uses almost the same logic as improve_state_by_breaking_low_weight_logical,
+    but returns the top max_candidates valid moves instead of only one best move.
     """
     params, _, _ = get_code_parameters_and_matrices(state)
     current_distance = min(params["d_classical"], params["d_T_classical"])
@@ -163,132 +174,114 @@ def generate_logical_guided_candidates(
     if verbose:
         print(f"  Target logical weight: {logical_weight}")
         print(f"  Current distance: {current_distance}")
-        print(f"  Generating up to {num_candidates} candidates with proposal_max_tries={proposal_max_tries} and logical_max_comb_order={logical_max_comb_order}...")
+        print(
+            f"  Generating candidates with max_trials={max_trials}, "
+            f"logical_max_comb_order={logical_max_comb_order}..."
+        )
 
     tried_proposals = set()
-    proposals = []
+    valid_attempts = []
+    reject_count = 0
+    skipped_seen = 0
 
-    # Stage 1: build unique proposals, optionally skipping already-seen states.
-    while len(proposals) < num_candidates:
+    for trial in range(max_trials):
         proposal = propose_targeted_swap_from_logical(
             state,
             support,
-            max_tries=proposal_max_tries,
+            max_tries=100,
             tried_proposals=tried_proposals,
         )
 
         if proposal is None:
-            break
+            if verbose:
+                print(f"  No valid proposal found at trial {trial + 1}/{max_trials}.")
+            continue
 
         edges_to_add, edges_to_remove = proposal
         proposal_key = canonicalize_proposal(edges_to_add, edges_to_remove)
+        tried_proposals.add(proposal_key)
 
-        # Tentatively build the new state to check whether we've seen it before
         new_state = add_and_remove_edges(state, edges_to_add, edges_to_remove)
+
         try:
-            new_key = tuple(parse_edgelist(new_state).tolist())
+            new_key = tuple(parse_edgelist(new_state).flatten().tolist())
         except Exception:
             new_key = None
 
         if seen_keys is not None and new_key is not None and new_key in seen_keys:
-            # skip this proposal
-            tried_proposals.add(proposal_key)
+            skipped_seen += 1
             continue
 
-        tried_proposals.add(proposal_key)
-        proposals.append((edges_to_add, edges_to_remove))
+        new_params, _, _ = get_code_parameters_and_matrices(new_state)
 
-    if not proposals:
+        H_new = tanner_graph_to_parity_check_matrix(new_state)
+        if require_detectable and not is_classical_support_detectable(H_new, support):
+            if verbose:
+                print(f"  Rejected at trial {trial + 1}/{max_trials}: support still undetectable.")
+            continue
+
+        new_distance = min(new_params["d_classical"], new_params["d_T_classical"])
+
+        if require_distance_non_decrease and new_distance < current_distance:
+            reject_count += 1
+            if verbose:
+                print(
+                    f"  Rejected at trial {trial + 1}/{max_trials}: "
+                    f"distance {current_distance}->{new_distance}."
+                )
+            continue
+
+        score_info = None
+        low_weight_score = np.inf
+
+        if score_candidate_fn is not None:
+            try:
+                score_info = score_candidate_fn(new_state, new_params)
+                low_weight_score = float(score_info["score"])
+            except Exception as exc:
+                if verbose:
+                    print(f"  WARNING: score computation failed: {exc}")
+                low_weight_score = np.inf
+
+        cand = {
+            "state": new_state,
+            "params": new_params,
+            "logical_weight": logical_weight,
+            "support": support.copy(),
+            "trial": trial,
+            "edges_to_add": edges_to_add,
+            "edges_to_remove": edges_to_remove,
+            "distance_before": current_distance,
+            "distance_after": new_distance,
+            "dist": new_distance,
+            "low_weight_score": low_weight_score,
+            "score_info": score_info,
+        }
+
+        valid_attempts.append(cand)
+
+        if verbose:
+            print(
+                f"  Valid proposal at trial {trial + 1}/{max_trials}: "
+                f"distance {current_distance}->{new_distance}, "
+                f"target_weight_before_swap={logical_weight}, "
+                f"{format_score_info(score_info)}"
+            )
+
+    if verbose:
+        trials_done = trial + 1 if "trial" in locals() else 0
+        print(
+            f"  Trials completed: {trials_done}/{max_trials}, "
+            f"valid proposals found: {len(valid_attempts)}, "
+            f"skipped seen: {skipped_seen}, "
+            f"rejections due to distance decrease: {reject_count}."
+        )
+
+    if not valid_attempts:
         return []
 
-    eval_tasks = [(i + 1, a, r) for i, (a, r) in enumerate(proposals)]
-
-    # Stage 2: evaluate proposals (optionally parallel across candidates).
-    if candidate_workers > 1 and len(eval_tasks) > 1:
-        packed_tasks = [
-            (
-                state,
-                get_code_parameters_and_matrices,
-                support,
-                logical_weight,
-                current_distance,
-                require_detectable,
-                require_distance_non_decrease,
-                num_candidates,
-                task,
-            )
-            for task in eval_tasks
-        ]
-        with ProcessPoolExecutor(max_workers=candidate_workers) as ex:
-            evaluated = list(ex.map(_evaluate_proposal_worker, packed_tasks))
-    else:
-        evaluated = [
-            _evaluate_proposal_worker(
-                (
-                    state,
-                    get_code_parameters_and_matrices,
-                    support,
-                    logical_weight,
-                    current_distance,
-                    require_detectable,
-                    require_distance_non_decrease,
-                    num_candidates,
-                    task,
-                )
-            )
-            for task in eval_tasks
-        ]
-
-    candidates = [cand for cand in evaluated if cand is not None][:num_candidates]
-
-    if verbose and candidate_workers > 1:
-        print(f"  Candidate evaluation used process workers={candidate_workers}")
-
-    return candidates
-
-
-def _evaluate_proposal_worker(args):
-    (
-        state,
-        get_code_parameters_and_matrices,
-        support,
-        logical_weight,
-        current_distance,
-        require_detectable,
-        require_distance_non_decrease,
-        _num_candidates,
-        task,
-    ) = args
-
-    _trial_idx, edges_to_add, edges_to_remove = task
-
-    new_state = add_and_remove_edges(state, edges_to_add, edges_to_remove)
-    new_params, _, _ = get_code_parameters_and_matrices(new_state)
-
-    H_new = tanner_graph_to_parity_check_matrix(new_state)
-    if require_detectable and not is_classical_support_detectable(H_new, support):
-        return None
-
-    new_distance = min(new_params["d_classical"], new_params["d_T_classical"])
-
-    if require_distance_non_decrease and new_distance < current_distance:
-        return None
-
-    return {
-        "state": new_state,
-        "params": new_params,
-        "logical_weight": logical_weight,
-        "support": support.copy(),
-        "edges_to_add": edges_to_add,
-        "edges_to_remove": edges_to_remove,
-        "distance_before": current_distance,
-        "distance_after": new_distance,
-    }
-
-
-import numpy as np
-from itertools import combinations
-from ldpc import mod2
+    valid_attempts.sort(key=beam_rank_key)
+    return valid_attempts
 
 
 def find_low_weight_classical_codeword(H, max_comb_order=None):
@@ -357,6 +350,7 @@ def improve_state_by_breaking_low_weight_logical(
     state: nx.MultiGraph,
     get_code_parameters_and_matrices,
     max_trials: int = 100,
+    logical_max_comb_order: int = 10,
     require_distance_non_decrease: bool = True,
     verbose: bool = True,
     score_candidate_fn=None,
@@ -369,7 +363,7 @@ def improve_state_by_breaking_low_weight_logical(
 
     logical_vec, logical_weight = find_low_weight_classical_codeword(
         csr_H,
-        max_comb_order=5,
+        max_comb_order=logical_max_comb_order,
     )
 
     if logical_vec is None:
@@ -394,6 +388,7 @@ def improve_state_by_breaking_low_weight_logical(
     if verbose:
         print(f"  Target logical weight: {logical_weight}")
         print(f"  Current distance: {current_distance}")
+        print(f"  Generating candidates with max_trials={max_trials} and logical_max_comb_order={logical_max_comb_order}...")
 
     tried_proposals = set()
     valid_attempts = []
@@ -482,12 +477,7 @@ def improve_state_by_breaking_low_weight_logical(
         # Main rule:
         #   1. maximize distance
         #   2. minimize weighted low-weight score
-        valid_attempts.sort(
-            key=lambda a: (
-                -float(a["distance_after"]),
-                float(a.get("low_weight_score", np.inf)),
-            )
-        )
+        valid_attempts.sort(key=beam_rank_key)
 
         best = valid_attempts[0]
 
