@@ -1,67 +1,120 @@
 #!/usr/bin/env python3
-"""Plot method comparison by distance and verified LER.
+"""Plot qLDPC method comparison as LER vs. HGP distance.
 
-Input CSV format:
+CSV columns:
     code,method,group,distance,ler,ler_std,runtime
 
-Example:
-    [1600,64],Random walk,Previous work,10,0.0021126,0.0000205,44h 24m
-    [1600,64],Simulated annealing,Previous work,10,0.0020254,0.0000201,88h 15m
-    [1600,64],Best neighbor,This work,10,0.0015472,0.0000176,9h 3m
-    [1600,64],Distance preproc. + greedy,This work,11,0.0014154,0.0000168,15m
-    [1600,64],Logical-guided beam,This work,12,0.0012906,0.0000161,10h 42m
+Examples:
+
+1) Plot all three methods:
+    python plot_method_comparison.py \
+      --input-csv method_comparison.csv \
+      --codes "[[625,25]]" "[[1225,49]]" "[[1600,64]]" "[[2025,81]]" \
+      --methods "Distance preproc. + LER | beam" "Weight score | greedy" "Weight score | beam" \
+      --output-prefix figures/three_method_ler_vs_distance
+
+2) Plot previous work plus the best method among the three for each code:
+    python plot_method_comparison.py \
+      --input-csv method_comparison.csv \
+      --codes "[[625,25]]" "[[1225,49]]" "[[1600,64]]" "[[2025,81]]" \
+      --previous-methods "Random walk" "Simulated annealing" \
+      --best-this-methods "Distance preproc. + LER | beam" "Weight score | greedy" "Weight score | beam" \
+      --this-label "Best from this work" \
+      --output-prefix figures/ler_vs_distance_best_among_three
 """
 
 from __future__ import annotations
 
 import argparse
 from pathlib import Path
+import re
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+plt.rcParams.update({
+    "figure.dpi": 150,
+    "savefig.dpi": 600,
+    "savefig.bbox": "tight",
+    "savefig.pad_inches": 0.03,
 
-GROUP_ORDER = ["Previous work", "This work"]
+    # Better font embedding for PDF/PS output
+    "pdf.fonttype": 42,
+    "ps.fonttype": 42,
+    "svg.fonttype": "none",
 
-DEFAULT_METHOD_ORDER = [
+    # Paper-friendly sizes
+    "font.size": 12,
+    "axes.labelsize": 14,
+    "axes.titlesize": 15,
+    "legend.fontsize": 11,
+    "legend.title_fontsize": 11,
+    "xtick.labelsize": 12,
+    "ytick.labelsize": 12,
+})
+
+
+DEFAULT_CODE_ORDER = ["[[625,25]]", "[[1225,49]]", "[[1600,64]]", "[[2025,81]]"]
+
+METHOD_ORDER = [
     "Random walk",
     "Simulated annealing",
     "Greedy",
     "Beam search",
     "Distance preproc. + greedy",
     "Distance preproc. + beam",
-    "Distance preproc. + Logical-guided beam",
+    "Distance preproc. + LER | beam",
+    "Weight score | greedy",
+    "Weight score | beam",
+    "Best from this work",
 ]
 
-method_offsets = {
-    "Random walk": -0.12,
-    "Simulated annealing": 0.00,
-    "Greedy": 0.04,
-    "Beam search": 0.08,
-    "Distance preproc. + greedy": 0.12,
-    "Distance preproc. + beam": 0.16,
-    "Distance preproc. + Logical-guided beam": 0.2,
+METHOD_MARKERS = {
+    "Random walk": "o",
+    "Simulated annealing": "^",
+    "Greedy": "s",
+    "Beam search": "D",
+    "Distance preproc. + greedy": "P",
+    "Distance preproc. + beam": "X",
+    "Distance preproc. + LER | beam": "D",
+    "Weight score | greedy": "s",
+    "Weight score | beam": "*",
+    "Best from this work": "*",
 }
 
-code_offsets = {
-    "[[625,25]]": -0.02,
-    "[[1225,49]]": -0.005,
-    "[[1600,64]]": 0.005,
-    "[[2025,81]]": 0.02,
+METHOD_OFFSETS = {
+    "Random walk": -0.18,
+    "Simulated annealing": -0.10,
+    "Greedy": -0.05,
+    "Beam search": 0.00,
+    "Distance preproc. + greedy": 0.05,
+    "Distance preproc. + beam": 0.10,
+    "Distance preproc. + LER | beam": -0.10,
+    "Weight score | greedy": 0.00,
+    "Weight score | beam": 0.10,
+    "Best from this work": 0.10,
+}
+
+DISPLAY_LABELS = {
+    "Distance preproc. + LER | beam": "Distance preproc. + LER\nbeam",
+    "Weight score | greedy": "Weight score\ngreedy",
+    "Weight score | beam": "Weight score\nbeam",
+    "Best from this work": "Best from\nthis work",
 }
 
 
-def _method_sort_key(method: str):
-    if method in DEFAULT_METHOD_ORDER:
-        return DEFAULT_METHOD_ORDER.index(method)
-    return len(DEFAULT_METHOD_ORDER)
+def method_sort_key(method: str) -> int:
+    return METHOD_ORDER.index(method) if method in METHOD_ORDER else len(METHOD_ORDER)
 
 
 def load_results(path: Path) -> pd.DataFrame:
     df = pd.read_csv(path)
 
-    required = {"code", "method", "group", "distance", "ler", "ler_std"}
+    # Handles duplicated CSV header pasted into the body.
+    df = df[df["code"].astype(str) != "code"].copy()
+
+    required = {"code", "method", "group", "distance", "ler", "ler_std", "runtime"}
     missing = required - set(df.columns)
     if missing:
         raise ValueError(f"Missing required CSV columns: {missing}")
@@ -69,430 +122,205 @@ def load_results(path: Path) -> pd.DataFrame:
     df["distance"] = pd.to_numeric(df["distance"], errors="coerce")
     df["ler"] = pd.to_numeric(df["ler"], errors="coerce")
     df["ler_std"] = pd.to_numeric(df["ler_std"], errors="coerce")
-
-    df = df.dropna(subset=["code", "method", "group", "distance", "ler"])
+    df = df.dropna(subset=["code", "method", "group", "distance", "ler", "ler_std"])
     df["distance"] = df["distance"].astype(int)
 
-    return df
+    return df.reset_index(drop=True)
 
 
-def collapse_previous_best(df: pd.DataFrame) -> pd.DataFrame:
-    """Replace previous-work methods by the best previous-work result per code."""
-    rows = []
+def filter_methods(df: pd.DataFrame, methods: list[str] | None) -> pd.DataFrame:
+    if methods is None:
+        return df.copy()
 
-    for code, sub in df.groupby("code", sort=False):
-        prev = sub[sub["group"] == "Previous work"]
-        ours = sub[sub["group"] != "Previous work"]
+    out = df[df["method"].isin(methods)].copy()
+    missing = [m for m in methods if m not in set(out["method"])]
+    if missing:
+        available = sorted(df["method"].unique())
+        raise ValueError(f"Methods not found: {missing}\nAvailable methods: {available}")
 
-        if len(prev):
-            best = prev.sort_values(["ler", "distance"], ascending=[True, False]).iloc[0].copy()
-            best["method"] = "Best previous work"
-            rows.append(best)
-
-        for _, row in ours.iterrows():
-            rows.append(row)
-
-    return pd.DataFrame(rows)
+    return out
 
 
-def plot_single_code(df: pd.DataFrame, code: str, output_prefix: Path):
-    sub = df[df["code"] == code].copy()
-    if len(sub) == 0:
-        raise ValueError(f"No rows found for code {code}")
-
-    sub["method_order"] = sub["method"].map(_method_sort_key)
-    sub = sub.sort_values(["group", "method_order", "method"])
-
-    methods = sub["method"].tolist()
-    x = np.arange(len(sub))
-
-    group_styles = {
-        "Previous work": {"alpha": 0.55, "hatch": "//"},
-        "This work": {"alpha": 0.95, "hatch": ""},
-    }
-
-    fig, (ax_d, ax_ler) = plt.subplots(
-        2,
-        1,
-        figsize=(max(8.0, 0.75 * len(sub)), 6.2),
-        sharex=True,
-        constrained_layout=True,
-    )
-
-    # Panel A: distance
-    for group in GROUP_ORDER:
-        mask = sub["group"] == group
-        if not mask.any():
-            continue
-
-        style = group_styles.get(group, {"alpha": 0.8, "hatch": ""})
-        ax_d.bar(
-            x[mask],
-            sub.loc[mask, "distance"],
-            alpha=style["alpha"],
-            hatch=style["hatch"],
-            label=group,
-        )
-
-    ax_d.set_ylabel(r"HGP distance $d_Q$")
-    ax_d.set_title(f"{code}: method comparison")
-    ax_d.grid(True, axis="y", alpha=0.25)
-    ax_d.legend(frameon=False)
-
-    # Add distance labels
-    for xi, d in zip(x, sub["distance"]):
-        ax_d.text(xi, d + 0.08, f"{d}", ha="center", va="bottom", fontsize=8)
-
-    # Panel B: LER
-    for group in GROUP_ORDER:
-        mask = sub["group"] == group
-        if not mask.any():
-            continue
-
-        style = group_styles.get(group, {"alpha": 0.8, "hatch": ""})
-        ax_ler.bar(
-            x[mask],
-            sub.loc[mask, "ler"],
-            yerr=sub.loc[mask, "ler_std"],
-            capsize=3,
-            alpha=style["alpha"],
-            hatch=style["hatch"],
-            label=group,
-        )
-
-    ax_ler.set_yscale("log")
-    ax_ler.set_ylabel(r"Logical error rate")
-    ax_ler.set_xlabel("Method")
-    ax_ler.grid(True, which="both", axis="y", alpha=0.25)
-
-    ax_ler.set_xticks(x)
-    ax_ler.set_xticklabels(methods, rotation=28, ha="right")
-
-    # Highlight best LER
-    best_idx = sub["ler"].idxmin()
-    best_pos = sub.index.get_loc(best_idx)
-    best_ler = sub.loc[best_idx, "ler"]
-    ax_ler.scatter([best_pos], [best_ler], s=90, marker="*", zorder=5)
-    ax_ler.text(
-        best_pos,
-        best_ler * 0.85,
-        "best",
-        ha="center",
-        va="top",
-        fontsize=8,
-    )
-
-    output_prefix.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(output_prefix.with_suffix(".pdf"))
-    fig.savefig(output_prefix.with_suffix(".png"), dpi=300)
-
-    print(f"Wrote {output_prefix.with_suffix('.pdf')}")
-    print(f"Wrote {output_prefix.with_suffix('.png')}")
-
-
-def plot_all_codes(df: pd.DataFrame, output_prefix: Path):
-    codes = list(df["code"].drop_duplicates())
-    n_codes = len(codes)
-
-    fig, axes = plt.subplots(
-        n_codes,
-        2,
-        figsize=(12.0, max(3.0 * n_codes, 4.0)),
-        constrained_layout=True,
-    )
-
-    if n_codes == 1:
-        axes = np.array([axes])
-
-    for row, code in enumerate(codes):
-        sub = df[df["code"] == code].copy()
-        sub["method_order"] = sub["method"].map(_method_sort_key)
-        sub = sub.sort_values(["group", "method_order", "method"])
-
-        x = np.arange(len(sub))
-        labels = sub["method"].tolist()
-
-        ax_d = axes[row, 0]
-        ax_ler = axes[row, 1]
-
-        # distance
-        for group in GROUP_ORDER:
-            mask = sub["group"] == group
-            if not mask.any():
-                continue
-            ax_d.bar(x[mask], sub.loc[mask, "distance"], label=group, alpha=0.55 if group == "Previous work" else 0.95)
-
-        ax_d.set_ylabel(r"$d_Q$")
-        ax_d.set_title(f"{code}: distance")
-        ax_d.grid(True, axis="y", alpha=0.25)
-
-        # ler
-        for group in GROUP_ORDER:
-            mask = sub["group"] == group
-            if not mask.any():
-                continue
-            ax_ler.errorbar(
-                x[mask],
-                sub.loc[mask, "ler"],
-                yerr=sub.loc[mask, "ler_std"],
-                fmt="o",
-                capsize=3,
-                label=group,
-                alpha=0.65 if group == "Previous work" else 0.95,
-            )
-
-        ax_ler.set_yscale("log")
-        ax_ler.set_ylabel("LER")
-        ax_ler.set_title(f"{code}: LER")
-        ax_ler.grid(True, which="both", axis="y", alpha=0.25)
-
-        for ax in (ax_d, ax_ler):
-            ax.set_xticks(x)
-            ax.set_xticklabels(labels, rotation=28, ha="right")
-
-        if row == 0:
-            ax_d.legend(frameon=False)
-            ax_ler.legend(frameon=False)
-
-    output_prefix.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(output_prefix.with_suffix(".pdf"))
-    fig.savefig(output_prefix.with_suffix(".png"), dpi=300)
-
-    print(f"Wrote {output_prefix.with_suffix('.pdf')}")
-    print(f"Wrote {output_prefix.with_suffix('.png')}")
-
-
-def plot_distance_vs_ler(df: pd.DataFrame, code: str, output_prefix: Path):
-    sub = df[df["code"] == code].copy()
-    if len(sub) == 0:
-        raise ValueError(f"No rows found for code {code!r}")
-
-    fig, ax = plt.subplots(figsize=(7.0, 5.0), constrained_layout=True)
-
-    for group, marker in [("Previous work", "o"), ("This work", "s")]:
-        g = sub[sub["group"] == group]
-        if len(g) == 0:
-            continue
-        ax.errorbar(
-            g["distance"],
-            g["ler"],
-            yerr=g["ler_std"],
-            fmt=marker,
-            capsize=3,
-            markersize=8,
-            linestyle="none",
-            label=group,
-            alpha=0.3,
-        )
-
-        for _, row in g.iterrows():
-            ax.annotate(
-                row["method"],
-                (row["distance"], row["ler"]),
-                textcoords="offset points",
-                xytext=(6, 4),
-                fontsize=8,
-            )
-
-    ax.set_yscale("log")
-    ax.set_xticks(sub["distance"].unique())
-    ax.set_xlabel(r"HGP distance $d_Q$")
-    ax.set_ylabel(r"Logical error rate")
-    ax.set_title(f"{code}: LER vs. distance")
-    ax.grid(True, which="both", alpha=0.25)
-    ax.legend(frameon=False)
-
-    output_prefix.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(output_prefix.with_suffix(".pdf"))
-    fig.savefig(output_prefix.with_suffix(".png"), dpi=300)
-
-
-def plot_distance_vs_ler_all_codes(df: pd.DataFrame, output_prefix: Path):
-    codes = list(df["code"].drop_duplicates())
-    n_codes = len(codes)
-
-    fig, axes = plt.subplots(
-        1,
-        n_codes,
-        figsize=(6.2 * n_codes, 5.0),
-        sharey=False,
-        constrained_layout=True,
-    )
-
-    if n_codes == 1:
-        axes = [axes]
-
-    for ax, code in zip(axes, codes):
-        sub = df[df["code"] == code].copy()
-
-        for group, marker in [("Previous work", "o"), ("This work", "s")]:
-            g = sub[sub["group"] == group]
-            if len(g) == 0:
-                continue
-
-            ax.errorbar(
-                g["distance"],
-                g["ler"],
-                yerr=g["ler_std"],
-                fmt=marker,
-                capsize=3,
-                markersize=8,
-                linestyle="none",
-                label=group,
-                alpha=0.3,
-            )
-
-            for _, row in g.iterrows():
-                ax.annotate(
-                    row["method"],
-                    (row["distance"], row["ler"]),
-                    textcoords="offset points",
-                    xytext=(6, 4),
-                    fontsize=8,
-                )
-
-        ax.set_yscale("log")
-        ax.set_xticks(sorted(sub["distance"].unique()))
-        ax.set_xlabel(r"HGP distance $d_Q$")
-        ax.set_ylabel(r"Logical error rate")
-        ax.set_title(f"{code}: LER vs. distance")
-        ax.grid(True, which="both", alpha=0.25)
-
-    axes[0].legend(frameon=False)
-
-    output_prefix.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(output_prefix.with_suffix(".pdf"))
-    fig.savefig(output_prefix.with_suffix(".png"), dpi=300)
-
-    print(f"Wrote {output_prefix.with_suffix('.pdf')}")
-    print(f"Wrote {output_prefix.with_suffix('.png')}")
-
-
-def plot_distance_vs_ler_one_axis(
+def select_previous_plus_best_this(
     df: pd.DataFrame,
-    codes_to_plot: list[str],
+    codes: list[str],
+    previous_methods: list[str],
+    best_this_methods: list[str],
+    this_label: str,
+) -> pd.DataFrame:
+    """For each code, keep previous methods plus best row among candidate this-work methods.
+
+    Best rule:
+        1. larger distance is better
+        2. if tied, smaller LER is better
+        3. if tied, smaller LER std is better
+    """
+    selected: list[pd.DataFrame] = []
+
+    for code in codes:
+        sub = df[df["code"] == code].copy()
+
+        prev = sub[sub["method"].isin(previous_methods)].copy()
+        if not prev.empty:
+            selected.append(prev)
+
+        candidates = sub[
+            (sub["group"] == "This work") & (sub["method"].isin(best_this_methods))
+        ].copy()
+
+        if candidates.empty:
+            print(f"[warning] {code}: no candidate rows found among {best_this_methods}.")
+            continue
+
+        best = candidates.sort_values(
+            ["distance", "ler", "ler_std"],
+            ascending=[False, True, True],
+        ).head(1).copy()
+
+        original_method = best.iloc[0]["method"]
+        best["original_method"] = original_method
+        best["method"] = this_label
+        selected.append(best)
+
+        print(
+            f"{code}: selected {original_method} "
+            f"(d={int(best.iloc[0]['distance'])}, "
+            f"LER={best.iloc[0]['ler']:.6g}, "
+            f"runtime={best.iloc[0]['runtime']})"
+        )
+
+    if not selected:
+        return pd.DataFrame(columns=df.columns)
+
+    return pd.concat(selected, ignore_index=True)
+
+
+def runtime_to_minutes(runtime: str) -> float:
+    """Parse strings like '2d 1h', '38m 31s', '1h 23m' into minutes."""
+    text = str(runtime).lower()
+    total = 0.0
+    for value, unit in re.findall(r"(\d+(?:\.\d+)?)\s*(d|h|m|s)", text):
+        value = float(value)
+        if unit == "d":
+            total += value * 24 * 60
+        elif unit == "h":
+            total += value * 60
+        elif unit == "m":
+            total += value
+        elif unit == "s":
+            total += value / 60
+    return total
+
+
+def plot_distance_vs_ler(
+    df: pd.DataFrame,
+    codes: list[str],
     output_prefix: Path,
+    title: str,
+    annotate_runtime: bool,
+    annotate_selected_method: bool,
 ):
-    sub = df[df["code"].isin(codes_to_plot)].copy()
-    if len(sub) == 0:
+    sub = df[df["code"].isin(codes)].copy()
+    if sub.empty:
         available = sorted(df["code"].astype(str).unique())
-        raise ValueError(
-            f"No rows found for codes {codes_to_plot}. "
-            f"Available code values: {available}"
-        )
+        raise ValueError(f"No rows found for codes={codes}. Available codes: {available}")
 
-    method_markers = {
-        "Random walk": "o",
-        "Simulated annealing": "^",
-        "Greedy": "s",
-        "Beam search": "D",
-        "Logical-guided": "v",
-        "Distance preproc. + greedy": "P",
-        "Distance preproc. + beam": "X",
-        "Distance preproc. + Logical-guided beam": "*",
-    }
+    sub["code"] = pd.Categorical(sub["code"], categories=codes, ordered=True)
+    sub["method_order"] = sub["method"].map(method_sort_key)
+    sub = sub.sort_values(["code", "method_order", "method"]).reset_index(drop=True)
 
-    # Deterministic small offsets so different code families at the same distance
-    # do not completely overlap. The x-axis still represents integer distance.
+    # Very small offsets keep markers at the same integer distance visible.
     code_offsets = {
-        code: offset
-        for code, offset in zip(codes_to_plot, np.linspace(-0.12, 0.12, len(codes_to_plot)))
+        code: offset for code, offset in zip(codes, np.linspace(-0.025, 0.025, len(codes)))
     }
 
-    color_cycle = plt.rcParams["axes.prop_cycle"].by_key()["color"]
-    code_colors = {
-        code: color_cycle[i % len(color_cycle)]
-        for i, code in enumerate(codes_to_plot)
-    }
+    fig, ax = plt.subplots(figsize=(11.0, 6.2), constrained_layout=True)
 
-    fig, ax = plt.subplots(figsize=(8.2, 5.4), constrained_layout=True)
+    # Use Matplotlib's default color cycle for code families.
+    code_to_color = {}
+    for code in codes:
+        if not sub[sub["code"] == code].empty:
+            dummy = ax.plot([], [], marker="o", linestyle="none", label=code)[0]
+            code_to_color[code] = dummy.get_color()
 
-    for _, row in sub.iterrows():
-        code = row["code"]
-        method = row["method"]
-        group = row["group"]
+    for row in sub.itertuples(index=False):
+        code = str(row.code)
+        method = row.method
+        marker = METHOD_MARKERS.get(method, "o")
+        x = row.distance + METHOD_OFFSETS.get(method, 0.0) + code_offsets.get(code, 0.0)
 
-        x = (
-        row["distance"]
-        + method_offsets.get(row["method"], 0.0)
-        + code_offsets.get(row["code"], 0.0)
-        )
-        y = row["ler"]
-        yerr = row["ler_std"]
-
-        marker = method_markers.get(method, "o")
-        color = code_colors[code]
-
-        # Previous work = hollow marker
-        # This work = filled marker
-        if group == "Previous work":
-            markerfacecolor = color
-            markeredgewidth = 1
-            alpha = 0.5
-        else:
-            markerfacecolor = color
-            markeredgewidth = 1
-            alpha = 0.5
-
+        is_previous = getattr(row, "group") == "Previous work"
         ax.errorbar(
             x,
-            y,
-            yerr=yerr,
+            row.ler,
+            yerr=row.ler_std,
             fmt=marker,
-            color=color,
-            markerfacecolor=markerfacecolor,
-            markeredgewidth=markeredgewidth,
+            color=code_to_color[code],
+            markerfacecolor="none" if is_previous else code_to_color[code],
+            markeredgewidth=1.3,
             capsize=3,
-            markersize=6 if marker != "*" else 10,
+            markersize=7 if marker != "*" else 12,
             linestyle="none",
-            alpha=alpha,
+            alpha=0.70,
         )
+
+        label_parts = []
+        if annotate_runtime:
+            label_parts.append(str(row.runtime))
+        if annotate_selected_method and hasattr(row, "original_method") and pd.notna(row.original_method):
+            label_parts.append(str(row.original_method))
+
+        if label_parts:
+            ax.annotate(
+                "\n".join(label_parts),
+                (x, row.ler),
+                textcoords="offset points",
+                xytext=(4, 4),
+                fontsize=7,
+            )
 
     ax.set_yscale("log")
     ax.set_xticks(sorted(sub["distance"].unique()))
     ax.set_xlabel(r"HGP distance $d_Q$")
-    ax.set_ylabel(r"Logical error rate")
-    ax.set_title(r"LER vs. HGP distance for optimized HGP codes")
+    ax.set_ylabel("Logical error rate")
+    ax.set_title(title)
     ax.grid(True, which="both", alpha=0.25)
 
-    # Legend 1: code colors
+    # Code-family legend.
     code_handles = [
         plt.Line2D(
             [0], [0],
             marker="o",
             linestyle="none",
-            color=code_colors[code],
-            markerfacecolor=code_colors[code],
+            color=code_to_color[code],
+            markerfacecolor=code_to_color[code],
             markersize=8,
             label=code,
         )
-        for code in codes_to_plot
+        for code in codes
+        if code in code_to_color
     ]
 
-    # Legend 2: method marker shapes
-    methods_in_plot = [
-        m for m in method_markers
-        if m in set(sub["method"])
-    ]
+    # Method legend.
+    methods_in_plot = sorted(list(dict.fromkeys(sub["method"])), key=method_sort_key)
     method_handles = [
         plt.Line2D(
             [0], [0],
-            marker=method_markers[m],
+            marker=METHOD_MARKERS.get(method, "o"),
             linestyle="none",
             color="0.25",
-            markerfacecolor="0.25",
-            markersize=8 if method_markers[m] != "*" else 11,
-            label=m,
+            markerfacecolor="none" if method in ["Random walk", "Simulated annealing"] else "0.25",
+            markeredgewidth=1.3,
+            markersize=8 if METHOD_MARKERS.get(method, "o") != "*" else 12,
+            label=DISPLAY_LABELS.get(method, method),
         )
-        for m in methods_in_plot
+        for method in methods_in_plot
     ]
 
     leg1 = ax.legend(
         handles=code_handles,
         title="Code family",
         frameon=False,
-        fontsize=8,
-        title_fontsize=9,
         loc="upper right",
     )
     ax.add_artist(leg1)
@@ -501,72 +329,108 @@ def plot_distance_vs_ler_one_axis(
         handles=method_handles,
         title="Method",
         frameon=False,
-        fontsize=7,
-        title_fontsize=9,
         loc="lower left",
     )
     ax.add_artist(leg2)
 
     output_prefix.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(output_prefix.with_suffix(".pdf"))
-    fig.savefig(output_prefix.with_suffix(".png"), dpi=300)
+    png_path = output_prefix.with_suffix(".png")
+    pdf_path = output_prefix.with_suffix(".pdf")
+    svg_path = output_prefix.with_suffix(".svg")
 
-    print(f"Wrote {output_prefix.with_suffix('.pdf')}")
-    print(f"Wrote {output_prefix.with_suffix('.png')}")
+    fig.savefig(png_path, dpi=600, bbox_inches="tight", pad_inches=0.03)
+    fig.savefig(pdf_path, bbox_inches="tight", pad_inches=0.03)
+    fig.savefig(svg_path, bbox_inches="tight", pad_inches=0.03)
 
-def collapse_best_run_per_code_method(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    For each (code, method), keep the row with the lowest LER.
-    Useful when the CSV contains multiple runs of the same method.
-    """
-    rows = []
-    for (code, method), sub in df.groupby(["code", "method"], sort=False):
-        best = sub.sort_values(["ler", "distance"], ascending=[True, False]).iloc[0]
-        rows.append(best)
-    return pd.DataFrame(rows).reset_index(drop=True)
+    print(f"Wrote {png_path}")
+    print(f"Wrote {pdf_path}")
+    print(f"Wrote {svg_path}")
 
-def filter_methods(df: pd.DataFrame, methods: list[str] | None) -> pd.DataFrame:
-    if methods is None:
-        return df
-    return df[df["method"].isin(methods)].copy()
+
+def make_runtime_summary(df: pd.DataFrame, output_csv: Path) -> None:
+    out = df.copy()
+    out["runtime_minutes"] = out["runtime"].map(runtime_to_minutes)
+    out.to_csv(output_csv, index=False)
+    print(f"Wrote {output_csv}")
+
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input-csv", required=True, type=Path)
-    parser.add_argument("--code", default=None, help="Plot one code only, e.g. '[[1600,64]]'")
     parser.add_argument(
         "--codes",
         nargs="+",
-        default=None,
-        help='Plot multiple codes on one axis, e.g. --codes "[[625,25]]" "[[1225,49]]"',
+        default=DEFAULT_CODE_ORDER,
+        help='Codes to plot, e.g. --codes "[[625,25]]" "[[1225,49]]"',
     )
-    parser.add_argument("--output-prefix", default="figures/method_comparison", type=Path)
     parser.add_argument(
         "--methods",
         nargs="+",
         default=None,
-        help='Only keep these methods, e.g. --methods "Random walk" "Simulated annealing" "Distance preproc. + Logical-guided beam"',
+        help='Methods to plot, e.g. --methods "Distance preproc. + LER | beam" "Weight score | greedy" "Weight score | beam"',
+    )
+    parser.add_argument(
+        "--previous-methods",
+        nargs="+",
+        default=None,
+        help='Previous-work methods to include with --best-this-methods.',
+    )
+    parser.add_argument(
+        "--best-this-methods",
+        nargs="+",
+        default=None,
+        help="Candidate this-work methods. For each code, plot only the best among these.",
+    )
+    parser.add_argument(
+        "--this-label",
+        default="Best from this work",
+        help='Legend label for the selected best this-work point.',
+    )
+    parser.add_argument(
+        "--title",
+        default="LER vs. HGP distance for optimized HGP codes",
+    )
+    parser.add_argument("--output-prefix", default="figures/method_comparison", type=Path)
+    parser.add_argument("--annotate-runtime", action="store_true")
+    parser.add_argument(
+        "--annotate-selected-method",
+        action="store_true",
+        help="Annotate which original method was selected for each best-this-work point.",
+    )
+    parser.add_argument(
+        "--runtime-summary-csv",
+        default=None,
+        type=Path,
+        help="Optional path to save the plotted rows with parsed runtime_minutes.",
     )
     args = parser.parse_args()
 
     df = load_results(args.input_csv)
-    df = filter_methods(df, args.methods)
 
-    if args.codes is not None:
-        plot_distance_vs_ler_one_axis(
-            df,
-            args.codes,
-            args.output_prefix,
-        )
-    elif args.code is not None:
-        safe_code = args.code.replace("[", "").replace("]", "").replace(",", "_")
-        plot_distance_vs_ler(
-            df,
-            args.code,
-            args.output_prefix.with_name(args.output_prefix.name + f"_{safe_code}")
+    if args.best_this_methods is not None:
+        previous_methods = args.previous_methods or ["Random walk", "Simulated annealing"]
+        plot_df = select_previous_plus_best_this(
+            df=df,
+            codes=args.codes,
+            previous_methods=previous_methods,
+            best_this_methods=args.best_this_methods,
+            this_label=args.this_label,
         )
     else:
-        plot_all_codes(df, args.output_prefix)
+        plot_df = filter_methods(df, args.methods)
+
+    plot_distance_vs_ler(
+        df=plot_df,
+        codes=args.codes,
+        output_prefix=args.output_prefix,
+        title=args.title,
+        annotate_runtime=args.annotate_runtime,
+        annotate_selected_method=args.annotate_selected_method,
+    )
+
+    if args.runtime_summary_csv is not None:
+        plotted = plot_df[plot_df["code"].isin(args.codes)].copy()
+        make_runtime_summary(plotted, args.runtime_summary_csv)
 
 
 if __name__ == "__main__":
