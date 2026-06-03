@@ -161,6 +161,8 @@ def collect_episode(env, model, device):
     data["returns"] = returns
     data["advantages"] = advantages
 
+    print(f"Episode finished | Total Reward: {sum(data['rewards']):+.4f} | Steps: {len(data['actions'])} | Final Info: {data['infos'][-1] if data['infos'] else None}")
+    
     return data
 
 
