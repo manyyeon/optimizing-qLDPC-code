@@ -286,6 +286,9 @@ class LogicalGuidedSwapEnv:
             new_params=self.params,
         )
 
+        print(f"Reward: {reward:.6g} (distance {old_params['d_quantum']} -> {self.params['d_quantum']}, "
+              f"score change {np.log1p(old_score_info['score']) - np.log1p(self.score_info['score']):.6g})")
+
         done = self.step_count >= self.max_steps
 
         info = {
