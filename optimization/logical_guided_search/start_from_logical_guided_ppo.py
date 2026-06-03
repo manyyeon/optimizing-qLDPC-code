@@ -309,6 +309,8 @@ def main():
     elif torch.cuda.is_available():
         device = torch.device("cuda")
         print("Using NVIDIA GPU (CUDA)")
+        print(f"  CUDA device count: {torch.cuda.device_count()}")
+        print(f"  Current CUDA device: {torch.cuda.current_device()} - {torch.cuda.get_device_name(torch.cuda.current_device())}")
     else:
         device = torch.device("cpu")
         print("Using CPU")

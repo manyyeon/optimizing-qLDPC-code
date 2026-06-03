@@ -54,6 +54,8 @@ class CandidateActorCritic(nn.Module):
         logits, value = self.forward(global_obs, cand_obs, mask)
         dist = torch.distributions.Categorical(logits=logits)
 
+        print(f"Action probabilities: {dist.probs.cpu().detach().numpy()}")
+
         action = dist.sample()
         logprob = dist.log_prob(action)
 
