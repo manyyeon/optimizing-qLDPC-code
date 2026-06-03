@@ -256,6 +256,17 @@ def evaluate_policy_episode(env, model, greedy: bool = True):
         "final_info": final_info,
     }
 
+def final_rank_key(info):
+    d = int(info["d_quantum"])
+    patterns = info.get("weight_patterns", {})
+    A_d = int(patterns.get(d, 10**18))
+    score = float(info["score"])
+
+    return (
+        d,          # bigger distance is better
+        -A_d,       # fewer minimum-weight patterns is better
+        -score,     # lower score is better
+    )
 
 def main():
     parser = argparse.ArgumentParser()
@@ -429,19 +440,43 @@ def main():
 
         final_infos = [ep["infos"][-1]
                        for ep in collected if len(ep["infos"]) > 0]
-        final_ds = [info["d_quantum"] for info in final_infos]
-        final_scores = [info["score"] for info in final_infos]
+        
+        final_ds = [int(info["d_quantum"]) for info in final_infos]
+        final_scores = [float(info["score"]) for info in final_infos]
 
         mean_final_d = float(np.mean(final_ds)) if final_ds else float("nan")
         max_final_d = int(np.max(final_ds)) if final_ds else -1
-        min_final_score = float(
-            np.min(final_scores)) if final_scores else float("nan")
 
-        best_weight_patterns = None
+        # Best by distance first, then score.
+        best_info = max(final_infos, key=final_rank_key)
+
+        best_d = int(best_info["d_quantum"]) if best_info else -1
+        best_score = float(best_info["score"]) if best_info else float("nan")
+        best_weight_patterns = best_info.get("weight_patterns", None) if best_info else None
+
+        # Optional: also report the best score among only max-distance final states.
+        best_max_d_info = None
         if final_infos:
-            best_idx = int(np.argmin(final_scores))
-            best_weight_patterns = final_infos[best_idx].get(
-                "weight_patterns", None)
+            max_d = max(int(info["d_quantum"]) for info in final_infos)
+            max_d_infos = [
+                info for info in final_infos
+                if int(info["d_quantum"]) == max_d
+            ]
+            best_max_d_info = min(
+                max_d_infos,
+                key=lambda info: float(info["score"]),
+            )
+
+        best_max_d_score = (
+            float(best_max_d_info["score"])
+            if best_max_d_info is not None
+            else float("nan")
+        )
+        best_max_d_patterns = (
+            best_max_d_info.get("weight_patterns", None)
+            if best_max_d_info is not None
+            else None
+        )
 
         print(
             f"update={update_idx:04d} | "
