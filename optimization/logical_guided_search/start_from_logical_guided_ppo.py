@@ -134,6 +134,7 @@ def collect_episode(env, model, device):
 
         action, logprob, value = model.act(obs)
 
+        print(f"Step {len(data['actions'])} | Action: {action} | LogProb: {logprob:.4f} | Value: {value:.4f}")
         next_obs, reward, done, info = env.step(action)
 
         data["global"].append(obs["global"])
@@ -375,7 +376,7 @@ def main():
         collected = []
 
         print(
-            f"\n=== Update {update_idx:04d} | Episodes {episode_start + 1}-{min(episode_start + args.rollout_episodes, args.episodes)} ===")
+            f"\n=== Update {update_idx:04d} | Episodes {episode_start}-{min(episode_start + args.rollout_episodes - 1, args.episodes - 1)} ===")
 
         for j in range(args.rollout_episodes):
             print(f"\n--- Collecting episode {episode_start + j} ---")
