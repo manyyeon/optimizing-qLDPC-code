@@ -118,6 +118,14 @@ class LogicalGuidedSwapEnv:
             idx = self.rng.permutation(len(candidates))
             candidates = [candidates[i] for i in idx]
 
+            print(f"Generated {len(filtered)} candidates, "
+                  f"selected {len(candidates)} (elite {elite_count} + random {len(rest_sample)})")
+            for i, cand in enumerate(candidates):
+                print(f"  Candidate {i}: [[{cand['params']['n_quantum']}, {cand['params']['k_quantum']}, {cand['params']['d_quantum']}]],"
+                      f"score={cand['score_info']['score']:.6g}, "
+                      f"weight_patterns={cand['score_info'].get('components', {})}"
+                      )
+
         else:
             raise ValueError(
                 f"Unknown candidate_order={self.candidate_order!r}. "
@@ -194,7 +202,7 @@ class LogicalGuidedSwapEnv:
             "candidates": self._candidate_features(self.candidates),
             "mask": mask,
         }
-    
+
     def _choose_greedy_action(self):
         best_action = None
         best_reward = -float("inf")
@@ -243,7 +251,8 @@ class LogicalGuidedSwapEnv:
 
         # Optional soft LDPC penalty. Set to 0.0 if you really do not care.
         old_deg = self._degree_summary_from_state(self.state)
-        new_deg = self._degree_summary_from_state(self.candidates[0]["state"])  # don't use this line directly
+        new_deg = self._degree_summary_from_state(
+            self.candidates[0]["state"])  # don't use this line directly
 
         return float(distance_reward + score_reward - k_penalty)
 
@@ -255,6 +264,15 @@ class LogicalGuidedSwapEnv:
         old_score_info = self.score_info
 
         chosen = self.candidates[action]
+
+        print(
+            f"Chosen candidate slot {action}: "
+            f"[[{chosen['params']['n_quantum']}, "
+            f"{chosen['params']['k_quantum']}, "
+            f"{chosen['params']['d_quantum']}]], "
+            f"score={chosen['score_info']['score']:.6g}, "
+            f"patterns={chosen['score_info'].get('components', {})}"
+        )
 
         self.state = chosen["state"]
         self.params = chosen["params"]
@@ -271,6 +289,7 @@ class LogicalGuidedSwapEnv:
         done = self.step_count >= self.max_steps
 
         info = {
+            "action": action,
             "score": float(self.score_info["score"]),
             "weight_patterns": self.score_info.get("components", {}),
             "d_quantum": int(self.params["d_quantum"]),
@@ -283,9 +302,10 @@ class LogicalGuidedSwapEnv:
 
         obs = None if done else self._make_observation()
         return obs, reward, done, info
-    
+
     def _degree_summary_from_state(self, state):
-        H = np.asarray(tanner_graph_to_parity_check_matrix(state), dtype=np.uint8)
+        H = np.asarray(tanner_graph_to_parity_check_matrix(
+            state), dtype=np.uint8)
         row_w = H.sum(axis=1)
         col_w = H.sum(axis=0)
 
@@ -296,7 +316,6 @@ class LogicalGuidedSwapEnv:
             "max_var_degree": float(col_w.max()) if col_w.size else 0.0,
             "avg_var_degree": float(col_w.mean()) if col_w.size else 0.0,
         }
-
 
     def _duplicate_add_count(self, cand):
         return float(sum(self.state.has_edge(*e) for e in cand["edges_to_add"]))

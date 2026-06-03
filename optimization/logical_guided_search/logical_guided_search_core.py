@@ -16,6 +16,7 @@ from optimization.experiments_settings import (
     parse_edgelist,
 )
 
+
 def format_score_info(score_info):
     if score_info is None:
         return "weight_patterns={}"
@@ -27,6 +28,7 @@ def format_score_info(score_info):
         f"weight_patterns={components}, "
         f"score={float(score_info.get('score', np.nan)):.6g}"
     )
+
 
 def get_A_dq(cand):
     d = int(cand["dist"])
@@ -45,6 +47,7 @@ def beam_rank_key(cand):
         float(cand.get("low_weight_score", np.inf)),
         int(cand.get("row_idx", 10**18)),
     )
+
 
 def get_variable_nodes(G: nx.MultiGraph) -> list[int]:
     return sorted([n for n, b in G.nodes(data="bipartite") if b == 1])
@@ -118,12 +121,12 @@ def propose_targeted_swap_from_logical(
         f1 = (c1, v2)
         f2 = (c2, v1)
 
-        if state.has_edge(*f1):
-            print(f"WARNING: proposed edge already exists in state, losing one edge: f1={f1}")
-            # continue
-        if state.has_edge(*f2):
-            print(f"WARNING: proposed edge already exists in state, losing one edge: f2={f2}")
-            # continue
+        # if state.has_edge(*f1):
+        #     print(f"WARNING: proposed edge already exists in state, losing one edge: f1={f1}")
+        #     # continue
+        # if state.has_edge(*f2):
+        #     print(f"WARNING: proposed edge already exists in state, losing one edge: f2={f2}")
+        #     # continue
 
         edges_to_remove = [e1, e2]
         edges_to_add = [f1, f2]
@@ -135,6 +138,7 @@ def propose_targeted_swap_from_logical(
         return edges_to_add, edges_to_remove
 
     return None
+
 
 def generate_logical_guided_candidates(
     state: nx.MultiGraph,
@@ -194,7 +198,8 @@ def generate_logical_guided_candidates(
 
         if proposal is None:
             if verbose:
-                print(f"  No valid proposal found at trial {trial + 1}/{max_trials}.")
+                print(
+                    f"  No valid proposal found at trial {trial + 1}/{max_trials}.")
             continue
 
         edges_to_add, edges_to_remove = proposal
@@ -217,10 +222,12 @@ def generate_logical_guided_candidates(
         H_new = tanner_graph_to_parity_check_matrix(new_state)
         if require_detectable and not is_classical_support_detectable(H_new, support):
             if verbose:
-                print(f"  Rejected at trial {trial + 1}/{max_trials}: support still undetectable.")
+                print(
+                    f"  Rejected at trial {trial + 1}/{max_trials}: support still undetectable.")
             continue
 
-        new_distance = min(new_params["d_classical"], new_params["d_T_classical"])
+        new_distance = min(new_params["d_classical"],
+                           new_params["d_T_classical"])
 
         if require_distance_non_decrease and new_distance < current_distance:
             reject_count += 1
@@ -388,7 +395,8 @@ def improve_state_by_breaking_low_weight_logical(
     if verbose:
         print(f"  Target logical weight: {logical_weight}")
         print(f"  Current distance: {current_distance}")
-        print(f"  Generating candidates with max_trials={max_trials} and logical_max_comb_order={logical_max_comb_order}...")
+        print(
+            f"  Generating candidates with max_trials={max_trials} and logical_max_comb_order={logical_max_comb_order}...")
 
     tried_proposals = set()
     valid_attempts = []
@@ -404,7 +412,8 @@ def improve_state_by_breaking_low_weight_logical(
 
         if proposal is None:
             if verbose:
-                print(f"  No valid unseen proposal found at trial {trial + 1}/{max_trials}.")
+                print(
+                    f"  No valid unseen proposal found at trial {trial + 1}/{max_trials}.")
             break
 
         edges_to_add, edges_to_remove = proposal
@@ -417,10 +426,12 @@ def improve_state_by_breaking_low_weight_logical(
         H_new = tanner_graph_to_parity_check_matrix(new_state)
         if not is_classical_support_detectable(H_new, support):
             if verbose:
-                print(f"  Rejected at trial {trial + 1}/{max_trials}: support still undetectable.")
+                print(
+                    f"  Rejected at trial {trial + 1}/{max_trials}: support still undetectable.")
             continue
 
-        new_distance = min(new_params["d_classical"], new_params["d_T_classical"])
+        new_distance = min(new_params["d_classical"],
+                           new_params["d_T_classical"])
 
         if require_distance_non_decrease and new_distance < current_distance:
             reject_count += 1
