@@ -14,47 +14,107 @@ from optimization.analyze_codes.count_low_weight_patterns import (
     count_parent_low_weight_patterns,
 )
 
+
+def _get_count(counts_total, w: int) -> int:
+    """
+    Robustly read count for weight w from either dict-like or array-like counts.
+    """
+    if isinstance(counts_total, dict):
+        return int(counts_total.get(w, counts_total.get(str(w), 0)))
+
+    if w < len(counts_total):
+        return int(counts_total[w])
+
+    return 0
+
+
 def compute_weighted_low_weight_score(
     state: nx.MultiGraph,
     params: dict | None = None,
     beta: float = 0.3,
     max_weight_offset: int = 2,
+    score_mode: str = "relative",
+    gamma: float = 0.1,
+    max_weight: int | None = None,
 ):
     """
-    Compute weighted low-weight parent-code spectrum score.
+    Compute low-weight parent-code spectrum score.
 
-    S_{W,beta}^{parent}
-      = sum_{w=d_Q}^{W} (A_w(H) + A_w(H^T)) beta^{w-d_Q}
+    Modes
+    -----
+    relative:
+        S_{W,beta}
+          = sum_{w=d_Q}^{d_Q+offset}
+              beta^{w-d_Q} A_w
 
-    Lower score is better.
+        This should be used with distance-first ranking.
+
+    absolute:
+        S_abs
+          = sum_{w=1}^{Wmax}
+              gamma^{w-Wmax} A_w
+
+        This can be used as a single score across different distances.
+
+    Lower score is better in both modes.
     """
     if params is None:
         params, _, _ = get_code_parameters_and_matrices(state)
 
+    print(
+        f"Code parameters: n={params['n_quantum']}, k={params['k_quantum']}, d={params['d_quantum']}")
+
     d_q = int(min(params["d_classical"], params["d_T_classical"]))
-    min_weight = d_q
-    max_weight = d_q + max_weight_offset
+
+    if score_mode not in {"relative", "absolute"}:
+        raise ValueError(f"Unknown score_mode={score_mode!r}")
+
+    if score_mode == "relative":
+        min_weight = d_q
+        max_weight_used = d_q + max_weight_offset
+        weight_base = beta
+    else:
+        if max_weight is None:
+            raise ValueError(
+                "For score_mode='absolute', max_weight must be provided.")
+        if not (0.0 < gamma < 1.0):
+            raise ValueError("gamma must satisfy 0 < gamma < 1.")
+        min_weight = 1
+        max_weight_used = int(max_weight)
+        weight_base = gamma
 
     H = tanner_graph_to_parity_check_matrix(state)
-    counts = count_parent_low_weight_patterns(H, max_weight=max_weight)
+    counts = count_parent_low_weight_patterns(H, max_weight=max_weight_used)
     counts_total = counts["counts_total"]
 
     score = 0.0
     components = {}
+    weights = {}
 
-    for w in range(min_weight, max_weight + 1):
-        count_w = int(counts_total[w])
+    for w in range(min_weight, max_weight_used + 1):
+        count_w = _get_count(counts_total, w)
         components[w] = count_w
-        score += float(count_w) * (beta ** (w - min_weight))
+
+        if score_mode == "relative":
+            coeff = beta ** (w - d_q)
+        else:
+            coeff = gamma ** (w - max_weight_used)
+
+        weights[w] = float(coeff)
+        score += float(count_w) * float(coeff)
 
     return {
         "score": float(score),
+        "score_mode": score_mode,
         "d_q": d_q,
         "min_weight": min_weight,
-        "max_weight": max_weight,
+        "max_weight": max_weight_used,
         "beta": beta,
+        "gamma": gamma,
         "components": components,
+        "weights": weights,
     }
+
 
 def get_code_parameters_and_matrices(state: nx.MultiGraph):
     H = tanner_graph_to_parity_check_matrix(state)

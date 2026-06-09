@@ -1,3 +1,27 @@
+from optimization.logical_guided_search.logical_guided_search_core import (
+    generate_logical_guided_candidates,
+    format_score_info,
+    beam_rank_key
+)
+from optimization.logical_guided_search.logical_guided_hdf5 import (
+    append_to_hdf5,
+    update_hdf5_row,
+)
+from optimization.logical_guided_search.logical_guided_eval import (
+    get_code_parameters_and_matrices,
+    evaluate_mc,
+    compute_weighted_low_weight_score,
+)
+from optimization.experiments_settings import (
+    load_tanner_graph,
+    parse_edgelist,
+    from_edgelist,
+    codes,
+    path_to_initial_codes,
+    textfiles,
+    noise_levels,
+)
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from datetime import datetime
 import sys
 import os
@@ -10,32 +34,6 @@ from tqdm import tqdm
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from concurrent.futures import ProcessPoolExecutor, as_completed
-
-from optimization.experiments_settings import (
-    load_tanner_graph,
-    parse_edgelist,
-    from_edgelist,
-    codes,
-    path_to_initial_codes,
-    textfiles,
-    noise_levels,
-)
-
-from optimization.logical_guided_search.logical_guided_eval import (
-    get_code_parameters_and_matrices,
-    evaluate_mc,
-    compute_weighted_low_weight_score,
-)
-from optimization.logical_guided_search.logical_guided_hdf5 import (
-    append_to_hdf5,
-    update_hdf5_row,
-)
-from optimization.logical_guided_search.logical_guided_search_core import (
-    generate_logical_guided_candidates,
-    format_score_info,
-    beam_rank_key
-)
 
 SEARCH_STEPS = 50
 TRIALS_PER_STEP = 100
@@ -47,6 +45,7 @@ STOP_IF_NO_IMPROVEMENT_FOR = 100
 
 def state_key(state):
     return tuple(parse_edgelist(state).flatten().tolist())
+
 
 def load_initial_state_from_hdf5(
     input_file: str,
@@ -125,10 +124,12 @@ def select_beam_with_backups(candidates, beam_width):
 
     return selected
 
+
 def score_top_count(n: int, frac: float, min_top: int, max_top: int) -> int:
     if n <= 0:
         return 0
     return min(max(int(np.ceil(frac * n)), min_top), max_top, n)
+
 
 def evaluate_candidate_task(task):
     np.random.seed()
@@ -166,31 +167,46 @@ def evaluate_candidate_task(task):
         "early_stopped": result["early_stopped"],
     }
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-C", default=0, type=int, help="Code family index")
-    parser.add_argument("-p", default=None, type=float, help="Physical error rate")
-    parser.add_argument("-S", default=SEARCH_STEPS, type=int, help="Search steps")
-    parser.add_argument("-T", default=TRIALS_PER_STEP, type=int, help="Trials per step")
-    parser.add_argument("--OUTPUT_FILE", default=None, type=str, help="HDF5 file to save results")
+    parser.add_argument("-p", default=None, type=float,
+                        help="Physical error rate")
+    parser.add_argument("-S", default=SEARCH_STEPS,
+                        type=int, help="Search steps")
+    parser.add_argument("-T", default=TRIALS_PER_STEP,
+                        type=int, help="Trials per step")
+    parser.add_argument("--OUTPUT_FILE", default=None,
+                        type=str, help="HDF5 file to save results")
     parser.add_argument("--screen_budget", default=BUDGET_SCREENING, type=int)
     parser.add_argument("--prec_budget", default=BUDGET_PRECISION, type=int)
     parser.add_argument("--topk", default=TOP_K_PRECISION, type=int)
-    parser.add_argument("--workers", default=1, type=int, help="Number of parallel worker processes")
+    parser.add_argument("--workers", default=1, type=int,
+                        help="Number of parallel worker processes")
     parser.add_argument("--score-beta", default=0.3, type=float)
     parser.add_argument("--score-window", default=2, type=int)
     parser.add_argument("--score-top-frac", default=0.10, type=float)
     parser.add_argument("--score-min-top", default=3, type=int)
     parser.add_argument("--score-max-top", default=5, type=int)
+    parser.add_argument("--score-mode", default="absolute",
+                        choices=["relative", "absolute"])
+
+    parser.add_argument("--score-gamma", default=0.3, type=float)
+
+    parser.add_argument("--score-max-weight", default=14, type=int)
+
+    parser.add_argument("--rank-mode", default="score_only",
+                        choices=["distance_first", "score_only"])
     parser.add_argument("--beam-width", default=5, type=int)
     parser.add_argument("--children-per-parent", default=20, type=int)
     parser.add_argument("--stop-distance", default=None, type=int)
     parser.add_argument("--candidate-workers", default=1, type=int)
     parser.add_argument(
-    "--input-file",
-    default=None,
-    type=str,
-    help="Optional HDF5 file to load the initial state from.",
+        "--input-file",
+        default=None,
+        type=str,
+        help="Optional HDF5 file to load the initial state from.",
     )
     parser.add_argument(
         "--input-code",
@@ -210,6 +226,7 @@ def main():
         type=str,
         help="Dataset name containing the initial state edge list.",
     )
+
     args = parser.parse_args()
 
     C = args.C
@@ -226,6 +243,9 @@ def main():
             params=params,
             beta=args.score_beta,
             max_weight_offset=args.score_window,
+            score_mode=args.score_mode,
+            gamma=args.score_gamma,
+            max_weight=args.score_max_weight,
         )
 
     print("\n--- LOGICAL GUIDED SEARCH ---")
@@ -233,10 +253,15 @@ def main():
     print(f"Noise level p = {p}")
     print(f"Search steps = {args.S}")
     print(f"Trials/step = {args.T}")
+    print(f"Beam width = {args.beam_width}")
     print(f"Precision budget = {args.prec_budget}")
     print(
-        f"Score selection: beta={args.score_beta}, "
+        f"Score selection: mode={args.score_mode}, "
+        f"beta={args.score_beta}, "
         f"window={args.score_window}, "
+        f"gamma={args.score_gamma}, "
+        f"max_weight={args.score_max_weight}, "
+        f"rank_mode={args.rank_mode}, "
         f"top_frac={args.score_top_frac}, "
         f"min_top={args.score_min_top}, "
         f"max_top={args.score_max_top}"
@@ -245,7 +270,6 @@ def main():
     print(f"Output HDF5: {OUTPUT_FILE}")
     print(f"Stop if no improvement for {STOP_IF_NO_IMPROVEMENT_FOR} steps")
 
-    
     if args.input_file is not None:
         input_code = args.input_code if args.input_code is not None else codes[C]
 
@@ -269,10 +293,12 @@ def main():
     with h5py.File(OUTPUT_FILE, "a") as f:
         grp = f.require_group(codes[C])
         run_name = (
-            f"logical_guided_score_S{args.S}_T{args.T}_p{p}_"
+            f"logical_guided_score_S{args.S}_T{args.T}_p{p}_bw{args.beam_width}_"
             f"beta{args.score_beta}_win{args.score_window}_"
             f"scoretop{args.score_top_frac}_min{args.score_min_top}_max{args.score_max_top}_"
             f"{args.prec_budget}prec_"
+            f"gamma{args.score_gamma}_maxw{args.score_max_weight}_"
+            f"rank{args.rank_mode}_beam{args.beam_width}_children{args.children_per_parent}_"
             f"{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         )
         run_grp = grp.require_group(run_name)
@@ -283,16 +309,23 @@ def main():
             "p": p,
             "screen_budget": args.screen_budget,
             "prec_budget": args.prec_budget,
+            "beam_width": args.beam_width,
+            "children_per_parent": args.children_per_parent,
             "topk": args.topk,
+            "score_mode": args.score_mode,
             "score_beta": args.score_beta,
             "score_window": args.score_window,
+            "score_gamma": args.score_gamma,
+            "score_max_weight": args.score_max_weight,
+            "rank_mode": args.rank_mode,
             "score_top_frac": args.score_top_frac,
             "score_min_top": args.score_min_top,
             "score_max_top": args.score_max_top,
         })
 
         current_state = initial_state
-        params_init, Hx_init, Hz_init = get_code_parameters_and_matrices(current_state)
+        params_init, Hx_init, Hz_init = get_code_parameters_and_matrices(
+            current_state)
         score_info_init = score_candidate(current_state, params_init)
         edges_init = parse_edgelist(current_state).astype(np.uint32)
 
@@ -305,8 +338,10 @@ def main():
             step=0,
             trial=0,
             parent_idx=-1,
-            distance_before=min(params_init["d_classical"], params_init["d_T_classical"]),
-            distance_after=min(params_init["d_classical"], params_init["d_T_classical"]),
+            distance_before=min(
+                params_init["d_classical"], params_init["d_T_classical"]),
+            distance_after=min(
+                params_init["d_classical"], params_init["d_T_classical"]),
             edges_to_add=None,
             edges_to_remove=None,
         )
@@ -332,7 +367,8 @@ def main():
         seen_state_keys = {state_key(current_state)}
 
         for step in range(1, args.S + 1):
-            print(f"\nBeam depth {step}/{args.S} (global max dist so far = {global_max_dist})")
+            print(
+                f"\nBeam depth {step}/{args.S} (global max dist so far = {global_max_dist})")
 
             print("Current beam:")
             for b_i, cand in enumerate(beam):
@@ -345,7 +381,8 @@ def main():
             children = []
 
             for parent_i, parent in enumerate(beam):
-                print(f"\nExpanding parent beam[{parent_i}] row={parent['row_idx']}")
+                print(
+                    f"\nExpanding parent beam[{parent_i}] row={parent['row_idx']}")
 
                 raw_children = generate_logical_guided_candidates(
                     state=parent["state"],
@@ -371,7 +408,8 @@ def main():
                     seen_state_keys.add(key)
 
                     params = result["params"]
-                    d_cand = min(params["d_classical"], params["d_T_classical"])
+                    d_cand = min(params["d_classical"],
+                                 params["d_T_classical"])
                     logical_weight = result["logical_weight"]
 
                     score_info = result.get("score_info")
@@ -458,7 +496,8 @@ def main():
                 )
 
             if args.stop_distance is not None and global_max_dist >= args.stop_distance:
-                print(f"Reached stop distance {args.stop_distance}. Stopping beam search.")
+                print(
+                    f"Reached stop distance {args.stop_distance}. Stopping beam search.")
                 break
 
             if step - last_improvement_step >= STOP_IF_NO_IMPROVEMENT_FOR:
@@ -469,10 +508,19 @@ def main():
                 break
 
         print(f"\n>>> PHASE 2: Weighted-score selection")
-        target_dist = global_max_dist
-        score_candidates = [c for c in all_candidates if c["dist"] == target_dist]
+        if args.rank_mode == "distance_first":
+            target_dist = global_max_dist
+            score_candidates = [
+                c for c in all_candidates if c["dist"] == target_dist]
+            print(f"Selecting among candidates with dist == {target_dist}.")
+
+        else:
+            target_dist = None
+            score_candidates = list(all_candidates)
+            print("Selecting among all candidates by absolute score only.")
 
         unique_candidates_dict = {}
+
         for c in score_candidates:
             key = state_key(c["state"])
             if key not in unique_candidates_dict:
@@ -480,17 +528,16 @@ def main():
 
         unique_candidates = list(unique_candidates_dict.values())
 
-        # Make sure every max-distance candidate has a weighted score.
         for cand in unique_candidates:
             if "low_weight_score" not in cand or not np.isfinite(cand["low_weight_score"]):
                 score_info = score_candidate(cand["state"], cand["params"])
                 cand["score_info"] = score_info
                 cand["low_weight_score"] = float(score_info["score"])
 
-        # Rank by weighted score. Lower score is better.
         unique_candidates.sort(
             key=lambda c: (
                 float(c.get("low_weight_score", np.inf)),
+                -int(c.get("dist", -1)),
                 float(c.get("logical_weight", np.inf)),
                 int(c.get("row_idx", 10**18)),
             )
@@ -506,10 +553,13 @@ def main():
         top_candidates = unique_candidates[:num_to_eval]
 
         print(f"Found {len(all_candidates)} total saved states.")
-        print(f"Found {len(unique_candidates)} unique candidates with dist == {target_dist}.")
+
         print(
-            f"Selecting top {num_to_eval} candidates by weighted score only "
-            f"(beta={args.score_beta}, window={args.score_window})."
+            f"Found {len(unique_candidates)} unique candidates for score selection.")
+        print(
+            f"Selecting top {num_to_eval} candidates by "
+            f"{args.score_mode} weighted score "
+            f"(gamma={args.score_gamma}, max_weight={args.score_max_weight})."
         )
 
         for cand in top_candidates:
@@ -556,7 +606,7 @@ def main():
 
                 print(
                     f"  -> LER: {ler:.6f} ± {std:.6f} | "
-                    f"runtime={run_t//3600}h {run_t%3600//60}m {run_t%60:.2f}s"
+                    f"runtime={run_t//3600}h {run_t % 3600//60}m {run_t % 60:.2f}s"
                 )
 
                 cand["prec_ler"] = ler
@@ -587,7 +637,8 @@ def main():
             results_by_row = {}
 
             with ProcessPoolExecutor(max_workers=args.workers) as ex:
-                futures = [ex.submit(evaluate_candidate_task, task) for task in tasks]
+                futures = [ex.submit(evaluate_candidate_task, task)
+                           for task in tasks]
 
                 for fut in tqdm(
                     as_completed(futures),
@@ -635,7 +686,8 @@ def main():
             print(f"Distance: {final_best_cand['dist']}")
             print(f"LER: {min_final_ler:.6f} ± {final_best_std:.6f}")
 
-            best_edges = parse_edgelist(final_best_cand["state"]).astype(np.uint32)
+            best_edges = parse_edgelist(
+                final_best_cand["state"]).astype(np.uint32)
 
             if "best_state" in run_grp:
                 del run_grp["best_state"]
@@ -650,7 +702,8 @@ def main():
         print(f"Run group name: {run_grp.name}")
 
     total_time = time.time() - start_time
-    print(f"\nTotal time: {total_time // 3600:.0f}h {(total_time % 3600) // 60:.0f}m {total_time % 60:.2f}s")
+    print(
+        f"\nTotal time: {total_time // 3600:.0f}h {(total_time % 3600) // 60:.0f}m {total_time % 60:.2f}s")
     print(f"Saved to {OUTPUT_FILE}")
 
 

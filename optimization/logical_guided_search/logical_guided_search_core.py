@@ -39,12 +39,15 @@ def get_A_dq(cand):
 
 def beam_rank_key(cand):
     """
-    Larger distance first, then fewer minimum-weight patterns, then lower score.
+    Absolute-score ranking.
+
+    Lower low_weight_score is better.
+    Distance is used only as a tie-breaker.
     """
     return (
-        -int(cand["dist"]),
-        get_A_dq(cand),
         float(cand.get("low_weight_score", np.inf)),
+        -int(cand.get("dist", -1)),
+        float(cand.get("logical_weight", np.inf)),
         int(cand.get("row_idx", 10**18)),
     )
 

@@ -66,7 +66,7 @@ def count_kernel_codewords_by_weight(H, max_weight):
     n = len(masks)
 
     left = masks[: n // 2]
-    right = masks[n // 2 :]
+    right = masks[n // 2:]
 
     left_counts = _enumerate_half(left, max_weight)
     right_counts = _enumerate_half(right, max_weight)
@@ -93,6 +93,11 @@ def count_parent_low_weight_patterns(H, max_weight):
     """
     counts_H = count_kernel_codewords_by_weight(H, max_weight)
     counts_HT = count_kernel_codewords_by_weight(H.T, max_weight)
+
+    # print("Weight | Count in H | Count in H^T | Total")
+    # for w in range(1, max_weight + 1):
+    #     print(
+    #         f"{w:6d} | {counts_H[w]:11d} | {counts_HT[w]:13d} | {counts_H[w] + counts_HT[w]:5d}")
 
     return {
         "counts_H": counts_H,
