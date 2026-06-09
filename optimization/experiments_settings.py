@@ -11,7 +11,7 @@ from networkx.algorithms.bipartite import biadjacency_matrix
 import numba
 
 path_to_initial_codes = 'optimization/initial_codes/'
-codes = ['[625,25]', '[1225,65]', '[1600,64]', '[2025,81]']
+codes = ['[625,25]', '[1225,49]', '[1600,64]', '[2025,81]']
 textfiles = [f"HGP_(3,4)_{code}.txt" for code in codes]
 
 state_space_params = [(15, 20, 60),
@@ -101,8 +101,10 @@ def generate_neighbor_by_adding_and_removing_edges(theta: nx.MultiGraph) -> tupl
 
     # get (multi)edge number from state theta
     E = neighbor.number_of_edges()
-    m = len([n for n, b in neighbor.nodes(data='bipartite') if b == 0]) # Check nodes are indexed from 0 to m-1
-    n = len([n for n, b in neighbor.nodes(data='bipartite') if b == 1]) # Data nodes are indexed from m to m+n-1
+    # Check nodes are indexed from 0 to m-1
+    m = len([n for n, b in neighbor.nodes(data='bipartite') if b == 0])
+    # Data nodes are indexed from m to m+n-1
+    n = len([n for n, b in neighbor.nodes(data='bipartite') if b == 1])
 
     # sample edges to remove and add
     edges_to_remove = list(npr.choice(E, size=2, replace=False))
