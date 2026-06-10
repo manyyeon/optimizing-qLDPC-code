@@ -31,9 +31,8 @@ def _get_count(counts_total, w: int) -> int:
 def compute_weighted_low_weight_score(
     state: nx.MultiGraph,
     params: dict | None = None,
-    beta: float = 0.3,
     max_weight_offset: int = 2,
-    score_mode: str = "relative",
+    score_mode: str = "absolute",
     gamma: float = 0.1,
     max_weight: int | None = None,
 ):
@@ -43,9 +42,9 @@ def compute_weighted_low_weight_score(
     Modes
     -----
     relative:
-        S_{W,beta}
+        S_{W,gamma}
           = sum_{w=d_Q}^{d_Q+offset}
-              beta^{w-d_Q} A_w
+              gamma^{w-d_Q} A_w
 
         This should be used with distance-first ranking.
 
@@ -61,9 +60,6 @@ def compute_weighted_low_weight_score(
     if params is None:
         params, _, _ = get_code_parameters_and_matrices(state)
 
-    print(
-        f"Code parameters: n={params['n_quantum']}, k={params['k_quantum']}, d={params['d_quantum']}")
-
     d_q = int(min(params["d_classical"], params["d_T_classical"]))
 
     if score_mode not in {"relative", "absolute"}:
@@ -72,7 +68,7 @@ def compute_weighted_low_weight_score(
     if score_mode == "relative":
         min_weight = d_q
         max_weight_used = d_q + max_weight_offset
-        weight_base = beta
+        weight_base = gamma
     else:
         if max_weight is None:
             raise ValueError(
@@ -96,7 +92,7 @@ def compute_weighted_low_weight_score(
         components[w] = count_w
 
         if score_mode == "relative":
-            coeff = beta ** (w - d_q)
+            coeff = gamma ** (w - d_q)
         else:
             coeff = gamma ** (w - max_weight_used)
 
@@ -109,7 +105,6 @@ def compute_weighted_low_weight_score(
         "d_q": d_q,
         "min_weight": min_weight,
         "max_weight": max_weight_used,
-        "beta": beta,
         "gamma": gamma,
         "components": components,
         "weights": weights,
@@ -124,9 +119,11 @@ def get_code_parameters_and_matrices(state: nx.MultiGraph):
     d_cl = ldpc.code_util.compute_exact_code_distance(csr_H)
     r_cl = ldpc.mod2.rank(csr_H)
 
-    if k_cl == n_cl - csr_H.shape[0]:
-        n_T_cl = csr_H.shape[0]
-        k_T_cl = n_T_cl - r_cl
+    m_cl = csr_H.shape[0]
+
+    if r_cl == m_cl:
+        n_T_cl = m_cl
+        k_T_cl = 0
         d_T_cl = np.inf
     else:
         n_T_cl, k_T_cl, d_T_cl = ldpc.code_util.compute_code_parameters(

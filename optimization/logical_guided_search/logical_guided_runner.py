@@ -40,7 +40,6 @@ SEARCH_STEPS = 50
 TRIALS_PER_STEP = 100
 BUDGET_SCREENING = 10_000
 BUDGET_PRECISION = 100_000
-TOP_K_PRECISION = 10
 STOP_IF_NO_IMPROVEMENT_FOR = 100
 
 
@@ -178,29 +177,22 @@ def main():
                         type=int, help="Search steps")
     parser.add_argument("-T", default=TRIALS_PER_STEP,
                         type=int, help="Trials per step")
+    parser.add_argument("--beam-width", default=5, type=int)
     parser.add_argument("--OUTPUT_FILE", default=None,
                         type=str, help="HDF5 file to save results")
     parser.add_argument("--screen_budget", default=BUDGET_SCREENING, type=int)
     parser.add_argument("--prec_budget", default=BUDGET_PRECISION, type=int)
-    parser.add_argument("--topk", default=TOP_K_PRECISION, type=int)
     parser.add_argument("--workers", default=1, type=int,
                         help="Number of parallel worker processes")
-    parser.add_argument("--score-beta", default=0.3, type=float)
+    parser.add_argument("--score-gamma", default=0.3, type=float)
+    parser.add_argument("--score-max-weight", default=18, type=int)
+    parser.add_argument("--logical-max-comb-order", default=10, type=int)
     parser.add_argument("--score-window", default=2, type=int)
     parser.add_argument("--score-top-frac", default=0.10, type=float)
     parser.add_argument("--score-min-top", default=3, type=int)
     parser.add_argument("--score-max-top", default=5, type=int)
     parser.add_argument("--score-mode", default="absolute",
                         choices=["relative", "absolute"])
-
-    parser.add_argument("--score-gamma", default=0.3, type=float)
-
-    parser.add_argument("--score-max-weight", default=14, type=int)
-
-    parser.add_argument("--rank-mode", default="score_only",
-                        choices=["distance_first", "score_only"])
-    parser.add_argument("--beam-width", default=5, type=int)
-    parser.add_argument("--children-per-parent", default=20, type=int)
     parser.add_argument("--stop-distance", default=None, type=int)
     parser.add_argument("--candidate-workers", default=1, type=int)
     parser.add_argument(
@@ -242,7 +234,6 @@ def main():
         return compute_weighted_low_weight_score(
             state=state,
             params=params,
-            beta=args.score_beta,
             max_weight_offset=args.score_window,
             score_mode=args.score_mode,
             gamma=args.score_gamma,
@@ -258,14 +249,13 @@ def main():
     print(f"Precision budget = {args.prec_budget}")
     print(
         f"Score selection: mode={args.score_mode}, "
-        f"beta={args.score_beta}, "
         f"window={args.score_window}, "
         f"gamma={args.score_gamma}, "
         f"max_weight={args.score_max_weight}, "
-        f"rank_mode={args.rank_mode}, "
         f"top_frac={args.score_top_frac}, "
         f"min_top={args.score_min_top}, "
-        f"max_top={args.score_max_top}"
+        f"max_top={args.score_max_top},"
+        f"logical_max_comb_order={args.logical_max_comb_order}"
     )
     print(f"Workers = {args.workers}")
     print(f"Output HDF5: {OUTPUT_FILE}")
@@ -295,11 +285,9 @@ def main():
         grp = f.require_group(codes[C])
         run_name = (
             f"logical_guided_score_S{args.S}_T{args.T}_p{p}_bw{args.beam_width}_"
-            f"beta{args.score_beta}_win{args.score_window}_"
+            f"gamma{args.score_gamma}_maxw{args.score_max_weight}_comb{args.logical_max_comb_order}__window{args.score_window}_"
             f"scoretop{args.score_top_frac}_min{args.score_min_top}_max{args.score_max_top}_"
             f"{args.prec_budget}prec_"
-            f"gamma{args.score_gamma}_maxw{args.score_max_weight}_"
-            f"rank{args.rank_mode}_beam{args.beam_width}_children{args.children_per_parent}_"
             f"{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         )
         run_grp = grp.require_group(run_name)
@@ -311,14 +299,11 @@ def main():
             "screen_budget": args.screen_budget,
             "prec_budget": args.prec_budget,
             "beam_width": args.beam_width,
-            "children_per_parent": args.children_per_parent,
-            "topk": args.topk,
             "score_mode": args.score_mode,
-            "score_beta": args.score_beta,
             "score_window": args.score_window,
             "score_gamma": args.score_gamma,
             "score_max_weight": args.score_max_weight,
-            "rank_mode": args.rank_mode,
+            "logical_max_comb_order": args.logical_max_comb_order,
             "score_top_frac": args.score_top_frac,
             "score_min_top": args.score_min_top,
             "score_max_top": args.score_max_top,
@@ -395,7 +380,7 @@ def main():
                     state=parent["state"],
                     get_code_parameters_and_matrices=get_code_parameters_and_matrices,
                     max_trials=args.T,
-                    logical_max_comb_order=5,
+                    logical_max_comb_order=args.logical_max_comb_order,
                     require_detectable=True,
                     require_distance_non_decrease=True,
                     verbose=True,
@@ -523,7 +508,7 @@ def main():
                 break
 
         print(f"\n>>> PHASE 2: Weighted-score selection")
-        if args.rank_mode == "distance_first":
+        if args.score_mode == "relative":
             target_dist = global_max_dist
             score_candidates = [
                 c for c in all_candidates if c["dist"] == target_dist]
