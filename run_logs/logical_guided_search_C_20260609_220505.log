@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/users/udayeon/optimizing_qecc/optimizing-qLDPC-code/optimization/logical_guided_search/logical_guided_runner.py", line 11, in <module>
-    from optimization.logical_guided_search.logical_guided_eval import (
-  File "/users/udayeon/optimizing_qecc/optimizing-qLDPC-code/optimization/logical_guided_search/logical_guided_eval.py", line 33, in <module>
-    params: dict | None = None,
-TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
