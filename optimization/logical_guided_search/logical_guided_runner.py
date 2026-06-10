@@ -6,6 +6,7 @@ from optimization.logical_guided_search.logical_guided_search_core import (
 from optimization.logical_guided_search.logical_guided_hdf5 import (
     append_to_hdf5,
     update_hdf5_row,
+    mark_hdf5_row,
 )
 from optimization.logical_guided_search.logical_guided_eval import (
     get_code_parameters_and_matrices,
@@ -339,11 +340,17 @@ def main():
             trial=0,
             parent_idx=-1,
             distance_before=min(
-                params_init["d_classical"], params_init["d_T_classical"]),
+                params_init["d_classical"],
+                params_init["d_T_classical"],
+            ),
             distance_after=min(
-                params_init["d_classical"], params_init["d_T_classical"]),
+                params_init["d_classical"],
+                params_init["d_T_classical"],
+            ),
             edges_to_add=None,
             edges_to_remove=None,
+            score_info=score_info_init,
+            selected_beam_rank=0,
         )
 
         current_parent_row_idx = idx_init
@@ -432,6 +439,7 @@ def main():
                         distance_after=result["distance_after"],
                         edges_to_add=result["edges_to_add"],
                         edges_to_remove=result["edges_to_remove"],
+                        score_info=score_info,
                     )
 
                     cand = {
@@ -485,6 +493,13 @@ def main():
             candidate_pool.sort(key=beam_rank_key)
 
             beam = select_beam_with_backups(candidate_pool, args.beam_width)
+
+            for b_i, cand in enumerate(beam):
+                mark_hdf5_row(
+                    run_grp,
+                    cand["row_idx"],
+                    selected_beam_rank=b_i,
+                )
 
             print("\nSelected next beam:")
             for b_i, cand in enumerate(beam):
@@ -603,6 +618,11 @@ def main():
                 run_t = result["runtime"]
 
                 update_hdf5_row(run_grp, cand["row_idx"], ler, std, run_t)
+                mark_hdf5_row(
+                    run_grp,
+                    cand["row_idx"],
+                    precision_selected=True,
+                )
 
                 print(
                     f"  -> LER: {ler:.6f} ± {std:.6f} | "
@@ -659,6 +679,12 @@ def main():
                     res["runtime"],
                 )
 
+                mark_hdf5_row(
+                    run_grp,
+                    cand["row_idx"],
+                    precision_selected=True,
+                )
+
                 print(
                     f"Evaluating row {cand['row_idx']} | "
                     f"dist={cand['dist']} | "
@@ -698,6 +724,12 @@ def main():
             )
             run_grp.attrs["min_cost"] = min_final_ler
             run_grp.attrs["best_dist"] = final_best_cand["dist"]
+
+            mark_hdf5_row(
+                run_grp,
+                final_best_cand["row_idx"],
+                final_best=True,
+            )
 
         print(f"Run group name: {run_grp.name}")
 
