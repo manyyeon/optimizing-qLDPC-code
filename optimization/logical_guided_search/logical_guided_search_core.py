@@ -148,6 +148,7 @@ def generate_logical_guided_candidates(
     get_code_parameters_and_matrices,
     max_trials: int = 100,
     logical_max_comb_order: int = 5,
+    weight_slack: int = 1,
     require_detectable: bool = True,
     require_distance_non_decrease: bool = True,
     verbose: bool = False,
@@ -166,20 +167,19 @@ def generate_logical_guided_candidates(
     H = tanner_graph_to_parity_check_matrix(state)
     csr_H = csr_matrix(H, dtype=np.uint8)
 
-    logical_vec, logical_weight = find_low_weight_classical_codeword(
+    logical_words = find_low_weight_classical_codewords(
         csr_H,
         max_comb_order=logical_max_comb_order,
+        max_words=30,
+        weight_slack=weight_slack,
     )
 
-    if logical_vec is None:
-        if verbose:
-            print("  No low-weight classical codeword found.")
+    print(f"Found {len(logical_words)} low-weight logical codewords with max_comb_order={logical_max_comb_order}.")
+
+    if not logical_words:
         return []
 
-    support = np.where(logical_vec == 1)[0]
-
     if verbose:
-        print(f"  Target logical weight: {logical_weight}")
         print(f"  Current distance: {current_distance}")
         print(
             f"  Generating candidates with max_trials={max_trials}, "
@@ -192,6 +192,8 @@ def generate_logical_guided_candidates(
     skipped_seen = 0
 
     for trial in range(max_trials):
+        logical_weight, logical_vec = random.choice(logical_words)
+        support = np.where(logical_vec == 1)[0]
         proposal = propose_targeted_swap_from_logical(
             state,
             support,
@@ -294,59 +296,60 @@ def generate_logical_guided_candidates(
     return valid_attempts
 
 
-def find_low_weight_classical_codeword(H, max_comb_order=None):
+def find_low_weight_classical_codewords(
+    H,
+    max_comb_order=None,
+    max_words=20,
+    weight_slack=0,
+):
     """
-    Find a low-weight nonzero classical codeword in ker(H)
-    by searching linear combinations of kernel basis vectors.
-
-    Parameters
-    ----------
-    H : np.ndarray or csr_matrix
-        Classical parity-check matrix.
-    max_comb_order : int or None
-        Maximum number of basis vectors to combine.
-        If None, searches all.
-
-    Returns
-    -------
-    best_vec : np.ndarray or None
-        Lowest-weight codeword found.
-    best_weight : int or None
-        Its Hamming weight.
+    Return several low-weight codewords in ker(H), not just one.
+    weight_slack=0 means only minimum-weight found codewords.
+    weight_slack=1 means include min_weight and min_weight+1.
     """
     ker = mod2.nullspace(H).toarray().astype(np.uint8)
 
     if ker.shape[0] == 0:
-        return None, None
+        return []
 
     num_basis = ker.shape[0]
-    if max_comb_order is None:
-        max_comb_order = num_basis
+    max_comb_order = min(max_comb_order, num_basis) if max_comb_order is not None else num_basis
 
-    best_vec = None
+    found = []
+    seen = set()
     best_weight = np.inf
 
-    # Also check single basis vectors first
-    for i in range(num_basis):
-        v = ker[i].copy()
+    def add_vec(v):
+        nonlocal best_weight
         w = int(v.sum())
-        if 0 < w < best_weight:
-            best_vec = v
-            best_weight = w
+        if w == 0:
+            return
 
-    # Check combinations of basis vectors
+        key = tuple(np.flatnonzero(v).tolist())
+        if key in seen:
+            return
+
+        seen.add(key)
+        best_weight = min(best_weight, w)
+        found.append((w, v.copy()))
+
+    for i in range(num_basis):
+        add_vec(ker[i])
+
     for r in range(2, max_comb_order + 1):
         for idxs in combinations(range(num_basis), r):
             v = np.bitwise_xor.reduce(ker[list(idxs)], axis=0).astype(np.uint8)
-            w = int(v.sum())
-            if 0 < w < best_weight:
-                best_vec = v
-                best_weight = w
+            add_vec(v)
 
-    if best_vec is None:
-        return None, None
+    if not found:
+        return []
 
-    return best_vec, best_weight
+    cutoff = best_weight + weight_slack
+    found = [(w, v) for (w, v) in found if w <= cutoff]
+    random.shuffle(found)
+    found.sort(key=lambda x: x[0])  # stable sort, keeps random order inside same weight
+
+    return found[:max_words]
 
 
 def is_classical_support_detectable(H: np.ndarray, support: np.ndarray) -> bool:
@@ -371,12 +374,14 @@ def improve_state_by_breaking_low_weight_logical(
     H = tanner_graph_to_parity_check_matrix(state)
     csr_H = csr_matrix(H, dtype=np.uint8)
 
-    logical_vec, logical_weight = find_low_weight_classical_codeword(
-        csr_H,
-        max_comb_order=logical_max_comb_order,
+    logical_words = find_low_weight_classical_codewords(
+    csr_H,
+    max_comb_order=logical_max_comb_order,
+    max_words=20,
+    weight_slack=0,
     )
 
-    if logical_vec is None:
+    if not logical_words:
         if verbose:
             print("  No low-weight classical codeword found.")
         return {
@@ -393,6 +398,7 @@ def improve_state_by_breaking_low_weight_logical(
             "score_info": None,
         }
 
+    logical_weight, logical_vec = random.choice(logical_words)
     support = np.where(logical_vec == 1)[0]
 
     if verbose:
@@ -477,6 +483,8 @@ def improve_state_by_breaking_low_weight_logical(
                 "distance_after": new_distance,
                 "low_weight_score": low_weight_score,
                 "score_info": score_info,
+                "dist": new_distance,
+                "support": support.copy(),
             }
         )
 
