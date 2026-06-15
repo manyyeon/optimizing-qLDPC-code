@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/users/udayeon/optimizing_qecc/optimizing-qLDPC-code/optimization/logical_guided_search/logical_guided_runner.py", line 1, in <module>
-    from optimization.logical_guided_search.logical_guided_search_core import (
-  File "/users/udayeon/optimizing_qecc/optimizing-qLDPC-code/optimization/logical_guided_search/logical_guided_search_core.py", line 6, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
