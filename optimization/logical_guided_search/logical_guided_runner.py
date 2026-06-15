@@ -722,9 +722,19 @@ def main():
 
         print(f"Run group name: {run_grp.name}")
 
-    total_time = time.time() - start_time
-    print(
-        f"\nTotal time: {total_time // 3600:.0f}h {(total_time % 3600) // 60:.0f}m {total_time % 60:.2f}s")
+        total_time = time.time() - start_time
+        run_grp.attrs["total_runtime"] = total_time
+        run_grp.attrs["total_runtime_units"] = "seconds"
+        f.flush()
+
+        print(
+            f"\nTotal time: "
+            f"{total_time // 3600:.0f}h "
+            f"{(total_time % 3600) // 60:.0f}m "
+            f"{total_time % 60:.2f}s"
+        )
+        print(f"Run group name: {run_grp.name}")
+
     print(f"Saved to {OUTPUT_FILE}")
 
 
