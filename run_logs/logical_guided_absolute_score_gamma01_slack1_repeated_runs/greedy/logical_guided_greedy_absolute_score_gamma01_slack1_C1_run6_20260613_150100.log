@@ -16750,7 +16750,8 @@ Selecting top 10 candidates by absolute weighted score (gamma=0.1, max_weight=18
   row=997 | dist=10 | target_weight_before_swap=10 | weight_patterns={1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 1, 11: 14, 12: 18, 13: 22, 14: 26, 15: 16, 16: 11, 17: 9, 18: 5}, score=2.60477e+08
 
 >>> PHASE 3: Precision LER evaluation (100000)
-Running MC (precision):   0%|          | 0/10 [00:00<?, ?it/s]Decoder precision_row_552_batch0 finished in 0.0m 30.09s with 33 failures out of 10000/10000 runs.
+
+Running MC (precision):   0%|          | 0/10 [00:00<?, ?it/s]Decoder precision_row_552_batch0 finished in 0.0m 30.09s with 33 failures out of 10000/10000 runs.
 Logical error rate for precision_row_552_batch0: 0.0033 ± 0.0005735 (stderr)
 Decoder precision_row_626_batch0 finished in 0.0m 31.00s with 26 failures out of 10000/10000 runs.
 Logical error rate for precision_row_626_batch0: 0.0026 ± 0.0005093 (stderr)
@@ -16920,39 +16921,46 @@ Decoder precision_row_552_batch9 finished in 0.0m 15.30s with 26 failures out of
 Logical error rate for precision_row_552_batch9: 0.0026 ± 0.0005093 (stderr)
 Decoder precision_row_552 finished in 2.0m 41.29s with 234 failures out of 100000/100000 runs.
 Logical error rate for precision_row_552: 0.00234 ± 0.0001528 (stderr)
-Running MC (precision):  10%|█         | 1/10 [02:48<25:18, 168.70s/it]Decoder precision_row_1013_batch7 finished in 0.0m 15.39s with 22 failures out of 10000/10000 runs.
+
+Running MC (precision):  10%|█         | 1/10 [02:48<25:18, 168.70s/it]Decoder precision_row_1013_batch7 finished in 0.0m 15.39s with 22 failures out of 10000/10000 runs.
 Logical error rate for precision_row_1013_batch7: 0.0022 ± 0.0004685 (stderr)
 Decoder precision_row_606_batch9 finished in 0.0m 14.62s with 28 failures out of 10000/10000 runs.
 Logical error rate for precision_row_606_batch9: 0.0028 ± 0.0005284 (stderr)
 Decoder precision_row_606 finished in 2.0m 37.11s with 263 failures out of 100000/100000 runs.
 Logical error rate for precision_row_606: 0.00263 ± 0.0001620 (stderr)
-Running MC (precision):  20%|██        | 2/10 [02:50<09:25, 70.63s/it] Decoder precision_row_626_batch8 finished in 0.0m 15.28s with 32 failures out of 10000/10000 runs.
+
+Running MC (precision):  20%|██        | 2/10 [02:50<09:25, 70.63s/it] Decoder precision_row_626_batch8 finished in 0.0m 15.28s with 32 failures out of 10000/10000 runs.
 Logical error rate for precision_row_626_batch8: 0.0032 ± 0.0005648 (stderr)
 Decoder precision_row_535_batch9 finished in 0.0m 13.91s with 27 failures out of 10000/10000 runs.
 Logical error rate for precision_row_535_batch9: 0.0027 ± 0.0005189 (stderr)
 Decoder precision_row_535 finished in 2.0m 41.80s with 241 failures out of 100000/100000 runs.
 Logical error rate for precision_row_535: 0.00241 ± 0.0001551 (stderr)
-Running MC (precision):  30%|███       | 3/10 [02:54<04:40, 40.07s/it]Decoder precision_row_997_batch7 finished in 0.0m 18.30s with 19 failures out of 10000/10000 runs.
+
+Running MC (precision):  30%|███       | 3/10 [02:54<04:40, 40.07s/it]Decoder precision_row_997_batch7 finished in 0.0m 18.30s with 19 failures out of 10000/10000 runs.
 Logical error rate for precision_row_997_batch7: 0.0019 ± 0.0004355 (stderr)
 Decoder precision_row_571_batch9 finished in 0.0m 12.58s with 24 failures out of 10000/10000 runs.
 Logical error rate for precision_row_571_batch9: 0.0024 ± 0.0004893 (stderr)
 Decoder precision_row_571 finished in 2.0m 41.79s with 266 failures out of 100000/100000 runs.
 Logical error rate for precision_row_571: 0.00266 ± 0.0001629 (stderr)
-Running MC (precision):  40%|████      | 4/10 [02:57<02:33, 25.55s/it]Decoder precision_row_579_batch9 finished in 0.0m 11.81s with 29 failures out of 10000/10000 runs.
+
+Running MC (precision):  40%|████      | 4/10 [02:57<02:33, 25.55s/it]Decoder precision_row_579_batch9 finished in 0.0m 11.81s with 29 failures out of 10000/10000 runs.
 Logical error rate for precision_row_579_batch9: 0.0029 ± 0.0005378 (stderr)
 Decoder precision_row_579 finished in 2.0m 40.91s with 262 failures out of 100000/100000 runs.
 Logical error rate for precision_row_579: 0.00262 ± 0.0001617 (stderr)
-Running MC (precision):  50%|█████     | 5/10 [02:58<01:22, 16.56s/it]Decoder precision_row_720_batch7 finished in 0.0m 13.30s with 14 failures out of 10000/10000 runs.
+
+Running MC (precision):  50%|█████     | 5/10 [02:58<01:22, 16.56s/it]Decoder precision_row_720_batch7 finished in 0.0m 13.30s with 14 failures out of 10000/10000 runs.
 Logical error rate for precision_row_720_batch7: 0.0014 ± 0.0003739 (stderr)
 Decoder precision_row_592_batch9 finished in 0.0m 11.70s with 22 failures out of 10000/10000 runs.
 Logical error rate for precision_row_592_batch9: 0.0022 ± 0.0004685 (stderr)
 Decoder precision_row_592 finished in 2.0m 45.19s with 225 failures out of 100000/100000 runs.
 Logical error rate for precision_row_592: 0.00225 ± 0.0001498 (stderr)
-Running MC (precision):  60%|██████    | 6/10 [02:58<00:43, 11.00s/it]Decoder precision_row_626_batch9 finished in 0.0m 7.91s with 24 failures out of 10000/10000 runs.
+
+Running MC (precision):  60%|██████    | 6/10 [02:58<00:43, 11.00s/it]Decoder precision_row_626_batch9 finished in 0.0m 7.91s with 24 failures out of 10000/10000 runs.
 Logical error rate for precision_row_626_batch9: 0.0024 ± 0.0004893 (stderr)
 Decoder precision_row_626 finished in 2.0m 46.41s with 293 failures out of 100000/100000 runs.
 Logical error rate for precision_row_626: 0.00293 ± 0.0001709 (stderr)
-Running MC (precision):  70%|███████   | 7/10 [02:58<00:22,  7.47s/it]Decoder precision_row_1013_batch8 finished in 0.0m 10.00s with 25 failures out of 10000/10000 runs.
+
+Running MC (precision):  70%|███████   | 7/10 [02:58<00:22,  7.47s/it]Decoder precision_row_1013_batch8 finished in 0.0m 10.00s with 25 failures out of 10000/10000 runs.
 Logical error rate for precision_row_1013_batch8: 0.0025 ± 0.0004994 (stderr)
 Decoder precision_row_997_batch8 finished in 0.0m 6.39s with 17 failures out of 10000/10000 runs.
 Logical error rate for precision_row_997_batch8: 0.0017 ± 0.0004120 (stderr)
@@ -16962,15 +16970,19 @@ Decoder precision_row_1013_batch9 finished in 0.0m 6.81s with 13 failures out of
 Logical error rate for precision_row_1013_batch9: 0.0013 ± 0.0003603 (stderr)
 Decoder precision_row_1013 finished in 2.0m 49.19s with 186 failures out of 100000/100000 runs.
 Logical error rate for precision_row_1013: 0.00186 ± 0.0001363 (stderr)
-Running MC (precision):  80%|████████  | 8/10 [03:06<00:15,  7.51s/it]Decoder precision_row_997_batch9 finished in 0.0m 5.81s with 17 failures out of 10000/10000 runs.
+
+Running MC (precision):  80%|████████  | 8/10 [03:06<00:15,  7.51s/it]Decoder precision_row_997_batch9 finished in 0.0m 5.81s with 17 failures out of 10000/10000 runs.
 Logical error rate for precision_row_997_batch9: 0.0017 ± 0.0004120 (stderr)
 Decoder precision_row_997 finished in 2.0m 52.10s with 179 failures out of 100000/100000 runs.
 Logical error rate for precision_row_997: 0.00179 ± 0.0001337 (stderr)
-Running MC (precision):  90%|█████████ | 9/10 [03:06<00:05,  5.26s/it]Decoder precision_row_720_batch9 finished in 0.0m 4.07s with 22 failures out of 10000/10000 runs.
+
+Running MC (precision):  90%|█████████ | 9/10 [03:06<00:05,  5.26s/it]Decoder precision_row_720_batch9 finished in 0.0m 4.07s with 22 failures out of 10000/10000 runs.
 Logical error rate for precision_row_720_batch9: 0.0022 ± 0.0004685 (stderr)
 Decoder precision_row_720 finished in 2.0m 51.58s with 205 failures out of 100000/100000 runs.
 Logical error rate for precision_row_720: 0.00205 ± 0.0001430 (stderr)
-Running MC (precision): 100%|██████████| 10/10 [03:07<00:00,  3.84s/it]Running MC (precision): 100%|██████████| 10/10 [03:07<00:00, 18.73s/it]
+
+Running MC (precision): 100%|██████████| 10/10 [03:07<00:00,  3.84s/it]
+Running MC (precision): 100%|██████████| 10/10 [03:07<00:00, 18.73s/it]
 Evaluating row 1013 | dist=11 | score=1.72083e+08 | weight_patterns={1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 15, 12: 20, 13: 18, 14: 26, 15: 22, 16: 9, 17: 5, 18: 6}, score=1.72083e+08
   -> LER: 0.001860 ± 0.000136 | runtime=169.19s
 Evaluating row 720 | dist=10 | score=2.43738e+08 | weight_patterns={1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 1, 11: 12, 12: 21, 13: 25, 14: 22, 15: 17, 16: 9, 17: 6, 18: 9}, score=2.43738e+08
@@ -16993,8 +17005,12 @@ Evaluating row 997 | dist=10 | score=2.60477e+08 | weight_patterns={1: 0, 2: 0, 
   -> LER: 0.001790 ± 0.000134 | runtime=172.10s
 
 >>> RESULT: Best code found
-Distance: 10
-LER: 0.001790 ± 0.000134
+Selection priority: distance, then LER, then score
+Selection source: postprocessed existing precision evaluations
+Row: 1013
+Distance: 11
+LER: 0.001860 ± 0.000136
+Score: 1.72083e+08
 Run group name: /[1225,49]/logical_guided_score_S50_T300_p0.03_bw1_gamma0.1_maxw18_comb10_weightslack1_window2_scoretop0.1_min3_max10_100000prec_20260613_150106
 
 Total time: 0h 17m 42.79s
