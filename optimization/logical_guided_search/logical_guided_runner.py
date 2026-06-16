@@ -579,9 +579,6 @@ def main():
             return
 
         print(f"\n>>> PHASE 3: Precision LER evaluation ({args.prec_budget})")
-        final_best_cand = None
-        min_final_ler = np.inf
-        final_best_std = np.inf
 
         if args.workers == 1:
             for cand in top_candidates:
@@ -621,11 +618,6 @@ def main():
                 cand["prec_ler"] = ler
                 cand["prec_std"] = std
                 cand["prec_runtime"] = run_t
-
-                if ler < min_final_ler:
-                    min_final_ler = ler
-                    final_best_std = std
-                    final_best_cand = cand
 
                 f.flush()
 
@@ -689,36 +681,88 @@ def main():
                 cand["prec_std"] = res["std"]
                 cand["prec_runtime"] = res["runtime"]
 
-                if res["ler"] < min_final_ler:
-                    min_final_ler = res["ler"]
-                    final_best_std = res["std"]
-                    final_best_cand = cand
-
                 f.flush()
 
-        if final_best_cand is not None:
-            print("\n>>> RESULT: Best code found")
-            print(f"Distance: {final_best_cand['dist']}")
-            print(f"LER: {min_final_ler:.6f} ± {final_best_std:.6f}")
+        # Select the final code only after all Phase 3 evaluations finish.
+        # Phase 2 remains unchanged.
+        evaluated_candidates = [
+            cand
+            for cand in top_candidates
+            if np.isfinite(float(cand.get("prec_ler", np.inf)))
+        ]
 
-            best_edges = parse_edgelist(
-                final_best_cand["state"]).astype(np.uint32)
-
-            if "best_state" in run_grp:
-                del run_grp["best_state"]
-            run_grp.create_dataset(
-                "best_state",
-                data=best_edges[np.newaxis, :],
-                dtype=np.uint32,
+        if not evaluated_candidates:
+            raise RuntimeError(
+                "No candidate completed precision LER evaluation."
             )
-            run_grp.attrs["min_cost"] = min_final_ler
-            run_grp.attrs["best_dist"] = final_best_cand["dist"]
 
-            mark_hdf5_row(
-                run_grp,
-                final_best_cand["row_idx"],
-                final_best=True,
-            )
+        # Priority:
+        #   1. Higher distance
+        #   2. Lower precision LER
+        #   3. Lower weighted score
+        #   4. Lower row index for deterministic tie-breaking
+        final_best_cand = min(
+            evaluated_candidates,
+            key=lambda cand: (
+                -int(cand["dist"]),
+                float(cand["prec_ler"]),
+                float(cand.get("low_weight_score", np.inf)),
+                int(cand["row_idx"]),
+            ),
+        )
+
+        best_ler = float(final_best_cand["prec_ler"])
+        best_std = float(final_best_cand["prec_std"])
+        best_score = float(
+            final_best_cand.get("low_weight_score", np.inf)
+        )
+
+        print("\n>>> RESULT: Best code found")
+        print(
+            "Selection priority: distance, then LER, "
+            "then weighted score"
+        )
+        print(f"Row: {final_best_cand['row_idx']}")
+        print(f"Distance: {final_best_cand['dist']}")
+        print(f"LER: {best_ler:.6f} ± {best_std:.6f}")
+        print(f"Score: {best_score:.6g}")
+
+        best_edges = parse_edgelist(
+            final_best_cand["state"]
+        ).astype(np.uint32)
+
+        if "best_state" in run_grp:
+            del run_grp["best_state"]
+
+        run_grp.create_dataset(
+            "best_state",
+            data=best_edges[np.newaxis, :],
+            dtype=np.uint32,
+        )
+
+        # Clear any previous final_best marker.
+        if "final_best" in run_grp:
+            run_grp["final_best"][:] = False
+
+        mark_hdf5_row(
+            run_grp,
+            final_best_cand["row_idx"],
+            final_best=True,
+        )
+
+        run_grp.attrs["min_cost"] = best_ler
+        run_grp.attrs["best_ler"] = best_ler
+        run_grp.attrs["best_ler_std"] = best_std
+        run_grp.attrs["best_dist"] = int(final_best_cand["dist"])
+        run_grp.attrs["best_score"] = best_score
+        run_grp.attrs["best_row_idx"] = int(
+            final_best_cand["row_idx"]
+        )
+        run_grp.attrs["selection_priority"] = (
+            "distance_then_ler_then_score"
+        )
+
+        f.flush()
 
         print(f"Run group name: {run_grp.name}")
 
