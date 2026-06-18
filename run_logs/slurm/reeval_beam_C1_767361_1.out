@@ -1,0 +1,13 @@
+Started: Wed Jun 17 03:18:41 PM MDT 2026
+Host: easley018
+Job ID: 767390
+Array task: 1
+Method: beam
+C: 1
+Run: 1
+Workers: 3
+SKIP: optimization/results/logical_guided_absolute_score_gamma01_slack1_repeated_runs/beam/logical_guided_beam_absolute_score_gamma01_slack1_C1_run1.hdf5
+  reeval_5000000 is already complete
+  row=5985, LER=0.0017104
+  Use --overwrite to run it again.
+Finished: Wed Jun 17 03:18:42 PM MDT 2026

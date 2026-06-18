@@ -1,0 +1,13 @@
+Started: Wed Jun 17 03:19:41 PM MDT 2026
+Host: easley004
+Job ID: 767450
+Array task: 3
+Method: greedy
+C: 0
+Run: 3
+Workers: 3
+SKIP: optimization/results/logical_guided_absolute_score_gamma01_slack1_repeated_runs/greedy/logical_guided_greedy_absolute_score_gamma01_slack1_C0_run3.hdf5
+  reeval_5000000 is already complete
+  row=910, LER=0.0039928
+  Use --overwrite to run it again.
+Finished: Wed Jun 17 03:19:43 PM MDT 2026
