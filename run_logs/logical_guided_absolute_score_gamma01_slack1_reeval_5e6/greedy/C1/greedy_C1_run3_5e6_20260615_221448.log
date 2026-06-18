@@ -1,0 +1,116 @@
+========================================================================
+5e6 BEST-CODE RE-EVALUATION
+File: optimization/results/logical_guided_absolute_score_gamma01_slack1_repeated_runs/greedy/logical_guided_greedy_absolute_score_gamma01_slack1_C1_run3.hdf5
+Run group: /[1225,49]/logical_guided_score_S50_T300_p0.03_bw1_gamma0.1_maxw18_comb10_weightslack1_window2_scoretop0.1_min3_max10_100000prec_20260613_140640
+Method: greedy
+C: 1 ([1225,49])
+Run: 3
+Selection policy: distance_then_ler
+Selected HDF5 row: 682
+Distance: 10.0
+Stored precision LER: 0.0017 ± 0.00013027382589260637
+Stored score: 343342072.9999999
+Physical error rate p: 0.03
+Budget: 5000000
+Workers: 3
+Batch size: 10000
+State SHA256: 3a9270d2c7d44ab722a62c76ebb488ea3e6fd97404734a904aae8a30e6f292cd
+========================================================================
+/users/udayeon/optimizing_qecc/optimizing-qLDPC-code/venv312/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Decoder reeval_5000000_greedy_C1_run3_row682_batch0 finished in 0.0m 12.14s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch0: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch1 finished in 0.0m 11.66s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch1: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch2 finished in 0.0m 12.40s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch2: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch3 finished in 0.0m 11.70s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch3: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch4 finished in 0.0m 11.64s with 22 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch4: 0.0022 ± 0.0004685 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch5 finished in 0.0m 12.05s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch5: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch6 finished in 0.0m 12.40s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch6: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch7 finished in 0.0m 12.19s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch7: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch8 finished in 0.0m 12.64s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch8: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch9 finished in 0.0m 11.63s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch9: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch10 finished in 0.0m 12.17s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch10: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch11 finished in 0.0m 11.48s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch11: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch12 finished in 0.0m 12.01s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch12: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch13 finished in 0.0m 11.91s with 24 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch13: 0.0024 ± 0.0004893 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch14 finished in 0.0m 12.08s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch14: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch15 finished in 0.0m 12.58s with 25 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch15: 0.0025 ± 0.0004994 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch16 finished in 0.0m 12.14s with 22 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch16: 0.0022 ± 0.0004685 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch17 finished in 0.0m 11.42s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch17: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch18 finished in 0.0m 12.27s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch18: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch19 finished in 0.0m 12.20s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch19: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch20 finished in 0.0m 12.72s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch20: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch21 finished in 0.0m 11.59s with 25 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch21: 0.0025 ± 0.0004994 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch22 finished in 0.0m 12.38s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch22: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch23 finished in 0.0m 12.09s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch23: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch24 finished in 0.0m 11.51s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch24: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch25 finished in 0.0m 12.23s with 23 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch25: 0.0023 ± 0.0004791 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch26 finished in 0.0m 11.61s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch26: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch27 finished in 0.0m 11.90s with 25 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch27: 0.0025 ± 0.0004994 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch28 finished in 0.0m 11.75s with 25 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch28: 0.0025 ± 0.0004994 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch29 finished in 0.0m 11.33s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch29: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch30 finished in 0.0m 11.60s with 20 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch30: 0.002 ± 0.0004468 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch31 finished in 0.0m 11.88s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch31: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch32 finished in 0.0m 12.33s with 20 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch32: 0.002 ± 0.0004468 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch33 finished in 0.0m 11.95s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch33: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch34 finished in 0.0m 11.77s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch34: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch35 finished in 0.0m 11.77s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch35: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch36 finished in 0.0m 11.68s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch36: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch37 finished in 0.0m 12.12s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch37: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch38 finished in 0.0m 12.00s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch38: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch39 finished in 0.0m 12.15s with 26 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch39: 0.0026 ± 0.0005093 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch40 finished in 0.0m 11.72s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch40: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch41 finished in 0.0m 11.80s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch41: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch42 finished in 0.0m 11.88s with 10 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch42: 0.001 ± 0.0003161 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch43 finished in 0.0m 11.97s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch43: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch44 finished in 0.0m 11.55s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch44: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch45 finished in 0.0m 12.04s with 29 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch45: 0.0029 ± 0.0005378 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch46 finished in 0.0m 11.64s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch46: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_greedy_C1_run3_row682_batch47 finished in 0.0m 11.86s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_greedy_C1_run3_row682_batch47: 0.0021 ± 0.0004578 (stderr)

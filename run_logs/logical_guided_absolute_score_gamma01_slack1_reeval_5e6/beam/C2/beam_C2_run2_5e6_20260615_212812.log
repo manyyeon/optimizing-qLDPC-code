@@ -1,0 +1,354 @@
+========================================================================
+5e6 BEST-CODE RE-EVALUATION
+File: optimization/results/logical_guided_absolute_score_gamma01_slack1_repeated_runs/beam/logical_guided_beam_absolute_score_gamma01_slack1_C2_run2.hdf5
+Run group: /[1600,64]/logical_guided_score_S50_T300_p0.03_bw5_gamma0.1_maxw18_comb10_weightslack1_window2_scoretop0.1_min3_max10_100000prec_20260613_145558
+Method: beam
+C: 2 ([1600,64])
+Run: 2
+Selection policy: distance_then_ler
+Selected HDF5 row: 1481
+Distance: 12.0
+Stored precision LER: 0.00141 ± 0.00011866027053145472
+Stored score: 24777345.999999993
+Physical error rate p: 0.03
+Budget: 5000000
+Workers: 3
+Batch size: 10000
+State SHA256: a1972f2a8bb42608d72506559282f561adbbac94407222d31143233138523cb9
+========================================================================
+/users/udayeon/optimizing_qecc/optimizing-qLDPC-code/venv312/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Decoder reeval_5000000_beam_C2_run2_row1481_batch0 finished in 0.0m 20.09s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch0: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch1 finished in 0.0m 19.30s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch1: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch2 finished in 0.0m 19.77s with 9 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch2: 0.0009 ± 0.0002999 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch3 finished in 0.0m 20.09s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch3: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch4 finished in 0.0m 20.81s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch4: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch5 finished in 0.0m 19.82s with 20 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch5: 0.002 ± 0.0004468 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch6 finished in 0.0m 21.37s with 8 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch6: 0.0008 ± 0.0002827 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch7 finished in 0.0m 19.83s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch7: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch8 finished in 0.0m 20.98s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch8: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch9 finished in 0.0m 20.35s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch9: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch10 finished in 0.0m 20.55s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch10: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch11 finished in 0.0m 20.49s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch11: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch12 finished in 0.0m 20.20s with 25 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch12: 0.0025 ± 0.0004994 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch13 finished in 0.0m 20.13s with 20 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch13: 0.002 ± 0.0004468 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch14 finished in 0.0m 20.15s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch14: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch15 finished in 0.0m 19.70s with 9 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch15: 0.0009 ± 0.0002999 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch16 finished in 0.0m 19.42s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch16: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch17 finished in 0.0m 19.71s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch17: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch18 finished in 0.0m 19.82s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch18: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch19 finished in 0.0m 20.30s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch19: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch20 finished in 0.0m 20.28s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch20: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch21 finished in 0.0m 19.48s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch21: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch22 finished in 0.0m 19.09s with 25 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch22: 0.0025 ± 0.0004994 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch23 finished in 0.0m 19.15s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch23: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch24 finished in 0.0m 20.66s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch24: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch25 finished in 0.0m 19.62s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch25: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch26 finished in 0.0m 19.93s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch26: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch27 finished in 0.0m 19.94s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch27: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch28 finished in 0.0m 20.32s with 7 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch28: 0.0007 ± 0.0002645 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch29 finished in 0.0m 19.47s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch29: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch30 finished in 0.0m 19.37s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch30: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch31 finished in 0.0m 19.94s with 10 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch31: 0.001 ± 0.0003161 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch32 finished in 0.0m 20.20s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch32: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch33 finished in 0.0m 19.92s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch33: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch34 finished in 0.0m 19.79s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch34: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch35 finished in 0.0m 20.10s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch35: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch36 finished in 0.0m 19.69s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch36: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch37 finished in 0.0m 20.82s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch37: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch38 finished in 0.0m 19.08s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch38: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch39 finished in 0.0m 20.21s with 10 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch39: 0.001 ± 0.0003161 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch40 finished in 0.0m 20.64s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch40: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch41 finished in 0.0m 19.87s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch41: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch42 finished in 0.0m 20.40s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch42: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch43 finished in 0.0m 21.29s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch43: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch44 finished in 0.0m 20.50s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch44: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch45 finished in 0.0m 19.82s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch45: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch46 finished in 0.0m 19.62s with 10 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch46: 0.001 ± 0.0003161 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch47 finished in 0.0m 20.05s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch47: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch48 finished in 0.0m 20.83s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch48: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch49 finished in 0.0m 19.88s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch49: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch50 finished in 0.0m 19.55s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch50: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch51 finished in 0.0m 19.94s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch51: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch52 finished in 0.0m 20.85s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch52: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch53 finished in 0.0m 20.39s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch53: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch54 finished in 0.0m 19.57s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch54: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch55 finished in 0.0m 20.22s with 20 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch55: 0.002 ± 0.0004468 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch56 finished in 0.0m 20.71s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch56: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch57 finished in 0.0m 19.46s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch57: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch58 finished in 0.0m 19.53s with 22 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch58: 0.0022 ± 0.0004685 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch59 finished in 0.0m 20.66s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch59: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch60 finished in 0.0m 19.95s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch60: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch61 finished in 0.0m 19.84s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch61: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch62 finished in 0.0m 19.40s with 20 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch62: 0.002 ± 0.0004468 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch63 finished in 0.0m 19.93s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch63: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch64 finished in 0.0m 19.70s with 10 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch64: 0.001 ± 0.0003161 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch65 finished in 0.0m 19.27s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch65: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch66 finished in 0.0m 20.02s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch66: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch67 finished in 0.0m 20.48s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch67: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch68 finished in 0.0m 19.93s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch68: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch69 finished in 0.0m 21.23s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch69: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch70 finished in 0.0m 20.44s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch70: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch71 finished in 0.0m 20.00s with 20 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch71: 0.002 ± 0.0004468 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch72 finished in 0.0m 19.90s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch72: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch73 finished in 0.0m 20.54s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch73: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch74 finished in 0.0m 19.31s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch74: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch75 finished in 0.0m 20.31s with 22 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch75: 0.0022 ± 0.0004685 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch76 finished in 0.0m 20.50s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch76: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch77 finished in 0.0m 19.38s with 9 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch77: 0.0009 ± 0.0002999 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch78 finished in 0.0m 20.07s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch78: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch79 finished in 0.0m 20.02s with 9 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch79: 0.0009 ± 0.0002999 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch80 finished in 0.0m 20.47s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch80: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch81 finished in 0.0m 19.94s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch81: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch82 finished in 0.0m 19.90s with 5 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch82: 0.0005 ± 0.0002236 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch83 finished in 0.0m 20.73s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch83: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch84 finished in 0.0m 19.46s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch84: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch85 finished in 0.0m 21.03s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch85: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch86 finished in 0.0m 20.45s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch86: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch87 finished in 0.0m 19.74s with 7 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch87: 0.0007 ± 0.0002645 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch88 finished in 0.0m 20.00s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch88: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch89 finished in 0.0m 19.69s with 20 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch89: 0.002 ± 0.0004468 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch90 finished in 0.0m 20.77s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch90: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch91 finished in 0.0m 20.61s with 9 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch91: 0.0009 ± 0.0002999 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch92 finished in 0.0m 19.34s with 10 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch92: 0.001 ± 0.0003161 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch93 finished in 0.0m 19.74s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch93: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch94 finished in 0.0m 20.60s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch94: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch95 finished in 0.0m 19.90s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch95: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch96 finished in 0.0m 19.51s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch96: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch97 finished in 0.0m 19.60s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch97: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch98 finished in 0.0m 20.05s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch98: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch99 finished in 0.0m 20.49s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch99: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch100 finished in 0.0m 19.31s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch100: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch101 finished in 0.0m 20.39s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch101: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch102 finished in 0.0m 20.20s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch102: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch103 finished in 0.0m 20.59s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch103: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch104 finished in 0.0m 20.31s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch104: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch105 finished in 0.0m 19.77s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch105: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch106 finished in 0.0m 20.49s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch106: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch107 finished in 0.0m 19.12s with 20 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch107: 0.002 ± 0.0004468 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch108 finished in 0.0m 20.40s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch108: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch109 finished in 0.0m 20.72s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch109: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch110 finished in 0.0m 19.99s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch110: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch111 finished in 0.0m 20.01s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch111: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch112 finished in 0.0m 20.22s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch112: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch113 finished in 0.0m 20.79s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch113: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch114 finished in 0.0m 20.07s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch114: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch115 finished in 0.0m 19.39s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch115: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch116 finished in 0.0m 20.25s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch116: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch117 finished in 0.0m 20.06s with 9 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch117: 0.0009 ± 0.0002999 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch118 finished in 0.0m 20.90s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch118: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch119 finished in 0.0m 20.36s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch119: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch120 finished in 0.0m 20.25s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch120: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch121 finished in 0.0m 19.40s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch121: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch122 finished in 0.0m 20.60s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch122: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch123 finished in 0.0m 19.89s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch123: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch124 finished in 0.0m 21.02s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch124: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch125 finished in 0.0m 20.66s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch125: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch126 finished in 0.0m 19.30s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch126: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch127 finished in 0.0m 20.00s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch127: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch128 finished in 0.0m 20.61s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch128: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch129 finished in 0.0m 19.61s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch129: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch130 finished in 0.0m 20.29s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch130: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch131 finished in 0.0m 19.98s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch131: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch132 finished in 0.0m 20.10s with 20 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch132: 0.002 ± 0.0004468 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch133 finished in 0.0m 20.82s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch133: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch134 finished in 0.0m 20.12s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch134: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch135 finished in 0.0m 20.69s with 12 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch135: 0.0012 ± 0.0003462 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch136 finished in 0.0m 20.10s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch136: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch137 finished in 0.0m 19.73s with 25 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch137: 0.0025 ± 0.0004994 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch138 finished in 0.0m 20.29s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch138: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch139 finished in 0.0m 19.17s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch139: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch140 finished in 0.0m 21.04s with 22 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch140: 0.0022 ± 0.0004685 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch141 finished in 0.0m 19.67s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch141: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch142 finished in 0.0m 20.07s with 21 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch142: 0.0021 ± 0.0004578 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch143 finished in 0.0m 19.84s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch143: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch144 finished in 0.0m 19.59s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch144: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch145 finished in 0.0m 21.27s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch145: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch146 finished in 0.0m 19.92s with 5 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch146: 0.0005 ± 0.0002236 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch147 finished in 0.0m 19.81s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch147: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch148 finished in 0.0m 19.51s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch148: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch149 finished in 0.0m 19.79s with 15 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch149: 0.0015 ± 0.0003870 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch150 finished in 0.0m 20.02s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch150: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch151 finished in 0.0m 20.35s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch151: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch152 finished in 0.0m 19.84s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch152: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch153 finished in 0.0m 19.76s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch153: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch154 finished in 0.0m 20.58s with 8 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch154: 0.0008 ± 0.0002827 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch155 finished in 0.0m 20.56s with 18 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch155: 0.0018 ± 0.0004239 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch156 finished in 0.0m 19.64s with 9 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch156: 0.0009 ± 0.0002999 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch157 finished in 0.0m 20.13s with 24 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch157: 0.0024 ± 0.0004893 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch158 finished in 0.0m 20.18s with 13 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch158: 0.0013 ± 0.0003603 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch159 finished in 0.0m 20.58s with 11 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch159: 0.0011 ± 0.0003315 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch160 finished in 0.0m 19.76s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch160: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch161 finished in 0.0m 20.70s with 14 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch161: 0.0014 ± 0.0003739 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch162 finished in 0.0m 19.74s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch162: 0.0019 ± 0.0004355 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch163 finished in 0.0m 19.74s with 16 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch163: 0.0016 ± 0.0003997 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch164 finished in 0.0m 19.90s with 17 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch164: 0.0017 ± 0.0004120 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch165 finished in 0.0m 20.30s with 22 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch165: 0.0022 ± 0.0004685 (stderr)
+Decoder reeval_5000000_beam_C2_run2_row1481_batch166 finished in 0.0m 19.41s with 19 failures out of 10000/10000 runs.
+Logical error rate for reeval_5000000_beam_C2_run2_row1481_batch166: 0.0019 ± 0.0004355 (stderr)
