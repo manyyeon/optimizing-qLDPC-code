@@ -1,0 +1,128 @@
+
+================================================================================
+Evaluating initial code [625,25]
+File: optimization/initial_codes/HGP_(3,4)_[625,25].txt
+p=0.03, budget=100000, workers=32, batch_size=10000
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/ldpc/code_util/code_util.py:164: UserWarning: This function has exponential complexity. Not recommended for large pcms. Use the                            'ldpc.code_util.estimate_code_distance' function instead.
+  warnings.warn(
+Parameters: classical=[20,5,6], transpose=[15,0,inf], HGP=[[625,25,6]]
+Decoder initial_0_batch0 finished in 0.0m 2.88s with 114 failures out of 10000/10000 runs.
+Logical error rate for initial_0_batch0: 0.0114 ± 0.0010617 (stderr)
+Decoder initial_0_batch1 finished in 0.0m 2.85s with 127 failures out of 10000/10000 runs.
+Logical error rate for initial_0_batch1: 0.0127 ± 0.0011198 (stderr)
+Decoder initial_0_batch2 finished in 0.0m 2.89s with 124 failures out of 10000/10000 runs.
+Logical error rate for initial_0_batch2: 0.0124 ± 0.0011067 (stderr)
+Decoder initial_0_batch3 finished in 0.0m 2.90s with 118 failures out of 10000/10000 runs.
+Logical error rate for initial_0_batch3: 0.0118 ± 0.0010799 (stderr)
+Decoder initial_0_batch4 finished in 0.0m 2.86s with 124 failures out of 10000/10000 runs.
+Logical error rate for initial_0_batch4: 0.0124 ± 0.0011067 (stderr)
+Decoder initial_0_batch5 finished in 0.0m 2.85s with 99 failures out of 10000/10000 runs.
+Logical error rate for initial_0_batch5: 0.0099 ± 0.0009901 (stderr)
+Decoder initial_0_batch6 finished in 0.0m 2.75s with 110 failures out of 10000/10000 runs.
+Logical error rate for initial_0_batch6: 0.011 ± 0.0010431 (stderr)
+Decoder initial_0_batch7 finished in 0.0m 2.81s with 122 failures out of 10000/10000 runs.
+Logical error rate for initial_0_batch7: 0.0122 ± 0.0010978 (stderr)
+Decoder initial_0_batch8 finished in 0.0m 2.79s with 120 failures out of 10000/10000 runs.
+Logical error rate for initial_0_batch8: 0.012 ± 0.0010889 (stderr)
+Decoder initial_0_batch9 finished in 0.0m 2.82s with 129 failures out of 10000/10000 runs.
+Logical error rate for initial_0_batch9: 0.0129 ± 0.0011285 (stderr)
+Decoder initial_0 finished in 0.0m 28.41s with 1187 failures out of 100000/100000 runs.
+Logical error rate for initial_0: 0.01187 ± 0.0003425 (stderr)
+Result: LER=0.01187 ± 0.000342, failures=1187/100000, eval runtime=28.41s
+Saved HDF5 group: /[625,25]/initial_eval_p0p03_budget100000_20260617_174937
+
+================================================================================
+Evaluating initial code [1225,49]
+File: optimization/initial_codes/HGP_(3,4)_[1225,49].txt
+p=0.03, budget=100000, workers=32, batch_size=10000
+Parameters: classical=[28,7,6], transpose=[21,0,inf], HGP=[[1225,49,6]]
+Decoder initial_1_batch0 finished in 0.0m 3.50s with 190 failures out of 10000/10000 runs.
+Logical error rate for initial_1_batch0: 0.019 ± 0.0013653 (stderr)
+Decoder initial_1_batch1 finished in 0.0m 3.42s with 162 failures out of 10000/10000 runs.
+Logical error rate for initial_1_batch1: 0.0162 ± 0.0012625 (stderr)
+Decoder initial_1_batch2 finished in 0.0m 3.56s with 165 failures out of 10000/10000 runs.
+Logical error rate for initial_1_batch2: 0.0165 ± 0.0012739 (stderr)
+Decoder initial_1_batch3 finished in 0.0m 3.45s with 183 failures out of 10000/10000 runs.
+Logical error rate for initial_1_batch3: 0.0183 ± 0.0013404 (stderr)
+Decoder initial_1_batch4 finished in 0.0m 3.45s with 176 failures out of 10000/10000 runs.
+Logical error rate for initial_1_batch4: 0.0176 ± 0.0013150 (stderr)
+Decoder initial_1_batch5 finished in 0.0m 3.41s with 194 failures out of 10000/10000 runs.
+Logical error rate for initial_1_batch5: 0.0194 ± 0.0013793 (stderr)
+Decoder initial_1_batch6 finished in 0.0m 3.47s with 189 failures out of 10000/10000 runs.
+Logical error rate for initial_1_batch6: 0.0189 ± 0.0013618 (stderr)
+Decoder initial_1_batch7 finished in 0.0m 3.46s with 170 failures out of 10000/10000 runs.
+Logical error rate for initial_1_batch7: 0.017 ± 0.0012928 (stderr)
+Decoder initial_1_batch8 finished in 0.0m 3.52s with 196 failures out of 10000/10000 runs.
+Logical error rate for initial_1_batch8: 0.0196 ± 0.0013863 (stderr)
+Decoder initial_1_batch9 finished in 0.0m 3.60s with 163 failures out of 10000/10000 runs.
+Logical error rate for initial_1_batch9: 0.0163 ± 0.0012663 (stderr)
+Decoder initial_1 finished in 0.0m 34.85s with 1788 failures out of 100000/100000 runs.
+Logical error rate for initial_1: 0.01788 ± 0.0004191 (stderr)
+Result: LER=0.01788 ± 0.000419, failures=1788/100000, eval runtime=34.85s
+Saved HDF5 group: /[1225,49]/initial_eval_p0p03_budget100000_20260617_174937
+
+================================================================================
+Evaluating initial code [1600,64]
+File: optimization/initial_codes/HGP_(3,4)_[1600,64].txt
+p=0.03, budget=100000, workers=32, batch_size=10000
+Parameters: classical=[32,8,6], transpose=[24,0,inf], HGP=[[1600,64,6]]
+Decoder initial_2_batch0 finished in 0.0m 4.15s with 152 failures out of 10000/10000 runs.
+Logical error rate for initial_2_batch0: 0.0152 ± 0.0012235 (stderr)
+Decoder initial_2_batch1 finished in 0.0m 3.97s with 122 failures out of 10000/10000 runs.
+Logical error rate for initial_2_batch1: 0.0122 ± 0.0010978 (stderr)
+Decoder initial_2_batch2 finished in 0.0m 3.98s with 140 failures out of 10000/10000 runs.
+Logical error rate for initial_2_batch2: 0.014 ± 0.0011750 (stderr)
+Decoder initial_2_batch3 finished in 0.0m 3.91s with 117 failures out of 10000/10000 runs.
+Logical error rate for initial_2_batch3: 0.0117 ± 0.0010754 (stderr)
+Decoder initial_2_batch4 finished in 0.0m 4.27s with 117 failures out of 10000/10000 runs.
+Logical error rate for initial_2_batch4: 0.0117 ± 0.0010754 (stderr)
+Decoder initial_2_batch5 finished in 0.0m 4.07s with 113 failures out of 10000/10000 runs.
+Logical error rate for initial_2_batch5: 0.0113 ± 0.0010570 (stderr)
+Decoder initial_2_batch6 finished in 0.0m 4.05s with 134 failures out of 10000/10000 runs.
+Logical error rate for initial_2_batch6: 0.0134 ± 0.0011499 (stderr)
+Decoder initial_2_batch7 finished in 0.0m 4.06s with 129 failures out of 10000/10000 runs.
+Logical error rate for initial_2_batch7: 0.0129 ± 0.0011285 (stderr)
+Decoder initial_2_batch8 finished in 0.0m 4.00s with 138 failures out of 10000/10000 runs.
+Logical error rate for initial_2_batch8: 0.0138 ± 0.0011667 (stderr)
+Decoder initial_2_batch9 finished in 0.0m 4.04s with 115 failures out of 10000/10000 runs.
+Logical error rate for initial_2_batch9: 0.0115 ± 0.0010662 (stderr)
+Decoder initial_2 finished in 0.0m 40.51s with 1277 failures out of 100000/100000 runs.
+Logical error rate for initial_2: 0.01277 ± 0.0003551 (stderr)
+Result: LER=0.01277 ± 0.000355, failures=1277/100000, eval runtime=40.51s
+Saved HDF5 group: /[1600,64]/initial_eval_p0p03_budget100000_20260617_174937
+
+================================================================================
+Evaluating initial code [2025,81]
+File: optimization/initial_codes/HGP_(3,4)_[2025,81].txt
+p=0.03, budget=100000, workers=32, batch_size=10000
+Parameters: classical=[36,9,10], transpose=[27,0,inf], HGP=[[2025,81,10]]
+Decoder initial_3_batch0 finished in 0.0m 4.59s with 20 failures out of 10000/10000 runs.
+Logical error rate for initial_3_batch0: 0.002 ± 0.0004468 (stderr)
+Decoder initial_3_batch1 finished in 0.0m 4.74s with 24 failures out of 10000/10000 runs.
+Logical error rate for initial_3_batch1: 0.0024 ± 0.0004893 (stderr)
+Decoder initial_3_batch2 finished in 0.0m 4.86s with 24 failures out of 10000/10000 runs.
+Logical error rate for initial_3_batch2: 0.0024 ± 0.0004893 (stderr)
+Decoder initial_3_batch3 finished in 0.0m 4.82s with 18 failures out of 10000/10000 runs.
+Logical error rate for initial_3_batch3: 0.0018 ± 0.0004239 (stderr)
+Decoder initial_3_batch4 finished in 0.0m 4.69s with 16 failures out of 10000/10000 runs.
+Logical error rate for initial_3_batch4: 0.0016 ± 0.0003997 (stderr)
+Decoder initial_3_batch5 finished in 0.0m 4.67s with 22 failures out of 10000/10000 runs.
+Logical error rate for initial_3_batch5: 0.0022 ± 0.0004685 (stderr)
+Decoder initial_3_batch6 finished in 0.0m 4.61s with 16 failures out of 10000/10000 runs.
+Logical error rate for initial_3_batch6: 0.0016 ± 0.0003997 (stderr)
+Decoder initial_3_batch7 finished in 0.0m 4.59s with 19 failures out of 10000/10000 runs.
+Logical error rate for initial_3_batch7: 0.0019 ± 0.0004355 (stderr)
+Decoder initial_3_batch8 finished in 0.0m 4.55s with 18 failures out of 10000/10000 runs.
+Logical error rate for initial_3_batch8: 0.0018 ± 0.0004239 (stderr)
+Decoder initial_3_batch9 finished in 0.0m 4.68s with 19 failures out of 10000/10000 runs.
+Logical error rate for initial_3_batch9: 0.0019 ± 0.0004355 (stderr)
+Decoder initial_3 finished in 0.0m 46.81s with 196 failures out of 100000/100000 runs.
+Logical error rate for initial_3: 0.00196 ± 0.0001399 (stderr)
+Result: LER=0.00196 ± 0.00014, failures=196/100000, eval runtime=46.81s
+Saved HDF5 group: /[2025,81]/initial_eval_p0p03_budget100000_20260617_174937
+
+================================================================================
+Finished 4 initial-code evaluations.
+Total wall time: 163.03s
+HDF5: optimization/results/initial_codes_evaluation_1e5.hdf5
+CSV:  optimization/results/initial_codes_evaluation_1e5.csv
