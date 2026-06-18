@@ -1,0 +1,33 @@
+code,method,group,distance,ler,ler_std,runtime,selected_run,source_file,evaluation_source
+"[[625,25]]",Random walk,Previous work,8,0.0045166,3e-05,2d 1h,,,
+"[[625,25]]",Simulated annealing,Previous work,8,0.0035142,2.65e-05,40h,,,
+"[[625,25]]",Greedy,This work,8,0.0037024,2.72e-05,1h 50m,,,
+"[[625,25]]",Beam search,This work,8,0.0044188,2.97e-05,4h 49m,,,
+"[[625,25]]",Distance preproc. + greedy,This work,8,0.0034464,2.62e-05,1h 23m,,,
+"[[625,25]]",Distance preproc. + LER | beam,This work,8,0.004733,6.9e-05,2h 39m,,,
+"[[1225,49]]",Random walk,Previous work,10,0.0020482,2.02e-05,87h 30m,,,
+"[[1225,49]]",Simulated annealing,Previous work,10,0.0021668,2.08e-05,82h 30m,,,
+"[[1225,49]]",Greedy,This work,10,0.0023538,2.17e-05,3h 50m,,,
+"[[1225,49]]",Beam search,This work,10,0.0021286,2.06e-05,11h 55m,,,
+"[[1225,49]]",Distance preproc. + greedy,This work,10,0.0023218,2.15e-05,3h 6m,,,
+"[[1225,49]]",Distance preproc. + LER | beam,This work,10,0.0020868,2.04e-05,10h 49m,,,
+"[[1600,64]]",Random walk,Previous work,10,0.0021126,2.05e-05,44h 24m,,,
+"[[1600,64]]",Simulated annealing,Previous work,10,0.0020254,2.01e-05,88h 15m,,,
+"[[1600,64]]",Greedy,This work,10,0.0015472,1.76e-05,9h 3m,,,
+"[[1600,64]]",Beam search,This work,10,0.0014748,1.72e-05,21h 44m,,,
+"[[1600,64]]",Distance preproc. + greedy,This work,11,0.0014154,1.68e-05,15m,,,
+"[[1600,64]]",Distance preproc. + LER | beam,This work,12,0.0012906,1.61e-05,10h 42m,,,
+"[[2025,81]]",Random walk,Previous work,10,0.0016184,1.8e-05,34h 20m,,,
+"[[2025,81]]",Simulated annealing,Previous work,10,0.0010534,1.45e-05,22h 54m,,,
+"[[2025,81]]",Greedy,This work,12,0.0011098,1.49e-05,4h 42m,,,
+"[[2025,81]]",Beam search,This work,12,0.000989,1.41e-05,15h 20m,,,
+"[[2025,81]]",Distance preproc. + beam,This work,12,0.00098,3.13e-05,1h 52m,,,
+"[[2025,81]]",Distance preproc. + LER | beam,This work,12,0.0009166,1.35e-05,11h 30m,,,
+"[[625,25]]",Absolute score | beam,This work,9,0.00302,0.0001735197311286,1h 1m 47s,1.0,logical_guided_beam_absolute_score_gamma01_slack1_C0_run1.hdf5,stored precision evaluation
+"[[1225,49]]",Absolute score | beam,This work,11,0.00148,0.0001215658002171,37m 1s,7.0,logical_guided_beam_absolute_score_gamma01_slack1_C1_run7.hdf5,stored precision evaluation
+"[[1600,64]]",Absolute score | beam,This work,12,0.00113,0.0001062419120377,46m 4s,10.0,logical_guided_beam_absolute_score_gamma01_slack1_C2_run10.hdf5,stored precision evaluation
+"[[2025,81]]",Absolute score | beam,This work,12,0.00077,8.77162923377374e-05,1h 59m 35s,2.0,logical_guided_beam_absolute_score_gamma01_slack1_C3_run2.hdf5,stored precision evaluation
+"[[625,25]]",Absolute score | greedy,This work,9,0.00276,0.0001659038855512,12m 11s,8.0,logical_guided_greedy_absolute_score_gamma01_slack1_C0_run8.hdf5,stored precision evaluation
+"[[1225,49]]",Absolute score | greedy,This work,11,0.00161,0.0001267842251322,17m 30s,2.0,logical_guided_greedy_absolute_score_gamma01_slack1_C1_run2.hdf5,stored precision evaluation
+"[[1600,64]]",Absolute score | greedy,This work,12,0.0011,0.0001048237085782,16m 28s,7.0,logical_guided_greedy_absolute_score_gamma01_slack1_C2_run7.hdf5,stored precision evaluation
+"[[2025,81]]",Absolute score | greedy,This work,12,0.00065,8.059677387091609e-05,26m 43s,2.0,logical_guided_greedy_absolute_score_gamma01_slack1_C3_run2.hdf5,stored precision evaluation

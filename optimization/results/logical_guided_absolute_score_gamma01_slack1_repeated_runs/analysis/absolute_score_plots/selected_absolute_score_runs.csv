@@ -1,0 +1,9 @@
+code,method,group,distance,ler,ler_std,runtime,selected_run,source_file,evaluation_source
+"[[625,25]]",Absolute score | beam,This work,9,0.00302,0.0001735197311286,1h 1m 47s,1,logical_guided_beam_absolute_score_gamma01_slack1_C0_run1.hdf5,stored precision evaluation
+"[[1225,49]]",Absolute score | beam,This work,11,0.00148,0.0001215658002171,37m 1s,7,logical_guided_beam_absolute_score_gamma01_slack1_C1_run7.hdf5,stored precision evaluation
+"[[1600,64]]",Absolute score | beam,This work,12,0.00113,0.0001062419120377,46m 4s,10,logical_guided_beam_absolute_score_gamma01_slack1_C2_run10.hdf5,stored precision evaluation
+"[[2025,81]]",Absolute score | beam,This work,12,0.00077,8.77162923377374e-05,1h 59m 35s,2,logical_guided_beam_absolute_score_gamma01_slack1_C3_run2.hdf5,stored precision evaluation
+"[[625,25]]",Absolute score | greedy,This work,9,0.00276,0.0001659038855512,12m 11s,8,logical_guided_greedy_absolute_score_gamma01_slack1_C0_run8.hdf5,stored precision evaluation
+"[[1225,49]]",Absolute score | greedy,This work,11,0.00161,0.0001267842251322,17m 30s,2,logical_guided_greedy_absolute_score_gamma01_slack1_C1_run2.hdf5,stored precision evaluation
+"[[1600,64]]",Absolute score | greedy,This work,12,0.0011,0.0001048237085782,16m 28s,7,logical_guided_greedy_absolute_score_gamma01_slack1_C2_run7.hdf5,stored precision evaluation
+"[[2025,81]]",Absolute score | greedy,This work,12,0.00065,8.059677387091609e-05,26m 43s,2,logical_guided_greedy_absolute_score_gamma01_slack1_C3_run2.hdf5,stored precision evaluation
