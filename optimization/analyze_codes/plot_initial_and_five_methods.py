@@ -1,29 +1,24 @@
 #!/usr/bin/env python3
-"""Combine initial-code, previous-work, and current-method results in one plot.
+"""Build and plot the initial/previous/absolute-score HGP comparison.
 
-The final plot compares:
-    1. Initial code
-    2. Random walk
-    3. Simulated annealing
-    4. Distance preprocessing + LER beam
-    5. Absolute-score greedy
-    6. Absolute-score beam
+Workflow
+--------
+1. Select one repeated-run result per (method, code family) using the original
+   search result:
+       larger final distance,
+       lower stored precision LER,
+       lower stored precision LER stderr,
+       lower score,
+       lower run number.
+2. Read the completed 5e6 reevaluation for that same selected run directly
+   from its HDF5 file.
+3. Rebuild the selected absolute-score CSV and the combined comparison CSV.
+4. Sort every output by code family, then method.
+5. Generate PNG, PDF, and SVG figures.
 
-Selection for each absolute-score method/code family:
-    1. larger final distance
-    2. smaller evaluated LER
-    3. smaller LER standard error
-    4. smaller final score
-    5. smaller run ID
-
-If run_summary.csv contains reeval_5000000_ler and
-reeval_5000000_ler_std, those columns are preferred. Otherwise the script
-uses final_ler and final_ler_std.
-
-For initial-code results, if more than one row exists for a code family,
-the row with the largest completed Monte Carlo budget is used. Ties are
-resolved in favor of the later CSV row, without selecting on the measured
-LER.
+This preserves the previously selected eight runs. The 5e6 result updates
+their reported LER; it does not reselect a different run based on which other
+runs happen to have been reevaluated.
 """
 
 from __future__ import annotations
@@ -31,20 +26,26 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+import h5py
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
 
-CODE_ORDER = ["[[625,25]]", "[[1225,49]]", "[[1600,64]]", "[[2025,81]]"]
+CODE_ORDER = [
+    "[[625,25]]",
+    "[[1225,49]]",
+    "[[1600,64]]",
+    "[[2025,81]]",
+]
 
 METHOD_ORDER = [
     "Initial code",
     "Random walk",
     "Simulated annealing",
     "Distance preproc. + LER | beam",
-    "Absolute score | greedy",
-    "Absolute score | beam",
+    "Weighted score | greedy",
+    "Weighted score | beam",
 ]
 
 METHOD_MARKERS = {
@@ -52,28 +53,37 @@ METHOD_MARKERS = {
     "Random walk": "o",
     "Simulated annealing": "^",
     "Distance preproc. + LER | beam": "D",
-    "Absolute score | greedy": "s",
-    "Absolute score | beam": "*",
+    "Weighted score | greedy": "s",
+    "Weighted score | beam": "*",
 }
 
-# Small visual offsets only. The true distances remain the integer values
-# stored in the CSV files.
 METHOD_OFFSETS = {
     "Initial code": -0.20,
     "Random walk": -0.12,
     "Simulated annealing": -0.04,
     "Distance preproc. + LER | beam": 0.04,
-    "Absolute score | greedy": 0.12,
-    "Absolute score | beam": 0.20,
+    "Weighted score | greedy": 0.12,
+    "Weighted score | beam": 0.20,
 }
 
 DISPLAY_LABELS = {
     "Initial code": "Initial code",
     "Random walk": "Random walk",
     "Simulated annealing": "Simulated annealing",
-    "Distance preproc. + LER | beam": "Distance preproc. + LER\nbeam",
-    "Absolute score | greedy": "Absolute score\ngreedy",
-    "Absolute score | beam": "Absolute score\nbeam",
+    "Distance preproc. + LER | beam": (
+        "Distance preproc. + LER\nbeam"
+    ),
+    "Weighted score | greedy": "Weighted score\ngreedy",
+    "Weighted score | beam": "Weighted score\nbeam",
+}
+
+OLD_SCORE_METHOD_LABELS = {
+    "Weight score | greedy",
+    "Weight score | beam",
+    "Weighted score | greedy",
+    "Weighted score | beam",
+    "Absolute score | greedy",
+    "Absolute score | beam",
 }
 
 
@@ -107,56 +117,154 @@ def seconds_to_runtime(seconds: float) -> str:
     return " ".join(parts)
 
 
-def choose_evaluation_columns(df: pd.DataFrame) -> tuple[str, str, str]:
-    if "reeval_5000000_ler" in df.columns:
-        reevaluated = pd.to_numeric(
-            df["reeval_5000000_ler"], errors="coerce"
+def decode_attr(value):
+    if isinstance(value, bytes):
+        return value.decode("utf-8", errors="replace")
+    if isinstance(value, np.generic):
+        return value.item()
+    return value
+
+
+def find_single_run_group(h5: h5py.File) -> h5py.Group:
+    paths: list[str] = []
+
+    def visitor(name: str, obj) -> None:
+        if isinstance(obj, h5py.Group):
+            base = name.rsplit("/", 1)[-1]
+            if base.startswith("logical_guided"):
+                paths.append(name)
+
+    h5.visititems(visitor)
+
+    if len(paths) != 1:
+        raise RuntimeError(
+            f"Expected exactly one logical-guided run group in {h5.filename}, "
+            f"but found {paths}."
         )
-        if reevaluated.notna().any():
-            std_column = (
-                "reeval_5000000_ler_std"
-                if "reeval_5000000_ler_std" in df.columns
-                else "final_ler_std"
-            )
-            return (
-                "reeval_5000000_ler",
-                std_column,
-                "5e6 reevaluation",
+    return h5[paths[0]]
+
+
+def read_reevaluation(
+    hdf5_path: Path,
+    budget: int,
+) -> dict:
+    prefix = f"reeval_{budget}"
+
+    if not hdf5_path.exists():
+        raise FileNotFoundError(hdf5_path)
+
+    with h5py.File(hdf5_path, "r") as h5:
+        group = find_single_run_group(h5)
+
+        status = decode_attr(group.attrs.get(f"{prefix}_status", ""))
+        if status != "complete":
+            raise RuntimeError(
+                f"{hdf5_path}: {prefix}_status is {status!r}, not 'complete'."
             )
 
-    return "final_ler", "final_ler_std", "stored precision evaluation"
+        required = [
+            f"{prefix}_row_idx",
+            f"{prefix}_ler",
+            f"{prefix}_ler_std",
+            f"{prefix}_runtime_seconds",
+            f"{prefix}_completed_runs",
+            f"{prefix}_failures",
+        ]
+        missing = [name for name in required if name not in group.attrs]
+        if missing:
+            raise KeyError(
+                f"{hdf5_path}: missing reevaluation attributes {missing}."
+            )
+
+        return {
+            "reeval_status": status,
+            "reeval_row_idx": int(group.attrs[f"{prefix}_row_idx"]),
+            "ler": float(group.attrs[f"{prefix}_ler"]),
+            "ler_std": float(group.attrs[f"{prefix}_ler_std"]),
+            "reeval_runtime_seconds": float(
+                group.attrs[f"{prefix}_runtime_seconds"]
+            ),
+            "reeval_completed_runs": int(
+                group.attrs[f"{prefix}_completed_runs"]
+            ),
+            "reeval_failures": int(group.attrs[f"{prefix}_failures"]),
+            "reeval_timestamp_utc": decode_attr(
+                group.attrs.get(f"{prefix}_timestamp_utc", "")
+            ),
+            "reeval_selection_policy": decode_attr(
+                group.attrs.get(f"{prefix}_selection_policy", "")
+            ),
+        }
+
+
+def sort_by_code_and_method(df: pd.DataFrame) -> pd.DataFrame:
+    result = df.copy()
+    result["code"] = result["code"].map(code_to_double_brackets)
+
+    code_rank = {code: i for i, code in enumerate(CODE_ORDER)}
+    method_rank = {method: i for i, method in enumerate(METHOD_ORDER)}
+
+    result["_code_order"] = result["code"].map(
+        code_rank).fillna(len(CODE_ORDER))
+    result["_method_order"] = (
+        result["method"].map(method_rank).fillna(len(METHOD_ORDER))
+    )
+
+    extra_sort = ["_code_order", "_method_order"]
+    if "selected_run" in result.columns:
+        extra_sort.append("selected_run")
+
+    result = (
+        result.sort_values(extra_sort, kind="stable", na_position="last")
+        .drop(columns=["_code_order", "_method_order"])
+        .reset_index(drop=True)
+    )
+    return result
 
 
 def select_absolute_results(
     run_summary: pd.DataFrame,
-) -> tuple[pd.DataFrame, str]:
+    results_root: Path,
+    reeval_budget: int,
+) -> pd.DataFrame:
+    """Select runs using original precision results, then load their 5e6 LER."""
     df = run_summary.copy()
-    ler_column, std_column, source_label = choose_evaluation_columns(df)
 
     numeric_columns = [
+        "C",
+        "run",
         "final_distance",
-        ler_column,
-        std_column,
+        "final_ler",
+        "final_ler_std",
         "final_score",
         "runtime_seconds",
-        "run",
     ]
     for column in numeric_columns:
-        if column in df.columns:
-            df[column] = pd.to_numeric(df[column], errors="coerce")
+        if column not in df.columns:
+            raise ValueError(f"run_summary.csv is missing {column!r}.")
+        df[column] = pd.to_numeric(df[column], errors="coerce")
 
-    df = df.dropna(
-        subset=["method", "C", "final_distance", ler_column]
+    df = df[
+        df["method"].isin(["greedy", "beam"])
+    ].dropna(
+        subset=[
+            "method",
+            "C",
+            "run",
+            "final_distance",
+            "final_ler",
+        ]
     ).copy()
 
+    # Preserve the original best-run selection. Do not select using 5e6 values.
     selected = (
         df.sort_values(
             [
                 "method",
                 "C",
                 "final_distance",
-                ler_column,
-                std_column,
+                "final_ler",
+                "final_ler_std",
                 "final_score",
                 "run",
             ],
@@ -168,17 +276,37 @@ def select_absolute_results(
         .copy()
     )
 
+    expected_pairs = {
+        (method, C)
+        for method in ("greedy", "beam")
+        for C in range(4)
+    }
+    found_pairs = {
+        (str(row.method), int(row.C))
+        for row in selected.itertuples(index=False)
+    }
+    if found_pairs != expected_pairs:
+        raise RuntimeError(
+            "Could not select all eight method/code combinations. "
+            f"Missing: {sorted(expected_pairs - found_pairs)}"
+        )
+
     rows: list[dict] = []
     for row in selected.itertuples(index=False):
-        if row.method == "greedy":
-            method_label = "Absolute score | greedy"
-        elif row.method == "beam":
-            method_label = "Absolute score | beam"
-        else:
-            continue
+        method = str(row.method)
+        method_label = (
+            "Weighted score | greedy"
+            if method == "greedy"
+            else "Weighted score | beam"
+        )
 
-        ler_value = getattr(row, ler_column)
-        std_value = getattr(row, std_column)
+        filename = str(row.filename)
+        hdf5_path = results_root / method / filename
+        reeval = read_reevaluation(hdf5_path, reeval_budget)
+
+        best_row_idx = getattr(row, "best_index", np.nan)
+        if np.isfinite(best_row_idx):
+            best_row_idx = int(best_row_idx)
 
         rows.append(
             {
@@ -186,21 +314,56 @@ def select_absolute_results(
                 "method": method_label,
                 "group": "This work",
                 "distance": int(row.final_distance),
-                "ler": float(ler_value),
-                "ler_std": float(std_value),
+                "ler": reeval["ler"],
+                "ler_std": reeval["ler_std"],
+                # Keep search runtime as the reported optimization runtime.
                 "runtime": seconds_to_runtime(float(row.runtime_seconds)),
+                "runtime_seconds": float(row.runtime_seconds),
                 "selected_run": int(row.run),
-                "source_file": row.filename,
-                "evaluation_source": source_label,
+                "selected_hdf5_row": reeval["reeval_row_idx"],
+                "source_file": filename,
+                "evaluation_source": (
+                    f"{reeval['reeval_completed_runs']:,}-trial reevaluation"
+                ),
+                "reeval_status": reeval["reeval_status"],
+                "reeval_runtime_seconds": reeval[
+                    "reeval_runtime_seconds"
+                ],
+                "reeval_completed_runs": reeval[
+                    "reeval_completed_runs"
+                ],
+                "reeval_failures": reeval["reeval_failures"],
+                "reeval_timestamp_utc": reeval[
+                    "reeval_timestamp_utc"
+                ],
+                "reeval_selection_policy": reeval[
+                    "reeval_selection_policy"
+                ],
             }
         )
 
-    return pd.DataFrame(rows), source_label
+    return sort_by_code_and_method(pd.DataFrame(rows))
 
 
 def select_initial_results(initial_results: pd.DataFrame) -> pd.DataFrame:
-    """Convert initial-code evaluation rows to the plot-table schema."""
     df = initial_results.copy()
+
+    # Also accept an already standardized selected_initial_code_results.csv.
+    standardized = {"code", "method", "group", "distance", "ler", "ler_std"}
+    if standardized.issubset(df.columns):
+        df = df[df["method"].astype(str) == "Initial code"].copy()
+        df["code"] = df["code"].map(code_to_double_brackets)
+        for column in ["distance", "ler", "ler_std"]:
+            df[column] = pd.to_numeric(df[column], errors="coerce")
+        df = df.dropna(
+            subset=["code", "distance", "ler", "ler_std"]
+        ).copy()
+        df = (
+            df.sort_values("code", kind="stable")
+            .drop_duplicates("code", keep="last")
+        )
+        return sort_by_code_and_method(df)
+
     df["_row_order"] = np.arange(len(df))
 
     if "status" in df.columns:
@@ -230,8 +393,6 @@ def select_initial_results(initial_results: pd.DataFrame) -> pd.DataFrame:
     df["code"] = df["code_family"].map(code_to_double_brackets)
     df = df.dropna(subset=["code", "d_quantum", "ler", "stderr"]).copy()
 
-    # Do not select an initial-code result because its measured LER is smaller.
-    # Prefer the evaluation with the largest number of completed trials.
     if "completed_runs" not in df.columns:
         df["completed_runs"] = (
             df["budget"] if "budget" in df.columns else 0
@@ -253,7 +414,6 @@ def select_initial_results(initial_results: pd.DataFrame) -> pd.DataFrame:
     rows: list[dict] = []
     for row in selected.itertuples(index=False):
         runtime_seconds = getattr(row, "eval_runtime_seconds", np.nan)
-
         rows.append(
             {
                 "code": row.code,
@@ -272,7 +432,7 @@ def select_initial_results(initial_results: pd.DataFrame) -> pd.DataFrame:
             }
         )
 
-    return pd.DataFrame(rows)
+    return sort_by_code_and_method(pd.DataFrame(rows))
 
 
 def normalize_method_comparison(df: pd.DataFrame) -> pd.DataFrame:
@@ -296,14 +456,6 @@ def normalize_method_comparison(df: pd.DataFrame) -> pd.DataFrame:
     return result
 
 
-def method_sort_key(method: str) -> int:
-    return (
-        METHOD_ORDER.index(method)
-        if method in METHOD_ORDER
-        else len(METHOD_ORDER)
-    )
-
-
 def marker_size(marker: str) -> float:
     if marker == "*":
         return 13
@@ -320,7 +472,6 @@ def plot_distance_vs_ler(
     sub = df[
         df["method"].isin(methods) & df["code"].isin(CODE_ORDER)
     ].copy()
-
     sub = sub.dropna(
         subset=["code", "method", "distance", "ler", "ler_std"]
     ).copy()
@@ -328,31 +479,18 @@ def plot_distance_vs_ler(
     if sub.empty:
         raise ValueError("No matching rows were found for the requested plot.")
 
-    sub["method_order"] = sub["method"].map(method_sort_key)
-    sub["code"] = pd.Categorical(
-        sub["code"],
-        categories=CODE_ORDER,
-        ordered=True,
-    )
-    sub = sub.sort_values(["code", "method_order"]).reset_index(drop=True)
+    sub = sort_by_code_and_method(sub)
 
     fig, ax = plt.subplots(figsize=(12.0, 6.8), constrained_layout=True)
 
-    # Obtain one consistent Matplotlib color per code family.
     code_to_color: dict[str, str] = {}
     for code in CODE_ORDER:
         if not sub[sub["code"] == code].empty:
             dummy = ax.plot(
-                [],
-                [],
-                marker="o",
-                linestyle="none",
-                label=code,
+                [], [], marker="o", linestyle="none", label=code
             )[0]
             code_to_color[code] = dummy.get_color()
 
-    # Tiny additional offset prevents exact overlap between code-family points
-    # that share both method and distance.
     code_offsets = {
         code: offset
         for code, offset in zip(
@@ -394,7 +532,6 @@ def plot_distance_vs_ler(
         )
 
     ax.set_yscale("log")
-
     integer_distances = sorted(
         {int(round(value)) for value in sub["distance"].dropna()}
     )
@@ -409,8 +546,7 @@ def plot_distance_vs_ler(
 
     code_handles = [
         plt.Line2D(
-            [0],
-            [0],
+            [0], [0],
             marker="o",
             linestyle="none",
             color=code_to_color[code],
@@ -426,11 +562,9 @@ def plot_distance_vs_ler(
     for method in methods:
         marker = METHOD_MARKERS.get(method, "o")
         is_previous = method in ["Random walk", "Simulated annealing"]
-
         method_handles.append(
             plt.Line2D(
-                [0],
-                [0],
+                [0], [0],
                 marker=marker,
                 linestyle="none",
                 color="0.25",
@@ -484,15 +618,21 @@ def main() -> None:
         "--run-summary",
         required=True,
         type=Path,
-        help="Repeated-run summary for absolute-score greedy and beam.",
+        help="Repeated-run summary used to select the best run IDs.",
+    )
+    parser.add_argument(
+        "--results-root",
+        required=True,
+        type=Path,
+        help="Root containing beam/ and greedy/ HDF5 directories.",
     )
     parser.add_argument(
         "--method-comparison",
         required=True,
         type=Path,
         help=(
-            "Existing comparison CSV containing random walk, simulated "
-            "annealing, and distance-preprocessing + LER results."
+            "Comparison CSV containing previous work and "
+            "distance-preprocessing + LER results."
         ),
     )
     parser.add_argument(
@@ -500,6 +640,11 @@ def main() -> None:
         required=True,
         type=Path,
         help="CSV produced by evaluate_initial_codes.py.",
+    )
+    parser.add_argument(
+        "--reeval-budget",
+        type=int,
+        default=5_000_000,
     )
     parser.add_argument(
         "--output-dir",
@@ -514,20 +659,17 @@ def main() -> None:
     )
     initial_results = pd.read_csv(args.initial_results)
 
-    absolute_rows, evaluation_source = select_absolute_results(run_summary)
+    absolute_rows = select_absolute_results(
+        run_summary=run_summary,
+        results_root=args.results_root,
+        reeval_budget=args.reeval_budget,
+    )
     initial_rows = select_initial_results(initial_results)
 
-    # Remove older relative-score rows and any previously inserted initial rows
-    # before constructing the unified comparison table.
+    # Remove every previously inserted initial/score row before rebuilding.
     updated = method_comparison[
         ~method_comparison["method"].isin(
-            [
-                "Weight score | greedy",
-                "Weight score | beam",
-                "Absolute score | greedy",
-                "Absolute score | beam",
-                "Initial code",
-            ]
+            OLD_SCORE_METHOD_LABELS | {"Initial code"}
         )
     ].copy()
 
@@ -536,8 +678,7 @@ def main() -> None:
         ignore_index=True,
         sort=False,
     )
-
-    combined["code"] = combined["code"].map(code_to_double_brackets)
+    combined = sort_by_code_and_method(combined)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -563,11 +704,21 @@ def main() -> None:
         / "ler_vs_distance_initial_and_five_methods",
     )
 
-    print(f"Absolute-score evaluation source: {evaluation_source}")
-    print("\nSelected initial-code results:")
-    print(initial_rows.to_string(index=False))
-    print("\nSelected absolute-score results:")
-    print(absolute_rows.to_string(index=False))
+    print("\nSelected 5e6 absolute-score results:")
+    print(
+        absolute_rows[
+            [
+                "code",
+                "method",
+                "distance",
+                "ler",
+                "ler_std",
+                "selected_run",
+                "selected_hdf5_row",
+                "reeval_completed_runs",
+            ]
+        ].to_string(index=False)
+    )
     print(f"\nCombined CSV: {combined_csv}")
     print(f"Outputs written to: {args.output_dir}")
 

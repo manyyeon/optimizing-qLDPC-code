@@ -1,5 +1,5 @@
 code,method,group,distance,ler,ler_std,runtime,selected_run,source_file,evaluation_source
+"[[625,25]]",Initial code,Initial,6,0.011986,0.0001088225511847,1m 23s,,"optimization/initial_codes/HGP_(3,4)_[625,25].txt","initial-code evaluation, 1,000,000 completed trials"
 "[[1225,49]]",Initial code,Initial,6,0.017719,0.0001319282170123,2m 18s,,"optimization/initial_codes/HGP_(3,4)_[1225,49].txt","initial-code evaluation, 1,000,000 completed trials"
 "[[1600,64]]",Initial code,Initial,6,0.012625,0.0001116495492181,3m 7s,,"optimization/initial_codes/HGP_(3,4)_[1600,64].txt","initial-code evaluation, 1,000,000 completed trials"
 "[[2025,81]]",Initial code,Initial,10,0.002042,4.5142355652228366e-05,4m 9s,,"optimization/initial_codes/HGP_(3,4)_[2025,81].txt","initial-code evaluation, 1,000,000 completed trials"
-"[[625,25]]",Initial code,Initial,6,0.011986,0.0001088225511847,1m 23s,,"optimization/initial_codes/HGP_(3,4)_[625,25].txt","initial-code evaluation, 1,000,000 completed trials"
