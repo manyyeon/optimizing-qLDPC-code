@@ -42,7 +42,7 @@ python3 -u optimization/analyze_codes/reevaluate_best_5e6.py \
   --run "${RUN}" \
   --budget 5000000 \
   --workers "${WORKERS}" \
-  --batch-size 10000 \
+  --batch-size 50000 \
   --selection distance_then_ler \
   --update-best-selection
 

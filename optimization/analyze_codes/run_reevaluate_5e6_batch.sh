@@ -48,7 +48,7 @@ for i in $(seq 1 10); do
         --run "${i}" \
         --budget 5000000 \
         --workers "${WORKERS}" \
-        --batch-size 10000 \
+        --batch-size 50000 \
         --selection distance_then_ler \
         --update-best-selection \
         2>&1 | tee "${log_file}"
