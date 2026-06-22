@@ -1,0 +1,9 @@
+code,method,method_label,target_distance,n_runs,n_success,success_rate,success_percent,distance_median,distance_min,distance_max
+"[[625,25]]",greedy,Weighted score (greedy),9,10,4,0.4,40.0,8.0,8.0,9.0
+"[[625,25]]",beam,Weighted score (beam),9,10,9,0.9,90.0,9.0,8.0,9.0
+"[[1225,49]]",greedy,Weighted score (greedy),11,10,3,0.3,30.0,10.0,10.0,11.0
+"[[1225,49]]",beam,Weighted score (beam),11,10,7,0.7,70.0,11.0,10.0,11.0
+"[[1600,64]]",greedy,Weighted score (greedy),12,10,10,1.0,100.0,12.0,12.0,12.0
+"[[1600,64]]",beam,Weighted score (beam),12,10,10,1.0,100.0,12.0,12.0,12.0
+"[[2025,81]]",greedy,Weighted score (greedy),12,10,10,1.0,100.0,12.0,12.0,12.0
+"[[2025,81]]",beam,Weighted score (beam),12,10,10,1.0,100.0,12.0,12.0,12.0
