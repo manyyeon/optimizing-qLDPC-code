@@ -1,0 +1,9 @@
+code,method,method_label,n_runs_plotted,target_distance,median_ler,q1_ler,q3_ler,min_ler,max_ler,n_target_hits_plotted
+"[[625,25]]",greedy,Weighted score (greedy),10,9,0.00346,0.0032125,0.0037225,0.00276,0.00421,4
+"[[625,25]]",beam,Weighted score (beam),10,9,0.00345,0.0031850000000000003,0.003615,0.00302,0.00476,9
+"[[1225,49]]",greedy,Weighted score (greedy),10,11,0.00169,0.0016825,0.0017825,0.00161,0.00186,3
+"[[1225,49]]",beam,Weighted score (beam),10,11,0.0016350000000000002,0.00161,0.001805,0.00148,0.00214,7
+"[[1600,64]]",greedy,Weighted score (greedy),10,12,0.00127,0.0012174999999999998,0.0013875,0.0011,0.00159,10
+"[[1600,64]]",beam,Weighted score (beam),10,12,0.00125,0.0012225,0.0013,0.00113,0.00141,10
+"[[2025,81]]",greedy,Weighted score (greedy),10,12,0.000815,0.0007125,0.00088,0.00065,0.00099,10
+"[[2025,81]]",beam,Weighted score (beam),10,12,0.00083,0.000785,0.0008775,0.00077,0.00093,10
