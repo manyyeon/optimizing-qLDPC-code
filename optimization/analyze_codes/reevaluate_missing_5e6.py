@@ -60,6 +60,7 @@ from typing import Any
 import h5py
 import numpy as np
 
+from optimization.experiments_settings import from_edgelist
 from optimization.logical_guided_search.logical_guided_eval import (
     evaluate_mc,
     get_code_parameters_and_matrices,
@@ -557,7 +558,12 @@ def reevaluate_file(
     wall_start = time.time()
 
     try:
-        _, Hx, Hz = get_code_parameters_and_matrices(state)
+        # HDF5 stores each Tanner graph as a flattened edge-list array.
+        # Reconstruct the NetworkX Tanner graph before building the HGP code.
+        graph_state = from_edgelist(
+            np.asarray(state, dtype=np.int64).reshape(-1)
+        )
+        _, Hx, Hz = get_code_parameters_and_matrices(graph_state)
 
         label = (
             f"{prefix}_{method}_C{code_index}_run{run_number}"
