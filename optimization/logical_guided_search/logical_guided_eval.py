@@ -5,7 +5,12 @@ import ldpc.code_util
 from ldpc.bposd_decoder import BpOsdDecoder
 from scipy.sparse import csr_matrix
 
-from decoder_performance import compute_logical_error_rate, compute_logical_error_rate_parallel_batched
+from decoder_performance import (
+    compute_logical_error_rate,
+    compute_logical_error_rate_parallel_batched,
+    compute_logical_error_rate_depolarizing,
+    compute_logical_error_rate_depolarizing_parallel_batched,
+)
 from logical_operators import get_logical_operators_by_pivoting
 from basic_css_code import construct_HGP_code
 from optimization.experiments_settings import tanner_graph_to_parity_check_matrix
@@ -203,6 +208,85 @@ def evaluate_mc(
     else:
         ler, stderr, runtime, failures, completed_runs, early_stopped = compute_logical_error_rate_parallel_batched(
             Hz=Hz,
+            Lz=Lz,
+            error_rate=p,
+            run_count=budget,
+            run_label=run_label,
+            workers=workers,
+            batch_size=batch_size,
+            failure_cap=failure_cap,
+            min_runs_before_stop=min_runs_before_stop,
+        )
+
+    return {
+        "ler": ler,
+        "stderr": stderr,
+        "runtime": runtime,
+        "failures": failures,
+        "completed_runs": completed_runs,
+        "early_stopped": early_stopped,
+    }
+
+def evaluate_mc_depolarizing(
+    Hx,
+    Hz,
+    p,
+    budget,
+    run_label="depolarizing_eval",
+    failure_cap=None,
+    min_runs_before_stop=0,
+    workers=1,
+    batch_size=50000,
+):
+    """
+    Evaluate a CSS code under code-capacity depolarizing noise.
+
+    Here p is the total physical Pauli error probability:
+        P(X) = P(Y) = P(Z) = p/3.
+    """
+    if budget == 0:
+        return {
+            "ler": 0.0,
+            "stderr": 0.0,
+            "runtime": 0.0,
+            "failures": 0,
+            "completed_runs": 0,
+            "early_stopped": False,
+        }
+
+    Lx, Lz = get_logical_operators_by_pivoting(Hx, Hz)
+
+    if workers == 1:
+        (
+            ler,
+            stderr,
+            runtime,
+            failures,
+            completed_runs,
+            early_stopped,
+        ) = compute_logical_error_rate_depolarizing(
+            Hx=Hx,
+            Hz=Hz,
+            Lx=Lx,
+            Lz=Lz,
+            error_rate=p,
+            run_count=budget,
+            run_label=run_label,
+            failure_cap=failure_cap,
+            min_runs_before_stop=min_runs_before_stop,
+        )
+    else:
+        (
+            ler,
+            stderr,
+            runtime,
+            failures,
+            completed_runs,
+            early_stopped,
+        ) = compute_logical_error_rate_depolarizing_parallel_batched(
+            Hx=Hx,
+            Hz=Hz,
+            Lx=Lx,
             Lz=Lz,
             error_rate=p,
             run_count=budget,

@@ -10,7 +10,6 @@ import numpy as np
 import math
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
-
 def generate_bsc_error(n: int, error_rate: float) -> np.ndarray:
     """
     Generate a binary symmetric channel (BSC) errors.
@@ -276,6 +275,492 @@ def compute_logical_error_rate_parallel_batched(
     print(f"Logical error rate for {run_label}: {ler} ± {stderr:.7f} (stderr)")
 
     return ler, stderr, runtime, total_failures, total_completed, early_stopped
+
+def generate_depolarizing_error(
+    n: int,
+    error_rate: float,
+    rng: np.random.Generator,
+) -> tuple[np.ndarray, np.ndarray]:
+    """
+    Sample one n-qubit code-capacity depolarizing error.
+
+    Per qubit:
+        I with probability 1-p
+        X with probability p/3
+        Y with probability p/3
+        Z with probability p/3
+
+    Returns
+    -------
+    x_error:
+        Binary X component. X and Y produce a 1.
+    z_error:
+        Binary Z component. Z and Y produce a 1.
+    """
+    if not 0.0 <= error_rate <= 1.0:
+        raise ValueError("error_rate must satisfy 0 <= p <= 1.")
+
+    pauli = np.zeros(n, dtype=np.uint8)
+
+    non_identity = rng.random(n) < error_rate
+    non_identity_count = int(np.count_nonzero(non_identity))
+
+    # Convention:
+    #   0 = I
+    #   1 = X
+    #   2 = Y
+    #   3 = Z
+    if non_identity_count:
+        pauli[non_identity] = rng.integers(
+            low=1,
+            high=4,
+            size=non_identity_count,
+            dtype=np.uint8,
+        )
+
+    x_error = ((pauli == 1) | (pauli == 2)).astype(np.uint8)
+    z_error = ((pauli == 2) | (pauli == 3)).astype(np.uint8)
+
+    return x_error, z_error
+
+
+def _make_bposd_decoder(pcm, component_error_rate: float) -> BpOsdDecoder:
+    """
+    Construct one binary BP+OSD decoder for one CSS error component.
+    """
+    bp_max_iter = max(1, int(pcm.shape[1] / 10))
+
+    return BpOsdDecoder(
+        pcm=pcm,
+        error_rate=float(component_error_rate),
+        max_iter=bp_max_iter,
+        bp_method="minimum_sum",
+        ms_scaling_factor=0.625,
+        schedule="parallel",
+        osd_method="OSD_CS",
+        osd_order=2,
+    )
+
+
+def _bernoulli_stderr(failures: int, completed_runs: int) -> float:
+    """
+    Match np.std(outcomes, ddof=1) / sqrt(N) without storing every outcome.
+    """
+    if completed_runs <= 1:
+        return 0.0
+
+    ler = failures / completed_runs
+    return float(np.sqrt(ler * (1.0 - ler) / (completed_runs - 1)))
+
+
+def _binary_vector(value) -> np.ndarray:
+    """
+    Convert dense/sparse matrix multiplication output to a flat GF(2) vector.
+    """
+    return np.asarray(value, dtype=np.uint8).reshape(-1) % 2
+
+
+def compute_logical_error_rate_depolarizing(
+    Hx,
+    Hz,
+    Lx,
+    Lz,
+    error_rate,
+    run_count,
+    run_label,
+    DEBUG=False,
+    failure_cap=None,
+    min_runs_before_stop=0,
+    seed=None,
+):
+    """
+    BP+OSD LER for a CSS code under code-capacity depolarizing noise.
+
+    The physical depolarizing probability is `error_rate`.
+
+    Two binary BP+OSD decoders are used:
+        X component: Hz, with marginal probability 2p/3
+        Z component: Hx, with marginal probability 2p/3
+
+    A trial is one logical failure if either component has a
+    nontrivial residual logical operator.
+    """
+    if run_count == 0:
+        return 0.0, 0.0, 0.0, 0, 0, False
+
+    if Hx.shape[1] != Hz.shape[1]:
+        raise ValueError(
+            f"Hx and Hz must have the same number of columns, "
+            f"got {Hx.shape[1]} and {Hz.shape[1]}."
+        )
+
+    p = float(error_rate)
+
+    if not 0.0 <= p <= 1.0:
+        raise ValueError("error_rate must satisfy 0 <= p <= 1.")
+
+    n = Hx.shape[1]
+
+    # X or Y has an X component; Z or Y has a Z component.
+    component_error_rate = 2.0 * p / 3.0
+
+    x_decoder = _make_bposd_decoder(
+        pcm=Hz,
+        component_error_rate=component_error_rate,
+    )
+    z_decoder = _make_bposd_decoder(
+        pcm=Hx,
+        component_error_rate=component_error_rate,
+    )
+
+    rng = np.random.default_rng(seed)
+
+    failures = 0
+    completed_runs = 0
+    early_stopped = False
+
+    start_time = time.time()
+
+    for trial in range(run_count):
+        x_error, z_error = generate_depolarizing_error(
+            n=n,
+            error_rate=p,
+            rng=rng,
+        )
+
+        # Z stabilizers detect X errors.
+        x_syndrome = _binary_vector(Hz @ x_error)
+
+        # X stabilizers detect Z errors.
+        z_syndrome = _binary_vector(Hx @ z_error)
+
+        x_correction = _binary_vector(x_decoder.decode(x_syndrome))
+        z_correction = _binary_vector(z_decoder.decode(z_syndrome))
+
+        x_residual = (x_error + x_correction) % 2
+        z_residual = (z_error + z_correction) % 2
+
+        # These should normally be zero because BP+OSD returns a
+        # syndrome-consistent correction.
+        x_syndrome_failure = np.any(_binary_vector(Hz @ x_residual))
+        z_syndrome_failure = np.any(_binary_vector(Hx @ z_residual))
+
+        # An X residual is tested against logical Z operators.
+        logical_x_failure = np.any(_binary_vector(Lz @ x_residual))
+
+        # A Z residual is tested against logical X operators.
+        logical_z_failure = np.any(_binary_vector(Lx @ z_residual))
+
+        failed = bool(
+            x_syndrome_failure
+            or z_syndrome_failure
+            or logical_x_failure
+            or logical_z_failure
+        )
+
+        if failed:
+            failures += 1
+
+            if DEBUG:
+                print(
+                    f"Failed trial {trial}: "
+                    f"X-logical={logical_x_failure}, "
+                    f"Z-logical={logical_z_failure}, "
+                    f"X-syndrome-failure={x_syndrome_failure}, "
+                    f"Z-syndrome-failure={z_syndrome_failure}"
+                )
+
+        completed_runs += 1
+
+        if (
+            failure_cap is not None
+            and completed_runs >= min_runs_before_stop
+            and failures > failure_cap
+        ):
+            early_stopped = True
+            break
+
+    runtime = time.time() - start_time
+
+    ler = failures / completed_runs
+    stderr = _bernoulli_stderr(failures, completed_runs)
+
+    status = "EARLY-STOPPED" if early_stopped else "finished"
+
+    print(
+        f"Decoder {run_label} {status} in "
+        f"{runtime // 60:.0f}m {runtime % 60:.2f}s "
+        f"with {failures} failures out of "
+        f"{completed_runs}/{run_count} runs."
+    )
+    print(
+        f"Depolarizing logical error rate for {run_label}: "
+        f"{ler} ± {stderr:.7f} (stderr)"
+    )
+
+    return (
+        ler,
+        stderr,
+        runtime,
+        failures,
+        completed_runs,
+        early_stopped,
+    )
+
+def _depolarizing_mc_worker(args):
+    (
+        Hx,
+        Hz,
+        Lx,
+        Lz,
+        p,
+        local_runs,
+        seed,
+    ) = args
+
+    n = Hx.shape[1]
+    component_error_rate = 2.0 * p / 3.0
+
+    x_decoder = _make_bposd_decoder(
+        pcm=Hz,
+        component_error_rate=component_error_rate,
+    )
+    z_decoder = _make_bposd_decoder(
+        pcm=Hx,
+        component_error_rate=component_error_rate,
+    )
+
+    rng = np.random.default_rng(seed)
+
+    failures = 0
+    start_time = time.time()
+
+    for _ in range(local_runs):
+        x_error, z_error = generate_depolarizing_error(
+            n=n,
+            error_rate=p,
+            rng=rng,
+        )
+
+        x_syndrome = _binary_vector(Hz @ x_error)
+        z_syndrome = _binary_vector(Hx @ z_error)
+
+        x_correction = _binary_vector(
+            x_decoder.decode(x_syndrome)
+        )
+        z_correction = _binary_vector(
+            z_decoder.decode(z_syndrome)
+        )
+
+        x_residual = (x_error + x_correction) % 2
+        z_residual = (z_error + z_correction) % 2
+
+        failed = bool(
+            np.any(_binary_vector(Hz @ x_residual))
+            or np.any(_binary_vector(Hx @ z_residual))
+            or np.any(_binary_vector(Lz @ x_residual))
+            or np.any(_binary_vector(Lx @ z_residual))
+        )
+
+        if failed:
+            failures += 1
+
+    runtime = time.time() - start_time
+
+    return failures, local_runs, runtime
+
+
+def compute_logical_error_rate_depolarizing_parallel(
+    Hx,
+    Hz,
+    Lx,
+    Lz,
+    error_rate,
+    run_count,
+    run_label,
+    workers=8,
+):
+    """
+    Parallel BP+OSD code-capacity depolarizing simulation.
+    """
+    if run_count == 0:
+        return 0.0, 0.0, 0.0, 0, 0, False
+
+    p = float(error_rate)
+
+    if not 0.0 <= p <= 1.0:
+        raise ValueError("error_rate must satisfy 0 <= p <= 1.")
+
+    workers = max(1, min(int(workers), int(run_count)))
+    chunk_size = math.ceil(run_count / workers)
+
+    seed_sequence = np.random.SeedSequence()
+    child_seeds = seed_sequence.spawn(workers)
+
+    jobs = []
+
+    for worker_idx in range(workers):
+        local_runs = min(
+            chunk_size,
+            run_count - worker_idx * chunk_size,
+        )
+
+        if local_runs <= 0:
+            continue
+
+        seed = int(
+            child_seeds[worker_idx].generate_state(
+                1,
+                dtype=np.uint64,
+            )[0]
+        )
+
+        jobs.append(
+            (
+                Hx,
+                Hz,
+                Lx,
+                Lz,
+                p,
+                local_runs,
+                seed,
+            )
+        )
+
+    start_time = time.time()
+
+    total_failures = 0
+    total_completed = 0
+
+    with ProcessPoolExecutor(max_workers=len(jobs)) as executor:
+        futures = [
+            executor.submit(_depolarizing_mc_worker, job)
+            for job in jobs
+        ]
+
+        for future in as_completed(futures):
+            failures, completed, _ = future.result()
+            total_failures += failures
+            total_completed += completed
+
+    runtime = time.time() - start_time
+
+    ler = total_failures / total_completed
+    stderr = _bernoulli_stderr(
+        total_failures,
+        total_completed,
+    )
+
+    print(
+        f"Decoder {run_label} finished in "
+        f"{runtime // 60:.0f}m {runtime % 60:.2f}s "
+        f"with {total_failures} failures out of "
+        f"{total_completed}/{run_count} runs."
+    )
+    print(
+        f"Depolarizing logical error rate for {run_label}: "
+        f"{ler} ± {stderr:.7f} (stderr)"
+    )
+
+    return (
+        ler,
+        stderr,
+        runtime,
+        total_failures,
+        total_completed,
+        False,
+    )
+
+def compute_logical_error_rate_depolarizing_parallel_batched(
+    Hx,
+    Hz,
+    Lx,
+    Lz,
+    error_rate,
+    run_count,
+    run_label,
+    workers=8,
+    batch_size=10000,
+    failure_cap=None,
+    min_runs_before_stop=0,
+):
+    start_time = time.time()
+
+    total_failures = 0
+    total_completed = 0
+    early_stopped = False
+
+    remaining = run_count
+    batch_idx = 0
+
+    while remaining > 0:
+        current_batch = min(batch_size, remaining)
+
+        (
+            _,
+            _,
+            _,
+            failures,
+            completed,
+            _,
+        ) = compute_logical_error_rate_depolarizing_parallel(
+            Hx=Hx,
+            Hz=Hz,
+            Lx=Lx,
+            Lz=Lz,
+            error_rate=error_rate,
+            run_count=current_batch,
+            run_label=f"{run_label}_batch{batch_idx}",
+            workers=workers,
+        )
+
+        total_failures += failures
+        total_completed += completed
+
+        if (
+            failure_cap is not None
+            and total_completed >= min_runs_before_stop
+            and total_failures > failure_cap
+        ):
+            early_stopped = True
+            break
+
+        remaining -= current_batch
+        batch_idx += 1
+
+    runtime = time.time() - start_time
+
+    ler = (
+        total_failures / total_completed
+        if total_completed > 0
+        else 0.0
+    )
+    stderr = _bernoulli_stderr(
+        total_failures,
+        total_completed,
+    )
+
+    status = "EARLY-STOPPED" if early_stopped else "finished"
+
+    print(
+        f"Decoder {run_label} {status} in "
+        f"{runtime // 60:.0f}m {runtime % 60:.2f}s "
+        f"with {total_failures} failures out of "
+        f"{total_completed}/{run_count} runs."
+    )
+    print(
+        f"Depolarizing logical error rate for {run_label}: "
+        f"{ler} ± {stderr:.7f} (stderr)"
+    )
+
+    return (
+        ler,
+        stderr,
+        runtime,
+        total_failures,
+        total_completed,
+        early_stopped,
+    )
 
 if __name__ == "__main__":
     from basic_css_code import toric_code_matrices

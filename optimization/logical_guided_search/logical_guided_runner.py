@@ -197,6 +197,20 @@ def main():
     parser.add_argument("--stop-distance", default=None, type=int)
     parser.add_argument("--candidate-workers", default=1, type=int)
     parser.add_argument(
+    "--evaluate-depolarizing",
+    action="store_true",
+    help="Also evaluate code-capacity depolarizing LER.",
+    )
+    parser.add_argument(
+        "--depolarizing-p",
+        default=None,
+        type=float,
+        help=(
+            "Total depolarizing probability. "
+            "Defaults to the value supplied by -p."
+        ),
+    )
+    parser.add_argument(
         "--input-file",
         default=None,
         type=str,
@@ -221,6 +235,7 @@ def main():
         help="Dataset name containing the initial state edge list.",
     )
 
+
     args = parser.parse_args()
 
     C = args.C
@@ -229,6 +244,12 @@ def main():
         args.OUTPUT_FILE
         if args.OUTPUT_FILE is not None
         else "optimization/results/logical_guided_search.hdf5"
+    )
+
+    depolarizing_p = (
+        p
+        if args.depolarizing_p is None
+        else args.depolarizing_p
     )
 
     def score_candidate(state, params=None):
@@ -310,7 +331,12 @@ def main():
             "score_min_top": args.score_min_top,
             "score_max_top": args.score_max_top,
             "weight_slack": args.weight_slack,
+            "evaluate_depolarizing": args.evaluate_depolarizing,
+            "depolarizing_p": depolarizing_p,
+            "depolarizing_model": "code_capacity_I_1-p_XYZ_p_over_3",
+            "depolarizing_decoder": "separate_css_bposd_marginal_2p_over_3",
         })
+
 
         current_state = initial_state
         params_init, Hx_init, Hz_init = get_code_parameters_and_matrices(
